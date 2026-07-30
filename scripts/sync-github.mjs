@@ -575,14 +575,15 @@ function applyHierarchy(projects, hierarchy) {
       || defaultProduct;
     const portfolioId = product?.portfolio || defaultPf;
     const portfolio = portfolios[portfolioId] || { id: portfolioId, name: portfolioId };
+    const lower = (v) => (typeof v === 'string' ? v.toLowerCase() : v);
     return {
       ...project,
       company: company.id,
-      companyName: company.name,
+      companyName: lower(company.name),
       portfolio: portfolio.id,
-      portfolioName: portfolio.name,
+      portfolioName: lower(portfolio.name),
       product: product?.id || defaultPd,
-      productName: product?.name || defaultPd,
+      productName: lower(product?.name || defaultPd),
     };
   });
 }

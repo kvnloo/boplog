@@ -61,9 +61,9 @@
   };
 
   const categoryLabels = {
-    ai: 'AI',
+    ai: 'ai',
     dev: 'dev',
-    vc: 'VC',
+    vc: 'vc',
     art: 'art',
     econ: 'econ',
     'no code': 'no-code',
@@ -105,7 +105,8 @@
       .replace(/([a-z])([A-Z])/g, '$1·$2')
       .replace(/([A-Z]+)([A-Z][a-z])/g, '$1·$2');
     split = split.replace(/\0(\d+)\0/g, (_, i) => protectedTokens[Number(i)]);
-    return lead + split;
+    // Always emit lowercase so labels never depend on CSS alone (filters, aria, etc.).
+    return (lead + split).toLowerCase();
   }
 
   function projectLabel(project) {

@@ -27,9 +27,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "experiments",
-      "productName": "Experiments"
+      "productName": "experiments"
     },
     {
       "id": "boplog",
@@ -59,7 +59,7 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "professional",
-      "portfolioName": "Professional",
+      "portfolioName": "professional",
       "product": "boplog",
       "productName": "boplog"
     },
@@ -85,9 +85,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "lab",
-      "productName": "Lab / other"
+      "productName": "lab / other"
     },
     {
       "id": "cod",
@@ -111,9 +111,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "experiments",
-      "productName": "Experiments"
+      "productName": "experiments"
     },
     {
       "id": "files",
@@ -142,9 +142,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "professional",
-      "portfolioName": "Professional",
+      "portfolioName": "professional",
       "product": "dotfiles",
-      "productName": "Dotfiles",
+      "productName": "dotfiles",
       "eyebrow": "dotfiles",
       "featured": true,
       "featuredRank": 2
@@ -172,9 +172,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "zer0-os",
-      "productName": "Zer0 OS"
+      "productName": "zer0 os"
     },
     {
       "id": "zer0-cockpit",
@@ -199,9 +199,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "zer0-os",
-      "productName": "Zer0 OS"
+      "productName": "zer0 os"
     },
     {
       "id": "zer0-harness-spine",
@@ -226,9 +226,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "zer0-os",
-      "productName": "Zer0 OS"
+      "productName": "zer0 os"
     },
     {
       "id": "zer0-voice",
@@ -253,9 +253,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "zer0-os",
-      "productName": "Zer0 OS"
+      "productName": "zer0 os"
     },
     {
       "id": "tmux-agent-fleet",
@@ -280,9 +280,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "agent-tooling",
-      "productName": "Agent tooling",
+      "productName": "agent tooling",
       "eyebrow": "agent tooling",
       "featured": true,
       "featuredRank": 6
@@ -310,9 +310,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "agent-tooling",
-      "productName": "Agent tooling"
+      "productName": "agent tooling"
     },
     {
       "id": "tesla-infotainment",
@@ -337,9 +337,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "tesla-ui",
-      "productName": "Tesla UI experiments"
+      "productName": "tesla ui experiments"
     },
     {
       "id": "tesla",
@@ -368,9 +368,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "tesla-ui",
-      "productName": "Tesla UI experiments"
+      "productName": "tesla ui experiments"
     },
     {
       "id": "farm",
@@ -394,9 +394,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "experiments",
-      "productName": "Experiments"
+      "productName": "experiments"
     },
     {
       "id": "kpu-sim",
@@ -426,9 +426,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "open-source-contrib",
-      "productName": "Open-source contributions"
+      "productName": "open-source contributions"
     },
     {
       "id": "coding-interview-university",
@@ -453,9 +453,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "open-source-contrib",
-      "productName": "Open-source contributions"
+      "productName": "open-source contributions"
     },
     {
       "id": "scrollytelling",
@@ -480,9 +480,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "experiments",
-      "productName": "Experiments"
+      "productName": "experiments"
     },
     {
       "id": "cv",
@@ -507,9 +507,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "professional",
-      "portfolioName": "Professional",
+      "portfolioName": "professional",
       "product": "professional-showcase",
-      "productName": "Professional showcase"
+      "productName": "professional showcase"
     },
     {
       "id": "uiua",
@@ -539,9 +539,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "open-source-contrib",
-      "productName": "Open-source contributions"
+      "productName": "open-source contributions"
     }
   ]
 }

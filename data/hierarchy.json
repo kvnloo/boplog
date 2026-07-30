@@ -1,5 +1,5 @@
 {
-  "_comment": "Enterprise taxonomy for boplog. Portfolio ≠ the GitHub repo named 'portfolio' (that is a professional showcase project). Hierarchy is additive context on each project row.",
+  "_comment": "Enterprise taxonomy for boplog. Portfolio \u2260 the GitHub repo named 'portfolio' (that is a professional showcase project). Hierarchy is additive context on each project row.",
   "company": {
     "id": "zer0",
     "name": "zer0",
@@ -8,83 +8,110 @@
   "portfolios": [
     {
       "id": "deeptech",
-      "name": "Deeptech",
-      "description": "Systems, agents, harnesses, and research infrastructure."
+      "name": "deeptech",
+      "description": "systems, agents, harnesses, and research infrastructure."
     },
     {
       "id": "humanitarian",
-      "name": "Humanitarian",
-      "description": "Work aimed at social impact and public good."
+      "name": "humanitarian",
+      "description": "work aimed at social impact and public good."
     },
     {
       "id": "professional",
-      "name": "Professional",
-      "description": "Client, career, and personal professional showcases."
+      "name": "professional",
+      "description": "client, career, and personal professional showcases."
     }
   ],
   "products": [
     {
       "id": "zer0-os",
-      "name": "Zer0 OS",
+      "name": "zer0 os",
       "portfolio": "deeptech",
-      "description": "Company operating system: issues, harness, cockpit, voice.",
-      "projects": ["_pm", "zer0-cockpit", "zer0-harness-spine", "zer0-voice", "z0"]
+      "description": "company operating system: issues, harness, cockpit, voice.",
+      "projects": [
+        "_pm",
+        "zer0-cockpit",
+        "zer0-harness-spine",
+        "zer0-voice",
+        "z0"
+      ]
     },
     {
       "id": "agent-tooling",
-      "name": "Agent tooling",
+      "name": "agent tooling",
       "portfolio": "deeptech",
-      "description": "Interfaces and fleets for coding agents.",
-      "projects": ["tmux-agent-fleet", "claude-island", "Auto-Claude", "opcode", "flow", "launch"]
+      "description": "interfaces and fleets for coding agents.",
+      "projects": [
+        "tmux-agent-fleet",
+        "claude-island",
+        "Auto-Claude",
+        "opcode",
+        "flow",
+        "launch"
+      ]
     },
     {
       "id": "boplog",
       "name": "boplog",
       "portfolio": "professional",
-      "description": "Public build log of authored GitHub work.",
-      "projects": ["boplog"]
+      "description": "public build log of authored github work.",
+      "projects": [
+        "boplog"
+      ]
     },
-
     {
       "id": "audioengine",
-      "name": "AudioEngine",
+      "name": "audioengine",
       "portfolio": "professional",
-      "description": "2017 iOS real-time audio / noise meter + EQ (JubiAudio Phase I).",
-      "projects": ["AudioEngine"]
+      "description": "2017 ios real-time audio / noise meter + eq (jubiaudio phase i).",
+      "projects": [
+        "AudioEngine"
+      ]
     },
     {
       "id": "professional-showcase",
-      "name": "Professional showcase",
+      "name": "professional showcase",
       "portfolio": "professional",
-      "description": "Portfolio site and career packaging (not the portfolio taxonomy node). Interactive 3D surface: Kevin's Ramen & Boba (portfolio/demos/room) — same public project rows as visual props; see data/surfaces.json.",
-      "projects": ["portfolio", "cv", "jobapp"]
+      "description": "portfolio site and career packaging (not the portfolio taxonomy node). interactive 3d surface: kevin's ramen & boba (portfolio/demos/room) \u2014 same public project rows as visual props; see data/surfaces.json.",
+      "projects": [
+        "portfolio",
+        "cv",
+        "jobapp"
+      ]
     },
     {
       "id": "dotfiles",
-      "name": "Dotfiles",
+      "name": "dotfiles",
       "portfolio": "professional",
-      "description": "Personal Linux/macOS environment.",
-      "projects": [".files"]
+      "description": "personal linux/macos environment.",
+      "projects": [
+        ".files"
+      ]
     },
     {
       "id": "tesla-ui",
-      "name": "Tesla UI experiments",
+      "name": "tesla ui experiments",
       "portfolio": "deeptech",
-      "description": "Infotainment UI prototypes.",
-      "projects": ["tesla", "tesla-infotainment"]
+      "description": "infotainment ui prototypes.",
+      "projects": [
+        "tesla",
+        "tesla-infotainment"
+      ]
     },
     {
       "id": "bci",
-      "name": "BCI / attention",
+      "name": "bci / attention",
       "portfolio": "deeptech",
-      "description": "Brain-computer interface experiments.",
-      "projects": ["FlowState"]
+      "description": "brain-computer interface experiments.",
+      "projects": [
+        "FlowState"
+      ]
     },
     {
       "id": "experiments",
-      "name": "Experiments",
+      "name": "experiments",
       "portfolio": "deeptech",
-      "description": "LLM / videogame-shaped experiments probing fully autonomous workflows and orchestration — so the system can build while I vibe and talk through ideas.",
+      "description": "llm / videogame-shaped experiments probing fully autonomous workflows and orchestration \u2014 so the system can build while i vibe and talk through ideas.",
       "projects": [
         "ace",
         "aliens-made-this",
@@ -104,9 +131,9 @@
     },
     {
       "id": "open-source-contrib",
-      "name": "Open-source contributions",
+      "name": "open-source contributions",
       "portfolio": "deeptech",
-      "description": "Forks and patches where the signal is my commits, not the upstream brand.",
+      "description": "forks and patches where the signal is my commits, not the upstream brand.",
       "projects": [
         "kpu-sim",
         "coding-interview-university",
@@ -118,16 +145,21 @@
     },
     {
       "id": "mobile-legacy",
-      "name": "Mobile (legacy)",
+      "name": "mobile (legacy)",
       "portfolio": "professional",
-      "description": "Earlier iOS and mobile work.",
-      "projects": ["iOS-2017", "smartvest", "Flicks", "refind"]
+      "description": "earlier ios and mobile work.",
+      "projects": [
+        "iOS-2017",
+        "smartvest",
+        "Flicks",
+        "refind"
+      ]
     },
     {
       "id": "lab",
-      "name": "Lab / other",
+      "name": "lab / other",
       "portfolio": "deeptech",
-      "description": "Experiments, scaffolds, and uncategorized deeptech work.",
+      "description": "experiments, scaffolds, and uncategorized deeptech work.",
       "projects": [
         "expert",
         "docs-boilerplate",

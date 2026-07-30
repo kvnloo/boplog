@@ -28,9 +28,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "bci",
-      "productName": "BCI / attention"
+      "productName": "bci / attention"
     },
     {
       "id": "openhands",
@@ -60,9 +60,9 @@
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
+      "portfolioName": "deeptech",
       "product": "open-source-contrib",
-      "productName": "Open-source contributions"
+      "productName": "open-source contributions"
     }
   ]
 }
