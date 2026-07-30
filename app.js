@@ -39,6 +39,7 @@
     archive: document.querySelector('#project-archive'),
     resultCount: document.querySelector('#result-count'),
     archiveSummary: document.querySelector('#archive-summary'),
+    focusProducts: document.querySelector('#focus-products'),
     search: document.querySelector('#project-search'),
     portfolio: document.querySelector('#portfolio-filter'),
     product: document.querySelector('#product-filter'),
@@ -413,6 +414,43 @@
     elements.archiveSummary.textContent = `zer0 · ${state.projects.length} projects · ${products} products · ${range}`;
   }
 
+  function renderFocusProducts() {
+    if (!elements.focusProducts) return;
+    const hierarchy = state.hierarchy;
+    const byId = Object.fromEntries((hierarchy?.products || []).map((p) => [p.id, p]));
+    let ids = Array.isArray(hierarchy?.focusProducts) ? hierarchy.focusProducts : [];
+
+    // Fallback: products that contain featured projects, in featured order.
+    if (!ids.length) {
+      const featured = state.projects
+        .filter((p) => p.featured)
+        .sort((a, b) => (a.featuredRank || 99) - (b.featuredRank || 99));
+      const seen = new Set();
+      ids = [];
+      for (const project of featured) {
+        if (!project.product || seen.has(project.product)) continue;
+        seen.add(project.product);
+        ids.push(project.product);
+      }
+    }
+
+    // Only show products that actually have public projects on the site.
+    const present = new Set(state.projects.map((p) => p.product).filter(Boolean));
+    ids = ids.filter((id) => present.has(id) || byId[id]);
+
+    if (!ids.length) {
+      elements.focusProducts.innerHTML = '';
+      return;
+    }
+
+    elements.focusProducts.innerHTML = ids.map((id) => {
+      const meta = byId[id];
+      const label = softLabel(meta?.name || id);
+      const active = state.product === id ? ' is-active' : '';
+      return `<button type="button" class="intro__focus-chip${active}" data-filter-kind="product" data-filter-value="${escapeHtml(id)}">${escapeHtml(label)}</button>`;
+    }).join('');
+  }
+
   function populateFilters() {
     const categories = sortUnique(state.projects.flatMap((project) => project.categories || []));
     const formats = sortUnique(state.projects.flatMap((project) => project.formats || []));
@@ -525,6 +563,7 @@
       }
       if (elements.portfolio) elements.portfolio.value = state.portfolio;
     }
+    renderFocusProducts();
     renderArchive();
     renderActivityMap();
     renderFilterSummary();
@@ -620,7 +659,7 @@
       document.querySelector('#archive-title').scrollIntoView({ block: 'start', behavior: 'smooth' });
     });
 
-    elements.archive.addEventListener('click', (event) => {
+    const onHierarchyFilterClick = (event) => {
       const button = event.target.closest('[data-filter-kind]');
       if (!button) return;
       const kind = button.dataset.filterKind;
@@ -639,18 +678,27 @@
         if (elements.portfolio) elements.portfolio.value = value;
       }
       if (kind === 'product') {
-        state.product = value;
-        if (elements.product) elements.product.value = value;
-        const sample = state.projects.find((p) => p.product === value);
-        if (sample?.portfolio) {
-          state.portfolio = sample.portfolio;
-          if (elements.portfolio) elements.portfolio.value = sample.portfolio;
+        // Toggle product filter when re-clicking an active focus chip.
+        if (state.product === value && button.classList.contains('intro__focus-chip')) {
+          state.product = '';
+          if (elements.product) elements.product.value = '';
+        } else {
+          state.product = value;
+          if (elements.product) elements.product.value = value;
+          const sample = state.projects.find((p) => p.product === value);
+          if (sample?.portfolio) {
+            state.portfolio = sample.portfolio;
+            if (elements.portfolio) elements.portfolio.value = sample.portfolio;
+          }
         }
       }
       elements.filterDisclosure.open = true;
       render();
       document.querySelector('#archive-title').scrollIntoView({ block: 'start' });
-    });
+    };
+
+    elements.archive.addEventListener('click', onHierarchyFilterClick);
+    elements.focusProducts?.addEventListener('click', onHierarchyFilterClick);
 
     document.addEventListener('keydown', (event) => {
       const tagName = document.activeElement?.tagName;
@@ -723,6 +771,7 @@
       readUrlState();
       setActivityMode(savedMode);
       renderSummary();
+      renderFocusProducts();
       renderFeatured();
       renderActivityMap();
       render();

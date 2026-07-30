@@ -170,5 +170,12 @@
     }
   ],
   "defaultPortfolio": "deeptech",
-  "defaultProduct": "lab"
+  "defaultProduct": "lab",
+  "focusProducts": [
+    "zer0-os",
+    "agent-tooling",
+    "experiments",
+    "bci",
+    "audioengine"
+  ]
 }
