@@ -358,7 +358,7 @@
     elements.resultCount.textContent = `${projects.length} / ${state.projects.length}`;
     elements.emptyState.hidden = projects.length !== 0;
 
-    elements.archive.innerHTML = projects.map((project) => {
+    elements.archive.innerHTML = projects.map((project, index) => {
       const categoryTags = (project.categories || []).map((category) => (
         `<button type="button" data-filter-kind="category" data-filter-value="${escapeHtml(category)}">#${escapeHtml(labelForCategory(category))}</button>`
       ));
