@@ -1,6 +1,49 @@
 {
   "projects": [
     {
+      "id": "auto-claude",
+      "name": "Auto-Claude",
+      "description": "My work on this fork: OpenAPI remote API, Claude Flow MCP integration, mobile companion, SWE-bench tooling, usage dashboard, and UX/scaling fixes.",
+      "date": "2025-12-27",
+      "url": "https://github.com/kvnloo/Auto-Claude",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/Auto-Claude"
+        }
+      ]
+    },
+    {
+      "id": "jobapp",
+      "name": "jobapp",
+      "description": "Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.",
+      "date": "2025-12-23",
+      "url": "https://github.com/kvnloo/jobapp",
+      "types": [
+        "public",
+        "html"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/jobapp"
+        }
+      ]
+    },
+    {
       "id": "expert",
       "name": "expert",
       "description": "Early public scaffold (placeholder repo).",
@@ -12,58 +55,11 @@
       "formats": [],
       "categories": [
         "dev"
-      ]
-    },
-    {
-      "id": "evolve",
-      "name": "evolve",
-      "description": "Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.",
-      "date": "2025-12-15",
-      "url": "https://github.com/kvnloo/evolve",
-      "types": [
-        "public",
-        "sh"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
       ],
       "links": [
         {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/evolve"
-        },
-        {
-          "label": "site",
-          "url": "https://kvnloo.github.io/evolve/"
-        }
-      ],
-      "featured": true,
-      "featuredRank": 2,
-      "eyebrow": "Shell"
-    },
-    {
-      "id": "blueprint",
-      "name": "blueprint",
-      "description": "Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.",
-      "date": "2025-12-10",
-      "url": "https://github.com/kvnloo/blueprint",
-      "types": [
-        "public",
-        "html"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/blueprint"
-        },
-        {
-          "label": "site",
-          "url": "https://kvnloo.github.io/blueprint/"
+          "label": "github",
+          "url": "https://github.com/kvnloo/expert"
         }
       ]
     },
@@ -79,6 +75,12 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/docs-boilerplate"
+        }
       ]
     },
     {
@@ -93,7 +95,91 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/z0"
+        }
       ]
+    },
+    {
+      "id": "opcode",
+      "name": "opcode",
+      "description": "My work on this fork of winfunc/opcode: Phase 4 cleanup and documentation restructuring; resolve all TypeScript compilation errors for clean build; Phase 4 polish - error handling, accessibility, test coverage",
+      "date": "2025-12-09",
+      "url": "https://opcode.sh/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://opcode.sh/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/opcode"
+        }
+      ]
+    },
+    {
+      "id": "blueprint",
+      "name": "blueprint",
+      "description": "Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.",
+      "date": "2025-12-07",
+      "url": "https://kvnloo.github.io/blueprint/",
+      "types": [
+        "public",
+        "html"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/blueprint/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/blueprint"
+        }
+      ]
+    },
+    {
+      "id": "evolve",
+      "name": "evolve",
+      "description": "Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.",
+      "date": "2025-12-02",
+      "url": "https://kvnloo.github.io/evolve/",
+      "types": [
+        "public",
+        "sh"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/evolve/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/evolve"
+        }
+      ],
+      "featured": true,
+      "featuredRank": 2,
+      "eyebrow": "Shell"
     },
     {
       "id": "whisper",
@@ -107,6 +193,37 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/whisper"
+        }
+      ]
+    },
+    {
+      "id": "portfolio",
+      "name": "portfolio",
+      "description": "Personal portfolio site at the intersection of AI, neuroscience, and mobile systems.",
+      "date": "2025-11-28",
+      "url": "https://kvnloo.github.io/portfolio/",
+      "types": [
+        "public",
+        "html"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/portfolio/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/portfolio"
+        }
       ]
     },
     {
@@ -121,20 +238,12 @@
       "formats": [],
       "categories": [
         "dev"
-      ]
-    },
-    {
-      "id": "migrate",
-      "name": "migrate",
-      "description": "Migration utilities scaffold (minimal public repo).",
-      "date": "2025-11-26",
-      "url": "https://github.com/kvnloo/migrate",
-      "types": [
-        "public"
       ],
-      "formats": [],
-      "categories": [
-        "dev"
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/playground"
+        }
       ]
     },
     {
@@ -149,6 +258,32 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/flow"
+        }
+      ]
+    },
+    {
+      "id": "migrate",
+      "name": "migrate",
+      "description": "Migration utilities scaffold (minimal public repo).",
+      "date": "2025-11-25",
+      "url": "https://github.com/kvnloo/migrate",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/migrate"
+        }
       ]
     },
     {
@@ -163,14 +298,20 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/botw"
+        }
       ]
     },
     {
-      "id": "monument",
-      "name": "monument",
-      "description": "AI Studio web app experiment (monument concept UI).",
-      "date": "2025-11-20",
-      "url": "https://github.com/kvnloo/monument",
+      "id": "ace",
+      "name": "ace",
+      "description": "Demo site for Ace Sports: digital twin of an autonomous multi-floor racket sports facility.",
+      "date": "2025-11-21",
+      "url": "https://kvnloo.github.io/ace/",
       "types": [
         "public",
         "ts"
@@ -181,12 +322,40 @@
       ],
       "links": [
         {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/monument"
+          "label": "docs",
+          "url": "https://kvnloo.github.io/ace/"
         },
         {
-          "label": "site",
+          "label": "github",
+          "url": "https://github.com/kvnloo/ace"
+        }
+      ],
+      "featured": true,
+      "featuredRank": 3,
+      "eyebrow": "TypeScript"
+    },
+    {
+      "id": "monument",
+      "name": "monument",
+      "description": "AI Studio web app experiment (monument concept UI).",
+      "date": "2025-11-20",
+      "url": "https://kvnloo.github.io/monument/",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
           "url": "https://kvnloo.github.io/monument/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/monument"
         }
       ]
     },
@@ -195,7 +364,7 @@
       "name": "metallic-card",
       "description": "Metallic silver border card UI, synced from v0/Vercel design iterations.",
       "date": "2025-11-15",
-      "url": "https://github.com/kvnloo/metallic-card",
+      "url": "https://ek.vin/",
       "types": [
         "public",
         "ts"
@@ -206,60 +375,12 @@
       ],
       "links": [
         {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/metallic-card"
-        },
-        {
           "label": "site",
           "url": "https://ek.vin/"
-        }
-      ]
-    },
-    {
-      "id": "architecture-demo",
-      "name": "architecture_demo",
-      "description": "Architecture portfolio universe: AI-generated visualizations, research, and project docs.",
-      "date": "2025-11-14",
-      "url": "https://github.com/kvnloo/architecture_demo",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/architecture_demo"
         },
         {
-          "label": "site",
-          "url": "https://kvnloo.github.io/architecture_demo/"
-        }
-      ]
-    },
-    {
-      "id": "aliens-made-this",
-      "name": "aliens-made-this",
-      "description": "Playful generative-art / capability test: what can the aliens make?",
-      "date": "2025-11-12",
-      "url": "https://github.com/kvnloo/aliens-made-this",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/aliens-made-this"
-        },
-        {
-          "label": "site",
-          "url": "https://kvnloo.github.io/aliens-made-this/"
+          "label": "github",
+          "url": "https://github.com/kvnloo/metallic-card"
         }
       ]
     },
@@ -268,7 +389,7 @@
       "name": "AudioEngine",
       "description": "iOS audio-engine / Phase I wireframe project with generated docs site.",
       "date": "2025-11-10",
-      "url": "https://github.com/kvnloo/AudioEngine",
+      "url": "https://kvnloo.github.io/AudioEngine/",
       "types": [
         "public",
         "makefile"
@@ -279,38 +400,12 @@
       ],
       "links": [
         {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/AudioEngine"
-        },
-        {
-          "label": "site",
+          "label": "docs",
           "url": "https://kvnloo.github.io/AudioEngine/"
-        }
-      ]
-    },
-    {
-      "id": "flowstate",
-      "name": "FlowState",
-      "description": "BCI experiment: adjust video playback speed from EEG alpha-band attention.",
-      "date": "2025-11-08",
-      "url": "https://github.com/kvnloo/FlowState",
-      "types": [
-        "public",
-        "py",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/FlowState"
         },
         {
-          "label": "site",
-          "url": "https://kvnloo.github.io/FlowState/"
+          "label": "github",
+          "url": "https://github.com/kvnloo/AudioEngine"
         }
       ]
     },
@@ -319,7 +414,7 @@
       "name": "spy",
       "description": "SPY trading indicator pages published via GitHub Pages.",
       "date": "2025-11-03",
-      "url": "https://github.com/kvnloo/spy",
+      "url": "https://kvnloo.github.io/spy/",
       "types": [
         "public"
       ],
@@ -329,21 +424,21 @@
       ],
       "links": [
         {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/spy"
+          "label": "docs",
+          "url": "https://kvnloo.github.io/spy/"
         },
         {
-          "label": "site",
-          "url": "https://kvnloo.github.io/spy/"
+          "label": "github",
+          "url": "https://github.com/kvnloo/spy"
         }
       ]
     },
     {
-      "id": "launch",
-      "name": "launch",
-      "description": "Launch toolkit: Claude Code / Superdesign commands for parallel UI design generation.",
-      "date": "2025-10-31",
-      "url": "https://github.com/kvnloo/launch",
+      "id": "aliens-made-this",
+      "name": "aliens-made-this",
+      "description": "Playful generative-art / capability test: what can the aliens make?",
+      "date": "2025-10-28",
+      "url": "https://kvnloo.github.io/aliens-made-this/",
       "types": [
         "public"
       ],
@@ -353,12 +448,12 @@
       ],
       "links": [
         {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/launch"
+          "label": "docs",
+          "url": "https://kvnloo.github.io/aliens-made-this/"
         },
         {
-          "label": "site",
-          "url": "https://launch-plum-beta.vercel.app"
+          "label": "github",
+          "url": "https://github.com/kvnloo/aliens-made-this"
         }
       ]
     },
@@ -374,6 +469,12 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/UX"
+        }
       ]
     },
     {
@@ -388,6 +489,86 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/flo"
+        }
+      ]
+    },
+    {
+      "id": "architecture-demo",
+      "name": "architecture_demo",
+      "description": "Architecture portfolio universe: AI-generated visualizations, research, and project docs.",
+      "date": "2025-10-18",
+      "url": "https://kvnloo.github.io/architecture_demo/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/architecture_demo/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/architecture_demo"
+        }
+      ]
+    },
+    {
+      "id": "launch",
+      "name": "launch",
+      "description": "Launch toolkit: Claude Code / Superdesign commands for parallel UI design generation.",
+      "date": "2025-10-14",
+      "url": "https://launch-plum-beta.vercel.app/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://launch-plum-beta.vercel.app/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/launch"
+        }
+      ]
+    },
+    {
+      "id": "cofounder",
+      "name": "cofounder",
+      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI…",
+      "date": "2025-08-28",
+      "url": "https://cofounder.openinterface.ai/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://cofounder.openinterface.ai/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/cofounder"
+        }
       ]
     }
   ]

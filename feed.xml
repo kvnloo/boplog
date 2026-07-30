@@ -5,12 +5,12 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-07-30T07:56:20Z</updated>
+  <updated>2026-07-30T08:31:29Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>boplog</title>
-    <id>https://github.com/kvnloo/boplog</id>
-    <link href="https://github.com/kvnloo/boplog"/>
+    <id>https://kvnloo.github.io/boplog/</id>
+    <link href="https://kvnloo.github.io/boplog/"/>
     <published>2026-07-30T00:00:00Z</published>
     <updated>2026-07-30T00:00:00Z</updated>
     <category term="dev"/>
@@ -27,8 +27,8 @@
   </entry>
   <entry>
     <title>.files</title>
-    <id>https://github.com/kvnloo/.files</id>
-    <link href="https://github.com/kvnloo/.files"/>
+    <id>https://kvnloo.github.io/.files/</id>
+    <link href="https://kvnloo.github.io/.files/"/>
     <published>2026-07-28T00:00:00Z</published>
     <updated>2026-07-28T00:00:00Z</updated>
     <category term="dev"/>
@@ -80,22 +80,13 @@
     <summary>Zero-daemon, harness-neutral command palette for coding agents across tmux panes.</summary>
   </entry>
   <entry>
-    <title>portfolio</title>
-    <id>https://github.com/kvnloo/portfolio</id>
-    <link href="https://github.com/kvnloo/portfolio"/>
-    <published>2026-01-29T00:00:00Z</published>
-    <updated>2026-01-29T00:00:00Z</updated>
+    <title>claude-island</title>
+    <id>https://github.com/kvnloo/claude-island</id>
+    <link href="https://github.com/kvnloo/claude-island"/>
+    <published>2026-04-11T00:00:00Z</published>
+    <updated>2026-04-11T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Personal portfolio site at the intersection of AI, neuroscience, and mobile systems.</summary>
-  </entry>
-  <entry>
-    <title>ace</title>
-    <id>https://github.com/kvnloo/ace</id>
-    <link href="https://github.com/kvnloo/ace"/>
-    <published>2026-01-28T00:00:00Z</published>
-    <updated>2026-01-28T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Demo site for Ace Sports: digital twin of an autonomous multi-floor racket sports facility.</summary>
+    <summary>My work on this fork: multi-profile Claude Code usage monitoring with real-time rate-limit bars, cost/burn-rate tracking, and lifetime savings.</summary>
   </entry>
   <entry>
     <title>tesla-infotainment</title>
@@ -108,8 +99,8 @@
   </entry>
   <entry>
     <title>tesla</title>
-    <id>https://github.com/kvnloo/tesla</id>
-    <link href="https://github.com/kvnloo/tesla"/>
+    <id>https://kvnloo.github.io/tesla/</id>
+    <link href="https://kvnloo.github.io/tesla/"/>
     <published>2026-01-27T00:00:00Z</published>
     <updated>2026-01-27T00:00:00Z</updated>
     <category term="dev"/>
@@ -126,12 +117,12 @@
   </entry>
   <entry>
     <title>kpu-sim</title>
-    <id>https://github.com/kvnloo/kpu-sim</id>
-    <link href="https://github.com/kvnloo/kpu-sim"/>
+    <id>https://kvnloo.github.io/kpu-sim/</id>
+    <link href="https://kvnloo.github.io/kpu-sim/"/>
     <published>2026-01-19T00:00:00Z</published>
     <updated>2026-01-19T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Fork of the Stillwater KPU accelerator simulator (C++20 knowledge-processing unit sim).</summary>
+    <summary>My work on this fork: GitHub Pages workflow for KPU simulator animations.</summary>
   </entry>
   <entry>
     <title>coding-interview-university</title>
@@ -140,7 +131,7 @@
     <published>2026-01-18T00:00:00Z</published>
     <updated>2026-01-18T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Fork of the CS interview study plan, with an optimized Obsidian-canvas learning system.</summary>
+    <summary>My work on this fork: optimized learning system with Obsidian canvas.</summary>
   </entry>
   <entry>
     <title>scrollytelling</title>
@@ -152,24 +143,6 @@
     <summary>Scroll-driven visual story experiment with frame sequences (headphones piece).</summary>
   </entry>
   <entry>
-    <title>Auto-Claude</title>
-    <id>https://github.com/kvnloo/Auto-Claude</id>
-    <link href="https://github.com/kvnloo/Auto-Claude"/>
-    <published>2026-01-10T00:00:00Z</published>
-    <updated>2026-01-10T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Fork of Auto Claude: autonomous multi-session / multi-agent AI coding framework.</summary>
-  </entry>
-  <entry>
-    <title>jobapp</title>
-    <id>https://github.com/kvnloo/jobapp</id>
-    <link href="https://github.com/kvnloo/jobapp"/>
-    <published>2026-01-10T00:00:00Z</published>
-    <updated>2026-01-10T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.</summary>
-  </entry>
-  <entry>
     <title>cv</title>
     <id>https://github.com/kvnloo/cv</id>
     <link href="https://github.com/kvnloo/cv"/>
@@ -179,6 +152,33 @@
     <summary>LaTeX CV and role-specific resumes (AI/ML, DevOps, PM) with generated PDFs.</summary>
   </entry>
   <entry>
+    <title>uiua</title>
+    <id>https://www.uiua.org/</id>
+    <link href="https://www.uiua.org/"/>
+    <published>2026-01-08T00:00:00Z</published>
+    <updated>2026-01-08T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork of uiua-lang/uiua: Remove invalid Cos primitive reference (qa-requested)</summary>
+  </entry>
+  <entry>
+    <title>Auto-Claude</title>
+    <id>https://github.com/kvnloo/Auto-Claude</id>
+    <link href="https://github.com/kvnloo/Auto-Claude"/>
+    <published>2025-12-27T00:00:00Z</published>
+    <updated>2025-12-27T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: OpenAPI remote API, Claude Flow MCP integration, mobile companion, SWE-bench tooling, usage dashboard, and UX/scaling fixes.</summary>
+  </entry>
+  <entry>
+    <title>jobapp</title>
+    <id>https://github.com/kvnloo/jobapp</id>
+    <link href="https://github.com/kvnloo/jobapp"/>
+    <published>2025-12-23T00:00:00Z</published>
+    <updated>2025-12-23T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.</summary>
+  </entry>
+  <entry>
     <title>expert</title>
     <id>https://github.com/kvnloo/expert</id>
     <link href="https://github.com/kvnloo/expert"/>
@@ -186,24 +186,6 @@
     <updated>2025-12-16T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Early public scaffold (placeholder repo).</summary>
-  </entry>
-  <entry>
-    <title>evolve</title>
-    <id>https://github.com/kvnloo/evolve</id>
-    <link href="https://github.com/kvnloo/evolve"/>
-    <published>2025-12-15T00:00:00Z</published>
-    <updated>2025-12-15T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.</summary>
-  </entry>
-  <entry>
-    <title>blueprint</title>
-    <id>https://github.com/kvnloo/blueprint</id>
-    <link href="https://github.com/kvnloo/blueprint"/>
-    <published>2025-12-10T00:00:00Z</published>
-    <updated>2025-12-10T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.</summary>
   </entry>
   <entry>
     <title>docs-boilerplate</title>
@@ -224,12 +206,30 @@
     <summary>Early public scaffold for a Zer0-related experiment (placeholder repo).</summary>
   </entry>
   <entry>
-    <title>whisper</title>
-    <id>https://github.com/kvnloo/whisper</id>
-    <link href="https://github.com/kvnloo/whisper"/>
-    <published>2025-12-01T00:00:00Z</published>
-    <updated>2025-12-01T00:00:00Z</updated>
+    <title>opcode</title>
+    <id>https://opcode.sh/</id>
+    <link href="https://opcode.sh/"/>
+    <published>2025-12-09T00:00:00Z</published>
+    <updated>2025-12-09T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Early public scaffold for a Whisper-related experiment (placeholder repo).</summary>
+    <summary>My work on this fork of winfunc/opcode: Phase 4 cleanup and documentation restructuring; resolve all TypeScript compilation errors for clean build; Phase 4 polish - error handling, accessibility, test coverage</summary>
+  </entry>
+  <entry>
+    <title>blueprint</title>
+    <id>https://kvnloo.github.io/blueprint/</id>
+    <link href="https://kvnloo.github.io/blueprint/"/>
+    <published>2025-12-07T00:00:00Z</published>
+    <updated>2025-12-07T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.</summary>
+  </entry>
+  <entry>
+    <title>evolve</title>
+    <id>https://kvnloo.github.io/evolve/</id>
+    <link href="https://kvnloo.github.io/evolve/"/>
+    <published>2025-12-02T00:00:00Z</published>
+    <updated>2025-12-02T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.</summary>
   </entry>
 </feed>

@@ -151,15 +151,163 @@ async function mapPool(items, limit, worker) {
   return results;
 }
 
-async function userAuthoredCommit(repo) {
-  // One cheap probe: any commit authored by USER on default branch history.
-  const commits = await api(
-    `/repos/${repo.full_name}/commits?author=${encodeURIComponent(USER)}&per_page=1`,
+/**
+ * Collect commits authored by USER. Checks default branch first; for forks
+ * (or when default is empty) also walks other branches so feature-branch work
+ * like claude-island is not missed.
+ */
+async function collectAuthoredCommits(repo, { maxMessages = 12, stopOnFirst = false } = {}) {
+  const perPage = stopOnFirst ? 1 : Math.min(maxMessages, 30);
+  const authorQ = `author=${encodeURIComponent(USER)}&per_page=${perPage}`;
+  const messages = [];
+  const seenSha = new Set();
+  let latestDate = null;
+
+  async function absorb(commits) {
+    if (!Array.isArray(commits)) return;
+    for (const c of commits) {
+      const sha = c.sha;
+      if (!sha || seenSha.has(sha)) continue;
+      seenSha.add(sha);
+      const msg = (c.commit?.message || '').trim();
+      const date = c.commit?.author?.date || c.commit?.committer?.date || null;
+      if (date && (!latestDate || date > latestDate)) latestDate = date;
+      if (msg) messages.push(msg);
+      if (stopOnFirst || messages.length >= maxMessages) return;
+    }
+  }
+
+  const onDefault = await api(
+    `/repos/${repo.full_name}/commits?${authorQ}`,
     { allow404: true },
   );
-  if (commits === null) return false;
-  if (!Array.isArray(commits)) return false;
-  return commits.length > 0;
+  if (Array.isArray(onDefault)) await absorb(onDefault);
+
+  // Feature-branch work lives off main on many forks (e.g. claude-island).
+  const needMore = stopOnFirst ? seenSha.size === 0 : messages.length < maxMessages;
+  if (needMore && (repo.fork || seenSha.size === 0)) {
+    const branches = await api(
+      `/repos/${repo.full_name}/branches?per_page=100`,
+      { allow404: true },
+    );
+    if (Array.isArray(branches)) {
+      const defaultBranch = repo.default_branch || 'main';
+      const ordered = [
+        ...branches.filter((b) => b.name !== defaultBranch),
+      ];
+      for (const branch of ordered) {
+        if (stopOnFirst && seenSha.size > 0) break;
+        if (!stopOnFirst && messages.length >= maxMessages) break;
+        const commits = await api(
+          `/repos/${repo.full_name}/commits?sha=${encodeURIComponent(branch.name)}&${authorQ}`,
+          { allow404: true },
+        );
+        await absorb(commits);
+      }
+    }
+  }
+
+  return {
+    found: seenSha.size > 0,
+    messages,
+    latestDate,
+    count: seenSha.size,
+  };
+}
+
+async function userAuthoredCommit(repo) {
+  const { found } = await collectAuthoredCommits(repo, { maxMessages: 1, stopOnFirst: true });
+  return found;
+}
+
+function normalizeHttps(url) {
+  if (!url || typeof url !== 'string') return null;
+  const trimmed = url.trim();
+  if (!trimmed) return null;
+  const withScheme = /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+  if (!/^https:\/\//i.test(withScheme)) return null;
+  try {
+    return new URL(withScheme).href;
+  } catch {
+    return null;
+  }
+}
+
+function labelForWebUrl(url, { fromPages = false } = {}) {
+  try {
+    const u = new URL(url);
+    const host = u.hostname.toLowerCase();
+    if (host.endsWith('github.io') || fromPages) return 'docs';
+    return 'site';
+  } catch {
+    return 'site';
+  }
+}
+
+/**
+ * Build ordered links: docs/site first, GitHub last. Primary url prefers web.
+ */
+async function resolveLinks(repo) {
+  const githubUrl = repo.html_url;
+  const web = [];
+  const seen = new Set();
+
+  function addWeb(url, { fromPages = false } = {}) {
+    let href = normalizeHttps(url);
+    if (!href) return;
+    if (href.includes('github.io') && !href.endsWith('/')) href = `${href}/`;
+    const key = href.replace(/\/$/, '').toLowerCase();
+    if (seen.has(key)) return;
+    if (key.includes('github.com/') && key.includes(String(repo.full_name).toLowerCase())) return;
+    seen.add(key);
+    web.push({ label: labelForWebUrl(href, { fromPages }), url: href });
+  }
+
+  const pages = await api(`/repos/${repo.full_name}/pages`, { allow404: true });
+  if (pages && pages.html_url) addWeb(pages.html_url, { fromPages: true });
+  if (repo.homepage) addWeb(repo.homepage);
+
+  const links = [
+    ...web,
+    { label: 'github', url: githubUrl },
+  ];
+
+  return { links, primaryUrl: web[0]?.url || githubUrl };
+}
+
+/** Turn my commit subjects into a contribution-focused blurb (especially forks). */
+function descriptionFromMyCommits(messages, repo) {
+  if (!messages?.length) return null;
+
+  const skip = /^(merge\b|wip\b|tmp\b|chore:\s*update implementation|auto-claude:\s*subtask|qa:\s*sign off|co-authored-by:)/i;
+  const subjects = [];
+  for (const raw of messages) {
+    const first = raw.split('\n')[0].trim();
+    if (!first || skip.test(first)) continue;
+    // Drop empty whatthecommit-style noise
+    if (/^https?:\/\//i.test(first) || first.length < 8) continue;
+    let s = first
+      .replace(/^(feat|fix|docs|refactor|perf|test|chore|style)(\(.+?\))?:\s*/i, '')
+      .replace(/^auto-claude:\s*/i, '')
+      .trim();
+    if (s.length < 8) continue;
+    // de-dupe similar
+    if (subjects.some((x) => x.toLowerCase() === s.toLowerCase())) continue;
+    subjects.push(s);
+    if (subjects.length >= 4) break;
+  }
+  if (!subjects.length) return null;
+
+  const joined = subjects
+    .slice(0, 3)
+    .map((s, i) => (i === 0 ? s.charAt(0).toUpperCase() + s.slice(1) : s))
+    .join('; ');
+
+  if (repo.fork) {
+    const parent = repo.parent?.full_name || repo.name;
+    return clampDescription(`My work on this fork of ${parent}: ${joined}`);
+  }
+  return clampDescription(joined);
 }
 
 function categoriesFor(repo) {
@@ -254,14 +402,41 @@ async function fetchReadmeText(fullName) {
   }
 }
 
-async function resolveDescription(repo, overrides) {
+async function resolveDescription(repo, overrides, authored) {
+  // Forks: prioritize my commit subjects / docs over upstream About text.
+  // Hand overrides still win when present (contribution-focused blurbs).
   const override = overrides.get(repo.name);
+
+  if (repo.fork) {
+    if (override) return { description: clampDescription(override), source: 'override' };
+
+    const fromCommits = descriptionFromMyCommits(authored?.messages || [], repo);
+    if (fromCommits) return { description: fromCommits, source: 'commits' };
+
+    const readme = await fetchReadmeText(repo.full_name);
+    const fromReadme = descriptionFromReadme(readme, repo.name);
+    if (fromReadme) {
+      return {
+        description: clampDescription(`My work on this fork: ${fromReadme}`),
+        source: 'readme',
+      };
+    }
+
+    return {
+      description: `Public fork of ${repo.parent?.full_name || repo.name} with my commits`,
+      source: 'fallback',
+    };
+  }
+
   if (override) return { description: clampDescription(override), source: 'override' };
 
   const gh = (repo.description || '').trim();
   if (gh && !isWeakDescription(gh) && gh.length >= 12) {
     return { description: clampDescription(gh), source: 'github' };
   }
+
+  const fromCommits = descriptionFromMyCommits(authored?.messages || [], repo);
+  if (fromCommits) return { description: fromCommits, source: 'commits' };
 
   const readme = await fetchReadmeText(repo.full_name);
   const fromReadme = descriptionFromReadme(readme, repo.name);
@@ -272,15 +447,36 @@ async function resolveDescription(repo, overrides) {
   }
 
   const fallback = [
-    repo.fork ? 'Public fork I have committed to' : 'Public repository',
+    'Public repository',
     repo.language ? `· ${repo.language}` : null,
   ].filter(Boolean).join(' ');
   return { description: fallback, source: 'fallback' };
 }
 
 async function projectFromRepo(repo, overrides, { featured = false, featuredRank } = {}) {
-  const date = isoDay(repo.pushed_at) || isoDay(repo.updated_at) || isoDay(repo.created_at);
-  const { description, source } = await resolveDescription(repo, overrides);
+  // Need parent full_name for fork blurbs
+  let parent = repo.parent;
+  if (repo.fork && !parent?.full_name) {
+    try {
+      const detailed = await api(`/repos/${repo.full_name}`, { allow404: true });
+      if (detailed?.parent) parent = detailed.parent;
+      if (detailed) {
+        repo = { ...repo, ...detailed, parent: detailed.parent || parent };
+      }
+    } catch {
+      // keep list payload
+    }
+  }
+
+  const authored = await collectAuthoredCommits(repo, { maxMessages: 15 });
+  const { description, source } = await resolveDescription(repo, overrides, authored);
+  const { links, primaryUrl } = await resolveLinks(repo);
+
+  // Prefer latest *my* commit date for forks (feature branch work).
+  const date = isoDay(authored.latestDate)
+    || isoDay(repo.pushed_at)
+    || isoDay(repo.updated_at)
+    || isoDay(repo.created_at);
 
   const types = ['public'];
   const langType = languageType(repo.language);
@@ -292,10 +488,11 @@ async function projectFromRepo(repo, overrides, { featured = false, featuredRank
     name: repo.name,
     description,
     date,
-    url: repo.html_url,
+    url: primaryUrl,
     types,
     formats: [],
     categories: categoriesFor(repo),
+    links,
     stars: repo.stargazers_count || 0,
     fork: Boolean(repo.fork),
     language: repo.language || null,
@@ -304,17 +501,10 @@ async function projectFromRepo(repo, overrides, { featured = false, featuredRank
     descriptionSource: source,
   };
 
-  if (repo.homepage && /^https:\/\//.test(repo.homepage)) {
-    project.links = [
-      { label: 'GitHub', url: repo.html_url },
-      { label: 'site', url: repo.homepage },
-    ];
-  }
-
   if (featured) {
     project.featured = true;
     project.featuredRank = featuredRank;
-    project.eyebrow = repo.fork ? 'Fork I work in' : (repo.language || 'Public repo');
+    project.eyebrow = repo.fork ? 'Fork contribution' : (repo.language || 'Public repo');
   }
 
   return project;
@@ -513,8 +703,18 @@ async function main() {
   const originals = publicRepos.filter((r) => !r.fork);
   const forks = publicRepos.filter((r) => r.fork);
 
-  log(`checking authorship on ${forks.length} forks (concurrency=${CONCURRENCY})…`);
-  const forkFlags = await mapPool(forks, CONCURRENCY, async (repo) => {
+  // Don't deep-scan all 320 archive forks. Only forks that were pushed after
+  // creation (you actually pushed something) or already have a hand override.
+  const touchedForks = forks.filter((repo) => {
+    if (overrides.has(repo.name)) return true;
+    const pushed = Date.parse(repo.pushed_at || 0);
+    const created = Date.parse(repo.created_at || 0);
+    return Number.isFinite(pushed) && Number.isFinite(created) && pushed - created > 60_000;
+  });
+  log(`fork candidates (touched after fork / override): ${touchedForks.length} of ${forks.length}`);
+
+  log(`checking authorship on ${touchedForks.length} fork candidates (incl. non-default branches)…`);
+  const forkFlags = await mapPool(touchedForks, CONCURRENCY, async (repo) => {
     try {
       const ok = await userAuthoredCommit(repo);
       return ok ? repo : null;
@@ -526,11 +726,9 @@ async function main() {
   const authoredForks = forkFlags.filter(Boolean);
   log(`forks with my commits: ${authoredForks.length}`);
 
-  // Originals: still require at least one authored commit (empty / collaborator-only edge cases)
   log(`checking authorship on ${originals.length} original repos…`);
   const originalFlags = await mapPool(originals, CONCURRENCY, async (repo) => {
     try {
-      // size===0 often means empty; still probe for safety
       const ok = await userAuthoredCommit(repo);
       return ok ? repo : null;
     } catch (error) {
@@ -544,8 +742,8 @@ async function main() {
   const selected = [...authoredOriginals, ...authoredForks];
   if (!selected.length) die('no repositories with authored commits found');
 
-  log(`resolving descriptions for ${selected.length} repos…`);
-  let projects = await mapPool(selected, CONCURRENCY, (repo) => projectFromRepo(repo, overrides));
+  log(`resolving descriptions + docs/pages links for ${selected.length} repos…`);
+  let projects = await mapPool(selected, Math.min(CONCURRENCY, 6), (repo) => projectFromRepo(repo, overrides));
   // De-dupe by id (unlikely)
   const seen = new Set();
   projects = projects.filter((p) => {
@@ -562,7 +760,7 @@ async function main() {
       ...p,
       featured: true,
       featuredRank: rank,
-      eyebrow: p.fork ? 'Fork I work in' : (p.language || 'Public repo'),
+      eyebrow: p.fork ? 'Fork contribution' : (p.language || 'Public repo'),
     };
   });
 

@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.1';
+  const BUILD_VERSION = '20260730.2';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   document.documentElement.dataset.build = BUILD_VERSION;
 
@@ -199,12 +199,21 @@
         .filter((type) => type !== 'public')
         .map((type) => `<span class="type-tag">[${escapeHtml(type)}]</span>`);
 
+      // Prefer explicit links (docs/site before github). Fall back to primary url.
+      const links = Array.isArray(project.links) && project.links.length
+        ? project.links
+        : [{ label: 'open', url: project.url }];
+      const linkTags = links.map((link) => (
+        `<a href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)} ↗</a>`
+      ));
+
       return `
         <article class="project-row">
           <time datetime="${escapeHtml(project.date)}">${escapeHtml(project.date)}</time>
           <div class="project-row__main">
             <h3><a href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">${escapeHtml(project.name)} <span aria-hidden="true">↗</span></a></h3>
             <p>${escapeHtml(project.description)}</p>
+            <div class="project-row__links">${linkTags.join('')}</div>
           </div>
           <div class="project-row__tags">${[...categoryTags, ...formatTags, ...typeTags].join('')}</div>
         </article>`;

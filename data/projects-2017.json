@@ -13,6 +13,12 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/smartvest"
+        }
       ]
     },
     {
@@ -28,13 +34,19 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/refind"
+        }
       ]
     },
     {
       "id": "ios-2017",
       "name": "iOS-2017",
-      "description": "Fork of the HackIllinois 2017 official iOS app, with map and release fixes.",
-      "date": "2017-04-16",
+      "description": "My work on this HackIllinois iOS fork: indoor maps view and release cleanup.",
+      "date": "2017-02-22",
       "url": "https://github.com/kvnloo/iOS-2017",
       "types": [
         "public",
@@ -44,6 +56,12 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/iOS-2017"
+        }
       ]
     },
     {
@@ -59,6 +77,12 @@
       "formats": [],
       "categories": [
         "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/Flicks"
+        }
       ]
     }
   ]

@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "id": "openhands",
-      "name": "OpenHands",
-      "description": "Fork of OpenHands (All Hands AI) — open-source software-dev agent platform.",
-      "date": "2024-11-12",
-      "url": "https://github.com/kvnloo/OpenHands",
+      "id": "flowstate",
+      "name": "FlowState",
+      "description": "My work on this BCI fork: major documentation rebuild plus attention-based video playback speed control.",
+      "date": "2024-12-18",
+      "url": "https://kvnloo.github.io/FlowState/",
       "types": [
         "public",
         "py",
@@ -17,12 +17,38 @@
       ],
       "links": [
         {
-          "label": "GitHub",
-          "url": "https://github.com/kvnloo/OpenHands"
+          "label": "docs",
+          "url": "https://kvnloo.github.io/FlowState/"
         },
         {
+          "label": "github",
+          "url": "https://github.com/kvnloo/FlowState"
+        }
+      ]
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "description": "My commits on this OpenHands fork (experimentation / local patches on the agent platform).",
+      "date": "2024-11-12",
+      "url": "https://all-hands.dev/",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
           "label": "site",
-          "url": "https://all-hands.dev"
+          "url": "https://all-hands.dev/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/OpenHands"
         }
       ]
     }
