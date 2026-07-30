@@ -1,6 +1,21 @@
 {
   "projects": [
     {
+      "id": "boplog",
+      "name": "boplog",
+      "description": "build-in-public log",
+      "date": "2026-07-30",
+      "url": "https://github.com/kvnloo/boplog",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ]
+    },
+    {
       "id": "cod",
       "name": "cod",
       "description": "Public repository",

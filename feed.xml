@@ -5,8 +5,17 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-07-30T05:50:19Z</updated>
+  <updated>2026-07-30T06:35:36Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
+  <entry>
+    <title>boplog</title>
+    <id>https://github.com/kvnloo/boplog</id>
+    <link href="https://github.com/kvnloo/boplog"/>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>build-in-public log</summary>
+  </entry>
   <entry>
     <title>cod</title>
     <id>https://github.com/kvnloo/cod</id>
@@ -222,14 +231,5 @@
     <updated>2025-12-01T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Public repository</summary>
-  </entry>
-  <entry>
-    <title>playground</title>
-    <id>https://github.com/kvnloo/playground</id>
-    <link href="https://github.com/kvnloo/playground"/>
-    <published>2025-11-27T00:00:00Z</published>
-    <updated>2025-11-27T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Public repository · ★1</summary>
   </entry>
 </feed>

@@ -6,7 +6,7 @@ Canonical site: https://kvnloo.github.io/boplog/
 Author: Kevin Rajan
 GitHub: https://github.com/kvnloo
 Language: English
-Public project count: 43
+Public project count: 44
 Coverage: 2017–2026
 Last data refresh: 2026-07-30
 
