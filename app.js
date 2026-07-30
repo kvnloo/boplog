@@ -92,11 +92,19 @@
     if (!raw) return '';
     // Keep leading . / _ (e.g. .files, _pm)
     const lead = raw.match(/^[._]+/)?.[0] || '';
-    const body = lead ? raw.slice(lead.length) : raw;
-    // Only split camel/Pascal boundaries — leave digits glued (zer0, iOS-2017).
-    const split = body
+    let body = lead ? raw.slice(lead.length) : raw;
+    // iOS reads fine as "ios" in all-lowercase — don't split to i·os.
+    const protectedTokens = [];
+    body = body.replace(/iOS/gi, (match) => {
+      const key = `\0${protectedTokens.length}\0`;
+      protectedTokens.push(match);
+      return key;
+    });
+    // Only split camel/Pascal boundaries — leave digits glued (zer0, …).
+    let split = body
       .replace(/([a-z])([A-Z])/g, '$1·$2')
       .replace(/([A-Z]+)([A-Z][a-z])/g, '$1·$2');
+    split = split.replace(/\0(\d+)\0/g, (_, i) => protectedTokens[Number(i)]);
     return lead + split;
   }
 
