@@ -81,6 +81,30 @@
   const labelForCategory = (category) => categoryLabels[category] || category;
   const sortUnique = (values) => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
 
+  /**
+   * All-lowercase site still needs readable multi-word identifiers.
+   * Split camelCase / PascalCase on boundaries with a middle dot:
+   *   AudioEngine → Audio·Engine  (CSS lowercases to audio·engine)
+   * Existing hyphens stay: tmux-agent-fleet → tmux-agent-fleet
+   */
+  function softLabel(value = '') {
+    const raw = String(value);
+    if (!raw) return '';
+    // Keep leading . / _ (e.g. .files, _pm)
+    const lead = raw.match(/^[._]+/)?.[0] || '';
+    const body = lead ? raw.slice(lead.length) : raw;
+    const split = body
+      .replace(/([a-z0-9])([A-Z])/g, '$1·$2')
+      .replace(/([A-Z]+)([A-Z][a-z])/g, '$1·$2')
+      .replace(/([A-Za-z])([0-9])/g, '$1·$2')
+      .replace(/([0-9])([A-Za-z])/g, '$1·$2');
+    return lead + split;
+  }
+
+  function projectLabel(project) {
+    return softLabel(project.displayName || project.name || '');
+  }
+
   function getTheme() {
     return document.documentElement.dataset.theme === 'night' ? 'night' : 'day';
   }
@@ -126,17 +150,17 @@
     if (portfolio) {
       parts.push('<span class="sep">/</span>');
       if (interactive) {
-        parts.push(`<button type="button" data-filter-kind="portfolio" data-filter-value="${escapeHtml(project.portfolio || '')}">${escapeHtml(portfolio)}</button>`);
+        parts.push(`<button type="button" data-filter-kind="portfolio" data-filter-value="${escapeHtml(project.portfolio || '')}">${escapeHtml(softLabel(portfolio))}</button>`);
       } else {
-        parts.push(`<span>${escapeHtml(portfolio)}</span>`);
+        parts.push(`<span>${escapeHtml(softLabel(portfolio))}</span>`);
       }
     }
     if (product) {
       parts.push('<span class="sep">/</span>');
       if (interactive) {
-        parts.push(`<button type="button" data-filter-kind="product" data-filter-value="${escapeHtml(project.product || '')}">${escapeHtml(product)}</button>`);
+        parts.push(`<button type="button" data-filter-kind="product" data-filter-value="${escapeHtml(project.product || '')}">${escapeHtml(softLabel(product))}</button>`);
       } else {
-        parts.push(`<span>${escapeHtml(product)}</span>`);
+        parts.push(`<span>${escapeHtml(softLabel(product))}</span>`);
       }
     }
     return `<div class="project-row__path">${parts.join('')}</div>`;
@@ -170,7 +194,7 @@
 
     elements.featuredList.dataset.count = String(featured.length);
     elements.featuredList.innerHTML = featured.map((project, index) => {
-      const name = project.displayName || project.name;
+      const name = projectLabel(project);
       const links = Array.isArray(project.links) && project.links.length
         ? project.links
         : [{ label: 'open', url: project.url }];
@@ -354,7 +378,7 @@
         <article class="project-row">
           <time datetime="${escapeHtml(project.date)}">${escapeHtml(project.date)}</time>
           <div class="project-row__main">
-            <h3><a href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">${escapeHtml(project.name)} <span aria-hidden="true">↗</span></a></h3>
+            <h3><a href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">${escapeHtml(projectLabel(project))} <span aria-hidden="true">↗</span></a></h3>
             <p>${escapeHtml(project.description)}</p>
             ${renderHierarchyPath(project)}
             <div class="project-row__links">${linkTags.join('')}</div>

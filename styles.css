@@ -74,6 +74,13 @@ body {
   /* Entire UI is intentionally all-lowercase. */
   text-transform: lowercase;
 }
+/* Middle-dot word breaks in softLabel() (audio·engine) stay subtle. */
+.project-row h3,
+.featured-item h3,
+.project-row__path,
+.featured-item__path {
+  font-variant-ligatures: none;
+}
 /* Keep monospace inputs readable when typing URLs/ids without forced case mid-edit. */
 input, textarea {
   text-transform: none;
