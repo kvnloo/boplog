@@ -1,70 +1,53 @@
-# Yohei Nakajima — Build Log
+# Kevin Rajan — Build Log
 
-> A public, chronological archive of Yohei Nakajima's AI agents, open-source software, developer tools, venture experiments, economics research, art, and other builds.
+> A public, chronological archive of repositories Kevin Rajan (`kvnloo`) has committed to on GitHub.
 
-Canonical site: https://yohei.me/
-Author: Yohei Nakajima
+Canonical site: https://kvnloo.github.io/boplog/
+Author: Kevin Rajan
+GitHub: https://github.com/kvnloo
 Language: English
-Public project count: 121
-Coverage: 2020–2026
-Last data refresh: 2026-07-22
+Public project count: 43
+Coverage: 2017–2026
+Last data refresh: 2026-07-30
 
 ## Start here
 
-- [Build log](https://yohei.me/): Human-readable site with featured work and the chronological archive.
-- [Developer access](https://yohei.me/developers/): Free static API, CLI, and local MCP instructions.
-- [Agent usage guide](https://yohei.me/agents.md): When to use this archive and how to interpret its records.
-- [OpenAPI](https://yohei.me/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
-- [Project data manifest](https://yohei.me/data/manifest.json): Lists all year-partitioned public JSON files.
-- [Atom feed](https://yohei.me/feed.xml): Latest public projects.
-- [Sitemap](https://yohei.me/sitemap.xml): Canonical discovery URLs.
+- [Build log](https://kvnloo.github.io/boplog/): Human-readable site with featured work and the chronological archive.
+- [Developer access](https://kvnloo.github.io/boplog/developers/): Free static API, CLI, and local MCP instructions.
+- [Agent usage guide](https://kvnloo.github.io/boplog/agents.md): When to use this archive and how to interpret its records.
+- [OpenAPI](https://kvnloo.github.io/boplog/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
+- [Project data manifest](https://kvnloo.github.io/boplog/data/manifest.json): Lists all year-partitioned public JSON files.
+- [Atom feed](https://kvnloo.github.io/boplog/feed.xml): Latest public projects.
+- [Sitemap](https://kvnloo.github.io/boplog/sitemap.xml): Canonical discovery URLs.
 
 ## When agents should use this site
 
-Use yohei.me when a user asks about Yohei Nakajima's public builds, research, talks, open-source projects, project dates, topics, or canonical links. Prefer exact fields from the public JSON records. Do not infer private investments, unpublished prototypes, or personal data.
+Use this site when a user asks about Kevin Rajan's / kvnloo's public GitHub builds and repositories they have actually committed to. Prefer exact fields from the public JSON records. Do not infer private work, stars-only forks, or unpublished projects.
 
 ## Free tool access
 
-- CLI: `yohei latest 5`, `yohei search activegraph`, `yohei topic econ`, or `yohei --json get activegraph`.
-- CLI source: https://yohei.me/yohei
-- Local stdio MCP server: https://yohei.me/mcp/yohei_mcp.py
-- MCP discovery: https://yohei.me/.well-known/mcp
-- Agent capability discovery: https://yohei.me/.well-known/agent-skills
+- CLI: `boplog latest 5`, `boplog search <query>`, `boplog topic dev`, or `boplog --json get <id>`.
+- CLI source: https://kvnloo.github.io/boplog/boplog
+- Local stdio MCP server: https://kvnloo.github.io/boplog/mcp/boplog_mcp.py
+- MCP discovery: https://kvnloo.github.io/boplog/.well-known/mcp
+- Agent capability discovery: https://kvnloo.github.io/boplog/.well-known/agent-skills
 
 The CLI and MCP server are read-only, dependency-free Python programs. They require no account or API key and query only the public static archive.
 
 ## Featured work
 
-- [ActiveGraph](https://activegraph.ai): Event-sourced reactive graph runtime for auditable, forkable, long-running agents.
-  - [Documentation](https://docs.activegraph.ai)
-  - [GitHub](https://github.com/yoheinakajima/activegraph)
-  - [Launch post](https://x.com/yoheinakajima/status/2057099245430222926)
-- [The Shared Discovery Paradox paper](https://arxiv.org/abs/2607.18045): A mathematical explanation of how information sharing without action coordination can worsen group outcomes.
-  - [GitHub](https://github.com/yoheinakajima/shared-discovery-paradox)
-  - [Launch post](https://x.com/yoheinakajima/status/2079567881889796456?s=20)
+- [.files](https://github.com/kvnloo/.files): ...files...
+- [evolve](https://github.com/kvnloo/evolve): Public repository · Shell · ★7
+- [ace](https://github.com/kvnloo/ace): Ace Sports is a demo website showcasing the digital twin of an autonomous, multi-floor racket sports facility.
 
-## Current media
+## Year files
 
-- [ActiveGraph at AI Engineer World's Fair](https://www.youtube.com/watch?v=khVX_BUnEwU): Now live on YouTube.
+- [2026 projects](https://kvnloo.github.io/boplog/data/projects-2026.json)
+- [2025 projects](https://kvnloo.github.io/boplog/data/projects-2025.json)
+- [2024 projects](https://kvnloo.github.io/boplog/data/projects-2024.json)
+- [2017 projects](https://kvnloo.github.io/boplog/data/projects-2017.json)
 
-## Public project data
+## Links
 
-Each JSON record contains an ID, name, short description, date, source URL, public type labels, formats, and categories. Featured records may also contain ranked resource links.
-
-- [2026 projects](https://yohei.me/data/projects-2026.json)
-- [2025 projects](https://yohei.me/data/projects-2025.json)
-- [2024 projects](https://yohei.me/data/projects-2024.json)
-- [2023 projects](https://yohei.me/data/projects-2023.json)
-- [2022 projects](https://yohei.me/data/projects-2022.json)
-- [2021 projects](https://yohei.me/data/projects-2021.json)
-- [2020 projects](https://yohei.me/data/projects-2020.json)
-
-## Identity and related links
-
-- [GitHub profile](https://github.com/yoheinakajima)
-- [X profile](https://x.com/yoheinakajima)
-- [Untapped Capital](https://untapped.vc)
-
-## Data policy
-
-Only Airtable records explicitly tagged public are included. Private records are excluded from the repository and browser payload. The checked-in JSON files are the canonical data source for this static site.
+- [GitHub profile](https://github.com/kvnloo)
+- [This repository](https://github.com/kvnloo/boplog)

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Dependency-free stdio MCP server for the public yohei.me build archive."""
+"""Dependency-free stdio MCP server for the public kvnloo.github.io/boplog build archive."""
 
 from __future__ import annotations
 
@@ -9,12 +9,12 @@ import urllib.error
 import urllib.request
 from typing import Any
 
-BASE = "https://yohei.me"
+BASE = "https://kvnloo.github.io/boplog"
 PROTOCOL_VERSION = "2025-11-25"
 
 
 def fetch_text(path: str) -> str:
-    request = urllib.request.Request(f"{BASE}/{path.lstrip('/')}", headers={"User-Agent": "yohei-mcp/1.0"})
+    request = urllib.request.Request(f"{BASE}/{path.lstrip('/')}", headers={"User-Agent": "boplog-mcp/1.0"})
     with urllib.request.urlopen(request, timeout=15) as response:
         return response.read().decode("utf-8")
 
@@ -52,7 +52,7 @@ def tools() -> list[dict[str, Any]]:
         {
             "name": "latest_builds",
             "title": "Latest public builds",
-            "description": "Return Yohei Nakajima's newest explicitly public builds.",
+            "description": "Return Kevin Rajan's newest explicitly public builds.",
             "inputSchema": {
                 "type": "object",
                 "properties": {"limit": {"type": "integer", "minimum": 1, "maximum": 100, "default": 10}},
@@ -69,7 +69,7 @@ def tools() -> list[dict[str, Any]]:
                 "properties": {
                     "query": {"type": "string", "default": ""},
                     "topic": {"type": "string"},
-                    "year": {"type": "integer", "minimum": 2020, "maximum": 2026},
+                    "year": {"type": "integer", "minimum": 2020, "maximum": 2100},
                     "date": {"type": "string", "format": "date"},
                     "limit": {"type": "integer", "minimum": 1, "maximum": 100, "default": 20},
                 },
@@ -149,7 +149,7 @@ def handle(message: dict[str, Any]) -> None:
         respond(request_id, {
             "protocolVersion": PROTOCOL_VERSION,
             "capabilities": {"tools": {}, "resources": {}},
-            "serverInfo": {"name": "yohei.me-public-builds", "version": "1.0.0", "description": "Read-only access to Yohei Nakajima's public build archive."},
+            "serverInfo": {"name": "kvnloo.github.io/boplog-public-builds", "version": "1.0.0", "description": "Read-only access to Kevin Rajan's public build archive."},
         })
         return
     if method == "ping":
@@ -166,17 +166,17 @@ def handle(message: dict[str, Any]) -> None:
         return
     if method == "resources/list":
         respond(request_id, {"resources": [
-            {"uri": "https://yohei.me/data/manifest.json", "name": "Public project manifest", "mimeType": "application/json"},
-            {"uri": "https://yohei.me/llms.txt", "name": "AI-readable site guide", "mimeType": "text/plain"},
-            {"uri": "https://yohei.me/agents.md", "name": "Agent usage guide", "mimeType": "text/markdown"},
+            {"uri": "https://kvnloo.github.io/boplog/data/manifest.json", "name": "Public project manifest", "mimeType": "application/json"},
+            {"uri": "https://kvnloo.github.io/boplog/llms.txt", "name": "AI-readable site guide", "mimeType": "text/plain"},
+            {"uri": "https://kvnloo.github.io/boplog/agents.md", "name": "Agent usage guide", "mimeType": "text/markdown"},
         ]})
         return
     if method == "resources/read":
         uri = str(params.get("uri", ""))
         allowed = {
-            "https://yohei.me/data/manifest.json": "data/manifest.json",
-            "https://yohei.me/llms.txt": "llms.txt",
-            "https://yohei.me/agents.md": "agents.md",
+            "https://kvnloo.github.io/boplog/data/manifest.json": "data/manifest.json",
+            "https://kvnloo.github.io/boplog/llms.txt": "llms.txt",
+            "https://kvnloo.github.io/boplog/agents.md": "agents.md",
         }
         if uri not in allowed:
             respond(request_id, error={"code": -32602, "message": "Unknown or disallowed resource URI"})

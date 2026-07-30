@@ -1,0 +1,480 @@
+#!/usr/bin/env node
+/**
+ * Sync public build log data from GitHub.
+ *
+ * Includes repositories the configured user has authored commits in:
+ * - all non-fork public repos they own
+ * - forks only when they authored at least one commit
+ *
+ * Auth: GITHUB_TOKEN / GH_TOKEN (Actions provides this automatically).
+ * No personal API key required for public reads + committing back from Actions.
+ */
+import { mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
+import path from 'node:path';
+import process from 'node:process';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const ROOT = path.resolve(__dirname, '..');
+const DATA_DIR = path.join(ROOT, 'data');
+
+const USER = process.env.GITHUB_USER || process.env.GITHUB_ACTOR || 'kvnloo';
+const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
+const SITE_URL = (process.env.SITE_URL || 'https://kvnloo.github.io/boplog').replace(/\/$/, '');
+const API = 'https://api.github.com';
+const CONCURRENCY = Number(process.env.SYNC_CONCURRENCY || 8);
+const FEATURED_LIMIT = 3;
+
+const LANGUAGE_CATEGORY = {
+  Python: 'dev',
+  JavaScript: 'dev',
+  TypeScript: 'dev',
+  Go: 'dev',
+  Rust: 'dev',
+  Shell: 'dev',
+  HTML: 'dev',
+  CSS: 'dev',
+  Java: 'dev',
+  Ruby: 'dev',
+  Swift: 'dev',
+  Kotlin: 'dev',
+  C: 'dev',
+  'C++': 'dev',
+  'C#': 'dev',
+  Jupyter: 'ai',
+  Dockerfile: 'dev',
+};
+
+function log(...args) {
+  console.log('[sync-github]', ...args);
+}
+
+function die(message, code = 1) {
+  console.error('[sync-github]', message);
+  process.exit(code);
+}
+
+function isoDay(value) {
+  if (!value) return null;
+  const d = new Date(value);
+  if (Number.isNaN(d.getTime())) return null;
+  return d.toISOString().slice(0, 10);
+}
+
+function slugify(name) {
+  return String(name)
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    || 'repo';
+}
+
+function languageType(language) {
+  if (!language) return null;
+  const map = {
+    Python: 'py',
+    JavaScript: 'js',
+    TypeScript: 'ts',
+    Go: 'go',
+    Rust: 'rs',
+    Shell: 'sh',
+    HTML: 'html',
+    CSS: 'css',
+    Ruby: 'rb',
+    Java: 'java',
+  };
+  return map[language] || language.toLowerCase().slice(0, 8);
+}
+
+async function api(pathname, { allow404 = false } = {}) {
+  const url = pathname.startsWith('http') ? pathname : `${API}${pathname}`;
+  const headers = {
+    Accept: 'application/vnd.github+json',
+    'X-GitHub-Api-Version': '2022-11-28',
+    'User-Agent': 'boplog-sync',
+  };
+  if (TOKEN) headers.Authorization = `Bearer ${TOKEN}`;
+
+  const response = await fetch(url, { headers });
+  if (allow404 && response.status === 404) return null;
+  if (response.status === 409) return []; // empty repo
+  if (!response.ok) {
+    const body = await response.text();
+    throw new Error(`${response.status} ${pathname}: ${body.slice(0, 240)}`);
+  }
+  if (response.status === 204) return null;
+  return response.json();
+}
+
+async function apiPaginate(pathname) {
+  const items = [];
+  let url = `${API}${pathname}${pathname.includes('?') ? '&' : '?'}per_page=100`;
+  while (url) {
+    const headers = {
+      Accept: 'application/vnd.github+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'User-Agent': 'boplog-sync',
+    };
+    if (TOKEN) headers.Authorization = `Bearer ${TOKEN}`;
+    const response = await fetch(url, { headers });
+    if (!response.ok) {
+      const body = await response.text();
+      throw new Error(`${response.status} ${url}: ${body.slice(0, 240)}`);
+    }
+    const page = await response.json();
+    if (Array.isArray(page)) items.push(...page);
+    else if (Array.isArray(page.items)) items.push(...page.items);
+    else break;
+
+    const link = response.headers.get('link') || '';
+    const next = [...link.matchAll(/<([^>]+)>;\s*rel="next"/g)].map((m) => m[1])[0];
+    url = next || null;
+  }
+  return items;
+}
+
+async function mapPool(items, limit, worker) {
+  const results = new Array(items.length);
+  let index = 0;
+  async function run() {
+    while (index < items.length) {
+      const i = index;
+      index += 1;
+      results[i] = await worker(items[i], i);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, () => run()));
+  return results;
+}
+
+async function userAuthoredCommit(repo) {
+  // One cheap probe: any commit authored by USER on default branch history.
+  const commits = await api(
+    `/repos/${repo.full_name}/commits?author=${encodeURIComponent(USER)}&per_page=1`,
+    { allow404: true },
+  );
+  if (commits === null) return false;
+  if (!Array.isArray(commits)) return false;
+  return commits.length > 0;
+}
+
+function categoriesFor(repo) {
+  const cats = new Set();
+  const topics = Array.isArray(repo.topics) ? repo.topics.map((t) => t.toLowerCase()) : [];
+  for (const topic of topics) {
+    if (['ai', 'ml', 'llm', 'agent', 'agents'].includes(topic)) cats.add('ai');
+    else if (['web3', 'crypto', 'blockchain'].includes(topic)) cats.add('web3');
+    else if (['art', 'design', 'creative'].includes(topic)) cats.add('art');
+    else if (['vc', 'startup', 'venture'].includes(topic)) cats.add('vc');
+  }
+  if (LANGUAGE_CATEGORY[repo.language]) cats.add(LANGUAGE_CATEGORY[repo.language]);
+  if (cats.size === 0) cats.add('dev');
+  return [...cats];
+}
+
+function projectFromRepo(repo, { featured = false, featuredRank } = {}) {
+  const date = isoDay(repo.pushed_at) || isoDay(repo.updated_at) || isoDay(repo.created_at);
+  const description = (repo.description && repo.description.trim())
+    || [
+      repo.fork ? 'Fork with commits by me' : 'Public repository',
+      repo.language ? `· ${repo.language}` : null,
+      repo.stargazers_count ? `· ★${repo.stargazers_count}` : null,
+    ].filter(Boolean).join(' ');
+
+  const types = ['public'];
+  const langType = languageType(repo.language);
+  if (langType) types.push(langType);
+  if (repo.fork) types.push('fork');
+
+  const project = {
+    id: slugify(repo.name),
+    name: repo.name,
+    description,
+    date,
+    url: repo.html_url,
+    types,
+    formats: [],
+    categories: categoriesFor(repo),
+    stars: repo.stargazers_count || 0,
+    fork: Boolean(repo.fork),
+    language: repo.language || null,
+    homepage: repo.homepage || null,
+    topics: Array.isArray(repo.topics) ? repo.topics : [],
+  };
+
+  if (repo.homepage && /^https:\/\//.test(repo.homepage)) {
+    project.links = [
+      { label: 'GitHub', url: repo.html_url },
+      { label: 'site', url: repo.homepage },
+    ];
+  }
+
+  if (featured) {
+    project.featured = true;
+    project.featuredRank = featuredRank;
+    project.eyebrow = repo.fork ? 'Fork I work in' : (repo.language || 'Public repo');
+  }
+
+  return project;
+}
+
+function pickFeatured(projects) {
+  const ranked = [...projects].sort((a, b) => {
+    if ((b.stars || 0) !== (a.stars || 0)) return (b.stars || 0) - (a.stars || 0);
+    return b.date.localeCompare(a.date);
+  });
+  return ranked.slice(0, FEATURED_LIMIT).map((p) => p.id);
+}
+
+function stripInternalFields(project) {
+  const {
+    stars, fork, language, homepage, topics, ...rest
+  } = project;
+  return rest;
+}
+
+async function writeYearFiles(projects) {
+  const byYear = new Map();
+  for (const project of projects) {
+    const year = project.date.slice(0, 4);
+    if (!byYear.has(year)) byYear.set(year, []);
+    byYear.get(year).push(project);
+  }
+
+  const existing = await readdir(DATA_DIR).catch(() => []);
+  for (const file of existing) {
+    if (/^projects-\d{4}\.json$/.test(file)) {
+      await rm(path.join(DATA_DIR, file));
+    }
+  }
+
+  const years = [...byYear.keys()].sort((a, b) => b.localeCompare(a));
+  const files = [];
+  for (const year of years) {
+    const list = byYear.get(year).sort((a, b) => b.date.localeCompare(a.date) || a.name.localeCompare(b.name));
+    const filename = `projects-${year}.json`;
+    files.push(filename);
+    await writeFile(
+      path.join(DATA_DIR, filename),
+      `${JSON.stringify({ projects: list.map(stripInternalFields) }, null, 2)}\n`,
+      'utf8',
+    );
+  }
+
+  const generatedAt = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+  const manifest = {
+    generatedAt,
+    source: `GitHub public repos for ${USER} (authored commits only; forks without commits excluded)`,
+    featuredLimit: FEATURED_LIMIT,
+    user: USER,
+    files,
+  };
+  await writeFile(path.join(DATA_DIR, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
+  return { manifest, years, files };
+}
+
+function escapeXml(value = '') {
+  return String(value)
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&apos;');
+}
+
+async function writeFeed(projects, generatedAt) {
+  const latest = [...projects].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 25);
+  const entries = latest.map((p) => {
+    const cats = (p.categories || []).map((c) => `<category term="${escapeXml(c)}"/>`).join('');
+    return `  <entry>
+    <title>${escapeXml(p.name)}</title>
+    <id>${escapeXml(p.url)}</id>
+    <link href="${escapeXml(p.url)}"/>
+    <published>${p.date}T00:00:00Z</published>
+    <updated>${p.date}T00:00:00Z</updated>
+    ${cats}
+    <summary>${escapeXml(p.description)}</summary>
+  </entry>`;
+  }).join('\n');
+
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kevin Rajan — Build Log</title>
+  <subtitle>Public repositories I have committed to.</subtitle>
+  <id>${escapeXml(SITE_URL)}/</id>
+  <link href="${escapeXml(SITE_URL)}/" rel="alternate"/>
+  <link href="${escapeXml(SITE_URL)}/feed.xml" rel="self" type="application/atom+xml"/>
+  <updated>${generatedAt}</updated>
+  <author><name>Kevin Rajan</name><uri>https://github.com/${escapeXml(USER)}</uri></author>
+${entries}
+</feed>
+`;
+  await writeFile(path.join(ROOT, 'feed.xml'), xml, 'utf8');
+}
+
+async function writeSitemap(generatedAt) {
+  const day = generatedAt.slice(0, 10);
+  const urls = [
+    `${SITE_URL}/`,
+    `${SITE_URL}/developers/`,
+    `${SITE_URL}/agents.md`,
+    `${SITE_URL}/llms.txt`,
+    `${SITE_URL}/openapi.json`,
+    `${SITE_URL}/feed.xml`,
+    `${SITE_URL}/data/manifest.json`,
+  ];
+  const body = urls.map((loc) => `  <url><loc>${escapeXml(loc)}</loc><lastmod>${day}</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>`).join('\n');
+  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${body}
+</urlset>
+`;
+  await writeFile(path.join(ROOT, 'sitemap.xml'), xml, 'utf8');
+}
+
+async function writeLlms(projects, generatedAt) {
+  const featured = projects.filter((p) => p.featured).sort((a, b) => (a.featuredRank || 99) - (b.featuredRank || 99));
+  const years = [...new Set(projects.map((p) => p.date.slice(0, 4)))].sort((a, b) => b.localeCompare(a));
+  const featuredBlock = featured.map((p) => `- [${p.name}](${p.url}): ${p.description}`).join('\n');
+  const yearLinks = years.map((y) => `- [${y} projects](${SITE_URL}/data/projects-${y}.json)`).join('\n');
+
+  const text = `# Kevin Rajan — Build Log
+
+> A public, chronological archive of repositories Kevin Rajan (\`${USER}\`) has committed to on GitHub.
+
+Canonical site: ${SITE_URL}/
+Author: Kevin Rajan
+GitHub: https://github.com/${USER}
+Language: English
+Public project count: ${projects.length}
+Coverage: ${years.at(-1) || 'n/a'}–${years[0] || 'n/a'}
+Last data refresh: ${generatedAt.slice(0, 10)}
+
+## Start here
+
+- [Build log](${SITE_URL}/): Human-readable site with featured work and the chronological archive.
+- [Developer access](${SITE_URL}/developers/): Free static API, CLI, and local MCP instructions.
+- [Agent usage guide](${SITE_URL}/agents.md): When to use this archive and how to interpret its records.
+- [OpenAPI](${SITE_URL}/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
+- [Project data manifest](${SITE_URL}/data/manifest.json): Lists all year-partitioned public JSON files.
+- [Atom feed](${SITE_URL}/feed.xml): Latest public projects.
+- [Sitemap](${SITE_URL}/sitemap.xml): Canonical discovery URLs.
+
+## When agents should use this site
+
+Use this site when a user asks about Kevin Rajan's / ${USER}'s public GitHub builds and repositories they have actually committed to. Prefer exact fields from the public JSON records. Do not infer private work, stars-only forks, or unpublished projects.
+
+## Free tool access
+
+- CLI: \`boplog latest 5\`, \`boplog search <query>\`, \`boplog topic dev\`, or \`boplog --json get <id>\`.
+- CLI source: ${SITE_URL}/boplog
+- Local stdio MCP server: ${SITE_URL}/mcp/boplog_mcp.py
+- MCP discovery: ${SITE_URL}/.well-known/mcp
+- Agent capability discovery: ${SITE_URL}/.well-known/agent-skills
+
+The CLI and MCP server are read-only, dependency-free Python programs. They require no account or API key and query only the public static archive.
+
+## Featured work
+
+${featuredBlock || '- (none yet)'}
+
+## Year files
+
+${yearLinks}
+
+## Links
+
+- [GitHub profile](https://github.com/${USER})
+- [This repository](https://github.com/${USER}/boplog)
+`;
+  await writeFile(path.join(ROOT, 'llms.txt'), text, 'utf8');
+}
+
+async function main() {
+  if (!TOKEN) {
+    log('warning: no GITHUB_TOKEN/GH_TOKEN — unauthenticated (60 req/hr). Prefer Actions token.');
+  } else {
+    log('using authenticated GitHub API token');
+  }
+  log(`user=${USER} site=${SITE_URL}`);
+
+  await mkdir(DATA_DIR, { recursive: true });
+
+  log('listing public repos…');
+  // type=owner = repos the user owns (includes forks they own)
+  const repos = await apiPaginate(`/users/${encodeURIComponent(USER)}/repos?type=owner&sort=pushed&direction=desc`);
+  const publicRepos = repos.filter((r) => !r.private);
+  log(`public owned repos: ${publicRepos.length} (${publicRepos.filter((r) => r.fork).length} forks)`);
+
+  const originals = publicRepos.filter((r) => !r.fork);
+  const forks = publicRepos.filter((r) => r.fork);
+
+  log(`checking authorship on ${forks.length} forks (concurrency=${CONCURRENCY})…`);
+  const forkFlags = await mapPool(forks, CONCURRENCY, async (repo) => {
+    try {
+      const ok = await userAuthoredCommit(repo);
+      return ok ? repo : null;
+    } catch (error) {
+      log(`skip ${repo.full_name}: ${error.message}`);
+      return null;
+    }
+  });
+  const authoredForks = forkFlags.filter(Boolean);
+  log(`forks with my commits: ${authoredForks.length}`);
+
+  // Originals: still require at least one authored commit (empty / collaborator-only edge cases)
+  log(`checking authorship on ${originals.length} original repos…`);
+  const originalFlags = await mapPool(originals, CONCURRENCY, async (repo) => {
+    try {
+      // size===0 often means empty; still probe for safety
+      const ok = await userAuthoredCommit(repo);
+      return ok ? repo : null;
+    } catch (error) {
+      log(`skip ${repo.full_name}: ${error.message}`);
+      return null;
+    }
+  });
+  const authoredOriginals = originalFlags.filter(Boolean);
+  log(`originals with my commits: ${authoredOriginals.length}`);
+
+  const selected = [...authoredOriginals, ...authoredForks];
+  if (!selected.length) die('no repositories with authored commits found');
+
+  let projects = selected.map((repo) => projectFromRepo(repo));
+  // De-dupe by id (unlikely)
+  const seen = new Set();
+  projects = projects.filter((p) => {
+    if (seen.has(p.id)) return false;
+    seen.add(p.id);
+    return true;
+  });
+
+  const featuredIds = new Set(pickFeatured(projects));
+  projects = projects.map((p) => {
+    if (!featuredIds.has(p.id)) return p;
+    const rank = [...featuredIds].indexOf(p.id) + 1;
+    return {
+      ...p,
+      featured: true,
+      featuredRank: rank,
+      eyebrow: p.fork ? 'Fork I work in' : (p.language || 'Public repo'),
+    };
+  });
+
+  projects.sort((a, b) => b.date.localeCompare(a.date) || a.name.localeCompare(b.name));
+
+  const { manifest } = await writeYearFiles(projects);
+  await writeFeed(projects, manifest.generatedAt);
+  await writeSitemap(manifest.generatedAt);
+  await writeLlms(projects, manifest.generatedAt);
+
+  log(`wrote ${projects.length} projects across ${manifest.files.length} year files`);
+  log(`featured: ${projects.filter((p) => p.featured).map((p) => p.name).join(', ')}`);
+  log(`generatedAt=${manifest.generatedAt}`);
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

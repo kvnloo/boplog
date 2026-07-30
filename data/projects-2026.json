@@ -1,143 +1,330 @@
 {
   "projects": [
     {
-      "id": "the-shared-discovery-paradox",
-      "name": "The Shared Discovery Paradox",
-      "description": "A mathematical explanation of how information sharing without action coordination can worsen group outcomes.",
-      "date": "2026-07-21",
-      "url": "https://x.com/yoheinakajima/status/2079567881889796456?s=20",
-      "types": ["public"],
+      "id": "cod",
+      "name": "cod",
+      "description": "Public repository",
+      "date": "2026-07-29",
+      "url": "https://github.com/kvnloo/cod",
+      "types": [
+        "public"
+      ],
       "formats": [],
-      "categories": ["econ"],
-      "eyebrow": "Economics research",
-      "featured": true,
-      "featuredRank": 2,
-      "accent": "amber",
-      "links": [
-        {"label": "Read the paper", "url": "https://arxiv.org/abs/2607.18045"},
-        {"label": "GitHub", "url": "https://github.com/yoheinakajima/shared-discovery-paradox"},
-        {"label": "Launch post", "url": "https://x.com/yoheinakajima/status/2079567881889796456?s=20"}
+      "categories": [
+        "dev"
       ]
     },
     {
-      "id": "regimes",
-      "name": "Regimes",
-      "description": "An auditable, held-out-gated self-improvement loop demonstrated on LongMemEval.",
-      "date": "2026-06-10",
-      "url": "https://x.com/yoheinakajima/status/2064830891143381076",
-      "types": ["public"],
+      "id": "files",
+      "name": ".files",
+      "description": "...files...",
+      "date": "2026-07-28",
+      "url": "https://github.com/kvnloo/.files",
+      "types": [
+        "public",
+        "sh"
+      ],
       "formats": [],
-      "categories": ["ai", "dev"]
-    },
-    {
-      "id": "ag-coder",
-      "name": "AG Coder",
-      "description": "An open-source reference coding agent built on ActiveGraph.",
-      "date": "2026-06-08",
-      "url": "https://x.com/yoheinakajima/status/2064026650988495279?s=20",
-      "types": ["public", "py"],
-      "formats": [],
-      "categories": ["ai", "dev"]
-    },
-    {
-      "id": "learn-activegraph",
-      "name": "Learn ActiveGraph",
-      "description": "An interactive site for learning ActiveGraph concepts through hands-on examples.",
-      "date": "2026-06-08",
-      "url": "https://x.com/yoheinakajima/status/2064026650988495279?s=20",
-      "types": ["public"],
-      "formats": [],
-      "categories": ["ai", "dev"]
-    },
-    {
-      "id": "activegraph-longmemeval-experiments",
-      "name": "ActiveGraph LongMemEval Experiments",
-      "description": "Experiments comparing deterministic, semantic, and hybrid architectures for auditable agent memory.",
-      "date": "2026-06-01",
-      "url": "https://x.com/yoheinakajima/status/2061478691952271452",
-      "types": ["public"],
-      "formats": [],
-      "categories": ["ai", "dev"]
-    },
-    {
-      "id": "the-log-is-the-agent",
-      "name": "The Log Is the Agent",
-      "description": "An arXiv paper introducing event-sourced reactive graphs for auditable and forkable agentic systems.",
-      "date": "2026-05-22",
-      "url": "https://x.com/yoheinakajima/status/2057812713045377055",
-      "types": ["public"],
-      "formats": [],
-      "categories": ["ai", "dev"]
-    },
-    {
-      "id": "activegraph",
-      "name": "ActiveGraph",
-      "description": "An event-sourced reactive graph runtime for auditable, forkable, long-running agents.",
-      "date": "2026-05-20",
-      "url": "https://x.com/yoheinakajima/status/2057099245430222926",
-      "types": ["public", "py"],
-      "formats": ["video"],
-      "categories": ["ai", "dev"],
-      "eyebrow": "Open-source agent runtime",
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kvnloo/.files"
+        },
+        {
+          "label": "site",
+          "url": "https://kvnloo.github.io/.files/"
+        }
+      ],
       "featured": true,
       "featuredRank": 1,
-      "accent": "cyan",
-      "links": [
-        {"label": "Visit ActiveGraph", "url": "https://activegraph.ai"},
-        {"label": "Read the docs", "url": "https://docs.activegraph.ai"},
-        {"label": "GitHub", "url": "https://github.com/yoheinakajima/activegraph"},
-        {"label": "Launch post", "url": "https://x.com/yoheinakajima/status/2057099245430222926"}
+      "eyebrow": "Shell"
+    },
+    {
+      "id": "pm",
+      "name": "_pm",
+      "description": "Public repository · Python",
+      "date": "2026-07-26",
+      "url": "https://github.com/kvnloo/_pm",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
       ]
     },
     {
-      "id": "babyagi-wiki",
-      "name": "BabyAGI Wiki",
-      "description": "A technical history comparing nine iterations of BabyAGI across three years.",
-      "date": "2026-03-19",
-      "url": "https://x.com/yoheinakajima/status/2034669922174029900?s=20",
-      "types": ["public"],
+      "id": "zer0-cockpit",
+      "name": "zer0-cockpit",
+      "description": "Public repository · Python",
+      "date": "2026-07-26",
+      "url": "https://github.com/kvnloo/zer0-cockpit",
+      "types": [
+        "public",
+        "py"
+      ],
       "formats": [],
-      "categories": ["ai"]
+      "categories": [
+        "dev"
+      ]
     },
     {
-      "id": "pitch-yohei",
-      "name": "Pitch Yohei",
-      "description": "A live AI pitch agent that interviews founders and VCs and extracts structured startup data.",
-      "date": "2026-03-12",
-      "url": "https://x.com/yoheinakajima/status/2032096564261634223?s=20",
-      "types": ["public", "prototype"],
+      "id": "zer0-harness-spine",
+      "name": "zer0-harness-spine",
+      "description": "Public repository · Python",
+      "date": "2026-07-26",
+      "url": "https://github.com/kvnloo/zer0-harness-spine",
+      "types": [
+        "public",
+        "py"
+      ],
       "formats": [],
-      "categories": ["ai", "vc"]
+      "categories": [
+        "dev"
+      ]
     },
     {
-      "id": "ode-to-claude-code",
-      "name": "Ode to Claude Code",
-      "description": "An AI-generated sea shanty for Claude Code lovers.",
-      "date": "2026-02-12",
-      "url": "https://x.com/yoheinakajima/status/2021963241413652795?s=20",
-      "types": ["public"],
-      "formats": ["video"],
-      "categories": ["ai", "art"]
+      "id": "zer0-voice",
+      "name": "zer0-voice",
+      "description": "Public repository · Python",
+      "date": "2026-07-26",
+      "url": "https://github.com/kvnloo/zer0-voice",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ]
     },
     {
-      "id": "babyagi-3",
-      "name": "BabyAGI 3",
-      "description": "A minimal autonomous assistant.",
-      "date": "2026-02-06",
-      "url": "https://x.com/yoheinakajima/status/2020027037180932347?s=20",
-      "types": ["public"],
+      "id": "tmux-agent-fleet",
+      "name": "tmux-agent-fleet",
+      "description": "Zero-daemon, harness-neutral command palette for coding agents across tmux panes",
+      "date": "2026-07-14",
+      "url": "https://github.com/kvnloo/tmux-agent-fleet",
+      "types": [
+        "public",
+        "sh"
+      ],
       "formats": [],
-      "categories": ["ai"]
+      "categories": [
+        "dev"
+      ]
     },
     {
-      "id": "k-i-s-s",
-      "name": "K.I.S.S.",
-      "description": "A daily prompting game.",
-      "date": "2026-01-13",
-      "url": "https://x.com/yoheinakajima/status/2011167014329729070",
-      "types": ["public"],
+      "id": "portfolio",
+      "name": "portfolio",
+      "description": "Public repository · HTML · ★4",
+      "date": "2026-01-29",
+      "url": "https://github.com/kvnloo/portfolio",
+      "types": [
+        "public",
+        "html"
+      ],
       "formats": [],
-      "categories": ["ai"]
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kvnloo/portfolio"
+        },
+        {
+          "label": "site",
+          "url": "https://kvnloo.github.io/portfolio/"
+        }
+      ]
+    },
+    {
+      "id": "ace",
+      "name": "ace",
+      "description": "Ace Sports is a demo website showcasing the digital twin of an autonomous, multi-floor racket sports facility.",
+      "date": "2026-01-28",
+      "url": "https://github.com/kvnloo/ace",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kvnloo/ace"
+        },
+        {
+          "label": "site",
+          "url": "https://kvnloo.github.io/ace/"
+        }
+      ],
+      "featured": true,
+      "featuredRank": 3,
+      "eyebrow": "TypeScript"
+    },
+    {
+      "id": "tesla-infotainment",
+      "name": "tesla-infotainment",
+      "description": "aistudio gemini pro attempt",
+      "date": "2026-01-28",
+      "url": "https://github.com/kvnloo/tesla-infotainment",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ]
+    },
+    {
+      "id": "tesla",
+      "name": "tesla",
+      "description": "Public repository · TypeScript",
+      "date": "2026-01-27",
+      "url": "https://github.com/kvnloo/tesla",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kvnloo/tesla"
+        },
+        {
+          "label": "site",
+          "url": "https://kvnloo.github.io/tesla/"
+        }
+      ]
+    },
+    {
+      "id": "farm",
+      "name": "farm",
+      "description": "Public repository",
+      "date": "2026-01-22",
+      "url": "https://github.com/kvnloo/farm",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ]
+    },
+    {
+      "id": "kpu-sim",
+      "name": "kpu-sim",
+      "description": "Simulator for a KPU-based accelerator",
+      "date": "2026-01-19",
+      "url": "https://github.com/kvnloo/kpu-sim",
+      "types": [
+        "public",
+        "c++",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/kvnloo/kpu-sim"
+        },
+        {
+          "label": "site",
+          "url": "https://kvnloo.github.io/kpu-sim/"
+        }
+      ]
+    },
+    {
+      "id": "coding-interview-university",
+      "name": "coding-interview-university",
+      "description": "A complete computer science study plan to become a software engineer.",
+      "date": "2026-01-18",
+      "url": "https://github.com/kvnloo/coding-interview-university",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ]
+    },
+    {
+      "id": "scrollytelling",
+      "name": "scrollytelling",
+      "description": "Public repository · TypeScript",
+      "date": "2026-01-12",
+      "url": "https://github.com/kvnloo/scrollytelling",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ]
+    },
+    {
+      "id": "auto-claude",
+      "name": "Auto-Claude",
+      "description": "Autonomous multi-session AI coding",
+      "date": "2026-01-10",
+      "url": "https://github.com/kvnloo/Auto-Claude",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ]
+    },
+    {
+      "id": "jobapp",
+      "name": "jobapp",
+      "description": "Public repository · HTML",
+      "date": "2026-01-10",
+      "url": "https://github.com/kvnloo/jobapp",
+      "types": [
+        "public",
+        "html"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ]
+    },
+    {
+      "id": "cv",
+      "name": "cv",
+      "description": "Public repository · TeX",
+      "date": "2026-01-09",
+      "url": "https://github.com/kvnloo/cv",
+      "types": [
+        "public",
+        "tex"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ]
     }
   ]
 }

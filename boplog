@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Free, zero-dependency CLI for the public yohei.me build archive."""
+"""Free, zero-dependency CLI for the public Kevin Rajan build archive."""
 
 from __future__ import annotations
 
@@ -10,11 +10,11 @@ import urllib.error
 import urllib.request
 from typing import Any
 
-BASE = "https://yohei.me"
+BASE = "https://kvnloo.github.io/boplog"
 
 
 def fetch_json(path: str) -> dict[str, Any]:
-    request = urllib.request.Request(f"{BASE}/{path.lstrip('/')}", headers={"User-Agent": "yohei-cli/1.0"})
+    request = urllib.request.Request(f"{BASE}/{path.lstrip('/')}", headers={"User-Agent": "boplog-cli/1.0"})
     try:
         with urllib.request.urlopen(request, timeout=15) as response:
             return json.load(response)
@@ -59,7 +59,7 @@ def print_rows(rows: list[dict[str, Any]], as_json: bool) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(prog="yohei", description="Query Yohei Nakajima's public build archive.")
+    parser = argparse.ArgumentParser(prog="boplog", description="Query Kevin Rajan's public build archive.")
     parser.add_argument("--json", action="store_true", help="Output JSON")
     sub = parser.add_subparsers(dest="command", required=True)
 
@@ -80,28 +80,34 @@ def main() -> int:
     get.add_argument("value")
 
     args = parser.parse_args()
-    try:
-        rows = projects()
-    except RuntimeError as exc:
-        print(str(exc), file=sys.stderr)
-        return 1
+    rows = projects()
 
     if args.command == "latest":
-        selected = rows[: max(0, args.count)]
-    elif args.command == "search":
-        selected = [item for item in rows if matches(item, args.query)][: max(0, args.limit)]
-    elif args.command == "date":
-        selected = [item for item in rows if item.get("date") == args.value]
-    elif args.command == "topic":
-        selected = [item for item in rows if args.value in item.get("categories", [])]
-    else:
+        print_rows(rows[: max(args.count, 0)], args.json)
+        return 0
+    if args.command == "search":
+        print_rows([row for row in rows if matches(row, args.query)][: args.limit], args.json)
+        return 0
+    if args.command == "date":
+        print_rows([row for row in rows if row.get("date") == args.value], args.json)
+        return 0
+    if args.command == "topic":
+        print_rows([row for row in rows if args.value in row.get("categories", [])], args.json)
+        return 0
+    if args.command == "get":
         needle = args.value.lower()
-        selected = [item for item in rows if item.get("id", "").lower() == needle or item.get("name", "").lower() == needle or item.get("displayName", "").lower() == needle]
-        selected = selected[:1]
-
-    print_rows(selected, args.json)
-    return 0
+        match = next((row for row in rows if row.get("id") == needle or str(row.get("name", "")).lower() == needle), None)
+        if not match:
+            print(f"No public build matched: {args.value}", file=sys.stderr)
+            return 1
+        print_rows([match], args.json)
+        return 0
+    return 1
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except RuntimeError as exc:
+        print(exc, file=sys.stderr)
+        raise SystemExit(1) from exc

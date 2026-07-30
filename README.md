@@ -1,62 +1,67 @@
 # boplog
 
-A minimal, static build log for [yohei.me](https://yohei.me), backed by a checked-in snapshot of Yohei Nakajima's public portfolio records.
+A minimal, static build log for [Kevin Rajan](https://github.com/kvnloo) (`kvnloo`), backed by a checked-in snapshot of **public GitHub repositories he has committed to**.
+
+Live (after Pages is enabled): <https://kvnloo.github.io/boplog/>
 
 ## What is included
 
-- A compact light-mode interface designed around a dense chronological list.
-- One to three featured projects rendered as simple text rows.
-- Full-text search plus topic, year, format, and sort filters.
+- Compact light-mode UI: featured rows, search, topic/year/format/sort filters, activity heatmap.
 - Shareable URL state for active filters.
-- A checked-in JSON snapshot exported from the `Yohei - Portfolio` Airtable.
-- No Airtable credential, client-side token, build-time token, or runtime Airtable dependency.
-- Data validation that rejects any project not explicitly tagged `public`.
+- Snapshot data under `data/`, regenerated from the GitHub API.
+- **No personal API key** in the browser or in secrets — GitHub Actions uses the built-in `GITHUB_TOKEN`.
+- Filter rule: include a repo only if `kvnloo` authored at least one commit (archive-only forks are dropped).
+- Free CLI (`boplog`), local MCP server, OpenAPI, and agent discovery docs.
 
 ## Local development
 
 ```bash
+npm run sync    # needs GITHUB_TOKEN or `gh auth login`
 npm run check
 npm run serve
 ```
 
 Open <http://localhost:4173>.
 
-The site is plain HTML, CSS, and JavaScript. There is no build step and no runtime package dependency.
+## Automatic sync
 
-## Project data
+[`.github/workflows/sync-github.yml`](.github/workflows/sync-github.yml) runs:
 
-The production site reads [`data/manifest.json`](data/manifest.json), which lists year-partitioned JSON files such as `data/projects-2026.json`. The current snapshot contains 121 public records exported through the connected Airtable account and committed directly to this repository.
+- every **15 minutes** (`cron: '*/15 * * * *'`)
+- on manual `workflow_dispatch`
 
-Each project supports:
+Each run:
+
+1. Lists public repos owned by `kvnloo`
+2. Keeps originals + forks **only if** you authored commits
+3. Writes `data/projects-YYYY.json`, `data/manifest.json`, `feed.xml`, `llms.txt`, `sitemap.xml`
+4. Validates, then commits + pushes if anything changed
+
+Rate limit budget: Actions `GITHUB_TOKEN` allows **1,000 req/hour** for this repo. A full authorship pass over ~360 repos is a few hundred calls — fine at 15‑minute cadence, especially with concurrency and skips for empty/error forks.
+
+## Project data shape
 
 ```json
 {
-  "id": "activegraph",
-  "name": "ActiveGraph",
+  "id": "cod",
+  "name": "cod",
   "description": "...",
-  "date": "2026-05-20",
-  "url": "https://...",
-  "types": ["public", "py"],
-  "formats": ["video"],
-  "categories": ["ai", "dev"],
+  "date": "2026-07-29",
+  "url": "https://github.com/kvnloo/cod",
+  "types": ["public"],
+  "formats": [],
+  "categories": ["dev"],
   "featured": true,
   "featuredRank": 1
 }
 ```
 
-Set `featured: true` on one to three projects. `featuredRank` controls their order. Optional featured-only fields include `displayName`, `eyebrow`, and `links`.
-
-### Updating the snapshot
-
-No Airtable token setup is required. Data refreshes are explicit repository updates:
-
-1. Read the `Portfolio` table through the connected Airtable account.
-2. Export only records whose `Type` includes `public`.
-3. Convert them to the normalized project schema and write the year-partitioned JSON files.
-4. Preserve featured metadata, update `data/manifest.json`, and run `npm run check`.
-
-This can be performed directly through ChatGPT with the Airtable and GitHub connectors. The JSON files can also be edited by hand for small changes. Private-only Airtable records are never included in the repository or sent to the browser.
+Featured projects (1–3) are chosen automatically by stars, then recency.
 
 ## Deployment
 
-All paths are relative and the site has no server dependency, so it can be deployed directly to GitHub Pages or any static host.
+Enable **GitHub Pages** for this repo (Settings → Pages → Deploy from branch `main` / root, or GitHub Actions). Paths are relative so project Pages at `/boplog/` work.
+
+## License
+
+See [LICENSE](LICENSE).

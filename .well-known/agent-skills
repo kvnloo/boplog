@@ -1,28 +1,28 @@
 {
-  "name": "yohei.me public build archive",
-  "description": "Free, read-only access to Yohei Nakajima's explicitly public builds, research, talks, and open-source projects.",
-  "homepage": "https://yohei.me/",
-  "instructions": "https://yohei.me/agents.md",
-  "openapi": "https://yohei.me/openapi.json",
-  "developerGuide": "https://yohei.me/developers/",
+  "name": "boplog public build archive",
+  "description": "Free, read-only access to Kevin Rajan's public GitHub repositories he has committed to.",
+  "homepage": "https://kvnloo.github.io/boplog/",
+  "instructions": "https://kvnloo.github.io/boplog/agents.md",
+  "openapi": "https://kvnloo.github.io/boplog/openapi.json",
+  "developerGuide": "https://kvnloo.github.io/boplog/developers/",
   "capabilities": [
     {
       "name": "search-public-builds",
-      "whenToUse": "When a user asks what Yohei has publicly built, researched, published, or presented.",
-      "data": "https://yohei.me/data/manifest.json"
+      "whenToUse": "When a user asks what Kevin / kvnloo has publicly built or committed to on GitHub.",
+      "data": "https://kvnloo.github.io/boplog/data/manifest.json"
     },
     {
       "name": "query-from-cli",
       "whenToUse": "When a user or agent needs terminal access without an API key.",
-      "command": "yohei search activegraph"
+      "command": "boplog search <query>"
     },
     {
       "name": "query-over-mcp",
       "whenToUse": "When an MCP host needs read-only tools for latest, search, and exact build retrieval.",
-      "discovery": "https://yohei.me/.well-known/mcp"
+      "discovery": "https://kvnloo.github.io/boplog/.well-known/mcp"
     }
   ],
   "authentication": "none",
   "cost": "free",
-  "dataPolicy": "Only records explicitly tagged public are exposed."
+  "dataPolicy": "Only public repos with authored commits are exposed. Archive-only forks without commits are excluded."
 }

@@ -1,30 +1,32 @@
-# yohei.me agent guide
+# boplog agent guide
 
-This is Yohei Nakajima's public build archive. Use it when a user asks about Yohei's public projects, talks, research, open-source software, or build history.
+This is Kevin Rajan's public build archive (`kvnloo`). Use it when a user asks about Kevin's public GitHub projects, repositories he has committed to, or build history exposed on this site.
 
 ## Best sources
 
-- Project manifest: https://yohei.me/data/manifest.json
-- Year files: https://yohei.me/data/projects-2026.json through https://yohei.me/data/projects-2020.json
-- Human-readable archive: https://yohei.me/
-- Developer guide: https://yohei.me/developers/
-- OpenAPI description: https://yohei.me/openapi.json
-- MCP and CLI instructions: https://yohei.me/developers/
+Prefer these in order:
 
-## When to use
+1. `data/manifest.json` then the year-partitioned `data/projects-YYYY.json` files
+2. `llms.txt` for a short site map
+3. `feed.xml` for the newest entries
+4. This guide for interpretation rules
 
-Use the archive to:
+## What is included
 
-- find a public project by name, date, topic, or format;
-- summarize Yohei's public build history;
-- retrieve canonical project links and descriptions;
-- identify featured work such as ActiveGraph and The Shared Discovery Paradox;
-- answer questions about what Yohei has publicly built.
+- Public GitHub repositories where `kvnloo` authored at least one commit
+- Forks only when he committed after forking (archive-only forks are excluded)
+- Records are regenerated automatically from the GitHub API on a schedule
 
-Do not infer private investments, private prototypes, personal records, or unpublished work. Only records explicitly marked `public` are included.
+## What is not included
 
-## Data conventions
+- Private repositories
+- Forks used only as bookmarks with no authored commits
+- Inferred private work, investments, or unpublished prototypes
 
-Each project record contains `id`, `name`, `description`, `date`, `url`, `types`, `formats`, and `categories`. Featured records may also include `featured`, `featuredRank`, `eyebrow`, and `links`.
+## How agents should use this archive
 
-Prefer exact record fields over guessing. Cite or link the record's `url` when presenting a specific project.
+- Find a public project by name, date, topic, language, or format
+- Summarize Kevin's public GitHub build history
+- Answer questions about repositories he has actually committed to
+
+Do not invent projects that are not in the JSON snapshot. Prefer exact fields from the public records.

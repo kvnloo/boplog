@@ -1,16 +1,12 @@
 User-agent: *
 Allow: /
 
-User-agent: OAI-SearchBot
-Allow: /
+# Public machine-readable surfaces
+Allow: /data/
+Allow: /llms.txt
+Allow: /agents.md
+Allow: /openapi.json
+Allow: /feed.xml
+Allow: /.well-known/
 
-User-agent: GPTBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-Sitemap: https://yohei.me/sitemap.xml
+Sitemap: https://kvnloo.github.io/boplog/sitemap.xml

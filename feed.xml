@@ -1,51 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Yohei Nakajima — Build Log</title>
-  <subtitle>Public builds, experiments, software, and research.</subtitle>
-  <id>https://yohei.me/</id>
-  <link href="https://yohei.me/" rel="alternate"/>
-  <link href="https://yohei.me/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-07-22T01:44:01Z</updated>
-  <author><name>Yohei Nakajima</name><uri>https://yohei.me/</uri></author>
+  <title>Kevin Rajan — Build Log</title>
+  <subtitle>Public repositories I have committed to.</subtitle>
+  <id>https://kvnloo.github.io/boplog/</id>
+  <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
+  <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
+  <updated>2026-07-30T05:50:19Z</updated>
+  <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
-    <title>The Shared Discovery Paradox</title>
-    <id>https://x.com/yoheinakajima/status/2079567881889796456</id>
-    <link href="https://x.com/yoheinakajima/status/2079567881889796456?s=20"/>
-    <published>2026-07-21T00:00:00Z</published><updated>2026-07-21T00:00:00Z</updated>
-    <category term="econ"/>
-    <summary>A mathematical explanation of how information sharing without action coordination can worsen group outcomes.</summary>
+    <title>cod</title>
+    <id>https://github.com/kvnloo/cod</id>
+    <link href="https://github.com/kvnloo/cod"/>
+    <published>2026-07-29T00:00:00Z</published>
+    <updated>2026-07-29T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository</summary>
   </entry>
   <entry>
-    <title>Regimes</title><id>https://x.com/yoheinakajima/status/2064830891143381076</id><link href="https://x.com/yoheinakajima/status/2064830891143381076"/><published>2026-06-10T00:00:00Z</published><updated>2026-06-10T00:00:00Z</updated><category term="ai"/><category term="dev"/><summary>An auditable, held-out-gated self-improvement loop demonstrated on LongMemEval.</summary>
+    <title>.files</title>
+    <id>https://github.com/kvnloo/.files</id>
+    <link href="https://github.com/kvnloo/.files"/>
+    <published>2026-07-28T00:00:00Z</published>
+    <updated>2026-07-28T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>...files...</summary>
   </entry>
   <entry>
-    <title>AG Coder</title><id>https://x.com/yoheinakajima/status/2064026650988495279#ag-coder</id><link href="https://x.com/yoheinakajima/status/2064026650988495279?s=20"/><published>2026-06-08T00:00:00Z</published><updated>2026-06-08T00:00:00Z</updated><category term="ai"/><category term="dev"/><summary>An open-source reference coding agent built on ActiveGraph.</summary>
+    <title>_pm</title>
+    <id>https://github.com/kvnloo/_pm</id>
+    <link href="https://github.com/kvnloo/_pm"/>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · Python</summary>
   </entry>
   <entry>
-    <title>Learn ActiveGraph</title><id>https://x.com/yoheinakajima/status/2064026650988495279#learn</id><link href="https://x.com/yoheinakajima/status/2064026650988495279?s=20"/><published>2026-06-08T00:00:00Z</published><updated>2026-06-08T00:00:00Z</updated><category term="ai"/><category term="dev"/><summary>An interactive site for learning ActiveGraph concepts through hands-on examples.</summary>
+    <title>zer0-cockpit</title>
+    <id>https://github.com/kvnloo/zer0-cockpit</id>
+    <link href="https://github.com/kvnloo/zer0-cockpit"/>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · Python</summary>
   </entry>
   <entry>
-    <title>ActiveGraph LongMemEval Experiments</title><id>https://x.com/yoheinakajima/status/2061478691952271452</id><link href="https://x.com/yoheinakajima/status/2061478691952271452"/><published>2026-06-01T00:00:00Z</published><updated>2026-06-01T00:00:00Z</updated><category term="ai"/><category term="dev"/><summary>Experiments comparing deterministic, semantic, and hybrid architectures for auditable agent memory.</summary>
+    <title>zer0-harness-spine</title>
+    <id>https://github.com/kvnloo/zer0-harness-spine</id>
+    <link href="https://github.com/kvnloo/zer0-harness-spine"/>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · Python</summary>
   </entry>
   <entry>
-    <title>The Log Is the Agent</title><id>https://x.com/yoheinakajima/status/2057812713045377055</id><link href="https://x.com/yoheinakajima/status/2057812713045377055"/><published>2026-05-22T00:00:00Z</published><updated>2026-05-22T00:00:00Z</updated><category term="ai"/><category term="dev"/><summary>An arXiv paper introducing event-sourced reactive graphs for auditable and forkable agentic systems.</summary>
+    <title>zer0-voice</title>
+    <id>https://github.com/kvnloo/zer0-voice</id>
+    <link href="https://github.com/kvnloo/zer0-voice"/>
+    <published>2026-07-26T00:00:00Z</published>
+    <updated>2026-07-26T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · Python</summary>
   </entry>
   <entry>
-    <title>ActiveGraph</title><id>https://x.com/yoheinakajima/status/2057099245430222926</id><link href="https://x.com/yoheinakajima/status/2057099245430222926"/><published>2026-05-20T00:00:00Z</published><updated>2026-05-20T00:00:00Z</updated><category term="ai"/><category term="dev"/><summary>An event-sourced reactive graph runtime for auditable, forkable, long-running agents.</summary>
+    <title>tmux-agent-fleet</title>
+    <id>https://github.com/kvnloo/tmux-agent-fleet</id>
+    <link href="https://github.com/kvnloo/tmux-agent-fleet"/>
+    <published>2026-07-14T00:00:00Z</published>
+    <updated>2026-07-14T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Zero-daemon, harness-neutral command palette for coding agents across tmux panes</summary>
   </entry>
   <entry>
-    <title>BabyAGI Wiki</title><id>https://x.com/yoheinakajima/status/2034669922174029900</id><link href="https://x.com/yoheinakajima/status/2034669922174029900?s=20"/><published>2026-03-19T00:00:00Z</published><updated>2026-03-19T00:00:00Z</updated><category term="ai"/><summary>A technical history comparing nine iterations of BabyAGI across three years.</summary>
+    <title>portfolio</title>
+    <id>https://github.com/kvnloo/portfolio</id>
+    <link href="https://github.com/kvnloo/portfolio"/>
+    <published>2026-01-29T00:00:00Z</published>
+    <updated>2026-01-29T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · HTML · ★4</summary>
   </entry>
   <entry>
-    <title>Pitch Yohei</title><id>https://x.com/yoheinakajima/status/2032096564261634223</id><link href="https://x.com/yoheinakajima/status/2032096564261634223?s=20"/><published>2026-03-12T00:00:00Z</published><updated>2026-03-12T00:00:00Z</updated><category term="ai"/><category term="vc"/><summary>A live AI pitch agent that interviews founders and VCs and extracts structured startup data.</summary>
+    <title>ace</title>
+    <id>https://github.com/kvnloo/ace</id>
+    <link href="https://github.com/kvnloo/ace"/>
+    <published>2026-01-28T00:00:00Z</published>
+    <updated>2026-01-28T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Ace Sports is a demo website showcasing the digital twin of an autonomous, multi-floor racket sports facility.</summary>
   </entry>
   <entry>
-    <title>Ode to Claude Code</title><id>https://x.com/yoheinakajima/status/2021963241413652795</id><link href="https://x.com/yoheinakajima/status/2021963241413652795?s=20"/><published>2026-02-12T00:00:00Z</published><updated>2026-02-12T00:00:00Z</updated><category term="ai"/><category term="art"/><summary>An AI-generated sea shanty for Claude Code lovers.</summary>
+    <title>tesla-infotainment</title>
+    <id>https://github.com/kvnloo/tesla-infotainment</id>
+    <link href="https://github.com/kvnloo/tesla-infotainment"/>
+    <published>2026-01-28T00:00:00Z</published>
+    <updated>2026-01-28T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>aistudio gemini pro attempt</summary>
   </entry>
   <entry>
-    <title>BabyAGI 3</title><id>https://x.com/yoheinakajima/status/2020027037180932347</id><link href="https://x.com/yoheinakajima/status/2020027037180932347?s=20"/><published>2026-02-06T00:00:00Z</published><updated>2026-02-06T00:00:00Z</updated><category term="ai"/><summary>A minimal autonomous assistant.</summary>
+    <title>tesla</title>
+    <id>https://github.com/kvnloo/tesla</id>
+    <link href="https://github.com/kvnloo/tesla"/>
+    <published>2026-01-27T00:00:00Z</published>
+    <updated>2026-01-27T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · TypeScript</summary>
   </entry>
   <entry>
-    <title>K.I.S.S.</title><id>https://x.com/yoheinakajima/status/2011167014329729070</id><link href="https://x.com/yoheinakajima/status/2011167014329729070"/><published>2026-01-13T00:00:00Z</published><updated>2026-01-13T00:00:00Z</updated><category term="ai"/><summary>A daily prompting game.</summary>
+    <title>farm</title>
+    <id>https://github.com/kvnloo/farm</id>
+    <link href="https://github.com/kvnloo/farm"/>
+    <published>2026-01-22T00:00:00Z</published>
+    <updated>2026-01-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository</summary>
+  </entry>
+  <entry>
+    <title>kpu-sim</title>
+    <id>https://github.com/kvnloo/kpu-sim</id>
+    <link href="https://github.com/kvnloo/kpu-sim"/>
+    <published>2026-01-19T00:00:00Z</published>
+    <updated>2026-01-19T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Simulator for a KPU-based accelerator</summary>
+  </entry>
+  <entry>
+    <title>coding-interview-university</title>
+    <id>https://github.com/kvnloo/coding-interview-university</id>
+    <link href="https://github.com/kvnloo/coding-interview-university"/>
+    <published>2026-01-18T00:00:00Z</published>
+    <updated>2026-01-18T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>A complete computer science study plan to become a software engineer.</summary>
+  </entry>
+  <entry>
+    <title>scrollytelling</title>
+    <id>https://github.com/kvnloo/scrollytelling</id>
+    <link href="https://github.com/kvnloo/scrollytelling"/>
+    <published>2026-01-12T00:00:00Z</published>
+    <updated>2026-01-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · TypeScript</summary>
+  </entry>
+  <entry>
+    <title>Auto-Claude</title>
+    <id>https://github.com/kvnloo/Auto-Claude</id>
+    <link href="https://github.com/kvnloo/Auto-Claude"/>
+    <published>2026-01-10T00:00:00Z</published>
+    <updated>2026-01-10T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Autonomous multi-session AI coding</summary>
+  </entry>
+  <entry>
+    <title>jobapp</title>
+    <id>https://github.com/kvnloo/jobapp</id>
+    <link href="https://github.com/kvnloo/jobapp"/>
+    <published>2026-01-10T00:00:00Z</published>
+    <updated>2026-01-10T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · HTML</summary>
+  </entry>
+  <entry>
+    <title>cv</title>
+    <id>https://github.com/kvnloo/cv</id>
+    <link href="https://github.com/kvnloo/cv"/>
+    <published>2026-01-09T00:00:00Z</published>
+    <updated>2026-01-09T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · TeX</summary>
+  </entry>
+  <entry>
+    <title>expert</title>
+    <id>https://github.com/kvnloo/expert</id>
+    <link href="https://github.com/kvnloo/expert"/>
+    <published>2025-12-16T00:00:00Z</published>
+    <updated>2025-12-16T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository</summary>
+  </entry>
+  <entry>
+    <title>evolve</title>
+    <id>https://github.com/kvnloo/evolve</id>
+    <link href="https://github.com/kvnloo/evolve"/>
+    <published>2025-12-15T00:00:00Z</published>
+    <updated>2025-12-15T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · Shell · ★7</summary>
+  </entry>
+  <entry>
+    <title>blueprint</title>
+    <id>https://github.com/kvnloo/blueprint</id>
+    <link href="https://github.com/kvnloo/blueprint"/>
+    <published>2025-12-10T00:00:00Z</published>
+    <updated>2025-12-10T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · HTML</summary>
+  </entry>
+  <entry>
+    <title>docs-boilerplate</title>
+    <id>https://github.com/kvnloo/docs-boilerplate</id>
+    <link href="https://github.com/kvnloo/docs-boilerplate"/>
+    <published>2025-12-10T00:00:00Z</published>
+    <updated>2025-12-10T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository</summary>
+  </entry>
+  <entry>
+    <title>z0</title>
+    <id>https://github.com/kvnloo/z0</id>
+    <link href="https://github.com/kvnloo/z0"/>
+    <published>2025-12-10T00:00:00Z</published>
+    <updated>2025-12-10T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository</summary>
+  </entry>
+  <entry>
+    <title>whisper</title>
+    <id>https://github.com/kvnloo/whisper</id>
+    <link href="https://github.com/kvnloo/whisper"/>
+    <published>2025-12-01T00:00:00Z</published>
+    <updated>2025-12-01T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository</summary>
+  </entry>
+  <entry>
+    <title>playground</title>
+    <id>https://github.com/kvnloo/playground</id>
+    <link href="https://github.com/kvnloo/playground"/>
+    <published>2025-11-27T00:00:00Z</published>
+    <updated>2025-11-27T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public repository · ★1</summary>
   </entry>
 </feed>

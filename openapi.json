@@ -1,48 +1,50 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "yohei.me Public Build Archive",
+    "title": "boplog Public Build Archive",
     "version": "1.0.0",
-    "description": "A free, read-only static API for Yohei Nakajima's explicitly public build records. No authentication or API key is required."
+    "description": "A free, read-only static API for Kevin Rajan's public GitHub repositories he has committed to. No authentication or API key is required."
   },
-  "servers": [{"url": "https://yohei.me"}],
+  "servers": [{"url": "https://kvnloo.github.io/boplog"}],
   "paths": {
     "/data/manifest.json": {
       "get": {
-        "operationId": "getProjectManifest",
         "summary": "List public project data files",
+        "operationId": "getManifest",
         "responses": {
           "200": {
-            "description": "Project manifest",
-            "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Manifest"}}}
+            "description": "Manifest of year-partitioned project files",
+            "content": {
+              "application/json": {
+                "schema": {"$ref": "#/components/schemas/Manifest"}
+              }
+            }
           }
         }
       }
     },
     "/data/projects-{year}.json": {
       "get": {
-        "operationId": "getProjectsByYear",
         "summary": "Get public projects for one year",
-        "parameters": [{
-          "name": "year",
-          "in": "path",
-          "required": true,
-          "schema": {"type": "integer", "enum": [2020, 2021, 2022, 2023, 2024, 2025, 2026]}
-        }],
+        "operationId": "getProjectsByYear",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {"type": "string", "pattern": "^[0-9]{4}$"}
+          }
+        ],
         "responses": {
           "200": {
-            "description": "Public projects for the selected year",
-            "content": {"application/json": {"schema": {"$ref": "#/components/schemas/ProjectCollection"}}}
-          },
-          "404": {"description": "Year file not found"}
+            "description": "Projects for the requested year",
+            "content": {
+              "application/json": {
+                "schema": {"$ref": "#/components/schemas/YearFile"}
+              }
+            }
+          }
         }
-      }
-    },
-    "/llms.txt": {
-      "get": {
-        "operationId": "getAgentGuide",
-        "summary": "Get the concise AI-readable site guide",
-        "responses": {"200": {"description": "Markdown guide", "content": {"text/plain": {"schema": {"type": "string"}}}}}
       }
     }
   },
@@ -55,13 +57,19 @@
           "generatedAt": {"type": "string", "format": "date-time"},
           "source": {"type": "string"},
           "featuredLimit": {"type": "integer"},
+          "user": {"type": "string"},
           "files": {"type": "array", "items": {"type": "string"}}
         }
       },
-      "ProjectCollection": {
+      "YearFile": {
         "type": "object",
         "required": ["projects"],
-        "properties": {"projects": {"type": "array", "items": {"$ref": "#/components/schemas/Project"}}}
+        "properties": {
+          "projects": {
+            "type": "array",
+            "items": {"$ref": "#/components/schemas/Project"}
+          }
+        }
       },
       "Project": {
         "type": "object",
@@ -69,7 +77,6 @@
         "properties": {
           "id": {"type": "string"},
           "name": {"type": "string"},
-          "displayName": {"type": "string"},
           "description": {"type": "string"},
           "date": {"type": "string", "format": "date"},
           "url": {"type": "string", "format": "uri"},
@@ -78,7 +85,18 @@
           "categories": {"type": "array", "items": {"type": "string"}},
           "featured": {"type": "boolean"},
           "featuredRank": {"type": "integer"},
-          "links": {"type": "array", "items": {"type": "object", "properties": {"label": {"type": "string"}, "url": {"type": "string", "format": "uri"}}}}
+          "eyebrow": {"type": "string"},
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["label", "url"],
+              "properties": {
+                "label": {"type": "string"},
+                "url": {"type": "string", "format": "uri"}
+              }
+            }
+          }
         }
       }
     }
