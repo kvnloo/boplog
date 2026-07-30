@@ -71,6 +71,15 @@ body {
   font: 13px/1.45 var(--sans);
   -webkit-font-smoothing: antialiased;
   transition: background-color 180ms ease, color 180ms ease;
+  /* Entire UI is intentionally all-lowercase. */
+  text-transform: lowercase;
+}
+/* Keep monospace inputs readable when typing URLs/ids without forced case mid-edit. */
+input, textarea {
+  text-transform: none;
+}
+input::placeholder {
+  text-transform: lowercase;
 }
 button, input, select { font: inherit; }
 a { color: inherit; }
