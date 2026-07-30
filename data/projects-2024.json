@@ -24,7 +24,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/FlowState"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "bci",
+      "productName": "BCI / attention"
     },
     {
       "id": "openhands",
@@ -50,7 +56,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/OpenHands"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "open-source-contrib",
+      "productName": "Open-source contributions"
     }
   ]
 }

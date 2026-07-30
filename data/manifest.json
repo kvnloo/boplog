@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T08:36:09Z",
+  "generatedAt": "2026-07-30T16:50:08Z",
   "source": "GitHub public repos for kvnloo (authored commits only; forks without commits excluded)",
   "featuredLimit": 6,
   "user": "kvnloo",
@@ -9,5 +9,6 @@
     "projects-2024.json",
     "projects-2018.json",
     "projects-2017.json"
-  ]
+  ],
+  "hierarchy": "hierarchy.json"
 }

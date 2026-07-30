@@ -19,7 +19,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/smartvest"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "professional",
+      "portfolioName": "Professional",
+      "product": "mobile-legacy",
+      "productName": "Mobile (legacy)"
     },
     {
       "id": "refind",
@@ -40,7 +46,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/refind"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "professional",
+      "portfolioName": "Professional",
+      "product": "mobile-legacy",
+      "productName": "Mobile (legacy)"
     },
     {
       "id": "audioengine",
@@ -68,7 +80,13 @@
       ],
       "featured": true,
       "featuredRank": 1,
-      "eyebrow": "iOS \u00b7 2017"
+      "eyebrow": "iOS \u00b7 2017",
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "professional",
+      "portfolioName": "Professional",
+      "product": "audioengine",
+      "productName": "AudioEngine"
     },
     {
       "id": "ios-2017",
@@ -90,7 +108,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/iOS-2017"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "professional",
+      "portfolioName": "Professional",
+      "product": "mobile-legacy",
+      "productName": "Mobile (legacy)"
     },
     {
       "id": "flicks",
@@ -111,7 +135,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/Flicks"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "professional",
+      "portfolioName": "Professional",
+      "product": "mobile-legacy",
+      "productName": "Mobile (legacy)"
     }
   ]
 }

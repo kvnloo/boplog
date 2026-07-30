@@ -24,7 +24,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/boplog"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "professional",
+      "portfolioName": "Professional",
+      "product": "boplog",
+      "productName": "boplog"
     },
     {
       "id": "cod",
@@ -44,7 +50,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/cod"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "experiments",
+      "productName": "Experiments"
     },
     {
       "id": "files",
@@ -72,7 +84,13 @@
       ],
       "featured": true,
       "featuredRank": 2,
-      "eyebrow": "dotfiles"
+      "eyebrow": "dotfiles",
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "professional",
+      "portfolioName": "Professional",
+      "product": "dotfiles",
+      "productName": "Dotfiles"
     },
     {
       "id": "pm",
@@ -93,7 +111,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/_pm"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "zer0-os",
+      "productName": "Zer0 OS"
     },
     {
       "id": "zer0-cockpit",
@@ -114,7 +138,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/zer0-cockpit"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "zer0-os",
+      "productName": "Zer0 OS"
     },
     {
       "id": "zer0-harness-spine",
@@ -135,7 +165,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/zer0-harness-spine"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "zer0-os",
+      "productName": "Zer0 OS"
     },
     {
       "id": "zer0-voice",
@@ -156,7 +192,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/zer0-voice"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "zer0-os",
+      "productName": "Zer0 OS"
     },
     {
       "id": "tmux-agent-fleet",
@@ -180,7 +222,13 @@
       ],
       "featured": true,
       "featuredRank": 6,
-      "eyebrow": "tmux agents"
+      "eyebrow": "tmux agents",
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "agent-tooling",
+      "productName": "Agent tooling"
     },
     {
       "id": "claude-island",
@@ -201,7 +249,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/claude-island"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "agent-tooling",
+      "productName": "Agent tooling"
     },
     {
       "id": "tesla-infotainment",
@@ -222,7 +276,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/tesla-infotainment"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "tesla-ui",
+      "productName": "Tesla UI experiments"
     },
     {
       "id": "tesla",
@@ -247,7 +307,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/tesla"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "tesla-ui",
+      "productName": "Tesla UI experiments"
     },
     {
       "id": "farm",
@@ -267,7 +333,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/farm"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "experiments",
+      "productName": "Experiments"
     },
     {
       "id": "kpu-sim",
@@ -293,7 +365,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/kpu-sim"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "open-source-contrib",
+      "productName": "Open-source contributions"
     },
     {
       "id": "coding-interview-university",
@@ -314,7 +392,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/coding-interview-university"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "open-source-contrib",
+      "productName": "Open-source contributions"
     },
     {
       "id": "scrollytelling",
@@ -335,7 +419,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/scrollytelling"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "experiments",
+      "productName": "Experiments"
     },
     {
       "id": "cv",
@@ -356,7 +446,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/cv"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "professional",
+      "portfolioName": "Professional",
+      "product": "professional-showcase",
+      "productName": "Professional showcase"
     },
     {
       "id": "uiua",
@@ -382,7 +478,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/uiua"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "open-source-contrib",
+      "productName": "Open-source contributions"
     }
   ]
 }

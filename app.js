@@ -1,13 +1,17 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.3';
+  const BUILD_VERSION = '20260730.4';
   const DATA_ROOT = new URL('./data/', document.baseURI);
+  const THEME_KEY = 'boplog-theme';
   document.documentElement.dataset.build = BUILD_VERSION;
 
   const state = {
     projects: [],
+    hierarchy: null,
     query: '',
+    portfolio: '',
+    product: '',
     category: '',
     format: '',
     year: '',
@@ -21,6 +25,8 @@
     resultCount: document.querySelector('#result-count'),
     archiveSummary: document.querySelector('#archive-summary'),
     search: document.querySelector('#project-search'),
+    portfolio: document.querySelector('#portfolio-filter'),
+    product: document.querySelector('#product-filter'),
     category: document.querySelector('#category-filter'),
     year: document.querySelector('#year-filter'),
     format: document.querySelector('#format-filter'),
@@ -33,6 +39,7 @@
     filterSummary: document.querySelector('#filter-summary'),
     activityMap: document.querySelector('#activity-map'),
     activitySelection: document.querySelector('#activity-selection'),
+    themeToggle: document.querySelector('#theme-toggle'),
   };
 
   const categoryLabels = {
@@ -56,21 +63,73 @@
   const labelForCategory = (category) => categoryLabels[category] || category;
   const sortUnique = (values) => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
 
+  function getTheme() {
+    return document.documentElement.dataset.theme === 'night' ? 'night' : 'day';
+  }
+
+  function setTheme(theme) {
+    const next = theme === 'night' ? 'night' : 'day';
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem(THEME_KEY, next); } catch (_) { /* ignore */ }
+    if (elements.themeToggle) {
+      elements.themeToggle.setAttribute('aria-pressed', next === 'night' ? 'true' : 'false');
+      elements.themeToggle.title = next === 'night' ? 'Switch to day' : 'Switch to night';
+    }
+  }
+
   function projectSearchText(project) {
     return normalize([
       project.name,
       project.displayName,
       project.description,
+      project.companyName,
+      project.portfolioName,
+      project.productName,
+      project.portfolio,
+      project.product,
       ...(project.categories || []),
       ...(project.formats || []),
       ...(project.types || []),
     ].join(' '));
   }
 
+  function hierarchyPath(project) {
+    const company = project.companyName || project.company || 'zer0';
+    const portfolio = project.portfolioName || project.portfolio || '';
+    const product = project.productName || project.product || '';
+    return { company, portfolio, product };
+  }
+
+  function renderHierarchyPath(project, { interactive = true } = {}) {
+    const { company, portfolio, product } = hierarchyPath(project);
+    if (!portfolio && !product) return '';
+    const parts = [];
+    parts.push(`<span>${escapeHtml(company)}</span>`);
+    if (portfolio) {
+      parts.push('<span class="sep">/</span>');
+      if (interactive) {
+        parts.push(`<button type="button" data-filter-kind="portfolio" data-filter-value="${escapeHtml(project.portfolio || '')}">${escapeHtml(portfolio)}</button>`);
+      } else {
+        parts.push(`<span>${escapeHtml(portfolio)}</span>`);
+      }
+    }
+    if (product) {
+      parts.push('<span class="sep">/</span>');
+      if (interactive) {
+        parts.push(`<button type="button" data-filter-kind="product" data-filter-value="${escapeHtml(project.product || '')}">${escapeHtml(product)}</button>`);
+      } else {
+        parts.push(`<span>${escapeHtml(product)}</span>`);
+      }
+    }
+    return `<div class="project-row__path">${parts.join('')}</div>`;
+  }
+
   function getFilteredProjects() {
     const query = normalize(state.query);
     const filtered = state.projects.filter((project) => {
       if (query && !projectSearchText(project).includes(query)) return false;
+      if (state.portfolio && project.portfolio !== state.portfolio) return false;
+      if (state.product && project.product !== state.product) return false;
       if (state.category && !(project.categories || []).includes(state.category)) return false;
       if (state.format && !(project.formats || []).includes(state.format)) return false;
       if (state.year && !project.date.startsWith(state.year)) return false;
@@ -101,6 +160,7 @@
       const linkHtml = links.map((link) => (
         `<a href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)} ↗</a>`
       )).join('');
+      const path = renderHierarchyPath(project, { interactive: false }).replace('project-row__path', 'featured-item__path');
 
       return `
         <article class="featured-item">
@@ -111,6 +171,7 @@
               <time datetime="${escapeHtml(project.date)}">${escapeHtml(project.date)}</time>
             </div>
             <p>${escapeHtml(project.description)}</p>
+            ${path}
             <div class="featured-item__meta">${eyebrow}${linkHtml}</div>
           </div>
         </article>`;
@@ -199,7 +260,6 @@
         .filter((type) => type !== 'public')
         .map((type) => `<span class="type-tag">[${escapeHtml(type)}]</span>`);
 
-      // Prefer explicit links (docs/site before github). Fall back to primary url.
       const links = Array.isArray(project.links) && project.links.length
         ? project.links
         : [{ label: 'open', url: project.url }];
@@ -213,6 +273,7 @@
           <div class="project-row__main">
             <h3><a href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">${escapeHtml(project.name)} <span aria-hidden="true">↗</span></a></h3>
             <p>${escapeHtml(project.description)}</p>
+            ${renderHierarchyPath(project)}
             <div class="project-row__links">${linkTags.join('')}</div>
           </div>
           <div class="project-row__tags">${[...categoryTags, ...formatTags, ...typeTags].join('')}</div>
@@ -225,14 +286,37 @@
     const firstYear = years[0] || '';
     const lastYear = years.at(-1) || '';
     const range = firstYear === lastYear ? firstYear : `${firstYear}—${lastYear}`;
-    elements.archiveSummary.textContent = `${state.projects.length} public builds · ${range}`;
+    const products = new Set(state.projects.map((p) => p.product).filter(Boolean)).size;
+    elements.archiveSummary.textContent = `zer0 · ${state.projects.length} projects · ${products} products · ${range}`;
   }
 
   function populateFilters() {
     const categories = sortUnique(state.projects.flatMap((project) => project.categories || []));
     const formats = sortUnique(state.projects.flatMap((project) => project.formats || []));
     const years = sortUnique(state.projects.map((project) => project.date.slice(0, 4))).reverse();
+    const portfolios = sortUnique(state.projects.map((p) => p.portfolio).filter(Boolean));
+    const portfolioLabels = Object.fromEntries(
+      state.projects.filter((p) => p.portfolio).map((p) => [p.portfolio, p.portfolioName || p.portfolio]),
+    );
+    const products = sortUnique(state.projects.map((p) => p.product).filter(Boolean));
+    const productLabels = Object.fromEntries(
+      state.projects.filter((p) => p.product).map((p) => [p.product, p.productName || p.product]),
+    );
 
+    if (elements.portfolio) {
+      elements.portfolio.innerHTML = '<option value="">all</option>' + portfolios
+        .map((id) => `<option value="${escapeHtml(id)}">${escapeHtml(portfolioLabels[id] || id)}</option>`)
+        .join('');
+    }
+    if (elements.product) {
+      const productOptions = products.filter((id) => {
+        if (!state.portfolio) return true;
+        return state.projects.some((p) => p.product === id && p.portfolio === state.portfolio);
+      });
+      elements.product.innerHTML = '<option value="">all</option>' + productOptions
+        .map((id) => `<option value="${escapeHtml(id)}">${escapeHtml(productLabels[id] || id)}</option>`)
+        .join('');
+    }
     elements.category.innerHTML = '<option value="">all</option>' + categories
       .map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(labelForCategory(category))}</option>`)
       .join('');
@@ -247,6 +331,8 @@
   function activeFilterCount() {
     return [
       Boolean(state.query),
+      Boolean(state.portfolio),
+      Boolean(state.product),
       Boolean(state.category),
       Boolean(state.format),
       Boolean(state.year),
@@ -263,6 +349,8 @@
   function readUrlState() {
     const params = new URLSearchParams(window.location.search);
     state.query = params.get('q') || '';
+    state.portfolio = params.get('portfolio') || '';
+    state.product = params.get('product') || '';
     state.category = params.get('topic') || '';
     state.format = params.get('format') || '';
     state.year = params.get('year') || '';
@@ -270,11 +358,15 @@
     state.sort = params.get('sort') || 'newest';
 
     elements.search.value = state.query;
+    if (elements.portfolio) elements.portfolio.value = state.portfolio;
+    if (elements.product) elements.product.value = state.product;
     elements.category.value = state.category;
     elements.format.value = state.format;
     elements.year.value = state.year;
     elements.sort.value = state.sort;
 
+    state.portfolio = elements.portfolio?.value || '';
+    state.product = elements.product?.value || '';
     state.category = elements.category.value;
     state.format = elements.format.value;
     state.year = elements.year.value;
@@ -285,6 +377,8 @@
   function writeUrlState() {
     const params = new URLSearchParams();
     if (state.query) params.set('q', state.query);
+    if (state.portfolio) params.set('portfolio', state.portfolio);
+    if (state.product) params.set('product', state.product);
     if (state.category) params.set('topic', state.category);
     if (state.format) params.set('format', state.format);
     if (state.year) params.set('year', state.year);
@@ -295,6 +389,19 @@
   }
 
   function render() {
+    // Keep product options coherent with selected portfolio.
+    if (elements.product) {
+      const current = state.product;
+      populateFilters();
+      if (current && [...elements.product.options].some((o) => o.value === current)) {
+        elements.product.value = current;
+        state.product = current;
+      } else {
+        elements.product.value = '';
+        state.product = '';
+      }
+      if (elements.portfolio) elements.portfolio.value = state.portfolio;
+    }
     renderArchive();
     renderActivityMap();
     renderFilterSummary();
@@ -303,12 +410,16 @@
 
   function clearFilters() {
     state.query = '';
+    state.portfolio = '';
+    state.product = '';
     state.category = '';
     state.format = '';
     state.year = '';
     state.date = '';
     state.sort = 'newest';
     elements.search.value = '';
+    if (elements.portfolio) elements.portfolio.value = '';
+    if (elements.product) elements.product.value = '';
     elements.category.value = '';
     elements.format.value = '';
     elements.year.value = '';
@@ -320,6 +431,15 @@
   function bindEvents() {
     elements.search.addEventListener('input', () => {
       state.query = elements.search.value;
+      render();
+    });
+    elements.portfolio?.addEventListener('change', () => {
+      state.portfolio = elements.portfolio.value;
+      state.product = '';
+      render();
+    });
+    elements.product?.addEventListener('change', () => {
+      state.product = elements.product.value;
       render();
     });
     elements.category.addEventListener('change', () => {
@@ -340,6 +460,10 @@
     });
     elements.clearFilters.addEventListener('click', clearFilters);
     document.querySelector('[data-clear-filters]')?.addEventListener('click', clearFilters);
+
+    elements.themeToggle?.addEventListener('click', () => {
+      setTheme(getTheme() === 'night' ? 'day' : 'night');
+    });
 
     elements.randomBuild.addEventListener('click', () => {
       const pool = getFilteredProjects();
@@ -368,6 +492,20 @@
       if (kind === 'format') {
         state.format = value;
         elements.format.value = value;
+      }
+      if (kind === 'portfolio') {
+        state.portfolio = value;
+        state.product = '';
+        if (elements.portfolio) elements.portfolio.value = value;
+      }
+      if (kind === 'product') {
+        state.product = value;
+        if (elements.product) elements.product.value = value;
+        const sample = state.projects.find((p) => p.product === value);
+        if (sample?.portfolio) {
+          state.portfolio = sample.portfolio;
+          if (elements.portfolio) elements.portfolio.value = sample.portfolio;
+        }
       }
       elements.filterDisclosure.open = true;
       render();
@@ -406,12 +544,18 @@
       }
 
       const dataVersion = manifest.generatedAt || BUILD_VERSION;
-      const chunks = await Promise.all(manifest.files.map(async (file) => {
-        const response = await fetch(versionedDataUrl(file, dataVersion), { cache: 'no-store' });
-        if (!response.ok) throw new Error(`${file}: ${response.status}`);
-        return response.json();
-      }));
+      const [hierarchy, ...chunks] = await Promise.all([
+        fetch(versionedDataUrl('hierarchy.json', dataVersion), { cache: 'no-store' })
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null),
+        ...manifest.files.map(async (file) => {
+          const response = await fetch(versionedDataUrl(file, dataVersion), { cache: 'no-store' });
+          if (!response.ok) throw new Error(`${file}: ${response.status}`);
+          return response.json();
+        }),
+      ]);
 
+      state.hierarchy = hierarchy;
       state.projects = chunks
         .flatMap((chunk) => chunk.projects || [])
         .filter((project) => Array.isArray(project.types) && project.types.includes('public'));
@@ -423,6 +567,7 @@
       renderActivityMap();
       render();
       bindEvents();
+      setTheme(getTheme());
     } catch (error) {
       console.error('boplog data load failed', error);
       elements.resultCount.textContent = 'latest 12 shown';
@@ -431,5 +576,6 @@
   }
 
   elements.currentYear.textContent = new Date().getFullYear();
+  setTheme(getTheme());
   loadProjects();
 })();

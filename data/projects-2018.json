@@ -20,7 +20,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/raisr"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "open-source-contrib",
+      "productName": "Open-source contributions"
     }
   ]
 }

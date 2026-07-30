@@ -27,6 +27,7 @@ const FEATURED_LIMIT_DEFAULT = 6;
 const OVERRIDES_PATH = path.join(DATA_DIR, 'description-overrides.json');
 const DATE_OVERRIDES_PATH = path.join(DATA_DIR, 'date-overrides.json');
 const FEATURED_PATH = path.join(DATA_DIR, 'featured.json');
+const HIERARCHY_PATH = path.join(DATA_DIR, 'hierarchy.json');
 const WEAK_DESC_RE = /^(public repository|fork with commits by me)(\s*·.*)?$/i;
 const GENERIC_README_RE = /run and deploy your ai studio app|this template provides a minimal setup|automatically synced with your \[?v0/i;
 
@@ -543,6 +544,49 @@ async function loadFeaturedConfig() {
   }
 }
 
+async function loadHierarchy() {
+  try {
+    return JSON.parse(await readFile(HIERARCHY_PATH, 'utf8'));
+  } catch {
+    return null;
+  }
+}
+
+function applyHierarchy(projects, hierarchy) {
+  if (!hierarchy || !Array.isArray(hierarchy.products)) return projects;
+  const company = hierarchy.company || { id: 'zer0', name: 'zer0' };
+  const portfolios = Object.fromEntries((hierarchy.portfolios || []).map((p) => [p.id, p]));
+  const defaultPf = hierarchy.defaultPortfolio || 'deeptech';
+  const defaultPd = hierarchy.defaultProduct || 'lab';
+  const byName = new Map();
+  for (const product of hierarchy.products) {
+    for (const name of product.projects || []) {
+      byName.set(name, product);
+      byName.set(String(name).toLowerCase(), product);
+      byName.set(slugify(name), product);
+    }
+  }
+  const defaultProduct = hierarchy.products.find((p) => p.id === defaultPd) || hierarchy.products.at(-1);
+
+  return projects.map((project) => {
+    const product = byName.get(project.name)
+      || byName.get(project.id)
+      || byName.get(slugify(project.name))
+      || defaultProduct;
+    const portfolioId = product?.portfolio || defaultPf;
+    const portfolio = portfolios[portfolioId] || { id: portfolioId, name: portfolioId };
+    return {
+      ...project,
+      company: company.id,
+      companyName: company.name,
+      portfolio: portfolio.id,
+      portfolioName: portfolio.name,
+      product: product?.id || defaultPd,
+      productName: product?.name || defaultPd,
+    };
+  });
+}
+
 function pickFeatured(projects, featuredConfig) {
   const limit = featuredConfig?.limit || FEATURED_LIMIT_DEFAULT;
   const byName = new Map(projects.map((p) => [p.name, p]));
@@ -750,8 +794,10 @@ async function main() {
   const overrides = await loadDescriptionOverrides();
   const dateOverrides = await loadDateOverrides();
   const featuredConfig = await loadFeaturedConfig();
+  const hierarchy = await loadHierarchy();
   log(`description overrides: ${overrides.size}`);
   log(`date overrides: ${dateOverrides.size}`);
+  log(`hierarchy products: ${hierarchy?.products?.length || 0}`);
   log(`featured pin list: ${featuredConfig.repos.join(', ') || '(none)'} (limit ${featuredConfig.limit})`);
 
   log('listing public repos…');
@@ -815,6 +861,7 @@ async function main() {
     seen.add(p.id);
     return true;
   });
+  projects = applyHierarchy(projects, hierarchy);
 
   const featuredOrder = pickFeatured(projects, featuredConfig);
   const featuredIds = new Set(featuredOrder);
