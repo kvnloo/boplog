@@ -1,0 +1,4 @@
+{
+  "_comment": "Force project.date (YYYY-MM-DD) when GitHub pushed_at is misleading (e.g. docs-only cleanup on old work).",
+  "AudioEngine": "2017-06-06"
+}

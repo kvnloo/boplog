@@ -25,6 +25,7 @@ const API = 'https://api.github.com';
 const CONCURRENCY = Number(process.env.SYNC_CONCURRENCY || 8);
 const FEATURED_LIMIT_DEFAULT = 6;
 const OVERRIDES_PATH = path.join(DATA_DIR, 'description-overrides.json');
+const DATE_OVERRIDES_PATH = path.join(DATA_DIR, 'date-overrides.json');
 const FEATURED_PATH = path.join(DATA_DIR, 'featured.json');
 const WEAK_DESC_RE = /^(public repository|fork with commits by me)(\s*·.*)?$/i;
 const GENERIC_README_RE = /run and deploy your ai studio app|this template provides a minimal setup|automatically synced with your \[?v0/i;
@@ -340,6 +341,22 @@ async function loadDescriptionOverrides() {
   }
 }
 
+async function loadDateOverrides() {
+  try {
+    const raw = JSON.parse(await readFile(DATE_OVERRIDES_PATH, 'utf8'));
+    const map = new Map();
+    for (const [key, value] of Object.entries(raw)) {
+      if (key === '_comment' || key.startsWith('__')) continue;
+      if (typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value.trim())) {
+        map.set(key, value.trim());
+      }
+    }
+    return map;
+  } catch {
+    return new Map();
+  }
+}
+
 function isWeakDescription(text) {
   if (!text || !String(text).trim()) return true;
   return WEAK_DESC_RE.test(String(text).trim());
@@ -454,7 +471,7 @@ async function resolveDescription(repo, overrides, authored) {
   return { description: fallback, source: 'fallback' };
 }
 
-async function projectFromRepo(repo, overrides, { featured = false, featuredRank } = {}) {
+async function projectFromRepo(repo, overrides, dateOverrides, { featured = false, featuredRank } = {}) {
   // Need parent full_name for fork blurbs
   let parent = repo.parent;
   if (repo.fork && !parent?.full_name) {
@@ -474,7 +491,9 @@ async function projectFromRepo(repo, overrides, { featured = false, featuredRank
   const { links, primaryUrl } = await resolveLinks(repo);
 
   // Prefer latest *my* commit date for forks (feature branch work).
-  const date = isoDay(authored.latestDate)
+  // Date overrides win when Git history is misleading (cleanup-only pushes).
+  const date = dateOverrides.get(repo.name)
+    || isoDay(authored.latestDate)
     || isoDay(repo.pushed_at)
     || isoDay(repo.updated_at)
     || isoDay(repo.created_at);
@@ -729,8 +748,10 @@ async function main() {
 
   await mkdir(DATA_DIR, { recursive: true });
   const overrides = await loadDescriptionOverrides();
+  const dateOverrides = await loadDateOverrides();
   const featuredConfig = await loadFeaturedConfig();
   log(`description overrides: ${overrides.size}`);
+  log(`date overrides: ${dateOverrides.size}`);
   log(`featured pin list: ${featuredConfig.repos.join(', ') || '(none)'} (limit ${featuredConfig.limit})`);
 
   log('listing public repos…');
@@ -782,7 +803,11 @@ async function main() {
   if (!selected.length) die('no repositories with authored commits found');
 
   log(`resolving descriptions + docs/pages links for ${selected.length} repos…`);
-  let projects = await mapPool(selected, Math.min(CONCURRENCY, 6), (repo) => projectFromRepo(repo, overrides));
+  let projects = await mapPool(
+    selected,
+    Math.min(CONCURRENCY, 6),
+    (repo) => projectFromRepo(repo, overrides, dateOverrides),
+  );
   // De-dupe by id (unlikely)
   const seen = new Set();
   projects = projects.filter((p) => {

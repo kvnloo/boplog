@@ -388,34 +388,6 @@
       ]
     },
     {
-      "id": "audioengine",
-      "name": "AudioEngine",
-      "description": "iOS audio-engine / Phase I wireframe project with generated docs site.",
-      "date": "2025-11-10",
-      "url": "https://kvnloo.github.io/AudioEngine/",
-      "types": [
-        "public",
-        "makefile"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/AudioEngine/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/AudioEngine"
-        }
-      ],
-      "featured": true,
-      "featuredRank": 1,
-      "eyebrow": "iOS audio \u00b7 docs"
-    },
-    {
       "id": "spy",
       "name": "spy",
       "description": "SPY trading indicator pages published via GitHub Pages.",

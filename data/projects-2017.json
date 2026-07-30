@@ -43,6 +43,34 @@
       ]
     },
     {
+      "id": "audioengine",
+      "name": "AudioEngine",
+      "description": "Old iOS project (2017): real-time noise meter and 14-band dual-channel EQ (JubiAudio Phase I wireframe). Last real work ~2017-06-06; 2025 commits were docs cleanup only.",
+      "date": "2017-06-06",
+      "url": "https://kvnloo.github.io/AudioEngine/",
+      "types": [
+        "public",
+        "makefile"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/AudioEngine/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/AudioEngine"
+        }
+      ],
+      "featured": true,
+      "featuredRank": 1,
+      "eyebrow": "iOS \u00b7 2017"
+    },
+    {
       "id": "ios-2017",
       "name": "iOS-2017",
       "description": "My work on this HackIllinois iOS fork: indoor maps view and release cleanup.",
