@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f3f3f0" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#030303" media="(prefers-color-scheme: dark)">
-  <meta name="boplog-build" content="20260730.4">
+  <meta name="boplog-build" content="20260730.6">
   <meta name="description" content="zer0 public build log — company, portfolio, product, project hierarchy for Kevin Rajan's authored GitHub work.">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <meta property="og:title" content="zer0 · Kevin Rajan — Build Log">
@@ -17,15 +17,13 @@
   <title>zer0 · Kevin Rajan — Build Log</title>
   <link rel="canonical" href="https://kvnloo.github.io/boplog/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=20260730.4">
+  <link rel="stylesheet" href="./styles.css?v=20260730.6">
   <script>
     (() => {
       try {
+        // Default is always light (day). Only honor an explicit saved choice.
         const saved = localStorage.getItem('boplog-theme');
-        const theme = saved === 'night' || saved === 'day'
-          ? saved
-          : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
-        document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.theme = saved === 'night' ? 'night' : 'day';
       } catch (_) {
         document.documentElement.dataset.theme = 'day';
       }
@@ -110,6 +108,8 @@
           <span class="theme-toggle__label">theme</span>
         </button>
         <a href="https://github.com/kvnloo" target="_blank" rel="noreferrer">github ↗</a>
+        <a href="https://kvnloo.github.io/portfolio/demos/room/" target="_blank" rel="noreferrer" title="Same public projects as 3D shop artifacts">ramen shop ↗</a>
+        <a href="https://kvnloo.github.io/portfolio/" target="_blank" rel="noreferrer">portfolio ↗</a>
         <a href="./developers/">developers</a>
       </nav>
     </section>
@@ -130,10 +130,19 @@
 
       <section class="activity" aria-labelledby="activity-title">
         <div class="activity__header">
-          <h3 id="activity-title">build activity</h3>
-          <span id="activity-selection" aria-live="polite">last 52 weeks</span>
+          <div class="activity__heading">
+            <h3 id="activity-title">activity</h3>
+            <p class="activity__note" id="activity-note">Build-log mode counts only entries on this site (not every git commit).</p>
+          </div>
+          <div class="activity__controls">
+            <div class="activity-mode" role="group" aria-label="Activity data source">
+              <button type="button" class="activity-mode__btn is-active" id="activity-mode-builds" data-activity-mode="builds" aria-pressed="true">build log</button>
+              <button type="button" class="activity-mode__btn" id="activity-mode-commits" data-activity-mode="commits" aria-pressed="false">all commits</button>
+            </div>
+            <span id="activity-selection" aria-live="polite">last 52 weeks</span>
+          </div>
         </div>
-        <div class="activity__scroll" tabindex="0" aria-label="Build activity calendar. Select a day to filter the archive.">
+        <div class="activity__scroll" tabindex="0" aria-label="Activity calendar. In build-log mode, select a day to filter the archive.">
           <div class="activity__map" id="activity-map"></div>
         </div>
         <div class="activity__legend" aria-hidden="true">
@@ -214,6 +223,8 @@
       <div class="machine-readable__links">
         <a href="./llms.txt">llms.txt</a>
         <a href="./data/manifest.json">JSON manifest</a>
+        <a href="./data/surfaces.json">surfaces (interactive portfolio)</a>
+        <a href="https://kvnloo.github.io/portfolio/demos/room/">interactive shop</a>
         <a href="./feed.xml">Atom feed</a>
         <a href="./sitemap.xml">sitemap.xml</a>
         <a href="./developers/">developers</a>
@@ -231,6 +242,6 @@
     <div class="noscript">Enable JavaScript for filters and the live list, or use the JSON manifest and Atom feed.</div>
   </noscript>
 
-  <script src="./app.js?v=20260730.4" defer></script>
+  <script src="./app.js?v=20260730.6" defer></script>
 </body>
 </html>

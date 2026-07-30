@@ -56,7 +56,7 @@
       "id": "professional-showcase",
       "name": "Professional showcase",
       "portfolio": "professional",
-      "description": "Portfolio site and career packaging (not the portfolio taxonomy node).",
+      "description": "Portfolio site and career packaging (not the portfolio taxonomy node). Interactive 3D surface: Kevin's Ramen & Boba (portfolio/demos/room) — same public project rows as visual props; see data/surfaces.json.",
       "projects": ["portfolio", "cv", "jobapp"]
     },
     {

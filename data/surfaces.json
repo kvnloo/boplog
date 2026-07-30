@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-07-30T18:43:59Z",
+  "interactivePortfolio": {
+    "id": "interactive-portfolio",
+    "label": "Kevin's Ramen & Boba",
+    "description": "Interactive 3D shop portfolio — same public project information as this build log, presented as menu props / scene artifacts.",
+    "url": "https://kvnloo.github.io/portfolio/demos/room/",
+    "siteUrl": "https://kvnloo.github.io/portfolio/",
+    "repo": "https://github.com/kvnloo/portfolio",
+    "shopManifestUrl": "https://kvnloo.github.io/portfolio/demos/room/data/shop-manifest.json",
+    "parallel": true
+  }
+}

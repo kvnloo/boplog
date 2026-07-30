@@ -56,7 +56,19 @@ Rate limit budget: Actions `GITHUB_TOKEN` allows **1,000 req/hour** for this rep
 }
 ```
 
-Featured projects (1–3) are chosen automatically by stars, then recency.
+Featured projects are pinned via `data/featured.json`, then filled by stars/recency.
+
+## Parallel surface: interactive portfolio
+
+The same public project information is also presented as a **3D shop** (Kevin’s Ramen & Boba):
+
+| Surface | URL |
+|---------|-----|
+| This build log (archive UI) | <https://kvnloo.github.io/boplog/> |
+| Interactive shop | <https://kvnloo.github.io/portfolio/demos/room/> |
+| Portfolio site | <https://kvnloo.github.io/portfolio/> |
+
+`data/manifest.json` includes `surfaces.interactivePortfolio` (and `data/surfaces.json`) so agents/UIs can discover the shop without hardcoding. The portfolio repo generates `demos/room` menu props from this data via `scripts/sync-shop-from-boplog.mjs` (scene map + boplog year files).
 
 ## Deployment
 

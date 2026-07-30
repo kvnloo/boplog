@@ -1,14 +1,29 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.4';
+  const BUILD_VERSION = '20260730.6';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
+  const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
   document.documentElement.dataset.build = BUILD_VERSION;
+
+  /** Project ids that also appear as props in the interactive shop (portfolio demos/room). */
+  const SHOP_PROJECT_IDS = new Set([
+    'evolve',
+    'ace',
+    'files',
+    'tmux-agent-fleet',
+    'audioengine',
+    'monument',
+    'portfolio',
+  ]);
 
   const state = {
     projects: [],
     hierarchy: null,
+    surfaces: null,
+    activity: null,
+    activityMode: 'builds',
     query: '',
     portfolio: '',
     product: '',
@@ -39,6 +54,9 @@
     filterSummary: document.querySelector('#filter-summary'),
     activityMap: document.querySelector('#activity-map'),
     activitySelection: document.querySelector('#activity-selection'),
+    activityNote: document.querySelector('#activity-note'),
+    activityModeBuilds: document.querySelector('#activity-mode-builds'),
+    activityModeCommits: document.querySelector('#activity-mode-commits'),
     themeToggle: document.querySelector('#theme-toggle'),
   };
 
@@ -160,6 +178,10 @@
       const linkHtml = links.map((link) => (
         `<a href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)} ↗</a>`
       )).join('');
+      const shopUrl = shopUrlFor(project);
+      const shopLink = shopUrl
+        ? `<a href="${escapeHtml(shopUrl)}" target="_blank" rel="noreferrer" title="View as interactive shop prop">shop ↗</a>`
+        : '';
       const path = renderHierarchyPath(project, { interactive: false }).replace('project-row__path', 'featured-item__path');
 
       return `
@@ -172,7 +194,7 @@
             </div>
             <p>${escapeHtml(project.description)}</p>
             ${path}
-            <div class="featured-item__meta">${eyebrow}${linkHtml}</div>
+            <div class="featured-item__meta">${eyebrow}${linkHtml}${shopLink}</div>
           </div>
         </article>`;
     }).join('');
@@ -198,20 +220,65 @@
     return Math.min(4, Math.max(1, Math.ceil((count / maxCount) * 4)));
   }
 
+  function buildLogCounts() {
+    const counts = new Map();
+    for (const project of state.projects) {
+      counts.set(project.date, (counts.get(project.date) || 0) + 1);
+    }
+    return counts;
+  }
+
+  function commitCounts() {
+    const counts = new Map();
+    const source = state.activity?.commits || state.activity?.days || {};
+    for (const [day, count] of Object.entries(source)) {
+      const n = Number(count) || 0;
+      if (n > 0) counts.set(day, n);
+    }
+    return counts;
+  }
+
+  function setActivityMode(mode) {
+    const next = mode === 'commits' ? 'commits' : 'builds';
+    state.activityMode = next;
+    try { localStorage.setItem(ACTIVITY_MODE_KEY, next); } catch (_) { /* ignore */ }
+
+    elements.activityModeBuilds?.classList.toggle('is-active', next === 'builds');
+    elements.activityModeCommits?.classList.toggle('is-active', next === 'commits');
+    elements.activityModeBuilds?.setAttribute('aria-pressed', next === 'builds' ? 'true' : 'false');
+    elements.activityModeCommits?.setAttribute('aria-pressed', next === 'commits' ? 'true' : 'false');
+
+    if (elements.activityNote) {
+      elements.activityNote.textContent = next === 'commits'
+        ? 'All-commits mode uses your GitHub contribution calendar snapshot (profile green squares), not only rows on this site.'
+        : 'Build-log mode counts only entries published on this website — not every git commit.';
+    }
+
+    // Day click filters the archive only for build-log entries.
+    if (next === 'commits' && state.date) {
+      state.date = '';
+    }
+  }
+
   function renderActivityMap() {
     if (!elements.activityMap) return;
-    const counts = new Map();
-    for (const project of state.projects) counts.set(project.date, (counts.get(project.date) || 0) + 1);
+    const mode = state.activityMode === 'commits' ? 'commits' : 'builds';
+    const counts = mode === 'commits' ? commitCounts() : buildLogCounts();
+    const unit = mode === 'commits' ? 'commit' : 'build';
+    const units = mode === 'commits' ? 'commits' : 'builds';
 
-    const latestProject = [...state.projects].sort((a, b) => b.date.localeCompare(a.date))[0];
     const today = new Date();
     today.setUTCHours(12, 0, 0, 0);
-    const latestDate = latestProject ? new Date(`${latestProject.date}T12:00:00Z`) : today;
+    const latestFromCounts = [...counts.keys()].sort().at(-1);
+    const latestProject = [...state.projects].sort((a, b) => b.date.localeCompare(a.date))[0];
+    const latestDate = latestFromCounts
+      ? new Date(`${latestFromCounts}T12:00:00Z`)
+      : (latestProject ? new Date(`${latestProject.date}T12:00:00Z`) : today);
     const end = latestDate > today ? latestDate : today;
     end.setUTCDate(end.getUTCDate() + (6 - end.getUTCDay()));
     const start = new Date(end);
     start.setUTCDate(start.getUTCDate() - (52 * 7 - 1));
-    const maxCount = Math.max(1, ...counts.values());
+    const maxCount = Math.max(1, ...counts.values(), 0);
     const weeks = [];
     const monthLabels = [];
     let previousMonth = -1;
@@ -230,9 +297,10 @@
         date.setUTCDate(weekStart.getUTCDate() + day);
         const value = isoDate(date);
         const count = counts.get(value) || 0;
-        const selected = value === state.date;
-        const label = `${count} ${count === 1 ? 'build' : 'builds'} on ${localDateLabel(value)}`;
-        days.push(`<button class="activity__cell${selected ? ' is-selected' : ''}" type="button" data-activity-date="${value}" data-level="${activityLevel(count, maxCount)}" aria-pressed="${selected}" aria-label="${label}" title="${label}"></button>`);
+        const selected = mode === 'builds' && value === state.date;
+        const label = `${count} ${count === 1 ? unit : units} on ${localDateLabel(value)}`;
+        const disabled = mode === 'commits' ? '' : '';
+        days.push(`<button class="activity__cell${selected ? ' is-selected' : ''}" type="button" data-activity-date="${value}" data-level="${activityLevel(count, maxCount)}" aria-pressed="${selected}" aria-label="${label}" title="${label}"${disabled}></button>`);
       }
       weeks.push(`<div class="activity__week">${days.join('')}</div>`);
     }
@@ -241,7 +309,16 @@
       <div class="activity__months">${monthLabels.join('')}</div>
       <div class="activity__days" aria-hidden="true"><span>Mon</span><span>Wed</span><span>Fri</span></div>
       <div class="activity__weeks">${weeks.join('')}</div>`;
-    elements.activitySelection.textContent = state.date ? `${localDateLabel(state.date)} · click again to clear` : 'last 52 weeks';
+
+    if (mode === 'commits') {
+      elements.activitySelection.textContent = counts.size
+        ? 'last 52 weeks · GitHub commits'
+        : 'no commit snapshot yet · run sync';
+    } else {
+      elements.activitySelection.textContent = state.date
+        ? `${localDateLabel(state.date)} · click again to clear`
+        : 'last 52 weeks · site build log only';
+    }
   }
 
   function renderArchive() {
@@ -266,6 +343,12 @@
       const linkTags = links.map((link) => (
         `<a href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)} ↗</a>`
       ));
+      const shopUrl = shopUrlFor(project);
+      if (shopUrl) {
+        linkTags.push(
+          `<a href="${escapeHtml(shopUrl)}" target="_blank" rel="noreferrer" title="Same project as a 3D shop prop">shop ↗</a>`,
+        );
+      }
 
       return `
         <article class="project-row">
@@ -279,6 +362,14 @@
           <div class="project-row__tags">${[...categoryTags, ...formatTags, ...typeTags].join('')}</div>
         </article>`;
     }).join('');
+  }
+
+  function shopUrlFor(project) {
+    if (!project || !SHOP_PROJECT_IDS.has(project.id)) return '';
+    const base =
+      state.surfaces?.interactivePortfolio?.url ||
+      'https://kvnloo.github.io/portfolio/demos/room/';
+    return base;
   }
 
   function renderSummary() {
@@ -465,6 +556,15 @@
       setTheme(getTheme() === 'night' ? 'day' : 'night');
     });
 
+    const onActivityModeClick = (event) => {
+      const mode = event.currentTarget?.dataset?.activityMode;
+      if (!mode || mode === state.activityMode) return;
+      setActivityMode(mode);
+      render();
+    };
+    elements.activityModeBuilds?.addEventListener('click', onActivityModeClick);
+    elements.activityModeCommits?.addEventListener('click', onActivityModeClick);
+
     elements.randomBuild.addEventListener('click', () => {
       const pool = getFilteredProjects();
       const project = pool[Math.floor(Math.random() * pool.length)] || state.projects[0];
@@ -474,6 +574,8 @@
     elements.activityMap?.addEventListener('click', (event) => {
       const cell = event.target.closest('[data-activity-date]');
       if (!cell) return;
+      // Only build-log mode filters the archive by day.
+      if (state.activityMode === 'commits') return;
       const date = cell.dataset.activityDate || '';
       state.date = state.date === date ? '' : date;
       render();
@@ -544,8 +646,14 @@
       }
 
       const dataVersion = manifest.generatedAt || BUILD_VERSION;
-      const [hierarchy, ...chunks] = await Promise.all([
+      const [hierarchy, surfaces, activity, ...chunks] = await Promise.all([
         fetch(versionedDataUrl('hierarchy.json', dataVersion), { cache: 'no-store' })
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null),
+        fetch(versionedDataUrl('surfaces.json', dataVersion), { cache: 'no-store' })
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null),
+        fetch(versionedDataUrl('activity.json', dataVersion), { cache: 'no-store' })
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
         ...manifest.files.map(async (file) => {
@@ -556,12 +664,26 @@
       ]);
 
       state.hierarchy = hierarchy;
+      state.surfaces = surfaces || manifest.surfaces || {
+        interactivePortfolio: manifest.interactivePortfolio || null,
+      };
+      state.activity = activity;
       state.projects = chunks
         .flatMap((chunk) => chunk.projects || [])
         .filter((project) => Array.isArray(project.types) && project.types.includes('public'));
 
+      let savedMode = 'builds';
+      try {
+        savedMode = localStorage.getItem(ACTIVITY_MODE_KEY) === 'commits' ? 'commits' : 'builds';
+      } catch (_) { /* ignore */ }
+      // Fall back to builds if no commit snapshot is available yet.
+      if (savedMode === 'commits' && !(activity?.commits && Object.keys(activity.commits).length)) {
+        savedMode = 'builds';
+      }
+
       populateFilters();
       readUrlState();
+      setActivityMode(savedMode);
       renderSummary();
       renderFeatured();
       renderActivityMap();

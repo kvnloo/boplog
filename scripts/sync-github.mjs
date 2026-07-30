@@ -625,6 +625,96 @@ function stripInternalFields(project) {
   return rest;
 }
 
+/**
+ * GitHub contribution calendar for the user (includes commits counted by GitHub
+ * toward the green squares). Written as activity.json for the site heatmap.
+ */
+async function fetchCommitActivityCalendar() {
+  if (!TOKEN) {
+    log('skip commit activity calendar: no token');
+    return { commits: {}, source: 'none' };
+  }
+  const query = `
+    query($login: String!) {
+      user(login: $login) {
+        contributionsCollection {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                date
+                contributionCount
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
+  try {
+    const response = await fetch('https://api.github.com/graphql', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${TOKEN}`,
+        'Content-Type': 'application/json',
+        'User-Agent': 'boplog-sync',
+      },
+      body: JSON.stringify({ query, variables: { login: USER } }),
+    });
+    if (!response.ok) {
+      const body = await response.text();
+      throw new Error(`${response.status}: ${body.slice(0, 200)}`);
+    }
+    const payload = await response.json();
+    if (payload.errors?.length) {
+      throw new Error(payload.errors.map((e) => e.message).join('; '));
+    }
+    const weeks = payload?.data?.user?.contributionsCollection?.contributionCalendar?.weeks || [];
+    const commits = {};
+    let total = 0;
+    for (const week of weeks) {
+      for (const day of week.contributionDays || []) {
+        const n = Number(day.contributionCount) || 0;
+        if (n > 0) {
+          commits[day.date] = n;
+          total += n;
+        }
+      }
+    }
+    log(`commit activity calendar: ${Object.keys(commits).length} active days, total=${total}`);
+    return {
+      commits,
+      source: 'github-contribution-calendar',
+      totalContributions: payload?.data?.user?.contributionsCollection?.contributionCalendar?.totalContributions ?? total,
+    };
+  } catch (error) {
+    log(`commit activity calendar failed: ${error.message}`);
+    return { commits: {}, source: 'error', error: String(error.message || error) };
+  }
+}
+
+async function writeActivity(projects, generatedAt) {
+  const builds = {};
+  for (const project of projects) {
+    if (!project.date) continue;
+    builds[project.date] = (builds[project.date] || 0) + 1;
+  }
+  const commitActivity = await fetchCommitActivityCalendar();
+  const activity = {
+    generatedAt,
+    note: {
+      builds: 'Counts of build-log entries on this site (one per project date), not raw git history.',
+      commits: 'GitHub contribution calendar for the user (synced snapshot). Prefer “build log” mode for this site’s published work.',
+    },
+    builds,
+    commits: commitActivity.commits || {},
+    commitSource: commitActivity.source,
+    totalContributions: commitActivity.totalContributions ?? null,
+  };
+  await writeFile(path.join(DATA_DIR, 'activity.json'), `${JSON.stringify(activity, null, 2)}\n`, 'utf8');
+  return activity;
+}
+
 async function writeYearFiles(projects, featuredLimit = FEATURED_LIMIT_DEFAULT) {
   const byYear = new Map();
   for (const project of projects) {
@@ -654,14 +744,32 @@ async function writeYearFiles(projects, featuredLimit = FEATURED_LIMIT_DEFAULT) 
   }
 
   const generatedAt = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
+  const interactivePortfolio = {
+    id: 'interactive-portfolio',
+    label: "Kevin's Ramen & Boba",
+    description:
+      'Interactive 3D shop portfolio — same public project information as this build log, presented as menu props / scene artifacts.',
+    url: 'https://kvnloo.github.io/portfolio/demos/room/',
+    siteUrl: 'https://kvnloo.github.io/portfolio/',
+    repo: 'https://github.com/kvnloo/portfolio',
+    shopManifestUrl: 'https://kvnloo.github.io/portfolio/demos/room/data/shop-manifest.json',
+    parallel: true,
+  };
+  const surfaces = {
+    interactivePortfolio,
+  };
   const manifest = {
     generatedAt,
     source: `GitHub public repos for ${USER} (authored commits only; forks without commits excluded)`,
     featuredLimit,
     user: USER,
     files,
+    hierarchy: 'hierarchy.json',
+    surfaces,
+    interactivePortfolio,
   };
   await writeFile(path.join(DATA_DIR, 'manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`, 'utf8');
+  await writeFile(path.join(DATA_DIR, 'surfaces.json'), `${JSON.stringify({ generatedAt, ...surfaces }, null, 2)}\n`, 'utf8');
   return { manifest, years, files };
 }
 
@@ -885,11 +993,13 @@ async function main() {
   log('description sources:', JSON.stringify(sources));
 
   const { manifest } = await writeYearFiles(projects, featuredConfig.limit);
+  const activity = await writeActivity(projects, manifest.generatedAt);
   await writeFeed(projects, manifest.generatedAt);
   await writeSitemap(manifest.generatedAt);
   await writeLlms(projects, manifest.generatedAt);
 
   log(`wrote ${projects.length} projects across ${manifest.files.length} year files`);
+  log(`activity builds days=${Object.keys(activity.builds).length} commit days=${Object.keys(activity.commits).length}`);
   log(`featured: ${projects.filter((p) => p.featured).map((p) => p.name).join(', ')}`);
   log(`generatedAt=${manifest.generatedAt}`);
 }
