@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.2';
+  const BUILD_VERSION = '20260730.3';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   document.documentElement.dataset.build = BUILD_VERSION;
 
@@ -89,7 +89,7 @@
     const featured = state.projects
       .filter((project) => project.featured)
       .sort((a, b) => (a.featuredRank || 99) - (b.featuredRank || 99))
-      .slice(0, 3);
+      .slice(0, 12);
 
     elements.featuredList.dataset.count = String(featured.length);
     elements.featuredList.innerHTML = featured.map((project, index) => {

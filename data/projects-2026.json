@@ -71,13 +71,13 @@
         }
       ],
       "featured": true,
-      "featuredRank": 1,
-      "eyebrow": "Shell"
+      "featuredRank": 2,
+      "eyebrow": "dotfiles"
     },
     {
       "id": "pm",
       "name": "_pm",
-      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.",
+      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the company OS PM core.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/_pm",
       "types": [
@@ -177,7 +177,10 @@
           "label": "github",
           "url": "https://github.com/kvnloo/tmux-agent-fleet"
         }
-      ]
+      ],
+      "featured": true,
+      "featuredRank": 6,
+      "eyebrow": "tmux agents"
     },
     {
       "id": "claude-island",

@@ -178,8 +178,8 @@
         }
       ],
       "featured": true,
-      "featuredRank": 2,
-      "eyebrow": "Shell"
+      "featuredRank": 4,
+      "eyebrow": "agent swarm"
     },
     {
       "id": "whisper",
@@ -224,7 +224,10 @@
           "label": "github",
           "url": "https://github.com/kvnloo/portfolio"
         }
-      ]
+      ],
+      "featured": true,
+      "featuredRank": 5,
+      "eyebrow": "personal site"
     },
     {
       "id": "playground",
@@ -332,7 +335,7 @@
       ],
       "featured": true,
       "featuredRank": 3,
-      "eyebrow": "TypeScript"
+      "eyebrow": "digital twin"
     },
     {
       "id": "monument",
@@ -407,7 +410,10 @@
           "label": "github",
           "url": "https://github.com/kvnloo/AudioEngine"
         }
-      ]
+      ],
+      "featured": true,
+      "featuredRank": 1,
+      "eyebrow": "iOS audio \u00b7 docs"
     },
     {
       "id": "spy",
@@ -548,7 +554,7 @@
     {
       "id": "cofounder",
       "name": "cofounder",
-      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI…",
+      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI\u2026",
       "date": "2025-08-28",
       "url": "https://cofounder.openinterface.ai/",
       "types": [

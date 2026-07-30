@@ -1,0 +1,12 @@
+{
+  "_comment": "Ordered featured projects (repo names). Sync pins these first; remaining slots are filled by stars/recency if under the limit.",
+  "limit": 6,
+  "repos": [
+    "AudioEngine",
+    ".files",
+    "ace",
+    "evolve",
+    "portfolio",
+    "tmux-agent-fleet"
+  ]
+}

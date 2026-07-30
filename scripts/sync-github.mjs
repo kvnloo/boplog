@@ -23,8 +23,9 @@ const TOKEN = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
 const SITE_URL = (process.env.SITE_URL || 'https://kvnloo.github.io/boplog').replace(/\/$/, '');
 const API = 'https://api.github.com';
 const CONCURRENCY = Number(process.env.SYNC_CONCURRENCY || 8);
-const FEATURED_LIMIT = 3;
+const FEATURED_LIMIT_DEFAULT = 6;
 const OVERRIDES_PATH = path.join(DATA_DIR, 'description-overrides.json');
+const FEATURED_PATH = path.join(DATA_DIR, 'featured.json');
 const WEAK_DESC_RE = /^(public repository|fork with commits by me)(\s*·.*)?$/i;
 const GENERIC_README_RE = /run and deploy your ai studio app|this template provides a minimal setup|automatically synced with your \[?v0/i;
 
@@ -510,12 +511,48 @@ async function projectFromRepo(repo, overrides, { featured = false, featuredRank
   return project;
 }
 
-function pickFeatured(projects) {
-  const ranked = [...projects].sort((a, b) => {
-    if ((b.stars || 0) !== (a.stars || 0)) return (b.stars || 0) - (a.stars || 0);
-    return b.date.localeCompare(a.date);
-  });
-  return ranked.slice(0, FEATURED_LIMIT).map((p) => p.id);
+async function loadFeaturedConfig() {
+  try {
+    const raw = JSON.parse(await readFile(FEATURED_PATH, 'utf8'));
+    const limit = Number(raw.limit) > 0 ? Math.min(12, Number(raw.limit)) : FEATURED_LIMIT_DEFAULT;
+    const repos = Array.isArray(raw.repos)
+      ? raw.repos.filter((n) => typeof n === 'string' && n.trim()).map((n) => n.trim())
+      : [];
+    return { limit, repos };
+  } catch {
+    return { limit: FEATURED_LIMIT_DEFAULT, repos: [] };
+  }
+}
+
+function pickFeatured(projects, featuredConfig) {
+  const limit = featuredConfig?.limit || FEATURED_LIMIT_DEFAULT;
+  const byName = new Map(projects.map((p) => [p.name, p]));
+  const byId = new Map(projects.map((p) => [p.id, p]));
+  const picked = [];
+  const seen = new Set();
+
+  for (const name of featuredConfig?.repos || []) {
+    if (picked.length >= limit) break;
+    const project = byName.get(name) || byId.get(slugify(name));
+    if (!project || seen.has(project.id)) continue;
+    seen.add(project.id);
+    picked.push(project.id);
+  }
+
+  if (picked.length < limit) {
+    const ranked = [...projects].sort((a, b) => {
+      if ((b.stars || 0) !== (a.stars || 0)) return (b.stars || 0) - (a.stars || 0);
+      return b.date.localeCompare(a.date);
+    });
+    for (const project of ranked) {
+      if (picked.length >= limit) break;
+      if (seen.has(project.id)) continue;
+      seen.add(project.id);
+      picked.push(project.id);
+    }
+  }
+
+  return picked;
 }
 
 function stripInternalFields(project) {
@@ -525,7 +562,7 @@ function stripInternalFields(project) {
   return rest;
 }
 
-async function writeYearFiles(projects) {
+async function writeYearFiles(projects, featuredLimit = FEATURED_LIMIT_DEFAULT) {
   const byYear = new Map();
   for (const project of projects) {
     const year = project.date.slice(0, 4);
@@ -557,7 +594,7 @@ async function writeYearFiles(projects) {
   const manifest = {
     generatedAt,
     source: `GitHub public repos for ${USER} (authored commits only; forks without commits excluded)`,
-    featuredLimit: FEATURED_LIMIT,
+    featuredLimit,
     user: USER,
     files,
   };
@@ -692,7 +729,9 @@ async function main() {
 
   await mkdir(DATA_DIR, { recursive: true });
   const overrides = await loadDescriptionOverrides();
+  const featuredConfig = await loadFeaturedConfig();
   log(`description overrides: ${overrides.size}`);
+  log(`featured pin list: ${featuredConfig.repos.join(', ') || '(none)'} (limit ${featuredConfig.limit})`);
 
   log('listing public repos…');
   // type=owner = repos the user owns (includes forks they own)
@@ -752,10 +791,11 @@ async function main() {
     return true;
   });
 
-  const featuredIds = new Set(pickFeatured(projects));
+  const featuredOrder = pickFeatured(projects, featuredConfig);
+  const featuredIds = new Set(featuredOrder);
   projects = projects.map((p) => {
     if (!featuredIds.has(p.id)) return p;
-    const rank = [...featuredIds].indexOf(p.id) + 1;
+    const rank = featuredOrder.indexOf(p.id) + 1;
     return {
       ...p,
       featured: true,
@@ -772,7 +812,7 @@ async function main() {
   }, {});
   log('description sources:', JSON.stringify(sources));
 
-  const { manifest } = await writeYearFiles(projects);
+  const { manifest } = await writeYearFiles(projects, featuredConfig.limit);
   await writeFeed(projects, manifest.generatedAt);
   await writeSitemap(manifest.generatedAt);
   await writeLlms(projects, manifest.generatedAt);

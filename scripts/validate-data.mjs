@@ -31,13 +31,15 @@ if (!Array.isArray(payload.projects)) {
   }
 
   const featured = payload.projects.filter((project) => project.featured);
-  if (featured.length < 1 || featured.length > 3) errors.push(`featured project count must be between 1 and 3; found ${featured.length}`);
+  if (featured.length < 1 || featured.length > 12) {
+    errors.push(`featured project count must be between 1 and 12; found ${featured.length}`);
+  }
   const ranks = featured.map((project) => project.featuredRank).filter(Number.isFinite);
   if (new Set(ranks).size !== ranks.length) errors.push('featuredRank values must be unique');
 }
 
-if (Number(payload.featuredLimit) < 1 || Number(payload.featuredLimit) > 3) {
-  errors.push('featuredLimit must be between 1 and 3');
+if (Number(payload.featuredLimit) < 1 || Number(payload.featuredLimit) > 12) {
+  errors.push('featuredLimit must be between 1 and 12');
 }
 
 if (errors.length) {
