@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.6';
+  const BUILD_VERSION = '20260730.11';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -383,7 +383,7 @@
       }
 
       return `
-        <article class="project-row">
+        <article class="project-row is-enter" style="animation-delay:${Math.min(index, 12) * 12}ms">
           <time datetime="${escapeHtml(project.date)}">${escapeHtml(project.date)}</time>
           <div class="project-row__main">
             <h3><a href="${escapeHtml(project.url)}" target="_blank" rel="noreferrer">${escapeHtml(projectLabel(project))} <span aria-hidden="true">↗</span></a></h3>
@@ -585,7 +585,13 @@
     document.querySelector('[data-clear-filters]')?.addEventListener('click', clearFilters);
 
     elements.themeToggle?.addEventListener('click', () => {
+      const toggle = elements.themeToggle;
+      toggle?.classList.remove('is-switching');
+      // reflow so the glow pulse can re-trigger
+      void toggle?.offsetWidth;
+      toggle?.classList.add('is-switching');
       setTheme(getTheme() === 'night' ? 'day' : 'night');
+      window.setTimeout(() => toggle?.classList.remove('is-switching'), 450);
     });
 
     const onActivityModeClick = (event) => {
