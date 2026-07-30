@@ -24,6 +24,9 @@ const SITE_URL = (process.env.SITE_URL || 'https://kvnloo.github.io/boplog').rep
 const API = 'https://api.github.com';
 const CONCURRENCY = Number(process.env.SYNC_CONCURRENCY || 8);
 const FEATURED_LIMIT = 3;
+const OVERRIDES_PATH = path.join(DATA_DIR, 'description-overrides.json');
+const WEAK_DESC_RE = /^(public repository|fork with commits by me)(\s*·.*)?$/i;
+const GENERIC_README_RE = /run and deploy your ai studio app|this template provides a minimal setup|automatically synced with your \[?v0/i;
 
 const LANGUAGE_CATEGORY = {
   Python: 'dev',
@@ -173,14 +176,111 @@ function categoriesFor(repo) {
   return [...cats];
 }
 
-function projectFromRepo(repo, { featured = false, featuredRank } = {}) {
+async function loadDescriptionOverrides() {
+  try {
+    const raw = JSON.parse(await readFile(OVERRIDES_PATH, 'utf8'));
+    const map = new Map();
+    for (const [key, value] of Object.entries(raw)) {
+      // Metadata keys only (not repo names like "_pm").
+      if (key === '_comment' || key.startsWith('__')) continue;
+      if (typeof value === 'string' && value.trim()) map.set(key, value.trim());
+    }
+    return map;
+  } catch {
+    return new Map();
+  }
+}
+
+function isWeakDescription(text) {
+  if (!text || !String(text).trim()) return true;
+  return WEAK_DESC_RE.test(String(text).trim());
+}
+
+function clampDescription(text, max = 220) {
+  const clean = String(text).replace(/\s+/g, ' ').trim();
+  if (clean.length <= max) return clean;
+  const sliced = clean.slice(0, max - 1);
+  const cut = sliced.lastIndexOf(' ');
+  return `${(cut > 80 ? sliced.slice(0, cut) : sliced).trim()}…`;
+}
+
+function descriptionFromReadme(readme, repoName) {
+  if (!readme) return null;
+  let text = String(readme)
+    .replace(/\r/g, '')
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/!\[[^\]]*]\([^)]*\)/g, ' ')
+    .replace(/\[[^\]]*]\([^)]*\)/g, (m) => {
+      const label = m.match(/^\[([^\]]*)]/);
+      return label ? label[1] : ' ';
+    })
+    .replace(/^\|.*\|$/gm, ' ')
+    .replace(/^>\s?/gm, '')
+    .replace(/^#{1,6}\s+/gm, '')
+    .replace(/[*_`~]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  if (!text || GENERIC_README_RE.test(text)) return null;
+
+  const name = String(repoName || '').replace(/^\./, '');
+  const nameRe = new RegExp(`^${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*[—\\-–:]?\\s*`, 'i');
+  text = text.replace(nameRe, '').trim();
+
+  const sentence = text.split(/(?<=[.!?])\s+/)[0] || text;
+  if (sentence.length < 24) {
+    const longer = text.slice(0, 200).trim();
+    if (longer.length < 24 || GENERIC_README_RE.test(longer)) return null;
+    return clampDescription(longer);
+  }
+  if (GENERIC_README_RE.test(sentence)) return null;
+  return clampDescription(sentence);
+}
+
+async function fetchReadmeText(fullName) {
+  try {
+    const headers = {
+      Accept: 'application/vnd.github.raw+json',
+      'X-GitHub-Api-Version': '2022-11-28',
+      'User-Agent': 'boplog-sync',
+    };
+    if (TOKEN) headers.Authorization = `Bearer ${TOKEN}`;
+    const response = await fetch(`${API}/repos/${fullName}/readme`, { headers });
+    if (!response.ok) return null;
+    return (await response.text()).slice(0, 8000);
+  } catch {
+    return null;
+  }
+}
+
+async function resolveDescription(repo, overrides) {
+  const override = overrides.get(repo.name);
+  if (override) return { description: clampDescription(override), source: 'override' };
+
+  const gh = (repo.description || '').trim();
+  if (gh && !isWeakDescription(gh) && gh.length >= 12) {
+    return { description: clampDescription(gh), source: 'github' };
+  }
+
+  const readme = await fetchReadmeText(repo.full_name);
+  const fromReadme = descriptionFromReadme(readme, repo.name);
+  if (fromReadme) return { description: fromReadme, source: 'readme' };
+
+  if (gh && !isWeakDescription(gh)) {
+    return { description: clampDescription(gh), source: 'github' };
+  }
+
+  const fallback = [
+    repo.fork ? 'Public fork I have committed to' : 'Public repository',
+    repo.language ? `· ${repo.language}` : null,
+  ].filter(Boolean).join(' ');
+  return { description: fallback, source: 'fallback' };
+}
+
+async function projectFromRepo(repo, overrides, { featured = false, featuredRank } = {}) {
   const date = isoDay(repo.pushed_at) || isoDay(repo.updated_at) || isoDay(repo.created_at);
-  const description = (repo.description && repo.description.trim())
-    || [
-      repo.fork ? 'Fork with commits by me' : 'Public repository',
-      repo.language ? `· ${repo.language}` : null,
-      repo.stargazers_count ? `· ★${repo.stargazers_count}` : null,
-    ].filter(Boolean).join(' ');
+  const { description, source } = await resolveDescription(repo, overrides);
 
   const types = ['public'];
   const langType = languageType(repo.language);
@@ -201,6 +301,7 @@ function projectFromRepo(repo, { featured = false, featuredRank } = {}) {
     language: repo.language || null,
     homepage: repo.homepage || null,
     topics: Array.isArray(repo.topics) ? repo.topics : [],
+    descriptionSource: source,
   };
 
   if (repo.homepage && /^https:\/\//.test(repo.homepage)) {
@@ -229,7 +330,7 @@ function pickFeatured(projects) {
 
 function stripInternalFields(project) {
   const {
-    stars, fork, language, homepage, topics, ...rest
+    stars, fork, language, homepage, topics, descriptionSource, ...rest
   } = project;
   return rest;
 }
@@ -400,6 +501,8 @@ async function main() {
   log(`user=${USER} site=${SITE_URL}`);
 
   await mkdir(DATA_DIR, { recursive: true });
+  const overrides = await loadDescriptionOverrides();
+  log(`description overrides: ${overrides.size}`);
 
   log('listing public repos…');
   // type=owner = repos the user owns (includes forks they own)
@@ -441,7 +544,8 @@ async function main() {
   const selected = [...authoredOriginals, ...authoredForks];
   if (!selected.length) die('no repositories with authored commits found');
 
-  let projects = selected.map((repo) => projectFromRepo(repo));
+  log(`resolving descriptions for ${selected.length} repos…`);
+  let projects = await mapPool(selected, CONCURRENCY, (repo) => projectFromRepo(repo, overrides));
   // De-dupe by id (unlikely)
   const seen = new Set();
   projects = projects.filter((p) => {
@@ -463,6 +567,12 @@ async function main() {
   });
 
   projects.sort((a, b) => b.date.localeCompare(a.date) || a.name.localeCompare(b.name));
+
+  const sources = projects.reduce((acc, p) => {
+    acc[p.descriptionSource] = (acc[p.descriptionSource] || 0) + 1;
+    return acc;
+  }, {});
+  log('description sources:', JSON.stringify(sources));
 
   const { manifest } = await writeYearFiles(projects);
   await writeFeed(projects, manifest.generatedAt);

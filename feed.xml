@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-07-30T06:35:36Z</updated>
+  <updated>2026-07-30T07:56:20Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>boplog</title>
@@ -14,7 +14,7 @@
     <published>2026-07-30T00:00:00Z</published>
     <updated>2026-07-30T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>build-in-public log</summary>
+    <summary>Static build-in-public log: public GitHub repos I&apos;ve actually committed to, synced on a schedule.</summary>
   </entry>
   <entry>
     <title>cod</title>
@@ -23,7 +23,7 @@
     <published>2026-07-29T00:00:00Z</published>
     <updated>2026-07-29T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository</summary>
+    <summary>Early scaffold for a coding-related experiment (public placeholder).</summary>
   </entry>
   <entry>
     <title>.files</title>
@@ -32,7 +32,7 @@
     <published>2026-07-28T00:00:00Z</published>
     <updated>2026-07-28T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>...files...</summary>
+    <summary>Personal Linux/macOS dotfiles for Hyprland, tmux, shells, audio DSP, and agent tooling.</summary>
   </entry>
   <entry>
     <title>_pm</title>
@@ -41,7 +41,7 @@
     <published>2026-07-26T00:00:00Z</published>
     <updated>2026-07-26T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · Python</summary>
+    <summary>Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.</summary>
   </entry>
   <entry>
     <title>zer0-cockpit</title>
@@ -50,7 +50,7 @@
     <published>2026-07-26T00:00:00Z</published>
     <updated>2026-07-26T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · Python</summary>
+    <summary>Read-only, dependency-free terminal dashboard for explicit Zer0 project progress.</summary>
   </entry>
   <entry>
     <title>zer0-harness-spine</title>
@@ -59,7 +59,7 @@
     <published>2026-07-26T00:00:00Z</published>
     <updated>2026-07-26T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · Python</summary>
+    <summary>Ultra-thin harness contracts and provider adapters for the Zer0 agent stack (no orchestration state).</summary>
   </entry>
   <entry>
     <title>zer0-voice</title>
@@ -68,7 +68,7 @@
     <published>2026-07-26T00:00:00Z</published>
     <updated>2026-07-26T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · Python</summary>
+    <summary>Voice adapters that bridge the Zer0 harness to machine-wide speech services without vendoring models.</summary>
   </entry>
   <entry>
     <title>tmux-agent-fleet</title>
@@ -77,7 +77,7 @@
     <published>2026-07-14T00:00:00Z</published>
     <updated>2026-07-14T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Zero-daemon, harness-neutral command palette for coding agents across tmux panes</summary>
+    <summary>Zero-daemon, harness-neutral command palette for coding agents across tmux panes.</summary>
   </entry>
   <entry>
     <title>portfolio</title>
@@ -86,7 +86,7 @@
     <published>2026-01-29T00:00:00Z</published>
     <updated>2026-01-29T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · HTML · ★4</summary>
+    <summary>Personal portfolio site at the intersection of AI, neuroscience, and mobile systems.</summary>
   </entry>
   <entry>
     <title>ace</title>
@@ -95,7 +95,7 @@
     <published>2026-01-28T00:00:00Z</published>
     <updated>2026-01-28T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Ace Sports is a demo website showcasing the digital twin of an autonomous, multi-floor racket sports facility.</summary>
+    <summary>Demo site for Ace Sports: digital twin of an autonomous multi-floor racket sports facility.</summary>
   </entry>
   <entry>
     <title>tesla-infotainment</title>
@@ -104,7 +104,7 @@
     <published>2026-01-28T00:00:00Z</published>
     <updated>2026-01-28T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>aistudio gemini pro attempt</summary>
+    <summary>Tesla-style web infotainment UI prototype built with Google AI Studio / Gemini.</summary>
   </entry>
   <entry>
     <title>tesla</title>
@@ -113,7 +113,7 @@
     <published>2026-01-27T00:00:00Z</published>
     <updated>2026-01-27T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · TypeScript</summary>
+    <summary>Tesla infotainment system experiment in React, TypeScript, and Vite.</summary>
   </entry>
   <entry>
     <title>farm</title>
@@ -122,7 +122,7 @@
     <published>2026-01-22T00:00:00Z</published>
     <updated>2026-01-22T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository</summary>
+    <summary>Early public scaffold (placeholder repo).</summary>
   </entry>
   <entry>
     <title>kpu-sim</title>
@@ -131,7 +131,7 @@
     <published>2026-01-19T00:00:00Z</published>
     <updated>2026-01-19T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Simulator for a KPU-based accelerator</summary>
+    <summary>Fork of the Stillwater KPU accelerator simulator (C++20 knowledge-processing unit sim).</summary>
   </entry>
   <entry>
     <title>coding-interview-university</title>
@@ -140,7 +140,7 @@
     <published>2026-01-18T00:00:00Z</published>
     <updated>2026-01-18T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>A complete computer science study plan to become a software engineer.</summary>
+    <summary>Fork of the CS interview study plan, with an optimized Obsidian-canvas learning system.</summary>
   </entry>
   <entry>
     <title>scrollytelling</title>
@@ -149,7 +149,7 @@
     <published>2026-01-12T00:00:00Z</published>
     <updated>2026-01-12T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · TypeScript</summary>
+    <summary>Scroll-driven visual story experiment with frame sequences (headphones piece).</summary>
   </entry>
   <entry>
     <title>Auto-Claude</title>
@@ -158,7 +158,7 @@
     <published>2026-01-10T00:00:00Z</published>
     <updated>2026-01-10T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Autonomous multi-session AI coding</summary>
+    <summary>Fork of Auto Claude: autonomous multi-session / multi-agent AI coding framework.</summary>
   </entry>
   <entry>
     <title>jobapp</title>
@@ -167,7 +167,7 @@
     <published>2026-01-10T00:00:00Z</published>
     <updated>2026-01-10T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · HTML</summary>
+    <summary>Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.</summary>
   </entry>
   <entry>
     <title>cv</title>
@@ -176,7 +176,7 @@
     <published>2026-01-09T00:00:00Z</published>
     <updated>2026-01-09T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · TeX</summary>
+    <summary>LaTeX CV and role-specific resumes (AI/ML, DevOps, PM) with generated PDFs.</summary>
   </entry>
   <entry>
     <title>expert</title>
@@ -185,7 +185,7 @@
     <published>2025-12-16T00:00:00Z</published>
     <updated>2025-12-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository</summary>
+    <summary>Early public scaffold (placeholder repo).</summary>
   </entry>
   <entry>
     <title>evolve</title>
@@ -194,7 +194,7 @@
     <published>2025-12-15T00:00:00Z</published>
     <updated>2025-12-15T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · Shell · ★7</summary>
+    <summary>Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.</summary>
   </entry>
   <entry>
     <title>blueprint</title>
@@ -203,7 +203,7 @@
     <published>2025-12-10T00:00:00Z</published>
     <updated>2025-12-10T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository · HTML</summary>
+    <summary>Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.</summary>
   </entry>
   <entry>
     <title>docs-boilerplate</title>
@@ -212,7 +212,7 @@
     <published>2025-12-10T00:00:00Z</published>
     <updated>2025-12-10T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository</summary>
+    <summary>Starter boilerplate for documentation sites.</summary>
   </entry>
   <entry>
     <title>z0</title>
@@ -221,7 +221,7 @@
     <published>2025-12-10T00:00:00Z</published>
     <updated>2025-12-10T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository</summary>
+    <summary>Early public scaffold for a Zer0-related experiment (placeholder repo).</summary>
   </entry>
   <entry>
     <title>whisper</title>
@@ -230,6 +230,6 @@
     <published>2025-12-01T00:00:00Z</published>
     <updated>2025-12-01T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public repository</summary>
+    <summary>Early public scaffold for a Whisper-related experiment (placeholder repo).</summary>
   </entry>
 </feed>

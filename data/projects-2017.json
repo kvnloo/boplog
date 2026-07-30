@@ -3,7 +3,7 @@
     {
       "id": "smartvest",
       "name": "smartvest",
-      "description": "Public repository · Swift",
+      "description": "iOS Smartshirt / smartvest concept app with Figma-driven mockups.",
       "date": "2017-12-12",
       "url": "https://github.com/kvnloo/smartvest",
       "types": [
@@ -18,7 +18,7 @@
     {
       "id": "refind",
       "name": "refind",
-      "description": "my refind config",
+      "description": "Personal rEFInd bootloader theme and config.",
       "date": "2017-08-22",
       "url": "https://github.com/kvnloo/refind",
       "types": [
@@ -33,7 +33,7 @@
     {
       "id": "ios-2017",
       "name": "iOS-2017",
-      "description": "Fork with commits by me · Swift",
+      "description": "Fork of the HackIllinois 2017 official iOS app, with map and release fixes.",
       "date": "2017-04-16",
       "url": "https://github.com/kvnloo/iOS-2017",
       "types": [
@@ -49,7 +49,7 @@
     {
       "id": "flicks",
       "name": "Flicks",
-      "description": "Public repository · Swift",
+      "description": "Movies app built on The Movie Database API (iOS course project).",
       "date": "2017-02-10",
       "url": "https://github.com/kvnloo/Flicks",
       "types": [

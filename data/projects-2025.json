@@ -3,7 +3,7 @@
     {
       "id": "expert",
       "name": "expert",
-      "description": "Public repository",
+      "description": "Early public scaffold (placeholder repo).",
       "date": "2025-12-16",
       "url": "https://github.com/kvnloo/expert",
       "types": [
@@ -17,7 +17,7 @@
     {
       "id": "evolve",
       "name": "evolve",
-      "description": "Public repository · Shell · ★7",
+      "description": "Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.",
       "date": "2025-12-15",
       "url": "https://github.com/kvnloo/evolve",
       "types": [
@@ -45,7 +45,7 @@
     {
       "id": "blueprint",
       "name": "blueprint",
-      "description": "Public repository · HTML",
+      "description": "Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.",
       "date": "2025-12-10",
       "url": "https://github.com/kvnloo/blueprint",
       "types": [
@@ -70,7 +70,7 @@
     {
       "id": "docs-boilerplate",
       "name": "docs-boilerplate",
-      "description": "Public repository",
+      "description": "Starter boilerplate for documentation sites.",
       "date": "2025-12-10",
       "url": "https://github.com/kvnloo/docs-boilerplate",
       "types": [
@@ -84,7 +84,7 @@
     {
       "id": "z0",
       "name": "z0",
-      "description": "Public repository",
+      "description": "Early public scaffold for a Zer0-related experiment (placeholder repo).",
       "date": "2025-12-10",
       "url": "https://github.com/kvnloo/z0",
       "types": [
@@ -98,7 +98,7 @@
     {
       "id": "whisper",
       "name": "whisper",
-      "description": "Public repository",
+      "description": "Early public scaffold for a Whisper-related experiment (placeholder repo).",
       "date": "2025-12-01",
       "url": "https://github.com/kvnloo/whisper",
       "types": [
@@ -112,7 +112,7 @@
     {
       "id": "playground",
       "name": "playground",
-      "description": "Public repository · ★1",
+      "description": "Public sandbox repo for throwaway experiments.",
       "date": "2025-11-27",
       "url": "https://github.com/kvnloo/playground",
       "types": [
@@ -126,7 +126,7 @@
     {
       "id": "migrate",
       "name": "migrate",
-      "description": "Public repository",
+      "description": "Migration utilities scaffold (minimal public repo).",
       "date": "2025-11-26",
       "url": "https://github.com/kvnloo/migrate",
       "types": [
@@ -140,7 +140,7 @@
     {
       "id": "flow",
       "name": "flow",
-      "description": "Public repository",
+      "description": "Cross-platform Ratatui TUI for visualizing and controlling multi-agent orchestration frameworks.",
       "date": "2025-11-25",
       "url": "https://github.com/kvnloo/flow",
       "types": [
@@ -154,7 +154,7 @@
     {
       "id": "botw",
       "name": "botw",
-      "description": "Public repository",
+      "description": "Early public scaffold (placeholder repo).",
       "date": "2025-11-23",
       "url": "https://github.com/kvnloo/botw",
       "types": [
@@ -168,7 +168,7 @@
     {
       "id": "monument",
       "name": "monument",
-      "description": "Public repository · TypeScript · ★3",
+      "description": "AI Studio web app experiment (monument concept UI).",
       "date": "2025-11-20",
       "url": "https://github.com/kvnloo/monument",
       "types": [
@@ -193,7 +193,7 @@
     {
       "id": "metallic-card",
       "name": "metallic-card",
-      "description": "Public repository · TypeScript · ★3",
+      "description": "Metallic silver border card UI, synced from v0/Vercel design iterations.",
       "date": "2025-11-15",
       "url": "https://github.com/kvnloo/metallic-card",
       "types": [
@@ -218,7 +218,7 @@
     {
       "id": "architecture-demo",
       "name": "architecture_demo",
-      "description": "Public repository · ★3",
+      "description": "Architecture portfolio universe: AI-generated visualizations, research, and project docs.",
       "date": "2025-11-14",
       "url": "https://github.com/kvnloo/architecture_demo",
       "types": [
@@ -242,7 +242,7 @@
     {
       "id": "aliens-made-this",
       "name": "aliens-made-this",
-      "description": "just a little test to see how capable the aliens are",
+      "description": "Playful generative-art / capability test: what can the aliens make?",
       "date": "2025-11-12",
       "url": "https://github.com/kvnloo/aliens-made-this",
       "types": [
@@ -266,7 +266,7 @@
     {
       "id": "audioengine",
       "name": "AudioEngine",
-      "description": "Public repository · Makefile · ★3",
+      "description": "iOS audio-engine / Phase I wireframe project with generated docs site.",
       "date": "2025-11-10",
       "url": "https://github.com/kvnloo/AudioEngine",
       "types": [
@@ -291,7 +291,7 @@
     {
       "id": "flowstate",
       "name": "FlowState",
-      "description": "A BCI application, computes alpha band of brain to speed up or slow down video based on your conscious attention",
+      "description": "BCI experiment: adjust video playback speed from EEG alpha-band attention.",
       "date": "2025-11-08",
       "url": "https://github.com/kvnloo/FlowState",
       "types": [
@@ -317,7 +317,7 @@
     {
       "id": "spy",
       "name": "spy",
-      "description": "Public repository",
+      "description": "SPY trading indicator pages published via GitHub Pages.",
       "date": "2025-11-03",
       "url": "https://github.com/kvnloo/spy",
       "types": [
@@ -341,7 +341,7 @@
     {
       "id": "launch",
       "name": "launch",
-      "description": "Public repository",
+      "description": "Launch toolkit: Claude Code / Superdesign commands for parallel UI design generation.",
       "date": "2025-10-31",
       "url": "https://github.com/kvnloo/launch",
       "types": [
@@ -365,7 +365,7 @@
     {
       "id": "ux",
       "name": "UX",
-      "description": "Public repository · ★1",
+      "description": "Curated wallpapers and custom macOS icons collection.",
       "date": "2025-10-22",
       "url": "https://github.com/kvnloo/UX",
       "types": [
@@ -379,7 +379,7 @@
     {
       "id": "flo",
       "name": "flo",
-      "description": "Public repository",
+      "description": "Early public scaffold (placeholder repo).",
       "date": "2025-10-20",
       "url": "https://github.com/kvnloo/flo",
       "types": [

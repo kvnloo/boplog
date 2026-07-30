@@ -36,9 +36,9 @@ The CLI and MCP server are read-only, dependency-free Python programs. They requ
 
 ## Featured work
 
-- [.files](https://github.com/kvnloo/.files): ...files...
-- [evolve](https://github.com/kvnloo/evolve): Public repository · Shell · ★7
-- [ace](https://github.com/kvnloo/ace): Ace Sports is a demo website showcasing the digital twin of an autonomous, multi-floor racket sports facility.
+- [.files](https://github.com/kvnloo/.files): Personal Linux/macOS dotfiles for Hyprland, tmux, shells, audio DSP, and agent tooling.
+- [evolve](https://github.com/kvnloo/evolve): Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.
+- [ace](https://github.com/kvnloo/ace): Demo site for Ace Sports: digital twin of an autonomous multi-floor racket sports facility.
 
 ## Year files
 

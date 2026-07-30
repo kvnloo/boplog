@@ -3,11 +3,12 @@
     {
       "id": "boplog",
       "name": "boplog",
-      "description": "build-in-public log",
+      "description": "Static build-in-public log: public GitHub repos I've actually committed to, synced on a schedule.",
       "date": "2026-07-30",
       "url": "https://github.com/kvnloo/boplog",
       "types": [
         "public",
+        "js",
         "fork"
       ],
       "formats": [],
@@ -18,7 +19,7 @@
     {
       "id": "cod",
       "name": "cod",
-      "description": "Public repository",
+      "description": "Early scaffold for a coding-related experiment (public placeholder).",
       "date": "2026-07-29",
       "url": "https://github.com/kvnloo/cod",
       "types": [
@@ -32,7 +33,7 @@
     {
       "id": "files",
       "name": ".files",
-      "description": "...files...",
+      "description": "Personal Linux/macOS dotfiles for Hyprland, tmux, shells, audio DSP, and agent tooling.",
       "date": "2026-07-28",
       "url": "https://github.com/kvnloo/.files",
       "types": [
@@ -60,7 +61,7 @@
     {
       "id": "pm",
       "name": "_pm",
-      "description": "Public repository · Python",
+      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/_pm",
       "types": [
@@ -75,7 +76,7 @@
     {
       "id": "zer0-cockpit",
       "name": "zer0-cockpit",
-      "description": "Public repository · Python",
+      "description": "Read-only, dependency-free terminal dashboard for explicit Zer0 project progress.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/zer0-cockpit",
       "types": [
@@ -90,7 +91,7 @@
     {
       "id": "zer0-harness-spine",
       "name": "zer0-harness-spine",
-      "description": "Public repository · Python",
+      "description": "Ultra-thin harness contracts and provider adapters for the Zer0 agent stack (no orchestration state).",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/zer0-harness-spine",
       "types": [
@@ -105,7 +106,7 @@
     {
       "id": "zer0-voice",
       "name": "zer0-voice",
-      "description": "Public repository · Python",
+      "description": "Voice adapters that bridge the Zer0 harness to machine-wide speech services without vendoring models.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/zer0-voice",
       "types": [
@@ -120,7 +121,7 @@
     {
       "id": "tmux-agent-fleet",
       "name": "tmux-agent-fleet",
-      "description": "Zero-daemon, harness-neutral command palette for coding agents across tmux panes",
+      "description": "Zero-daemon, harness-neutral command palette for coding agents across tmux panes.",
       "date": "2026-07-14",
       "url": "https://github.com/kvnloo/tmux-agent-fleet",
       "types": [
@@ -135,7 +136,7 @@
     {
       "id": "portfolio",
       "name": "portfolio",
-      "description": "Public repository · HTML · ★4",
+      "description": "Personal portfolio site at the intersection of AI, neuroscience, and mobile systems.",
       "date": "2026-01-29",
       "url": "https://github.com/kvnloo/portfolio",
       "types": [
@@ -160,7 +161,7 @@
     {
       "id": "ace",
       "name": "ace",
-      "description": "Ace Sports is a demo website showcasing the digital twin of an autonomous, multi-floor racket sports facility.",
+      "description": "Demo site for Ace Sports: digital twin of an autonomous multi-floor racket sports facility.",
       "date": "2026-01-28",
       "url": "https://github.com/kvnloo/ace",
       "types": [
@@ -188,7 +189,7 @@
     {
       "id": "tesla-infotainment",
       "name": "tesla-infotainment",
-      "description": "aistudio gemini pro attempt",
+      "description": "Tesla-style web infotainment UI prototype built with Google AI Studio / Gemini.",
       "date": "2026-01-28",
       "url": "https://github.com/kvnloo/tesla-infotainment",
       "types": [
@@ -203,7 +204,7 @@
     {
       "id": "tesla",
       "name": "tesla",
-      "description": "Public repository · TypeScript",
+      "description": "Tesla infotainment system experiment in React, TypeScript, and Vite.",
       "date": "2026-01-27",
       "url": "https://github.com/kvnloo/tesla",
       "types": [
@@ -228,7 +229,7 @@
     {
       "id": "farm",
       "name": "farm",
-      "description": "Public repository",
+      "description": "Early public scaffold (placeholder repo).",
       "date": "2026-01-22",
       "url": "https://github.com/kvnloo/farm",
       "types": [
@@ -242,7 +243,7 @@
     {
       "id": "kpu-sim",
       "name": "kpu-sim",
-      "description": "Simulator for a KPU-based accelerator",
+      "description": "Fork of the Stillwater KPU accelerator simulator (C++20 knowledge-processing unit sim).",
       "date": "2026-01-19",
       "url": "https://github.com/kvnloo/kpu-sim",
       "types": [
@@ -268,7 +269,7 @@
     {
       "id": "coding-interview-university",
       "name": "coding-interview-university",
-      "description": "A complete computer science study plan to become a software engineer.",
+      "description": "Fork of the CS interview study plan, with an optimized Obsidian-canvas learning system.",
       "date": "2026-01-18",
       "url": "https://github.com/kvnloo/coding-interview-university",
       "types": [
@@ -283,7 +284,7 @@
     {
       "id": "scrollytelling",
       "name": "scrollytelling",
-      "description": "Public repository · TypeScript",
+      "description": "Scroll-driven visual story experiment with frame sequences (headphones piece).",
       "date": "2026-01-12",
       "url": "https://github.com/kvnloo/scrollytelling",
       "types": [
@@ -298,7 +299,7 @@
     {
       "id": "auto-claude",
       "name": "Auto-Claude",
-      "description": "Autonomous multi-session AI coding",
+      "description": "Fork of Auto Claude: autonomous multi-session / multi-agent AI coding framework.",
       "date": "2026-01-10",
       "url": "https://github.com/kvnloo/Auto-Claude",
       "types": [
@@ -314,7 +315,7 @@
     {
       "id": "jobapp",
       "name": "jobapp",
-      "description": "Public repository · HTML",
+      "description": "Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.",
       "date": "2026-01-10",
       "url": "https://github.com/kvnloo/jobapp",
       "types": [
@@ -329,7 +330,7 @@
     {
       "id": "cv",
       "name": "cv",
-      "description": "Public repository · TeX",
+      "description": "LaTeX CV and role-specific resumes (AI/ML, DevOps, PM) with generated PDFs.",
       "date": "2026-01-09",
       "url": "https://github.com/kvnloo/cv",
       "types": [

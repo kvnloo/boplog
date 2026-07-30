@@ -3,7 +3,7 @@
     {
       "id": "openhands",
       "name": "OpenHands",
-      "description": "🙌 OpenHands: Code Less, Make More",
+      "description": "Fork of OpenHands (All Hands AI) — open-source software-dev agent platform.",
       "date": "2024-11-12",
       "url": "https://github.com/kvnloo/OpenHands",
       "types": [
