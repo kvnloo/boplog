@@ -1,6 +1,31 @@
 {
   "projects": [
     {
+      "id": "aliens-made-this",
+      "name": "aliens-made-this",
+      "description": "Playful generative-art / capability test: what can the aliens make?",
+      "date": "2026-07-30",
+      "url": "https://kvnloo.github.io/aliens-made-this/",
+      "types": [
+        "public",
+        "html"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/aliens-made-this/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/aliens-made-this"
+        }
+      ]
+    },
+    {
       "id": "boplog",
       "name": "boplog",
       "description": "Static build-in-public log: public GitHub repos I've actually committed to, synced on a schedule.",
@@ -23,6 +48,26 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/boplog"
+        }
+      ]
+    },
+    {
+      "id": "kvnloo",
+      "name": "kvnloo",
+      "description": "Profile README",
+      "date": "2026-07-30",
+      "url": "https://github.com/kvnloo/kvnloo",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/kvnloo"
         }
       ]
     },
@@ -72,12 +117,12 @@
       ],
       "featured": true,
       "featuredRank": 2,
-      "eyebrow": "dotfiles"
+      "eyebrow": "Shell"
     },
     {
       "id": "pm",
       "name": "_pm",
-      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the company OS PM core.",
+      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/_pm",
       "types": [
@@ -180,7 +225,7 @@
       ],
       "featured": true,
       "featuredRank": 6,
-      "eyebrow": "tmux agents"
+      "eyebrow": "Shell"
     },
     {
       "id": "claude-island",

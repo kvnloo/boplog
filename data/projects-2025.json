@@ -179,7 +179,7 @@
       ],
       "featured": true,
       "featuredRank": 4,
-      "eyebrow": "agent swarm"
+      "eyebrow": "Shell"
     },
     {
       "id": "whisper",
@@ -227,7 +227,7 @@
       ],
       "featured": true,
       "featuredRank": 5,
-      "eyebrow": "personal site"
+      "eyebrow": "HTML"
     },
     {
       "id": "playground",
@@ -335,7 +335,7 @@
       ],
       "featured": true,
       "featuredRank": 3,
-      "eyebrow": "digital twin"
+      "eyebrow": "TypeScript"
     },
     {
       "id": "monument",
@@ -408,30 +408,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/spy"
-        }
-      ]
-    },
-    {
-      "id": "aliens-made-this",
-      "name": "aliens-made-this",
-      "description": "Playful generative-art / capability test: what can the aliens make?",
-      "date": "2025-10-28",
-      "url": "https://kvnloo.github.io/aliens-made-this/",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/aliens-made-this/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/aliens-made-this"
         }
       ]
     },
@@ -526,7 +502,7 @@
     {
       "id": "cofounder",
       "name": "cofounder",
-      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI\u2026",
+      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI…",
       "date": "2025-08-28",
       "url": "https://cofounder.openinterface.ai/",
       "types": [
