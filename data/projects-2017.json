@@ -80,6 +80,7 @@
       ],
       "featured": true,
       "featuredRank": 1,
+<<<<<<< HEAD
       "eyebrow": "iOS \u00b7 2017",
       "company": "zer0",
       "companyName": "zer0",
@@ -87,6 +88,11 @@
       "portfolioName": "Professional",
       "product": "audioengine",
       "productName": "AudioEngine"
+||||||| ec17d84
+      "eyebrow": "iOS \u00b7 2017"
+=======
+      "eyebrow": "Makefile"
+>>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
     },
     {
       "id": "ios-2017",

@@ -5,8 +5,17 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-07-30T08:31:29Z</updated>
+  <updated>2026-07-30T15:24:02Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
+  <entry>
+    <title>aliens-made-this</title>
+    <id>https://kvnloo.github.io/aliens-made-this/</id>
+    <link href="https://kvnloo.github.io/aliens-made-this/"/>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Playful generative-art / capability test: what can the aliens make?</summary>
+  </entry>
   <entry>
     <title>boplog</title>
     <id>https://kvnloo.github.io/boplog/</id>
@@ -15,6 +24,15 @@
     <updated>2026-07-30T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Static build-in-public log: public GitHub repos I&apos;ve actually committed to, synced on a schedule.</summary>
+  </entry>
+  <entry>
+    <title>kvnloo</title>
+    <id>https://github.com/kvnloo/kvnloo</id>
+    <link href="https://github.com/kvnloo/kvnloo"/>
+    <published>2026-07-30T00:00:00Z</published>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Profile README</summary>
   </entry>
   <entry>
     <title>cod</title>
@@ -213,23 +231,5 @@
     <updated>2025-12-09T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork of winfunc/opcode: Phase 4 cleanup and documentation restructuring; resolve all TypeScript compilation errors for clean build; Phase 4 polish - error handling, accessibility, test coverage</summary>
-  </entry>
-  <entry>
-    <title>blueprint</title>
-    <id>https://kvnloo.github.io/blueprint/</id>
-    <link href="https://kvnloo.github.io/blueprint/"/>
-    <published>2025-12-07T00:00:00Z</published>
-    <updated>2025-12-07T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.</summary>
-  </entry>
-  <entry>
-    <title>evolve</title>
-    <id>https://kvnloo.github.io/evolve/</id>
-    <link href="https://kvnloo.github.io/evolve/"/>
-    <published>2025-12-02T00:00:00Z</published>
-    <updated>2025-12-02T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.</summary>
   </entry>
 </feed>

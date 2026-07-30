@@ -1,5 +1,11 @@
 {
+<<<<<<< HEAD
   "generatedAt": "2026-07-30T16:50:08Z",
+||||||| ec17d84
+  "generatedAt": "2026-07-30T08:36:09Z",
+=======
+  "generatedAt": "2026-07-30T15:24:02Z",
+>>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
   "source": "GitHub public repos for kvnloo (authored commits only; forks without commits excluded)",
   "featuredLimit": 6,
   "user": "kvnloo",

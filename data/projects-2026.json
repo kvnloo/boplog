@@ -1,6 +1,31 @@
 {
   "projects": [
     {
+      "id": "aliens-made-this",
+      "name": "aliens-made-this",
+      "description": "Playful generative-art / capability test: what can the aliens make?",
+      "date": "2026-07-30",
+      "url": "https://kvnloo.github.io/aliens-made-this/",
+      "types": [
+        "public",
+        "html"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/aliens-made-this/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/aliens-made-this"
+        }
+      ]
+    },
+    {
       "id": "boplog",
       "name": "boplog",
       "description": "Static build-in-public log: public GitHub repos I've actually committed to, synced on a schedule.",
@@ -31,6 +56,26 @@
       "portfolioName": "Professional",
       "product": "boplog",
       "productName": "boplog"
+    },
+    {
+      "id": "kvnloo",
+      "name": "kvnloo",
+      "description": "Profile README",
+      "date": "2026-07-30",
+      "url": "https://github.com/kvnloo/kvnloo",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/kvnloo"
+        }
+      ]
     },
     {
       "id": "cod",
@@ -84,6 +129,7 @@
       ],
       "featured": true,
       "featuredRank": 2,
+<<<<<<< HEAD
       "eyebrow": "dotfiles",
       "company": "zer0",
       "companyName": "zer0",
@@ -91,11 +137,16 @@
       "portfolioName": "Professional",
       "product": "dotfiles",
       "productName": "Dotfiles"
+||||||| ec17d84
+      "eyebrow": "dotfiles"
+=======
+      "eyebrow": "Shell"
+>>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
     },
     {
       "id": "pm",
       "name": "_pm",
-      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the company OS PM core.",
+      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/_pm",
       "types": [
@@ -222,6 +273,7 @@
       ],
       "featured": true,
       "featuredRank": 6,
+<<<<<<< HEAD
       "eyebrow": "tmux agents",
       "company": "zer0",
       "companyName": "zer0",
@@ -229,6 +281,11 @@
       "portfolioName": "Deeptech",
       "product": "agent-tooling",
       "productName": "Agent tooling"
+||||||| ec17d84
+      "eyebrow": "tmux agents"
+=======
+      "eyebrow": "Shell"
+>>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
     },
     {
       "id": "claude-island",
