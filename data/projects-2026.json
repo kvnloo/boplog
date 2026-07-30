@@ -23,7 +23,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/aliens-made-this"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "experiments",
+      "productName": "Experiments"
     },
     {
       "id": "boplog",
@@ -75,7 +81,13 @@
           "label": "github",
           "url": "https://github.com/kvnloo/kvnloo"
         }
-      ]
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "portfolio": "deeptech",
+      "portfolioName": "Deeptech",
+      "product": "lab",
+      "productName": "Lab / other"
     },
     {
       "id": "cod",
@@ -127,26 +139,20 @@
           "url": "https://github.com/kvnloo/.files"
         }
       ],
-      "featured": true,
-      "featuredRank": 2,
-<<<<<<< HEAD
-      "eyebrow": "dotfiles",
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "professional",
       "portfolioName": "Professional",
       "product": "dotfiles",
-      "productName": "Dotfiles"
-||||||| ec17d84
-      "eyebrow": "dotfiles"
-=======
-      "eyebrow": "Shell"
->>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
+      "productName": "Dotfiles",
+      "eyebrow": "dotfiles",
+      "featured": true,
+      "featuredRank": 2
     },
     {
       "id": "pm",
       "name": "_pm",
-      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.",
+      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the company OS PM core.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/_pm",
       "types": [
@@ -271,21 +277,15 @@
           "url": "https://github.com/kvnloo/tmux-agent-fleet"
         }
       ],
-      "featured": true,
-      "featuredRank": 6,
-<<<<<<< HEAD
-      "eyebrow": "tmux agents",
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
       "portfolioName": "Deeptech",
       "product": "agent-tooling",
-      "productName": "Agent tooling"
-||||||| ec17d84
-      "eyebrow": "tmux agents"
-=======
-      "eyebrow": "Shell"
->>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
+      "productName": "Agent tooling",
+      "eyebrow": "agent tooling",
+      "featured": true,
+      "featuredRank": 6
     },
     {
       "id": "claude-island",

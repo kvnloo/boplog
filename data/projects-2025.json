@@ -219,21 +219,15 @@
           "url": "https://github.com/kvnloo/evolve"
         }
       ],
-      "featured": true,
-      "featuredRank": 4,
-<<<<<<< HEAD
-      "eyebrow": "agent swarm",
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
       "portfolioName": "Deeptech",
       "product": "experiments",
-      "productName": "Experiments"
-||||||| ec17d84
-      "eyebrow": "agent swarm"
-=======
-      "eyebrow": "Shell"
->>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
+      "productName": "Experiments",
+      "eyebrow": "experiments",
+      "featured": true,
+      "featuredRank": 4
     },
     {
       "id": "whisper",
@@ -285,21 +279,15 @@
           "url": "https://github.com/kvnloo/portfolio"
         }
       ],
-      "featured": true,
-      "featuredRank": 5,
-<<<<<<< HEAD
-      "eyebrow": "personal site",
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "professional",
       "portfolioName": "Professional",
       "product": "professional-showcase",
-      "productName": "Professional showcase"
-||||||| ec17d84
-      "eyebrow": "personal site"
-=======
-      "eyebrow": "HTML"
->>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
+      "productName": "Professional showcase",
+      "eyebrow": "professional showcase",
+      "featured": true,
+      "featuredRank": 5
     },
     {
       "id": "playground",
@@ -429,21 +417,15 @@
           "url": "https://github.com/kvnloo/ace"
         }
       ],
-      "featured": true,
-      "featuredRank": 3,
-<<<<<<< HEAD
-      "eyebrow": "digital twin",
       "company": "zer0",
       "companyName": "zer0",
       "portfolio": "deeptech",
       "portfolioName": "Deeptech",
       "product": "experiments",
-      "productName": "Experiments"
-||||||| ec17d84
-      "eyebrow": "digital twin"
-=======
-      "eyebrow": "TypeScript"
->>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
+      "productName": "Experiments",
+      "eyebrow": "experiments",
+      "featured": true,
+      "featuredRank": 3
     },
     {
       "id": "monument",
@@ -538,64 +520,6 @@
       "productName": "Experiments"
     },
     {
-<<<<<<< HEAD
-      "id": "aliens-made-this",
-      "name": "aliens-made-this",
-      "description": "Playful generative-art / capability test: what can the aliens make?",
-      "date": "2025-10-28",
-      "url": "https://kvnloo.github.io/aliens-made-this/",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/aliens-made-this/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/aliens-made-this"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "Deeptech",
-      "product": "experiments",
-      "productName": "Experiments"
-    },
-    {
-||||||| ec17d84
-      "id": "aliens-made-this",
-      "name": "aliens-made-this",
-      "description": "Playful generative-art / capability test: what can the aliens make?",
-      "date": "2025-10-28",
-      "url": "https://kvnloo.github.io/aliens-made-this/",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/aliens-made-this/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/aliens-made-this"
-        }
-      ]
-    },
-    {
-=======
->>>>>>> a4c33a5047242a6bb744e08a5651e3cc216ec8aa
       "id": "ux",
       "name": "UX",
       "description": "Curated wallpapers and custom macOS icons collection.",
@@ -710,7 +634,7 @@
     {
       "id": "cofounder",
       "name": "cofounder",
-      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI…",
+      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI\u2026",
       "date": "2025-08-28",
       "url": "https://cofounder.openinterface.ai/",
       "types": [
