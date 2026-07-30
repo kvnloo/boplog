@@ -84,9 +84,9 @@
       "portfolioName": "Professional",
       "product": "audioengine",
       "productName": "AudioEngine",
-      "eyebrow": "iOS \u00b7 2017",
       "featured": true,
-      "featuredRank": 1
+      "featuredRank": 1,
+      "eyebrow": "Makefile"
     },
     {
       "id": "ios-2017",

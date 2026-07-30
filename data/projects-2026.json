@@ -145,14 +145,14 @@
       "portfolioName": "Professional",
       "product": "dotfiles",
       "productName": "Dotfiles",
-      "eyebrow": "dotfiles",
       "featured": true,
-      "featuredRank": 2
+      "featuredRank": 2,
+      "eyebrow": "Shell"
     },
     {
       "id": "pm",
       "name": "_pm",
-      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the company OS PM core.",
+      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/_pm",
       "types": [
@@ -283,9 +283,9 @@
       "portfolioName": "Deeptech",
       "product": "agent-tooling",
       "productName": "Agent tooling",
-      "eyebrow": "agent tooling",
       "featured": true,
-      "featuredRank": 6
+      "featuredRank": 6,
+      "eyebrow": "Shell"
     },
     {
       "id": "claude-island",

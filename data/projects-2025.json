@@ -225,9 +225,9 @@
       "portfolioName": "Deeptech",
       "product": "experiments",
       "productName": "Experiments",
-      "eyebrow": "experiments",
       "featured": true,
-      "featuredRank": 4
+      "featuredRank": 4,
+      "eyebrow": "Shell"
     },
     {
       "id": "whisper",
@@ -285,9 +285,9 @@
       "portfolioName": "Professional",
       "product": "professional-showcase",
       "productName": "Professional showcase",
-      "eyebrow": "professional showcase",
       "featured": true,
-      "featuredRank": 5
+      "featuredRank": 5,
+      "eyebrow": "HTML"
     },
     {
       "id": "playground",
@@ -423,9 +423,9 @@
       "portfolioName": "Deeptech",
       "product": "experiments",
       "productName": "Experiments",
-      "eyebrow": "experiments",
       "featured": true,
-      "featuredRank": 3
+      "featuredRank": 3,
+      "eyebrow": "TypeScript"
     },
     {
       "id": "monument",
@@ -634,7 +634,7 @@
     {
       "id": "cofounder",
       "name": "cofounder",
-      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI\u2026",
+      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI…",
       "date": "2025-08-28",
       "url": "https://cofounder.openinterface.ai/",
       "types": [
