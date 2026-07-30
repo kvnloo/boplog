@@ -93,11 +93,10 @@
     // Keep leading . / _ (e.g. .files, _pm)
     const lead = raw.match(/^[._]+/)?.[0] || '';
     const body = lead ? raw.slice(lead.length) : raw;
+    // Only split camel/Pascal boundaries — leave digits glued (zer0, iOS-2017).
     const split = body
-      .replace(/([a-z0-9])([A-Z])/g, '$1·$2')
-      .replace(/([A-Z]+)([A-Z][a-z])/g, '$1·$2')
-      .replace(/([A-Za-z])([0-9])/g, '$1·$2')
-      .replace(/([0-9])([A-Za-z])/g, '$1·$2');
+      .replace(/([a-z])([A-Z])/g, '$1·$2')
+      .replace(/([A-Z]+)([A-Z][a-z])/g, '$1·$2');
     return lead + split;
   }
 
