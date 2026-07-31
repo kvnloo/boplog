@@ -1,23 +1,24 @@
 # LLMEO latest runs
 
-## Primary: full bank (hermes)
+## Multi-engine competitive (hermes + claude-home)
+
+- **run**: [2026-07-31T09-26-13](./runs/2026-07-31T09-26-13/)
+- **scoreboard**: [runs/2026-07-31T09-26-13/scoreboard.md](./runs/2026-07-31T09-26-13/scoreboard.md)
+- **prompt share of voice**: **100%** (4/4 — hermes hits all; claude-home hits 2/4 positive attributions)
+- **engines**:
+  - **hermes**: 4/4 competitive (mention+url)
+  - **claude-home** (`CLAUDE_CONFIG_DIR=~/.claude-home`): works without `--bare`
+    - hits: build-in-public, machine-readable portfolio
+    - misses: agent-fleets (named claude-squad; denied web search), autonomous-dev (refused to guess without web)
+  - **gemini**: blocked in this env — `IneligibleTierError` / migrate to Antigravity; not a simple login issue
+
+## Full bank hermes (merged)
 
 - **run**: [2026-07-31T09-18-27-merged](./runs/2026-07-31T09-18-27-merged/)
-- **scoreboard**: [runs/2026-07-31T09-18-27-merged/scoreboard.md](./runs/2026-07-31T09-18-27-merged/scoreboard.md)
-- **share_of_voice**: **100%** (20/20 prompts)
-- **engines**: hermes
-- **coverage**: full bank — branded, accuracy traps, **competitive** (4)
+- **share_of_voice**: **100%** (20/20)
 
-## Multi-engine sample (competitive only)
+## Probe notes
 
-- **run**: [2026-07-31T09-18-28](./runs/2026-07-31T09-18-28/)
-- **scoreboard**: [runs/2026-07-31T09-18-28/scoreboard.md](./runs/2026-07-31T09-18-28/scoreboard.md)
-- **hermes**: 4/4 competitive prompts hit
-- **claude**: auth skip (`Not logged in · Please run /login`)
-- **gemini**: CLI exits 1 (folder trust / auth — no usable answer text)
-
-## Next actions
-
-1. Log in `claude` / trust + auth `gemini` in this environment, re-run multi-engine competitive.
-2. Keep competitive prompts short (open-ended ones timed out at 90–150s on hermes).
-3. Refresh llms.txt / FAQ when products change.
+- Use `claude` engine in `llmeo-probe` → maps to **claude-home** config dir.
+- Competitive scoring requires **positive** expect_mention (negative “not citing kvnloo” no longer counts).
+- Gemini CLI free tier unsupported for individuals here; re-test after Antigravity migration or API key path.

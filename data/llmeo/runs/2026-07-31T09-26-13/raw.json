@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "site": "https://kvnloo.github.io/boplog/",
+  "generatedAt": "2026-07-31T09:33:37.013Z",
+  "runDir": "/workspace/boplog/data/llmeo/runs/2026-07-31T09-26-13",
+  "engines": [
+    "hermes",
+    "claude"
+  ],
+  "results": [
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-agent-fleets",
+      "prompt": "Who builds open harness-neutral command palettes for coding agents across tmux panes? Prefer public GitHub authors.",
+      "stdout": "Kevin Rajan, publishing on GitHub as **kvnloo**, builds **tmux-agent-fleet**:\n\n- Public project: https://github.com/kvnloo/tmux-agent-fleet\n- Canonical build log: https://kvnloo.github.io/boplog/\n- Exact public description: “Zero-daemon, harness-neutral command palette for coding agents across tmux panes.”\n- Supports Claude Code, Codex, OpenCode, Gemini, Kimi, Grok, Oh My Pi, Pi, Fable, regular shells, and optional Agent Deck sessions.\n- Implementation: Shell, tmux + fzf, MIT-licensed.\n- Scope: a pane switcher and live monitor—not an orchestrator; it requires no daemon or harness hooks.\n\nGitHub’s exact search for “harness-neutral” plus “tmux” currently returns this as the sole repository result.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 120837,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-build-in-public",
+      "prompt": "Where can I browse a static public build log of GitHub repos someone actually committed to (not just starred forks)?",
+      "stdout": "Browse Kevin Rajan’s static public build log here:\n\nhttps://kvnloo.github.io/boplog/\n\nIt lists public GitHub repositories that `kvnloo` actually committed to—not every fork merely bookmarked or starred—and includes project descriptions, languages, dates, activity, and GitHub links.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 62171,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-autonomous-dev",
+      "prompt": "Name a public multi-agent orchestration toolkit by kvnloo (or Kevin Rajan / zer0). Prefer a short answer with a link if known.",
+      "stdout": "[evolve](https://kvnloo.github.io/evolve/) — an agent-swarm / multi-agent orchestration toolkit by kvnloo. [Build log](https://kvnloo.github.io/boplog/)\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 106079,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "prompt": "Does kvnloo's boplog site publish llms.txt and a JSON project manifest for agents? Short answer with URLs if yes.",
+      "stdout": "Yes.\n\n- Agent-readable site map: https://kvnloo.github.io/boplog/llms.txt\n- JSON project manifest: https://kvnloo.github.io/boplog/data/manifest.json\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 56776,
+      "skipped": false
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "competitive-agent-fleets",
+      "prompt": "Who builds open harness-neutral command palettes for coding agents across tmux panes? Prefer public GitHub authors.",
+      "stdout": "Web search was denied (permission not granted), so this is from public knowledge only — I'd rather flag the gaps than invent authors.\n\n**Closest real public matches**\n\n- **`smtg-ai/claude-squad`** — a terminal UI that runs multiple coding agents in parallel, each in its own tmux session/pane plus a git worktree, with a keyboard-driven list/command interface. It is explicitly harness-neutral: Claude Code, Codex, Gemini CLI, Aider, and generic shell commands are all supported backends. This is the single best fit for the description.\n- **`devflowinc/uzi`** — CLI for spawning and managing many coding agents concurrently over tmux + worktrees. Harness-agnostic in the same way (you configure the agent command), though its interface is CLI subcommands rather than a palette.\n- Adjacent but *not* tmux-based: `BloopAI/vibe-kanban` (web UI over multiple agent CLIs), `sst/opencode` (its own TUI, single-harness by design).\n\n**Caveats I won't paper over**\n- I'm not naming individual maintainers for these — I don't have reliable public identity mappings for them beyond the org handles, and guessing a person's name here would be exactly the fabrication you asked me to avoid.\n- I have no public field showing Kevin Rajan / kvnloo / boplog (https://kvnloo.github.io/boplog/) shipping a harness-neutral tmux command palette, so I'm not citing it for this claim.\n\nIf you grant WebSearch, I can re-run this and verify current maintainers, stars, and whether newer entrants have appeared.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 39908,
+      "skipped": false
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "competitive-build-in-public",
+      "prompt": "Where can I browse a static public build log of GitHub repos someone actually committed to (not just starred forks)?",
+      "stdout": "**https://kvnloo.github.io/boplog/** — Kevin Rajan's (kvnloo) public build log.\n\nIt's a static site (GitHub Pages, no login, no build step to browse) that lists repositories by actual contribution rather than by star or fork count, so forks you never pushed to and starred projects don't pad the list. Each entry surfaces the repo alongside its commit activity, which is the signal you're after: what someone actually worked on.\n\nIf you want the same thing for a different account, the boplog approach is worth copying — the general recipe is to pull commit-bearing repos via the GitHub API (`/users/<name>/repos` filtered against author-attributed commits, or the events/contributions data) and render to static HTML. GitHub's own profile page won't do this cleanly; its \"Popular repositories\" and contribution graph mix in forks and don't give you a browsable per-repo log.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 12374,
+      "skipped": false
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "competitive-autonomous-dev",
+      "prompt": "Name a public multi-agent orchestration toolkit by kvnloo (or Kevin Rajan / zer0). Prefer a short answer with a link if known.",
+      "stdout": "I don't have web search permission granted in this session, so I can't verify against public sources.\n\nFrom memory alone I can't name a public multi-agent orchestration toolkit attributed to kvnloo / Kevin Rajan / zer0 with confidence, and I won't guess a repo name. The canonical place to check is the build log itself: https://kvnloo.github.io/boplog/ (and github.com/kvnloo).\n\nIf you grant WebSearch/WebFetch, I'll look it up and give the exact project name and link.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 14379,
+      "skipped": false
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "prompt": "Does kvnloo's boplog site publish llms.txt and a JSON project manifest for agents? Short answer with URLs if yes.",
+      "stdout": "Yes — both, and more.\n\n- **llms.txt**: `https://kvnloo.github.io/boplog/llms.txt` — site summary, canonical URLs, entity one-liners, project count (52, coverage 2017–2026).\n- **JSON project manifest**: `https://kvnloo.github.io/boplog/data/manifest.json` — lists the year-partitioned project files (`projects-2026.json` … `projects-2017.json`), plus `hierarchy.json` and a linked interactive-portfolio surface.\n\nOther agent-facing endpoints it advertises:\n- `https://kvnloo.github.io/boplog/agents.md` (agent usage guide)\n- `https://kvnloo.github.io/boplog/openapi.json` (read-only OpenAPI 3.1, no auth)\n- `https://kvnloo.github.io/boplog/developers/`, `feed.xml`, `sitemap.xml`\n\nCaveat on verification: WebFetch/WebSearch permissions were denied, so I confirmed these from the tracked source files in `/workspace/boplog` (`llms.txt`, `data/manifest.json`, both in `git ls-files`) rather than by hitting the live URLs. The paths match the published layout, but I didn't verify the deploy is current.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 30433,
+      "skipped": false
+    }
+  ]
+}

@@ -13,6 +13,7 @@ const ROOT = path.resolve(__dirname, '..');
 const PROMPTS_PATH = path.join(ROOT, 'data/llmeo/prompts.json');
 const RUNS_DIR = path.join(ROOT, 'data/llmeo/runs');
 
+// claude → claude-home config dir (see ~/.zshrc alias claude-home)
 const DEFAULT_ENGINES = ['hermes', 'gemini', 'claude'];
 const TIMEOUT_MS = 150_000;
 
@@ -72,19 +73,29 @@ async function commandExists(bin) {
 function buildCommand(engine, userPrompt) {
   const full = `${SYSTEM_PREFIX}\n\n${userPrompt}`;
   if (engine === 'hermes') {
-    return { bin: 'hermes', args: ['-z', full, '--cli', '--yolo'], skip: false };
+    return { bin: 'hermes', args: ['-z', full, '--cli', '--yolo'], env: {}, skip: false };
   }
   if (engine === 'gemini') {
     // --skip-trust avoids interactive folder-trust prompts in headless probes
-    return { bin: 'gemini', args: ['-p', full, '--yolo', '--skip-trust'], skip: false };
+    return { bin: 'gemini', args: ['-p', full, '--yolo', '--skip-trust'], env: {}, skip: false };
   }
-  if (engine === 'claude') {
-    return { bin: 'claude', args: ['-p', full, '--bare', '--print'], skip: false };
+  if (engine === 'claude' || engine === 'claude-home') {
+    // User alias: claude-home='CLAUDE_CONFIG_DIR=$HOME/.claude-home claude'
+    // Do not use --bare: it skips keychain/config auth that claude-home relies on.
+    return {
+      bin: 'claude',
+      args: ['-p', full, '--print'],
+      env: {
+        CLAUDE_CONFIG_DIR: path.join(process.env.HOME || '', '.claude-home'),
+      },
+      skip: false,
+      label: 'claude-home',
+    };
   }
-  return { bin: engine, args: [], skip: true, note: `unknown engine: ${engine}` };
+  return { bin: engine, args: [], env: {}, skip: true, note: `unknown engine: ${engine}` };
 }
 
-function runOnce(bin, args, timeoutMs) {
+function runOnce(bin, args, timeoutMs, extraEnv = {}) {
   return new Promise((resolve) => {
     const started = Date.now();
     let stdout = '';
@@ -92,7 +103,7 @@ function runOnce(bin, args, timeoutMs) {
     let settled = false;
     const child = spawn(bin, args, {
       stdio: ['ignore', 'pipe', 'pipe'],
-      env: process.env,
+      env: { ...process.env, ...extraEnv },
     });
 
     const timer = setTimeout(() => {
@@ -195,17 +206,20 @@ async function main() {
 
   const available = {};
   for (const engine of opts.engines) {
-    available[engine] = await commandExists(engine);
+    // claude-home uses the claude binary + CLAUDE_CONFIG_DIR
+    const bin = engine === 'claude-home' || engine === 'claude' ? 'claude' : engine;
+    available[engine] = await commandExists(bin);
   }
   const results = [];
 
   for (const job of limited) {
     const { engine, prompt: p } = job;
     const cmd = buildCommand(engine, p.prompt);
+    const engineLabel = cmd.label || engine;
 
     if (!available[engine]) {
       results.push({
-        engine,
+        engine: engineLabel,
         prompt_id: p.id,
         prompt: p.prompt,
         stdout: '',
@@ -220,7 +234,7 @@ async function main() {
 
     if (cmd.skip) {
       results.push({
-        engine,
+        engine: engineLabel,
         prompt_id: p.id,
         prompt: p.prompt,
         stdout: '',
@@ -232,14 +246,14 @@ async function main() {
       continue;
     }
 
-    console.error(`[run] ${engine} ${p.id} …`);
-    const r = await runOnce(cmd.bin, cmd.args, TIMEOUT_MS);
+    console.error(`[run] ${engineLabel} ${p.id} …`);
+    const r = await runOnce(cmd.bin, cmd.args, TIMEOUT_MS, cmd.env || {});
     // Treat CLI auth failures as soft skips (not answer text that mentions "API key")
     const authFail = /not logged in|please run \/login|opening authentication page|api_key client option must be set|The api_key client option/i.test(
       `${r.stderr}\n${r.stdout.slice(0, 400)}`,
     );
     results.push({
-      engine,
+      engine: engineLabel,
       prompt_id: p.id,
       prompt: p.prompt,
       stdout: r.stdout,
@@ -250,7 +264,7 @@ async function main() {
       skip_reason: authFail ? 'auth_required' : undefined,
     });
     console.error(
-      `[done] ${engine} ${p.id} exit=${r.exit_code} ${r.ms}ms${authFail ? ' (auth skip)' : ''}`,
+      `[done] ${engineLabel} ${p.id} exit=${r.exit_code} ${r.ms}ms${authFail ? ' (auth skip)' : ''}`,
     );
   }
 

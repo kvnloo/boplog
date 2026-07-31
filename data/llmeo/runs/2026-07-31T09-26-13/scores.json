@@ -1,0 +1,199 @@
+{
+  "version": 1,
+  "site": "https://kvnloo.github.io/boplog/",
+  "source": "/workspace/boplog/data/llmeo/runs/2026-07-31T09-26-13/raw.json",
+  "scoredAt": "2026-07-31T09:34:18.247Z",
+  "share_of_voice": 1,
+  "prompts_with_mention": 4,
+  "prompt_count": 4,
+  "scores": [
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-agent-fleets",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "tmux-agent-fleet",
+        "kvnloo"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog",
+        "tmux-agent-fleet"
+      ],
+      "mentioned_urls": [
+        "https://github.com/kvnloo/tmux-agent-fleet",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 120837
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-build-in-public",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "boplog",
+        "commit"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 62171
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-autonomous-dev",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "evolve",
+        "kvnloo"
+      ],
+      "mentioned_entity": [
+        "kvnloo",
+        "boplog",
+        "evolve"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/evolve/",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 106079
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "llms.txt",
+        "boplog",
+        "manifest"
+      ],
+      "mentioned_entity": [
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/llms.txt",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 56776
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "competitive-agent-fleets",
+      "skipped": false,
+      "mention_hit": 0,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "kvnloo"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 39908
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "competitive-build-in-public",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "boplog",
+        "commit"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 12374
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "competitive-autonomous-dev",
+      "skipped": false,
+      "mention_hit": 0,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "kvnloo"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "zer0",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 14379
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "llms.txt",
+        "boplog",
+        "manifest"
+      ],
+      "mentioned_entity": [
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/llms.txt",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 30433
+    }
+  ]
+}

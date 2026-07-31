@@ -38,7 +38,23 @@ function scoreResult(result, promptMeta, entityTerms) {
   const mentioned_entity = entityTerms.filter((t) => includesTerm(text, t));
   const mentioned_urls = expectUrls.filter((u) => includesTerm(text, u));
 
-  const mention_hit = mentioned_expect.length > 0 || mentioned_entity.length > 0 ? 1 : 0;
+  // Competitive prompts: require a positive expect_mention (not "I can't find kvnloo…").
+  let mention_hit = mentioned_expect.length > 0 || mentioned_entity.length > 0 ? 1 : 0;
+  if (promptMeta?.category === 'competitive') {
+    const positiveExpect = expectMention.filter((t) => {
+      if (!includesTerm(text, t)) return false;
+      const re = new RegExp(
+        `(no public field showing|not citing|can't name|cannot name|don't have|do not have|won't guess)[\\s\\S]{0,80}${t.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&')}`,
+        'i',
+      );
+      const re2 = new RegExp(
+        `${t.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&')}[\\s\\S]{0,40}(not |never |isn't |is not )`,
+        'i',
+      );
+      return !re.test(text) && !re2.test(text);
+    });
+    mention_hit = positiveExpect.length > 0 ? 1 : 0;
+  }
   const url_hit = expectUrls.length === 0 ? 1 : mentioned_urls.length > 0 ? 1 : 0;
 
   const halluc_flags = HALLUCINATION_PATTERNS.filter((re) => re.test(text)).map((re) => re.source);
