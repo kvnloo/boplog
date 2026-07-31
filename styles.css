@@ -412,14 +412,22 @@ html[data-theme="night"] .theme-toggle__thumb {
   flex-direction: column;
   align-items: flex-end;
   gap: 6px;
+  min-width: 0;
 }
-.activity__header #activity-selection { color: var(--faint); font-size: 10px; }
+.activity__header #activity-selection {
+  color: var(--faint);
+  font-size: 10px;
+  text-align: right;
+  max-width: 100%;
+  line-height: 1.35;
+}
 .activity-mode {
   display: inline-flex;
   border: 1px solid var(--line);
   border-radius: 999px;
   overflow: hidden;
   background: var(--surface);
+  max-width: 100%;
 }
 .activity-mode__btn {
   margin: 0;
@@ -430,6 +438,7 @@ html[data-theme="night"] .theme-toggle__thumb {
   font: 10px/1.2 var(--mono);
   cursor: pointer;
   letter-spacing: 0.02em;
+  white-space: nowrap;
   transition:
     color var(--dur-fast) var(--ease-in-out),
     background var(--dur) var(--ease-in-out),
@@ -472,7 +481,20 @@ html[data-theme="night"] .theme-toggle__thumb {
   overflow: hidden;
   padding: 4px 0 6px;
   border-radius: 8px;
-  transition: background var(--dur) var(--ease-in-out);
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+  transition:
+    background var(--dur) var(--ease-in-out),
+    box-shadow var(--dur) var(--ease-in-out);
+}
+.activity.is-mode-flash .activity__viewport {
+  animation: activity-mode-flash 400ms var(--ease-out);
+}
+@keyframes activity-mode-flash {
+  0% { box-shadow: inset 0 0 0 1px transparent; }
+  35% { box-shadow: inset 0 0 0 1px var(--hair), 0 0 0 3px var(--accent-soft); }
+  100% { box-shadow: inset 0 0 0 1px transparent; }
 }
 .activity.is-expanded .activity__viewport {
   overflow-x: auto;
@@ -623,14 +645,21 @@ html[data-theme="night"] .theme-toggle__thumb {
   --act-pad-left: 31px;
 }
 
+.activity__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+  margin-top: 4px;
+  min-height: 14px;
+}
 .activity__legend {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 3px;
-  margin-top: 4px;
   color: var(--faint);
   font: 9px/1 var(--mono);
+  flex: 0 1 auto;
 }
 .activity__legend i {
   width: 8px;
@@ -650,6 +679,15 @@ html[data-theme="night"] .theme-toggle__thumb {
 .activity__legend i[data-level="2"] { background: var(--activity-2); }
 .activity__legend i[data-level="3"] { background: var(--activity-3); }
 .activity__legend i[data-level="4"] { background: var(--activity-4); }
+.activity__swipe-hint {
+  display: none;
+  margin: 0;
+  color: var(--faint);
+  font: 9px/1.2 var(--mono);
+  letter-spacing: 0.02em;
+  text-align: right;
+  white-space: nowrap;
+}
 
 /* Touch / coarse pointer: never expand — stay compact dots */
 @media (hover: none), (pointer: coarse) {
@@ -1019,4 +1057,52 @@ footer.shell a:hover { color: var(--accent); }
   .project-row time { font-size: 10px; }
   .project-row__tags { grid-column: 1; margin-top: 2px; }
   footer.shell { flex-direction: column; }
+
+  /* Activity: stacked header, full-width mode toggle, swipe affordance */
+  .activity { padding: 10px 0 16px; }
+  .activity__header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .activity__heading { flex: none; }
+  .activity__note {
+    max-width: none;
+    font-size: 9px;
+    line-height: 1.45;
+  }
+  .activity__controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .activity-mode {
+    display: flex;
+    width: 100%;
+  }
+  .activity-mode__btn {
+    flex: 1 1 0;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  .activity__header #activity-selection {
+    text-align: left;
+    font-size: 10px;
+  }
+  .activity__viewport {
+    padding: 6px 0 8px;
+  }
+  .activity__footer {
+    margin-top: 6px;
+    align-items: center;
+  }
+  .activity__swipe-hint {
+    display: block;
+  }
+  /* Slightly larger dots for easier taps on narrow screens */
+  .activity {
+    --act-gap: 2.5px;
+  }
 }

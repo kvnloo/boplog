@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.17';
+  const BUILD_VERSION = '20260730.18';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -298,8 +298,9 @@
     return counts;
   }
 
-  function setActivityMode(mode) {
+  function setActivityMode(mode, { animate = false } = {}) {
     const next = mode === 'commits' ? 'commits' : 'builds';
+    const changed = next !== state.activityMode;
     state.activityMode = next;
     try { localStorage.setItem(ACTIVITY_MODE_KEY, next); } catch (_) { /* ignore */ }
 
@@ -307,6 +308,17 @@
     elements.activityModeCommits?.classList.toggle('is-active', next === 'commits');
     elements.activityModeBuilds?.setAttribute('aria-pressed', next === 'builds' ? 'true' : 'false');
     elements.activityModeCommits?.setAttribute('aria-pressed', next === 'commits' ? 'true' : 'false');
+
+    const root = document.querySelector('.activity');
+    if (root) {
+      root.dataset.mode = next;
+      if (animate && changed) {
+        root.classList.remove('is-mode-flash');
+        void root.offsetWidth;
+        root.classList.add('is-mode-flash');
+        window.setTimeout(() => root.classList.remove('is-mode-flash'), 420);
+      }
+    }
 
     if (elements.activityNote) {
       elements.activityNote.textContent = next === 'commits'
@@ -408,6 +420,68 @@
     fineHover.addEventListener('change', () => {
       if (!fineHover.matches) root.classList.remove('is-expanded');
     });
+  }
+
+  /**
+   * Mobile: horizontal swipe on the dots viewport toggles build log ↔ all commits.
+   * Requires clear horizontal intent so vertical page scroll still works.
+   */
+  function bindActivitySwipe() {
+    const viewport = document.querySelector('.activity__viewport');
+    if (!viewport) return;
+
+    let startX = 0;
+    let startY = 0;
+    let tracking = false;
+    let moved = false;
+
+    const reset = () => {
+      tracking = false;
+      moved = false;
+    };
+
+    viewport.addEventListener('touchstart', (event) => {
+      if (event.touches.length !== 1) {
+        reset();
+        return;
+      }
+      tracking = true;
+      moved = false;
+      startX = event.touches[0].clientX;
+      startY = event.touches[0].clientY;
+    }, { passive: true });
+
+    viewport.addEventListener('touchmove', (event) => {
+      if (!tracking || event.touches.length !== 1) return;
+      const dx = event.touches[0].clientX - startX;
+      const dy = event.touches[0].clientY - startY;
+      if (Math.abs(dx) > 10 || Math.abs(dy) > 10) moved = true;
+    }, { passive: true });
+
+    viewport.addEventListener('touchend', (event) => {
+      if (!tracking) return;
+      const touch = event.changedTouches[0];
+      if (!touch) {
+        reset();
+        return;
+      }
+      const dx = touch.clientX - startX;
+      const dy = touch.clientY - startY;
+      reset();
+
+      // Tap / tiny drag → leave to cell click handlers.
+      if (!moved || Math.abs(dx) < 48) return;
+      // Prefer horizontal swipes only.
+      if (Math.abs(dx) < Math.abs(dy) * 1.25) return;
+
+      // Swipe left → all commits; swipe right → build log.
+      const next = dx < 0 ? 'commits' : 'builds';
+      if (next === state.activityMode) return;
+      setActivityMode(next, { animate: true });
+      render();
+    }, { passive: true });
+
+    viewport.addEventListener('touchcancel', reset, { passive: true });
   }
 
   function renderArchive() {
@@ -749,6 +823,7 @@
     elements.activityModeBuilds?.addEventListener('click', onActivityModeClick);
     elements.activityModeCommits?.addEventListener('click', onActivityModeClick);
     bindActivityExpand();
+    bindActivitySwipe();
 
     elements.randomBuild.addEventListener('click', () => {
       const pool = getFilteredProjects();
