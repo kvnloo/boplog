@@ -3,23 +3,22 @@
 - **run**: [2026-07-31](./runs/2026-07-31/)
 - **scoreboard**: [runs/2026-07-31/scoreboard.md](./runs/2026-07-31/scoreboard.md)
 - **scores**: [runs/2026-07-31/scores.json](./runs/2026-07-31/scores.json)
-- **scored_at**: 2026-07-31T07:24:20.666Z
+- **scored_at**: 2026-07-31T08:36:14.377Z
 - **site**: https://kvnloo.github.io/boplog/
-- **share_of_voice**: **100.0%** (6/6 prompts with entity mention)
-- **engines scored**: hermes (6 results; gemini listed in raw but not present in results)
+- **share_of_voice**: **100.0%** (16/16 prompts with entity mention)
+- **engines scored**: hermes only (16/16 prompts from full bank)
 
 ## Top gaps
 
-None on this run — all scored prompts hit mention, expected URL, and no-hallucination.
+None on this run — all scored prompts hit mention, expected URL, and no-hallucination (including accuracy traps: private repos, forks, funding).
 
 ### Coverage notes
 
-- Only entity/product prompts were in this probe batch (6 prompts). Accuracy-trap and competitive prompts from `prompts.json` were not exercised.
-- Expand the next probe to include accuracy traps (funding, private repos, forks) and multi-engine coverage (gemini) to validate hallucination resistance and SoV breadth.
-- Product URLs and boplog/llms.txt extractability look healthy for hermes on this set.
+- Full `prompts.json` bank exercised (entity, product, portfolio, accuracy traps, machine-readable).
+- Multi-engine coverage still open (gemini/claude not in this batch).
 
 ## Next actions
 
-1. Re-probe with full prompt bank (accuracy traps + competitive).
-2. Ensure gemini (and other engines) produce results, not only hermes.
+1. Add gemini/claude once auth/trust works in this environment.
+2. Add competitive / non-branded prompts for SoV outside owned entities.
 3. Keep llms.txt / FAQ aligned when new projects ship.

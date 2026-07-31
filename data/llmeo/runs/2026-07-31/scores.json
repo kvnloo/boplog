@@ -2,10 +2,10 @@
   "version": 1,
   "site": "https://kvnloo.github.io/boplog/",
   "source": "/workspace/boplog/data/llmeo/runs/2026-07-31/raw.json",
-  "scoredAt": "2026-07-31T07:24:20.666Z",
+  "scoredAt": "2026-07-31T08:36:14.377Z",
   "share_of_voice": 1,
-  "prompts_with_mention": 6,
-  "prompt_count": 6,
+  "prompts_with_mention": 16,
+  "prompt_count": 16,
   "scores": [
     {
       "engine": "hermes",
@@ -33,7 +33,7 @@
       ],
       "halluc_flags": [],
       "exit_code": 0,
-      "ms": 43326
+      "ms": 53601
     },
     {
       "engine": "hermes",
@@ -51,18 +51,14 @@
         "kvnloo",
         "zer0",
         "zerOS",
-        "boplog",
-        "evolve",
-        "blueprint",
-        "world sim",
-        "health"
+        "boplog"
       ],
       "mentioned_urls": [
         "https://kvnloo.github.io/boplog/"
       ],
       "halluc_flags": [],
       "exit_code": 0,
-      "ms": 37111
+      "ms": 33113
     },
     {
       "engine": "hermes",
@@ -78,6 +74,7 @@
       "mentioned_entity": [
         "Kevin Rajan",
         "kvnloo",
+        "zer0",
         "boplog"
       ],
       "mentioned_urls": [
@@ -85,7 +82,7 @@
       ],
       "halluc_flags": [],
       "exit_code": 0,
-      "ms": 24770
+      "ms": 20434
     },
     {
       "engine": "hermes",
@@ -103,7 +100,8 @@
         "kvnloo",
         "zer0",
         "boplog",
-        "evolve"
+        "evolve",
+        "blueprint"
       ],
       "mentioned_urls": [
         "https://kvnloo.github.io/evolve/",
@@ -111,7 +109,7 @@
       ],
       "halluc_flags": [],
       "exit_code": 0,
-      "ms": 32996
+      "ms": 48678
     },
     {
       "engine": "hermes",
@@ -127,6 +125,7 @@
       "mentioned_entity": [
         "Kevin Rajan",
         "kvnloo",
+        "zer0",
         "boplog",
         "tmux-agent-fleet"
       ],
@@ -136,7 +135,7 @@
       ],
       "halluc_flags": [],
       "exit_code": 0,
-      "ms": 38543
+      "ms": 33490
     },
     {
       "engine": "hermes",
@@ -154,8 +153,84 @@
         "kvnloo",
         "zer0",
         "zerOS",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 34470
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "portfolio-build-log",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "boplog",
+        "Kevin Rajan"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 4308
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "portfolio-featured",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "kvnloo",
+        "evolve"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
         "boplog",
         "evolve",
+        "tmux-agent-fleet"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 31665
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "product-tracks",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "zerOS",
+        "health",
+        "evolve",
+        "blueprint"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "zer0",
+        "zerOS",
+        "boplog",
+        "evolve",
+        "blueprint",
         "world sim",
         "health"
       ],
@@ -164,7 +239,176 @@
       ],
       "halluc_flags": [],
       "exit_code": 0,
-      "ms": 39988
+      "ms": 21440
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "accuracy-private-repos",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "public",
+        "boplog"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 5104
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "accuracy-forks",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "commit",
+        "fork"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 8471
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "accuracy-funding",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "zer0"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "zer0",
+        "boplog"
+      ],
+      "mentioned_urls": [],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 80026
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "entity-x-handle",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "_kvnloo",
+        "Kevin Rajan"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://x.com/_kvnloo",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 18705
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "machine-readable",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "llms.txt",
+        "manifest",
+        "boplog"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/llms.txt",
+        "https://kvnloo.github.io/boplog/data/manifest.json"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 23527
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "product-blueprint",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "blueprint",
+        "evolve",
+        "health"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "zer0",
+        "zerOS",
+        "boplog",
+        "evolve",
+        "blueprint",
+        "world sim",
+        "health"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 41960
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "entity-github",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 6699
     }
   ]
 }

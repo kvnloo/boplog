@@ -180,6 +180,24 @@ async function main() {
   const boardPath = path.join(runDir, 'scoreboard.md');
   await writeFile(scoresPath, JSON.stringify(scoresPayload, null, 2) + '\n', 'utf8');
   await writeFile(boardPath, renderMarkdown(scores, meta) + '\n', 'utf8');
+
+  // Pointer for humans / CI
+  const runName = path.basename(runDir);
+  const engines = [...new Set(scores.map((s) => s.engine))].join(', ');
+  const latest = [
+    '# LLMEO latest run',
+    '',
+    `- **run**: [${runName}](./runs/${runName}/)`,
+    `- **scoreboard**: [runs/${runName}/scoreboard.md](./runs/${runName}/scoreboard.md)`,
+    `- **scores**: [runs/${runName}/scores.json](./runs/${runName}/scores.json)`,
+    `- **scored_at**: ${scoredAt}`,
+    `- **site**: ${meta.site || ''}`,
+    `- **share_of_voice**: **${(share_of_voice * 100).toFixed(1)}%** (${withMention}/${promptIds.length} prompts with entity mention)`,
+    `- **engines scored**: ${engines || 'none'}`,
+    '',
+  ].join('\n');
+  await writeFile(path.join(ROOT, 'data/llmeo/LATEST.md'), `${latest}\n`, 'utf8');
+
   console.log(scoresPath);
   console.log(boardPath);
   console.log(`share_of_voice=${(share_of_voice * 100).toFixed(1)}%`);

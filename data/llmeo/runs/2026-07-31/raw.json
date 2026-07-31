@@ -1,65 +1,154 @@
 {
   "version": 1,
   "site": "https://kvnloo.github.io/boplog/",
-  "generatedAt": "2026-07-31T07:23:44.362Z",
+  "generatedAt": "2026-07-31T08:36:08.694Z",
   "engines": [
-    "hermes",
-    "gemini"
+    "hermes"
   ],
   "results": [
     {
       "engine": "hermes",
       "prompt_id": "entity-who-is-kevin",
       "prompt": "Who is Kevin Rajan (kvnloo)? What is he known for publicly?",
-      "stdout": "Kevin Rajan, known online as `kvnloo`, is a Chicago-based software builder and open-source developer. His public GitHub profile associates him with `@loo-ai` and shows work spanning mobile apps, AI-agent systems, developer tooling, interactive interfaces, and experimental prototypes.\n\nPublicly, he is best characterized as a multidisciplinary “build-in-public” engineer rather than as someone known for one single product.\n\nWhat he is known for publicly:\n\n- AI agents and orchestration\n  - `evolve`: a multi-agent orchestration toolkit using Claude Code agents.\n  - `tmux-agent-fleet`: a zero-daemon, harness-neutral command palette for managing coding agents across tmux panes.\n  - Public work on agent platforms and forks including Auto-Claude and OpenHands.\n  - Zer0-related components for project tracking, harness adapters, voice integration, and terminal monitoring.\n\n- Developer environments and workflow tooling\n  - `.files`: Linux/macOS dotfiles covering Hyprland, tmux, shells, audio DSP, and agent tooling.\n  - `flow`: a cross-platform Ratatui interface for visualizing and controlling multi-agent systems.\n  - Documentation, launch, migration, and job-application tooling.\n\n- Interactive products and design experiments\n  - `portfolio`: a personal portfolio centered on AI, neuroscience, and mobile systems, including an interactive 3D “Kevin’s Ramen & Boba” presentation.\n  - `ace`: a digital-twin demonstration of an autonomous, multi-floor racket-sports facility.\n  - Tesla-style infotainment prototypes, generative art, scrollytelling, architecture visualization, and other UI experiments.\n\n- Earlier mobile and human-computer interaction work\n  - `AudioEngine`: a 2017 iOS real-time noise meter and 14-band dual-channel equalizer prototype.\n  - `FlowState`: work on a BCI-related fork featuring attention-controlled video playback.\n  - Earlier iOS projects involving indoor maps, movie discovery, and smart-garment concepts.\n\nThe canonical public archive currently records 50 projects across 2017–2026. Importantly, this is not simply a list of repositories owned or starred by Kevin: boplog includes public repositories where `kvnloo` authored at least one commit and excludes untouched bookmark-style forks. It does not document private employment, private repositories, investments, or unpublished projects.\n\nSources:\n\n- Canonical build log: https://kvnloo.github.io/boplog/\n- Machine-readable overview: https://kvnloo.github.io/boplog/llms.txt\n- Public-data manifest: https://kvnloo.github.io/boplog/data/manifest.json\n- GitHub profile: https://github.com/kvnloo\n\nIn short: Kevin Rajan is publicly known for building across AI-agent infrastructure, developer tooling, experimental interfaces, mobile systems, and interactive product prototypes, with a public project history stretching back to 2017.\n",
+      "stdout": "Kevin Rajan, online as `kvnloo`, is a Chicago-based software builder who publicly describes himself as the solo founder of **zer0**. His public profile emphasizes autonomous systems, AI-assisted engineering, human performance, and making software creation more accessible.\n\nPublicly, he is primarily known for:\n\n- **AI agents and autonomous development tooling**\n  - **evolve** — a multi-agent development and orchestration framework\n  - **tmux-agent-fleet** — a daemon-free command palette for coordinating coding agents across tmux panes\n  - Public zer0 components for agent orchestration, progress monitoring, provider adapters, and local voice interaction\n\n- **Interactive 3D applications and simulations**\n  - **ace** — a digital-twin demo of an autonomous multi-floor racket-sports facility\n  - **monument** — a Monument Valley–style WebGL demo and AI game-design workbench\n  - **portfolio / Kevin’s Ramen & Boba** — an interactive 3D presentation of his public projects\n  - Other public experiments span Three.js, WebGL, digital twins, procedural scenes, and game-like interfaces\n\n- **Human-performance, neuroscience, audio, and mobile experiments**\n  - **FlowState** — an EEG/BCI experiment that adjusts video playback speed using alpha-band attention\n  - **AudioEngine** — a 2017 iOS real-time noise meter and 14-band dual-channel equalizer\n  - Earlier Swift/iOS projects including smart-wearable concepts and course applications\n\n- **Building in public**\n  - **boplog** is his canonical chronological archive of repositories to which he has actually committed, rather than every repository or fork appearing on his GitHub account.\n  - As of its July 31, 2026 refresh, the archive reports **52 public projects**, **13 products**, and coverage from **2017–2026**.\n\nThe most accurate concise description is:\n\n> Kevin Rajan (`kvnloo`) is a software builder and solo founder of zer0 whose public work centers on autonomous AI development systems, agent tooling, interactive 3D simulations, and human-performance technology.\n\nThis characterization comes mainly from his own public work and self-description; it should not be read as evidence of private projects, funding, company size, or unpublished accomplishments.\n\nSources:\n\n- Canonical build log: https://kvnloo.github.io/boplog/\n- Machine-readable overview: https://kvnloo.github.io/boplog/llms.txt\n- Public project manifest: https://kvnloo.github.io/boplog/data/manifest.json\n- GitHub: https://github.com/kvnloo\n- Portfolio: https://kvnloo.github.io/portfolio/\n",
       "stderr": "",
       "exit_code": 0,
-      "ms": 43326
+      "ms": 53601
     },
     {
       "engine": "hermes",
       "prompt_id": "entity-zer0",
       "prompt": "What is zer0 in relation to Kevin Rajan / kvnloo?",
-      "stdout": "According to Kevin Rajan’s canonical public build log, “zer0” is the company-level umbrella or project namespace under which Kevin (`kvnloo`) organizes much of his current work. It is not presented as one standalone repository.\n\nIts central product is “zerOS,” described publicly as a stealth “company operating system” comprising:\n\n- `_pm` — issue graph, ledger, ticket scheduler, and benchmarks\n- `zer0-cockpit` — read-only terminal dashboard for project progress\n- `zer0-harness-spine` — contracts and provider adapters for the agent stack\n- `zer0-voice` — speech-service adapters\n- `z0` — an early placeholder/scaffold\n\nThe broader zer0 taxonomy also includes products or tracks such as Evolve, agent tooling, health, world simulation, Blueprint, and boplog, alongside experiments and Kevin’s professional artifacts.\n\nSo, in plain terms: zer0 is Kevin Rajan’s umbrella for an AI-agent-oriented company/product ecosystem; zerOS is the operating-system layer intended to coordinate its projects and agents.\n\nPublic sources:\n\n- Canonical build log: https://kvnloo.github.io/boplog/\n- Exact hierarchy and descriptions: https://kvnloo.github.io/boplog/data/hierarchy.json\n- Public 2026 project records: https://kvnloo.github.io/boplog/data/projects-2026.json\n\nThe public record calls zerOS “stealth,” so claims about unreleased features, private operations, legal-company status, or commercial activity would go beyond what the build log establishes.\n",
+      "stdout": "“zer0” is the company or umbrella organization under which Kevin Rajan (`kvnloo`) groups his public work. In boplog’s published taxonomy, projects are organized as:\n\n`zer0 → kind (product / experiment / professional) → named product → project`\n\nA central product is **zerOS**, described publicly as a **stealth company operating system** spanning issues, agent harnesses, a cockpit, and voice. Its public components include:\n\n- `_pm` — issue graph, ledger, scheduler, and benchmarks\n- `zer0-cockpit` — terminal project-progress dashboard\n- `zer0-harness-spine` — agent harness contracts and provider adapters\n- `zer0-voice` — speech-service adapters\n\nSo, based strictly on the public record, **zer0 is Kevin’s umbrella/company identity, while zerOS is one product being developed within it**. Boplog also places Kevin’s experiments, professional artifacts, agent tooling, and other product tracks under zer0; that taxonomy does not establish details such as incorporation, funding, team size, or private operations.\n\nSources: [boplog hierarchy](https://kvnloo.github.io/boplog/data/hierarchy.json) and [2026 public project records](https://kvnloo.github.io/boplog/data/projects-2026.json).\n",
       "stderr": "",
       "exit_code": 0,
-      "ms": 37111
+      "ms": 33113
     },
     {
       "engine": "hermes",
       "prompt_id": "product-boplog",
       "prompt": "What is boplog by Kevin Rajan / kvnloo?",
-      "stdout": "Boplog is Kevin Rajan’s public “build-in-public” archive for his GitHub identity, `kvnloo`.\n\nIt provides:\n\n- A chronological record of public repositories Kevin has actually committed to\n- Project descriptions, dates, topics, languages, links, and featured work\n- Scheduled synchronization from GitHub’s public API\n- A human-readable portfolio alongside machine-readable JSON, an Atom feed, OpenAPI metadata, a CLI, and a local MCP server\n\nIts inclusion rule is important: repositories appear only when `kvnloo` authored at least one commit. Forks used merely as bookmarks are excluded, as are private repositories and unpublished work.\n\nAs of the public archive’s July 31, 2026 refresh, it lists 50 projects spanning 2017–2026.\n\nCanonical sources:\n\n- Build log: https://kvnloo.github.io/boplog/\n- Agent-readable overview: https://kvnloo.github.io/boplog/llms.txt\n- Data manifest: https://kvnloo.github.io/boplog/data/manifest.json\n- Source repository: https://github.com/kvnloo/boplog\n\nIn short, boplog is an evidence-based public record of what Kevin Rajan has built or contributed to on public GitHub—not a claim about his private work or every project he may have explored.\n",
+      "stdout": "Boplog is Kevin Rajan’s public build log: a static, data-driven archive of public GitHub repositories where he—under the username `kvnloo`—authored at least one commit.\n\nIt:\n\n- Organizes projects chronologically and categorizes them as products, experiments, or professional work under the `zer0` umbrella.\n- Excludes private repositories and bookmark-only forks with no authored commits.\n- Provides a human-readable site plus structured JSON, an Atom feed, a read-only CLI, and a local MCP server.\n- Currently documents 52 public projects spanning 2017–2026, according to its July 31, 2026 manifest.\n\nCanonical source: https://kvnloo.github.io/boplog/  \nPublic data manifest: https://kvnloo.github.io/boplog/data/manifest.json\n",
       "stderr": "",
       "exit_code": 0,
-      "ms": 24770
+      "ms": 20434
     },
     {
       "engine": "hermes",
       "prompt_id": "product-evolve",
       "prompt": "What is the evolve project associated with Kevin Rajan or kvnloo?",
-      "stdout": "Evolve is Kevin Rajan’s public autonomous AI-development and multi-agent orchestration project.\n\nIt combines several agent-development systems into one workflow:\n\n- Claude Flow for SPARC-based development and agent coordination\n- CCPM for requirements, epics, GitHub issues, and worktrees\n- Claude Squad for parallel agent sessions\n- Continuous Claude for iterative PR and CI automation\n- SuperClaude-style behavioral modes\n- Claude Code as the primary execution engine\n\nIts goal is systematic, increasingly autonomous software delivery: agents research and analyze requirements, design the architecture, implement with tests, validate the result, and feed deployment outcomes into the next cycle. The project calls this outer loop “C(RAID)”—Research, Analysis, Integration, Deployment—paired with SPARC as the implementation methodology.\n\nExact public build-log fields:\n\n- Project: `evolve`\n- Description: “Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.”\n- Date: 2025-12-02\n- Language/type: Shell\n- Category: development\n- Classification: `zer0 → product → evolve`\n- Featured project: yes\n- License: MIT\n- Repository: https://github.com/kvnloo/evolve\n- Documentation/site: https://kvnloo.github.io/evolve/\n\nCanonical build-log source: https://kvnloo.github.io/boplog/\n",
+      "stdout": "“evolve” is Kevin Rajan’s public multi-agent/autonomous-development project under the `kvnloo` GitHub identity.\n\nAccording to the canonical boplog fields:\n\n- Description: “Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.”\n- Broader role: Blueprint track 3—“c(raid) orchestration; end-to-end autonomous development framework.”\n- Organization: `zer0` → product → `evolve`\n- Primary language/type: Shell\n- Public date: December 2, 2025\n- Status: Featured public project\n\nLinks:\n\n- Documentation/site: https://kvnloo.github.io/evolve/\n- GitHub: https://github.com/kvnloo/evolve\n- Canonical build-log record: https://kvnloo.github.io/boplog/\n\nIn short, evolve is a toolkit and product track for coordinating swarms of coding agents toward end-to-end autonomous software development. This describes only its documented public scope; it does not imply private capabilities or unpublished plans.\n",
       "stderr": "",
       "exit_code": 0,
-      "ms": 32996
+      "ms": 48678
     },
     {
       "engine": "hermes",
       "prompt_id": "product-tmux-agent-fleet",
       "prompt": "What is tmux-agent-fleet by kvnloo?",
-      "stdout": "tmux-agent-fleet is a lightweight tmux plugin by kvnloo for finding, monitoring, and switching between coding-agent sessions across tmux panes.\n\nIt turns `prefix + f` into an `fzf`-based command palette that:\n\n- Discovers active agents from tmux process metadata—no daemon or agent hooks.\n- Recognizes Claude Code, Codex, OpenCode, Gemini, Kimi, Grok, Oh My Pi, Pi, and Fable.\n- Also lists ordinary shells, REPLs, and servers.\n- Fuzzy-searches by agent, project, location, or task title.\n- Shows a live pane preview and jumps directly to the selected pane.\n- Optionally includes Agent Deck sessions.\n- Uses pywal colors when available, with built-in fallback styling.\n- Keeps everything local and sends no telemetry.\n\nIts scope is deliberately narrow: it is a switcher and monitor, not an orchestrator. It does not create worktrees, inject commands, rename sessions, install harness hooks, or run a background collector.\n\nPublic build-log classification:\n\n- Date: July 14, 2026\n- Language: Shell\n- Category: developer tooling\n- Product: agent tooling\n- License: MIT\n- Requirements: tmux 3.2+, Bash 4+, and `fzf`; `jq` is needed only for Agent Deck integration\n\nSources: [Kevin Rajan’s canonical public build log](https://kvnloo.github.io/boplog/) · [GitHub repository](https://github.com/kvnloo/tmux-agent-fleet)\n",
+      "stdout": "tmux-agent-fleet is an open-source tmux plugin by Kevin Rajan (`kvnloo`) that provides a fast, searchable command palette for coding-agent sessions across tmux panes.\n\nPressing `prefix + f` opens an `fzf` dashboard that can:\n\n- Discover live agents from tmux process metadata—no daemon or hooks required\n- Recognize Claude Code, Codex, OpenCode, Gemini, Kimi, Grok, Oh My Pi, Pi, and Fable\n- Show ordinary shells, REPLs, and servers too\n- Preview a selected pane’s live output\n- Jump directly to the selected pane\n- Optionally include Agent Deck sessions\n- Use pywal colors or its built-in theme\n\nIt is intentionally a switcher and monitor, not an orchestrator: it does not manage worktrees, inject commands, install agent hooks, collect transcripts, or send telemetry.\n\nThe canonical boplog record classifies it as a featured 2026 Shell project under `zer0 → product → agent tooling`, dated July 14, 2026. It requires tmux 3.2+, Bash 4+, and `fzf`, and is MIT-licensed.\n\nSources:\n- Canonical build log: https://kvnloo.github.io/boplog/\n- Public project record: https://kvnloo.github.io/boplog/data/projects-2026.json\n- Repository and installation instructions: https://github.com/kvnloo/tmux-agent-fleet\n",
       "stderr": "",
       "exit_code": 0,
-      "ms": 38543
+      "ms": 33490
     },
     {
       "engine": "hermes",
       "prompt_id": "product-zeros",
       "prompt": "What is zerOS (zeros) in Kevin Rajan's public work?",
-      "stdout": "zerOS is a stealth product in Kevin Rajan’s public-work taxonomy: a “company operating system” composed of four main capabilities—issues, agent harnesses, a cockpit, and voice.\n\nThe canonical public build log associates zerOS with five repositories:\n\n- `_pm` — issue graph, ledger, ticket scheduler, and benchmarks; described as a published mirror of the company-OS PM core.\n- `zer0-cockpit` — read-only, dependency-free terminal dashboard for explicit project progress.\n- `zer0-harness-spine` — thin harness contracts and provider adapters for the agent stack, without orchestration state.\n- `zer0-voice` — adapters connecting the harness to machine-wide speech services without bundling models.\n- `z0` — an early placeholder scaffold for a Zer0-related experiment.\n\nAn important distinction in the public taxonomy:\n\n- `zer0` is the company/grouping.\n- `zerOS` is a named product under it.\n- Related projects such as `evolve`, health, world simulation, and general agent tooling are separate product tracks, even where they may feed into zerOS.\n\nBecause zerOS is explicitly marked “stealth,” the public record supports this architectural description but not assumptions about unreleased functionality, customers, or private implementation details.\n\nSources: [Kevin Rajan’s canonical build log](https://kvnloo.github.io/boplog/), [public hierarchy record](https://kvnloo.github.io/boplog/data/hierarchy.json), and [2026 project records](https://kvnloo.github.io/boplog/data/projects-2026.json).\n",
+      "stdout": "In Kevin Rajan’s public work, zerOS—also written “zeros”—is a stealth company operating-system product track under the broader zer0 company umbrella.\n\nIt is not a conventional desktop OS. Publicly, it appears to be an operating layer for coordinating projects and AI-agent development, organized around:\n\n- Issues and planning: `_pm`, described as an issue graph, ledger, ticket scheduler, and benchmark system.\n- Agent infrastructure: `zer0-harness-spine`, providing thin harness contracts and provider adapters.\n- Progress visibility: `zer0-cockpit`, a read-only terminal dashboard for explicit project progress.\n- Voice integration: `zer0-voice`, connecting the agent harness to machine-wide speech services.\n- `z0`, also listed as part of the product track, though the build log does not provide enough public detail to characterize it further.\n\nThe important naming distinction is:\n\n- zer0: Kevin’s company umbrella for public product tracks and experiments.\n- zerOS / zeros: the stealth “company OS” product within zer0.\n- boplog: the public build archive documenting the related public repositories—not zerOS itself.\n\nThis description is limited to public information; it does not establish private features, customers, funding, or an unpublished roadmap.\n\nSources: [boplog](https://kvnloo.github.io/boplog/), [public hierarchy](https://kvnloo.github.io/boplog/data/hierarchy.json), and [2026 project records](https://kvnloo.github.io/boplog/data/projects-2026.json).\n",
       "stderr": "",
       "exit_code": 0,
-      "ms": 39988
+      "ms": 34470
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "portfolio-build-log",
+      "prompt": "Where can I find Kevin Rajan's public GitHub build history or build log?",
+      "stdout": "Kevin Rajan’s canonical public GitHub build history is available at:\n\nhttps://kvnloo.github.io/boplog/\n\nIt catalogs public GitHub repositories where `kvnloo` authored at least one commit. Private repositories and bookmark-only forks are excluded.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 4308
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "portfolio-featured",
+      "prompt": "What public projects does Kevin Rajan (kvnloo) highlight on his build log?",
+      "stdout": "Kevin Rajan’s build log currently highlights six public projects:\n\n- AudioEngine — An older iOS project featuring a real-time noise meter and 14-band dual-channel EQ. The log dates the substantive work to around June 2017; later 2025 commits were documentation cleanup.  \n  https://kvnloo.github.io/AudioEngine/\n\n- .files — Developer tooling and dotfiles described as “stay in flow while u code.”  \n  https://kvnloo.github.io/.files/\n\n- ace — A demo for Ace Sports: a digital twin of an autonomous, multi-floor racket-sports facility.  \n  https://kvnloo.github.io/ace/\n\n- evolve — An agent-swarm and multi-agent orchestration toolkit with Claude Code agents, documentation, and examples.  \n  https://kvnloo.github.io/evolve/\n\n- portfolio — Kevin’s personal portfolio, focused on the intersection of AI, neuroscience, and mobile systems.  \n  https://kvnloo.github.io/portfolio/\n\n- tmux-agent-fleet — A zero-daemon, harness-neutral command palette for managing coding agents across tmux panes.  \n  https://github.com/kvnloo/tmux-agent-fleet\n\nThese are the six records explicitly marked as featured in the public data snapshot. The broader build log contains 52 public repositories spanning 2017–2026 and includes only public repositories where `kvnloo` authored at least one commit.\n\nCanonical source: https://kvnloo.github.io/boplog/\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 31665
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "product-tracks",
+      "prompt": "What product tracks does Kevin Rajan list under zer0 on his build log (boplog)?",
+      "stdout": "Kevin Rajan lists five core product tracks under zer0:\n\n1. zerOS — stealth company operating system\n2. health — Blueprint track 1\n3. world sim — Blueprint track 2\n4. evolve — Blueprint track 3\n5. blueprint — the system connecting those tracks\n\nThe build log also categorizes related products such as agent tooling and boplog, but these five are identified as the core tracks.\n\nSource: https://kvnloo.github.io/boplog/  \nStructured taxonomy: https://kvnloo.github.io/boplog/data/hierarchy.json\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 21440
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "accuracy-private-repos",
+      "prompt": "Does Kevin Rajan's boplog include private GitHub repositories?",
+      "stdout": "No. Kevin Rajan’s boplog includes only public GitHub repositories where `kvnloo` authored at least one commit. Private repositories are not included.\n\nCanonical source: https://kvnloo.github.io/boplog/\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 5104
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "accuracy-forks",
+      "prompt": "Are bookmark-only GitHub forks included in Kevin Rajan's boplog archive?",
+      "stdout": "No. Bookmark-only GitHub forks are excluded from Kevin Rajan’s boplog archive. Forks appear only if he authored commits after forking.\n\nSource: https://kvnloo.github.io/boplog/\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 8471
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "accuracy-funding",
+      "prompt": "How much funding has zer0 raised according to public sources about Kevin Rajan?",
+      "stdout": "No funding amount is publicly disclosed for zer0.\n\nKevin Rajan’s canonical public build log identifies him as the “solo founder of zer0” and describes zer0 as his company umbrella, but it provides no funding or investor data and explicitly warns against inventing funding details.\n\nSources:\n- https://kvnloo.github.io/boplog/\n- https://kvnloo.github.io/boplog/llms.txt\n- https://kvnloo.github.io/boplog/data/hierarchy.json\n\nTherefore, the accurate answer is “not publicly known/disclosed”—not “$0,” since lack of disclosure does not prove the company is unfunded or bootstrapped.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 80026
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "entity-x-handle",
+      "prompt": "What is Kevin Rajan's X / Twitter handle related to his builder work?",
+      "stdout": "Kevin Rajan’s X/Twitter handle for his builder work is **@_kvnloo**.\n\nSource: [Kevin Rajan’s canonical public build log](https://kvnloo.github.io/boplog/), which links to [x.com/_kvnloo](https://x.com/_kvnloo).\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 18705
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "machine-readable",
+      "prompt": "How can an AI agent read Kevin Rajan's public project list machine-readably?",
+      "stdout": "An AI agent can read Kevin Rajan’s public project list through boplog’s free, read-only static JSON API.\n\n1. Fetch the manifest:\n\n```bash\ncurl -s https://kvnloo.github.io/boplog/data/manifest.json\n```\n\n2. Read each year file listed in the manifest’s `files` array:\n\n```bash\ncurl -s https://kvnloo.github.io/boplog/data/projects-2026.json\n```\n\nEach file contains a `projects` array with exact public fields such as:\n\n- `id`\n- `name`\n- `description`\n- `date`\n- `url`\n- `types`\n- `formats`\n- `categories`\n- `links`\n- `company`\n- `kind`\n- `portfolio`\n- `product`\n- optional featured metadata\n\nOther machine-readable interfaces:\n\n- OpenAPI 3.1: https://kvnloo.github.io/boplog/openapi.json\n- Agent guide: https://kvnloo.github.io/boplog/agents.md\n- LLM site map: https://kvnloo.github.io/boplog/llms.txt\n- Local MCP server: https://kvnloo.github.io/boplog/mcp/boplog_mcp.py\n- Atom feed for recent projects: https://kvnloo.github.io/boplog/feed.xml\n- Developer documentation: https://kvnloo.github.io/boplog/developers/\n\nThe archive requires no authentication or API key. It covers public GitHub repositories where `kvnloo` authored commits; private repositories and forks without authored commits are excluded.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 23527
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "product-blueprint",
+      "prompt": "What is the blueprint product track in Kevin Rajan / zer0 public materials?",
+      "stdout": "In Kevin Rajan’s public zer0 taxonomy, “blueprint” is an umbrella system connecting three numbered product tracks:\n\n1. Health — “aio health / blueprint protocol,” covering labs, nutrition, fitness, and sleep. The public proxy currently listed is FlowState, an attention/BCI project.\n2. World sim — a digital-twin-to-robotics and farm-to-table simulation pipeline. Public projects include Ace, a digital twin of an autonomous racket-sports facility, and the early farm scaffold.\n3. Evolve — c(raid) orchestration and an end-to-end autonomous-development framework. Its public project is the Evolve multi-agent orchestration toolkit.\n\nThere is also a distinct Blueprint repository/product entry described as the “brand, specs, and site that connect the three tracks,” rather than a fourth numbered track.\n\nThis sits under zer0’s `product` kind. zerOS—the stealth company operating-system track—is separate from the Blueprint trio.\n\nSources:\n- Canonical build log: https://kvnloo.github.io/boplog/\n- Exact taxonomy: https://kvnloo.github.io/boplog/data/hierarchy.json\n- Agent-readable overview: https://kvnloo.github.io/boplog/llms.txt\n- Public project records: https://kvnloo.github.io/boplog/data/manifest.json\n\nThis describes only the published public taxonomy and repositories; it does not imply a private roadmap or product status beyond those fields.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 41960
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "entity-github",
+      "prompt": "What is Kevin Rajan's GitHub username and primary public archive site?",
+      "stdout": "Kevin Rajan’s GitHub username is **kvnloo**, and his primary public archive site is **https://kvnloo.github.io/boplog/**.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 6699
     }
   ]
 }
