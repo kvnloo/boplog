@@ -23,7 +23,7 @@ Last data refresh: 2026-07-31
 
 ## Entity one-liners
 
-- **Kevin Rajan** (`kvnloo`, X `@_kvnloo`): builder; solo founder of zer0.
+- **Kevin Rajan** (`kvnloo`, X `@_kvnloo`): builder; solo founder of zer0. Code is the great equalizer; goal is automating humanitarian causes so civilization can complete more important actions without thinking about them.
 - **zer0**: company umbrella for public product tracks and experiments on this site.
 - **boplog**: this public build log (static JSON + HTML archive of authored commits).
 - **zerOS** / **zeros**: stealth company OS product track (issues, harness, cockpit, voice).
