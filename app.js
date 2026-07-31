@@ -1,11 +1,12 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.23';
+  const BUILD_VERSION = '20260730.24';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
   const ACTIVITY_WEEKS = 52;
+  const ACTIVITY_PAGE = { builds: 0, commits: 1 };
   document.documentElement.dataset.build = BUILD_VERSION;
 
   /** Project ids that also appear as props in the interactive shop (portfolio demos/room). */
@@ -56,7 +57,12 @@
     currentYear: document.querySelector('#current-year'),
     filterDisclosure: document.querySelector('#filter-disclosure'),
     filterSummary: document.querySelector('#filter-summary'),
-    activityMap: document.querySelector('#activity-map'),
+    activityViewport: document.querySelector('#activity-viewport'),
+    activityTrack: document.querySelector('#activity-track'),
+    activityMapBuilds: document.querySelector('#activity-map-builds'),
+    activityMapCommits: document.querySelector('#activity-map-commits'),
+    activityPageBuilds: document.querySelector('#activity-page-builds'),
+    activityPageCommits: document.querySelector('#activity-page-commits'),
     activitySelection: document.querySelector('#activity-selection'),
     activityNote: document.querySelector('#activity-note'),
     activityModeBuilds: document.querySelector('#activity-mode-builds'),
@@ -301,6 +307,23 @@
     return counts;
   }
 
+  function activityPageIndex(mode = state.activityMode) {
+    return mode === 'commits' ? ACTIVITY_PAGE.commits : ACTIVITY_PAGE.builds;
+  }
+
+  /** Slide the dual-page track to a page index. dragPx follows the finger during swipe. */
+  function setActivityTrackPosition(pageIndex, { dragPx = 0, animate = true } = {}) {
+    const track = elements.activityTrack;
+    const viewport = elements.activityViewport;
+    if (!track || !viewport) return;
+    const width = viewport.clientWidth || 1;
+    const page = pageIndex === 1 ? 1 : 0;
+    const x = (-page * width) + dragPx;
+    track.classList.toggle('is-dragging', !animate);
+    track.style.transform = `translate3d(${x}px, 0, 0)`;
+    track.dataset.page = String(page);
+  }
+
   function setActivityMode(mode, { animate = false } = {}) {
     const next = mode === 'commits' ? 'commits' : 'builds';
     const changed = next !== state.activityMode;
@@ -311,6 +334,9 @@
     elements.activityModeCommits?.classList.toggle('is-active', next === 'commits');
     elements.activityModeBuilds?.setAttribute('aria-pressed', next === 'builds' ? 'true' : 'false');
     elements.activityModeCommits?.setAttribute('aria-pressed', next === 'commits' ? 'true' : 'false');
+
+    elements.activityPageBuilds?.classList.toggle('is-active', next === 'builds');
+    elements.activityPageCommits?.classList.toggle('is-active', next === 'commits');
 
     // Mobile: current mode up top; under graph: →/← other mode + "swipe".
     if (elements.activityModeLabel) {
@@ -325,15 +351,7 @@
     }
 
     const root = document.querySelector('.activity');
-    if (root) {
-      root.dataset.mode = next;
-      if (animate && changed) {
-        root.classList.remove('is-mode-flash');
-        void root.offsetWidth;
-        root.classList.add('is-mode-flash');
-        window.setTimeout(() => root.classList.remove('is-mode-flash'), 420);
-      }
-    }
+    if (root) root.dataset.mode = next;
 
     if (elements.activityNote) {
       elements.activityNote.textContent = next === 'commits'
@@ -345,26 +363,34 @@
     if (next === 'commits' && state.date) {
       state.date = '';
     }
+
+    // Pane scroll: builds | commits
+    if (changed || animate) {
+      setActivityTrackPosition(activityPageIndex(next), { animate: Boolean(animate && changed) });
+    } else {
+      setActivityTrackPosition(activityPageIndex(next), { animate: false });
+    }
   }
 
-  function renderActivityMap() {
-    if (!elements.activityMap) return;
-    const mode = state.activityMode === 'commits' ? 'commits' : 'builds';
-    const counts = mode === 'commits' ? commitCounts() : buildLogCounts();
-    const unit = mode === 'commits' ? 'commit' : 'build';
-    const units = mode === 'commits' ? 'commits' : 'builds';
-
+  function activityWindowRange() {
+    const builds = buildLogCounts();
+    const commits = commitCounts();
     const today = new Date();
     today.setUTCHours(12, 0, 0, 0);
-    const latestFromCounts = [...counts.keys()].sort().at(-1);
+    const latestFromCounts = [...builds.keys(), ...commits.keys()].sort().at(-1);
     const latestProject = [...state.projects].sort((a, b) => b.date.localeCompare(a.date))[0];
     const latestDate = latestFromCounts
       ? new Date(`${latestFromCounts}T12:00:00Z`)
       : (latestProject ? new Date(`${latestProject.date}T12:00:00Z`) : today);
-    const end = latestDate > today ? latestDate : today;
+    const end = latestDate > today ? new Date(latestDate) : new Date(today);
     end.setUTCDate(end.getUTCDate() + (6 - end.getUTCDay()));
     const start = new Date(end);
     start.setUTCDate(start.getUTCDate() - (ACTIVITY_WEEKS * 7 - 1));
+    return { start, end, builds, commits };
+  }
+
+  function buildActivityGridHtml(counts, { mode, unit, units, selectable }) {
+    const { start } = activityWindowRange();
     const maxCount = Math.max(1, ...counts.values(), 0);
     const weeks = [];
     const monthLabels = [];
@@ -386,30 +412,74 @@
         const value = isoDate(date);
         const count = counts.get(value) || 0;
         if (count) activeDays += 1;
-        const selected = mode === 'builds' && value === state.date;
+        const selected = selectable && value === state.date;
         const label = `${count} ${count === 1 ? unit : units} on ${localDateLabel(value)}`;
         days.push(
-          `<button class="activity__cell${selected ? ' is-selected' : ''}" type="button" data-activity-date="${value}" data-level="${activityLevel(count, maxCount)}" aria-pressed="${selected ? 'true' : 'false'}" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}"></button>`,
+          `<button class="activity__cell${selected ? ' is-selected' : ''}" type="button" data-activity-date="${value}" data-activity-mode="${mode}" data-level="${activityLevel(count, maxCount)}" aria-pressed="${selected ? 'true' : 'false'}" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}"></button>`,
         );
       }
       weeks.push(`<div class="activity__week">${days.join('')}</div>`);
     }
 
-    elements.activityMap.style.setProperty('--activity-weeks', String(ACTIVITY_WEEKS));
-    elements.activityMap.innerHTML = `
+    return {
+      activeDays,
+      html: `
       <div class="activity__months" aria-hidden="true">${monthLabels.join('')}</div>
       <div class="activity__days" aria-hidden="true"><span>Mon</span><span>Wed</span><span>Fri</span></div>
-      <div class="activity__weeks">${weeks.join('')}</div>`;
+      <div class="activity__weeks">${weeks.join('')}</div>`,
+    };
+  }
 
-    // Mode name is shown in #activity-mode-label on mobile — keep selection as stats only.
+  function updateActivitySelectionStats() {
+    if (!elements.activitySelection) return;
+    const mode = state.activityMode === 'commits' ? 'commits' : 'builds';
     if (mode === 'commits') {
-      elements.activitySelection.textContent = counts.size
+      const commits = commitCounts();
+      const activeDays = [...commits.keys()].length;
+      elements.activitySelection.textContent = commits.size
         ? `${activeDays} active days · last year`
         : 'no commit snapshot yet · run sync';
+    } else if (state.date) {
+      elements.activitySelection.textContent = `${localDateLabel(state.date)} · tap again to clear`;
     } else {
-      elements.activitySelection.textContent = state.date
-        ? `${localDateLabel(state.date)} · tap again to clear`
-        : `${activeDays} active days · last year`;
+      const builds = buildLogCounts();
+      const activeDays = [...builds.keys()].length;
+      elements.activitySelection.textContent = `${activeDays} active days · last year`;
+    }
+  }
+
+  function renderActivityMap({ syncTrack = true, animateTrack = false } = {}) {
+    const buildsEl = elements.activityMapBuilds;
+    const commitsEl = elements.activityMapCommits;
+    if (!buildsEl && !commitsEl) return;
+
+    const { builds, commits } = activityWindowRange();
+    const buildsGrid = buildActivityGridHtml(builds, {
+      mode: 'builds',
+      unit: 'build',
+      units: 'builds',
+      selectable: true,
+    });
+    const commitsGrid = buildActivityGridHtml(commits, {
+      mode: 'commits',
+      unit: 'commit',
+      units: 'commits',
+      selectable: false,
+    });
+
+    if (buildsEl) {
+      buildsEl.style.setProperty('--activity-weeks', String(ACTIVITY_WEEKS));
+      buildsEl.innerHTML = buildsGrid.html;
+    }
+    if (commitsEl) {
+      commitsEl.style.setProperty('--activity-weeks', String(ACTIVITY_WEEKS));
+      commitsEl.innerHTML = commitsGrid.html;
+    }
+
+    updateActivitySelectionStats();
+
+    if (syncTrack) {
+      setActivityTrackPosition(activityPageIndex(state.activityMode), { animate: animateTrack });
     }
   }
 
@@ -439,12 +509,12 @@
   }
 
   /**
-   * Horizontal swipe on the activity graph toggles build log ↔ all commits.
-   * Uses pointer events + capture so cell buttons don't swallow the gesture.
+   * Horizontal swipe: drag the dual-page track, then snap to build log or commits.
+   * Uses pointer capture so cell buttons don't swallow the gesture.
    */
   function bindActivitySwipe() {
-    const viewport = document.querySelector('#activity-viewport')
-      || document.querySelector('.activity__viewport');
+    const viewport = elements.activityViewport
+      || document.querySelector('#activity-viewport');
     if (!viewport) return;
 
     let startX = 0;
@@ -453,6 +523,7 @@
     let tracking = false;
     let axis = null; // 'x' | 'y' once decided
     let suppressClick = false;
+    let startPage = 0;
 
     const reset = () => {
       tracking = false;
@@ -460,18 +531,15 @@
       axis = null;
     };
 
-    const commitSwipe = (dx) => {
-      // Swipe left → all commits; swipe right → build log.
-      const next = dx < 0 ? 'commits' : 'builds';
-      if (next === state.activityMode) return;
-      suppressClick = true;
-      window.setTimeout(() => { suppressClick = false; }, 400);
-      setActivityMode(next, { animate: true });
-      render();
+    const rubberBand = (page, dx) => {
+      // Resist dragging past the ends.
+      if (page === 0 && dx > 0) return dx * 0.28;
+      if (page === 1 && dx < 0) return dx * 0.28;
+      return dx;
     };
 
     viewport.addEventListener('pointerdown', (event) => {
-      // Touch / pen only — desktop keeps pill buttons.
+      // Touch / pen only — desktop keeps pill buttons (still animates on change).
       if (event.pointerType === 'mouse') return;
       if (!event.isPrimary) return;
       tracking = true;
@@ -479,6 +547,7 @@
       pointerId = event.pointerId;
       startX = event.clientX;
       startY = event.clientY;
+      startPage = activityPageIndex();
       try {
         viewport.setPointerCapture(event.pointerId);
       } catch (_) { /* ignore */ }
@@ -491,17 +560,20 @@
       if (!axis && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
         axis = Math.abs(dx) >= Math.abs(dy) ? 'x' : 'y';
       }
-      // Once horizontal, keep capture and block vertical scroll intent a bit.
-      if (axis === 'x' && event.cancelable) {
-        event.preventDefault();
-      }
+      if (axis !== 'x') return;
+      if (event.cancelable) event.preventDefault();
+      setActivityTrackPosition(startPage, {
+        dragPx: rubberBand(startPage, dx),
+        animate: false,
+      });
     }, { passive: false });
 
     viewport.addEventListener('pointerup', (event) => {
       if (!tracking || event.pointerId !== pointerId) return;
       const dx = event.clientX - startX;
       const dy = event.clientY - startY;
-      const wasHorizontal = axis === 'x' || (axis === null && Math.abs(dx) > Math.abs(dy));
+      const wasHorizontal = axis === 'x';
+      const width = viewport.clientWidth || 1;
       reset();
       try {
         if (viewport.hasPointerCapture?.(event.pointerId)) {
@@ -509,14 +581,43 @@
         }
       } catch (_) { /* ignore */ }
 
-      if (!wasHorizontal) return;
-      if (Math.abs(dx) < 36) return;
-      if (Math.abs(dx) < Math.abs(dy) * 1.05) return;
-      commitSwipe(dx);
+      if (!wasHorizontal) {
+        setActivityTrackPosition(activityPageIndex(), { animate: true });
+        return;
+      }
+
+      // Commit if past ~22% of the pane or a firm flick.
+      const shouldFlip = Math.abs(dx) > Math.max(36, width * 0.22)
+        && Math.abs(dx) >= Math.abs(dy) * 1.05;
+      let nextPage = startPage;
+      if (shouldFlip) {
+        if (dx < 0 && startPage === 0) nextPage = 1;
+        if (dx > 0 && startPage === 1) nextPage = 0;
+      }
+
+      if (nextPage !== startPage) {
+        suppressClick = true;
+        window.setTimeout(() => { suppressClick = false; }, 450);
+        const nextMode = nextPage === 1 ? 'commits' : 'builds';
+        // Slide from current drag offset → target page (maps already both rendered).
+        setActivityMode(nextMode, { animate: true });
+        updateActivitySelectionStats();
+        // Archive day filter only applies in build-log mode.
+        if (nextMode === 'commits' || state.date) {
+          renderArchive();
+          renderFilterSummary();
+          writeUrlState();
+        }
+      } else {
+        // Snap back
+        setActivityTrackPosition(startPage, { animate: true });
+      }
     });
 
     viewport.addEventListener('pointercancel', (event) => {
-      if (event.pointerId === pointerId) reset();
+      if (event.pointerId !== pointerId) return;
+      reset();
+      setActivityTrackPosition(activityPageIndex(), { animate: true });
     });
 
     // Swallow the synthetic click after a successful swipe so a day isn't filtered.
@@ -525,6 +626,11 @@
       event.preventDefault();
       event.stopPropagation();
     }, true);
+
+    // Keep track aligned if the viewport resizes (rotation, browser chrome).
+    window.addEventListener('resize', () => {
+      setActivityTrackPosition(activityPageIndex(), { animate: false });
+    });
   }
 
   function renderArchive() {
@@ -860,8 +966,11 @@
     const onActivityModeClick = (event) => {
       const mode = event.currentTarget?.dataset?.activityMode;
       if (!mode || mode === state.activityMode) return;
-      setActivityMode(mode);
-      render();
+      setActivityMode(mode, { animate: true });
+      updateActivitySelectionStats();
+      renderArchive();
+      renderFilterSummary();
+      writeUrlState();
     };
     elements.activityModeBuilds?.addEventListener('click', onActivityModeClick);
     elements.activityModeCommits?.addEventListener('click', onActivityModeClick);
@@ -874,11 +983,11 @@
       if (project) window.open(project.url, '_blank', 'noopener,noreferrer');
     });
 
-    elements.activityMap?.addEventListener('click', (event) => {
+    elements.activityViewport?.addEventListener('click', (event) => {
       const cell = event.target.closest('[data-activity-date]');
       if (!cell) return;
-      // Only build-log mode filters the archive by day.
-      if (state.activityMode === 'commits') return;
+      // Only the build-log page filters the archive by day.
+      if (state.activityMode === 'commits' || cell.dataset.activityMode === 'commits') return;
       const date = cell.dataset.activityDate || '';
       state.date = state.date === date ? '' : date;
       render();
