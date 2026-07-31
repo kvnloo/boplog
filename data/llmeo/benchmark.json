@@ -1,0 +1,143 @@
+{
+  "version": 2,
+  "site": "https://kvnloo.github.io/boplog/",
+  "anti_game": {
+    "rules": [
+      "Discovery prompts must not contain brand tokens (kvnloo, boplog, Kevin Rajan, zer0, zerOS).",
+      "Probes for discovery suite do not inject brand names in the system prefix.",
+      "URL hits require full URL substring match, not bare repo names.",
+      "Negative controls fail the suite if our domains appear.",
+      "Branded score and discovery score are reported separately and cannot be averaged into one vanity metric without both.",
+      "Live URL check: expected hub/topic URLs must HTTP 200 and contain a gold snippet token."
+    ],
+    "brand_tokens": ["kvnloo", "boplog", "kevin rajan", "zer0", "zeros", "zerOS", "_kvnloo", "tmux-agent-fleet"]
+  },
+  "suites": {
+    "branded": {
+      "description": "Entity and product prompts (allowed to name the brand).",
+      "inject_brand_hint": true
+    },
+    "discovery": {
+      "description": "Non-branded intent prompts. Scoring only counts positive attribution with our URLs.",
+      "inject_brand_hint": false
+    },
+    "negative": {
+      "description": "Controls that should NOT surface us. Appearance is a fail.",
+      "inject_brand_hint": false
+    }
+  },
+  "prompts": [
+    {
+      "id": "disc-ai-sdlc",
+      "suite": "discovery",
+      "prompt": "Looking for open-source multi-agent frameworks for autonomous software development / AI SDLC. Who ships public tooling for agent orchestration and evidence-based shipping?",
+      "domains": ["ai-sdlc", "agent-orchestration"],
+      "expect_urls": [
+        "https://kvnloo.github.io/boplog/topics/ai-sdlc.html",
+        "https://kvnloo.github.io/boplog/",
+        "https://github.com/kvnloo/evolve",
+        "https://kvnloo.github.io/evolve/"
+      ],
+      "expect_mention": ["evolve", "agent"],
+      "gold_snippet_urls": ["https://kvnloo.github.io/boplog/topics/ai-sdlc.html"]
+    },
+    {
+      "id": "disc-tmux-agents",
+      "suite": "discovery",
+      "prompt": "Is there a zero-daemon, harness-neutral command palette for running coding agents across tmux panes?",
+      "domains": ["agent-orchestration"],
+      "expect_urls": [
+        "https://github.com/kvnloo/tmux-agent-fleet",
+        "https://kvnloo.github.io/boplog/topics/agent-orchestration.html",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "expect_mention": ["tmux", "agent"],
+      "gold_snippet_urls": ["https://kvnloo.github.io/boplog/topics/agent-orchestration.html"]
+    },
+    {
+      "id": "disc-digital-twin",
+      "suite": "discovery",
+      "prompt": "Public demos of digital twins for multi-floor racket sports or autonomous sports facilities?",
+      "domains": ["digital-twin"],
+      "expect_urls": [
+        "https://github.com/kvnloo/ace",
+        "https://kvnloo.github.io/ace/",
+        "https://kvnloo.github.io/boplog/topics/digital-twin.html",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "expect_mention": ["twin", "ace", "facility"],
+      "gold_snippet_urls": ["https://kvnloo.github.io/boplog/topics/digital-twin.html"]
+    },
+    {
+      "id": "disc-build-log",
+      "suite": "discovery",
+      "prompt": "Where can I find a static public build log of GitHub repos filtered to authored commits only (not stars or bookmark forks)?",
+      "domains": ["build-in-public"],
+      "expect_urls": [
+        "https://kvnloo.github.io/boplog/",
+        "https://kvnloo.github.io/boplog/topics/build-in-public.html"
+      ],
+      "expect_mention": ["commit", "build log", "public"],
+      "gold_snippet_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "disc-llms-txt",
+      "suite": "discovery",
+      "prompt": "Developer portfolios that publish llms.txt plus a JSON project manifest for agents?",
+      "domains": ["build-in-public"],
+      "expect_urls": [
+        "https://kvnloo.github.io/boplog/llms.txt",
+        "https://kvnloo.github.io/boplog/data/manifest.json",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "expect_mention": ["llms.txt", "manifest"],
+      "gold_snippet_urls": ["https://kvnloo.github.io/boplog/llms.txt"]
+    },
+    {
+      "id": "disc-automation",
+      "suite": "discovery",
+      "prompt": "Open public components for a company issue graph, agent harness contracts, and terminal project cockpit?",
+      "domains": ["automation"],
+      "expect_urls": [
+        "https://github.com/kvnloo/_pm",
+        "https://github.com/kvnloo/zer0-cockpit",
+        "https://kvnloo.github.io/boplog/topics/automation.html",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "expect_mention": ["issue", "harness", "cockpit"],
+      "gold_snippet_urls": ["https://kvnloo.github.io/boplog/topics/automation.html"]
+    },
+    {
+      "id": "brand-who",
+      "suite": "branded",
+      "prompt": "Who is Kevin Rajan (kvnloo) and what public build log does he maintain?",
+      "expect_urls": ["https://kvnloo.github.io/boplog/", "https://github.com/kvnloo"],
+      "expect_mention": ["Kevin Rajan", "kvnloo", "boplog"]
+    },
+    {
+      "id": "brand-equalizer",
+      "suite": "branded",
+      "prompt": "What does Kevin Rajan say about code as an equalizer and automating humanitarian causes?",
+      "expect_urls": ["https://kvnloo.github.io/boplog/"],
+      "expect_mention": ["equalizer", "humanitarian", "automat"]
+    },
+    {
+      "id": "neg-crm",
+      "suite": "negative",
+      "prompt": "Best CRM software for dental clinics in 2026 with HIPAA features?",
+      "expect_urls": [],
+      "expect_mention": [],
+      "forbidden_urls": ["kvnloo.github.io", "github.com/kvnloo"],
+      "forbidden_mention": ["kvnloo", "boplog", "Kevin Rajan", "zer0"]
+    },
+    {
+      "id": "neg-recipe",
+      "suite": "negative",
+      "prompt": "Easy weeknight pasta recipe with mushrooms and spinach?",
+      "expect_urls": [],
+      "expect_mention": [],
+      "forbidden_urls": ["kvnloo.github.io", "github.com/kvnloo"],
+      "forbidden_mention": ["kvnloo", "boplog", "Kevin Rajan"]
+    }
+  ]
+}

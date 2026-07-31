@@ -13,7 +13,9 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools",
+        "ai-sdlc",
+        "agent-orchestration"
       ],
       "links": [
         {
@@ -28,7 +30,19 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling"
+      "productName": "agent tooling",
+      "domains": [
+        "ai-devtools",
+        "ai-sdlc",
+        "agent-orchestration"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": [
+        "llm",
+        "claude-code"
+      ]
     },
     {
       "id": "jobapp",
@@ -42,7 +56,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "professional",
+        "automation"
       ],
       "links": [
         {
@@ -57,7 +72,15 @@
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "professional-showcase",
-      "productName": "showcase"
+      "productName": "showcase",
+      "domains": [
+        "professional",
+        "automation"
+      ],
+      "languages": [
+        "html"
+      ],
+      "stack": []
     },
     {
       "id": "expert",
@@ -70,7 +93,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools"
       ],
       "links": [
         {
@@ -85,7 +108,12 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "ai-devtools"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "docs-boilerplate",
@@ -98,7 +126,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools",
+        "build-in-public"
       ],
       "links": [
         {
@@ -113,7 +142,13 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "ai-devtools",
+        "build-in-public"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "z0",
@@ -126,7 +161,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "automation"
       ],
       "links": [
         {
@@ -141,7 +176,12 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS"
+      "productName": "zerOS",
+      "domains": [
+        "automation"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "opcode",
@@ -155,7 +195,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools",
+        "agent-orchestration"
       ],
       "links": [
         {
@@ -174,7 +215,16 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling"
+      "productName": "agent tooling",
+      "domains": [
+        "ai-devtools",
+        "agent-orchestration"
+      ],
+      "languages": [],
+      "stack": [
+        "llm",
+        "claude-code"
+      ]
     },
     {
       "id": "blueprint",
@@ -188,7 +238,9 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-sdlc",
+        "automation",
+        "health-bci"
       ],
       "links": [
         {
@@ -207,7 +259,16 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "blueprint",
-      "productName": "blueprint"
+      "productName": "blueprint",
+      "domains": [
+        "ai-sdlc",
+        "automation",
+        "health-bci"
+      ],
+      "languages": [
+        "html"
+      ],
+      "stack": []
     },
     {
       "id": "evolve",
@@ -221,7 +282,9 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-sdlc",
+        "agent-orchestration",
+        "automation"
       ],
       "links": [
         {
@@ -243,7 +306,19 @@
       "productName": "evolve",
       "featured": true,
       "featuredRank": 4,
-      "eyebrow": "Shell"
+      "eyebrow": "Shell",
+      "domains": [
+        "ai-sdlc",
+        "agent-orchestration",
+        "automation"
+      ],
+      "languages": [
+        "sh"
+      ],
+      "stack": [
+        "llm",
+        "claude-code"
+      ]
     },
     {
       "id": "whisper",
@@ -256,7 +331,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools"
       ],
       "links": [
         {
@@ -271,7 +346,14 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "ai-devtools"
+      ],
+      "languages": [],
+      "stack": [
+        "llm"
+      ]
     },
     {
       "id": "portfolio",
@@ -285,7 +367,9 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "professional",
+        "3d-web",
+        "build-in-public"
       ],
       "links": [
         {
@@ -307,7 +391,18 @@
       "productName": "showcase",
       "featured": true,
       "featuredRank": 5,
-      "eyebrow": "HTML"
+      "eyebrow": "HTML",
+      "domains": [
+        "professional",
+        "3d-web",
+        "build-in-public"
+      ],
+      "languages": [
+        "html"
+      ],
+      "stack": [
+        "threejs"
+      ]
     },
     {
       "id": "playground",
@@ -320,7 +415,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools"
       ],
       "links": [
         {
@@ -335,7 +430,12 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "ai-devtools"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "flow",
@@ -348,7 +448,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "agent-orchestration",
+        "ai-devtools"
       ],
       "links": [
         {
@@ -363,7 +464,16 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling"
+      "productName": "agent tooling",
+      "domains": [
+        "agent-orchestration",
+        "ai-devtools"
+      ],
+      "languages": [],
+      "stack": [
+        "ratatui",
+        "llm"
+      ]
     },
     {
       "id": "migrate",
@@ -376,7 +486,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "automation"
       ],
       "links": [
         {
@@ -391,7 +501,12 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "automation"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "botw",
@@ -404,7 +519,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web"
       ],
       "links": [
         {
@@ -419,7 +534,12 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "3d-web"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "ace",
@@ -433,7 +553,9 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "digital-twin",
+        "3d-web",
+        "automation"
       ],
       "links": [
         {
@@ -455,7 +577,20 @@
       "productName": "world sim",
       "featured": true,
       "featuredRank": 3,
-      "eyebrow": "TypeScript"
+      "eyebrow": "TypeScript",
+      "domains": [
+        "digital-twin",
+        "3d-web",
+        "automation"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": [
+        "threejs",
+        "react",
+        "vite"
+      ]
     },
     {
       "id": "monument",
@@ -469,7 +604,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web"
       ],
       "links": [
         {
@@ -488,7 +623,16 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "3d-web"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": [
+        "threejs"
+      ]
     },
     {
       "id": "metallic-card",
@@ -502,7 +646,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web"
       ],
       "links": [
         {
@@ -521,7 +665,16 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "3d-web"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": [
+        "react"
+      ]
     },
     {
       "id": "spy",
@@ -534,7 +687,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "automation"
       ],
       "links": [
         {
@@ -553,7 +706,12 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "automation"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "ux",
@@ -566,7 +724,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "professional"
       ],
       "links": [
         {
@@ -581,7 +739,12 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "professional"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "flo",
@@ -594,7 +757,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "health-bci"
       ],
       "links": [
         {
@@ -609,7 +772,12 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "health-bci"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "architecture-demo",
@@ -622,7 +790,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "professional",
+        "3d-web"
       ],
       "links": [
         {
@@ -641,7 +810,13 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "professional",
+        "3d-web"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "launch",
@@ -654,7 +829,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools",
+        "ai-sdlc"
       ],
       "links": [
         {
@@ -673,7 +849,16 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling"
+      "productName": "agent tooling",
+      "domains": [
+        "ai-devtools",
+        "ai-sdlc"
+      ],
+      "languages": [],
+      "stack": [
+        "llm",
+        "claude-code"
+      ]
     },
     {
       "id": "cofounder",
@@ -688,7 +873,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-sdlc",
+        "ai-devtools"
       ],
       "links": [
         {
@@ -707,7 +893,17 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions"
+      "productName": "open-source contributions",
+      "domains": [
+        "ai-sdlc",
+        "ai-devtools"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": [
+        "llm"
+      ]
     }
   ]
 }

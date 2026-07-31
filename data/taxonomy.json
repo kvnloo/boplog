@@ -1,0 +1,72 @@
+{
+  "_comment": "Orthogonal axes for GEO/SEO. Domains map to hub topic pages and discovery probes. Keep vocab small.",
+  "domains": [
+    {
+      "id": "ai-sdlc",
+      "name": "ai sdlc",
+      "title": "AI software delivery",
+      "description": "autonomous development, multi-agent orchestration, and evidence-based shipping loops.",
+      "intents": ["ai sdlc", "autonomous software development", "multi-agent coding framework", "ai engineering pipeline"]
+    },
+    {
+      "id": "agent-orchestration",
+      "name": "agent orchestration",
+      "title": "agent orchestration",
+      "description": "fleets, harnesses, tmux command palettes, and coordination for coding agents.",
+      "intents": ["coding agent fleet", "tmux multi agent", "harness neutral agents", "agent command palette"]
+    },
+    {
+      "id": "digital-twin",
+      "name": "digital twin",
+      "title": "digital twins & simulation",
+      "description": "facility twins, world sim, and interactive 3D operational models.",
+      "intents": ["digital twin facility", "autonomous sports facility twin", "world simulation pipeline"]
+    },
+    {
+      "id": "automation",
+      "name": "automation",
+      "title": "automation systems",
+      "description": "company OS, issue graphs, voice/harness adapters, and operational automation.",
+      "intents": ["company operating system agents", "issue graph scheduler", "automation orchestration"]
+    },
+    {
+      "id": "ai-devtools",
+      "name": "ai devtools",
+      "title": "ai developer tools",
+      "description": "CLIs, GUIs, usage monitors, and tooling around coding agents and LLMs.",
+      "intents": ["claude code tooling", "llm developer tools", "coding agent ui"]
+    },
+    {
+      "id": "3d-web",
+      "name": "3d web",
+      "title": "3d web & realtime graphics",
+      "description": "three.js scenes, photosphere packs, game-like web experiences.",
+      "intents": ["three.js fps visual quality", "web 3d photosphere", "browser game engine threejs"]
+    },
+    {
+      "id": "health-bci",
+      "name": "health bci",
+      "title": "health & attention",
+      "description": "bci, attention, and peak-performance related experiments that may become product.",
+      "intents": ["bci attention video speed", "eeg alpha band applications"]
+    },
+    {
+      "id": "build-in-public",
+      "name": "build in public",
+      "title": "build in public archives",
+      "description": "public commit-filtered build logs and machine-readable portfolio surfaces.",
+      "intents": ["public github build log authored commits", "llms.txt developer portfolio", "static project manifest agents"]
+    },
+    {
+      "id": "professional",
+      "name": "professional",
+      "title": "professional artifacts",
+      "description": "portfolio, cv, career packaging, and long-lived professional work.",
+      "intents": ["personal engineering portfolio", "latex cv ai ml"]
+    }
+  ],
+  "languages": ["ts", "js", "py", "sh", "swift", "rs", "c++", "html", "tex", "makefile"],
+  "stack": [
+    "tmux", "llm", "threejs", "react", "ratatui", "ffmpeg", "github-actions", "vite", "ios", "claude-code"
+  ]
+}
