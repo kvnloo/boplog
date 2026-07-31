@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.22';
+  const BUILD_VERSION = '20260730.23';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -401,14 +401,15 @@
       <div class="activity__days" aria-hidden="true"><span>Mon</span><span>Wed</span><span>Fri</span></div>
       <div class="activity__weeks">${weeks.join('')}</div>`;
 
+    // Mode name is shown in #activity-mode-label on mobile — keep selection as stats only.
     if (mode === 'commits') {
       elements.activitySelection.textContent = counts.size
-        ? `${activeDays} active days · last year · commits`
+        ? `${activeDays} active days · last year`
         : 'no commit snapshot yet · run sync';
     } else {
       elements.activitySelection.textContent = state.date
-        ? `${localDateLabel(state.date)} · click again to clear`
-        : `${activeDays} active days · last year · build log`;
+        ? `${localDateLabel(state.date)} · tap again to clear`
+        : `${activeDays} active days · last year`;
     }
   }
 
