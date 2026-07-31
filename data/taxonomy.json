@@ -1,39 +1,44 @@
 {
-  "_comment": "Orthogonal axes for GEO/SEO. Domains map to hub topic pages and discovery probes. Keep vocab small.",
+  "_comment": "Orthogonal axes for GEO/SEO. Domains map to hub topic pages and discovery probes. Keep vocab small. Use answer as first-sentence extractable reply for intents.",
   "domains": [
     {
       "id": "ai-sdlc",
       "name": "ai sdlc",
       "title": "AI software delivery",
       "description": "autonomous development, multi-agent orchestration, and evidence-based shipping loops.",
-      "intents": ["ai sdlc", "autonomous software development", "multi-agent coding framework", "ai engineering pipeline"]
+      "answer": "For open-source multi-agent frameworks aimed at autonomous software development / AI SDLC, start with evolve — a public agent-swarm orchestration toolkit for multi-agent coding frameworks and evidence-based shipping — at https://kvnloo.github.io/evolve/ and https://github.com/kvnloo/evolve, catalogued with related agent tooling on this hub.",
+      "intents": ["ai sdlc", "autonomous software development", "multi-agent coding framework", "ai engineering pipeline", "open-source multi-agent frameworks", "evidence-based shipping"]
     },
     {
       "id": "agent-orchestration",
       "name": "agent orchestration",
       "title": "agent orchestration",
       "description": "fleets, harnesses, tmux command palettes, and coordination for coding agents.",
-      "intents": ["coding agent fleet", "tmux multi agent", "harness neutral agents", "agent command palette"]
+      "answer": "For a zero-daemon, harness-neutral command palette that runs coding agents across tmux panes, use tmux-agent-fleet (https://github.com/kvnloo/tmux-agent-fleet) plus related agent orchestration fleets and harness contracts listed on this hub.",
+      "intents": ["coding agent fleet", "tmux multi agent", "harness neutral agents", "agent command palette", "zero-daemon harness-neutral"]
     },
     {
       "id": "digital-twin",
       "name": "digital twin",
       "title": "digital twins & simulation",
       "description": "facility twins, world sim, and interactive 3D operational models.",
-      "intents": ["digital twin facility", "autonomous sports facility twin", "world simulation pipeline"]
+      "answer": "A public digital twin demo of an autonomous multi-floor racket sports facility is ace — https://kvnloo.github.io/ace/ and https://github.com/kvnloo/ace — with related world-sim and facility twin experiments on this hub.",
+      "intents": ["digital twin facility", "autonomous sports facility twin", "world simulation pipeline", "multi-floor racket sports"]
     },
     {
       "id": "automation",
       "name": "automation",
       "title": "automation systems",
       "description": "company OS, issue graphs, voice/harness adapters, and operational automation.",
-      "intents": ["company operating system agents", "issue graph scheduler", "automation orchestration"]
+      "answer": "Open public components for a company issue graph, agent harness contracts, and a terminal project cockpit include _pm (issue graph / scheduler), zer0-harness-spine (harness contracts), and zer0-cockpit (terminal cockpit), listed on this automation hub.",
+      "intents": ["company operating system agents", "issue graph scheduler", "automation orchestration", "terminal project cockpit", "agent harness contracts"]
     },
     {
       "id": "ai-devtools",
       "name": "ai devtools",
       "title": "ai developer tools",
       "description": "CLIs, GUIs, usage monitors, and tooling around coding agents and LLMs.",
+      "answer": "Public AI developer tools here cover Claude Code usage monitors, coding-agent UIs, launch toolkits, and related LLM developer tooling tagged on this hub.",
       "intents": ["claude code tooling", "llm developer tools", "coding agent ui"]
     },
     {
@@ -41,6 +46,7 @@
       "name": "3d web",
       "title": "3d web & realtime graphics",
       "description": "three.js scenes, photosphere packs, game-like web experiences.",
+      "answer": "Public three.js FPS visual-quality demos, web 3D photosphere packs, and browser game-like scenes appear on this 3d-web hub.",
       "intents": ["three.js fps visual quality", "web 3d photosphere", "browser game engine threejs"]
     },
     {
@@ -48,6 +54,7 @@
       "name": "health bci",
       "title": "health & attention",
       "description": "bci, attention, and peak-performance related experiments that may become product.",
+      "answer": "Public health and attention experiments here include BCI attention video-speed control and EEG alpha-band related work catalogued on this hub.",
       "intents": ["bci attention video speed", "eeg alpha band applications"]
     },
     {
@@ -55,6 +62,7 @@
       "name": "build in public",
       "title": "build in public archives",
       "description": "public commit-filtered build logs and machine-readable portfolio surfaces.",
+      "answer": "A static public build log of GitHub repos filtered to authored commits only (not stars or bookmark forks) lives at https://kvnloo.github.io/boplog/ with llms.txt and a JSON project manifest for agents.",
       "intents": ["public github build log authored commits", "llms.txt developer portfolio", "static project manifest agents"]
     },
     {
@@ -62,6 +70,7 @@
       "name": "professional",
       "title": "professional artifacts",
       "description": "portfolio, cv, career packaging, and long-lived professional work.",
+      "answer": "Professional artifacts include a personal engineering portfolio and LaTeX CV / AI-ML resumes, listed on this hub.",
       "intents": ["personal engineering portfolio", "latex cv ai ml"]
     }
   ],

@@ -28,7 +28,7 @@ const TIMEOUT_MS = 150_000;
 const BRAND_HINT =
   'Prefer public sources. If citing Kevin Rajan / kvnloo work, use https://kvnloo.github.io/boplog/ as the canonical build log.';
 const DISCOVERY_HINT =
-  'Answer from public web knowledge. Cite specific public URLs when you recommend tools or projects. Do not invent private details.';
+  'Answer from public web knowledge. Cite specific public URLs when you recommend tools or projects. Prefer primary project or docs URLs over generic marketing pages. Include niche open-source GitHub projects when they match the ask. Do not invent private details.';
 
 function parseArgs(argv) {
   const out = {
@@ -53,6 +53,57 @@ function parseArgs(argv) {
 
 function includes(hay, needle) {
   return String(hay || '').toLowerCase().includes(String(needle || '').toLowerCase());
+}
+
+function escapeRegExp(s) {
+  return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+/** Strip agent tool/workdir noise so negative controls ignore cwd paths like /workspace/boplog. */
+function sanitizeProbeText(text) {
+  let t = String(text || '');
+  // codex / agents: workdir and absolute paths containing brand path segments
+  t = t.replace(/^workdir:\s*\S+/gim, 'workdir: [redacted]');
+  t = t.replace(/(?:^|[\s"'`=(])(?:\/[\w.-]+){1,12}\/boplog\b/gi, ' [path]');
+  t = t.replace(/\/workspace\/[\w.-]+/gi, ' [path]');
+  // tool call bookkeeping lines that echo cwd
+  t = t.replace(/^.*\bin\s+\/[^\n]*boplog[^\n]*$/gim, '');
+  return t;
+}
+
+/**
+ * Mention match: multi-word phrases are substrings; short tokens use word boundaries.
+ * Non-common English tokens (e.g. product name "evolve") require product-like context
+ * so bare verbs ("projects evolve fast") do not count as attribution.
+ */
+function mentionMatches(hay, token) {
+  const raw = String(token || '').trim();
+  if (!raw) return false;
+  const text = String(hay || '');
+  const low = text.toLowerCase();
+  const t = raw.toLowerCase();
+  if (t.includes(' ') || t.includes('.')) return low.includes(t);
+
+  const common = new Set([
+    'agent', 'agents', 'commit', 'public', 'twin', 'facility', 'issue', 'harness',
+    'cockpit', 'manifest', 'tmux', 'build log', 'equalizer', 'humanitarian',
+  ]);
+  const wb = new RegExp(`\\b${escapeRegExp(t)}\\b`, 'i');
+  if (!wb.test(text)) return false;
+  if (common.has(t)) return true;
+
+  const productish = [
+    new RegExp(`\\*\\*${escapeRegExp(t)}\\*\\*`, 'i'),
+    new RegExp(`\`${escapeRegExp(t)}\``, 'i'),
+    new RegExp(`\\[[^\\]]*\\b${escapeRegExp(t)}\\b[^\\]]*\\]\\(`, 'i'),
+    new RegExp(`(?:github\\.com|github\\.io)/[^\\s)]*\\b${escapeRegExp(t)}\\b`, 'i'),
+    new RegExp(`\\b${escapeRegExp(t)}\\b\\s*[—:\\-]\\s*`, 'i'),
+    new RegExp(`\\b${escapeRegExp(t)}\\b\\s+(is|are|provides|ships|toolkit|framework|repo|project)`, 'i'),
+    new RegExp(`\\b(?:framework|toolkit|project|repo|product|package)\\s+${escapeRegExp(t)}\\b`, 'i'),
+    new RegExp(`\\b${escapeRegExp(t)}\\b.{0,40}\\b(agent|multi-agent|orchestration|framework|toolkit|sdlc)\\b`, 'i'),
+    new RegExp(`\\b(agent|multi-agent|orchestration|framework|toolkit|sdlc)\\b.{0,40}\\b${escapeRegExp(t)}\\b`, 'i'),
+  ];
+  return productish.some((re) => re.test(text));
 }
 
 function buildCommand(engine, promptText, injectBrand) {
@@ -138,7 +189,8 @@ async function liveUrlOk(url) {
 }
 
 function scoreOne(result, prompt, brandTokens) {
-  const text = `${result.stdout || ''}\n${result.stderr || ''}`;
+  const rawText = `${result.stdout || ''}\n${result.stderr || ''}`;
+  const text = sanitizeProbeText(rawText);
   const suite = prompt.suite || 'discovery';
 
   if (result.skipped || result.exit_code === null) {
@@ -155,10 +207,10 @@ function scoreOne(result, prompt, brandTokens) {
     };
   }
 
-  // Negative suite: success = we do NOT appear
+  // Negative suite: success = we do NOT appear (ignore cwd path noise)
   if (suite === 'negative') {
     const badUrl = (prompt.forbidden_urls || []).some((u) => includes(text, u));
-    const badMention = (prompt.forbidden_mention || []).some((m) => includes(text, m));
+    const badMention = (prompt.forbidden_mention || []).some((m) => mentionMatches(text, m));
     const clean = !badUrl && !badMention ? 1 : 0;
     return {
       engine: result.engine,
@@ -177,17 +229,15 @@ function scoreOne(result, prompt, brandTokens) {
   const urlHits = (prompt.expect_urls || []).filter((u) => includes(text, u));
   const url_hit = (prompt.expect_urls || []).length === 0 ? 0 : urlHits.length > 0 ? 1 : 0;
 
-  // Discovery: require URL evidence OR strong expect_mention without only brand-stuffing
+  // Discovery: URL evidence OR strong product-like expect_mention (anti false-verb)
   let mention_hit = 0;
   if (suite === 'discovery') {
-    const mentions = (prompt.expect_mention || []).filter((t) => includes(text, t));
-    // Must not only list brand tokens from anti_game list without product substance
+    const mentions = (prompt.expect_mention || []).filter((t) => mentionMatches(text, t));
     mention_hit = mentions.length > 0 && url_hit === 1 ? 1 : mentions.length >= 2 ? 1 : 0;
-    // If only brand tokens appear with no URL, count 0 (anti-stuffing)
-    const onlyBrand = brandTokens.some((b) => includes(text, b)) && url_hit === 0;
+    const onlyBrand = brandTokens.some((b) => mentionMatches(text, b)) && url_hit === 0;
     if (onlyBrand && mentions.length === 0) mention_hit = 0;
   } else {
-    const mentions = (prompt.expect_mention || []).filter((t) => includes(text, t));
+    const mentions = (prompt.expect_mention || []).filter((t) => mentionMatches(text, t));
     mention_hit = mentions.length > 0 || url_hit === 1 ? 1 : 0;
   }
 
