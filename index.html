@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f3f3f0" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#030303" media="(prefers-color-scheme: dark)">
-  <meta name="boplog-build" content="20260730.18">
+  <meta name="boplog-build" content="20260730.19">
   <meta name="description" content="kevin rajan — builder at zer0. public build log. code as equalizer; ai for abundance, health, and human peak performance.">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <meta property="og:title" content="zer0 · Kevin Rajan — Build Log">
@@ -17,7 +17,7 @@
   <title>zer0 · Kevin Rajan — Build Log</title>
   <link rel="canonical" href="https://kvnloo.github.io/boplog/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=20260730.18">
+  <link rel="stylesheet" href="./styles.css?v=20260730.19">
   <script>
     (() => {
       try {
@@ -138,10 +138,12 @@
         <div class="activity__header">
           <div class="activity__heading">
             <h3 id="activity-title">activity</h3>
+            <p class="activity__mode-label" id="activity-mode-label">build log</p>
+            <p class="activity__swipe-hint" id="activity-swipe-hint" aria-hidden="true">swipe · → all commits</p>
             <p class="activity__note" id="activity-note">Build-log mode counts only entries on this site (not every git commit).</p>
           </div>
           <div class="activity__controls">
-            <div class="activity-mode" role="group" aria-label="Activity data source">
+            <div class="activity-mode" id="activity-mode" role="group" aria-label="Activity data source">
               <button type="button" class="activity-mode__btn is-active" id="activity-mode-builds" data-activity-mode="builds" aria-pressed="true">build log</button>
               <button type="button" class="activity-mode__btn" id="activity-mode-commits" data-activity-mode="commits" aria-pressed="false">all commits</button>
             </div>
@@ -158,7 +160,6 @@
           <div class="activity__legend" aria-hidden="true">
             <span>less</span><i data-level="0"></i><i data-level="1"></i><i data-level="2"></i><i data-level="3"></i><i data-level="4"></i><span>more</span>
           </div>
-          <p class="activity__swipe-hint" aria-hidden="true">swipe · build log ↔ commits</p>
         </div>
       </section>
 
@@ -258,6 +259,6 @@
     <div class="noscript">Enable JavaScript for filters and the live list, or use the JSON manifest and Atom feed.</div>
   </noscript>
 
-  <script src="./app.js?v=20260730.18" defer></script>
+  <script src="./app.js?v=20260730.19" defer></script>
 </body>
 </html>
