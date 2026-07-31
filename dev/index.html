@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3f3f0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#030303" media="(prefers-color-scheme: dark)">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="boplog interaction lab — monochrome micro-motion previews. not production.">
+  <title>boplog · interaction lab</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./lab.css">
+  <script>
+    (() => {
+      try {
+        const saved = localStorage.getItem('boplog-theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'night' : 'day');
+      } catch (_) {
+        document.documentElement.dataset.theme = 'day';
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#lab">Skip to lab</a>
+
+  <header class="top">
+    <div class="top__inner">
+      <div class="top__brand">
+        <a href="../">← boplog</a>
+        <span class="top__sep" aria-hidden="true">·</span>
+        <strong>interaction lab</strong>
+        <span class="badge">dev</span>
+      </div>
+      <div class="top__actions">
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle day / night" title="theme">
+          <span class="theme-toggle__thumb" aria-hidden="true"></span>
+          <span class="theme-toggle__label">theme</span>
+        </button>
+      </div>
+    </div>
+    <p class="top__note">
+      phone-friendly previews of monochrome micro-motion. nothing here ships to the main build log until we pick winners.
+      <span class="top__url" id="lab-url"></span>
+    </p>
+  </header>
+
+  <main class="lab" id="lab">
+    <!-- 1. Agents online strip -->
+    <section class="card" id="sec-agents" data-demo="agents">
+      <header class="card__head">
+        <h2>1 · agents online strip</h2>
+        <p>thinking-orb language, size 20, tied to product tracks. systems don’t sleep.</p>
+      </header>
+      <div class="card__body">
+        <div class="agent-strip" id="agent-strip" aria-label="Agents online">
+          <div class="agent-strip__label">
+            <span class="agent-strip__live" aria-hidden="true"></span>
+            <span>zer0 · agents online</span>
+          </div>
+          <ul class="agent-strip__list" id="agent-list"></ul>
+          <p class="agent-strip__foot">systems don’t sleep. the log is what made it public.</p>
+        </div>
+        <div class="controls">
+          <label><input type="checkbox" data-toggle="agents-rotate" checked> cycle states</label>
+          <label><input type="checkbox" data-toggle="agents-live" checked> live pulse</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Orb gallery -->
+    <section class="card" id="sec-orbs" data-demo="orbs">
+      <header class="card__head">
+        <h2>2 · orb states</h2>
+        <p>dotted mono canvas — inspired by thinking-orbs, not a copy of their site. six verbs × two sizes.</p>
+      </header>
+      <div class="card__body">
+        <div class="orb-grid" id="orb-grid"></div>
+      </div>
+    </section>
+
+    <!-- 3. Activity pulse -->
+    <section class="card" id="sec-activity" data-demo="activity">
+      <header class="card__head">
+        <h2>3 · activity map pulse</h2>
+        <p>latest active cell breathes. optional one-shot scanline when flipping “mode”.</p>
+      </header>
+      <div class="card__body">
+        <div class="act" id="activity-demo">
+          <div class="act__modes" role="group" aria-label="Demo mode">
+            <button type="button" class="act__mode is-active" data-mode="builds">build log</button>
+            <button type="button" class="act__mode" data-mode="commits">all commits</button>
+          </div>
+          <div class="act__frame">
+            <div class="act__map" id="act-map" style="--weeks: 20"></div>
+            <div class="act__scan" id="act-scan" hidden></div>
+          </div>
+          <p class="act__meta" id="act-meta">last active day pulses · the number barely matters</p>
+        </div>
+        <div class="controls">
+          <label><input type="checkbox" data-toggle="act-pulse" checked> pulse latest</label>
+          <label><input type="checkbox" data-toggle="act-scan" checked> scanline on switch</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Archive rows -->
+    <section class="card" id="sec-rows" data-demo="rows">
+      <header class="card__head">
+        <h2>4 · build log rows</h2>
+        <p>today’s date column gets a working orb. older rows stay quiet. hover/press for hairline lift.</p>
+      </header>
+      <div class="card__body">
+        <div class="rows" id="demo-rows"></div>
+        <div class="controls">
+          <label><input type="checkbox" data-toggle="rows-orb" checked> today orb</label>
+          <label><input type="checkbox" data-toggle="rows-enter" checked> enter cascade</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Atmosphere -->
+    <section class="card" id="sec-atmosphere" data-demo="atmosphere">
+      <header class="card__head">
+        <h2>5 · atmosphere</h2>
+        <p>sparse signal lattice + optional paper grain. keep both faint or reading dies.</p>
+      </header>
+      <div class="card__body card__body--stage">
+        <div class="stage" id="atmosphere-stage">
+          <canvas class="stage__lattice" id="lattice" width="640" height="200" aria-hidden="true"></canvas>
+          <div class="stage__copy">
+            <p class="stage__kicker">intro backdrop sketch</p>
+            <p>code is the great equalizer. tech democratizes knowledge and engineering, opening a path to abundance.</p>
+          </div>
+          <div class="stage__grain" id="grain" hidden aria-hidden="true"></div>
+        </div>
+        <div class="controls">
+          <label><input type="checkbox" data-toggle="lattice" checked> lattice</label>
+          <label><input type="checkbox" data-toggle="grain"> grain</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Scroll rail + pixel stamp -->
+    <section class="card" id="sec-misc" data-demo="misc">
+      <header class="card__head">
+        <h2>6 · scroll rail · pixel stamp</h2>
+        <p>left rail fills as you scroll this page. stamp is a tiny shaping loop — site mark, not a loader.</p>
+      </header>
+      <div class="card__body card__body--row">
+        <div class="misc-block">
+          <p class="misc-label">scroll this lab</p>
+          <p class="misc-hint">watch the left edge of the viewport</p>
+        </div>
+        <div class="misc-block misc-block--stamp">
+          <canvas id="pixel-stamp" width="48" height="48" aria-label="pixel stamp animation"></canvas>
+          <p class="misc-hint">pixel stamp · shaping</p>
+        </div>
+        <div class="controls">
+          <label><input type="checkbox" data-toggle="rail" checked> scroll rail</label>
+          <label><input type="checkbox" data-toggle="stamp" checked> pixel stamp</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Empty / idle state -->
+    <section class="card" id="sec-empty" data-demo="empty">
+      <header class="card__head">
+        <h2>7 · empty / idle</h2>
+        <p>when filters match nothing — orb pauses, copy stays honest.</p>
+      </header>
+      <div class="card__body">
+        <div class="empty" id="empty-demo">
+          <canvas class="empty__orb" id="empty-orb" width="40" height="40" aria-hidden="true"></canvas>
+          <p>no matches · agents idle</p>
+          <button type="button" class="btn" id="empty-toggle">toggle idle / searching</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card card--notes">
+      <header class="card__head">
+        <h2>notes</h2>
+      </header>
+      <div class="card__body prose">
+        <ul>
+          <li>respects <code>prefers-reduced-motion</code> (static frames).</li>
+          <li>orbs pause when off-screen or tab hidden.</li>
+          <li>strict mono day/night — same tokens as boplog.</li>
+          <li>main site unchanged; promote pieces from here when ready.</li>
+        </ul>
+        <p class="prose__foot">
+          <a href="../">← back to build log</a>
+          ·
+          <a href="https://github.com/kvnloo/boplog" target="_blank" rel="noreferrer">repo ↗</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div class="scroll-rail" id="scroll-rail" hidden aria-hidden="true">
+    <div class="scroll-rail__fill" id="scroll-rail-fill"></div>
+  </div>
+
+  <script src="./lab.js" defer></script>
+</body>
+</html>

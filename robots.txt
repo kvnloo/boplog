@@ -25,4 +25,7 @@ Allow: /openapi.json
 Allow: /feed.xml
 Allow: /.well-known/
 
+# Interaction lab / previews (noindex in HTML too)
+Disallow: /dev/
+
 Sitemap: https://kvnloo.github.io/boplog/sitemap.xml
