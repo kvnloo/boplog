@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.20';
+  const BUILD_VERSION = '20260730.21';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -317,7 +317,8 @@
       elements.activityModeLabel.textContent = next === 'commits' ? 'all commits' : 'build log';
     }
     if (elements.activityModeNext) {
-      elements.activityModeNext.textContent = next === 'commits' ? '→ build log' : '→ commits';
+      // Arrow points toward the mode you swipe into.
+      elements.activityModeNext.textContent = next === 'commits' ? '← build log' : '→ commits';
     }
     if (elements.activitySwipeHint) {
       elements.activitySwipeHint.textContent = 'swipe';
