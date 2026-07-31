@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.21';
+  const BUILD_VERSION = '20260730.22';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -312,7 +312,7 @@
     elements.activityModeBuilds?.setAttribute('aria-pressed', next === 'builds' ? 'true' : 'false');
     elements.activityModeCommits?.setAttribute('aria-pressed', next === 'commits' ? 'true' : 'false');
 
-    // Mobile: current mode up top; next line is → other mode; then "swipe".
+    // Mobile: current mode up top; under graph: →/← other mode + "swipe".
     if (elements.activityModeLabel) {
       elements.activityModeLabel.textContent = next === 'commits' ? 'all commits' : 'build log';
     }
@@ -438,65 +438,92 @@
   }
 
   /**
-   * Mobile: horizontal swipe on the dots viewport toggles build log ↔ all commits.
-   * Requires clear horizontal intent so vertical page scroll still works.
+   * Horizontal swipe on the activity graph toggles build log ↔ all commits.
+   * Uses pointer events + capture so cell buttons don't swallow the gesture.
    */
   function bindActivitySwipe() {
-    const viewport = document.querySelector('.activity__viewport');
+    const viewport = document.querySelector('#activity-viewport')
+      || document.querySelector('.activity__viewport');
     if (!viewport) return;
 
     let startX = 0;
     let startY = 0;
+    let pointerId = null;
     let tracking = false;
-    let moved = false;
+    let axis = null; // 'x' | 'y' once decided
+    let suppressClick = false;
 
     const reset = () => {
       tracking = false;
-      moved = false;
+      pointerId = null;
+      axis = null;
     };
 
-    viewport.addEventListener('touchstart', (event) => {
-      if (event.touches.length !== 1) {
-        reset();
-        return;
-      }
-      tracking = true;
-      moved = false;
-      startX = event.touches[0].clientX;
-      startY = event.touches[0].clientY;
-    }, { passive: true });
-
-    viewport.addEventListener('touchmove', (event) => {
-      if (!tracking || event.touches.length !== 1) return;
-      const dx = event.touches[0].clientX - startX;
-      const dy = event.touches[0].clientY - startY;
-      if (Math.abs(dx) > 10 || Math.abs(dy) > 10) moved = true;
-    }, { passive: true });
-
-    viewport.addEventListener('touchend', (event) => {
-      if (!tracking) return;
-      const touch = event.changedTouches[0];
-      if (!touch) {
-        reset();
-        return;
-      }
-      const dx = touch.clientX - startX;
-      const dy = touch.clientY - startY;
-      reset();
-
-      // Tap / tiny drag → leave to cell click handlers.
-      if (!moved || Math.abs(dx) < 48) return;
-      // Prefer horizontal swipes only.
-      if (Math.abs(dx) < Math.abs(dy) * 1.25) return;
-
+    const commitSwipe = (dx) => {
       // Swipe left → all commits; swipe right → build log.
       const next = dx < 0 ? 'commits' : 'builds';
       if (next === state.activityMode) return;
+      suppressClick = true;
+      window.setTimeout(() => { suppressClick = false; }, 400);
       setActivityMode(next, { animate: true });
       render();
-    }, { passive: true });
+    };
 
-    viewport.addEventListener('touchcancel', reset, { passive: true });
+    viewport.addEventListener('pointerdown', (event) => {
+      // Touch / pen only — desktop keeps pill buttons.
+      if (event.pointerType === 'mouse') return;
+      if (!event.isPrimary) return;
+      tracking = true;
+      axis = null;
+      pointerId = event.pointerId;
+      startX = event.clientX;
+      startY = event.clientY;
+      try {
+        viewport.setPointerCapture(event.pointerId);
+      } catch (_) { /* ignore */ }
+    });
+
+    viewport.addEventListener('pointermove', (event) => {
+      if (!tracking || event.pointerId !== pointerId) return;
+      const dx = event.clientX - startX;
+      const dy = event.clientY - startY;
+      if (!axis && (Math.abs(dx) > 8 || Math.abs(dy) > 8)) {
+        axis = Math.abs(dx) >= Math.abs(dy) ? 'x' : 'y';
+      }
+      // Once horizontal, keep capture and block vertical scroll intent a bit.
+      if (axis === 'x' && event.cancelable) {
+        event.preventDefault();
+      }
+    }, { passive: false });
+
+    viewport.addEventListener('pointerup', (event) => {
+      if (!tracking || event.pointerId !== pointerId) return;
+      const dx = event.clientX - startX;
+      const dy = event.clientY - startY;
+      const wasHorizontal = axis === 'x' || (axis === null && Math.abs(dx) > Math.abs(dy));
+      reset();
+      try {
+        if (viewport.hasPointerCapture?.(event.pointerId)) {
+          viewport.releasePointerCapture(event.pointerId);
+        }
+      } catch (_) { /* ignore */ }
+
+      if (!wasHorizontal) return;
+      if (Math.abs(dx) < 36) return;
+      if (Math.abs(dx) < Math.abs(dy) * 1.05) return;
+      commitSwipe(dx);
+    });
+
+    viewport.addEventListener('pointercancel', (event) => {
+      if (event.pointerId === pointerId) reset();
+    });
+
+    // Swallow the synthetic click after a successful swipe so a day isn't filtered.
+    viewport.addEventListener('click', (event) => {
+      if (!suppressClick) return;
+      event.preventDefault();
+      event.stopPropagation();
+    }, true);
   }
 
   function renderArchive() {
