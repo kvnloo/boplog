@@ -1,0 +1,573 @@
+{
+  "version": 2,
+  "scoredAt": "2026-07-31T10:40:48.498Z",
+  "anti_game": [
+    "Discovery prompts must not contain brand tokens (kvnloo, boplog, Kevin Rajan, zer0, zerOS).",
+    "Probes for discovery suite do not inject brand names in the system prefix.",
+    "URL hits require full URL substring match, not bare repo names.",
+    "Negative controls fail the suite if our domains appear.",
+    "Branded score and discovery score are reported separately and cannot be averaged into one vanity metric without both.",
+    "Live URL check: expected hub/topic URLs must HTTP 200 and contain a gold snippet token."
+  ],
+  "suites": {
+    "branded": {
+      "prompt_count": 2,
+      "hits": 2,
+      "rate": 1
+    },
+    "discovery": {
+      "prompt_count": 6,
+      "hits": 6,
+      "rate": 1
+    },
+    "negative": {
+      "prompt_count": 2,
+      "hits": 0,
+      "rate": 0
+    }
+  },
+  "discovery_multi_engine_hits": 5,
+  "discovery_prompt_count": 6,
+  "healthy": false,
+  "scores": [
+    {
+      "engine": "hermes",
+      "prompt_id": "disc-ai-sdlc",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 0,
+      "url_hits": []
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "disc-tmux-agents",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://github.com/kvnloo/tmux-agent-fleet"
+      ]
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "disc-digital-twin",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 0,
+      "url_hits": []
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "disc-build-log",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/"
+      ]
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "disc-llms-txt",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/llms.txt",
+        "https://kvnloo.github.io/boplog/data/manifest.json",
+        "https://kvnloo.github.io/boplog/"
+      ]
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "disc-automation",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "brand-who",
+      "suite": "branded",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/",
+        "https://github.com/kvnloo"
+      ]
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "brand-equalizer",
+      "suite": "branded",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/"
+      ]
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "neg-crm",
+      "suite": "negative",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "flags": []
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "neg-recipe",
+      "suite": "negative",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "flags": []
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "disc-ai-sdlc",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 0,
+      "url_hits": []
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "disc-tmux-agents",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "disc-digital-twin",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "disc-build-log",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "disc-llms-txt",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "disc-automation",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "brand-who",
+      "suite": "branded",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/"
+      ]
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "brand-equalizer",
+      "suite": "branded",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/"
+      ]
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "neg-crm",
+      "suite": "negative",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "flags": []
+    },
+    {
+      "engine": "claude-home",
+      "prompt_id": "neg-recipe",
+      "suite": "negative",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "flags": []
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "disc-ai-sdlc",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "disc-tmux-agents",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://github.com/kvnloo/tmux-agent-fleet"
+      ]
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "disc-digital-twin",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "disc-build-log",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "disc-llms-txt",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "disc-automation",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "brand-who",
+      "suite": "branded",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/",
+        "https://github.com/kvnloo"
+      ]
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "brand-equalizer",
+      "suite": "branded",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/"
+      ]
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "neg-crm",
+      "suite": "negative",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "flags": []
+    },
+    {
+      "engine": "omp",
+      "prompt_id": "neg-recipe",
+      "suite": "negative",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "flags": []
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "disc-ai-sdlc",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 0,
+      "url_hits": []
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "disc-tmux-agents",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "disc-digital-twin",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "disc-build-log",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "disc-llms-txt",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "disc-automation",
+      "suite": "discovery",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": []
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "brand-who",
+      "suite": "branded",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/",
+        "https://github.com/kvnloo"
+      ]
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "brand-equalizer",
+      "suite": "branded",
+      "skipped": false,
+      "url_hit": 1,
+      "mention_hit": 1,
+      "negative_clean": 1,
+      "live_ok": 1,
+      "score": 1,
+      "url_hits": [
+        "https://kvnloo.github.io/boplog/"
+      ]
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "neg-crm",
+      "suite": "negative",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 0,
+      "live_ok": 1,
+      "score": 0,
+      "flags": [
+        "leaked_brand_on_negative_control"
+      ]
+    },
+    {
+      "engine": "codex",
+      "prompt_id": "neg-recipe",
+      "suite": "negative",
+      "skipped": false,
+      "url_hit": 0,
+      "mention_hit": 0,
+      "negative_clean": 0,
+      "live_ok": 1,
+      "score": 0,
+      "flags": [
+        "leaked_brand_on_negative_control"
+      ]
+    }
+  ],
+  "live": {
+    "https://kvnloo.github.io/boplog/topics/ai-sdlc.html": {
+      "ok": true,
+      "status": 200
+    },
+    "https://kvnloo.github.io/boplog/topics/agent-orchestration.html": {
+      "ok": true,
+      "status": 200
+    },
+    "https://kvnloo.github.io/boplog/topics/digital-twin.html": {
+      "ok": true,
+      "status": 200
+    },
+    "https://kvnloo.github.io/boplog/": {
+      "ok": true,
+      "status": 200
+    },
+    "https://kvnloo.github.io/boplog/llms.txt": {
+      "ok": true,
+      "status": 200
+    },
+    "https://kvnloo.github.io/boplog/topics/automation.html": {
+      "ok": true,
+      "status": 200
+    }
+  }
+}
