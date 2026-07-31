@@ -23,10 +23,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
+      "portfolio": "product",
+      "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions"
+      "productName": "open-source contributions",
+      "kind": "product",
+      "kindName": "product"
     }
   ]
 }

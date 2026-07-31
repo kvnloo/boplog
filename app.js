@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.11';
+  const BUILD_VERSION = '20260730.16';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -25,7 +25,8 @@
     activity: null,
     activityMode: 'builds',
     query: '',
-    portfolio: '',
+    kind: '',
+    portfolio: '', // alias of kind (legacy urls)
     product: '',
     category: '',
     format: '',
@@ -41,6 +42,7 @@
     archiveSummary: document.querySelector('#archive-summary'),
     focusProducts: document.querySelector('#focus-products'),
     search: document.querySelector('#project-search'),
+    kind: document.querySelector('#kind-filter'),
     portfolio: document.querySelector('#portfolio-filter'),
     product: document.querySelector('#product-filter'),
     category: document.querySelector('#category-filter'),
@@ -87,10 +89,17 @@
    * Split camelCase / PascalCase on boundaries with a middle dot:
    *   AudioEngine → Audio·Engine  (CSS lowercases to audio·engine)
    * Existing hyphens stay: tmux-agent-fleet → tmux-agent-fleet
+   * Trademark exception: zerOS keeps OS caps (wrap with .tm-case in HTML).
    */
+  function isZerOSLabel(value = '') {
+    const s = String(value).trim();
+    return /^zer\s*os$/i.test(s) || /^zeros$/i.test(s) || s === 'zerOS';
+  }
+
   function softLabel(value = '') {
     const raw = String(value);
     if (!raw) return '';
+    if (isZerOSLabel(raw)) return 'zerOS';
     // Keep leading . / _ (e.g. .files, _pm)
     const lead = raw.match(/^[._]+/)?.[0] || '';
     let body = lead ? raw.slice(lead.length) : raw;
@@ -108,6 +117,15 @@
     split = split.replace(/\0(\d+)\0/g, (_, i) => protectedTokens[Number(i)]);
     // Always emit lowercase so labels never depend on CSS alone (filters, aria, etc.).
     return (lead + split).toLowerCase();
+  }
+
+  /** Escape for HTML; trademark labels keep OS caps via .tm-case. */
+  function htmlSoftLabel(value = '') {
+    const text = softLabel(value);
+    if (isZerOSLabel(value) || text === 'zerOS') {
+      return `<span class="tm-case">${escapeHtml('zerOS')}</span>`;
+    }
+    return escapeHtml(text);
   }
 
   function projectLabel(project) {
@@ -134,6 +152,8 @@
       project.displayName,
       project.description,
       project.companyName,
+      project.kindName,
+      project.kind,
       project.portfolioName,
       project.productName,
       project.portfolio,
@@ -146,40 +166,46 @@
 
   function hierarchyPath(project) {
     const company = project.companyName || project.company || 'zer0';
-    const portfolio = project.portfolioName || project.portfolio || '';
+    const kind = project.kindName || project.kind || project.portfolioName || project.portfolio || '';
     const product = project.productName || project.product || '';
-    return { company, portfolio, product };
+    return { company, kind, product };
   }
 
   function renderHierarchyPath(project, { interactive = true } = {}) {
-    const { company, portfolio, product } = hierarchyPath(project);
-    if (!portfolio && !product) return '';
+    const { company, kind, product } = hierarchyPath(project);
+    if (!kind && !product) return '';
     const parts = [];
     parts.push(`<span>${escapeHtml(company)}</span>`);
-    if (portfolio) {
+    if (kind) {
       parts.push('<span class="sep">/</span>');
+      const kindValue = project.kind || project.portfolio || '';
       if (interactive) {
-        parts.push(`<button type="button" data-filter-kind="portfolio" data-filter-value="${escapeHtml(project.portfolio || '')}">${escapeHtml(softLabel(portfolio))}</button>`);
+        parts.push(`<button type="button" data-filter-kind="kind" data-filter-value="${escapeHtml(kindValue)}">${htmlSoftLabel(kind)}</button>`);
       } else {
-        parts.push(`<span>${escapeHtml(softLabel(portfolio))}</span>`);
+        parts.push(`<span>${htmlSoftLabel(kind)}</span>`);
       }
     }
-    if (product) {
+    if (product && (project.kind || project.portfolio) !== 'experiment') {
       parts.push('<span class="sep">/</span>');
       if (interactive) {
-        parts.push(`<button type="button" data-filter-kind="product" data-filter-value="${escapeHtml(project.product || '')}">${escapeHtml(softLabel(product))}</button>`);
+        parts.push(`<button type="button" data-filter-kind="product" data-filter-value="${escapeHtml(project.product || '')}">${htmlSoftLabel(product)}</button>`);
       } else {
-        parts.push(`<span>${escapeHtml(softLabel(product))}</span>`);
+        parts.push(`<span>${htmlSoftLabel(product)}</span>`);
       }
     }
     return `<div class="project-row__path">${parts.join('')}</div>`;
   }
 
+  function projectKind(project) {
+    return project.kind || project.portfolio || '';
+  }
+
   function getFilteredProjects() {
     const query = normalize(state.query);
+    const kindFilter = effectiveKind();
     const filtered = state.projects.filter((project) => {
       if (query && !projectSearchText(project).includes(query)) return false;
-      if (state.portfolio && project.portfolio !== state.portfolio) return false;
+      if (kindFilter && projectKind(project) !== kindFilter) return false;
       if (state.product && project.product !== state.product) return false;
       if (state.category && !(project.categories || []).includes(state.category)) return false;
       if (state.format && !(project.formats || []).includes(state.format)) return false;
@@ -417,65 +443,95 @@
   function renderFocusProducts() {
     if (!elements.focusProducts) return;
     const hierarchy = state.hierarchy;
-    const byId = Object.fromEntries((hierarchy?.products || []).map((p) => [p.id, p]));
-    let ids = Array.isArray(hierarchy?.focusProducts) ? hierarchy.focusProducts : [];
+    const byProduct = Object.fromEntries((hierarchy?.products || []).map((p) => [p.id, p]));
+    const byKind = Object.fromEntries((hierarchy?.kinds || []).map((k) => [k.id, k]));
+    let focus = Array.isArray(hierarchy?.focus) ? hierarchy.focus : [];
 
-    // Fallback: products that contain featured projects, in featured order.
-    if (!ids.length) {
+    // Back-compat: focusProducts → product chips
+    if (!focus.length && Array.isArray(hierarchy?.focusProducts)) {
+      focus = hierarchy.focusProducts.map((id) => ({ type: 'product', id }));
+    }
+
+    if (!focus.length) {
       const featured = state.projects
         .filter((p) => p.featured)
         .sort((a, b) => (a.featuredRank || 99) - (b.featuredRank || 99));
       const seen = new Set();
-      ids = [];
+      focus = [];
       for (const project of featured) {
-        if (!project.product || seen.has(project.product)) continue;
-        seen.add(project.product);
-        ids.push(project.product);
+        if (project.kind === 'experiment' && !seen.has('kind:experiment')) {
+          seen.add('kind:experiment');
+          focus.push({ type: 'kind', id: 'experiment' });
+        } else if (project.product && !seen.has(`product:${project.product}`)) {
+          seen.add(`product:${project.product}`);
+          focus.push({ type: 'product', id: project.product });
+        }
       }
     }
 
-    // Only show products that actually have public projects on the site.
-    const present = new Set(state.projects.map((p) => p.product).filter(Boolean));
-    ids = ids.filter((id) => present.has(id) || byId[id]);
+    const presentProducts = new Set(state.projects.map((p) => p.product).filter(Boolean));
+    const presentKinds = new Set(state.projects.map((p) => projectKind(p)).filter(Boolean));
 
-    if (!ids.length) {
-      elements.focusProducts.innerHTML = '';
-      return;
-    }
-
-    elements.focusProducts.innerHTML = ids.map((id) => {
-      const meta = byId[id];
-      const label = softLabel(meta?.name || id);
+    const chips = focus.map((item) => {
+      const type = item?.type === 'kind' ? 'kind' : 'product';
+      const id = item?.id;
+      if (!id) return '';
+      if (type === 'kind') {
+        if (!presentKinds.has(id) && !(hierarchy?.kinds || []).some((k) => k.id === id)) return '';
+        const labelSrc = byKind[id]?.name || id;
+        const active = effectiveKind() === id && !state.product ? ' is-active' : '';
+        return `<button type="button" class="intro__focus-chip${active}" data-filter-kind="kind" data-filter-value="${escapeHtml(id)}">${htmlSoftLabel(labelSrc)}</button>`;
+      }
+      if (!presentProducts.has(id) && !byProduct[id]) return '';
+      const labelSrc = byProduct[id]?.name || id;
       const active = state.product === id ? ' is-active' : '';
-      return `<button type="button" class="intro__focus-chip${active}" data-filter-kind="product" data-filter-value="${escapeHtml(id)}">${escapeHtml(label)}</button>`;
-    }).join('');
+      return `<button type="button" class="intro__focus-chip${active}" data-filter-kind="product" data-filter-value="${escapeHtml(id)}">${htmlSoftLabel(labelSrc)}</button>`;
+    }).filter(Boolean);
+
+    elements.focusProducts.innerHTML = chips.join('');
+  }
+
+  function effectiveKind() {
+    return state.kind || state.portfolio || '';
   }
 
   function populateFilters() {
     const categories = sortUnique(state.projects.flatMap((project) => project.categories || []));
     const formats = sortUnique(state.projects.flatMap((project) => project.formats || []));
     const years = sortUnique(state.projects.map((project) => project.date.slice(0, 4))).reverse();
-    const portfolios = sortUnique(state.projects.map((p) => p.portfolio).filter(Boolean));
-    const portfolioLabels = Object.fromEntries(
-      state.projects.filter((p) => p.portfolio).map((p) => [p.portfolio, p.portfolioName || p.portfolio]),
+    const kinds = sortUnique(state.projects.map((p) => projectKind(p)).filter(Boolean));
+    const kindLabels = Object.fromEntries(
+      state.projects
+        .filter((p) => projectKind(p))
+        .map((p) => [projectKind(p), p.kindName || p.portfolioName || projectKind(p)]),
     );
+    // Prefer hierarchy kind order when available.
+    const orderedKinds = (state.hierarchy?.kinds || [])
+      .map((k) => k.id)
+      .filter((id) => kinds.includes(id));
+    for (const id of kinds) {
+      if (!orderedKinds.includes(id)) orderedKinds.push(id);
+    }
     const products = sortUnique(state.projects.map((p) => p.product).filter(Boolean));
     const productLabels = Object.fromEntries(
       state.projects.filter((p) => p.product).map((p) => [p.product, p.productName || p.product]),
     );
 
-    if (elements.portfolio) {
-      elements.portfolio.innerHTML = '<option value="">all</option>' + portfolios
-        .map((id) => `<option value="${escapeHtml(id)}">${escapeHtml(portfolioLabels[id] || id)}</option>`)
+    if (elements.kind) {
+      elements.kind.innerHTML = '<option value="">all</option>' + orderedKinds
+        .map((id) => `<option value="${escapeHtml(id)}">${escapeHtml(softLabel(kindLabels[id] || id))}</option>`)
         .join('');
     }
     if (elements.product) {
+      const kindFilter = effectiveKind();
       const productOptions = products.filter((id) => {
-        if (!state.portfolio) return true;
-        return state.projects.some((p) => p.product === id && p.portfolio === state.portfolio);
+        if (!kindFilter) return true;
+        // Product options only for the selected kind; experiments have no product.
+        if (kindFilter === 'experiment') return false;
+        return state.projects.some((p) => p.product === id && projectKind(p) === kindFilter);
       });
       elements.product.innerHTML = '<option value="">all</option>' + productOptions
-        .map((id) => `<option value="${escapeHtml(id)}">${escapeHtml(productLabels[id] || id)}</option>`)
+        .map((id) => `<option value="${escapeHtml(id)}">${escapeHtml(softLabel(productLabels[id] || id))}</option>`)
         .join('');
     }
     elements.category.innerHTML = '<option value="">all</option>' + categories
@@ -492,7 +548,7 @@
   function activeFilterCount() {
     return [
       Boolean(state.query),
-      Boolean(state.portfolio),
+      Boolean(effectiveKind()),
       Boolean(state.product),
       Boolean(state.category),
       Boolean(state.format),
@@ -510,7 +566,9 @@
   function readUrlState() {
     const params = new URLSearchParams(window.location.search);
     state.query = params.get('q') || '';
-    state.portfolio = params.get('portfolio') || '';
+    // Prefer kind; accept legacy portfolio= as alias.
+    state.kind = params.get('kind') || params.get('portfolio') || '';
+    state.portfolio = state.kind; // keep alias in sync
     state.product = params.get('product') || '';
     state.category = params.get('topic') || '';
     state.format = params.get('format') || '';
@@ -519,14 +577,15 @@
     state.sort = params.get('sort') || 'newest';
 
     elements.search.value = state.query;
-    if (elements.portfolio) elements.portfolio.value = state.portfolio;
+    if (elements.kind) elements.kind.value = state.kind;
     if (elements.product) elements.product.value = state.product;
     elements.category.value = state.category;
     elements.format.value = state.format;
     elements.year.value = state.year;
     elements.sort.value = state.sort;
 
-    state.portfolio = elements.portfolio?.value || '';
+    state.kind = elements.kind?.value || state.kind || '';
+    state.portfolio = state.kind;
     state.product = elements.product?.value || '';
     state.category = elements.category.value;
     state.format = elements.format.value;
@@ -538,7 +597,8 @@
   function writeUrlState() {
     const params = new URLSearchParams();
     if (state.query) params.set('q', state.query);
-    if (state.portfolio) params.set('portfolio', state.portfolio);
+    const kind = effectiveKind();
+    if (kind) params.set('kind', kind);
     if (state.product) params.set('product', state.product);
     if (state.category) params.set('topic', state.category);
     if (state.format) params.set('format', state.format);
@@ -550,18 +610,23 @@
   }
 
   function render() {
-    // Keep product options coherent with selected portfolio.
+    // Keep product options coherent with selected kind.
+    const currentKind = effectiveKind();
+    const currentProduct = state.product;
+    populateFilters();
+    if (elements.kind) {
+      elements.kind.value = currentKind;
+      state.kind = currentKind;
+      state.portfolio = currentKind;
+    }
     if (elements.product) {
-      const current = state.product;
-      populateFilters();
-      if (current && [...elements.product.options].some((o) => o.value === current)) {
-        elements.product.value = current;
-        state.product = current;
+      if (currentProduct && [...elements.product.options].some((o) => o.value === currentProduct)) {
+        elements.product.value = currentProduct;
+        state.product = currentProduct;
       } else {
         elements.product.value = '';
         state.product = '';
       }
-      if (elements.portfolio) elements.portfolio.value = state.portfolio;
     }
     renderFocusProducts();
     renderArchive();
@@ -572,6 +637,7 @@
 
   function clearFilters() {
     state.query = '';
+    state.kind = '';
     state.portfolio = '';
     state.product = '';
     state.category = '';
@@ -580,7 +646,7 @@
     state.date = '';
     state.sort = 'newest';
     elements.search.value = '';
-    if (elements.portfolio) elements.portfolio.value = '';
+    if (elements.kind) elements.kind.value = '';
     if (elements.product) elements.product.value = '';
     elements.category.value = '';
     elements.format.value = '';
@@ -595,13 +661,24 @@
       state.query = elements.search.value;
       render();
     });
-    elements.portfolio?.addEventListener('change', () => {
-      state.portfolio = elements.portfolio.value;
+    elements.kind?.addEventListener('change', () => {
+      state.kind = elements.kind.value;
+      state.portfolio = state.kind;
       state.product = '';
       render();
     });
     elements.product?.addEventListener('change', () => {
       state.product = elements.product.value;
+      // Align kind with product when picking a product first.
+      if (state.product) {
+        const sample = state.projects.find((p) => p.product === state.product);
+        const k = sample ? projectKind(sample) : '';
+        if (k) {
+          state.kind = k;
+          state.portfolio = k;
+          if (elements.kind) elements.kind.value = k;
+        }
+      }
       render();
     });
     elements.category.addEventListener('change', () => {
@@ -662,22 +739,33 @@
     const onHierarchyFilterClick = (event) => {
       const button = event.target.closest('[data-filter-kind]');
       if (!button) return;
-      const kind = button.dataset.filterKind;
+      const filterKind = button.dataset.filterKind;
       const value = button.dataset.filterValue || '';
-      if (kind === 'category') {
+      if (filterKind === 'category') {
         state.category = value;
         elements.category.value = value;
       }
-      if (kind === 'format') {
+      if (filterKind === 'format') {
         state.format = value;
         elements.format.value = value;
       }
-      if (kind === 'portfolio') {
-        state.portfolio = value;
-        state.product = '';
-        if (elements.portfolio) elements.portfolio.value = value;
+      if (filterKind === 'kind' || filterKind === 'portfolio') {
+        // Toggle kind when re-clicking an active focus chip.
+        if (effectiveKind() === value && !state.product && button.classList.contains('intro__focus-chip')) {
+          state.kind = '';
+          state.portfolio = '';
+          state.product = '';
+          if (elements.kind) elements.kind.value = '';
+          if (elements.product) elements.product.value = '';
+        } else {
+          state.kind = value;
+          state.portfolio = value;
+          state.product = '';
+          if (elements.kind) elements.kind.value = value;
+          if (elements.product) elements.product.value = '';
+        }
       }
-      if (kind === 'product') {
+      if (filterKind === 'product') {
         // Toggle product filter when re-clicking an active focus chip.
         if (state.product === value && button.classList.contains('intro__focus-chip')) {
           state.product = '';
@@ -686,9 +774,11 @@
           state.product = value;
           if (elements.product) elements.product.value = value;
           const sample = state.projects.find((p) => p.product === value);
-          if (sample?.portfolio) {
-            state.portfolio = sample.portfolio;
-            if (elements.portfolio) elements.portfolio.value = sample.portfolio;
+          const k = sample ? projectKind(sample) : '';
+          if (k) {
+            state.kind = k;
+            state.portfolio = k;
+            if (elements.kind) elements.kind.value = k;
           }
         }
       }

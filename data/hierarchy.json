@@ -1,139 +1,121 @@
 {
-  "_comment": "Enterprise taxonomy for boplog. Portfolio \u2260 the GitHub repo named 'portfolio' (that is a professional showcase project). Hierarchy is additive context on each project row.",
+  "_comment": "company → kind (product | experiment | professional) → optional named product → project. Products include zerOS (stealth) and the Blueprint tracks (health, world sim, evolve). The github repo named portfolio is professional work, not a taxonomy node. experiments sit beside products, not under them.",
   "company": {
     "id": "zer0",
     "name": "zer0",
     "label": "zer0"
   },
-  "portfolios": [
+  "kinds": [
     {
-      "id": "deeptech",
-      "name": "deeptech",
-      "description": "systems, agents, harnesses, and research infrastructure."
+      "id": "product",
+      "name": "product",
+      "description": "ships or aims to ship as a named product surface."
     },
     {
-      "id": "humanitarian",
-      "name": "humanitarian",
-      "description": "work aimed at social impact and public good."
+      "id": "experiment",
+      "name": "experiment",
+      "description": "llm / orchestration / videogame-shaped probes — not a product yet."
     },
     {
       "id": "professional",
       "name": "professional",
-      "description": "client, career, and personal professional showcases."
+      "description": "career, showcase, client, and personal professional artifacts."
     }
   ],
   "products": [
     {
-      "id": "zer0-os",
-      "name": "zer0 os",
-      "portfolio": "deeptech",
-      "description": "company operating system: issues, harness, cockpit, voice.",
-      "projects": [
-        "_pm",
-        "zer0-cockpit",
-        "zer0-harness-spine",
-        "zer0-voice",
-        "z0"
-      ]
+      "id": "zeros",
+      "name": "zerOS",
+      "kind": "product",
+      "stealth": true,
+      "description": "zerOS (stealth) — company operating system: issues, harness, cockpit, voice.",
+      "projects": ["_pm", "zer0-cockpit", "zer0-harness-spine", "zer0-voice", "z0"]
+    },
+    {
+      "id": "health",
+      "name": "health",
+      "kind": "product",
+      "track": 1,
+      "description": "blueprint track 1 — aio health / blueprint protocol (labs, nutrition, fitness, sleep). public proxy: attention / bci work.",
+      "projects": ["FlowState"]
+    },
+    {
+      "id": "world-sim",
+      "name": "world sim",
+      "kind": "product",
+      "track": 2,
+      "description": "blueprint track 2 — digital twin → robotics / farm-to-table simulation pipeline.",
+      "projects": ["ace", "farm"]
+    },
+    {
+      "id": "evolve",
+      "name": "evolve",
+      "kind": "product",
+      "track": 3,
+      "description": "blueprint track 3 — c(raid) orchestration; end-to-end autonomous development framework.",
+      "projects": ["evolve"]
+    },
+    {
+      "id": "blueprint",
+      "name": "blueprint",
+      "kind": "product",
+      "description": "blueprint system — brand, specs, and site that connect the three tracks.",
+      "projects": ["blueprint"]
     },
     {
       "id": "agent-tooling",
       "name": "agent tooling",
-      "portfolio": "deeptech",
-      "description": "interfaces and fleets for coding agents.",
-      "projects": [
-        "tmux-agent-fleet",
-        "claude-island",
-        "Auto-Claude",
-        "opcode",
-        "flow",
-        "launch"
-      ]
+      "kind": "product",
+      "description": "public interfaces and fleets for coding agents (surfaces that feed evolve / zeros).",
+      "projects": ["tmux-agent-fleet", "claude-island", "Auto-Claude", "opcode", "flow", "launch"]
     },
     {
       "id": "boplog",
       "name": "boplog",
-      "portfolio": "professional",
+      "kind": "product",
       "description": "public build log of authored github work.",
-      "projects": [
-        "boplog"
-      ]
+      "projects": ["boplog"]
+    },
+    {
+      "id": "tesla-ui",
+      "name": "tesla ui",
+      "kind": "product",
+      "description": "infotainment ui prototypes.",
+      "projects": ["tesla", "tesla-infotainment"]
     },
     {
       "id": "audioengine",
       "name": "audioengine",
-      "portfolio": "professional",
+      "kind": "professional",
       "description": "2017 ios real-time audio / noise meter + eq (jubiaudio phase i).",
-      "projects": [
-        "AudioEngine"
-      ]
+      "projects": ["AudioEngine"]
     },
     {
       "id": "professional-showcase",
-      "name": "professional showcase",
-      "portfolio": "professional",
-      "description": "portfolio site and career packaging (not the portfolio taxonomy node). interactive 3d surface: kevin's ramen & boba (portfolio/demos/room) \u2014 same public project rows as visual props; see data/surfaces.json.",
-      "projects": [
-        "portfolio",
-        "cv",
-        "jobapp"
-      ]
+      "name": "showcase",
+      "kind": "professional",
+      "description": "portfolio site and career packaging (repo name portfolio ≠ this taxonomy). interactive 3d surface: ramen shop props.",
+      "projects": ["portfolio", "cv", "jobapp"]
     },
     {
       "id": "dotfiles",
       "name": "dotfiles",
-      "portfolio": "professional",
+      "kind": "professional",
       "description": "personal linux/macos environment.",
-      "projects": [
-        ".files"
-      ]
+      "projects": [".files"]
     },
     {
-      "id": "tesla-ui",
-      "name": "tesla ui experiments",
-      "portfolio": "deeptech",
-      "description": "infotainment ui prototypes.",
-      "projects": [
-        "tesla",
-        "tesla-infotainment"
-      ]
-    },
-    {
-      "id": "bci",
-      "name": "bci / attention",
-      "portfolio": "deeptech",
-      "description": "brain-computer interface experiments.",
-      "projects": [
-        "FlowState"
-      ]
-    },
-    {
-      "id": "experiments",
-      "name": "experiments",
-      "portfolio": "deeptech",
-      "description": "llm / videogame-shaped experiments probing fully autonomous workflows and orchestration \u2014 so the system can build while i vibe and talk through ideas.",
-      "projects": [
-        "ace",
-        "aliens-made-this",
-        "architecture_demo",
-        "botw",
-        "metallic-card",
-        "monument",
-        "scrollytelling",
-        "UX",
-        "playground",
-        "farm",
-        "cod",
-        "spy",
-        "flo",
-        "evolve"
-      ]
+      "id": "mobile-legacy",
+      "name": "mobile (legacy)",
+      "kind": "professional",
+      "description": "earlier ios and mobile work.",
+      "projects": ["iOS-2017", "smartvest", "Flicks", "refind"]
     },
     {
       "id": "open-source-contrib",
       "name": "open-source contributions",
-      "portfolio": "deeptech",
-      "description": "forks and patches where the signal is my commits, not the upstream brand.",
+      "kind": "product",
+      "description": "forks and patches where the signal is my commits.",
       "projects": [
         "kpu-sim",
         "coding-interview-university",
@@ -142,40 +124,40 @@
         "cofounder",
         "raisr"
       ]
-    },
-    {
-      "id": "mobile-legacy",
-      "name": "mobile (legacy)",
-      "portfolio": "professional",
-      "description": "earlier ios and mobile work.",
-      "projects": [
-        "iOS-2017",
-        "smartvest",
-        "Flicks",
-        "refind"
-      ]
-    },
-    {
-      "id": "lab",
-      "name": "lab / other",
-      "portfolio": "deeptech",
-      "description": "experiments, scaffolds, and uncategorized deeptech work.",
-      "projects": [
-        "expert",
-        "docs-boilerplate",
-        "blueprint",
-        "whisper",
-        "migrate"
-      ]
     }
   ],
-  "defaultPortfolio": "deeptech",
-  "defaultProduct": "lab",
+  "experiments": [
+    "aliens-made-this",
+    "architecture_demo",
+    "botw",
+    "metallic-card",
+    "monument",
+    "scrollytelling",
+    "UX",
+    "playground",
+    "cod",
+    "spy",
+    "flo",
+    "expert",
+    "docs-boilerplate",
+    "whisper",
+    "migrate",
+    "kvnloo"
+  ],
+  "defaultKind": "experiment",
+  "focus": [
+    { "type": "product", "id": "zeros" },
+    { "type": "product", "id": "evolve" },
+    { "type": "product", "id": "health" },
+    { "type": "product", "id": "world-sim" },
+    { "type": "kind", "id": "experiment" },
+    { "type": "kind", "id": "professional" }
+  ],
   "focusProducts": [
-    "zer0-os",
-    "agent-tooling",
-    "experiments",
-    "bci",
-    "audioengine"
+    "zeros",
+    "evolve",
+    "health",
+    "world-sim",
+    "agent-tooling"
   ]
 }

@@ -28,8 +28,12 @@ if (!Array.isArray(payload.projects)) {
     for (const field of ['types', 'formats', 'categories']) {
       if (!Array.isArray(project[field])) errors.push(`${prefix}.${field} must be an array`);
     }
-    // Hierarchy is optional additive context (company → portfolio → product → project).
-    for (const field of ['company', 'portfolio', 'product', 'companyName', 'portfolioName', 'productName']) {
+    // Hierarchy is optional: company → kind (product|experiment|professional) → product → project.
+    // portfolio/portfolioName remain as aliases of kind for older clients.
+    for (const field of [
+      'company', 'kind', 'portfolio', 'product',
+      'companyName', 'kindName', 'portfolioName', 'productName',
+    ]) {
       if (project[field] != null && typeof project[field] !== 'string') {
         errors.push(`${prefix}.${field} must be a string when present`);
       }

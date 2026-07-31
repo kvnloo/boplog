@@ -25,7 +25,9 @@
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "mobile-legacy",
-      "productName": "mobile (legacy)"
+      "productName": "mobile (legacy)",
+      "kind": "professional",
+      "kindName": "professional"
     },
     {
       "id": "refind",
@@ -52,7 +54,9 @@
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "mobile-legacy",
-      "productName": "mobile (legacy)"
+      "productName": "mobile (legacy)",
+      "kind": "professional",
+      "kindName": "professional"
     },
     {
       "id": "audioengine",
@@ -86,7 +90,9 @@
       "productName": "audioengine",
       "featured": true,
       "featuredRank": 1,
-      "eyebrow": "Makefile"
+      "eyebrow": "Makefile",
+      "kind": "professional",
+      "kindName": "professional"
     },
     {
       "id": "ios-2017",
@@ -114,7 +120,9 @@
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "mobile-legacy",
-      "productName": "mobile (legacy)"
+      "productName": "mobile (legacy)",
+      "kind": "professional",
+      "kindName": "professional"
     },
     {
       "id": "flicks",
@@ -141,7 +149,9 @@
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "mobile-legacy",
-      "productName": "mobile (legacy)"
+      "productName": "mobile (legacy)",
+      "kind": "professional",
+      "kindName": "professional"
     }
   ]
 }

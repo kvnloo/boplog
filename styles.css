@@ -86,6 +86,10 @@ body {
   /* Entire UI is intentionally all-lowercase. */
   text-transform: lowercase;
 }
+/* Trademark / product marks that must keep internal caps (zerOS). */
+.tm-case {
+  text-transform: none;
+}
 /* Middle-dot word breaks in softLabel() (audio·engine) stay subtle. */
 .project-row h3,
 .featured-item h3,
@@ -93,8 +97,9 @@ body {
 .featured-item__path {
   font-variant-ligatures: none;
 }
-/* Keep monospace inputs readable when typing URLs/ids without forced case mid-edit. */
-input, textarea {
+/* Keep monospace inputs readable when typing URLs/ids without forced case mid-edit.
+   select also none so option labels can show zerOS; softLabel lowercases the rest. */
+input, textarea, select {
   text-transform: none;
 }
 input::placeholder {

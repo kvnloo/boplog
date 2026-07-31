@@ -553,38 +553,70 @@ async function loadHierarchy() {
 }
 
 function applyHierarchy(projects, hierarchy) {
-  if (!hierarchy || !Array.isArray(hierarchy.products)) return projects;
+  if (!hierarchy) return projects;
+  const lower = (v) => (typeof v === 'string' ? v.toLowerCase() : v);
   const company = hierarchy.company || { id: 'zer0', name: 'zer0' };
-  const portfolios = Object.fromEntries((hierarchy.portfolios || []).map((p) => [p.id, p]));
-  const defaultPf = hierarchy.defaultPortfolio || 'deeptech';
-  const defaultPd = hierarchy.defaultProduct || 'lab';
+  const kinds = Object.fromEntries((hierarchy.kinds || []).map((k) => [k.id, k]));
+  const defaultKind = hierarchy.defaultKind || 'experiment';
+
+  const experimentSet = new Set();
+  for (const name of hierarchy.experiments || []) {
+    experimentSet.add(name);
+    experimentSet.add(String(name).toLowerCase());
+    experimentSet.add(slugify(name));
+  }
+
   const byName = new Map();
-  for (const product of hierarchy.products) {
+  for (const product of hierarchy.products || []) {
     for (const name of product.projects || []) {
       byName.set(name, product);
       byName.set(String(name).toLowerCase(), product);
       byName.set(slugify(name), product);
     }
   }
-  const defaultProduct = hierarchy.products.find((p) => p.id === defaultPd) || hierarchy.products.at(-1);
 
   return projects.map((project) => {
+    const keys = [project.name, project.id, slugify(project.name || '')];
+    const isExperiment = keys.some((k) => experimentSet.has(k));
     const product = byName.get(project.name)
       || byName.get(project.id)
-      || byName.get(slugify(project.name))
-      || defaultProduct;
-    const portfolioId = product?.portfolio || defaultPf;
-    const portfolio = portfolios[portfolioId] || { id: portfolioId, name: portfolioId };
-    const lower = (v) => (typeof v === 'string' ? v.toLowerCase() : v);
-    return {
+      || byName.get(slugify(project.name || ''));
+
+    let kindId = defaultKind;
+    if (isExperiment) kindId = 'experiment';
+    else if (product?.kind) kindId = product.kind;
+    else if (product) kindId = 'product';
+
+    const kindMeta = kinds[kindId] || { id: kindId, name: kindId };
+
+    // Keep portfolio as alias of kind for older UI filters / urls.
+    const out = {
       ...project,
       company: company.id,
       companyName: lower(company.name),
-      portfolio: portfolio.id,
-      portfolioName: lower(portfolio.name),
-      product: product?.id || defaultPd,
-      productName: lower(product?.name || defaultPd),
+      kind: kindId,
+      kindName: lower(kindMeta.name || kindId),
+      portfolio: kindId,
+      portfolioName: lower(kindMeta.name || kindId),
     };
+
+    if (kindId === 'experiment') {
+      out.product = '';
+      out.productName = '';
+    } else if (product) {
+      out.product = product.id;
+      // zerOS is a trademark — keep OS caps; lowercase everything else for the all-lowercase site.
+      const pname = product.name || product.id;
+      const isZerOS = pname === 'zerOS'
+        || /^zeros$/i.test(String(pname).replace(/\s+/g, ''))
+        || product.id === 'zeros';
+      out.productName = isZerOS ? 'zerOS' : lower(pname);
+    } else {
+      out.product = '';
+      out.productName = '';
+    }
+
+    return out;
   });
 }
 

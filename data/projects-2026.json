@@ -26,10 +26,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
-      "product": "experiments",
-      "productName": "experiments"
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "kind": "experiment",
+      "kindName": "experiment"
     },
     {
       "id": "boplog",
@@ -58,10 +60,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "professional",
-      "portfolioName": "professional",
+      "portfolio": "product",
+      "portfolioName": "product",
       "product": "boplog",
-      "productName": "boplog"
+      "productName": "boplog",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "kvnloo",
@@ -84,10 +88,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
-      "product": "lab",
-      "productName": "lab / other"
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "kind": "experiment",
+      "kindName": "experiment"
     },
     {
       "id": "cod",
@@ -110,10 +116,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
-      "product": "experiments",
-      "productName": "experiments"
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "kind": "experiment",
+      "kindName": "experiment"
     },
     {
       "id": "files",
@@ -147,7 +155,9 @@
       "productName": "dotfiles",
       "featured": true,
       "featuredRank": 2,
-      "eyebrow": "Shell"
+      "eyebrow": "Shell",
+      "kind": "professional",
+      "kindName": "professional"
     },
     {
       "id": "pm",
@@ -171,10 +181,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
-      "product": "zer0-os",
-      "productName": "zer0 os"
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "zeros",
+      "productName": "zerOS",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "zer0-cockpit",
@@ -198,10 +210,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
-      "product": "zer0-os",
-      "productName": "zer0 os"
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "zeros",
+      "productName": "zerOS",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "zer0-harness-spine",
@@ -225,10 +239,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
-      "product": "zer0-os",
-      "productName": "zer0 os"
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "zeros",
+      "productName": "zerOS",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "zer0-voice",
@@ -252,10 +268,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
-      "product": "zer0-os",
-      "productName": "zer0 os"
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "zeros",
+      "productName": "zerOS",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "tmux-agent-fleet",
@@ -279,13 +297,15 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
+      "portfolio": "product",
+      "portfolioName": "product",
       "product": "agent-tooling",
       "productName": "agent tooling",
       "featured": true,
       "featuredRank": 6,
-      "eyebrow": "Shell"
+      "eyebrow": "Shell",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "claude-island",
@@ -309,10 +329,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
+      "portfolio": "product",
+      "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling"
+      "productName": "agent tooling",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "tesla-infotainment",
@@ -336,10 +358,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
+      "portfolio": "product",
+      "portfolioName": "product",
       "product": "tesla-ui",
-      "productName": "tesla ui experiments"
+      "productName": "tesla ui",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "tesla",
@@ -367,10 +391,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
+      "portfolio": "product",
+      "portfolioName": "product",
       "product": "tesla-ui",
-      "productName": "tesla ui experiments"
+      "productName": "tesla ui",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "farm",
@@ -393,10 +419,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
-      "product": "experiments",
-      "productName": "experiments"
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "world-sim",
+      "productName": "world sim",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "kpu-sim",
@@ -425,10 +453,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
+      "portfolio": "product",
+      "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions"
+      "productName": "open-source contributions",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "coding-interview-university",
@@ -452,10 +482,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
+      "portfolio": "product",
+      "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions"
+      "productName": "open-source contributions",
+      "kind": "product",
+      "kindName": "product"
     },
     {
       "id": "scrollytelling",
@@ -479,10 +511,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
-      "product": "experiments",
-      "productName": "experiments"
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "kind": "experiment",
+      "kindName": "experiment"
     },
     {
       "id": "cv",
@@ -509,7 +543,9 @@
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "professional-showcase",
-      "productName": "professional showcase"
+      "productName": "showcase",
+      "kind": "professional",
+      "kindName": "professional"
     },
     {
       "id": "uiua",
@@ -538,10 +574,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "portfolio": "deeptech",
-      "portfolioName": "deeptech",
+      "portfolio": "product",
+      "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions"
+      "productName": "open-source contributions",
+      "kind": "product",
+      "kindName": "product"
     }
   ]
 }
