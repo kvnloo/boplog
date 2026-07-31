@@ -1,24 +1,23 @@
-# LLMEO latest run
+# LLMEO latest runs
 
-- **run**: [2026-07-31](./runs/2026-07-31/)
-- **scoreboard**: [runs/2026-07-31/scoreboard.md](./runs/2026-07-31/scoreboard.md)
-- **scores**: [runs/2026-07-31/scores.json](./runs/2026-07-31/scores.json)
-- **scored_at**: 2026-07-31T08:36:14.377Z
-- **site**: https://kvnloo.github.io/boplog/
-- **share_of_voice**: **100.0%** (16/16 prompts with entity mention)
-- **engines scored**: hermes only (16/16 prompts from full bank)
+## Primary: full bank (hermes)
 
-## Top gaps
+- **run**: [2026-07-31T09-18-27-merged](./runs/2026-07-31T09-18-27-merged/)
+- **scoreboard**: [runs/2026-07-31T09-18-27-merged/scoreboard.md](./runs/2026-07-31T09-18-27-merged/scoreboard.md)
+- **share_of_voice**: **100%** (20/20 prompts)
+- **engines**: hermes
+- **coverage**: full bank — branded, accuracy traps, **competitive** (4)
 
-None on this run — all scored prompts hit mention, expected URL, and no-hallucination (including accuracy traps: private repos, forks, funding).
+## Multi-engine sample (competitive only)
 
-### Coverage notes
-
-- Full `prompts.json` bank exercised (entity, product, portfolio, accuracy traps, machine-readable).
-- Multi-engine coverage still open (gemini/claude not in this batch).
+- **run**: [2026-07-31T09-18-28](./runs/2026-07-31T09-18-28/)
+- **scoreboard**: [runs/2026-07-31T09-18-28/scoreboard.md](./runs/2026-07-31T09-18-28/scoreboard.md)
+- **hermes**: 4/4 competitive prompts hit
+- **claude**: auth skip (`Not logged in · Please run /login`)
+- **gemini**: CLI exits 1 (folder trust / auth — no usable answer text)
 
 ## Next actions
 
-1. Add gemini/claude once auth/trust works in this environment.
-2. Add competitive / non-branded prompts for SoV outside owned entities.
-3. Keep llms.txt / FAQ aligned when new projects ship.
+1. Log in `claude` / trust + auth `gemini` in this environment, re-run multi-engine competitive.
+2. Keep competitive prompts short (open-ended ones timed out at 90–150s on hermes).
+3. Refresh llms.txt / FAQ when products change.

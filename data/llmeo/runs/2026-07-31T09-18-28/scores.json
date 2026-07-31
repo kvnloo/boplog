@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "site": "https://kvnloo.github.io/boplog/",
+  "source": "/workspace/boplog/data/llmeo/runs/2026-07-31T09-18-28/raw.json",
+  "scoredAt": "2026-07-31T09:24:20.578Z",
+  "share_of_voice": 1,
+  "prompts_with_mention": 4,
+  "prompt_count": 4,
+  "scores": [
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-agent-fleets",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "tmux-agent-fleet",
+        "kvnloo"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog",
+        "tmux-agent-fleet"
+      ],
+      "mentioned_urls": [
+        "https://github.com/kvnloo/tmux-agent-fleet",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 104240
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-build-in-public",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "boplog",
+        "commit"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 88942
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-autonomous-dev",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "kvnloo"
+      ],
+      "mentioned_entity": [
+        "kvnloo",
+        "boplog",
+        "tmux-agent-fleet"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 63570
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "llms.txt",
+        "boplog",
+        "manifest"
+      ],
+      "mentioned_entity": [
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/llms.txt",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 45280
+    },
+    {
+      "engine": "gemini",
+      "prompt_id": "competitive-agent-fleets",
+      "skipped": false,
+      "mention_hit": 0,
+      "url_hit": 0,
+      "no_hallucination": 1,
+      "mentioned_expect": [],
+      "mentioned_entity": [],
+      "mentioned_urls": [],
+      "halluc_flags": [],
+      "exit_code": 1,
+      "ms": 16594
+    },
+    {
+      "engine": "gemini",
+      "prompt_id": "competitive-build-in-public",
+      "skipped": false,
+      "mention_hit": 0,
+      "url_hit": 0,
+      "no_hallucination": 1,
+      "mentioned_expect": [],
+      "mentioned_entity": [],
+      "mentioned_urls": [],
+      "halluc_flags": [],
+      "exit_code": 1,
+      "ms": 6999
+    },
+    {
+      "engine": "gemini",
+      "prompt_id": "competitive-autonomous-dev",
+      "skipped": false,
+      "mention_hit": 0,
+      "url_hit": 0,
+      "no_hallucination": 1,
+      "mentioned_expect": [],
+      "mentioned_entity": [],
+      "mentioned_urls": [],
+      "halluc_flags": [],
+      "exit_code": 1,
+      "ms": 4772
+    },
+    {
+      "engine": "gemini",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "skipped": false,
+      "mention_hit": 0,
+      "url_hit": 0,
+      "no_hallucination": 1,
+      "mentioned_expect": [],
+      "mentioned_entity": [],
+      "mentioned_urls": [],
+      "halluc_flags": [],
+      "exit_code": 1,
+      "ms": 2745
+    },
+    {
+      "engine": "claude",
+      "prompt_id": "competitive-agent-fleets",
+      "skipped": true,
+      "mention_hit": 0,
+      "url_hit": 0,
+      "no_hallucination": 1,
+      "mentioned_expect": [],
+      "mentioned_entity": [],
+      "mentioned_urls": [],
+      "halluc_flags": [],
+      "exit_code": 1,
+      "ms": 6205
+    },
+    {
+      "engine": "claude",
+      "prompt_id": "competitive-build-in-public",
+      "skipped": true,
+      "mention_hit": 0,
+      "url_hit": 0,
+      "no_hallucination": 1,
+      "mentioned_expect": [],
+      "mentioned_entity": [],
+      "mentioned_urls": [],
+      "halluc_flags": [],
+      "exit_code": 1,
+      "ms": 2389
+    },
+    {
+      "engine": "claude",
+      "prompt_id": "competitive-autonomous-dev",
+      "skipped": true,
+      "mention_hit": 0,
+      "url_hit": 0,
+      "no_hallucination": 1,
+      "mentioned_expect": [],
+      "mentioned_entity": [],
+      "mentioned_urls": [],
+      "halluc_flags": [],
+      "exit_code": 1,
+      "ms": 855
+    },
+    {
+      "engine": "claude",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "skipped": true,
+      "mention_hit": 0,
+      "url_hit": 0,
+      "no_hallucination": 1,
+      "mentioned_expect": [],
+      "mentioned_entity": [],
+      "mentioned_urls": [],
+      "halluc_flags": [],
+      "exit_code": 1,
+      "ms": 982
+    }
+  ]
+}

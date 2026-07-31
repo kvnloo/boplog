@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "site": "https://kvnloo.github.io/boplog/",
+  "generatedAt": "2026-07-31T09:18:12.499Z",
+  "runDir": "/workspace/boplog/data/llmeo/runs/2026-07-31T09-16-43",
+  "engines": [
+    "hermes"
+  ],
+  "results": [
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-autonomous-dev",
+      "prompt": "Name a public multi-agent orchestration toolkit by kvnloo (or Kevin Rajan / zer0). Prefer a short answer with a link if known.",
+      "stdout": "[evolve](https://kvnloo.github.io/evolve/) — an agent-swarm and multi-agent orchestration toolkit using Claude Code agents, with documentation and examples.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 51260,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "prompt": "Does kvnloo's boplog site publish llms.txt and a JSON project manifest for agents? Short answer with URLs if yes.",
+      "stdout": "Yes.\n\n- `llms.txt`: https://kvnloo.github.io/boplog/llms.txt\n- JSON project manifest: https://kvnloo.github.io/boplog/data/manifest.json\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 37466,
+      "skipped": false
+    }
+  ]
+}

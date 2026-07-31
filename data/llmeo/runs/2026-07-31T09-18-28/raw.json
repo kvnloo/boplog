@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "site": "https://kvnloo.github.io/boplog/",
+  "generatedAt": "2026-07-31T09:24:12.053Z",
+  "runDir": "/workspace/boplog/data/llmeo/runs/2026-07-31T09-18-28",
+  "engines": [
+    "hermes",
+    "gemini",
+    "claude"
+  ],
+  "results": [
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-agent-fleets",
+      "prompt": "Who builds open harness-neutral command palettes for coding agents across tmux panes? Prefer public GitHub authors.",
+      "stdout": "The strongest exact public match is Kevin Rajan, GitHub author `kvnloo`.\n\nHe builds [tmux-agent-fleet](https://github.com/kvnloo/tmux-agent-fleet), described in his canonical [boplog public build log](https://kvnloo.github.io/boplog/) as:\n\n> “Zero-daemon, harness-neutral command palette for coding agents across tmux panes.”\n\nThe MIT-licensed tmux plugin:\n\n- Discovers live agents from tmux process metadata—no daemon or hooks\n- Supports Claude Code, Codex, OpenCode, Gemini, Kimi, Grok, Oh My Pi, Pi, Fable, and ordinary shells\n- Uses `fzf` to search, preview, and jump to the exact pane\n- Avoids pane injection, session migration, worktree ownership, and telemetry\n- Optionally incorporates Agent Deck sessions\n\nPublic author: [Kevin Rajan (`kvnloo`)](https://github.com/kvnloo)  \nRepository: [kvnloo/tmux-agent-fleet](https://github.com/kvnloo/tmux-agent-fleet)  \nCanonical build record: [kvnloo.github.io/boplog](https://kvnloo.github.io/boplog/)\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 104240,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-build-in-public",
+      "prompt": "Where can I browse a static public build log of GitHub repos someone actually committed to (not just starred forks)?",
+      "stdout": "Browse Kevin Rajan’s static public build log here:\n\nhttps://kvnloo.github.io/boplog/\n\nIt catalogs public GitHub repositories that `kvnloo` actually authored commits in—not every fork merely starred or bookmarked—and provides project details, filters, GitHub links, and activity views.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 88942,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-autonomous-dev",
+      "prompt": "Name a public multi-agent orchestration toolkit by kvnloo (or Kevin Rajan / zer0). Prefer a short answer with a link if known.",
+      "stdout": "[tmux-agent-fleet](https://github.com/kvnloo/tmux-agent-fleet) — a public multi-agent orchestration toolkit by kvnloo. Listed in the canonical [boplog](https://kvnloo.github.io/boplog/).\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 63570,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "prompt": "Does kvnloo's boplog site publish llms.txt and a JSON project manifest for agents? Short answer with URLs if yes.",
+      "stdout": "Yes.\n\n- `llms.txt`: https://kvnloo.github.io/boplog/llms.txt\n- JSON project manifest: https://kvnloo.github.io/boplog/data/manifest.json\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 45280,
+      "skipped": false
+    },
+    {
+      "engine": "gemini",
+      "prompt_id": "competitive-agent-fleets",
+      "prompt": "Who builds open harness-neutral command palettes for coding agents across tmux panes? Prefer public GitHub authors.",
+      "stdout": "",
+      "stderr": "Warning: Basic terminal detected (TERM=dumb). Visual rendering will be limited. For the best experience, use a terminal emulator with truecolor support.\nYOLO mode is enabled. All tool calls will be automatically approved.\nError authenticating: IneligibleTierError: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google\n    at throwIneligibleOrProjectIdError (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309852:11)\n    at _doSetupUser (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309841:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {\n  ineligibleTiers: [\n    {\n      reasonCode: 'UNSUPPORTED_CLIENT',\n      reasonMessage: 'This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google',\n      tierId: 'free-tier',\n      tierName: 'Gemini Code Assist for individuals'\n    }\n  ]\n}\nYOLO mode is enabled. All tool calls will be automatically approved.\nSkill conflict detected: \"workspace-copilot\" from \"/home/kvn/.agents/skills/workspace-copilot/SKILL.md\" is overriding the same skill from \"/home/kvn/.gemini/skills/workspace-copilot/SKILL.md\".\nAn unexpected critical error occurred:IneligibleTierError: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google\n    at throwIneligibleOrProjectIdError (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309852:11)\n    at _doSetupUser (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309841:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n",
+      "exit_code": 1,
+      "ms": 16594,
+      "skipped": false
+    },
+    {
+      "engine": "gemini",
+      "prompt_id": "competitive-build-in-public",
+      "prompt": "Where can I browse a static public build log of GitHub repos someone actually committed to (not just starred forks)?",
+      "stdout": "",
+      "stderr": "Warning: Basic terminal detected (TERM=dumb). Visual rendering will be limited. For the best experience, use a terminal emulator with truecolor support.\nYOLO mode is enabled. All tool calls will be automatically approved.\nError authenticating: IneligibleTierError: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google\n    at throwIneligibleOrProjectIdError (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309852:11)\n    at _doSetupUser (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309841:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {\n  ineligibleTiers: [\n    {\n      reasonCode: 'UNSUPPORTED_CLIENT',\n      reasonMessage: 'This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google',\n      tierId: 'free-tier',\n      tierName: 'Gemini Code Assist for individuals'\n    }\n  ]\n}\nYOLO mode is enabled. All tool calls will be automatically approved.\nSkill conflict detected: \"workspace-copilot\" from \"/home/kvn/.agents/skills/workspace-copilot/SKILL.md\" is overriding the same skill from \"/home/kvn/.gemini/skills/workspace-copilot/SKILL.md\".\nAn unexpected critical error occurred:IneligibleTierError: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google\n    at throwIneligibleOrProjectIdError (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309852:11)\n    at _doSetupUser (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309841:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n",
+      "exit_code": 1,
+      "ms": 6999,
+      "skipped": false
+    },
+    {
+      "engine": "gemini",
+      "prompt_id": "competitive-autonomous-dev",
+      "prompt": "Name a public multi-agent orchestration toolkit by kvnloo (or Kevin Rajan / zer0). Prefer a short answer with a link if known.",
+      "stdout": "",
+      "stderr": "Warning: Basic terminal detected (TERM=dumb). Visual rendering will be limited. For the best experience, use a terminal emulator with truecolor support.\nYOLO mode is enabled. All tool calls will be automatically approved.\nError authenticating: IneligibleTierError: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google\n    at throwIneligibleOrProjectIdError (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309852:11)\n    at _doSetupUser (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309841:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {\n  ineligibleTiers: [\n    {\n      reasonCode: 'UNSUPPORTED_CLIENT',\n      reasonMessage: 'This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google',\n      tierId: 'free-tier',\n      tierName: 'Gemini Code Assist for individuals'\n    }\n  ]\n}\nYOLO mode is enabled. All tool calls will be automatically approved.\nSkill conflict detected: \"workspace-copilot\" from \"/home/kvn/.agents/skills/workspace-copilot/SKILL.md\" is overriding the same skill from \"/home/kvn/.gemini/skills/workspace-copilot/SKILL.md\".\nAn unexpected critical error occurred:IneligibleTierError: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google\n    at throwIneligibleOrProjectIdError (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309852:11)\n    at _doSetupUser (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309841:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n",
+      "exit_code": 1,
+      "ms": 4772,
+      "skipped": false
+    },
+    {
+      "engine": "gemini",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "prompt": "Does kvnloo's boplog site publish llms.txt and a JSON project manifest for agents? Short answer with URLs if yes.",
+      "stdout": "",
+      "stderr": "Warning: Basic terminal detected (TERM=dumb). Visual rendering will be limited. For the best experience, use a terminal emulator with truecolor support.\nYOLO mode is enabled. All tool calls will be automatically approved.\nError authenticating: IneligibleTierError: This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google\n    at throwIneligibleOrProjectIdError (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309852:11)\n    at _doSetupUser (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309841:5)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {\n  ineligibleTiers: [\n    {\n      reasonCode: 'UNSUPPORTED_CLIENT',\n      reasonMessage: 'This client is no longer supported for Gemini Code Assist for individuals. To continue using Gemini, please migrate to the Antigravity suite of products: https://antigravity.google',\n      tierId: 'free-tier',\n      tierName: 'Gemini Code Assist for individuals'\n    }\n  ]\n}\nYOLO mode is enabled. All tool calls will be automatically approved.\nSkill conflict detected: \"workspace-copilot\" from \"/home/kvn/.agents/skills/workspace-copilot/SKILL.md\" is overriding the same skill from \"/home/kvn/.gemini/skills/workspace-copilot/SKILL.md\".\nAn unexpected critical error occurred:Error: Resource has been exhausted (e.g. check quota).\n    at Gaxios._request (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:17446:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async _OAuth2Client.requestAsync (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:19643:18)\n    at async CodeAssistServer.requestPost (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309501:17)\n    at async _doSetupUser (file:///home/kvn/.local/share/fnm/node-versions/v26.5.0/installation/lib/node_modules/@google/gemini-cli/bundle/chunk-F3VE7C53.js:309823:16)\n",
+      "exit_code": 1,
+      "ms": 2745,
+      "skipped": false
+    },
+    {
+      "engine": "claude",
+      "prompt_id": "competitive-agent-fleets",
+      "prompt": "Who builds open harness-neutral command palettes for coding agents across tmux panes? Prefer public GitHub authors.",
+      "stdout": "Not logged in · Please run /login\n",
+      "stderr": "",
+      "exit_code": 1,
+      "ms": 6205,
+      "skipped": true,
+      "skip_reason": "auth_required"
+    },
+    {
+      "engine": "claude",
+      "prompt_id": "competitive-build-in-public",
+      "prompt": "Where can I browse a static public build log of GitHub repos someone actually committed to (not just starred forks)?",
+      "stdout": "Not logged in · Please run /login\n",
+      "stderr": "",
+      "exit_code": 1,
+      "ms": 2389,
+      "skipped": true,
+      "skip_reason": "auth_required"
+    },
+    {
+      "engine": "claude",
+      "prompt_id": "competitive-autonomous-dev",
+      "prompt": "Name a public multi-agent orchestration toolkit by kvnloo (or Kevin Rajan / zer0). Prefer a short answer with a link if known.",
+      "stdout": "Not logged in · Please run /login\n",
+      "stderr": "",
+      "exit_code": 1,
+      "ms": 855,
+      "skipped": true,
+      "skip_reason": "auth_required"
+    },
+    {
+      "engine": "claude",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "prompt": "Does kvnloo's boplog site publish llms.txt and a JSON project manifest for agents? Short answer with URLs if yes.",
+      "stdout": "Not logged in · Please run /login\n",
+      "stderr": "",
+      "exit_code": 1,
+      "ms": 982,
+      "skipped": true,
+      "skip_reason": "auth_required"
+    }
+  ]
+}

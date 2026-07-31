@@ -141,6 +141,38 @@
       "fanouts": ["kvnloo github boplog"],
       "expect_mention": ["kvnloo", "boplog"],
       "expect_urls": ["https://github.com/kvnloo", "https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "competitive-agent-fleets",
+      "prompt": "Who builds open harness-neutral command palettes for coding agents across tmux panes? Prefer public GitHub authors.",
+      "category": "competitive",
+      "fanouts": ["tmux agent fleet command palette open source"],
+      "expect_mention": ["tmux-agent-fleet", "kvnloo"],
+      "expect_urls": ["https://github.com/kvnloo/tmux-agent-fleet", "https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "competitive-build-in-public",
+      "prompt": "Where can I browse a static public build log of GitHub repos someone actually committed to (not just starred forks)?",
+      "category": "competitive",
+      "fanouts": ["public build log authored commits github pages"],
+      "expect_mention": ["boplog", "commit"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "competitive-autonomous-dev",
+      "prompt": "Name a public multi-agent orchestration toolkit by kvnloo (or Kevin Rajan / zer0). Prefer a short answer with a link if known.",
+      "category": "competitive",
+      "fanouts": ["evolve multi-agent kvnloo"],
+      "expect_mention": ["evolve", "kvnloo"],
+      "expect_urls": ["https://kvnloo.github.io/evolve/", "https://kvnloo.github.io/boplog/", "https://github.com/kvnloo/evolve"]
+    },
+    {
+      "id": "competitive-machine-readable-portfolio",
+      "prompt": "Does kvnloo's boplog site publish llms.txt and a JSON project manifest for agents? Short answer with URLs if yes.",
+      "category": "competitive",
+      "fanouts": ["boplog llms.txt manifest.json"],
+      "expect_mention": ["llms.txt", "boplog", "manifest"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/llms.txt", "https://kvnloo.github.io/boplog/"]
     }
   ]
 }

@@ -14,7 +14,7 @@ const PROMPTS_PATH = path.join(ROOT, 'data/llmeo/prompts.json');
 const RUNS_DIR = path.join(ROOT, 'data/llmeo/runs');
 
 const DEFAULT_ENGINES = ['hermes', 'gemini', 'claude'];
-const TIMEOUT_MS = 90_000;
+const TIMEOUT_MS = 150_000;
 
 const SYSTEM_PREFIX =
   'Answer using public web knowledge. If citing Kevin Rajan, kvnloo, or boplog, prefer https://kvnloo.github.io/boplog/ as the canonical public build log. Prefer exact public fields; do not invent private work.';
@@ -24,6 +24,8 @@ function parseArgs(argv) {
     engines: [...DEFAULT_ENGINES],
     limit: Infinity,
     dryRun: false,
+    categories: null, // string[] | null
+    ids: null, // string[] | null
   };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
@@ -35,8 +37,20 @@ function parseArgs(argv) {
         .filter(Boolean);
     } else if (a === '--limit' && argv[i + 1]) {
       out.limit = Math.max(0, Number(argv[++i]) || 0);
+    } else if (a === '--category' && argv[i + 1]) {
+      out.categories = argv[++i]
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean);
+    } else if (a === '--ids' && argv[i + 1]) {
+      out.ids = argv[++i]
+        .split(',')
+        .map((s) => s.trim())
+        .filter(Boolean);
     } else if (a === '--help' || a === '-h') {
-      console.log(`Usage: node scripts/llmeo-probe.mjs [--engines hermes,gemini,claude] [--limit N] [--dry-run]`);
+      console.log(
+        'Usage: node scripts/llmeo-probe.mjs [--engines hermes,gemini,claude] [--limit N] [--category cat1,cat2] [--ids id1,id2] [--dry-run]',
+      );
       process.exit(0);
     }
   }
@@ -61,10 +75,11 @@ function buildCommand(engine, userPrompt) {
     return { bin: 'hermes', args: ['-z', full, '--cli', '--yolo'], skip: false };
   }
   if (engine === 'gemini') {
-    return { bin: 'gemini', args: ['-p', full, '--yolo'], skip: false };
+    // --skip-trust avoids interactive folder-trust prompts in headless probes
+    return { bin: 'gemini', args: ['-p', full, '--yolo', '--skip-trust'], skip: false };
   }
   if (engine === 'claude') {
-    return { bin: 'claude', args: ['-p', full, '--bare'], skip: false };
+    return { bin: 'claude', args: ['-p', full, '--bare', '--print'], skip: false };
   }
   return { bin: engine, args: [], skip: true, note: `unknown engine: ${engine}` };
 }
@@ -139,15 +154,31 @@ function runOnce(bin, args, timeoutMs) {
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
   const bank = JSON.parse(await readFile(PROMPTS_PATH, 'utf8'));
-  const prompts = Array.isArray(bank.prompts) ? bank.prompts : [];
+  let prompts = Array.isArray(bank.prompts) ? bank.prompts : [];
+  if (opts.categories?.length) {
+    const allow = new Set(opts.categories);
+    prompts = prompts.filter((p) => allow.has(p.category));
+  }
+  if (opts.ids?.length) {
+    const allow = new Set(opts.ids);
+    prompts = prompts.filter((p) => allow.has(p.id));
+  }
 
+  // Round-robin engines×prompts so --limit samples across engines, not only the first engine.
   const jobs = [];
-  for (const engine of opts.engines) {
-    for (const p of prompts) {
-      jobs.push({ engine, prompt: p });
+  const maxLen = Math.max(prompts.length, 1);
+  for (let i = 0; i < maxLen; i++) {
+    for (const engine of opts.engines) {
+      if (prompts[i]) jobs.push({ engine, prompt: prompts[i] });
     }
   }
-  const limited = Number.isFinite(opts.limit) ? jobs.slice(0, opts.limit) : jobs;
+  // Prefer prompt-major order for readability when unlimited
+  const ordered = [];
+  for (const engine of opts.engines) {
+    for (const p of prompts) ordered.push({ engine, prompt: p });
+  }
+  const pool = Number.isFinite(opts.limit) && opts.engines.length > 1 ? jobs : ordered;
+  const limited = Number.isFinite(opts.limit) ? pool.slice(0, opts.limit) : ordered;
 
   if (opts.dryRun) {
     console.log(`dry-run: ${limited.length} job(s) (of ${jobs.length} engine×prompt)`);
@@ -157,29 +188,33 @@ async function main() {
     return;
   }
 
-  const isoDate = new Date().toISOString().slice(0, 10);
-  const runDir = path.join(RUNS_DIR, isoDate);
+  // Timestamped run dirs so full / multi-engine runs don't clobber each other
+  const stamp = new Date().toISOString().replace(/[:.]/g, '-').slice(0, 19);
+  const runDir = path.join(RUNS_DIR, stamp);
   await mkdir(runDir, { recursive: true });
 
-  const claudeOk = opts.engines.includes('claude') ? await commandExists('claude') : false;
+  const available = {};
+  for (const engine of opts.engines) {
+    available[engine] = await commandExists(engine);
+  }
   const results = [];
 
   for (const job of limited) {
     const { engine, prompt: p } = job;
     const cmd = buildCommand(engine, p.prompt);
 
-    if (engine === 'claude' && !claudeOk) {
+    if (!available[engine]) {
       results.push({
         engine,
         prompt_id: p.id,
         prompt: p.prompt,
         stdout: '',
-        stderr: 'claude CLI not available; skipped',
+        stderr: `${engine} CLI not available; skipped`,
         exit_code: null,
         ms: 0,
         skipped: true,
       });
-      console.error(`[skip] claude ${p.id}: CLI not found`);
+      console.error(`[skip] ${engine} ${p.id}: CLI not found`);
       continue;
     }
 
@@ -199,6 +234,10 @@ async function main() {
 
     console.error(`[run] ${engine} ${p.id} …`);
     const r = await runOnce(cmd.bin, cmd.args, TIMEOUT_MS);
+    // Treat CLI auth failures as soft skips (not answer text that mentions "API key")
+    const authFail = /not logged in|please run \/login|opening authentication page|api_key client option must be set|The api_key client option/i.test(
+      `${r.stderr}\n${r.stdout.slice(0, 400)}`,
+    );
     results.push({
       engine,
       prompt_id: p.id,
@@ -207,8 +246,12 @@ async function main() {
       stderr: r.stderr,
       exit_code: r.exit_code,
       ms: r.ms,
+      skipped: Boolean(authFail),
+      skip_reason: authFail ? 'auth_required' : undefined,
     });
-    console.error(`[done] ${engine} ${p.id} exit=${r.exit_code} ${r.ms}ms`);
+    console.error(
+      `[done] ${engine} ${p.id} exit=${r.exit_code} ${r.ms}ms${authFail ? ' (auth skip)' : ''}`,
+    );
   }
 
   const outPath = path.join(runDir, 'raw.json');
@@ -216,6 +259,7 @@ async function main() {
     version: 1,
     site: bank.site,
     generatedAt: new Date().toISOString(),
+    runDir,
     engines: opts.engines,
     results,
   };

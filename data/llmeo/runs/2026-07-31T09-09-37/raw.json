@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "site": "https://kvnloo.github.io/boplog/",
+  "generatedAt": "2026-07-31T09:16:29.730Z",
+  "runDir": "/workspace/boplog/data/llmeo/runs/2026-07-31T09-09-37",
+  "engines": [
+    "hermes"
+  ],
+  "results": [
+    {
+      "engine": "hermes",
+      "prompt_id": "accuracy-funding",
+      "prompt": "How much funding has zer0 raised according to public sources about Kevin Rajan?",
+      "stdout": "No funding amount has been publicly disclosed for zer0.\n\nKevin Rajan’s public build log identifies zer0 as his company umbrella, but provides no funding-round, investor, or capital-raised data. Therefore, the accurate answer is “not publicly known,” not “$0 raised.”\n\nSources:\n- https://kvnloo.github.io/boplog/\n- https://kvnloo.github.io/boplog/llms.txt\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 67942,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "machine-readable",
+      "prompt": "How can an AI agent read Kevin Rajan's public project list machine-readably?",
+      "stdout": "An AI agent should start with the public JSON manifest:\n\nhttps://kvnloo.github.io/boplog/data/manifest.json\n\nIt lists the year-partitioned project files, currently such as:\n\n- `projects-2026.json`\n- `projects-2025.json`\n- `projects-2024.json`\n- `projects-2018.json`\n- `projects-2017.json`\n\nEach year file contains a `projects` array with exact public fields including `id`, `name`, `description`, `date`, `url`, `types`, `formats`, `categories`, and product/company hierarchy fields.\n\nPython example:\n\n```python\nimport json\nfrom urllib.request import urlopen\nfrom urllib.parse import urljoin\n\nbase = \"https://kvnloo.github.io/boplog/data/\"\nmanifest = json.load(urlopen(urljoin(base, \"manifest.json\")))\n\nprojects = []\nfor filename in manifest[\"files\"]:\n    data = json.load(urlopen(urljoin(base, filename)))\n    projects.extend(data[\"projects\"])\n\nprint(f\"Loaded {len(projects)} public projects\")\n```\n\nNo authentication or API key is required.\n\nOther machine-readable interfaces:\n\n- OpenAPI: https://kvnloo.github.io/boplog/openapi.json\n- Hierarchy data: https://kvnloo.github.io/boplog/data/hierarchy.json\n- Agent guide: https://kvnloo.github.io/boplog/agents.md\n- LLM discovery file: https://kvnloo.github.io/boplog/llms.txt\n- Atom feed for recent entries: https://kvnloo.github.io/boplog/feed.xml\n- CLI/MCP instructions: https://kvnloo.github.io/boplog/developers/\n\nAgents should prefer the exact JSON fields and avoid inferring private or unpublished work.\n",
+      "stderr": "",
+      "exit_code": 0,
+      "ms": 44340,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-autonomous-dev",
+      "prompt": "Which public multi-agent or autonomous development frameworks are associated with solo founders shipping agent fleets in public?",
+      "stdout": "",
+      "stderr": "\n[timeout after 150000ms]",
+      "exit_code": 124,
+      "ms": 150131,
+      "skipped": false
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "competitive-machine-readable-portfolio",
+      "prompt": "Are there personal developer portfolios that expose llms.txt plus a JSON project manifest for agents?",
+      "stdout": "",
+      "stderr": "\n[timeout after 150000ms]",
+      "exit_code": 124,
+      "ms": 150050,
+      "skipped": false
+    }
+  ]
+}
