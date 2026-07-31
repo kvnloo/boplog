@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260731.12';
+  const BUILD_VERSION = '20260731.13';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -394,8 +394,11 @@
     }
 
     // Day click filters the archive only for build-log entries.
+    // Clearing a day filter is the only case where mode switch changes the project list.
+    let dateCleared = false;
     if (next === 'commits' && state.date) {
       state.date = '';
+      dateCleared = true;
     }
 
     // Pane scroll: builds | commits
@@ -404,6 +407,8 @@
     } else {
       setActivityTrackPosition(activityPageIndex(next), { animate: false });
     }
+
+    return { changed, dateCleared };
   }
 
   function activityWindowRange() {
@@ -635,10 +640,10 @@
         window.setTimeout(() => { suppressClick = false; }, 450);
         const nextMode = nextPage === 1 ? 'commits' : 'builds';
         // Slide from current drag offset → target page (maps already both rendered).
-        setActivityMode(nextMode, { animate: true });
+        // Do not rebuild the project list unless a day filter was cleared.
+        const { dateCleared } = setActivityMode(nextMode, { animate: true });
         updateActivitySelectionStats();
-        // Archive day filter only applies in build-log mode.
-        if (nextMode === 'commits' || state.date) {
+        if (dateCleared) {
           renderArchive();
           renderFilterSummary();
           writeUrlState();
@@ -1001,11 +1006,15 @@
     const onActivityModeClick = (event) => {
       const mode = event.currentTarget?.dataset?.activityMode;
       if (!mode || mode === state.activityMode) return;
-      setActivityMode(mode, { animate: true });
+      // Mode switch only changes the project list when it clears a day filter.
+      // Rebuilding archive.innerHTML re-fires is-enter animations (the blink).
+      const { dateCleared } = setActivityMode(mode, { animate: true });
       updateActivitySelectionStats();
-      renderArchive();
-      renderFilterSummary();
-      writeUrlState();
+      if (dateCleared) {
+        renderArchive();
+        renderFilterSummary();
+        writeUrlState();
+      }
     };
     elements.activityModeBuilds?.addEventListener('click', onActivityModeClick);
     elements.activityModeCommits?.addEventListener('click', onActivityModeClick);
