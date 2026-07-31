@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f3f3f0" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#030303" media="(prefers-color-scheme: dark)">
-  <meta name="boplog-build" content="20260731.3">
+  <meta name="boplog-build" content="20260731.4">
   <meta name="description" content="kevin rajan — builder at zer0. public build log. code is the great equalizer; automate humanitarian causes so more important actions need no thought.">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <meta property="og:title" content="zer0 · Kevin Rajan — Build Log">
@@ -17,7 +17,7 @@
   <title>zer0 · Kevin Rajan — Build Log</title>
   <link rel="canonical" href="https://kvnloo.github.io/boplog/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=20260731.3">
+  <link rel="stylesheet" href="./styles.css?v=20260731.4">
   <script>
     (() => {
       try {
@@ -49,6 +49,9 @@
         "sameAs": [
           "https://github.com/kvnloo",
           "https://x.com/_kvnloo",
+          "https://linkedin.com/in/kevinsrajan",
+          "https://ek.vin/",
+          "https://behance.net/kevinsrajan",
           "https://kvnloo.github.io/portfolio/",
           "https://kvnloo.github.io/boplog/",
           "https://kvnloo.github.io/portfolio/demos/room/"
@@ -179,7 +182,7 @@
         </div>
         <p class="intro__meta" id="archive-summary">loading public builds…</p>
       </div>
-      <nav class="intro__links" aria-label="External links">
+      <nav class="intro__links" aria-label="Primary links">
         <button
           type="button"
           class="theme-toggle"
@@ -192,9 +195,8 @@
         </button>
         <a href="https://x.com/_kvnloo" target="_blank" rel="noreferrer">x ↗</a>
         <a href="https://github.com/kvnloo" target="_blank" rel="noreferrer">github ↗</a>
-        <a href="https://kvnloo.github.io/portfolio/demos/room/" target="_blank" rel="noreferrer" title="Same public projects as 3D shop artifacts">ramen shop ↗</a>
-        <a href="https://kvnloo.github.io/portfolio/" target="_blank" rel="noreferrer">portfolio ↗</a>
-        <a href="./developers/">developers</a>
+        <a href="https://linkedin.com/in/kevinsrajan" target="_blank" rel="noreferrer">linkedin ↗</a>
+        <a href="https://ek.vin/" target="_blank" rel="noreferrer" title="Metallic business card">card ↗</a>
       </nav>
     </section>
 
@@ -354,26 +356,46 @@
       </div>
     </section>
 
-    <section class="machine-readable" aria-labelledby="machine-title">
+    <section class="links-panel" id="links" aria-labelledby="links-title">
       <div class="section-line">
-        <h2 id="machine-title"><span aria-hidden="true">//</span> machine-readable</h2>
+        <h2 id="links-title"><span aria-hidden="true">//</span> links</h2>
       </div>
-      <p>Public project metadata is available without JavaScript.</p>
-      <div class="machine-readable__links">
-        <a href="./llms.txt">llms.txt</a>
-        <a href="./data/manifest.json">JSON manifest</a>
-        <a href="./data/surfaces.json">surfaces (interactive portfolio)</a>
-        <a href="https://kvnloo.github.io/portfolio/demos/room/">interactive shop</a>
-        <a href="./feed.xml">Atom feed</a>
-        <a href="./sitemap.xml">sitemap.xml</a>
-        <a href="./developers/">developers</a>
+      <div class="links-panel__grid">
+        <div class="links-panel__col">
+          <h3>presence</h3>
+          <a href="https://x.com/_kvnloo" target="_blank" rel="noreferrer">x / @_kvnloo ↗</a>
+          <a href="https://github.com/kvnloo" target="_blank" rel="noreferrer">github / kvnloo ↗</a>
+          <a href="https://linkedin.com/in/kevinsrajan" target="_blank" rel="noreferrer">linkedin ↗</a>
+          <a href="https://ek.vin/" target="_blank" rel="noreferrer" title="Metallic business card (metallic-card)">business card ↗</a>
+          <a href="https://behance.net/kevinsrajan" target="_blank" rel="noreferrer">behance ↗</a>
+          <a href="mailto:kevinsrajan@gmail.com">email</a>
+        </div>
+        <div class="links-panel__col">
+          <h3>surfaces</h3>
+          <a href="https://kvnloo.github.io/portfolio/" target="_blank" rel="noreferrer">portfolio ↗</a>
+          <a href="https://kvnloo.github.io/portfolio/demos/room/" target="_blank" rel="noreferrer" title="Same public projects as 3D shop artifacts">ramen shop ↗</a>
+          <a href="https://ek.vin/ai-eng.pdf" target="_blank" rel="noreferrer">resume (pdf) ↗</a>
+          <a href="./topics/">topics</a>
+          <a href="./developers/">developers</a>
+          <a href="https://github.com/kvnloo/metallic-card" target="_blank" rel="noreferrer">metallic-card repo ↗</a>
+        </div>
+        <div class="links-panel__col">
+          <h3>machine-readable</h3>
+          <a href="./llms.txt">llms.txt</a>
+          <a href="./data/manifest.json">json manifest</a>
+          <a href="./data/surfaces.json">surfaces</a>
+          <a href="./data/hierarchy.json">hierarchy</a>
+          <a href="./feed.xml">atom feed</a>
+          <a href="./sitemap.xml">sitemap</a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="shell">
+  <footer class="shell footer-bar">
     <span>© <span id="current-year">2026</span> Kevin Rajan</span>
     <span>synced from GitHub · authored commits only</span>
+    <a href="#links">all links</a>
     <a href="#top">top ↑</a>
   </footer>
 
@@ -381,6 +403,6 @@
     <div class="noscript">Enable JavaScript for filters and the live list, or use the JSON manifest and Atom feed.</div>
   </noscript>
 
-  <script src="./app.js?v=20260731.3" defer></script>
+  <script src="./app.js?v=20260731.4" defer></script>
 </body>
 </html>

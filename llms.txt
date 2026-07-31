@@ -14,6 +14,9 @@ Last data refresh: 2026-07-31
 ## Start here
 
 - [Build log](https://kvnloo.github.io/boplog/): Human-readable site with featured work and the chronological archive.
+- [Business card](https://ek.vin/): Metallic card site (linkedin, resume, portfolio, github, behance, contact).
+- [LinkedIn](https://linkedin.com/in/kevinsrajan)
+- [X](https://x.com/_kvnloo)
 - [Developer access](https://kvnloo.github.io/boplog/developers/): Free static API, CLI, and local MCP instructions.
 - [Agent usage guide](https://kvnloo.github.io/boplog/agents.md): When to use this archive and how to interpret its records.
 - [OpenAPI](https://kvnloo.github.io/boplog/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
