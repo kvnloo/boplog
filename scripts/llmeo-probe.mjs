@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * LLMEO probe runner — query CLI agents with prompt bank; no deps beyond node stdlib.
- * Usage: node scripts/llmeo-probe.mjs [--engines hermes,gemini,claude] [--limit N] [--dry-run]
+ * Usage: node scripts/llmeo-probe.mjs [--engines hermes,claude,omp,codex,grok,gemini] [--limit N] [--dry-run]
  */
 import { spawn } from 'node:child_process';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
@@ -14,7 +14,7 @@ const PROMPTS_PATH = path.join(ROOT, 'data/llmeo/prompts.json');
 const RUNS_DIR = path.join(ROOT, 'data/llmeo/runs');
 
 // claude → claude-home config dir (see ~/.zshrc alias claude-home)
-const DEFAULT_ENGINES = ['hermes', 'gemini', 'claude'];
+const DEFAULT_ENGINES = ['hermes', 'claude', 'omp', 'codex', 'grok'];
 const TIMEOUT_MS = 150_000;
 
 const SYSTEM_PREFIX =
@@ -50,7 +50,7 @@ function parseArgs(argv) {
         .filter(Boolean);
     } else if (a === '--help' || a === '-h') {
       console.log(
-        'Usage: node scripts/llmeo-probe.mjs [--engines hermes,gemini,claude] [--limit N] [--category cat1,cat2] [--ids id1,id2] [--dry-run]',
+        'Usage: node scripts/llmeo-probe.mjs [--engines hermes,claude,omp,codex,grok,gemini] [--limit N] [--category cat1,cat2] [--ids id1,id2] [--dry-run]',
       );
       process.exit(0);
     }
@@ -76,7 +76,7 @@ function buildCommand(engine, userPrompt) {
     return { bin: 'hermes', args: ['-z', full, '--cli', '--yolo'], env: {}, skip: false };
   }
   if (engine === 'gemini') {
-    // --skip-trust avoids interactive folder-trust prompts in headless probes
+    // Free Gemini Code Assist tier may be ineligible; still supported if Antigravity/API works.
     return { bin: 'gemini', args: ['-p', full, '--yolo', '--skip-trust'], env: {}, skip: false };
   }
   if (engine === 'claude' || engine === 'claude-home') {
@@ -90,6 +90,33 @@ function buildCommand(engine, userPrompt) {
       },
       skip: false,
       label: 'claude-home',
+    };
+  }
+  if (engine === 'omp') {
+    // Open Multi-Provider agent CLI (print / no tools for pure Q&A probes)
+    return {
+      bin: 'omp',
+      args: ['-p', full, '--no-tools', '--no-session'],
+      env: {},
+      skip: false,
+    };
+  }
+  if (engine === 'codex') {
+    return {
+      bin: 'codex',
+      args: ['exec', full],
+      env: {},
+      skip: false,
+    };
+  }
+  if (engine === 'grok') {
+    // Grok Build single-turn (coding agent; not the same as grok.com web search)
+    return {
+      bin: 'grok',
+      args: ['--single', full, '--always-approve'],
+      env: {},
+      skip: false,
+      label: 'grok-build',
     };
   }
   return { bin: engine, args: [], env: {}, skip: true, note: `unknown engine: ${engine}` };
@@ -207,7 +234,12 @@ async function main() {
   const available = {};
   for (const engine of opts.engines) {
     // claude-home uses the claude binary + CLAUDE_CONFIG_DIR
-    const bin = engine === 'claude-home' || engine === 'claude' ? 'claude' : engine;
+    const bin =
+      engine === 'claude-home' || engine === 'claude'
+        ? 'claude'
+        : engine === 'grok'
+          ? 'grok'
+          : engine;
     available[engine] = await commandExists(bin);
   }
   const results = [];
