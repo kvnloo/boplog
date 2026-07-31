@@ -3,7 +3,7 @@
     {
       "id": "4dps",
       "name": "4dps",
-      "description": "Designer preview packs for 3D web scenes: 9 stills, grid, 3D photosphere, 4D 360° video. Capture stays in the host; 7dps plans, grids, encodes, and views via Photo Sphere Viewer.",
+      "description": "Stills, photospheres & 4D 360° packs for 3D web scenes",
       "date": "2026-07-31",
       "url": "https://github.com/kvnloo/4dps",
       "types": [
@@ -12,8 +12,7 @@
       ],
       "formats": [],
       "categories": [
-        "3d-web",
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -28,17 +27,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "3d-web",
-        "ai-devtools"
-      ],
-      "languages": [
-        "js"
-      ],
-      "stack": [
-        "ffmpeg"
-      ]
+      "productName": ""
     },
     {
       "id": "aliens-made-this",
@@ -52,7 +41,7 @@
       ],
       "formats": [],
       "categories": [
-        "3d-web"
+        "dev"
       ],
       "links": [
         {
@@ -71,14 +60,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "3d-web"
-      ],
-      "languages": [
-        "html"
-      ],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "boplog",
@@ -93,8 +75,7 @@
       ],
       "formats": [],
       "categories": [
-        "build-in-public",
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -113,17 +94,40 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "boplog",
-      "productName": "boplog",
-      "domains": [
-        "build-in-public",
-        "ai-devtools"
+      "productName": "boplog"
+    },
+    {
+      "id": "cod",
+      "name": "cod",
+      "description": "Early scaffold for a coding-related experiment (public placeholder).",
+      "date": "2026-07-31",
+      "url": "https://kvnloo.github.io/cod/",
+      "types": [
+        "public",
+        "ts"
       ],
-      "languages": [
-        "js"
+      "formats": [],
+      "categories": [
+        "dev"
       ],
-      "stack": [
-        "github-actions"
-      ]
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/cod/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/cod"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
     },
     {
       "id": "halo",
@@ -137,7 +141,7 @@
       ],
       "formats": [],
       "categories": [
-        "3d-web"
+        "dev"
       ],
       "links": [
         {
@@ -152,18 +156,40 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "3d-web"
+      "productName": ""
+    },
+    {
+      "id": "metallic-card",
+      "name": "metallic-card",
+      "description": "Metallic silver border card UI, synced from v0/Vercel design iterations.",
+      "date": "2026-07-31",
+      "url": "https://ek.vin/",
+      "types": [
+        "public",
+        "ts"
       ],
-      "languages": [
-        "js"
+      "formats": [],
+      "categories": [
+        "dev"
       ],
-      "stack": [
-        "threejs",
-        "vite",
-        "ffmpeg"
-      ]
+      "links": [
+        {
+          "label": "site",
+          "url": "https://ek.vin/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/metallic-card"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
     },
     {
       "id": "kvnloo",
@@ -176,8 +202,7 @@
       ],
       "formats": [],
       "categories": [
-        "build-in-public",
-        "professional"
+        "dev"
       ],
       "links": [
         {
@@ -192,46 +217,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "build-in-public",
-        "professional"
-      ],
-      "languages": [],
-      "stack": []
-    },
-    {
-      "id": "cod",
-      "name": "cod",
-      "description": "Early scaffold for a coding-related experiment (public placeholder).",
-      "date": "2026-07-29",
-      "url": "https://github.com/kvnloo/cod",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "ai-devtools"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/cod"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": "",
-      "domains": [
-        "ai-devtools"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "files",
@@ -245,9 +231,7 @@
       ],
       "formats": [],
       "categories": [
-        "professional",
-        "automation",
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -269,18 +253,7 @@
       "productName": "dotfiles",
       "featured": true,
       "featuredRank": 2,
-      "eyebrow": "Shell",
-      "domains": [
-        "professional",
-        "automation",
-        "ai-devtools"
-      ],
-      "languages": [
-        "sh"
-      ],
-      "stack": [
-        "tmux"
-      ]
+      "eyebrow": "Shell"
     },
     {
       "id": "pm",
@@ -294,8 +267,7 @@
       ],
       "formats": [],
       "categories": [
-        "automation",
-        "ai-sdlc"
+        "dev"
       ],
       "links": [
         {
@@ -310,17 +282,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "domains": [
-        "automation",
-        "ai-sdlc"
-      ],
-      "languages": [
-        "py"
-      ],
-      "stack": [
-        "llm"
-      ]
+      "productName": "zerOS"
     },
     {
       "id": "zer0-cockpit",
@@ -334,8 +296,7 @@
       ],
       "formats": [],
       "categories": [
-        "automation",
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -350,15 +311,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "domains": [
-        "automation",
-        "ai-devtools"
-      ],
-      "languages": [
-        "py"
-      ],
-      "stack": []
+      "productName": "zerOS"
     },
     {
       "id": "zer0-harness-spine",
@@ -372,8 +325,7 @@
       ],
       "formats": [],
       "categories": [
-        "agent-orchestration",
-        "automation"
+        "dev"
       ],
       "links": [
         {
@@ -388,17 +340,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "domains": [
-        "agent-orchestration",
-        "automation"
-      ],
-      "languages": [
-        "py"
-      ],
-      "stack": [
-        "llm"
-      ]
+      "productName": "zerOS"
     },
     {
       "id": "zer0-voice",
@@ -412,8 +354,7 @@
       ],
       "formats": [],
       "categories": [
-        "automation",
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -428,17 +369,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "domains": [
-        "automation",
-        "ai-devtools"
-      ],
-      "languages": [
-        "py"
-      ],
-      "stack": [
-        "llm"
-      ]
+      "productName": "zerOS"
     },
     {
       "id": "tmux-agent-fleet",
@@ -452,9 +383,7 @@
       ],
       "formats": [],
       "categories": [
-        "agent-orchestration",
-        "ai-devtools",
-        "ai-sdlc"
+        "dev"
       ],
       "links": [
         {
@@ -472,20 +401,7 @@
       "productName": "agent tooling",
       "featured": true,
       "featuredRank": 6,
-      "eyebrow": "Shell",
-      "domains": [
-        "agent-orchestration",
-        "ai-devtools",
-        "ai-sdlc"
-      ],
-      "languages": [
-        "sh"
-      ],
-      "stack": [
-        "tmux",
-        "llm",
-        "claude-code"
-      ]
+      "eyebrow": "Shell"
     },
     {
       "id": "claude-island",
@@ -499,7 +415,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -514,15 +430,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "domains": [
-        "ai-devtools"
-      ],
-      "languages": [],
-      "stack": [
-        "claude-code",
-        "llm"
-      ]
+      "productName": "agent tooling"
     },
     {
       "id": "tesla-infotainment",
@@ -536,7 +444,7 @@
       ],
       "formats": [],
       "categories": [
-        "3d-web"
+        "dev"
       ],
       "links": [
         {
@@ -551,17 +459,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "tesla-ui",
-      "productName": "tesla ui",
-      "domains": [
-        "3d-web"
-      ],
-      "languages": [
-        "ts"
-      ],
-      "stack": [
-        "react",
-        "vite"
-      ]
+      "productName": "tesla ui"
     },
     {
       "id": "tesla",
@@ -575,8 +473,7 @@
       ],
       "formats": [],
       "categories": [
-        "3d-web",
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -595,18 +492,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "tesla-ui",
-      "productName": "tesla ui",
-      "domains": [
-        "3d-web",
-        "ai-devtools"
-      ],
-      "languages": [
-        "ts"
-      ],
-      "stack": [
-        "react",
-        "vite"
-      ]
+      "productName": "tesla ui"
     },
     {
       "id": "farm",
@@ -619,8 +505,7 @@
       ],
       "formats": [],
       "categories": [
-        "digital-twin",
-        "automation"
+        "dev"
       ],
       "links": [
         {
@@ -635,13 +520,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "world-sim",
-      "productName": "world sim",
-      "domains": [
-        "digital-twin",
-        "automation"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": "world sim"
     },
     {
       "id": "kpu-sim",
@@ -656,7 +535,7 @@
       ],
       "formats": [],
       "categories": [
-        "digital-twin"
+        "dev"
       ],
       "links": [
         {
@@ -675,14 +554,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "domains": [
-        "digital-twin"
-      ],
-      "languages": [
-        "c++"
-      ],
-      "stack": []
+      "productName": "open-source contributions"
     },
     {
       "id": "coding-interview-university",
@@ -696,8 +568,7 @@
       ],
       "formats": [],
       "categories": [
-        "professional",
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -712,13 +583,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "domains": [
-        "professional",
-        "ai-devtools"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": "open-source contributions"
     },
     {
       "id": "scrollytelling",
@@ -732,7 +597,7 @@
       ],
       "formats": [],
       "categories": [
-        "3d-web"
+        "dev"
       ],
       "links": [
         {
@@ -747,14 +612,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "3d-web"
-      ],
-      "languages": [
-        "ts"
-      ],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "cv",
@@ -768,7 +626,7 @@
       ],
       "formats": [],
       "categories": [
-        "professional"
+        "dev"
       ],
       "links": [
         {
@@ -783,14 +641,7 @@
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "professional-showcase",
-      "productName": "showcase",
-      "domains": [
-        "professional"
-      ],
-      "languages": [
-        "tex"
-      ],
-      "stack": []
+      "productName": "showcase"
     },
     {
       "id": "uiua",
@@ -805,7 +656,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -824,14 +675,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "domains": [
-        "ai-devtools"
-      ],
-      "languages": [
-        "rs"
-      ],
-      "stack": []
+      "productName": "open-source contributions"
     }
   ]
 }

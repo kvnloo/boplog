@@ -13,47 +13,17 @@ Last data refresh: 2026-07-31
 
 ## Start here
 
-### Primary
 - [Build log](https://kvnloo.github.io/boplog/): Human-readable site with featured work and the chronological archive.
-- [X](https://x.com/_kvnloo)
-- [GitHub](https://github.com/kvnloo)
-- [LinkedIn](https://linkedin.com/in/kevinsrajan)
-- [Business card](https://ek.vin/): Metallic card (no phone); resume, portfolio, socials, email.
-
-### Surfaces
-- [Portfolio](https://kvnloo.github.io/portfolio/)
-- [Ramen shop (3D)](https://kvnloo.github.io/portfolio/demos/room/)
-- [Resume PDF](https://ek.vin/ai-eng.pdf)
-- [Behance](https://behance.net/kevinsrajan)
-- [Topics hub](https://kvnloo.github.io/boplog/topics/): discovery pages (ai-sdlc, digital-twin, agent-orchestration, automation, …)
-- [Developer access](https://kvnloo.github.io/boplog/developers/)
-- [metallic-card repo](https://github.com/kvnloo/metallic-card)
-
-### Machine-readable
-- [Agent usage guide](https://kvnloo.github.io/boplog/agents.md)
-- [OpenAPI](https://kvnloo.github.io/boplog/openapi.json)
-- [llms.txt](https://kvnloo.github.io/boplog/llms.txt) (this file)
-- [Project data manifest](https://kvnloo.github.io/boplog/data/manifest.json)
-- [Hierarchy](https://kvnloo.github.io/boplog/data/hierarchy.json)
-- [Taxonomy](https://kvnloo.github.io/boplog/data/taxonomy.json)
-- [Surfaces](https://kvnloo.github.io/boplog/data/surfaces.json)
-- [Atom feed](https://kvnloo.github.io/boplog/feed.xml)
-- [Sitemap](https://kvnloo.github.io/boplog/sitemap.xml)
-
-### Topic pages
-- [ai sdlc](https://kvnloo.github.io/boplog/topics/ai-sdlc.html)
-- [agent orchestration](https://kvnloo.github.io/boplog/topics/agent-orchestration.html)
-- [digital twin](https://kvnloo.github.io/boplog/topics/digital-twin.html)
-- [automation](https://kvnloo.github.io/boplog/topics/automation.html)
-- [ai devtools](https://kvnloo.github.io/boplog/topics/ai-devtools.html)
-- [3d web](https://kvnloo.github.io/boplog/topics/3d-web.html)
-- [health bci](https://kvnloo.github.io/boplog/topics/health-bci.html)
-- [build in public](https://kvnloo.github.io/boplog/topics/build-in-public.html)
-- [professional](https://kvnloo.github.io/boplog/topics/professional.html)
+- [Developer access](https://kvnloo.github.io/boplog/developers/): Free static API, CLI, and local MCP instructions.
+- [Agent usage guide](https://kvnloo.github.io/boplog/agents.md): When to use this archive and how to interpret its records.
+- [OpenAPI](https://kvnloo.github.io/boplog/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
+- [Project data manifest](https://kvnloo.github.io/boplog/data/manifest.json): Lists all year-partitioned public JSON files.
+- [Atom feed](https://kvnloo.github.io/boplog/feed.xml): Latest public projects.
+- [Sitemap](https://kvnloo.github.io/boplog/sitemap.xml): Canonical discovery URLs.
 
 ## Entity one-liners
 
-- **Kevin Rajan** (`kvnloo`, X `@_kvnloo`): builder, engineer, scientist, solutions architect, systems thinker, automation orchestration expert; solo founder of zer0. Code is the great equalizer; goal is automating humanitarian causes so civilization can complete more important actions without thinking about them.
+- **Kevin Rajan** (`kvnloo`, X `@_kvnloo`): builder; solo founder of zer0.
 - **zer0**: company umbrella for public product tracks and experiments on this site.
 - **boplog**: this public build log (static JSON + HTML archive of authored commits).
 - **zerOS** / **zeros**: stealth company OS product track (issues, harness, cockpit, voice).

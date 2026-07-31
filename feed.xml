@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-07-31T07:37:18Z</updated>
+  <updated>2026-07-31T10:17:32Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>4dps</title>
@@ -14,7 +14,7 @@
     <published>2026-07-31T00:00:00Z</published>
     <updated>2026-07-31T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Designer preview packs for 3D web scenes: 9 stills, grid, 3D photosphere, 4D 360° video. Capture stays in the host; 7dps plans, grids, encodes, and views via Photo Sphere Viewer.</summary>
+    <summary>Stills, photospheres &amp; 4D 360° packs for 3D web scenes</summary>
   </entry>
   <entry>
     <title>aliens-made-this</title>
@@ -35,6 +35,15 @@
     <summary>Static build-in-public log: public GitHub repos I&apos;ve actually committed to, synced on a schedule.</summary>
   </entry>
   <entry>
+    <title>cod</title>
+    <id>https://kvnloo.github.io/cod/</id>
+    <link href="https://kvnloo.github.io/cod/"/>
+    <published>2026-07-31T00:00:00Z</published>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Early scaffold for a coding-related experiment (public placeholder).</summary>
+  </entry>
+  <entry>
     <title>halo</title>
     <id>https://github.com/kvnloo/halo</id>
     <link href="https://github.com/kvnloo/halo"/>
@@ -44,6 +53,15 @@
     <summary>A first-person shooter in Three.js, built to match Halo: Campaign Evolved and measured against it frame by frame</summary>
   </entry>
   <entry>
+    <title>metallic-card</title>
+    <id>https://ek.vin/</id>
+    <link href="https://ek.vin/"/>
+    <published>2026-07-31T00:00:00Z</published>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Metallic silver border card UI, synced from v0/Vercel design iterations.</summary>
+  </entry>
+  <entry>
     <title>kvnloo</title>
     <id>https://github.com/kvnloo/kvnloo</id>
     <link href="https://github.com/kvnloo/kvnloo"/>
@@ -51,15 +69,6 @@
     <updated>2026-07-30T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Profile README</summary>
-  </entry>
-  <entry>
-    <title>cod</title>
-    <id>https://github.com/kvnloo/cod</id>
-    <link href="https://github.com/kvnloo/cod"/>
-    <published>2026-07-29T00:00:00Z</published>
-    <updated>2026-07-29T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Early scaffold for a coding-related experiment (public placeholder).</summary>
   </entry>
   <entry>
     <title>.files</title>
@@ -222,14 +231,5 @@
     <updated>2025-12-16T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Early public scaffold (placeholder repo).</summary>
-  </entry>
-  <entry>
-    <title>docs-boilerplate</title>
-    <id>https://github.com/kvnloo/docs-boilerplate</id>
-    <link href="https://github.com/kvnloo/docs-boilerplate"/>
-    <published>2025-12-10T00:00:00Z</published>
-    <updated>2025-12-10T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Starter boilerplate for documentation sites.</summary>
   </entry>
 </feed>
