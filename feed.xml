@@ -5,14 +5,23 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-07-31T01:15:22Z</updated>
+  <updated>2026-07-31T07:37:18Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
+  <entry>
+    <title>4dps</title>
+    <id>https://github.com/kvnloo/4dps</id>
+    <link href="https://github.com/kvnloo/4dps"/>
+    <published>2026-07-31T00:00:00Z</published>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Designer preview packs for 3D web scenes: 9 stills, grid, 3D photosphere, 4D 360° video. Capture stays in the host; 7dps plans, grids, encodes, and views via Photo Sphere Viewer.</summary>
+  </entry>
   <entry>
     <title>aliens-made-this</title>
     <id>https://kvnloo.github.io/aliens-made-this/</id>
     <link href="https://kvnloo.github.io/aliens-made-this/"/>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
+    <published>2026-07-31T00:00:00Z</published>
+    <updated>2026-07-31T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Playful generative-art / capability test: what can the aliens make?</summary>
   </entry>
@@ -20,10 +29,19 @@
     <title>boplog</title>
     <id>https://kvnloo.github.io/boplog/</id>
     <link href="https://kvnloo.github.io/boplog/"/>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
+    <published>2026-07-31T00:00:00Z</published>
+    <updated>2026-07-31T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Static build-in-public log: public GitHub repos I&apos;ve actually committed to, synced on a schedule.</summary>
+  </entry>
+  <entry>
+    <title>halo</title>
+    <id>https://github.com/kvnloo/halo</id>
+    <link href="https://github.com/kvnloo/halo"/>
+    <published>2026-07-31T00:00:00Z</published>
+    <updated>2026-07-31T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>A first-person shooter in Three.js, built to match Halo: Campaign Evolved and measured against it frame by frame</summary>
   </entry>
   <entry>
     <title>kvnloo</title>
@@ -50,7 +68,7 @@
     <published>2026-07-28T00:00:00Z</published>
     <updated>2026-07-28T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Personal Linux/macOS dotfiles for Hyprland, tmux, shells, audio DSP, and agent tooling.</summary>
+    <summary>stay in flow while u code</summary>
   </entry>
   <entry>
     <title>_pm</title>
@@ -213,23 +231,5 @@
     <updated>2025-12-10T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Starter boilerplate for documentation sites.</summary>
-  </entry>
-  <entry>
-    <title>z0</title>
-    <id>https://github.com/kvnloo/z0</id>
-    <link href="https://github.com/kvnloo/z0"/>
-    <published>2025-12-10T00:00:00Z</published>
-    <updated>2025-12-10T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Early public scaffold for a Zer0-related experiment (placeholder repo).</summary>
-  </entry>
-  <entry>
-    <title>opcode</title>
-    <id>https://opcode.sh/</id>
-    <link href="https://opcode.sh/"/>
-    <published>2025-12-09T00:00:00Z</published>
-    <updated>2025-12-09T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork of winfunc/opcode: Phase 4 cleanup and documentation restructuring; resolve all TypeScript compilation errors for clean build; Phase 4 polish - error handling, accessibility, test coverage</summary>
   </entry>
 </feed>

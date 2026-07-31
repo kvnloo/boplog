@@ -27,12 +27,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "health",
-      "productName": "health",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "health"
     },
     {
       "id": "openhands",
@@ -61,12 +61,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "open-source contributions"
     }
   ]
 }

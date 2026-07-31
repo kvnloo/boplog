@@ -23,12 +23,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "agent tooling"
     },
     {
       "id": "jobapp",
@@ -52,12 +52,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "professional-showcase",
-      "productName": "showcase",
-      "kind": "professional",
-      "kindName": "professional"
+      "productName": "showcase"
     },
     {
       "id": "expert",
@@ -80,12 +80,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "docs-boilerplate",
@@ -108,12 +108,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "z0",
@@ -136,12 +136,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "zerOS"
     },
     {
       "id": "opcode",
@@ -169,12 +169,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "agent tooling"
     },
     {
       "id": "blueprint",
@@ -202,12 +202,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "blueprint",
-      "productName": "blueprint",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "blueprint"
     },
     {
       "id": "evolve",
@@ -235,15 +235,15 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "evolve",
       "productName": "evolve",
       "featured": true,
       "featuredRank": 4,
-      "eyebrow": "Shell",
-      "kind": "product",
-      "kindName": "product"
+      "eyebrow": "Shell"
     },
     {
       "id": "whisper",
@@ -266,12 +266,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "portfolio",
@@ -299,15 +299,15 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "professional-showcase",
       "productName": "showcase",
       "featured": true,
       "featuredRank": 5,
-      "eyebrow": "HTML",
-      "kind": "professional",
-      "kindName": "professional"
+      "eyebrow": "HTML"
     },
     {
       "id": "playground",
@@ -330,12 +330,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "flow",
@@ -358,12 +358,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "agent tooling"
     },
     {
       "id": "migrate",
@@ -386,12 +386,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "botw",
@@ -414,12 +414,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "ace",
@@ -447,15 +447,15 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "world-sim",
       "productName": "world sim",
       "featured": true,
       "featuredRank": 3,
-      "eyebrow": "TypeScript",
-      "kind": "product",
-      "kindName": "product"
+      "eyebrow": "TypeScript"
     },
     {
       "id": "monument",
@@ -483,12 +483,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "metallic-card",
@@ -516,12 +516,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "spy",
@@ -548,12 +548,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "ux",
@@ -576,12 +576,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "flo",
@@ -604,12 +604,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "architecture-demo",
@@ -636,12 +636,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "launch",
@@ -668,12 +668,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "agent tooling"
     },
     {
       "id": "cofounder",
@@ -702,12 +702,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "open-source contributions"
     }
   ]
 }

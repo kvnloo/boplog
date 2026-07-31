@@ -22,12 +22,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "mobile-legacy",
-      "productName": "mobile (legacy)",
-      "kind": "professional",
-      "kindName": "professional"
+      "productName": "mobile (legacy)"
     },
     {
       "id": "refind",
@@ -51,12 +51,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "mobile-legacy",
-      "productName": "mobile (legacy)",
-      "kind": "professional",
-      "kindName": "professional"
+      "productName": "mobile (legacy)"
     },
     {
       "id": "audioengine",
@@ -84,15 +84,15 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "audioengine",
       "productName": "audioengine",
       "featured": true,
       "featuredRank": 1,
-      "eyebrow": "Makefile",
-      "kind": "professional",
-      "kindName": "professional"
+      "eyebrow": "Makefile"
     },
     {
       "id": "ios-2017",
@@ -117,12 +117,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "mobile-legacy",
-      "productName": "mobile (legacy)",
-      "kind": "professional",
-      "kindName": "professional"
+      "productName": "mobile (legacy)"
     },
     {
       "id": "flicks",
@@ -146,12 +146,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "mobile-legacy",
-      "productName": "mobile (legacy)",
-      "kind": "professional",
-      "kindName": "professional"
+      "productName": "mobile (legacy)"
     }
   ]
 }

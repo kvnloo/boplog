@@ -1,10 +1,39 @@
 {
   "projects": [
     {
+      "id": "4dps",
+      "name": "4dps",
+      "description": "Designer preview packs for 3D web scenes: 9 stills, grid, 3D photosphere, 4D 360° video. Capture stays in the host; 7dps plans, grids, encodes, and views via Photo Sphere Viewer.",
+      "date": "2026-07-31",
+      "url": "https://github.com/kvnloo/4dps",
+      "types": [
+        "public",
+        "js"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/4dps"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "aliens-made-this",
       "name": "aliens-made-this",
       "description": "Playful generative-art / capability test: what can the aliens make?",
-      "date": "2026-07-30",
+      "date": "2026-07-31",
       "url": "https://kvnloo.github.io/aliens-made-this/",
       "types": [
         "public",
@@ -26,18 +55,18 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "boplog",
       "name": "boplog",
       "description": "Static build-in-public log: public GitHub repos I've actually committed to, synced on a schedule.",
-      "date": "2026-07-30",
+      "date": "2026-07-31",
       "url": "https://kvnloo.github.io/boplog/",
       "types": [
         "public",
@@ -60,12 +89,41 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "boplog",
-      "productName": "boplog",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "boplog"
+    },
+    {
+      "id": "halo",
+      "name": "halo",
+      "description": "A first-person shooter in Three.js, built to match Halo: Campaign Evolved and measured against it frame by frame",
+      "date": "2026-07-31",
+      "url": "https://github.com/kvnloo/halo",
+      "types": [
+        "public",
+        "js"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/halo"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
     },
     {
       "id": "kvnloo",
@@ -88,12 +146,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "cod",
@@ -116,12 +174,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "files",
@@ -149,20 +207,20 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "dotfiles",
       "productName": "dotfiles",
       "featured": true,
       "featuredRank": 2,
-      "eyebrow": "Shell",
-      "kind": "professional",
-      "kindName": "professional"
+      "eyebrow": "Shell"
     },
     {
       "id": "pm",
       "name": "_pm",
-      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the company OS PM core.",
+      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/_pm",
       "types": [
@@ -181,12 +239,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "zerOS"
     },
     {
       "id": "zer0-cockpit",
@@ -210,12 +268,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "zerOS"
     },
     {
       "id": "zer0-harness-spine",
@@ -239,12 +297,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "zerOS"
     },
     {
       "id": "zer0-voice",
@@ -268,12 +326,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "zerOS"
     },
     {
       "id": "tmux-agent-fleet",
@@ -297,15 +355,15 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
       "productName": "agent tooling",
       "featured": true,
       "featuredRank": 6,
-      "eyebrow": "Shell",
-      "kind": "product",
-      "kindName": "product"
+      "eyebrow": "Shell"
     },
     {
       "id": "claude-island",
@@ -329,12 +387,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "agent tooling"
     },
     {
       "id": "tesla-infotainment",
@@ -358,12 +416,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "tesla-ui",
-      "productName": "tesla ui",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "tesla ui"
     },
     {
       "id": "tesla",
@@ -391,12 +449,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "tesla-ui",
-      "productName": "tesla ui",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "tesla ui"
     },
     {
       "id": "farm",
@@ -419,12 +477,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "world-sim",
-      "productName": "world sim",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "world sim"
     },
     {
       "id": "kpu-sim",
@@ -453,12 +511,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "open-source contributions"
     },
     {
       "id": "coding-interview-university",
@@ -482,12 +540,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "open-source contributions"
     },
     {
       "id": "scrollytelling",
@@ -511,12 +569,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "kind": "experiment",
-      "kindName": "experiment"
+      "productName": ""
     },
     {
       "id": "cv",
@@ -540,12 +598,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "professional-showcase",
-      "productName": "showcase",
-      "kind": "professional",
-      "kindName": "professional"
+      "productName": "showcase"
     },
     {
       "id": "uiua",
@@ -574,12 +632,12 @@
       ],
       "company": "zer0",
       "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "kind": "product",
-      "kindName": "product"
+      "productName": "open-source contributions"
     }
   ]
 }

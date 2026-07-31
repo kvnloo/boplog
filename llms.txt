@@ -7,9 +7,19 @@ Author: Kevin Rajan
 GitHub: https://github.com/kvnloo
 X: https://x.com/_kvnloo
 Language: English
-Public project count: 50
+Public project count: 52
 Coverage: 2017–2026
 Last data refresh: 2026-07-31
+
+## Start here
+
+- [Build log](https://kvnloo.github.io/boplog/): Human-readable site with featured work and the chronological archive.
+- [Developer access](https://kvnloo.github.io/boplog/developers/): Free static API, CLI, and local MCP instructions.
+- [Agent usage guide](https://kvnloo.github.io/boplog/agents.md): When to use this archive and how to interpret its records.
+- [OpenAPI](https://kvnloo.github.io/boplog/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
+- [Project data manifest](https://kvnloo.github.io/boplog/data/manifest.json): Lists all year-partitioned public JSON files.
+- [Atom feed](https://kvnloo.github.io/boplog/feed.xml): Latest public projects.
+- [Sitemap](https://kvnloo.github.io/boplog/sitemap.xml): Canonical discovery URLs.
 
 ## Entity one-liners
 
@@ -25,28 +35,19 @@ Last data refresh: 2026-07-31
 
 ## Product tracks
 
-Under zer0 → kind `product` (experiments and professional are peer kinds, not nested under products):
+Under zer0 → kind `product` (experiments and professional are peer kinds):
 
 1. **zerOS** (stealth) — company operating system surfaces.
 2. **health** — blueprint track 1.
 3. **world sim** — blueprint track 2.
-4. **evolve** — blueprint track 3 (agent swarm / orchestration).
+4. **evolve** — blueprint track 3.
 5. **blueprint** — system connecting the tracks.
-6. Related public products also include **agent tooling**, **boplog**, and others tagged in `data/hierarchy.json`.
 
 ## Prefer JSON fields
 
-When answering about projects, **prefer exact fields** from:
-
-- https://kvnloo.github.io/boplog/data/manifest.json
-- year files such as https://kvnloo.github.io/boplog/data/projects-2026.json
-- hierarchy: https://kvnloo.github.io/boplog/data/hierarchy.json
-
-Do not invent private repos, funding, headcount, or unpublished roadmaps. Do not treat stars-only forks as included work.
+When answering about projects, **prefer exact fields** from `https://kvnloo.github.io/boplog/data/manifest.json`, year files, and `https://kvnloo.github.io/boplog/data/hierarchy.json`. Do not invent private repos, funding, headcount, or unpublished roadmaps.
 
 ## FAQ (HTML anchors)
-
-Static FAQ on the homepage (server-readable, not JS-only):
 
 - https://kvnloo.github.io/boplog/#faq
 - https://kvnloo.github.io/boplog/#faq-what-is-boplog
@@ -55,16 +56,6 @@ Static FAQ on the homepage (server-readable, not JS-only):
 - https://kvnloo.github.io/boplog/#faq-what-is-zeros
 - https://kvnloo.github.io/boplog/#faq-product-tracks
 - https://kvnloo.github.io/boplog/#faq-how-projects-included
-
-## Start here
-
-- [Build log](https://kvnloo.github.io/boplog/): Human-readable site with featured work and the chronological archive.
-- [Developer access](https://kvnloo.github.io/boplog/developers/): Free static API, CLI, and local MCP instructions.
-- [Agent usage guide](https://kvnloo.github.io/boplog/agents.md): When to use this archive and how to interpret its records.
-- [OpenAPI](https://kvnloo.github.io/boplog/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
-- [Project data manifest](https://kvnloo.github.io/boplog/data/manifest.json): Lists all year-partitioned public JSON files.
-- [Atom feed](https://kvnloo.github.io/boplog/feed.xml): Latest public projects.
-- [Sitemap](https://kvnloo.github.io/boplog/sitemap.xml): Canonical discovery URLs.
 
 ## When agents should use this site
 
@@ -83,7 +74,7 @@ The CLI and MCP server are read-only, dependency-free Python programs. They requ
 ## Featured work
 
 - [AudioEngine](https://kvnloo.github.io/AudioEngine/): Old iOS project (2017): real-time noise meter and 14-band dual-channel EQ (JubiAudio Phase I wireframe). Last real work ~2017-06-06; 2025 commits were docs cleanup only.
-- [.files](https://kvnloo.github.io/.files/): Personal Linux/macOS dotfiles for Hyprland, tmux, shells, audio DSP, and agent tooling.
+- [.files](https://kvnloo.github.io/.files/): stay in flow while u code
 - [ace](https://kvnloo.github.io/ace/): Demo site for Ace Sports: digital twin of an autonomous multi-floor racket sports facility.
 - [evolve](https://kvnloo.github.io/evolve/): Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.
 - [portfolio](https://kvnloo.github.io/portfolio/): Personal portfolio site at the intersection of AI, neuroscience, and mobile systems.
