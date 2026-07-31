@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260731.10';
+  const BUILD_VERSION = '20260731.11';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -64,6 +64,7 @@
     activityPageBuilds: document.querySelector('#activity-page-builds'),
     activityPageCommits: document.querySelector('#activity-page-commits'),
     activitySelection: document.querySelector('#activity-selection'),
+    activityStat: document.querySelector('#activity-stat'),
     activityNote: document.querySelector('#activity-note'),
     activityModeBuilds: document.querySelector('#activity-mode-builds'),
     activityModeCommits: document.querySelector('#activity-mode-commits'),
@@ -307,6 +308,39 @@
     return counts;
   }
 
+  /** Quiet vanity count from the GH contribution calendar snapshot. */
+  function totalCommitCount() {
+    const declared = Number(state.activity?.totalContributions);
+    if (Number.isFinite(declared) && declared > 0) return Math.round(declared);
+    let sum = 0;
+    for (const n of commitCounts().values()) sum += n;
+    return sum;
+  }
+
+  function formatQuietCount(n) {
+    if (!Number.isFinite(n) || n <= 0) return '';
+    if (n >= 1000) {
+      const k = n / 1000;
+      const s = k >= 10 ? String(Math.round(k)) : k.toFixed(1).replace(/\.0$/, '');
+      return `~${s}k`;
+    }
+    return String(n);
+  }
+
+  function updateActivityStat() {
+    if (!elements.activityStat) return;
+    const total = totalCommitCount();
+    if (!total) {
+      elements.activityStat.hidden = true;
+      elements.activityStat.textContent = '';
+      return;
+    }
+    // Small, de-emphasized: the calendar (showing up) is the real signal.
+    elements.activityStat.hidden = false;
+    elements.activityStat.textContent = `${formatQuietCount(total)} commits · the number barely matters`;
+    elements.activityStat.title = `${total.toLocaleString('en-US')} contributions in the last-year GitHub calendar snapshot. Consistency > count.`;
+  }
+
   function activityPageIndex(mode = state.activityMode) {
     return mode === 'commits' ? ACTIVITY_PAGE.commits : ACTIVITY_PAGE.builds;
   }
@@ -477,6 +511,7 @@
     }
 
     updateActivitySelectionStats();
+    updateActivityStat();
 
     if (syncTrack) {
       setActivityTrackPosition(activityPageIndex(state.activityMode), { animate: animateTrack });
