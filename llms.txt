@@ -23,7 +23,7 @@ Last data refresh: 2026-07-31
 
 ## Entity one-liners
 
-- **Kevin Rajan** (`kvnloo`, X `@_kvnloo`): builder, engineer, scientist, solutions architect, systems thinker, automator; solo founder of zer0. Civilization advances by automating important actions and reducing decision fatigue.
+- **Kevin Rajan** (`kvnloo`, X `@_kvnloo`): builder; solo founder of zer0.
 - **zer0**: company umbrella for public product tracks and experiments on this site.
 - **boplog**: this public build log (static JSON + HTML archive of authored commits).
 - **zerOS** / **zeros**: stealth company OS product track (issues, harness, cockpit, voice).
