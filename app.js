@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.19';
+  const BUILD_VERSION = '20260730.20';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -62,6 +62,7 @@
     activityModeBuilds: document.querySelector('#activity-mode-builds'),
     activityModeCommits: document.querySelector('#activity-mode-commits'),
     activityModeLabel: document.querySelector('#activity-mode-label'),
+    activityModeNext: document.querySelector('#activity-mode-next'),
     activitySwipeHint: document.querySelector('#activity-swipe-hint'),
     themeToggle: document.querySelector('#theme-toggle'),
   };
@@ -311,14 +312,15 @@
     elements.activityModeBuilds?.setAttribute('aria-pressed', next === 'builds' ? 'true' : 'false');
     elements.activityModeCommits?.setAttribute('aria-pressed', next === 'commits' ? 'true' : 'false');
 
-    // Mobile: current mode as top label; swipe hint names the other mode.
+    // Mobile: current mode up top; next line is → other mode; then "swipe".
     if (elements.activityModeLabel) {
       elements.activityModeLabel.textContent = next === 'commits' ? 'all commits' : 'build log';
     }
+    if (elements.activityModeNext) {
+      elements.activityModeNext.textContent = next === 'commits' ? '→ build log' : '→ commits';
+    }
     if (elements.activitySwipeHint) {
-      elements.activitySwipeHint.textContent = next === 'commits'
-        ? 'swipe · → build log'
-        : 'swipe · → all commits';
+      elements.activitySwipeHint.textContent = 'swipe';
     }
 
     const root = document.querySelector('.activity');

@@ -401,7 +401,7 @@ html[data-theme="night"] .theme-toggle__thumb {
 }
 .activity__heading { min-width: 0; flex: 1 1 220px; }
 .activity__header h3 { margin: 0; color: var(--muted); font-size: 10px; font-weight: 600; text-transform: lowercase; }
-/* Mobile-only current mode label + swipe affordance (desktop uses the pill selector). */
+/* Mobile-only: current mode, then → other, then "swipe" (desktop uses the pill selector). */
 .activity__mode-label {
   display: none;
   margin: 6px 0 0;
@@ -410,12 +410,19 @@ html[data-theme="night"] .theme-toggle__thumb {
   font-weight: 600;
   letter-spacing: 0.01em;
 }
+.activity__mode-next {
+  display: none;
+  margin: 3px 0 0;
+  color: var(--muted);
+  font: 11px/1.3 var(--mono);
+  letter-spacing: 0.02em;
+}
 .activity__swipe-hint {
   display: none;
-  margin: 4px 0 0;
+  margin: 2px 0 0;
   color: var(--faint);
   font: 10px/1.3 var(--mono);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 .activity__note {
   margin: 4px 0 0;
@@ -1075,6 +1082,7 @@ footer.shell a:hover { color: var(--accent); }
   }
   .activity__heading { flex: none; }
   .activity__mode-label { display: block; }
+  .activity__mode-next { display: block; }
   .activity__swipe-hint { display: block; }
   .activity__note {
     display: none; /* keep mobile header tight; mode label + selection carry context */
