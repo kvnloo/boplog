@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-07-31T10:17:32Z</updated>
+  <updated>2026-07-31T12:27:44Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>4dps</title>
@@ -32,7 +32,7 @@
     <published>2026-07-31T00:00:00Z</published>
     <updated>2026-07-31T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Static build-in-public log: public GitHub repos I&apos;ve actually committed to, synced on a schedule.</summary>
+    <summary>Static public build log of GitHub repos filtered to authored commits only (not stars or bookmark forks), with llms.txt and a JSON project manifest for agents.</summary>
   </entry>
   <entry>
     <title>cod</title>
@@ -86,7 +86,7 @@
     <published>2026-07-26T00:00:00Z</published>
     <updated>2026-07-26T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.</summary>
+    <summary>Company issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the Zer0 company OS PM core for automation orchestration.</summary>
   </entry>
   <entry>
     <title>zer0-cockpit</title>
@@ -95,7 +95,7 @@
     <published>2026-07-26T00:00:00Z</published>
     <updated>2026-07-26T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Read-only, dependency-free terminal dashboard for explicit Zer0 project progress.</summary>
+    <summary>Read-only, dependency-free terminal project cockpit dashboard for explicit Zer0 project progress.</summary>
   </entry>
   <entry>
     <title>zer0-harness-spine</title>
@@ -104,7 +104,7 @@
     <published>2026-07-26T00:00:00Z</published>
     <updated>2026-07-26T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Ultra-thin harness contracts and provider adapters for the Zer0 agent stack (no orchestration state).</summary>
+    <summary>Ultra-thin agent harness contracts and provider adapters for the Zer0 agent stack (no orchestration state).</summary>
   </entry>
   <entry>
     <title>zer0-voice</title>

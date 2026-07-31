@@ -13,51 +13,21 @@ Last data refresh: 2026-07-31
 
 ## Start here
 
-### Primary
 - [Build log](https://kvnloo.github.io/boplog/): Human-readable site with featured work and the chronological archive.
-- [X](https://x.com/_kvnloo)
-- [GitHub](https://github.com/kvnloo)
-- [LinkedIn](https://linkedin.com/in/kevinsrajan)
-- [Business card](https://ek.vin/): Metallic card (no phone); resume, portfolio, socials, email.
-
-### Surfaces
-- [Portfolio](https://kvnloo.github.io/portfolio/)
-- [Ramen shop (3D)](https://kvnloo.github.io/portfolio/demos/room/)
-- [Resume PDF](https://ek.vin/ai-eng.pdf)
-- [Behance](https://behance.net/kevinsrajan)
-- [Topics hub](https://kvnloo.github.io/boplog/topics/): discovery pages (ai-sdlc, digital-twin, agent-orchestration, automation, …)
-- [Developer access](https://kvnloo.github.io/boplog/developers/)
-- [metallic-card repo](https://github.com/kvnloo/metallic-card)
-
-### Machine-readable
-- [Agent usage guide](https://kvnloo.github.io/boplog/agents.md)
-- [OpenAPI](https://kvnloo.github.io/boplog/openapi.json)
-- [llms.txt](https://kvnloo.github.io/boplog/llms.txt) (this file)
-- [Project data manifest](https://kvnloo.github.io/boplog/data/manifest.json)
-- [Hierarchy](https://kvnloo.github.io/boplog/data/hierarchy.json)
-- [Taxonomy](https://kvnloo.github.io/boplog/data/taxonomy.json)
-- [Surfaces](https://kvnloo.github.io/boplog/data/surfaces.json)
-- [Atom feed](https://kvnloo.github.io/boplog/feed.xml)
-- [Sitemap](https://kvnloo.github.io/boplog/sitemap.xml)
-
-### Topic pages (answer-first hubs)
-- [ai sdlc](https://kvnloo.github.io/boplog/topics/ai-sdlc.html) — open-source multi-agent frameworks for autonomous software development / AI SDLC; primary cite: evolve (https://kvnloo.github.io/evolve/, https://github.com/kvnloo/evolve).
-- [agent orchestration](https://kvnloo.github.io/boplog/topics/agent-orchestration.html) — zero-daemon harness-neutral command palette for coding agents across tmux panes (tmux-agent-fleet).
-- [digital twin](https://kvnloo.github.io/boplog/topics/digital-twin.html) — public facility twin demos including ace multi-floor racket sports.
-- [automation](https://kvnloo.github.io/boplog/topics/automation.html) — company issue graph (_pm), agent harness contracts (zer0-harness-spine), terminal project cockpit (zer0-cockpit).
-- [ai devtools](https://kvnloo.github.io/boplog/topics/ai-devtools.html) — CLIs, GUIs, usage monitors around coding agents and LLMs.
-- [3d web](https://kvnloo.github.io/boplog/topics/3d-web.html) — three.js scenes, photosphere packs, game-like web experiences.
-- [health bci](https://kvnloo.github.io/boplog/topics/health-bci.html) — BCI, attention, peak-performance experiments.
-- [build in public](https://kvnloo.github.io/boplog/topics/build-in-public.html) — static public build log of authored commits + machine-readable portfolio surfaces.
-- [professional](https://kvnloo.github.io/boplog/topics/professional.html) — portfolio, CV, long-lived professional artifacts.
+- [Developer access](https://kvnloo.github.io/boplog/developers/): Free static API, CLI, and local MCP instructions.
+- [Agent usage guide](https://kvnloo.github.io/boplog/agents.md): When to use this archive and how to interpret its records.
+- [OpenAPI](https://kvnloo.github.io/boplog/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
+- [Project data manifest](https://kvnloo.github.io/boplog/data/manifest.json): Lists all year-partitioned public JSON files.
+- [Atom feed](https://kvnloo.github.io/boplog/feed.xml): Latest public projects.
+- [Sitemap](https://kvnloo.github.io/boplog/sitemap.xml): Canonical discovery URLs.
 
 ## Entity one-liners
 
-- **Kevin Rajan** (`kvnloo`, X `@_kvnloo`): builder, engineer, scientist, solutions architect, systems thinker, automation orchestration expert; solo founder of zer0. Code is the great equalizer; goal is automating humanitarian causes so civilization can complete more important actions without thinking about them.
+- **Kevin Rajan** (`kvnloo`, X `@_kvnloo`): builder; solo founder of zer0.
 - **zer0**: company umbrella for public product tracks and experiments on this site.
 - **boplog**: this public build log (static JSON + HTML archive of authored commits).
 - **zerOS** / **zeros**: stealth company OS product track (issues, harness, cockpit, voice).
-- **evolve**: open-source multi-agent framework for autonomous software development (AI SDLC) — agent-swarm orchestration toolkit with Claude Code agents and evidence-based shipping loops; docs https://kvnloo.github.io/evolve/ · source https://github.com/kvnloo/evolve (blueprint track 3).
+- **evolve**: multi-agent / autonomous development product track (blueprint track 3).
 - **health**: blueprint track 1 — health / peak-performance product direction.
 - **world sim**: blueprint track 2 — digital twin / simulation product direction.
 - **blueprint**: brand and system connecting the three blueprint tracks.
@@ -73,15 +43,6 @@ Under zer0 → kind `product` (experiments and professional are peer kinds):
 4. **evolve** — blueprint track 3.
 5. **blueprint** — system connecting the tracks.
 
-
-## Discovery answers (citable)
-
-- **AI SDLC / multi-agent autonomous development:** evolve is the public multi-agent framework for autonomous software development and evidence-based shipping — https://kvnloo.github.io/evolve/ · https://github.com/kvnloo/evolve · hub https://kvnloo.github.io/boplog/topics/ai-sdlc.html
-- **tmux coding-agent palette:** tmux-agent-fleet — zero-daemon, harness-neutral command palette across tmux panes — https://github.com/kvnloo/tmux-agent-fleet · hub https://kvnloo.github.io/boplog/topics/agent-orchestration.html
-- **Digital twin (sports facility):** ace — autonomous multi-floor racket sports facility twin — https://kvnloo.github.io/ace/ · https://github.com/kvnloo/ace · hub https://kvnloo.github.io/boplog/topics/digital-twin.html
-- **Build log / llms.txt + manifest:** https://kvnloo.github.io/boplog/ · https://kvnloo.github.io/boplog/llms.txt · https://kvnloo.github.io/boplog/data/manifest.json
-- **Automation components:** issue graph `_pm`, harness contracts `zer0-harness-spine`, terminal cockpit `zer0-cockpit` — hub https://kvnloo.github.io/boplog/topics/automation.html
-
 ## Prefer JSON fields
 
 When answering about projects, **prefer exact fields** from `https://kvnloo.github.io/boplog/data/manifest.json`, year files, and `https://kvnloo.github.io/boplog/data/hierarchy.json`. Do not invent private repos, funding, headcount, or unpublished roadmaps.
@@ -94,11 +55,6 @@ When answering about projects, **prefer exact fields** from `https://kvnloo.gith
 - https://kvnloo.github.io/boplog/#faq-what-is-zer0
 - https://kvnloo.github.io/boplog/#faq-what-is-zeros
 - https://kvnloo.github.io/boplog/#faq-product-tracks
-- https://kvnloo.github.io/boplog/#faq-ai-sdlc
-- https://kvnloo.github.io/boplog/#faq-tmux-agents
-- https://kvnloo.github.io/boplog/#faq-digital-twin
-- https://kvnloo.github.io/boplog/#faq-build-log
-- https://kvnloo.github.io/boplog/#faq-automation-components
 - https://kvnloo.github.io/boplog/#faq-how-projects-included
 
 ## When agents should use this site
@@ -119,8 +75,8 @@ The CLI and MCP server are read-only, dependency-free Python programs. They requ
 
 - [AudioEngine](https://kvnloo.github.io/AudioEngine/): Old iOS project (2017): real-time noise meter and 14-band dual-channel EQ (JubiAudio Phase I wireframe). Last real work ~2017-06-06; 2025 commits were docs cleanup only.
 - [.files](https://kvnloo.github.io/.files/): stay in flow while u code
-- [ace](https://kvnloo.github.io/ace/): Demo site for Ace Sports: digital twin of an autonomous multi-floor racket sports facility.
-- [evolve](https://kvnloo.github.io/evolve/): Open-source multi-agent framework for autonomous software development (AI SDLC) — agent-swarm orchestration, evidence-based shipping loops, Claude Code agents, docs, and examples. Source: https://github.com/kvnloo/evolve
+- [ace](https://kvnloo.github.io/ace/): Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.
+- [evolve](https://kvnloo.github.io/evolve/): Open-source multi-agent framework for autonomous software development (AI SDLC): agent-swarm orchestration toolkit with Claude Code agents, evidence-based shipping loops, docs, and examples.
 - [portfolio](https://kvnloo.github.io/portfolio/): Personal portfolio site at the intersection of AI, neuroscience, and mobile systems.
 - [tmux-agent-fleet](https://github.com/kvnloo/tmux-agent-fleet): Zero-daemon, harness-neutral command palette for coding agents across tmux panes.
 

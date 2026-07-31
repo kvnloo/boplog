@@ -13,9 +13,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-devtools",
-        "ai-sdlc",
-        "agent-orchestration"
+        "dev"
       ],
       "links": [
         {
@@ -30,19 +28,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "domains": [
-        "ai-devtools",
-        "ai-sdlc",
-        "agent-orchestration"
-      ],
-      "languages": [
-        "ts"
-      ],
-      "stack": [
-        "llm",
-        "claude-code"
-      ]
+      "productName": "agent tooling"
     },
     {
       "id": "jobapp",
@@ -56,8 +42,7 @@
       ],
       "formats": [],
       "categories": [
-        "professional",
-        "automation"
+        "dev"
       ],
       "links": [
         {
@@ -72,15 +57,7 @@
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "professional-showcase",
-      "productName": "showcase",
-      "domains": [
-        "professional",
-        "automation"
-      ],
-      "languages": [
-        "html"
-      ],
-      "stack": []
+      "productName": "showcase"
     },
     {
       "id": "expert",
@@ -93,7 +70,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -108,12 +85,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "ai-devtools"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "docs-boilerplate",
@@ -126,8 +98,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-devtools",
-        "build-in-public"
+        "dev"
       ],
       "links": [
         {
@@ -142,13 +113,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "ai-devtools",
-        "build-in-public"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "z0",
@@ -161,7 +126,7 @@
       ],
       "formats": [],
       "categories": [
-        "automation"
+        "dev"
       ],
       "links": [
         {
@@ -176,12 +141,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS",
-      "domains": [
-        "automation"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": "zerOS"
     },
     {
       "id": "opcode",
@@ -195,8 +155,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-devtools",
-        "agent-orchestration"
+        "dev"
       ],
       "links": [
         {
@@ -215,16 +174,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "domains": [
-        "ai-devtools",
-        "agent-orchestration"
-      ],
-      "languages": [],
-      "stack": [
-        "llm",
-        "claude-code"
-      ]
+      "productName": "agent tooling"
     },
     {
       "id": "blueprint",
@@ -238,9 +188,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-sdlc",
-        "automation",
-        "health-bci"
+        "dev"
       ],
       "links": [
         {
@@ -259,21 +207,12 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "blueprint",
-      "productName": "blueprint",
-      "domains": [
-        "ai-sdlc",
-        "automation",
-        "health-bci"
-      ],
-      "languages": [
-        "html"
-      ],
-      "stack": []
+      "productName": "blueprint"
     },
     {
       "id": "evolve",
       "name": "evolve",
-      "description": "Agent swarm / multi-agent orchestration toolkit with Claude Code agents, docs, and examples.",
+      "description": "Open-source multi-agent framework for autonomous software development (AI SDLC): agent-swarm orchestration toolkit with Claude Code agents, evidence-based shipping loops, docs, and examples.",
       "date": "2025-12-02",
       "url": "https://kvnloo.github.io/evolve/",
       "types": [
@@ -282,9 +221,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-sdlc",
-        "agent-orchestration",
-        "automation"
+        "dev"
       ],
       "links": [
         {
@@ -306,19 +243,7 @@
       "productName": "evolve",
       "featured": true,
       "featuredRank": 4,
-      "eyebrow": "Shell",
-      "domains": [
-        "ai-sdlc",
-        "agent-orchestration",
-        "automation"
-      ],
-      "languages": [
-        "sh"
-      ],
-      "stack": [
-        "llm",
-        "claude-code"
-      ]
+      "eyebrow": "Shell"
     },
     {
       "id": "whisper",
@@ -331,7 +256,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -346,14 +271,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "ai-devtools"
-      ],
-      "languages": [],
-      "stack": [
-        "llm"
-      ]
+      "productName": ""
     },
     {
       "id": "portfolio",
@@ -367,9 +285,7 @@
       ],
       "formats": [],
       "categories": [
-        "professional",
-        "3d-web",
-        "build-in-public"
+        "dev"
       ],
       "links": [
         {
@@ -391,18 +307,7 @@
       "productName": "showcase",
       "featured": true,
       "featuredRank": 5,
-      "eyebrow": "HTML",
-      "domains": [
-        "professional",
-        "3d-web",
-        "build-in-public"
-      ],
-      "languages": [
-        "html"
-      ],
-      "stack": [
-        "threejs"
-      ]
+      "eyebrow": "HTML"
     },
     {
       "id": "playground",
@@ -415,7 +320,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -430,12 +335,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "ai-devtools"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "flow",
@@ -448,8 +348,7 @@
       ],
       "formats": [],
       "categories": [
-        "agent-orchestration",
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -464,16 +363,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "domains": [
-        "agent-orchestration",
-        "ai-devtools"
-      ],
-      "languages": [],
-      "stack": [
-        "ratatui",
-        "llm"
-      ]
+      "productName": "agent tooling"
     },
     {
       "id": "migrate",
@@ -486,7 +376,7 @@
       ],
       "formats": [],
       "categories": [
-        "automation"
+        "dev"
       ],
       "links": [
         {
@@ -501,12 +391,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "automation"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "botw",
@@ -519,7 +404,7 @@
       ],
       "formats": [],
       "categories": [
-        "3d-web"
+        "dev"
       ],
       "links": [
         {
@@ -534,17 +419,12 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "3d-web"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "ace",
       "name": "ace",
-      "description": "Demo site for Ace Sports: digital twin of an autonomous multi-floor racket sports facility.",
+      "description": "Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.",
       "date": "2025-11-21",
       "url": "https://kvnloo.github.io/ace/",
       "types": [
@@ -553,9 +433,7 @@
       ],
       "formats": [],
       "categories": [
-        "digital-twin",
-        "3d-web",
-        "automation"
+        "dev"
       ],
       "links": [
         {
@@ -577,20 +455,7 @@
       "productName": "world sim",
       "featured": true,
       "featuredRank": 3,
-      "eyebrow": "TypeScript",
-      "domains": [
-        "digital-twin",
-        "3d-web",
-        "automation"
-      ],
-      "languages": [
-        "ts"
-      ],
-      "stack": [
-        "threejs",
-        "react",
-        "vite"
-      ]
+      "eyebrow": "TypeScript"
     },
     {
       "id": "monument",
@@ -604,7 +469,7 @@
       ],
       "formats": [],
       "categories": [
-        "3d-web"
+        "dev"
       ],
       "links": [
         {
@@ -623,16 +488,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "3d-web"
-      ],
-      "languages": [
-        "ts"
-      ],
-      "stack": [
-        "threejs"
-      ]
+      "productName": ""
     },
     {
       "id": "spy",
@@ -645,7 +501,7 @@
       ],
       "formats": [],
       "categories": [
-        "automation"
+        "dev"
       ],
       "links": [
         {
@@ -664,12 +520,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "automation"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "ux",
@@ -682,7 +533,7 @@
       ],
       "formats": [],
       "categories": [
-        "professional"
+        "dev"
       ],
       "links": [
         {
@@ -697,12 +548,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "professional"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "flo",
@@ -715,7 +561,7 @@
       ],
       "formats": [],
       "categories": [
-        "health-bci"
+        "dev"
       ],
       "links": [
         {
@@ -730,12 +576,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "health-bci"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "architecture-demo",
@@ -748,8 +589,7 @@
       ],
       "formats": [],
       "categories": [
-        "professional",
-        "3d-web"
+        "dev"
       ],
       "links": [
         {
@@ -768,13 +608,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "domains": [
-        "professional",
-        "3d-web"
-      ],
-      "languages": [],
-      "stack": []
+      "productName": ""
     },
     {
       "id": "launch",
@@ -787,8 +621,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-devtools",
-        "ai-sdlc"
+        "dev"
       ],
       "links": [
         {
@@ -807,16 +640,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling",
-      "domains": [
-        "ai-devtools",
-        "ai-sdlc"
-      ],
-      "languages": [],
-      "stack": [
-        "llm",
-        "claude-code"
-      ]
+      "productName": "agent tooling"
     },
     {
       "id": "cofounder",
@@ -831,8 +655,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-sdlc",
-        "ai-devtools"
+        "dev"
       ],
       "links": [
         {
@@ -851,17 +674,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "domains": [
-        "ai-sdlc",
-        "ai-devtools"
-      ],
-      "languages": [
-        "ts"
-      ],
-      "stack": [
-        "llm"
-      ]
+      "productName": "open-source contributions"
     }
   ]
 }

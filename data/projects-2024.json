@@ -13,7 +13,7 @@
       ],
       "formats": [],
       "categories": [
-        "health-bci"
+        "dev"
       ],
       "links": [
         {
@@ -32,14 +32,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "health",
-      "productName": "health",
-      "domains": [
-        "health-bci"
-      ],
-      "languages": [
-        "py"
-      ],
-      "stack": []
+      "productName": "health"
     },
     {
       "id": "openhands",
@@ -54,8 +47,7 @@
       ],
       "formats": [],
       "categories": [
-        "ai-sdlc",
-        "agent-orchestration"
+        "dev"
       ],
       "links": [
         {
@@ -74,17 +66,7 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions",
-      "domains": [
-        "ai-sdlc",
-        "agent-orchestration"
-      ],
-      "languages": [
-        "py"
-      ],
-      "stack": [
-        "llm"
-      ]
+      "productName": "open-source contributions"
     }
   ]
 }
