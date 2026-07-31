@@ -315,7 +315,7 @@ html[data-theme="night"] .theme-toggle__thumb {
   clip: rect(0, 0, 0, 0);
 }
 
-.featured, .archive, .about, .machine-readable { padding: 24px 0; }
+.featured, .archive, .about, .faq, .machine-readable { padding: 24px 0; }
 .section-line {
   display: flex;
   align-items: baseline;
@@ -1030,7 +1030,22 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px soli
 .empty-state { padding: 28px 0; color: var(--muted); text-align: center; }
 .empty-state p { margin: 0 0 10px; }
 
-.about p, .machine-readable p { max-width: 720px; margin: 0; color: var(--muted); }
+.about p, .faq p, .machine-readable p { max-width: 720px; margin: 0; color: var(--muted); }
+
+.faq__list {
+  display: grid;
+  gap: 14px;
+  max-width: 720px;
+}
+.faq__item h3 {
+  margin: 0 0 4px;
+  font: 600 12.5px/1.4 var(--sans);
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+.faq__item p {
+  font: 12.5px/1.55 var(--sans);
+}
 .machine-readable__links { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; font: 11px/1.5 var(--mono); }
 .machine-readable__links a {
   color: var(--accent);
@@ -1115,7 +1130,7 @@ footer.shell a:hover { color: var(--accent); }
     font-size: 10px;
     padding: 4px 8px;
   }
-  .featured, .archive, .about, .machine-readable { padding: 16px 0; }
+  .featured, .archive, .about, .faq, .machine-readable { padding: 16px 0; }
   .section-line {
     gap: 10px;
     margin-bottom: 8px;

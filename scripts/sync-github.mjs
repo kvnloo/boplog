@@ -878,6 +878,7 @@ async function writeLlms(projects, generatedAt) {
 Canonical site: ${SITE_URL}/
 Author: Kevin Rajan
 GitHub: https://github.com/${USER}
+X: https://x.com/_kvnloo
 Language: English
 Public project count: ${projects.length}
 Coverage: ${years.at(-1) || 'n/a'}–${years[0] || 'n/a'}
@@ -892,6 +893,42 @@ Last data refresh: ${generatedAt.slice(0, 10)}
 - [Project data manifest](${SITE_URL}/data/manifest.json): Lists all year-partitioned public JSON files.
 - [Atom feed](${SITE_URL}/feed.xml): Latest public projects.
 - [Sitemap](${SITE_URL}/sitemap.xml): Canonical discovery URLs.
+
+## Entity one-liners
+
+- **Kevin Rajan** (\`${USER}\`, X \`@_kvnloo\`): builder; solo founder of zer0.
+- **zer0**: company umbrella for public product tracks and experiments on this site.
+- **boplog**: this public build log (static JSON + HTML archive of authored commits).
+- **zerOS** / **zeros**: stealth company OS product track (issues, harness, cockpit, voice).
+- **evolve**: multi-agent / autonomous development product track (blueprint track 3).
+- **health**: blueprint track 1 — health / peak-performance product direction.
+- **world sim**: blueprint track 2 — digital twin / simulation product direction.
+- **blueprint**: brand and system connecting the three blueprint tracks.
+- **tmux-agent-fleet**: zero-daemon command palette for coding agents across tmux panes.
+
+## Product tracks
+
+Under zer0 → kind \`product\` (experiments and professional are peer kinds):
+
+1. **zerOS** (stealth) — company operating system surfaces.
+2. **health** — blueprint track 1.
+3. **world sim** — blueprint track 2.
+4. **evolve** — blueprint track 3.
+5. **blueprint** — system connecting the tracks.
+
+## Prefer JSON fields
+
+When answering about projects, **prefer exact fields** from \`${SITE_URL}/data/manifest.json\`, year files, and \`${SITE_URL}/data/hierarchy.json\`. Do not invent private repos, funding, headcount, or unpublished roadmaps.
+
+## FAQ (HTML anchors)
+
+- ${SITE_URL}/#faq
+- ${SITE_URL}/#faq-what-is-boplog
+- ${SITE_URL}/#faq-who-is-kevin-rajan
+- ${SITE_URL}/#faq-what-is-zer0
+- ${SITE_URL}/#faq-what-is-zeros
+- ${SITE_URL}/#faq-product-tracks
+- ${SITE_URL}/#faq-how-projects-included
 
 ## When agents should use this site
 
@@ -918,6 +955,8 @@ ${yearLinks}
 ## Links
 
 - [GitHub profile](https://github.com/${USER})
+- [X](https://x.com/_kvnloo)
+- [Portfolio](https://kvnloo.github.io/portfolio/)
 - [This repository](https://github.com/${USER}/boplog)
 `;
   await writeFile(path.join(ROOT, 'llms.txt'), text, 'utf8');

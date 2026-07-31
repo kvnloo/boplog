@@ -5,10 +5,56 @@
 Canonical site: https://kvnloo.github.io/boplog/
 Author: Kevin Rajan
 GitHub: https://github.com/kvnloo
+X: https://x.com/_kvnloo
 Language: English
 Public project count: 50
 Coverage: 2017–2026
 Last data refresh: 2026-07-31
+
+## Entity one-liners
+
+- **Kevin Rajan** (`kvnloo`, X `@_kvnloo`): builder; solo founder of zer0.
+- **zer0**: company umbrella for public product tracks and experiments on this site.
+- **boplog**: this public build log (static JSON + HTML archive of authored commits).
+- **zerOS** / **zeros**: stealth company OS product track (issues, harness, cockpit, voice).
+- **evolve**: multi-agent / autonomous development product track (blueprint track 3).
+- **health**: blueprint track 1 — health / peak-performance product direction.
+- **world sim**: blueprint track 2 — digital twin / simulation product direction.
+- **blueprint**: brand and system connecting the three blueprint tracks.
+- **tmux-agent-fleet**: zero-daemon command palette for coding agents across tmux panes.
+
+## Product tracks
+
+Under zer0 → kind `product` (experiments and professional are peer kinds, not nested under products):
+
+1. **zerOS** (stealth) — company operating system surfaces.
+2. **health** — blueprint track 1.
+3. **world sim** — blueprint track 2.
+4. **evolve** — blueprint track 3 (agent swarm / orchestration).
+5. **blueprint** — system connecting the tracks.
+6. Related public products also include **agent tooling**, **boplog**, and others tagged in `data/hierarchy.json`.
+
+## Prefer JSON fields
+
+When answering about projects, **prefer exact fields** from:
+
+- https://kvnloo.github.io/boplog/data/manifest.json
+- year files such as https://kvnloo.github.io/boplog/data/projects-2026.json
+- hierarchy: https://kvnloo.github.io/boplog/data/hierarchy.json
+
+Do not invent private repos, funding, headcount, or unpublished roadmaps. Do not treat stars-only forks as included work.
+
+## FAQ (HTML anchors)
+
+Static FAQ on the homepage (server-readable, not JS-only):
+
+- https://kvnloo.github.io/boplog/#faq
+- https://kvnloo.github.io/boplog/#faq-what-is-boplog
+- https://kvnloo.github.io/boplog/#faq-who-is-kevin-rajan
+- https://kvnloo.github.io/boplog/#faq-what-is-zer0
+- https://kvnloo.github.io/boplog/#faq-what-is-zeros
+- https://kvnloo.github.io/boplog/#faq-product-tracks
+- https://kvnloo.github.io/boplog/#faq-how-projects-included
 
 ## Start here
 
@@ -54,4 +100,6 @@ The CLI and MCP server are read-only, dependency-free Python programs. They requ
 ## Links
 
 - [GitHub profile](https://github.com/kvnloo)
+- [X](https://x.com/_kvnloo)
+- [Portfolio](https://kvnloo.github.io/portfolio/)
 - [This repository](https://github.com/kvnloo/boplog)

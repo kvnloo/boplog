@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "site": "https://kvnloo.github.io/boplog/",
+  "source": "/workspace/boplog/data/llmeo/runs/2026-07-31/raw.json",
+  "scoredAt": "2026-07-31T07:24:20.666Z",
+  "share_of_voice": 1,
+  "prompts_with_mention": 6,
+  "prompt_count": 6,
+  "scores": [
+    {
+      "engine": "hermes",
+      "prompt_id": "entity-who-is-kevin",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "Kevin Rajan",
+        "kvnloo",
+        "zer0"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "zer0",
+        "boplog",
+        "evolve",
+        "tmux-agent-fleet"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/",
+        "https://github.com/kvnloo"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 43326
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "entity-zer0",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "zer0",
+        "Kevin Rajan"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "zer0",
+        "zerOS",
+        "boplog",
+        "evolve",
+        "blueprint",
+        "world sim",
+        "health"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 37111
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "product-boplog",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "boplog",
+        "build log"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 24770
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "product-evolve",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "evolve",
+        "kvnloo"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "zer0",
+        "boplog",
+        "evolve"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/evolve/",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 32996
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "product-tmux-agent-fleet",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "tmux-agent-fleet",
+        "kvnloo"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "boplog",
+        "tmux-agent-fleet"
+      ],
+      "mentioned_urls": [
+        "https://github.com/kvnloo/tmux-agent-fleet",
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 38543
+    },
+    {
+      "engine": "hermes",
+      "prompt_id": "product-zeros",
+      "skipped": false,
+      "mention_hit": 1,
+      "url_hit": 1,
+      "no_hallucination": 1,
+      "mentioned_expect": [
+        "zerOS",
+        "zer0"
+      ],
+      "mentioned_entity": [
+        "Kevin Rajan",
+        "kvnloo",
+        "zer0",
+        "zerOS",
+        "boplog",
+        "evolve",
+        "world sim",
+        "health"
+      ],
+      "mentioned_urls": [
+        "https://kvnloo.github.io/boplog/"
+      ],
+      "halluc_flags": [],
+      "exit_code": 0,
+      "ms": 39988
+    }
+  ]
+}

@@ -1,6 +1,22 @@
 User-agent: *
 Allow: /
 
+# AI / generative search crawlers (public site — do not block)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
 # Public machine-readable surfaces
 Allow: /data/
 Allow: /llms.txt

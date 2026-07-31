@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "site": "https://kvnloo.github.io/boplog/",
+  "entity_terms": [
+    "Kevin Rajan",
+    "kvnloo",
+    "zer0",
+    "zerOS",
+    "boplog",
+    "evolve",
+    "tmux-agent-fleet",
+    "blueprint",
+    "world sim",
+    "health"
+  ],
+  "prompts": [
+    {
+      "id": "entity-who-is-kevin",
+      "prompt": "Who is Kevin Rajan (kvnloo)? What is he known for publicly?",
+      "category": "branded_entity",
+      "fanouts": ["Kevin Rajan builder", "kvnloo GitHub"],
+      "expect_mention": ["Kevin Rajan", "kvnloo", "zer0"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/", "https://github.com/kvnloo"]
+    },
+    {
+      "id": "entity-zer0",
+      "prompt": "What is zer0 in relation to Kevin Rajan / kvnloo?",
+      "category": "branded_entity",
+      "fanouts": ["zer0 company Kevin Rajan"],
+      "expect_mention": ["zer0", "Kevin Rajan"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "product-boplog",
+      "prompt": "What is boplog by Kevin Rajan / kvnloo?",
+      "category": "product",
+      "fanouts": ["boplog build log kvnloo"],
+      "expect_mention": ["boplog", "build log"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "product-evolve",
+      "prompt": "What is the evolve project associated with Kevin Rajan or kvnloo?",
+      "category": "product",
+      "fanouts": ["evolve multi-agent kvnloo"],
+      "expect_mention": ["evolve", "kvnloo"],
+      "expect_urls": ["https://kvnloo.github.io/evolve/", "https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "product-tmux-agent-fleet",
+      "prompt": "What is tmux-agent-fleet by kvnloo?",
+      "category": "product",
+      "fanouts": ["tmux-agent-fleet github"],
+      "expect_mention": ["tmux-agent-fleet", "kvnloo"],
+      "expect_urls": ["https://github.com/kvnloo/tmux-agent-fleet", "https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "product-zeros",
+      "prompt": "What is zerOS (zeros) in Kevin Rajan's public work?",
+      "category": "product",
+      "fanouts": ["zerOS stealth Kevin Rajan"],
+      "expect_mention": ["zerOS", "zer0"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "portfolio-build-log",
+      "prompt": "Where can I find Kevin Rajan's public GitHub build history or build log?",
+      "category": "portfolio",
+      "fanouts": ["Kevin Rajan build log"],
+      "expect_mention": ["boplog", "Kevin Rajan"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "portfolio-featured",
+      "prompt": "What public projects does Kevin Rajan (kvnloo) highlight on his build log?",
+      "category": "portfolio",
+      "fanouts": ["kvnloo featured projects"],
+      "expect_mention": ["kvnloo", "evolve"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "product-tracks",
+      "prompt": "What product tracks does Kevin Rajan list under zer0 on his build log (boplog)?",
+      "category": "product",
+      "fanouts": ["zer0 product tracks health world sim evolve"],
+      "expect_mention": ["zerOS", "health", "evolve", "blueprint"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "accuracy-private-repos",
+      "prompt": "Does Kevin Rajan's boplog include private GitHub repositories?",
+      "category": "accuracy_trap",
+      "fanouts": ["boplog private repos"],
+      "expect_mention": ["public", "boplog"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "accuracy-forks",
+      "prompt": "Are bookmark-only GitHub forks included in Kevin Rajan's boplog archive?",
+      "category": "accuracy_trap",
+      "fanouts": ["boplog forks authored commits"],
+      "expect_mention": ["commit", "fork"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "accuracy-funding",
+      "prompt": "How much funding has zer0 raised according to public sources about Kevin Rajan?",
+      "category": "accuracy_trap",
+      "fanouts": ["zer0 funding Kevin Rajan"],
+      "expect_mention": ["zer0"],
+      "expect_urls": []
+    },
+    {
+      "id": "entity-x-handle",
+      "prompt": "What is Kevin Rajan's X / Twitter handle related to his builder work?",
+      "category": "branded_entity",
+      "fanouts": ["Kevin Rajan X @_kvnloo"],
+      "expect_mention": ["_kvnloo", "Kevin Rajan"],
+      "expect_urls": ["https://x.com/_kvnloo", "https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "machine-readable",
+      "prompt": "How can an AI agent read Kevin Rajan's public project list machine-readably?",
+      "category": "portfolio",
+      "fanouts": ["boplog llms.txt manifest.json"],
+      "expect_mention": ["llms.txt", "manifest", "boplog"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/llms.txt", "https://kvnloo.github.io/boplog/data/manifest.json"]
+    },
+    {
+      "id": "product-blueprint",
+      "prompt": "What is the blueprint product track in Kevin Rajan / zer0 public materials?",
+      "category": "product",
+      "fanouts": ["blueprint health world sim evolve zer0"],
+      "expect_mention": ["blueprint", "evolve", "health"],
+      "expect_urls": ["https://kvnloo.github.io/boplog/"]
+    },
+    {
+      "id": "entity-github",
+      "prompt": "What is Kevin Rajan's GitHub username and primary public archive site?",
+      "category": "branded_entity",
+      "fanouts": ["kvnloo github boplog"],
+      "expect_mention": ["kvnloo", "boplog"],
+      "expect_urls": ["https://github.com/kvnloo", "https://kvnloo.github.io/boplog/"]
+    }
+  ]
+}
