@@ -13,7 +13,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools"
       ],
       "links": [
         {
@@ -28,7 +28,14 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions"
+      "productName": "open-source contributions",
+      "domains": [
+        "ai-devtools"
+      ],
+      "languages": [
+        "py"
+      ],
+      "stack": []
     }
   ]
 }

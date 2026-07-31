@@ -12,7 +12,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web",
+        "ai-devtools"
       ],
       "links": [
         {
@@ -27,7 +28,17 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "3d-web",
+        "ai-devtools"
+      ],
+      "languages": [
+        "js"
+      ],
+      "stack": [
+        "ffmpeg"
+      ]
     },
     {
       "id": "aliens-made-this",
@@ -41,7 +52,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web"
       ],
       "links": [
         {
@@ -60,7 +71,14 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "3d-web"
+      ],
+      "languages": [
+        "html"
+      ],
+      "stack": []
     },
     {
       "id": "boplog",
@@ -75,7 +93,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "build-in-public",
+        "ai-devtools"
       ],
       "links": [
         {
@@ -94,7 +113,17 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "boplog",
-      "productName": "boplog"
+      "productName": "boplog",
+      "domains": [
+        "build-in-public",
+        "ai-devtools"
+      ],
+      "languages": [
+        "js"
+      ],
+      "stack": [
+        "github-actions"
+      ]
     },
     {
       "id": "cod",
@@ -108,7 +137,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools"
       ],
       "links": [
         {
@@ -127,7 +156,14 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "ai-devtools"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": []
     },
     {
       "id": "halo",
@@ -141,7 +177,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web"
       ],
       "links": [
         {
@@ -156,7 +192,18 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "3d-web"
+      ],
+      "languages": [
+        "js"
+      ],
+      "stack": [
+        "threejs",
+        "vite",
+        "ffmpeg"
+      ]
     },
     {
       "id": "metallic-card",
@@ -170,7 +217,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web"
       ],
       "links": [
         {
@@ -189,7 +236,16 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "3d-web"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": [
+        "react"
+      ]
     },
     {
       "id": "kvnloo",
@@ -202,7 +258,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "build-in-public",
+        "professional"
       ],
       "links": [
         {
@@ -217,7 +274,13 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "build-in-public",
+        "professional"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "files",
@@ -231,7 +294,9 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "professional",
+        "automation",
+        "ai-devtools"
       ],
       "links": [
         {
@@ -253,7 +318,18 @@
       "productName": "dotfiles",
       "featured": true,
       "featuredRank": 2,
-      "eyebrow": "Shell"
+      "eyebrow": "Shell",
+      "domains": [
+        "professional",
+        "automation",
+        "ai-devtools"
+      ],
+      "languages": [
+        "sh"
+      ],
+      "stack": [
+        "tmux"
+      ]
     },
     {
       "id": "pm",
@@ -267,7 +343,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "automation",
+        "ai-sdlc"
       ],
       "links": [
         {
@@ -282,7 +359,17 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS"
+      "productName": "zerOS",
+      "domains": [
+        "automation",
+        "ai-sdlc"
+      ],
+      "languages": [
+        "py"
+      ],
+      "stack": [
+        "llm"
+      ]
     },
     {
       "id": "zer0-cockpit",
@@ -296,7 +383,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "automation",
+        "ai-devtools"
       ],
       "links": [
         {
@@ -311,7 +399,15 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS"
+      "productName": "zerOS",
+      "domains": [
+        "automation",
+        "ai-devtools"
+      ],
+      "languages": [
+        "py"
+      ],
+      "stack": []
     },
     {
       "id": "zer0-harness-spine",
@@ -325,7 +421,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "agent-orchestration",
+        "automation"
       ],
       "links": [
         {
@@ -340,7 +437,17 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS"
+      "productName": "zerOS",
+      "domains": [
+        "agent-orchestration",
+        "automation"
+      ],
+      "languages": [
+        "py"
+      ],
+      "stack": [
+        "llm"
+      ]
     },
     {
       "id": "zer0-voice",
@@ -354,7 +461,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "automation",
+        "ai-devtools"
       ],
       "links": [
         {
@@ -369,7 +477,17 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "zeros",
-      "productName": "zerOS"
+      "productName": "zerOS",
+      "domains": [
+        "automation",
+        "ai-devtools"
+      ],
+      "languages": [
+        "py"
+      ],
+      "stack": [
+        "llm"
+      ]
     },
     {
       "id": "tmux-agent-fleet",
@@ -383,7 +501,9 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "agent-orchestration",
+        "ai-devtools",
+        "ai-sdlc"
       ],
       "links": [
         {
@@ -401,7 +521,20 @@
       "productName": "agent tooling",
       "featured": true,
       "featuredRank": 6,
-      "eyebrow": "Shell"
+      "eyebrow": "Shell",
+      "domains": [
+        "agent-orchestration",
+        "ai-devtools",
+        "ai-sdlc"
+      ],
+      "languages": [
+        "sh"
+      ],
+      "stack": [
+        "tmux",
+        "llm",
+        "claude-code"
+      ]
     },
     {
       "id": "claude-island",
@@ -415,7 +548,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools"
       ],
       "links": [
         {
@@ -430,7 +563,15 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "agent-tooling",
-      "productName": "agent tooling"
+      "productName": "agent tooling",
+      "domains": [
+        "ai-devtools"
+      ],
+      "languages": [],
+      "stack": [
+        "claude-code",
+        "llm"
+      ]
     },
     {
       "id": "tesla-infotainment",
@@ -444,7 +585,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web"
       ],
       "links": [
         {
@@ -459,7 +600,17 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "tesla-ui",
-      "productName": "tesla ui"
+      "productName": "tesla ui",
+      "domains": [
+        "3d-web"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": [
+        "react",
+        "vite"
+      ]
     },
     {
       "id": "tesla",
@@ -473,7 +624,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web",
+        "ai-devtools"
       ],
       "links": [
         {
@@ -492,7 +644,18 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "tesla-ui",
-      "productName": "tesla ui"
+      "productName": "tesla ui",
+      "domains": [
+        "3d-web",
+        "ai-devtools"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": [
+        "react",
+        "vite"
+      ]
     },
     {
       "id": "farm",
@@ -505,7 +668,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "digital-twin",
+        "automation"
       ],
       "links": [
         {
@@ -520,7 +684,13 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "world-sim",
-      "productName": "world sim"
+      "productName": "world sim",
+      "domains": [
+        "digital-twin",
+        "automation"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "kpu-sim",
@@ -535,7 +705,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "digital-twin"
       ],
       "links": [
         {
@@ -554,7 +724,14 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions"
+      "productName": "open-source contributions",
+      "domains": [
+        "digital-twin"
+      ],
+      "languages": [
+        "c++"
+      ],
+      "stack": []
     },
     {
       "id": "coding-interview-university",
@@ -568,7 +745,8 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "professional",
+        "ai-devtools"
       ],
       "links": [
         {
@@ -583,7 +761,13 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions"
+      "productName": "open-source contributions",
+      "domains": [
+        "professional",
+        "ai-devtools"
+      ],
+      "languages": [],
+      "stack": []
     },
     {
       "id": "scrollytelling",
@@ -597,7 +781,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "3d-web"
       ],
       "links": [
         {
@@ -612,7 +796,14 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": ""
+      "productName": "",
+      "domains": [
+        "3d-web"
+      ],
+      "languages": [
+        "ts"
+      ],
+      "stack": []
     },
     {
       "id": "cv",
@@ -626,7 +817,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "professional"
       ],
       "links": [
         {
@@ -641,7 +832,14 @@
       "portfolio": "professional",
       "portfolioName": "professional",
       "product": "professional-showcase",
-      "productName": "showcase"
+      "productName": "showcase",
+      "domains": [
+        "professional"
+      ],
+      "languages": [
+        "tex"
+      ],
+      "stack": []
     },
     {
       "id": "uiua",
@@ -656,7 +854,7 @@
       ],
       "formats": [],
       "categories": [
-        "dev"
+        "ai-devtools"
       ],
       "links": [
         {
@@ -675,7 +873,14 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "open-source-contrib",
-      "productName": "open-source contributions"
+      "productName": "open-source contributions",
+      "domains": [
+        "ai-devtools"
+      ],
+      "languages": [
+        "rs"
+      ],
+      "stack": []
     }
   ]
 }
