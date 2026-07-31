@@ -126,7 +126,7 @@
     {
       "id": "files",
       "name": ".files",
-      "description": "Personal Linux/macOS dotfiles for Hyprland, tmux, shells, audio DSP, and agent tooling.",
+      "description": "stay in flow while u code",
       "date": "2026-07-28",
       "url": "https://kvnloo.github.io/.files/",
       "types": [
@@ -162,7 +162,7 @@
     {
       "id": "pm",
       "name": "_pm",
-      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the company OS PM core.",
+      "description": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the company OS PM core.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/_pm",
       "types": [

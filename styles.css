@@ -443,29 +443,150 @@ html[data-theme="night"] .theme-toggle__thumb {
   background: var(--accent-soft);
   box-shadow: inset 0 0 0 1px var(--hair);
 }
-.activity__scroll { overflow-x: auto; padding: 2px 0 5px; scrollbar-width: thin; }
-.activity__map { position: relative; width: max-content; min-width: 100%; padding: 18px 0 0 31px; }
-.activity__months { position: absolute; top: 0; left: 31px; display: grid; grid-template-columns: repeat(52, 11px); gap: 3px; height: 14px; color: var(--faint); font: 9px/1 var(--mono); }
+/*
+ * Activity widget: compact colored dots by default (mobile always; desktop rest).
+ * Desktop hover/focus (.is-expanded) morphs dots → classic square calendar.
+ */
+.activity {
+  --act-weeks: 52;
+  --act-gap: 2px;
+  --act-cell: 0; /* 0 = fluid fill */
+  --act-radius: 50%;
+  --act-label-w: 0px;
+  --act-label-h: 0px;
+  --act-label-opacity: 0;
+  --act-border-w: 0px;
+  --act-pad-top: 0px;
+  --act-pad-left: 0px;
+  transition:
+    --act-gap 320ms var(--ease-out),
+    --act-radius 320ms var(--ease-out),
+    --act-label-w 320ms var(--ease-out),
+    --act-label-h 320ms var(--ease-out),
+    --act-label-opacity 240ms var(--ease-in-out),
+    --act-border-w 240ms var(--ease-in-out),
+    --act-pad-top 320ms var(--ease-out),
+    --act-pad-left 320ms var(--ease-out);
+}
+.activity__viewport {
+  overflow: hidden;
+  padding: 4px 0 6px;
+  border-radius: 8px;
+  transition: background var(--dur) var(--ease-in-out);
+}
+.activity.is-expanded .activity__viewport {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  background: var(--signal-soft);
+  padding: 8px 6px 10px;
+}
+.activity__map {
+  --activity-weeks: var(--act-weeks);
+  position: relative;
+  width: 100%;
+  min-width: 0;
+  padding: var(--act-pad-top) 0 0 var(--act-pad-left);
+  transition:
+    padding 320ms var(--ease-out),
+    width 320ms var(--ease-out),
+    min-width 320ms var(--ease-out);
+}
+.activity.is-expanded .activity__map {
+  width: max-content;
+  min-width: 100%;
+}
+.activity__months {
+  position: absolute;
+  top: 0;
+  left: var(--act-pad-left);
+  display: grid;
+  grid-template-columns: repeat(var(--activity-weeks), minmax(0, 1fr));
+  gap: var(--act-gap);
+  height: var(--act-label-h);
+  opacity: var(--act-label-opacity);
+  color: var(--faint);
+  font: 9px/1 var(--mono);
+  pointer-events: none;
+  transition:
+    opacity 240ms var(--ease-in-out),
+    height 320ms var(--ease-out),
+    left 320ms var(--ease-out);
+}
+.activity.is-expanded .activity__months {
+  grid-template-columns: repeat(var(--activity-weeks), 11px);
+}
 .activity__months span { white-space: nowrap; }
-.activity__days { position: absolute; top: 18px; left: 0; display: grid; grid-template-rows: repeat(7, 11px); gap: 3px; color: var(--faint); font: 8px/11px var(--mono); }
+.activity__days {
+  position: absolute;
+  top: var(--act-pad-top);
+  left: 0;
+  display: grid;
+  grid-template-rows: repeat(7, minmax(0, 1fr));
+  gap: var(--act-gap);
+  width: var(--act-label-w);
+  height: calc(7 * 11px + 6 * 3px);
+  opacity: var(--act-label-opacity);
+  color: var(--faint);
+  font: 8px/11px var(--mono);
+  pointer-events: none;
+  overflow: hidden;
+  transition:
+    opacity 240ms var(--ease-in-out),
+    width 320ms var(--ease-out),
+    top 320ms var(--ease-out);
+}
 .activity__days span:nth-child(1) { grid-row: 2; }
 .activity__days span:nth-child(2) { grid-row: 4; }
 .activity__days span:nth-child(3) { grid-row: 6; }
-.activity__weeks { display: flex; gap: 3px; }
-.activity__week { display: grid; grid-template-rows: repeat(7, 11px); gap: 3px; }
+.activity__weeks {
+  display: grid;
+  grid-template-columns: repeat(var(--activity-weeks), minmax(0, 1fr));
+  gap: var(--act-gap);
+  width: 100%;
+  transition: gap 320ms var(--ease-out);
+}
+.activity.is-expanded .activity__weeks {
+  display: flex;
+  width: max-content;
+  gap: 3px;
+}
+.activity__week {
+  display: grid;
+  grid-template-rows: repeat(7, minmax(0, 1fr));
+  gap: var(--act-gap);
+  min-width: 0;
+  transition: gap 320ms var(--ease-out);
+}
+.activity.is-expanded .activity__week {
+  grid-template-rows: repeat(7, 11px);
+  gap: 3px;
+}
 .activity__cell {
-  width: 11px;
-  height: 11px;
+  width: 100%;
+  aspect-ratio: 1;
+  height: auto;
+  min-width: 0;
+  min-height: 0;
   padding: 0;
-  border: 1px solid var(--activity-border);
-  border-radius: 2px;
+  border: var(--act-border-w) solid var(--activity-border);
+  border-radius: var(--act-radius);
   background: var(--activity-0);
   cursor: pointer;
+  transform-origin: center;
   transition:
-    transform var(--dur-fast) var(--ease-out),
+    transform 180ms var(--ease-out),
+    border-radius 320ms var(--ease-out),
     border-color var(--dur-fast) var(--ease-in-out),
+    border-width 240ms var(--ease-in-out),
     box-shadow var(--dur-fast) var(--ease-in-out),
-    background var(--dur) var(--ease-in-out);
+    background var(--dur) var(--ease-in-out),
+    width 320ms var(--ease-out),
+    height 320ms var(--ease-out);
+}
+.activity.is-expanded .activity__cell {
+  width: 11px;
+  height: 11px;
+  aspect-ratio: auto;
 }
 .activity__cell[data-level="1"] { background: var(--activity-1); }
 .activity__cell[data-level="2"] { background: var(--activity-2); }
@@ -473,29 +594,105 @@ html[data-theme="night"] .theme-toggle__thumb {
 .activity__cell[data-level="4"] { background: var(--activity-4); }
 .activity__cell:hover {
   border-color: var(--text);
-  transform: scale(1.18);
+  transform: scale(1.35);
   box-shadow: 0 0 0 1px var(--accent-soft);
   z-index: 1;
 }
+.activity.is-expanded .activity__cell:hover { transform: scale(1.18); }
 .activity__cell:active { transform: scale(1.05); }
 .activity__cell.is-selected {
-  outline: 2px solid var(--accent);
+  outline: 1.5px solid var(--accent);
   outline-offset: 1px;
+  box-shadow: 0 0 8px var(--glow);
+}
+.activity.is-expanded .activity__cell.is-selected {
+  outline-width: 2px;
   box-shadow: 0 0 10px var(--glow);
 }
 .activity__cell:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
-.activity__legend { display: flex; align-items: center; justify-content: flex-end; gap: 3px; margin-top: 4px; color: var(--faint); font: 9px/1 var(--mono); }
+
+/* Expanded chrome (desktop hover / keyboard focus) */
+.activity.is-expanded {
+  --act-gap: 3px;
+  --act-radius: 2px;
+  --act-label-w: 28px;
+  --act-label-h: 14px;
+  --act-label-opacity: 1;
+  --act-border-w: 1px;
+  --act-pad-top: 18px;
+  --act-pad-left: 31px;
+}
+
+.activity__legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+  margin-top: 4px;
+  color: var(--faint);
+  font: 9px/1 var(--mono);
+}
 .activity__legend i {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--activity-0);
+  transition: border-radius 320ms var(--ease-out), width 320ms var(--ease-out), height 320ms var(--ease-out);
+}
+.activity.is-expanded .activity__legend i {
   width: 10px;
   height: 10px;
   border: 1px solid var(--activity-border);
   border-radius: 2px;
-  background: var(--activity-0);
 }
 .activity__legend i[data-level="1"] { background: var(--activity-1); }
 .activity__legend i[data-level="2"] { background: var(--activity-2); }
 .activity__legend i[data-level="3"] { background: var(--activity-3); }
 .activity__legend i[data-level="4"] { background: var(--activity-4); }
+
+/* Touch / coarse pointer: never expand — stay compact dots */
+@media (hover: none), (pointer: coarse) {
+  .activity.is-expanded {
+    --act-gap: 2px;
+    --act-radius: 50%;
+    --act-label-w: 0px;
+    --act-label-h: 0px;
+    --act-label-opacity: 0;
+    --act-border-w: 0px;
+    --act-pad-top: 0px;
+    --act-pad-left: 0px;
+  }
+  .activity.is-expanded .activity__viewport {
+    overflow: hidden;
+    background: transparent;
+    padding: 4px 0 6px;
+  }
+  .activity.is-expanded .activity__map {
+    width: 100%;
+    min-width: 0;
+  }
+  .activity.is-expanded .activity__weeks {
+    display: grid;
+    width: 100%;
+    gap: var(--act-gap);
+  }
+  .activity.is-expanded .activity__week {
+    grid-template-rows: repeat(7, minmax(0, 1fr));
+    gap: var(--act-gap);
+  }
+  .activity.is-expanded .activity__cell {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .activity.is-expanded .activity__legend i {
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-radius: 50%;
+  }
+}
 
 .filter-disclosure {
   margin: 0 0 4px;

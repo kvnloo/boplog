@@ -1,10 +1,11 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260730.16';
+  const BUILD_VERSION = '20260730.17';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
+  const ACTIVITY_WEEKS = 52;
   document.documentElement.dataset.build = BUILD_VERSION;
 
   /** Project ids that also appear as props in the interactive shop (portfolio demos/room). */
@@ -336,13 +337,14 @@
     const end = latestDate > today ? latestDate : today;
     end.setUTCDate(end.getUTCDate() + (6 - end.getUTCDay()));
     const start = new Date(end);
-    start.setUTCDate(start.getUTCDate() - (52 * 7 - 1));
+    start.setUTCDate(start.getUTCDate() - (ACTIVITY_WEEKS * 7 - 1));
     const maxCount = Math.max(1, ...counts.values(), 0);
     const weeks = [];
     const monthLabels = [];
     let previousMonth = -1;
+    let activeDays = 0;
 
-    for (let week = 0; week < 52; week += 1) {
+    for (let week = 0; week < ACTIVITY_WEEKS; week += 1) {
       const days = [];
       const weekStart = new Date(start);
       weekStart.setUTCDate(start.getUTCDate() + week * 7);
@@ -356,28 +358,56 @@
         date.setUTCDate(weekStart.getUTCDate() + day);
         const value = isoDate(date);
         const count = counts.get(value) || 0;
+        if (count) activeDays += 1;
         const selected = mode === 'builds' && value === state.date;
         const label = `${count} ${count === 1 ? unit : units} on ${localDateLabel(value)}`;
-        const disabled = mode === 'commits' ? '' : '';
-        days.push(`<button class="activity__cell${selected ? ' is-selected' : ''}" type="button" data-activity-date="${value}" data-level="${activityLevel(count, maxCount)}" aria-pressed="${selected}" aria-label="${label}" title="${label}"${disabled}></button>`);
+        days.push(
+          `<button class="activity__cell${selected ? ' is-selected' : ''}" type="button" data-activity-date="${value}" data-level="${activityLevel(count, maxCount)}" aria-pressed="${selected ? 'true' : 'false'}" aria-label="${escapeHtml(label)}" title="${escapeHtml(label)}"></button>`,
+        );
       }
       weeks.push(`<div class="activity__week">${days.join('')}</div>`);
     }
 
+    elements.activityMap.style.setProperty('--activity-weeks', String(ACTIVITY_WEEKS));
     elements.activityMap.innerHTML = `
-      <div class="activity__months">${monthLabels.join('')}</div>
+      <div class="activity__months" aria-hidden="true">${monthLabels.join('')}</div>
       <div class="activity__days" aria-hidden="true"><span>Mon</span><span>Wed</span><span>Fri</span></div>
       <div class="activity__weeks">${weeks.join('')}</div>`;
 
     if (mode === 'commits') {
       elements.activitySelection.textContent = counts.size
-        ? 'last 52 weeks · GitHub commits'
+        ? `${activeDays} active days · last year · commits`
         : 'no commit snapshot yet · run sync';
     } else {
       elements.activitySelection.textContent = state.date
         ? `${localDateLabel(state.date)} · click again to clear`
-        : 'last 52 weeks · site build log only';
+        : `${activeDays} active days · last year · build log`;
     }
+  }
+
+  /** Desktop only: hover/focus morphs compact dots → square calendar. Mobile stays dots. */
+  function bindActivityExpand() {
+    const root = document.querySelector('.activity');
+    if (!root) return;
+    const fineHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+
+    const setExpanded = (on) => {
+      if (!fineHover.matches) {
+        root.classList.remove('is-expanded');
+        return;
+      }
+      root.classList.toggle('is-expanded', on);
+    };
+
+    root.addEventListener('mouseenter', () => setExpanded(true));
+    root.addEventListener('mouseleave', () => setExpanded(false));
+    root.addEventListener('focusin', () => setExpanded(true));
+    root.addEventListener('focusout', (event) => {
+      if (!root.contains(event.relatedTarget)) setExpanded(false);
+    });
+    fineHover.addEventListener('change', () => {
+      if (!fineHover.matches) root.classList.remove('is-expanded');
+    });
   }
 
   function renderArchive() {
@@ -718,6 +748,7 @@
     };
     elements.activityModeBuilds?.addEventListener('click', onActivityModeClick);
     elements.activityModeCommits?.addEventListener('click', onActivityModeClick);
+    bindActivityExpand();
 
     elements.randomBuild.addEventListener('click', () => {
       const pool = getFilteredProjects();

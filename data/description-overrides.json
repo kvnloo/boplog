@@ -2,7 +2,6 @@
   "_comment": "Hand-written one-liners that survive GitHub sync. Keys are repo names (exact). Prefer these over empty GitHub descriptions and weak README boilerplate.",
   "boplog": "Static build-in-public log: public GitHub repos I've actually committed to, synced on a schedule.",
   "cod": "Early scaffold for a coding-related experiment (public placeholder).",
-  ".files": "Personal Linux/macOS dotfiles for Hyprland, tmux, shells, audio DSP, and agent tooling.",
   "_pm": "Zer0 issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the company OS PM core.",
   "zer0-cockpit": "Read-only, dependency-free terminal dashboard for explicit Zer0 project progress.",
   "zer0-harness-spine": "Ultra-thin harness contracts and provider adapters for the Zer0 agent stack (no orchestration state).",
