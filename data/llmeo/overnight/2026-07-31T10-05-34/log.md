@@ -425,3 +425,63 @@ isc-ai-sdlc exit=0 130317ms
 [done] codex neg-recipe exit=0 18423ms
 
 ```
+
+## Round 8/9 — 2026-07-31T14:36:39.956Z
+
+### apply-tags exit 0
+```
+stamped 52 projects across 5 files
+
+```
+### build-topics exit 0
+```
+built 9 topic pages + index
+
+```
+### check exit 0
+### benchmark exit 0
+```
+/workspace/boplog/data/llmeo/runs/bench-2026-07-31T14-36-40/raw.json
+/workspace/boplog/data/llmeo/runs/bench-2026-07-31T14-36-40/benchmark-scoreboard.md
+{
+  "healthy": true,
+  "suites": {
+    "branded": {
+      "prompt_count": 2,
+      "hits": 2,
+      "rate": 1
+    },
+    "discovery": {
+      "prompt_count": 6,
+      "hits": 6,
+      "rate": 1
+    },
+    "negative": {
+      "prompt_count": 2,
+      "hits": 2,
+      "rate": 1
+    }
+  }
+}
+
+ne] codex disc-ai-sdlc exit=0 113346ms
+[run] codex disc-tmux-agents suite=discovery
+[done] codex disc-tmux-agents exit=0 146308ms
+[run] codex disc-digital-twin suite=discovery
+[done] codex disc-digital-twin exit=0 75721ms
+[run] codex disc-build-log suite=discovery
+[done] codex disc-build-log exit=0 110040ms
+[run] codex disc-llms-txt suite=discovery
+[done] codex disc-llms-txt exit=0 75900ms
+[run] codex disc-automation suite=discovery
+[done] codex disc-automation exit=0 114663ms
+[run] codex brand-who suite=branded
+[done] codex brand-who exit=0 69372ms
+[run] codex brand-equalizer suite=branded
+[done] codex brand-equalizer exit=0 53830ms auth-skip
+[run] codex neg-crm suite=negative
+[done] codex neg-crm exit=0 80365ms
+[run] codex neg-recipe suite=negative
+[done] codex neg-recipe exit=0 13211ms
+
+```
