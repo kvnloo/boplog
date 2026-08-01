@@ -163,7 +163,7 @@
       "name": "metallic-card",
       "description": "Metallic silver border card UI, synced from v0/Vercel design iterations.",
       "date": "2026-07-31",
-      "url": "https://ek.vin/",
+      "url": "https://github.com/kvnloo/metallic-card",
       "types": [
         "public",
         "ts"
@@ -174,12 +174,12 @@
       ],
       "links": [
         {
-          "label": "site",
-          "url": "https://ek.vin/"
-        },
-        {
           "label": "github",
           "url": "https://github.com/kvnloo/metallic-card"
+        },
+        {
+          "label": "resume pdf",
+          "url": "https://raw.githubusercontent.com/kvnloo/metallic-card/main/public/ai-eng.pdf"
         }
       ],
       "company": "zer0",
