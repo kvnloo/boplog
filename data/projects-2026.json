@@ -1,6 +1,40 @@
 {
   "projects": [
     {
+      "id": "boplog",
+      "name": "boplog",
+      "description": "Static public build log of GitHub repos filtered to authored commits only (not stars or bookmark forks), with llms.txt and a JSON project manifest for agents.",
+      "date": "2026-08-01",
+      "url": "https://kvnloo.github.io/boplog/",
+      "types": [
+        "public",
+        "js",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/boplog/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/boplog"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "boplog",
+      "productName": "boplog"
+    },
+    {
       "id": "4dps",
       "name": "4dps",
       "description": "Stills, photospheres & 4D 360° packs for 3D web scenes",
@@ -61,40 +95,6 @@
       "portfolioName": "experiment",
       "product": "",
       "productName": ""
-    },
-    {
-      "id": "boplog",
-      "name": "boplog",
-      "description": "Static public build log of GitHub repos filtered to authored commits only (not stars or bookmark forks), with llms.txt and a JSON project manifest for agents.",
-      "date": "2026-07-31",
-      "url": "https://kvnloo.github.io/boplog/",
-      "types": [
-        "public",
-        "js",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/boplog/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/boplog"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "boplog",
-      "productName": "boplog"
     },
     {
       "id": "cod",
@@ -176,10 +176,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/metallic-card"
-        },
-        {
-          "label": "resume pdf",
-          "url": "https://raw.githubusercontent.com/kvnloo/metallic-card/main/public/ai-eng.pdf"
         }
       ],
       "company": "zer0",
