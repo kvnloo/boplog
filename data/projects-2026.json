@@ -1,6 +1,35 @@
 {
   "projects": [
     {
+      "id": "4dps",
+      "name": "4dps",
+      "description": "Stills, photospheres & 4D 360° packs for 3D web scenes",
+      "date": "2026-08-01",
+      "url": "https://github.com/kvnloo/4dps",
+      "types": [
+        "public",
+        "js"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/4dps"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "boplog",
       "name": "boplog",
       "description": "Static public build log of GitHub repos filtered to authored commits only (not stars or bookmark forks), with llms.txt and a JSON project manifest for agents.",
@@ -33,35 +62,6 @@
       "portfolioName": "product",
       "product": "boplog",
       "productName": "boplog"
-    },
-    {
-      "id": "4dps",
-      "name": "4dps",
-      "description": "Stills, photospheres & 4D 360° packs for 3D web scenes",
-      "date": "2026-07-31",
-      "url": "https://github.com/kvnloo/4dps",
-      "types": [
-        "public",
-        "js"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/4dps"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
     },
     {
       "id": "aliens-made-this",

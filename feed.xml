@@ -5,8 +5,17 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-08-01T07:15:48Z</updated>
+  <updated>2026-08-01T09:24:04Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
+  <entry>
+    <title>4dps</title>
+    <id>https://github.com/kvnloo/4dps</id>
+    <link href="https://github.com/kvnloo/4dps"/>
+    <published>2026-08-01T00:00:00Z</published>
+    <updated>2026-08-01T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Stills, photospheres &amp; 4D 360° packs for 3D web scenes</summary>
+  </entry>
   <entry>
     <title>boplog</title>
     <id>https://kvnloo.github.io/boplog/</id>
@@ -15,15 +24,6 @@
     <updated>2026-08-01T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Static public build log of GitHub repos filtered to authored commits only (not stars or bookmark forks), with llms.txt and a JSON project manifest for agents.</summary>
-  </entry>
-  <entry>
-    <title>4dps</title>
-    <id>https://github.com/kvnloo/4dps</id>
-    <link href="https://github.com/kvnloo/4dps"/>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Stills, photospheres &amp; 4D 360° packs for 3D web scenes</summary>
   </entry>
   <entry>
     <title>aliens-made-this</title>
