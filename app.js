@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260731.14';
+  const BUILD_VERSION = '20260731.15';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -1176,7 +1176,32 @@
     }
   }
 
+  /** Open collapsed about/faq/links when deep-linked (#faq-…, #about, #links). */
+  function openSectionFromHash() {
+    const raw = (window.location.hash || '').replace(/^#/, '');
+    if (!raw) return;
+    let target = document.getElementById(raw);
+    if (!target) return;
+
+    // FAQ item anchors live inside #faq details.
+    let panel = target.closest?.('details.section-disclosure');
+    if (!panel && target.matches?.('details.section-disclosure')) panel = target;
+    if (!panel) return;
+
+    panel.open = true;
+    // After open, scroll to the specific element (item or section).
+    requestAnimationFrame(() => {
+      try {
+        target.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      } catch (_) {
+        target.scrollIntoView(true);
+      }
+    });
+  }
+
   elements.currentYear.textContent = new Date().getFullYear();
   setTheme(getTheme());
+  window.addEventListener('hashchange', openSectionFromHash);
+  openSectionFromHash();
   loadProjects();
 })();

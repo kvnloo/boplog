@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f3f3f0" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#030303" media="(prefers-color-scheme: dark)">
-  <meta name="boplog-build" content="20260731.14">
+  <meta name="boplog-build" content="20260731.15">
   <meta name="description" content="kevin rajan — builder and automator at zer0. public build log. civilization advances by automating important actions and reducing decision fatigue.">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <meta property="og:title" content="zer0 · Kevin Rajan — Build Log">
@@ -17,7 +17,7 @@
   <title>zer0 · Kevin Rajan — Build Log</title>
   <link rel="canonical" href="https://kvnloo.github.io/boplog/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=20260731.14">
+  <link rel="stylesheet" href="./styles.css?v=20260731.15">
   <script>
     (() => {
       try {
@@ -352,23 +352,24 @@
       </div>
     </section>
 
-    <section class="about" id="about" aria-labelledby="about-title">
-      <div class="section-line">
+    <details class="section-disclosure about" id="about">
+      <summary class="section-disclosure__summary">
         <h2 id="about-title"><span aria-hidden="true">//</span> about</h2>
-      </div>
-      <div class="about__copy">
+        <span class="section-disclosure__hint">who / why</span>
+      </summary>
+      <div class="about__copy section-disclosure__body">
         <p>solo founder of <strong>zer0</strong>, but first a builder, engineer, scientist, solutions architect, systems thinker, and automator. code is the great equalizer; civilization advances by automating important actions and reducing decision fatigue. the through-line is agency: automate humanitarian causes (health, infrastructure, and open systems) so competence compounds and life gets better.</p>
         <p>on x i write about falsifiable “done,” open harnesses over black boxes, and systems where agents can claim anything but pass nothing without proof. that stance shows up in the work: agent fleets, claim fences, product loops, health and environment instrumentation, experiments that stress autonomous orchestration.</p>
         <p>this site is a public build log under zer0. each project is tagged as <strong>product</strong>, <strong>experiment</strong>, or <strong>professional</strong> — experiments sit beside products, not under them. product tracks include <strong class="tm-case">zerOS</strong> (stealth company os), plus the blueprint system: <strong>health</strong>, <strong>world sim</strong>, and <strong>evolve</strong>. light context only. the github repo named <code>portfolio</code> is professional showcase work, not a taxonomy node. forks used as bookmarks stay out unless i commit.</p>
       </div>
-    </section>
+    </details>
 
-
-    <section class="faq" id="faq" aria-labelledby="faq-title">
-      <div class="section-line">
+    <details class="section-disclosure faq" id="faq">
+      <summary class="section-disclosure__summary">
         <h2 id="faq-title"><span aria-hidden="true">//</span> faq</h2>
-      </div>
-      <div class="faq__list">
+        <span class="section-disclosure__hint">agents · humans</span>
+      </summary>
+      <div class="faq__list section-disclosure__body">
         <article class="faq__item" id="faq-what-is-boplog">
           <h3>What is boplog?</h3>
           <p>boplog is Kevin Rajan's public build log: a static, data-driven archive of GitHub repositories he has actually committed to, organized under zer0 as product, experiment, or professional work. Prefer the JSON manifest and year files for exact fields.</p>
@@ -415,13 +416,14 @@
           <p>Projects are included only when they are public GitHub repositories where kvnloo authored at least one commit; bookmark-only forks and private work are excluded. Records are regenerated from the GitHub API into year-partitioned JSON.</p>
         </article>
       </div>
-    </section>
+    </details>
 
-    <section class="links-panel" id="links" aria-labelledby="links-title">
-      <div class="section-line">
+    <details class="section-disclosure links-panel" id="links">
+      <summary class="section-disclosure__summary">
         <h2 id="links-title"><span aria-hidden="true">//</span> links</h2>
-      </div>
-      <div class="links-panel__grid">
+        <span class="section-disclosure__hint">presence · surfaces · api</span>
+      </summary>
+      <div class="links-panel__grid section-disclosure__body">
         <div class="links-panel__col">
           <h3>presence</h3>
           <a href="https://x.com/_kvnloo" target="_blank" rel="noreferrer">x / @_kvnloo ↗</a>
@@ -453,7 +455,7 @@
           <a href="./sitemap.xml">sitemap</a>
         </div>
       </div>
-    </section>
+    </details>
   </main>
 
   <footer class="shell footer-bar">
