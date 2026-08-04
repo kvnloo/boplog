@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "id": "hermes-liquid-glass",
-      "name": "hermes-liquid-glass",
-      "description": "Linux liquid glass for Hermes Desktop \u2014 pywal palette bridge, Hyprland frost opacity, and a runtime plugin that rethemes on wallpaper change.",
-      "date": "2026-08-04",
-      "url": "https://github.com/kvnloo/hermes-liquid-glass",
+      "id": "4dps",
+      "name": "4dps",
+      "description": "Stills, photospheres & 4D 360° packs for 3D web scenes",
+      "date": "2026-08-01",
+      "url": "https://github.com/kvnloo/4dps",
       "types": [
         "public",
         "js"
@@ -17,26 +17,22 @@
       "links": [
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/hermes-liquid-glass"
-        },
-        {
-          "label": "docs",
-          "url": "https://github.com/kvnloo/hermes-liquid-glass#readme"
+          "url": "https://github.com/kvnloo/4dps"
         }
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "agent-tooling",
-      "productName": "agent tooling"
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
     },
     {
       "id": "boplog",
       "name": "boplog",
-      "description": "Static public build log of GitHub repos filtered to authored commits only (not stars or bookmark forks), with llms.txt and a JSON project manifest for agents.",
+      "description": "Static public build log with llms.txt and a JSON project manifest for agents.",
       "date": "2026-08-01",
       "url": "https://kvnloo.github.io/boplog/",
       "types": [
@@ -68,43 +64,14 @@
       "productName": "boplog"
     },
     {
-      "id": "4dps",
-      "name": "4dps",
-      "description": "Stills, photospheres & 4D 360\u00b0 packs for 3D web scenes",
-      "date": "2026-08-01",
-      "url": "https://github.com/kvnloo/4dps",
-      "types": [
-        "public",
-        "js"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/4dps"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "metallic-card",
-      "name": "metallic-card",
-      "description": "Metallic silver border card UI, synced from v0/Vercel design iterations.",
+      "id": "aliens-made-this",
+      "name": "aliens-made-this",
+      "description": "Playful generative-art / capability test: what can the aliens make?",
       "date": "2026-07-31",
-      "url": "https://github.com/kvnloo/metallic-card",
+      "url": "https://kvnloo.github.io/aliens-made-this/",
       "types": [
         "public",
-        "ts"
+        "html"
       ],
       "formats": [],
       "categories": [
@@ -112,37 +79,12 @@
       ],
       "links": [
         {
-          "label": "github",
-          "url": "https://github.com/kvnloo/metallic-card"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "halo",
-      "name": "halo",
-      "description": "A first-person shooter in Three.js, built to match Halo: Campaign Evolved and measured against it frame by frame",
-      "date": "2026-07-31",
-      "url": "https://github.com/kvnloo/halo",
-      "types": [
-        "public",
-        "js"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
+          "label": "docs",
+          "url": "https://kvnloo.github.io/aliens-made-this/"
+        },
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/halo"
+          "url": "https://github.com/kvnloo/aliens-made-this"
         }
       ],
       "company": "zer0",
@@ -188,14 +130,14 @@
       "productName": ""
     },
     {
-      "id": "aliens-made-this",
-      "name": "aliens-made-this",
-      "description": "Playful generative-art / capability test: what can the aliens make?",
+      "id": "halo",
+      "name": "halo",
+      "description": "A first-person shooter in Three.js, built to match Halo: Campaign Evolved and measured against it frame by frame",
       "date": "2026-07-31",
-      "url": "https://kvnloo.github.io/aliens-made-this/",
+      "url": "https://github.com/kvnloo/halo",
       "types": [
         "public",
-        "html"
+        "js"
       ],
       "formats": [],
       "categories": [
@@ -203,12 +145,37 @@
       ],
       "links": [
         {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/aliens-made-this/"
-        },
+          "label": "github",
+          "url": "https://github.com/kvnloo/halo"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "metallic-card",
+      "name": "metallic-card",
+      "description": "Metallic silver border card UI, synced from v0/Vercel design iterations.",
+      "date": "2026-07-31",
+      "url": "https://github.com/kvnloo/metallic-card",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/aliens-made-this"
+          "url": "https://github.com/kvnloo/metallic-card"
         }
       ],
       "company": "zer0",
@@ -285,11 +252,11 @@
       "eyebrow": "Shell"
     },
     {
-      "id": "zer0-voice",
-      "name": "zer0-voice",
-      "description": "Voice adapters that bridge the Zer0 harness to machine-wide speech services without vendoring models.",
+      "id": "pm",
+      "name": "_pm",
+      "description": "Company issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the Zer0 company OS PM core for automation orchestration.",
       "date": "2026-07-26",
-      "url": "https://github.com/kvnloo/zer0-voice",
+      "url": "https://github.com/kvnloo/_pm",
       "types": [
         "public",
         "py"
@@ -301,36 +268,7 @@
       "links": [
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/zer0-voice"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "zeros",
-      "productName": "zerOS"
-    },
-    {
-      "id": "zer0-harness-spine",
-      "name": "zer0-harness-spine",
-      "description": "Ultra-thin agent harness contracts and provider adapters for the Zer0 agent stack (no orchestration state).",
-      "date": "2026-07-26",
-      "url": "https://github.com/kvnloo/zer0-harness-spine",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/zer0-harness-spine"
+          "url": "https://github.com/kvnloo/_pm"
         }
       ],
       "company": "zer0",
@@ -372,11 +310,11 @@
       "productName": "zerOS"
     },
     {
-      "id": "pm",
-      "name": "_pm",
-      "description": "Company issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the Zer0 company OS PM core for automation orchestration.",
+      "id": "zer0-harness-spine",
+      "name": "zer0-harness-spine",
+      "description": "Ultra-thin agent harness contracts and provider adapters for the Zer0 agent stack (no orchestration state).",
       "date": "2026-07-26",
-      "url": "https://github.com/kvnloo/_pm",
+      "url": "https://github.com/kvnloo/zer0-harness-spine",
       "types": [
         "public",
         "py"
@@ -388,7 +326,36 @@
       "links": [
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/_pm"
+          "url": "https://github.com/kvnloo/zer0-harness-spine"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "zeros",
+      "productName": "zerOS"
+    },
+    {
+      "id": "zer0-voice",
+      "name": "zer0-voice",
+      "description": "Voice adapters that bridge the Zer0 harness to machine-wide speech services without vendoring models.",
+      "date": "2026-07-26",
+      "url": "https://github.com/kvnloo/zer0-voice",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/zer0-voice"
         }
       ],
       "company": "zer0",
