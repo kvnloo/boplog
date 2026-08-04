@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T02:03:37Z",
+  "generatedAt": "2026-08-04T04:49:14Z",
   "source": "GitHub public repos for kvnloo (authored commits only; forks without commits excluded)",
   "featuredLimit": 6,
   "user": "kvnloo",
@@ -15,7 +15,7 @@
     "interactivePortfolio": {
       "id": "interactive-portfolio",
       "label": "Kevin's Ramen & Boba",
-      "description": "Interactive 3D shop portfolio — same public project information as this build log, presented as menu props / scene artifacts.",
+      "description": "Interactive 3D shop portfolio \u2014 same public project information as this build log, presented as menu props / scene artifacts.",
       "url": "https://kvnloo.github.io/portfolio/demos/room/",
       "siteUrl": "https://kvnloo.github.io/portfolio/",
       "repo": "https://github.com/kvnloo/portfolio",
@@ -26,7 +26,7 @@
   "interactivePortfolio": {
     "id": "interactive-portfolio",
     "label": "Kevin's Ramen & Boba",
-    "description": "Interactive 3D shop portfolio — same public project information as this build log, presented as menu props / scene artifacts.",
+    "description": "Interactive 3D shop portfolio \u2014 same public project information as this build log, presented as menu props / scene artifacts.",
     "url": "https://kvnloo.github.io/portfolio/demos/room/",
     "siteUrl": "https://kvnloo.github.io/portfolio/",
     "repo": "https://github.com/kvnloo/portfolio",

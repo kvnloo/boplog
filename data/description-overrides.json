@@ -1,6 +1,6 @@
 {
   "_comment": "Hand-written one-liners that survive GitHub sync. Keys are repo names (exact). Prefer these over empty GitHub descriptions and weak README boilerplate.",
-  "boplog": "Static public build log of GitHub repos filtered to authored commits only (not stars or bookmark forks), with llms.txt and a JSON project manifest for agents.",
+  "boplog": "Static public build log with llms.txt and a JSON project manifest for agents.",
   "cod": "Early scaffold for a coding-related experiment (public placeholder).",
   "_pm": "Company issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the Zer0 company OS PM core for automation orchestration.",
   "zer0-cockpit": "Read-only, dependency-free terminal project cockpit dashboard for explicit Zer0 project progress.",
@@ -38,6 +38,7 @@
   "spy": "SPY trading indicator pages published via GitHub Pages.",
   "launch": "Launch toolkit: Claude Code / Superdesign commands for parallel UI design generation.",
   "UX": "Curated wallpapers and custom macOS icons collection.",
+  "hermes-liquid-glass": "Linux liquid glass for Hermes Desktop — pywal palette bridge, Hyprland frost opacity, and a runtime plugin that rethemes on wallpaper change.",
   "flo": "Early public scaffold (placeholder repo).",
   "OpenHands": "My commits on this OpenHands fork (experimentation / local patches on the agent platform).",
   "smartvest": "iOS Smartshirt / smartvest concept app with Figma-driven mockups.",

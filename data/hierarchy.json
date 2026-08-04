@@ -67,7 +67,7 @@
       "name": "agent tooling",
       "kind": "product",
       "description": "public interfaces and fleets for coding agents (surfaces that feed evolve / zeros).",
-      "projects": ["tmux-agent-fleet", "claude-island", "Auto-Claude", "opcode", "flow", "launch"]
+      "projects": ["tmux-agent-fleet", "claude-island", "Auto-Claude", "opcode", "flow", "launch", "hermes-liquid-glass"]
     },
     {
       "id": "boplog",

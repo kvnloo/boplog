@@ -88,34 +88,6 @@
       "productName": ""
     },
     {
-      "id": "docs-boilerplate",
-      "name": "docs-boilerplate",
-      "description": "Starter boilerplate for documentation sites.",
-      "date": "2025-12-10",
-      "url": "https://github.com/kvnloo/docs-boilerplate",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/docs-boilerplate"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "z0",
       "name": "z0",
       "description": "Early public scaffold for a Zer0-related experiment (placeholder repo).",
@@ -142,6 +114,34 @@
       "portfolioName": "product",
       "product": "zeros",
       "productName": "zerOS"
+    },
+    {
+      "id": "docs-boilerplate",
+      "name": "docs-boilerplate",
+      "description": "Starter boilerplate for documentation sites.",
+      "date": "2025-12-10",
+      "url": "https://github.com/kvnloo/docs-boilerplate",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/docs-boilerplate"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
     },
     {
       "id": "opcode",
@@ -338,34 +338,6 @@
       "productName": ""
     },
     {
-      "id": "flow",
-      "name": "flow",
-      "description": "Cross-platform Ratatui TUI for visualizing and controlling multi-agent orchestration frameworks.",
-      "date": "2025-11-25",
-      "url": "https://github.com/kvnloo/flow",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/flow"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "agent-tooling",
-      "productName": "agent tooling"
-    },
-    {
       "id": "migrate",
       "name": "migrate",
       "description": "Migration utilities scaffold (minimal public repo).",
@@ -392,6 +364,34 @@
       "portfolioName": "experiment",
       "product": "",
       "productName": ""
+    },
+    {
+      "id": "flow",
+      "name": "flow",
+      "description": "Cross-platform Ratatui TUI for visualizing and controlling multi-agent orchestration frameworks.",
+      "date": "2025-11-25",
+      "url": "https://github.com/kvnloo/flow",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/flow"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
     },
     {
       "id": "botw",
@@ -645,7 +645,7 @@
     {
       "id": "cofounder",
       "name": "cofounder",
-      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI…",
+      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI\u2026",
       "date": "2025-08-28",
       "url": "https://cofounder.openinterface.ai/",
       "types": [
