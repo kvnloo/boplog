@@ -5,9 +5,9 @@
 Canonical site: https://yohei.me/
 Author: Yohei Nakajima
 Language: English
-Public project count: 121
+Public project count: 126
 Coverage: 2020–2026
-Last data refresh: 2026-07-22
+Last data refresh: 2026-08-13
 
 ## Start here
 

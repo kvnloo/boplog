@@ -1,6 +1,56 @@
 {
   "projects": [
     {
+      "id": "synthetic-players",
+      "name": "Synthetic Players research",
+      "description": "A paper and reproducible study asking whether a sixteen-persona LLM panel preserves treatment responses in repeated games, and showing that passing coarse marginal checks is cheap.",
+      "date": "2026-08-13",
+      "url": "https://x.com/yoheinakajima/status/2087916158490223093?s=20",
+      "types": ["public", "py"],
+      "formats": [],
+      "categories": ["ai", "econ"]
+    },
+    {
+      "id": "remoko",
+      "name": "Remoko",
+      "description": "A mobile relay for coding agents that keeps Claude Code and Codex running on your computer while you check in, answer questions, and approve actions from your phone.",
+      "date": "2026-08-09",
+      "url": "https://x.com/yoheinakajima/status/2086578009382023469",
+      "types": ["public"],
+      "formats": [],
+      "categories": ["ai", "dev"]
+    },
+    {
+      "id": "building-a-repo-centric-agent-stack",
+      "name": "Building a Repo-Centric Agent Stack",
+      "description": "An article on putting the repository at the center of the agent stack.",
+      "date": "2026-08-07",
+      "url": "https://x.com/yoheinakajima/status/2085784422339768686?s=20",
+      "types": ["public"],
+      "formats": ["article"],
+      "categories": ["ai", "dev"]
+    },
+    {
+      "id": "graphcon-deck",
+      "name": "GraphCon Deck",
+      "description": "An open-source graph-based presentation, where each node carries the slides it belongs to and the graph pulls nodes in and pushes them out as the talk advances.",
+      "date": "2026-07-28",
+      "url": "https://x.com/yoheinakajima/status/2082122524113215816?s=20",
+      "types": ["public"],
+      "formats": [],
+      "categories": ["dev"]
+    },
+    {
+      "id": "what-your-brain-knows-about-long-running-agents",
+      "name": "What Your Brain Knows About Long-Running Agents",
+      "description": "An article on the hippocampus and cortex split as a model for long-running agents: a frozen model is a cortex, and the hard part is the organ that decides what it learns.",
+      "date": "2026-07-27",
+      "url": "https://x.com/yoheinakajima/status/2081741659260477666?s=20",
+      "types": ["public"],
+      "formats": ["article"],
+      "categories": ["ai"]
+    },
+    {
       "id": "the-shared-discovery-paradox",
       "name": "The Shared Discovery Paradox",
       "description": "A mathematical explanation of how information sharing without action coordination can worsen group outcomes.",
