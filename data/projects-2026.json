@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": "synthetic-players",
-      "name": "Synthetic Players",
+      "name": "Synthetic Players research",
       "description": "A paper and reproducible study asking whether a sixteen-persona LLM panel preserves treatment responses in repeated games, and showing that passing coarse marginal checks is cheap.",
       "date": "2026-08-13",
       "url": "https://x.com/yoheinakajima/status/2087916158490223093?s=20",
@@ -31,9 +31,9 @@
       "categories": ["ai", "dev"]
     },
     {
-      "id": "prezograph",
-      "name": "Prezograph",
-      "description": "An open-source tool for graph-based presentations built from versioned JSON, authored and presented in the browser, validated by a local CLI, and exportable as a single offline file.",
+      "id": "graphcon-deck",
+      "name": "GraphCon Deck",
+      "description": "An open-source graph-based presentation, where each node carries the slides it belongs to and the graph pulls nodes in and pushes them out as the talk advances.",
       "date": "2026-07-28",
       "url": "https://x.com/yoheinakajima/status/2082122524113215816?s=20",
       "types": ["public"],

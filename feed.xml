@@ -8,7 +8,7 @@
   <updated>2026-08-13T00:00:00Z</updated>
   <author><name>Yohei Nakajima</name><uri>https://yohei.me/</uri></author>
   <entry>
-    <title>Synthetic Players</title><id>https://x.com/yoheinakajima/status/2087916158490223093</id><link href="https://x.com/yoheinakajima/status/2087916158490223093?s=20"/><published>2026-08-13T00:00:00Z</published><updated>2026-08-13T00:00:00Z</updated><category term="ai"/><category term="econ"/><summary>A paper and reproducible study asking whether a sixteen-persona LLM panel preserves treatment responses in repeated games, and showing that passing coarse marginal checks is cheap.</summary>
+    <title>Synthetic Players research</title><id>https://x.com/yoheinakajima/status/2087916158490223093</id><link href="https://x.com/yoheinakajima/status/2087916158490223093?s=20"/><published>2026-08-13T00:00:00Z</published><updated>2026-08-13T00:00:00Z</updated><category term="ai"/><category term="econ"/><summary>A paper and reproducible study asking whether a sixteen-persona LLM panel preserves treatment responses in repeated games, and showing that passing coarse marginal checks is cheap.</summary>
   </entry>
   <entry>
     <title>Remoko</title><id>https://x.com/yoheinakajima/status/2086578009382023469</id><link href="https://x.com/yoheinakajima/status/2086578009382023469"/><published>2026-08-09T00:00:00Z</published><updated>2026-08-09T00:00:00Z</updated><category term="ai"/><category term="dev"/><summary>A mobile relay for coding agents that keeps Claude Code and Codex running on your computer while you check in, answer questions, and approve actions from your phone.</summary>
@@ -17,7 +17,7 @@
     <title>Building a Repo-Centric Agent Stack</title><id>https://x.com/yoheinakajima/status/2085784422339768686</id><link href="https://x.com/yoheinakajima/status/2085784422339768686?s=20"/><published>2026-08-07T00:00:00Z</published><updated>2026-08-07T00:00:00Z</updated><category term="ai"/><category term="dev"/><summary>An article on putting the repository at the center of the agent stack.</summary>
   </entry>
   <entry>
-    <title>Prezograph</title><id>https://x.com/yoheinakajima/status/2082122524113215816</id><link href="https://x.com/yoheinakajima/status/2082122524113215816?s=20"/><published>2026-07-28T00:00:00Z</published><updated>2026-07-28T00:00:00Z</updated><category term="dev"/><summary>An open-source tool for graph-based presentations built from versioned JSON, authored and presented in the browser, validated by a local CLI, and exportable as a single offline file.</summary>
+    <title>GraphCon Deck</title><id>https://x.com/yoheinakajima/status/2082122524113215816</id><link href="https://x.com/yoheinakajima/status/2082122524113215816?s=20"/><published>2026-07-28T00:00:00Z</published><updated>2026-07-28T00:00:00Z</updated><category term="dev"/><summary>An open-source graph-based presentation, where each node carries the slides it belongs to and the graph pulls nodes in and pushes them out as the talk advances.</summary>
   </entry>
   <entry>
     <title>What Your Brain Knows About Long-Running Agents</title><id>https://x.com/yoheinakajima/status/2081741659260477666</id><link href="https://x.com/yoheinakajima/status/2081741659260477666?s=20"/><published>2026-07-27T00:00:00Z</published><updated>2026-07-27T00:00:00Z</updated><category term="ai"/><summary>An article on the hippocampus and cortex split as a model for long-running agents: a frozen model is a cortex, and the hard part is the organ that decides what it learns.</summary>
