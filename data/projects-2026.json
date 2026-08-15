@@ -1,6 +1,39 @@
 {
   "projects": [
     {
+      "id": "baseline-tennis",
+      "name": "baseline-tennis",
+      "description": "Interactive open-data tennis map, charts, and statistical query engine",
+      "date": "2026-08-15",
+      "url": "https://kvnloo.github.io/baseline-tennis/",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/baseline-tennis/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/baseline-tennis"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "4dps",
       "name": "4dps",
       "description": "Stills, photospheres & 4D 360° packs for 3D web scenes",

@@ -5,8 +5,17 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-08-15T17:59:37Z</updated>
+  <updated>2026-08-15T18:33:49Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
+  <entry>
+    <title>baseline-tennis</title>
+    <id>https://kvnloo.github.io/baseline-tennis/</id>
+    <link href="https://kvnloo.github.io/baseline-tennis/"/>
+    <published>2026-08-15T00:00:00Z</published>
+    <updated>2026-08-15T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Interactive open-data tennis map, charts, and statistical query engine</summary>
+  </entry>
   <entry>
     <title>4dps</title>
     <id>https://github.com/kvnloo/4dps</id>
@@ -222,14 +231,5 @@
     <updated>2025-12-23T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.</summary>
-  </entry>
-  <entry>
-    <title>expert</title>
-    <id>https://github.com/kvnloo/expert</id>
-    <link href="https://github.com/kvnloo/expert"/>
-    <published>2025-12-16T00:00:00Z</published>
-    <updated>2025-12-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Early public scaffold (placeholder repo).</summary>
   </entry>
 </feed>
