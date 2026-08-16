@@ -5,8 +5,17 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-08-16T06:01:58Z</updated>
+  <updated>2026-08-16T06:54:02Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
+  <entry>
+    <title>hermes-keel</title>
+    <id>https://github.com/kvnloo/hermes-keel</id>
+    <link href="https://github.com/kvnloo/hermes-keel"/>
+    <published>2026-08-16T00:00:00Z</published>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>A self-evolving, performance-based execution kernel for Hermes Agent</summary>
+  </entry>
   <entry>
     <title>baseline-tennis</title>
     <id>https://kvnloo.github.io/baseline-tennis/</id>
@@ -222,14 +231,5 @@
     <updated>2025-12-27T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: OpenAPI remote API, Claude Flow MCP integration, mobile companion, SWE-bench tooling, usage dashboard, and UX/scaling fixes.</summary>
-  </entry>
-  <entry>
-    <title>jobapp</title>
-    <id>https://github.com/kvnloo/jobapp</id>
-    <link href="https://github.com/kvnloo/jobapp"/>
-    <published>2025-12-23T00:00:00Z</published>
-    <updated>2025-12-23T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.</summary>
   </entry>
 </feed>

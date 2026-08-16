@@ -1,6 +1,34 @@
 {
   "projects": [
     {
+      "id": "hermes-keel",
+      "name": "hermes-keel",
+      "description": "A self-evolving, performance-based execution kernel for Hermes Agent",
+      "date": "2026-08-16",
+      "url": "https://github.com/kvnloo/hermes-keel",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/hermes-keel"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "baseline-tennis",
       "name": "baseline-tennis",
       "description": "Interactive open-data tennis map, charts, and statistical query engine",
