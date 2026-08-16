@@ -5,15 +5,20 @@
       "name": "hermes-keel",
       "description": "A self-evolving, performance-based execution kernel for Hermes Agent",
       "date": "2026-08-16",
-      "url": "https://github.com/kvnloo/hermes-keel",
+      "url": "https://kvnloo.github.io/hermes-keel/",
       "types": [
-        "public"
+        "public",
+        "py"
       ],
       "formats": [],
       "categories": [
         "dev"
       ],
       "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/hermes-keel/"
+        },
         {
           "label": "github",
           "url": "https://github.com/kvnloo/hermes-keel"

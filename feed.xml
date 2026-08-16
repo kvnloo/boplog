@@ -5,12 +5,12 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-08-16T18:55:38Z</updated>
+  <updated>2026-08-16T19:18:23Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>hermes-keel</title>
-    <id>https://github.com/kvnloo/hermes-keel</id>
-    <link href="https://github.com/kvnloo/hermes-keel"/>
+    <id>https://kvnloo.github.io/hermes-keel/</id>
+    <link href="https://kvnloo.github.io/hermes-keel/"/>
     <published>2026-08-16T00:00:00Z</published>
     <updated>2026-08-16T00:00:00Z</updated>
     <category term="dev"/>
