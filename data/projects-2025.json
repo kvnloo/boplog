@@ -1,6 +1,36 @@
 {
   "projects": [
     {
+      "id": "auto-claude",
+      "name": "Auto-Claude",
+      "description": "My work on this fork: OpenAPI remote API, Claude Flow MCP integration, mobile companion, SWE-bench tooling, usage dashboard, and UX/scaling fixes.",
+      "date": "2025-12-27",
+      "url": "https://github.com/kvnloo/Auto-Claude",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/Auto-Claude"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
       "id": "jobapp",
       "name": "jobapp",
       "description": "Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.",

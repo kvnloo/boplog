@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-08-16T16:32:27Z</updated>
+  <updated>2026-08-16T17:00:43Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>hermes-keel</title>
@@ -224,12 +224,12 @@
     <summary>My work on this fork of uiua-lang/uiua: Remove invalid Cos primitive reference (qa-requested)</summary>
   </entry>
   <entry>
-    <title>jobapp</title>
-    <id>https://github.com/kvnloo/jobapp</id>
-    <link href="https://github.com/kvnloo/jobapp"/>
-    <published>2025-12-23T00:00:00Z</published>
-    <updated>2025-12-23T00:00:00Z</updated>
+    <title>Auto-Claude</title>
+    <id>https://github.com/kvnloo/Auto-Claude</id>
+    <link href="https://github.com/kvnloo/Auto-Claude"/>
+    <published>2025-12-27T00:00:00Z</published>
+    <updated>2025-12-27T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.</summary>
+    <summary>My work on this fork: OpenAPI remote API, Claude Flow MCP integration, mobile companion, SWE-bench tooling, usage dashboard, and UX/scaling fixes.</summary>
   </entry>
 </feed>
