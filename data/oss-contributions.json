@@ -3622,10 +3622,10 @@
     {
       "id": "maintainer-signal",
       "name": "maintainer signal",
-      "rule": "a checked accepted_fix receipt or 3 merged canonical-upstream PRs",
-      "unlocked": true,
-      "nextCondition": "condition met",
-      "tier": "aurora",
+      "rule": "a checked accepted_fix receipt with an exact public GitHub evidence URL",
+      "unlocked": false,
+      "nextCondition": "add a checked accepted_fix receipt with an exact public GitHub evidence URL",
+      "tier": "locked",
       "evidenceUrls": [],
       "filter": {
         "scope": "upstream",

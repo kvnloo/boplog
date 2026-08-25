@@ -70,3 +70,23 @@ test('badge unlocks derive only from landed upstream work or verified receipts',
   assert.equal(badges.find((badge) => badge.id === 'review-craft').unlocked, false);
   assert.match(badges.find((badge) => badge.id === 'review-craft').nextCondition, /substantive review/i);
 });
+
+test('maintainer signal requires an accepted-fix receipt regardless of merged pull-request volume', () => {
+  const contributions = Array.from({ length: 100 }, (_, index) => (
+    buildDataset({
+      account: 'kvnloo', generatedAt: '2026-08-25T00:00:00Z',
+      raw: [pr({ number: index + 1, url: `https://github.com/NousResearch/hermes-agent/pull/${index + 1}` })],
+      scopes, search: { complete: true, cappedQueries: [] }, verifiedImpact: [],
+    }).contributions[0]
+  ));
+  const locked = deriveBadges(contributions, []).find((badge) => badge.id === 'maintainer-signal');
+  assert.equal(locked.unlocked, false);
+  assert.equal(locked.tier, 'locked');
+  assert.match(locked.nextCondition, /checked accepted_fix receipt with an exact public GitHub evidence URL/i);
+
+  const receipt = { type: 'accepted_fix', evidenceUrl: 'https://github.com/NousResearch/hermes-agent/pull/1', relatedContributionKey: 'NousResearch/hermes-agent:pull_request:1' };
+  const unlocked = deriveBadges(contributions, [receipt]).find((badge) => badge.id === 'maintainer-signal');
+  assert.equal(unlocked.unlocked, true);
+  assert.equal(unlocked.tier, 'aurora');
+  assert.deepEqual(unlocked.evidenceUrls, [receipt.evidenceUrl]);
+});

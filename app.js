@@ -77,6 +77,7 @@
     activitySwipeHint: document.querySelector('#activity-swipe-hint'),
     themeToggle: document.querySelector('#theme-toggle'),
     ossScopes: document.querySelector('#oss-scopes'),
+    ossGroups: document.querySelector('#oss-groups'),
     ossStatus: document.querySelector('#oss-status'),
     ossRepo: document.querySelector('#oss-repo'),
     ossCounters: document.querySelector('#oss-counters'),
@@ -302,11 +303,20 @@
     const summary = state.oss.summary;
     const counters = [['merged upstream', summary.mergedUpstreamPullRequests], ['open ready', summary.openReadyUpstreamPullRequests], ['draft upstream', summary.draftUpstreamPullRequests], ['issues / proposals', summary.upstreamIssuesAndProposals], ['communities', summary.distinctUpstreamCommunities], ['verified impact', summary.verifiedImpact]];
     elements.ossCounters.innerHTML = counters.map(([label, value]) => `<div><strong>${value}</strong><span>${escapeHtml(label)}</span></div>`).join('');
-    const repos = sortUnique(state.oss.contributions.map((item) => item.repo));
+    const repos = sortUnique([
+      ...state.oss.contributions.map((item) => item.repo),
+      ...state.oss.selectedGroups.flatMap((group) => group.repositories),
+    ]);
     elements.ossRepo.innerHTML = '<option value="">all</option>' + repos.map((repo) => `<option value="${escapeHtml(repo)}">${escapeHtml(repo)}</option>`).join('');
     elements.ossRepo.value = repos.includes(state.ossRepo) ? state.ossRepo : '';
     state.ossRepo = elements.ossRepo.value;
     elements.ossScopes.querySelectorAll('[data-oss-scope]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.ossScope === state.ossScope)));
+    elements.ossGroups.hidden = state.ossScope !== 'selected';
+    elements.ossGroups.innerHTML = state.oss.selectedGroups.map((group) => {
+      const repositories = group.repositories.join(', ');
+      const selected = state.ossScope === 'selected' && group.repositories.includes(state.ossRepo);
+      return `<button type="button" data-oss-group="${escapeHtml(group.id)}" data-oss-repo="${escapeHtml(group.repositories[0])}" aria-pressed="${selected}"><span><strong>${escapeHtml(group.label)}</strong><small>${escapeHtml(repositories)}</small></span><b aria-label="${group.contributionCount} public contributions">${group.contributionCount}</b></button>`;
+    }).join('');
     elements.ossStatus.value = state.ossStatus;
     elements.ossCompleteness.textContent = state.oss.completeness.complete ? `complete public snapshot · ${state.oss.generatedAt.slice(0, 10)}` : `partial snapshot · ${state.oss.completeness.limitations.join('; ')}`;
     elements.ossBadges.innerHTML = (state.oss.badges || []).map((badge) => {
@@ -1009,6 +1019,13 @@
     });
     elements.ossStatus?.addEventListener('change', () => { state.ossStatus = elements.ossStatus.value; renderOss(); writeUrlState(); });
     elements.ossRepo?.addEventListener('change', () => { state.ossRepo = elements.ossRepo.value; renderOss(); writeUrlState(); });
+    elements.ossGroups?.addEventListener('click', (event) => {
+      const group = event.target.closest('[data-oss-group]');
+      if (!group) return;
+      state.ossScope = 'selected';
+      state.ossRepo = group.dataset.ossRepo;
+      renderOss(); writeUrlState();
+    });
     elements.ossBadges?.addEventListener('click', (event) => {
       const badge = event.target.closest('[data-badge-scope]');
       if (!badge || event.target.closest('a')) return;
