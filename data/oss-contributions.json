@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T22:52:26Z",
+  "generatedAt": "2026-08-25T23:44:43Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -79,6 +79,18 @@
     "verifiedImpact": 0
   },
   "contributions": [
+    {
+      "key": "NousResearch/hermes-agent:issue:93382",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93382,
+      "title": "feat: adaptive explanation policy for interactive learning artifacts",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93382",
+      "createdAt": "2026-08-24T00:41:42Z",
+      "updatedAt": "2026-08-25T23:10:37Z"
+    },
     {
       "key": "kvnloo/verified-oss-loop:issue:1",
       "kind": "issue",
@@ -186,18 +198,6 @@
       "url": "https://github.com/OpenHands/OpenHands/issues/16909",
       "createdAt": "2026-08-25T18:18:02Z",
       "updatedAt": "2026-08-25T19:02:47Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93382",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93382,
-      "title": "feat: adaptive explanation policy for interactive learning artifacts",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93382",
-      "createdAt": "2026-08-24T00:41:42Z",
-      "updatedAt": "2026-08-25T19:02:35Z"
     },
     {
       "key": "SWE-agent/SWE-agent:issue:1524",
