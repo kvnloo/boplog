@@ -7,4 +7,6 @@
   <url><loc>https://kvnloo.github.io/boplog/openapi.json</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kvnloo.github.io/boplog/feed.xml</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kvnloo.github.io/boplog/data/manifest.json</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/contributions.html</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/data/contributions.json</loc><lastmod>2026-08-25</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

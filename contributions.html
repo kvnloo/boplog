@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Evidence-backed ledger of Kevin Rajan's public pull requests and verified upstream impact.">
+  <title>OSS contributions · Kevin Rajan</title>
+  <link rel="canonical" href="https://kvnloo.github.io/boplog/contributions.html">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=20260825.1">
+  <link rel="stylesheet" href="./contributions.css?v=20260825.1">
+</head>
+<body>
+  <main class="shell contributions-shell">
+    <nav class="contributions-nav" aria-label="Breadcrumb"><a href="./">← build log</a><span>/</span><strong>oss contributions</strong></nav>
+    <header class="contributions-hero">
+      <p class="kicker">public evidence ledger</p>
+      <h1>oss contributions</h1>
+      <p>Pull requests are facts. Impact requires a linked, curated receipt. Comments, commits, and issues are not counted as impact.</p>
+      <p class="snapshot" id="snapshot">loading checked-in snapshot…</p>
+    </header>
+
+    <section aria-labelledby="scoreboard-title">
+      <div class="section-line"><h2 id="scoreboard-title"><span aria-hidden="true">//</span> scoreboard</h2><p id="visible-count" aria-live="polite">…</p></div>
+      <div class="scoreboard" id="scoreboard"></div>
+    </section>
+
+    <section class="contribution-controls" aria-labelledby="filters-title">
+      <h2 id="filters-title">shareable filters</h2>
+      <div class="scope-tabs" id="scope-tabs" role="group" aria-label="Contribution scope">
+        <button type="button" data-scope="all-public">all public</button>
+        <button type="button" data-scope="upstream-only">upstream only</button>
+        <button type="button" data-scope="selected-community">selected community</button>
+      </div>
+      <div class="filter-grid">
+        <label>status<select id="status-filter"><option value="">all</option><option>merged</option><option>open</option><option>draft</option><option>closed</option></select></label>
+        <label>repository type<select id="relationship-filter"><option value="">all</option><option value="canonical_upstream">canonical upstream</option><option value="contributor_fork">contributor fork</option><option value="owned_repository">owned repository</option></select></label>
+        <label>evidence<select id="evidence-filter"><option value="">all facts</option><option value="verified">verified impact receipt</option><option value="facts-only">GitHub facts only</option></select></label>
+        <label>search<input id="query-filter" type="search" placeholder="repo or title"></label>
+      </div>
+      <button class="clear-contribution-filters" id="clear-filters" type="button">clear filters</button>
+    </section>
+
+    <section aria-labelledby="ledger-title">
+      <div class="section-line"><h2 id="ledger-title"><span aria-hidden="true">//</span> contribution ledger</h2></div>
+      <div class="ledger-key"><span>github fact</span><span class="verified">verified impact</span></div>
+      <div class="contribution-ledger" id="contribution-ledger"></div>
+      <p class="empty-ledger" id="empty-ledger" hidden>No contributions match this URL-filtered view.</p>
+    </section>
+
+    <footer class="contribution-method">
+      <h2>method</h2>
+      <p>Status, title, repository, and PR links come from a checked-in GitHub public API snapshot. “Canonical upstream,” “contributor fork,” and “owned repository” describe the PR target. Curated impact receipts are separate records and must link to outcome evidence. Open, draft, and unmerged closed PRs remain visible but do not imply impact.</p>
+      <a href="./data/contributions.json">download the ledger JSON ↗</a>
+    </footer>
+  </main>
+  <script src="./contributions.js?v=20260825.1" defer></script>
+</body>
+</html>
