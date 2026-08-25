@@ -11,6 +11,8 @@
     "projects-2017.json"
   ],
   "hierarchy": "hierarchy.json",
+  "ossContributions": "oss-contributions.json",
+  "ossScopes": "oss-scopes.json",
   "surfaces": {
     "interactivePortfolio": {
       "id": "interactive-portfolio",

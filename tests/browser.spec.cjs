@@ -1,0 +1,22 @@
+const { test, expect } = require('@playwright/test');
+test('desktop, url state, keyboard, reduced motion, and mobile', async ({ page }) => {
+  const errors = [];
+  page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });
+  page.on('requestfailed', (request) => errors.push(`network: ${request.url()}`));
+  await page.goto('http://127.0.0.1:4173/?oss_scope=upstream&oss_status=merged#oss');
+  await expect(page.locator('#oss-scopes [data-oss-scope="upstream"]')).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('#oss-status')).toHaveValue('merged');
+  await expect(page.locator('#oss-ledger article').first()).toBeVisible();
+  await page.screenshot({ path: '/tmp/boplog-oss-desktop.png', fullPage: true });
+  const badge = page.locator('.oss-badge.is-unlocked').first();
+  await badge.focus();
+  await page.keyboard.press('Enter');
+  await expect(page).toHaveURL(/oss_scope=upstream/);
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await expect(badge).toHaveCSS('animation-duration', '1e-05s');
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.reload();
+  await expect(page.locator('#oss')).toBeVisible();
+  await page.screenshot({ path: '/tmp/boplog-oss-mobile.png', fullPage: true });
+  expect(errors).toEqual([]);
+});

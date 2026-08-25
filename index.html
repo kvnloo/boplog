@@ -247,6 +247,27 @@
       <div class="featured-list" id="featured-list" data-count="0" aria-live="polite"></div>
     </section>
 
+    <section class="oss" id="oss" aria-labelledby="oss-title">
+      <div class="section-line">
+        <h2 id="oss-title"><span aria-hidden="true">//</span> open-source contributions</h2>
+        <p id="oss-completeness">loading public evidence…</p>
+      </div>
+      <p class="oss__intro">public pull requests and issues, separated by repository relationship. badges unlock only from landed work or checked evidence receipts.</p>
+      <div class="oss__controls">
+        <div class="oss__segments" id="oss-scopes" role="group" aria-label="Contribution scope">
+          <button type="button" data-oss-scope="all_public" aria-pressed="true">all public</button>
+          <button type="button" data-oss-scope="upstream" aria-pressed="false">upstream</button>
+          <button type="button" data-oss-scope="selected" aria-pressed="false">selected communities</button>
+        </div>
+        <label>status <select id="oss-status"><option value="">all</option><option value="merged">merged</option><option value="open_ready">open ready</option><option value="open_draft">draft</option><option value="closed_unmerged">closed unmerged</option><option value="open">open issue</option><option value="closed">closed issue</option></select></label>
+        <label>repository <select id="oss-repo"><option value="">all</option></select></label>
+      </div>
+      <div class="oss__counters" id="oss-counters" aria-label="Contribution summary"></div>
+      <div class="oss__shelf" id="oss-badges" aria-label="Evidence-backed badge shelf"></div>
+      <div class="oss__ledger-head"><h3>recent ledger</h3><span id="oss-count" aria-live="polite"></span></div>
+      <div class="oss__ledger" id="oss-ledger"></div>
+    </section>
+
     <section class="archive" id="archive" aria-labelledby="archive-title">
       <div class="section-line">
         <h2 id="archive-title"><span aria-hidden="true">//</span> build log</h2>

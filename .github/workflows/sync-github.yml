@@ -35,6 +35,12 @@ jobs:
           SITE_URL: https://kvnloo.github.io/boplog
         run: node scripts/sync-github.mjs
 
+      - name: Sync public OSS contributions
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USER: kvnloo
+        run: node scripts/collect-oss-contributions.mjs
+
       - name: Validate snapshot
         run: npm run check
 

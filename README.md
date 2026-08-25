@@ -9,6 +9,7 @@ Live (after Pages is enabled): <https://kvnloo.github.io/boplog/>
 - Compact light-mode UI: featured rows, search, topic/year/format/sort filters, activity heatmap.
 - Shareable URL state for active filters.
 - Snapshot data under `data/`, regenerated from the GitHub API.
+- Evidence-backed OSS contribution ledger, shareable scopes, and deterministic collectible badges. Locked badges state their public next condition; unlocks come only from merged upstream work or checked `verifiedImpact` receipts.
 - **No personal API key** in the browser or in secrets — GitHub Actions uses the built-in `GITHUB_TOKEN`.
 - Filter rule: include a repo only if `kvnloo` authored at least one commit (archive-only forks are dropped).
 - Free CLI (`boplog`), local MCP server, OpenAPI, and agent discovery docs.
@@ -17,6 +18,7 @@ Live (after Pages is enabled): <https://kvnloo.github.io/boplog/>
 
 ```bash
 npm run sync    # needs GITHUB_TOKEN or `gh auth login`
+npm run sync:oss
 npm run check
 npm run serve
 ```
@@ -57,6 +59,10 @@ Rate limit budget: Actions `GITHUB_TOKEN` allows **1,000 req/hour** for this rep
 ```
 
 Featured projects are pinned via `data/featured.json`, then filled by stars/recency.
+
+## OSS contribution data
+
+`data/oss-contributions.json` is generated server-side and contains explicit `canonical_upstream`, `contributor_fork`, and `owned` relationships. Pull requests distinguish `merged`, `open_ready`, `open_draft`, and `closed_unmerged` using `mergedAt`; issues use `open` or `closed`. `data/oss-scopes.json` versions neutral selected-community groups, including zero-count repositories. `data/oss-verified-impact.json` is the small checked evidence ledger; allowed receipts are `merged_pr`, `accepted_fix`, `reproduction_used`, and `substantive_review_used`, each with an exact public GitHub URL. Search-cap limitations are recorded rather than hidden.
 
 ## Parallel surface: interactive portfolio
 

@@ -35,6 +35,10 @@
     year: '',
     date: '',
     sort: 'newest',
+    oss: null,
+    ossScope: 'all_public',
+    ossStatus: '',
+    ossRepo: '',
   };
 
   const elements = {
@@ -72,6 +76,14 @@
     activityModeNext: document.querySelector('#activity-mode-next'),
     activitySwipeHint: document.querySelector('#activity-swipe-hint'),
     themeToggle: document.querySelector('#theme-toggle'),
+    ossScopes: document.querySelector('#oss-scopes'),
+    ossStatus: document.querySelector('#oss-status'),
+    ossRepo: document.querySelector('#oss-repo'),
+    ossCounters: document.querySelector('#oss-counters'),
+    ossBadges: document.querySelector('#oss-badges'),
+    ossLedger: document.querySelector('#oss-ledger'),
+    ossCount: document.querySelector('#oss-count'),
+    ossCompleteness: document.querySelector('#oss-completeness'),
   };
 
   const categoryLabels = {
@@ -272,6 +284,38 @@
 
   function isoDate(date) {
     return date.toISOString().slice(0, 10);
+  }
+
+  function filteredOssContributions() {
+    const selectedRepos = new Set((state.oss?.selectedGroups || []).flatMap((group) => group.repositories));
+    return (state.oss?.contributions || []).filter((item) => {
+      if (state.ossScope === 'upstream' && item.relationship !== 'canonical_upstream') return false;
+      if (state.ossScope === 'selected' && !selectedRepos.has(item.repo)) return false;
+      if (state.ossStatus && item.status !== state.ossStatus) return false;
+      if (state.ossRepo && item.repo !== state.ossRepo) return false;
+      return true;
+    });
+  }
+
+  function renderOss() {
+    if (!state.oss || !elements.ossLedger) return;
+    const summary = state.oss.summary;
+    const counters = [['merged upstream', summary.mergedUpstreamPullRequests], ['open ready', summary.openReadyUpstreamPullRequests], ['draft upstream', summary.draftUpstreamPullRequests], ['issues / proposals', summary.upstreamIssuesAndProposals], ['communities', summary.distinctUpstreamCommunities], ['verified impact', summary.verifiedImpact]];
+    elements.ossCounters.innerHTML = counters.map(([label, value]) => `<div><strong>${value}</strong><span>${escapeHtml(label)}</span></div>`).join('');
+    const repos = sortUnique(state.oss.contributions.map((item) => item.repo));
+    elements.ossRepo.innerHTML = '<option value="">all</option>' + repos.map((repo) => `<option value="${escapeHtml(repo)}">${escapeHtml(repo)}</option>`).join('');
+    elements.ossRepo.value = repos.includes(state.ossRepo) ? state.ossRepo : '';
+    state.ossRepo = elements.ossRepo.value;
+    elements.ossScopes.querySelectorAll('[data-oss-scope]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.ossScope === state.ossScope)));
+    elements.ossStatus.value = state.ossStatus;
+    elements.ossCompleteness.textContent = state.oss.completeness.complete ? `complete public snapshot · ${state.oss.generatedAt.slice(0, 10)}` : `partial snapshot · ${state.oss.completeness.limitations.join('; ')}`;
+    elements.ossBadges.innerHTML = (state.oss.badges || []).map((badge) => {
+      const evidence = (badge.evidenceUrls || []).map((url) => `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">evidence ↗</a>`).join('');
+      return `<article class="oss-badge oss-badge--${escapeHtml(badge.tier)}${badge.unlocked ? ' is-unlocked' : ''}" tabindex="0" data-badge-scope="${escapeHtml(badge.filter?.scope || '')}" data-badge-status="${escapeHtml(badge.filter?.status || '')}"><span class="oss-badge__mark" aria-hidden="true">${badge.unlocked ? '✦' : '◇'}</span><div><h3>${escapeHtml(badge.name)}</h3><p>${escapeHtml(badge.rule)}</p><small>${escapeHtml(badge.unlocked ? badge.tier : badge.nextCondition)}</small>${evidence}</div></article>`;
+    }).join('');
+    const records = filteredOssContributions();
+    elements.ossCount.textContent = `${records.length} / ${state.oss.contributions.length}`;
+    elements.ossLedger.innerHTML = records.slice(0, 30).map((item) => `<article><time datetime="${escapeHtml(item.updatedAt)}">${escapeHtml(item.updatedAt.slice(0, 10))}</time><div><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)} ↗</a><p>${escapeHtml(item.repo)} · ${escapeHtml(item.kind.replace('_', ' '))} · ${escapeHtml(item.relationship.replaceAll('_', ' '))}</p></div><span class="oss__status">${escapeHtml(item.status.replaceAll('_', ' '))}</span></article>`).join('') || '<p class="oss__empty">no public records match this view.</p>';
   }
 
   function localDateLabel(value) {
@@ -868,6 +912,9 @@
     state.year = params.get('year') || '';
     state.date = params.get('date') || '';
     state.sort = params.get('sort') || 'newest';
+    state.ossScope = ['all_public', 'upstream', 'selected'].includes(params.get('oss_scope')) ? params.get('oss_scope') : 'all_public';
+    state.ossStatus = params.get('oss_status') || '';
+    state.ossRepo = params.get('oss_repo') || '';
 
     elements.search.value = state.query;
     if (elements.kind) elements.kind.value = state.kind;
@@ -898,6 +945,9 @@
     if (state.year) params.set('year', state.year);
     if (state.date) params.set('date', state.date);
     if (state.sort !== 'newest') params.set('sort', state.sort);
+    if (state.ossScope !== 'all_public') params.set('oss_scope', state.ossScope);
+    if (state.ossStatus) params.set('oss_status', state.ossStatus);
+    if (state.ossRepo) params.set('oss_repo', state.ossRepo);
     const query = params.toString();
     history.replaceState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`);
   }
@@ -950,6 +1000,29 @@
   }
 
   function bindEvents() {
+    elements.ossScopes?.addEventListener('click', (event) => {
+      const button = event.target.closest('[data-oss-scope]');
+      if (!button) return;
+      state.ossScope = button.dataset.ossScope;
+      state.ossRepo = '';
+      renderOss(); writeUrlState();
+    });
+    elements.ossStatus?.addEventListener('change', () => { state.ossStatus = elements.ossStatus.value; renderOss(); writeUrlState(); });
+    elements.ossRepo?.addEventListener('change', () => { state.ossRepo = elements.ossRepo.value; renderOss(); writeUrlState(); });
+    elements.ossBadges?.addEventListener('click', (event) => {
+      const badge = event.target.closest('[data-badge-scope]');
+      if (!badge || event.target.closest('a')) return;
+      if (badge.dataset.badgeScope) state.ossScope = badge.dataset.badgeScope;
+      if (badge.dataset.badgeStatus) state.ossStatus = badge.dataset.badgeStatus;
+      renderOss(); writeUrlState();
+    });
+    elements.ossBadges?.addEventListener('keydown', (event) => {
+      if (!['Enter', ' '].includes(event.key) || event.target.closest('a')) return;
+      const badge = event.target.closest('[data-badge-scope]');
+      if (!badge) return;
+      event.preventDefault();
+      badge.click();
+    });
     elements.search.addEventListener('input', () => {
       state.query = elements.search.value;
       render();
@@ -1124,7 +1197,7 @@
       }
 
       const dataVersion = manifest.generatedAt || BUILD_VERSION;
-      const [hierarchy, surfaces, activity, ...chunks] = await Promise.all([
+      const [hierarchy, surfaces, activity, oss, ...chunks] = await Promise.all([
         fetch(versionedDataUrl('hierarchy.json', dataVersion), { cache: 'no-store' })
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
@@ -1132,6 +1205,9 @@
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
         fetch(versionedDataUrl('activity.json', dataVersion), { cache: 'no-store' })
+          .then((r) => (r.ok ? r.json() : null))
+          .catch(() => null),
+        fetch(versionedDataUrl('oss-contributions.json', dataVersion), { cache: 'no-store' })
           .then((r) => (r.ok ? r.json() : null))
           .catch(() => null),
         ...manifest.files.map(async (file) => {
@@ -1146,6 +1222,7 @@
         interactivePortfolio: manifest.interactivePortfolio || null,
       };
       state.activity = activity;
+      state.oss = oss;
       state.projects = chunks
         .flatMap((chunk) => chunk.projects || [])
         .filter((project) => Array.isArray(project.types) && project.types.includes('public'));
@@ -1165,6 +1242,7 @@
       renderSummary();
       renderFocusProducts();
       renderFeatured();
+      renderOss();
       renderActivityMap();
       render();
       bindEvents();

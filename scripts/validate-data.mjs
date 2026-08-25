@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import process from 'node:process';
+import { validateDataset } from './oss-contributions-lib.mjs';
 
 const dataDir = new URL('../data/', import.meta.url);
 const manifest = JSON.parse(await readFile(new URL('manifest.json', dataDir), 'utf8'));
@@ -9,6 +10,16 @@ const chunks = await Promise.all((manifest.files || []).map(async (file) => {
 }));
 const payload = { ...manifest, projects: chunks.flat() };
 const errors = [];
+try {
+  const oss = JSON.parse(await readFile(new URL('oss-contributions.json', dataDir), 'utf8'));
+  validateDataset(oss);
+  const scopes = JSON.parse(await readFile(new URL('oss-scopes.json', dataDir), 'utf8'));
+  if (scopes.schemaVersion !== 1 || scopes.label !== 'selected communities' || !Array.isArray(scopes.groups)) throw new Error('invalid selected-community scope registry');
+  const declared = new Map((oss.selectedGroups || []).map((group) => [group.id, group]));
+  for (const group of scopes.groups) if (!declared.has(group.id)) throw new Error(`selected group missing from snapshot: ${group.id}`);
+} catch (error) {
+  errors.push(`OSS contribution data: ${error.message}`);
+}
 
 if (!Array.isArray(manifest.files) || !manifest.files.length) errors.push('manifest.files must be a non-empty array');
 if (!Array.isArray(payload.projects)) {

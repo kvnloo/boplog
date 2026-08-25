@@ -2,13 +2,16 @@
   "name": "boplog",
   "version": "1.0.0",
   "private": true,
-  "description": "A static, data-driven build log for kvnloo \u2014 public repos with authored commits",
+  "description": "A static, data-driven build log for kvnloo — public repos with authored commits",
   "scripts": {
     "serve": "python3 -m http.server 4173",
     "sync": "node scripts/sync-github.mjs",
+    "sync:oss": "node scripts/collect-oss-contributions.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test tests/browser.spec.cjs",
     "validate": "node scripts/validate-data.mjs",
-    "lint": "node --check app.js && node --check scripts/validate-data.mjs && node --check scripts/sync-github.mjs && node --check scripts/llmeo-probe.mjs && node --check scripts/llmeo-score.mjs && node --check scripts/apply-tags.mjs && node --check scripts/build-topics.mjs && node --check scripts/geo-benchmark.mjs && node --check scripts/geo-overnight.mjs",
-    "check": "npm run lint && npm run validate",
+    "lint": "node --check app.js && node --check scripts/validate-data.mjs && node --check scripts/sync-github.mjs && node --check scripts/collect-oss-contributions.mjs && node --check scripts/oss-contributions-lib.mjs && node --check scripts/llmeo-probe.mjs && node --check scripts/llmeo-score.mjs && node --check scripts/apply-tags.mjs && node --check scripts/build-topics.mjs && node --check scripts/geo-benchmark.mjs && node --check scripts/geo-overnight.mjs",
+    "check": "npm run lint && npm test && npm run validate",
     "geo:tags": "node scripts/apply-tags.mjs",
     "geo:topics": "node scripts/build-topics.mjs",
     "geo:build": "node scripts/apply-tags.mjs && node scripts/build-topics.mjs",
@@ -20,5 +23,8 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1"
   }
 }
