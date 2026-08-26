@@ -129,14 +129,25 @@
     return state.disclosure[section];
   }
 
+  function isDisclosureForcedExpanded(section) {
+    return (section === 'oss' && hasOssFilters())
+      || (section === 'builds' && activeFilterCount() > 0);
+  }
+
   function updateDisclosure(section, total, visible) {
     const root = document.querySelector(`#${section}-disclosure`);
     const button = root?.querySelector('[data-disclosure]');
     const count = root?.querySelector('[data-disclosure-count]');
     if (!root || !button || !count) return;
+    const forcedExpanded = isDisclosureForcedExpanded(section);
     const expanded = isDisclosureExpanded(section);
-    root.hidden = total === 0;
+    root.hidden = total === 0 || (!forcedExpanded && total <= previewLimit(section));
     button.dataset.total = String(total);
+    button.hidden = forcedExpanded;
+    if (forcedExpanded) {
+      count.textContent = `showing all ${total} filtered results`;
+      return;
+    }
     button.setAttribute('aria-expanded', String(expanded));
     button.setAttribute('aria-label', expanded ? `show fewer ${section}` : `show all ${total} ${section}`);
     button.textContent = expanded ? 'show fewer' : `show all ${total}`;
