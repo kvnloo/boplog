@@ -1,4 +1,76 @@
 const { test, expect } = require('@playwright/test');
+
+const previewCounts = {
+  desktop: { featured: 6, oss: 8, builds: 12 },
+  mobile: { featured: 4, oss: 5, builds: 8 },
+};
+
+async function expectPreviewCounts(page, expected) {
+  await expect(page.locator('#featured-list .featured-item')).toHaveCount(expected.featured);
+  await expect(page.locator('#oss-ledger article')).toHaveCount(expected.oss);
+  await expect(page.locator('#project-archive .project-row')).toHaveCount(expected.builds);
+}
+
+test('progressive disclosure previews, expands, persists, and follows responsive limits', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await page.goto('http://127.0.0.1:4173/');
+  await expectPreviewCounts(page, previewCounts.desktop);
+  const featuredTotal = Number(await page.locator('[data-disclosure="featured"]').getAttribute('data-total'));
+
+  for (const [section, param, list, row] of [
+    ['featured', 'featured=all', '#featured-list', '.featured-item'],
+    ['oss', 'oss_rows=all', '#oss-ledger', 'article'],
+    ['builds', 'builds=all', '#project-archive', '.project-row'],
+  ]) {
+    const control = page.locator(`[data-disclosure="${section}"]`);
+    const total = Number(await control.getAttribute('data-total'));
+    await expect(control).toHaveAttribute('aria-expanded', 'false');
+    await expect(control).toContainText(`show all ${total}`);
+    await control.click();
+    await expect(page).toHaveURL(new RegExp(param));
+    await expect(control).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.locator(`${list} ${row}`)).toHaveCount(total);
+    await page.reload();
+    await expect(page.locator(`[data-disclosure="${section}"]`)).toHaveAttribute('aria-expanded', 'true');
+    await page.locator(`[data-disclosure="${section}"]`).click();
+    await expect(page).not.toHaveURL(new RegExp(param));
+    await expect(page.locator(`[data-disclosure="${section}"]`)).toBeFocused();
+  }
+
+  await page.locator('[data-disclosure="featured"]').click();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(page.locator('#featured-list .featured-item')).toHaveCount(featuredTotal);
+  await expect(page.locator('#oss-ledger article')).toHaveCount(previewCounts.mobile.oss);
+  await expect(page.locator('#project-archive .project-row')).toHaveCount(previewCounts.mobile.builds);
+});
+
+test('meaningful filters show every match while totals and empty states stay honest', async ({ page }) => {
+  await page.goto('http://127.0.0.1:4173/?oss_scope=upstream&year=2026');
+  await expect(page.locator('#oss-count')).toHaveText(/^\d+ \/ \d+$/);
+  await expect(page.locator('#result-count')).toHaveText(/^\d+ \/ \d+$/);
+  const ossTotal = Number((await page.locator('#oss-count').textContent()).split('/')[0].trim());
+  const buildTotal = Number((await page.locator('#result-count').textContent()).split('/')[0].trim());
+  await expect(page.locator('#oss-ledger article')).toHaveCount(ossTotal);
+  await expect(page.locator('#project-archive .project-row')).toHaveCount(buildTotal);
+
+  await page.locator('#project-search').fill('no-project-can-match-this-value');
+  await expect(page.locator('#result-count')).toContainText('0 /');
+  await expect(page.locator('#project-archive .project-row')).toHaveCount(0);
+  await expect(page.locator('#empty-state')).toBeVisible();
+});
+
+test('disclosure history restores with back and forward and controls are accessible', async ({ page }) => {
+  await page.goto('http://127.0.0.1:4173/');
+  const featured = page.locator('[data-disclosure="featured"]');
+  await expect(featured).toHaveAttribute('aria-controls', 'featured-list');
+  await featured.click();
+  await page.locator('[data-disclosure="oss"]').click();
+  await page.goBack();
+  await expect(featured).toHaveAttribute('aria-expanded', 'true');
+  await expect(page.locator('[data-disclosure="oss"]')).toHaveAttribute('aria-expanded', 'false');
+  await page.goForward();
+  await expect(page.locator('[data-disclosure="oss"]')).toHaveAttribute('aria-expanded', 'true');
+});
 test('desktop, url state, keyboard, reduced motion, and mobile', async ({ page }) => {
   const errors = [];
   page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });

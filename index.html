@@ -245,6 +245,7 @@
         <span>selected work</span>
       </div>
       <div class="featured-list" id="featured-list" data-count="0" aria-live="polite"></div>
+      <div class="list-disclosure" id="featured-disclosure"><span data-disclosure-count="featured"></span><button type="button" data-disclosure="featured" aria-controls="featured-list" aria-expanded="false"></button></div>
     </section>
 
     <section class="oss" id="oss" aria-labelledby="oss-title">
@@ -267,6 +268,7 @@
       <div class="oss__shelf" id="oss-badges" aria-label="Evidence-backed badge shelf"></div>
       <div class="oss__ledger-head"><h3>recent ledger</h3><span id="oss-count" aria-live="polite"></span></div>
       <div class="oss__ledger" id="oss-ledger"></div>
+      <div class="list-disclosure" id="oss-disclosure"><span data-disclosure-count="oss"></span><button type="button" data-disclosure="oss" aria-controls="oss-ledger" aria-expanded="false"></button></div>
     </section>
 
     <section class="archive" id="archive" aria-labelledby="archive-title">
@@ -368,6 +370,7 @@
         <span>tags</span>
       </div>
       <div class="project-list" id="project-archive" aria-live="polite"></div>
+      <div class="list-disclosure" id="builds-disclosure"><span data-disclosure-count="builds"></span><button type="button" data-disclosure="builds" aria-controls="project-archive" aria-expanded="false"></button></div>
       <div class="empty-state" id="empty-state" hidden>
         <p>No projects match those filters.</p>
         <button type="button" data-clear-filters>clear filters</button>

@@ -39,6 +39,7 @@
     ossScope: 'all_public',
     ossStatus: '',
     ossRepo: '',
+    disclosure: { featured: false, oss: false, builds: false },
   };
 
   const elements = {
@@ -107,6 +108,40 @@
   const normalize = (value = '') => String(value).trim().toLowerCase();
   const labelForCategory = (category) => categoryLabels[category] || category;
   const sortUnique = (values) => [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
+  const mobilePreview = window.matchMedia('(max-width: 640px)');
+  const previewLimits = {
+    featured: { desktop: 6, mobile: 4 },
+    oss: { desktop: 8, mobile: 5 },
+    builds: { desktop: 12, mobile: 8 },
+  };
+
+  function hasOssFilters() {
+    return state.ossScope !== 'all_public' || Boolean(state.ossStatus) || Boolean(state.ossRepo);
+  }
+
+  function previewLimit(section) {
+    return previewLimits[section][mobilePreview.matches ? 'mobile' : 'desktop'];
+  }
+
+  function isDisclosureExpanded(section) {
+    if (section === 'oss' && hasOssFilters()) return true;
+    if (section === 'builds' && activeFilterCount() > 0) return true;
+    return state.disclosure[section];
+  }
+
+  function updateDisclosure(section, total, visible) {
+    const root = document.querySelector(`#${section}-disclosure`);
+    const button = root?.querySelector('[data-disclosure]');
+    const count = root?.querySelector('[data-disclosure-count]');
+    if (!root || !button || !count) return;
+    const expanded = isDisclosureExpanded(section);
+    root.hidden = total === 0;
+    button.dataset.total = String(total);
+    button.setAttribute('aria-expanded', String(expanded));
+    button.setAttribute('aria-label', expanded ? `show fewer ${section}` : `show all ${total} ${section}`);
+    button.textContent = expanded ? 'show fewer' : `show all ${total}`;
+    count.textContent = `showing ${visible} of ${total}`;
+  }
 
   /**
    * All-lowercase site still needs readable multi-word identifiers.
@@ -250,9 +285,12 @@
       .filter((project) => project.featured)
       .sort((a, b) => (a.featuredRank || 99) - (b.featuredRank || 99))
       .slice(0, 12);
+    const visible = isDisclosureExpanded('featured')
+      ? featured
+      : featured.slice(0, previewLimit('featured'));
 
     elements.featuredList.dataset.count = String(featured.length);
-    elements.featuredList.innerHTML = featured.map((project, index) => {
+    elements.featuredList.innerHTML = visible.map((project, index) => {
       const name = projectLabel(project);
       const links = Array.isArray(project.links) && project.links.length
         ? project.links
@@ -281,6 +319,7 @@
           </div>
         </article>`;
     }).join('');
+    updateDisclosure('featured', featured.length, visible.length);
   }
 
   function isoDate(date) {
@@ -325,7 +364,9 @@
     }).join('');
     const records = filteredOssContributions();
     elements.ossCount.textContent = `${records.length} / ${state.oss.contributions.length}`;
-    elements.ossLedger.innerHTML = records.slice(0, 30).map((item) => `<article><time datetime="${escapeHtml(item.updatedAt)}">${escapeHtml(item.updatedAt.slice(0, 10))}</time><div><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)} ↗</a><p>${escapeHtml(item.repo)} · ${escapeHtml(item.kind.replace('_', ' '))} · ${escapeHtml(item.relationship.replaceAll('_', ' '))}</p></div><span class="oss__status">${escapeHtml(item.status.replaceAll('_', ' '))}</span></article>`).join('') || '<p class="oss__empty">no public records match this view.</p>';
+    const visible = isDisclosureExpanded('oss') ? records : records.slice(0, previewLimit('oss'));
+    elements.ossLedger.innerHTML = visible.map((item) => `<article><time datetime="${escapeHtml(item.updatedAt)}">${escapeHtml(item.updatedAt.slice(0, 10))}</time><div><a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">${escapeHtml(item.title)} ↗</a><p>${escapeHtml(item.repo)} · ${escapeHtml(item.kind.replace('_', ' '))} · ${escapeHtml(item.relationship.replaceAll('_', ' '))}</p></div><span class="oss__status">${escapeHtml(item.status.replaceAll('_', ' '))}</span></article>`).join('') || '<p class="oss__empty">no public records match this view.</p>';
+    updateDisclosure('oss', records.length, visible.length);
   }
 
   function localDateLabel(value) {
@@ -729,10 +770,13 @@
 
   function renderArchive() {
     const projects = getFilteredProjects();
+    const visible = isDisclosureExpanded('builds')
+      ? projects
+      : projects.slice(0, previewLimit('builds'));
     elements.resultCount.textContent = `${projects.length} / ${state.projects.length}`;
     elements.emptyState.hidden = projects.length !== 0;
 
-    elements.archive.innerHTML = projects.map((project, index) => {
+    elements.archive.innerHTML = visible.map((project, index) => {
       const categoryTags = (project.categories || []).map((category) => (
         `<button type="button" data-filter-kind="category" data-filter-value="${escapeHtml(category)}">#${escapeHtml(labelForCategory(category))}</button>`
       ));
@@ -768,6 +812,7 @@
           <div class="project-row__tags">${[...categoryTags, ...formatTags, ...typeTags].join('')}</div>
         </article>`;
     }).join('');
+    updateDisclosure('builds', projects.length, visible.length);
   }
 
   function shopUrlFor(project) {
@@ -925,6 +970,9 @@
     state.ossScope = ['all_public', 'upstream', 'selected'].includes(params.get('oss_scope')) ? params.get('oss_scope') : 'all_public';
     state.ossStatus = params.get('oss_status') || '';
     state.ossRepo = params.get('oss_repo') || '';
+    state.disclosure.featured = params.get('featured') === 'all';
+    state.disclosure.oss = params.get('oss_rows') === 'all';
+    state.disclosure.builds = params.get('builds') === 'all';
 
     elements.search.value = state.query;
     if (elements.kind) elements.kind.value = state.kind;
@@ -944,8 +992,9 @@
     elements.filterDisclosure.open = activeFilterCount() > 0;
   }
 
-  function writeUrlState() {
-    const params = new URLSearchParams();
+  function writeUrlState({ push = false } = {}) {
+    const params = new URLSearchParams(window.location.search);
+    ['q', 'kind', 'portfolio', 'product', 'topic', 'format', 'year', 'date', 'sort', 'oss_scope', 'oss_status', 'oss_repo', 'featured', 'oss_rows', 'builds'].forEach((key) => params.delete(key));
     if (state.query) params.set('q', state.query);
     const kind = effectiveKind();
     if (kind) params.set('kind', kind);
@@ -958,8 +1007,11 @@
     if (state.ossScope !== 'all_public') params.set('oss_scope', state.ossScope);
     if (state.ossStatus) params.set('oss_status', state.ossStatus);
     if (state.ossRepo) params.set('oss_repo', state.ossRepo);
+    if (state.disclosure.featured) params.set('featured', 'all');
+    if (state.disclosure.oss) params.set('oss_rows', 'all');
+    if (state.disclosure.builds) params.set('builds', 'all');
     const query = params.toString();
-    history.replaceState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`);
+    history[push ? 'pushState' : 'replaceState'](null, '', `${window.location.pathname}${query ? `?${query}` : ''}${window.location.hash}`);
   }
 
   function render() {
@@ -1010,6 +1062,24 @@
   }
 
   function bindEvents() {
+    document.querySelectorAll('[data-disclosure]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const section = button.dataset.disclosure;
+        const wasExpanded = state.disclosure[section];
+        state.disclosure[section] = !wasExpanded;
+        if (section === 'featured') renderFeatured();
+        if (section === 'oss') renderOss();
+        if (section === 'builds') renderArchive();
+        writeUrlState({ push: true });
+        button.focus({ preventScroll: true });
+        if (wasExpanded) {
+          requestAnimationFrame(() => {
+            const rect = button.getBoundingClientRect();
+            if (rect.top < 0 || rect.bottom > window.innerHeight) button.scrollIntoView({ block: 'nearest' });
+          });
+        }
+      });
+    });
     elements.ossScopes?.addEventListener('click', (event) => {
       const button = event.target.closest('[data-oss-scope]');
       if (!button) return;
@@ -1263,6 +1333,29 @@
       renderActivityMap();
       render();
       bindEvents();
+      mobilePreview.addEventListener('change', () => {
+        renderFeatured();
+        renderOss();
+        renderArchive();
+      });
+      window.addEventListener('popstate', () => {
+        readUrlState();
+        renderFeatured();
+        renderOss();
+        renderArchive();
+        renderFilterSummary();
+      });
+      let printDisclosure;
+      window.addEventListener('beforeprint', () => {
+        printDisclosure = { ...state.disclosure };
+        state.disclosure = { featured: true, oss: true, builds: true };
+        renderFeatured(); renderOss(); renderArchive();
+      });
+      window.addEventListener('afterprint', () => {
+        if (!printDisclosure) return;
+        state.disclosure = printDisclosure;
+        renderFeatured(); renderOss(); renderArchive();
+      });
       setTheme(getTheme());
     } catch (error) {
       console.error('boplog data load failed', error);
