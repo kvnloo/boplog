@@ -71,3 +71,51 @@ test('same-origin links resolve without errors', async ({ page, request }) => {
     expect(response.ok(), `${link} returned ${response.status()}`).toBe(true);
   }
 });
+
+test('interaction lab has exactly two quiet same-origin entry points and stays private to crawlers', async ({ page, request }) => {
+  const errors = [];
+  page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });
+  page.on('requestfailed', (failedRequest) => errors.push(`network: ${failedRequest.url()}`));
+
+  await page.goto('http://127.0.0.1:4173/');
+  await expect(page.locator('h1')).toHaveText('kevin rajan');
+  await expect(page.locator('#oss')).toBeVisible();
+  await page.locator('#links').evaluate((details) => { details.open = true; });
+
+  const labLinks = page.locator('a[href="./dev/"]');
+  await expect(labLinks).toHaveCount(2);
+  await expect(page.locator('.links-panel__col').filter({ hasText: 'surfaces' }).getByRole('link', { name: 'interaction lab ↗' }))
+    .toHaveAttribute('title', 'Experimental design workshop');
+  await expect(page.locator('footer').getByRole('link', { name: 'design lab' })).toBeVisible();
+  for (const link of await labLinks.all()) {
+    await expect(link).toHaveAttribute('href', './dev/');
+    expect(await link.evaluate((anchor) => new URL(anchor.getAttribute('href'), 'https://kvnloo.github.io/boplog/').pathname))
+      .toBe('/boplog/dev/');
+  }
+
+  await labLinks.first().focus();
+  await expect(labLinks.first()).toBeFocused();
+  await expect(labLinks.first()).toHaveCSS('outline-style', 'solid');
+
+  const labResponse = await request.get('http://127.0.0.1:4173/dev/');
+  expect(labResponse.ok()).toBe(true);
+  await page.goto('http://127.0.0.1:4173/dev/');
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex,nofollow');
+  const robots = await (await request.get('http://127.0.0.1:4173/robots.txt')).text();
+  expect(robots).toContain('Disallow: /dev/');
+
+  await page.goto('http://127.0.0.1:4173/');
+  await page.locator('#links').evaluate((details) => { details.open = true; });
+  await page.screenshot({ path: '/tmp/boplog-interaction-lab-desktop.png', fullPage: true });
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.reload();
+  await page.locator('#links').evaluate((details) => { details.open = true; });
+  for (const region of [page.locator('.links-panel__grid'), page.locator('.footer-bar')]) {
+    const box = await region.boundingBox();
+    expect(box.x).toBeGreaterThanOrEqual(0);
+    expect(box.x + box.width).toBeLessThanOrEqual(390);
+  }
+  await page.screenshot({ path: '/tmp/boplog-interaction-lab-mobile.png', fullPage: true });
+  expect(errors).toEqual([]);
+});
