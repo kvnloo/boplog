@@ -1,14 +1,14 @@
 const ACCEPTED = new Set(['accepted', 'adopted']);
 const ADOPTION_PROOFS = new Set(['git_ancestry', 'patch_id', 'maintainer_acknowledgement', 'explicit_pr_linkage']);
 const DISPOSITIONS = new Set(['accepted', 'adopted', 'rejected', 'activity_only', 'unknown']);
-const LIFECYCLES = {
-  pull_request: new Set(['open_ready', 'merged', 'closed_unmerged']),
-  issue: new Set(['open', 'closed']),
-  commit_adoption: new Set(['adopted', 'not_adopted', 'unknown']),
-  reproduction: new Set(['open', 'closed']),
-  review: new Set(['open', 'closed']),
-  documentation: new Set(['open_ready', 'merged', 'closed_unmerged']),
-  test_or_fixture: new Set(['open_ready', 'merged', 'closed_unmerged']),
+const STATUS_CONTRACT = {
+  pull_request: { open_ready: new Set(['activity_only', 'unknown']), merged: new Set(['accepted']), closed_unmerged: new Set(['rejected']) },
+  issue: { open: new Set(['activity_only', 'unknown']), closed: new Set(['accepted', 'rejected', 'activity_only', 'unknown']) },
+  commit_adoption: { adopted: new Set(['adopted']), not_adopted: new Set(['rejected']), unknown: new Set(['activity_only', 'unknown']) },
+  reproduction: { open: new Set(['activity_only', 'unknown']), closed: new Set(['accepted', 'rejected', 'activity_only', 'unknown']) },
+  review: { open: new Set(['activity_only', 'unknown']), closed: new Set(['accepted', 'rejected', 'activity_only', 'unknown']) },
+  documentation: { open_ready: new Set(['activity_only', 'unknown']), merged: new Set(['accepted']), closed_unmerged: new Set(['rejected']) },
+  test_or_fixture: { open_ready: new Set(['activity_only', 'unknown']), merged: new Set(['accepted']), closed_unmerged: new Set(['rejected']) },
 };
 
 function isPublicHttps(value) {
@@ -75,7 +75,9 @@ export function validateContributionLedger(ledger) {
     }
     if (typeof row.headline !== 'boolean') errors.push(`${at}.headline is required`);
     if (!DISPOSITIONS.has(row.disposition)) errors.push(`${at}.disposition is invalid`);
-    if (LIFECYCLES[row.kind] && !LIFECYCLES[row.kind].has(row.lifecycle)) errors.push(`${at}.lifecycle is invalid for ${row.kind}`);
+    const lifecycleContract = STATUS_CONTRACT[row.kind]?.[row.lifecycle];
+    if (STATUS_CONTRACT[row.kind] && !lifecycleContract) errors.push(`${at}.lifecycle is invalid for ${row.kind}`);
+    else if (lifecycleContract && !lifecycleContract.has(row.disposition)) errors.push(`${at}.disposition ${row.disposition} is invalid for ${row.kind} lifecycle ${row.lifecycle}`);
     if (!isPublicHttps(row.url)) errors.push(`${at}.url must be a public HTTPS URL`);
     if (!Array.isArray(row.evidence) || !row.evidence.length) errors.push(`${at} requires immutable public evidence`);
     for (const item of row.evidence || []) {

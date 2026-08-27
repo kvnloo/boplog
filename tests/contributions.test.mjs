@@ -93,6 +93,41 @@ test('invalid status classes and unsafe row URLs are rejected', () => {
   assert.match(errors, /url must be a public HTTPS URL/);
 });
 
+test('valid PR status values are rejected when their composition is contradictory', () => {
+  for (const [lifecycle, disposition] of [
+    ['merged', 'activity_only'],
+    ['open_ready', 'accepted'],
+    ['closed_unmerged', 'accepted'],
+  ]) {
+    const errors = validateContributionLedger({ contributions: [contribution({ lifecycle, disposition })], sourceReceipt: { complete: true } }).join('\n');
+    assert.match(errors, /disposition .* invalid for pull_request lifecycle/);
+  }
+});
+
+test('every contribution kind enforces its lifecycle and disposition contract', () => {
+  const contract = {
+    pull_request: { open_ready: ['activity_only', 'unknown'], merged: ['accepted'], closed_unmerged: ['rejected'] },
+    issue: { open: ['activity_only', 'unknown'], closed: ['accepted', 'rejected', 'activity_only', 'unknown'] },
+    commit_adoption: { adopted: ['adopted'], not_adopted: ['rejected'], unknown: ['activity_only', 'unknown'] },
+    reproduction: { open: ['activity_only', 'unknown'], closed: ['accepted', 'rejected', 'activity_only', 'unknown'] },
+    review: { open: ['activity_only', 'unknown'], closed: ['accepted', 'rejected', 'activity_only', 'unknown'] },
+    documentation: { open_ready: ['activity_only', 'unknown'], merged: ['accepted'], closed_unmerged: ['rejected'] },
+    test_or_fixture: { open_ready: ['activity_only', 'unknown'], merged: ['accepted'], closed_unmerged: ['rejected'] },
+  };
+  const dispositions = ['accepted', 'adopted', 'rejected', 'activity_only', 'unknown'];
+  for (const [kind, lifecycles] of Object.entries(contract)) {
+    for (const [lifecycle, allowed] of Object.entries(lifecycles)) {
+      for (const disposition of dispositions) {
+        const row = contribution({ kind, lifecycle, disposition, headline: false });
+        const errors = validateContributionLedger({ contributions: [row], sourceReceipt: { complete: true } }).join('\n');
+        const compositionError = new RegExp(`disposition .* invalid for ${kind} lifecycle`);
+        if (allowed.includes(disposition)) assert.doesNotMatch(errors, compositionError, `${kind}/${lifecycle}/${disposition}`);
+        else assert.match(errors, compositionError, `${kind}/${lifecycle}/${disposition}`);
+      }
+    }
+  }
+});
+
 test('immutable evidence and observation time are required', () => {
   const missingEvidence = contribution();
   delete missingEvidence.evidence;
