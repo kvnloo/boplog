@@ -11,6 +11,7 @@ A minimal, static build log for [yohei.me](https://yohei.me), backed by a checke
 - A checked-in JSON snapshot exported from the `Yohei - Portfolio` Airtable.
 - No Airtable credential, client-side token, build-time token, or runtime Airtable dependency.
 - Data validation that rejects any project not explicitly tagged `public`.
+- An evidence-backed contribution ledger with mechanically generated impact totals and original, evidence-linked progress badges.
 
 ## Local development
 
@@ -56,6 +57,12 @@ No Airtable token setup is required. Data refreshes are explicit repository upda
 4. Preserve featured metadata, update `data/manifest.json`, and run `npm run check`.
 
 This can be performed directly through ChatGPT with the Airtable and GitHub connectors. The JSON files can also be edited by hand for small changes. Private-only Airtable records are never included in the repository or sent to the browser.
+
+## Open-source contribution receipts
+
+[`data/contributions.json`](data/contributions.json) is the canonical public ledger. It separates canonical upstream, contributor-fork, and owned work; records activity independently from accepted impact; and never treats code similarity as attribution. A cherry-pick or adopted commit requires public ancestry, matching patch IDs, maintainer acknowledgement, or explicit PR linkage. Linked PR/adoption records nominate one headline receipt to prevent double counting.
+
+Run `npm run check` after a refresh. The validator recomputes every summary and rejects invalid evidence or hand-maintained totals. Explicit `verified_impact` records survive GitHub refreshes through `mergeGithubRefresh`; refresh receipts must disclose pagination, deduplication, caps, and limitations.
 
 ## Deployment
 

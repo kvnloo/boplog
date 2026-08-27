@@ -1,0 +1,100 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-08-27T17:00:00Z",
+  "subject": "https://github.com/yoheinakajima",
+  "summary": {
+    "mergedUpstreamPrs": 4,
+    "adoptedChanges": 0,
+    "acceptedCommunityWork": 0,
+    "openReady": 0,
+    "communities": 1,
+    "headlineImpact": 4
+  },
+  "sourceReceipt": {
+    "provider": "GitHub public REST API and public Git history",
+    "query": "author:yoheinakajima type:pr -user:yoheinakajima",
+    "observedAt": "2026-08-27T16:52:00Z",
+    "complete": true,
+    "pagesFetched": 1,
+    "itemsObserved": 4,
+    "duplicatesRemoved": 0,
+    "limitations": [
+      "The public GitHub search census covers authored pull requests outside repositories owned by yoheinakajima; non-PR contribution kinds require explicit verified-impact records.",
+      "No Hermes adoption receipt was published because the public NousResearch/hermes-agent history contained no commit attributable to Yohei Nakajima by author identity and no public PR or maintainer citation proved adoption.",
+      "Similar code and authored commits in owned repositories are not upstream attribution."
+    ]
+  },
+  "contributions": [
+    {
+      "id": "pippin-pr-10",
+      "identity": "pippinlovesyou/pippin#10",
+      "repository": "pippinlovesyou/pippin",
+      "community": "pippin",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Create CONTRIBUTING.md",
+      "number": 10,
+      "url": "https://github.com/pippinlovesyou/pippin/pull/10",
+      "authoredCommits": ["f165ff41edd33e135a750a2d2e468e2ec408a625"],
+      "destinationCommit": "9f784cfa939d89c300780dcb35a12bbf8800e831",
+      "evidence": [{"url":"https://github.com/pippinlovesyou/pippin/pull/10","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"merged_pr","mergedAt":"2025-01-15T17:32:24Z","mergeCommit":"9f784cfa939d89c300780dcb35a12bbf8800e831"}}]
+    },
+    {
+      "id": "pippin-pr-11",
+      "identity": "pippinlovesyou/pippin#11",
+      "repository": "pippinlovesyou/pippin",
+      "community": "pippin",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Create LICENSE",
+      "number": 11,
+      "url": "https://github.com/pippinlovesyou/pippin/pull/11",
+      "authoredCommits": ["8a64e78cb5f7bb452308242368f2f6b8c4637017"],
+      "destinationCommit": "6ea3b9a0de784b234fd458e6eee6a0462c8bfa8a",
+      "evidence": [{"url":"https://github.com/pippinlovesyou/pippin/pull/11","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"merged_pr","mergedAt":"2025-01-15T03:07:59Z","mergeCommit":"6ea3b9a0de784b234fd458e6eee6a0462c8bfa8a"}}]
+    },
+    {
+      "id": "pippin-pr-16",
+      "identity": "pippinlovesyou/pippin#16",
+      "repository": "pippinlovesyou/pippin",
+      "community": "pippin",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Update ci.yml",
+      "number": 16,
+      "url": "https://github.com/pippinlovesyou/pippin/pull/16",
+      "authoredCommits": ["9c6cfd013c0b7a1f6cc2d85d7c4032863e5ae9f8"],
+      "destinationCommit": "b37266a803d2c4848dfb113f761239346f634fd7",
+      "evidence": [{"url":"https://github.com/pippinlovesyou/pippin/pull/16","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"merged_pr","mergedAt":"2025-01-17T04:37:04Z","mergeCommit":"b37266a803d2c4848dfb113f761239346f634fd7"}}]
+    },
+    {
+      "id": "pippin-pr-27",
+      "identity": "pippinlovesyou/pippin#27",
+      "repository": "pippinlovesyou/pippin",
+      "community": "pippin",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Expanded CI pipeline",
+      "number": 27,
+      "url": "https://github.com/pippinlovesyou/pippin/pull/27",
+      "authoredCommits": ["1c4003cb8dc9f41d030f2c45c4feb752f9d3aa25"],
+      "destinationCommit": "ef3ccd6a49556a08471a8869730887b181be4d33",
+      "evidence": [
+        {"url":"https://github.com/pippinlovesyou/pippin/pull/27","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"merged_pr","mergedAt":"2025-01-28T15:16:53Z","mergeCommit":"ef3ccd6a49556a08471a8869730887b181be4d33"}},
+        {"url":"https://github.com/yoheinakajima/pippin-ci/commit/1c4003cb8dc9f41d030f2c45c4feb752f9d3aa25","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"source_commit","sourceRepository":"yoheinakajima/pippin-ci"}}
+      ]
+    }
+  ]
+}

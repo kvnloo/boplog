@@ -1,0 +1,69 @@
+const ACCEPTED = new Set(['accepted', 'adopted']);
+const ADOPTION_PROOFS = new Set(['git_ancestry', 'patch_id', 'maintainer_acknowledgement', 'explicit_pr_linkage']);
+
+export function mergeGithubRefresh(existing, refreshed) {
+  const updates = new Map(refreshed.map((row) => [row.identity, row]));
+  const merged = existing.map((row) => row.source === 'verified_impact' ? row : { ...row, ...(updates.get(row.identity) || {}) });
+  const identities = new Set(existing.map((row) => row.identity));
+  return merged.concat(refreshed.filter((row) => !identities.has(row.identity)));
+}
+
+export function filterContributions(rows, { scope = 'all', communities = [] } = {}) {
+  if (scope === 'upstream') return rows.filter((row) => row.relationship === 'canonical_upstream');
+  if (scope === 'selected') return rows.filter((row) => communities.includes(row.community));
+  return rows;
+}
+
+export function summarizeContributions(rows) {
+  const headline = rows.filter((row) => row.headline && ACCEPTED.has(row.disposition));
+  return {
+    mergedUpstreamPrs: headline.filter((row) => row.relationship === 'canonical_upstream' && row.kind === 'pull_request' && row.lifecycle === 'merged').length,
+    adoptedChanges: headline.filter((row) => row.kind === 'commit_adoption' && row.disposition === 'adopted').length,
+    acceptedCommunityWork: headline.filter((row) => ['issue', 'reproduction', 'review'].includes(row.kind)).length,
+    openReady: rows.filter((row) => row.lifecycle === 'open_ready').length,
+    communities: new Set(headline.map((row) => row.community)).size,
+    headlineImpact: headline.length,
+  };
+}
+
+export function badgesFor(rows) {
+  const summary = summarizeContributions(rows);
+  const evidence = (predicate) => rows.filter(predicate).map((row) => row.id);
+  const definitions = [
+    ['first-upstream-merge', 'First upstream merge', '1 merged PR in a canonical upstream', summary.mergedUpstreamPrs >= 1, (row) => row.headline && row.relationship === 'canonical_upstream' && row.kind === 'pull_request' && row.lifecycle === 'merged'],
+    ['adopted-patch', 'Adopted patch', '1 adopted change with attribution-grade public evidence', summary.adoptedChanges >= 1, (row) => row.headline && row.kind === 'commit_adoption' && row.disposition === 'adopted'],
+    ['reproduction-used', 'Reproduction used', '1 reproduction accepted with a public maintainer citation', rows.some((row) => row.headline && row.kind === 'reproduction' && ACCEPTED.has(row.disposition)), (row) => row.headline && row.kind === 'reproduction'],
+    ['review-changed-outcome', 'Review changed outcome', '1 review accepted with a public maintainer citation', rows.some((row) => row.headline && row.kind === 'review' && ACCEPTED.has(row.disposition)), (row) => row.headline && row.kind === 'review'],
+  ];
+  const communityTarget = [2, 5, 10].find((target) => summary.communities < target) || 10;
+  definitions.push([`communities-${communityTarget}`, `${communityTarget} communities`, `accepted impact in ${communityTarget} canonical upstream communities`, summary.communities >= communityTarget, (row) => row.headline && row.relationship === 'canonical_upstream' && ACCEPTED.has(row.disposition)]);
+  return definitions.map(([id, label, condition, unlocked, predicate]) => ({ id, label, condition, unlocked, evidenceIds: unlocked ? evidence(predicate) : [] }));
+}
+
+export function validateContributionLedger(ledger) {
+  const errors = [];
+  const ids = new Set();
+  const identities = new Map();
+  const relationships = new Set(['canonical_upstream', 'contributor_fork', 'owned']);
+  const kinds = new Set(['pull_request', 'issue', 'commit_adoption', 'reproduction', 'review', 'documentation', 'test_or_fixture']);
+  for (const [index, row] of (ledger.contributions || []).entries()) {
+    const at = `contributions[${index}]`;
+    if (!row.id || ids.has(row.id)) errors.push(`${at}.id must be unique`); ids.add(row.id);
+    if (!relationships.has(row.relationship)) errors.push(`${at}.relationship is invalid`);
+    if (!kinds.has(row.kind)) errors.push(`${at}.kind is invalid`);
+    if (!row.identity || !row.repository || !row.community) errors.push(`${at} requires identity, repository, and community`);
+    if (!Array.isArray(row.evidence) || !row.evidence.length) errors.push(`${at} requires immutable public evidence`);
+    for (const item of row.evidence || []) {
+      if (!item.url?.startsWith('https://') || !item.observedAt) errors.push(`${at} evidence requires HTTPS URL and observedAt`);
+    }
+    if (row.kind === 'commit_adoption' && ACCEPTED.has(row.disposition) && !(row.evidence || []).some((item) => ADOPTION_PROOFS.has(item.proof?.type))) errors.push(`${at} adopted commit requires attribution-grade proof`);
+    if (['reproduction', 'review'].includes(row.kind) && ACCEPTED.has(row.disposition) && !(row.evidence || []).some((item) => item.proof?.type === 'maintainer_acknowledgement' && item.proof.url?.startsWith('https://'))) errors.push(`${at} accepted ${row.kind} requires public maintainer citation`);
+    if (row.headline) {
+      if (identities.has(row.identity)) errors.push(`${at} duplicates headline identity ${row.identity}`);
+      identities.set(row.identity, row.id);
+    }
+  }
+  const receipt = ledger.sourceReceipt || {};
+  if (receipt.complete === false && (!Number.isInteger(receipt.searchCap) || !receipt.limitations?.length)) errors.push('incomplete source receipt requires searchCap and limitations');
+  return errors;
+}

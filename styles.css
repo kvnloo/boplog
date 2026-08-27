@@ -121,8 +121,8 @@ a { color: inherit; }
 .talk-banner.is-live .talk-banner__link:hover { background: var(--signal); color: #fff; }
 .talk-banner.is-available { background: var(--surface); border-color: var(--line-dark); }
 
-.featured, .archive, .about, .machine-readable { padding: 24px 0; }
-.archive, .about, .machine-readable { border-top: 1px solid var(--line-dark); }
+.featured, .contributions, .archive, .about, .machine-readable { padding: 24px 0; }
+.contributions, .archive, .about, .machine-readable { border-top: 1px solid var(--line-dark); }
 .section-line {
   display: flex;
   align-items: baseline;
@@ -154,6 +154,29 @@ a { color: inherit; }
 .featured-item__meta > span { color: var(--faint); }
 .featured-item__meta a { color: var(--accent); text-decoration: none; }
 .featured-item__meta a:hover { text-decoration: underline; text-underline-offset: 2px; }
+
+.contributions .section-line a { color: var(--accent); font-size: 10px; text-decoration: none; }
+.contributions__intro { max-width: 64ch; margin: 0 0 12px; color: var(--muted); }
+.scope-tabs, .badge-shelf { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 9px; }
+.scope-tabs button { flex: 0 0 auto; padding: 5px 9px; border: 1px solid var(--line); border-radius: 3px; background: transparent; color: var(--muted); font: 10.5px var(--mono); cursor: pointer; }
+.scope-tabs button[aria-pressed="true"] { border-color: var(--text); background: var(--text); color: var(--bg); }
+.contribution-counters { display: grid; grid-template-columns: repeat(5, 1fr); border-block: 1px solid var(--line); }
+.contribution-counters div { display: grid; gap: 2px; padding: 10px; border-right: 1px solid var(--line); }
+.contribution-counters strong { font: 700 18px var(--mono); font-variant-numeric: tabular-nums; }
+.contribution-counters span, .contribution-limitations { color: var(--faint); font: 9px/1.35 var(--mono); }
+.badge-shelf { padding-top: 10px; }
+.badge-shelf button { display: grid; min-width: 190px; gap: 3px; padding: 8px; border: 1px solid var(--line); border-radius: 3px; background: var(--surface); text-align: left; cursor: pointer; }
+.badge-shelf button:not(:disabled):hover { border-color: var(--accent); }
+.badge-shelf button:disabled { color: var(--faint); cursor: default; }
+.badge-shelf span { font: 650 10.5px var(--mono); }
+.badge-shelf small { color: var(--faint); font-size: 9px; }
+.contribution-row { display: grid; grid-template-columns: 190px minmax(0, 1fr) 140px; gap: 12px; padding: 9px 0; border-top: 1px solid var(--line); }
+.contribution-row h3, .contribution-row p { margin: 0; }
+.contribution-row h3 { font: 650 11px var(--mono); }
+.contribution-row p, .contribution-row > div { color: var(--faint); font: 9.5px/1.4 var(--mono); }
+.contribution-row > div:last-child { text-align: right; }
+.contribution-row a { color: var(--accent); text-decoration: none; }
+.impact { margin-right: 8px; }.impact--accepted, .impact--adopted { color: var(--signal); }
 
 .activity { padding: 8px 0 14px; }
 .activity__header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 8px; font-family: var(--mono); }
@@ -348,7 +371,10 @@ footer a:hover { color: var(--accent); text-decoration: underline; text-underlin
   .talk-banner__main { margin-top: 8px; }
   .talk-banner__time { margin-top: 7px; }
   .talk-banner__link { display: inline-block; margin-top: 10px; }
-  .featured, .archive, .about, .machine-readable { padding: 19px 0; }
+  .featured, .contributions, .archive, .about, .machine-readable { padding: 19px 0; }
+  .contribution-counters { grid-template-columns: repeat(2, 1fr); }
+  .contribution-row { grid-template-columns: 1fr; gap: 3px; }
+  .contribution-row > div:last-child { text-align: left; }
   .filters { grid-template-columns: 1fr 1fr; }
   .filter--search { grid-column: 1 / -1; }
   .filter-actions { grid-column: 1 / -1; }
@@ -365,6 +391,10 @@ footer a:hover { color: var(--accent); text-decoration: underline; text-underlin
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: dark; --bg: #151614; --surface: #1d1e1b; --surface-hover: #242520; --text: #eeeeea; --muted: #b0b0a7; --faint: #85857d; --line: #373832; --line-dark: #52534b; --accent: #8bbcff; --accent-soft: #26364b; --signal: #79cea0; --signal-soft: #193426; --banner: #202b3a; }
 }
 
 /* Preserved for possible future use; hidden from the current site. */

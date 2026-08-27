@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light">
+  <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#fafaf7">
   <meta name="boplog-build" content="2026-08-13.1">
   <meta name="description" content="Yohei Nakajima's public build log: AI agents, developer tools, venture experiments, economics research, art, and open-source projects.">
@@ -21,8 +21,8 @@
   <link rel="alternate" type="application/json" href="./data/manifest.json" title="Public project data manifest">
   <link rel="alternate" type="text/plain" href="./llms.txt" title="AI-readable site guide">
   <style>
-    :root { color-scheme: light; }
     html, body { background: #fafaf7; color: #171717; }
+    @media (prefers-color-scheme: dark) { html, body { background: #151614; color: #eeeeea; } }
   </style>
   <script type="application/ld+json">
   {
@@ -163,6 +163,16 @@
           </div>
         </article>
       </div>
+    </section>
+
+    <section class="contributions" id="contributions" aria-labelledby="contributions-title">
+      <div class="section-line"><h2 id="contributions-title"><span aria-hidden="true">//</span> open source receipts</h2><a href="./data/contributions.json">public ledger ↗</a></div>
+      <p class="contributions__intro">Accepted work only counts when a public receipt proves the outcome. Activity stays visible without becoming impact.</p>
+      <div class="scope-tabs" role="group" aria-label="Contribution scope"><button type="button" data-contribution-scope="upstream" aria-pressed="true">upstream</button><button type="button" data-contribution-scope="all">all public</button><button type="button" data-contribution-scope="selected">selected communities</button></div>
+      <div class="contribution-counters" id="contribution-counters" aria-live="polite"></div>
+      <div class="badge-shelf" id="badge-shelf" aria-label="Evidence-backed badges"></div>
+      <div class="contribution-list" id="contribution-list" aria-live="polite"></div>
+      <p class="contribution-limitations" id="contribution-limitations"></p>
     </section>
 
     <section class="archive" id="archive" aria-labelledby="archive-title">
@@ -310,6 +320,7 @@
       <div class="machine-readable__links">
         <a href="./llms.txt">llms.txt</a>
         <a href="./data/manifest.json">JSON manifest</a>
+        <a href="./data/contributions.json">contribution ledger</a>
         <a href="./feed.xml">Atom feed</a>
         <a href="./sitemap.xml">sitemap.xml</a>
       </div>
@@ -327,5 +338,6 @@
   </noscript>
 
   <script src="./app.js?v=20260722.6" defer></script>
+  <script src="./contributions-ui.js?v=20260827.1" defer></script>
 </body>
 </html>

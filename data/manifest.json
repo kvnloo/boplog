@@ -1,6 +1,8 @@
 {
   "generatedAt": "2026-08-13T00:00:00Z",
   "source": "Yohei - Portfolio / Airtable (explicitly public records only)",
+  "schemaVersion": "2.0.0",
+  "contributions": "contributions.json",
   "featuredLimit": 3,
   "files": [
     "projects-2026.json",

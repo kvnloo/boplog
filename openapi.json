@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "yohei.me Public Build Archive",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "A free, read-only static API for Yohei Nakajima's explicitly public build records. No authentication or API key is required."
   },
   "servers": [{"url": "https://yohei.me"}],
@@ -38,6 +38,13 @@
         }
       }
     },
+    "/data/contributions.json": {
+      "get": {
+        "operationId": "getContributionLedger",
+        "summary": "Get evidence-backed public contribution receipts",
+        "responses": {"200": {"description": "Contribution ledger", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/ContributionLedger"}}}}}
+      }
+    },
     "/llms.txt": {
       "get": {
         "operationId": "getAgentGuide",
@@ -62,6 +69,17 @@
         "type": "object",
         "required": ["projects"],
         "properties": {"projects": {"type": "array", "items": {"$ref": "#/components/schemas/Project"}}}
+      },
+      "ContributionLedger": {
+        "type": "object",
+        "required": ["schemaVersion", "generatedAt", "summary", "sourceReceipt", "contributions"],
+        "properties": {
+          "schemaVersion": {"type": "string"},
+          "generatedAt": {"type": "string", "format": "date-time"},
+          "summary": {"type": "object", "additionalProperties": {"type": "integer"}},
+          "sourceReceipt": {"type": "object"},
+          "contributions": {"type": "array", "items": {"type": "object"}}
+        }
       },
       "Project": {
         "type": "object",

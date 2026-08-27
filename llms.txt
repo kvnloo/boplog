@@ -16,6 +16,7 @@ Last data refresh: 2026-08-13
 - [Agent usage guide](https://yohei.me/agents.md): When to use this archive and how to interpret its records.
 - [OpenAPI](https://yohei.me/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
 - [Project data manifest](https://yohei.me/data/manifest.json): Lists all year-partitioned public JSON files.
+- [Contribution ledger](https://yohei.me/data/contributions.json): Evidence-backed upstream activity and accepted-impact receipts.
 - [Atom feed](https://yohei.me/feed.xml): Latest public projects.
 - [Sitemap](https://yohei.me/sitemap.xml): Canonical discovery URLs.
 
@@ -68,3 +69,5 @@ Each JSON record contains an ID, name, short description, date, source URL, publ
 ## Data policy
 
 Only Airtable records explicitly tagged public are included. Private records are excluded from the repository and browser payload. The checked-in JSON files are the canonical data source for this static site.
+
+Contribution totals are mechanically derived. Accepted/adopted impact requires public evidence; similar code is never attribution. Relationship and completeness fields distinguish canonical upstream, contributor-fork, owned, and unknown outcomes.

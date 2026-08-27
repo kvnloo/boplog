@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import process from 'node:process';
+import { summarizeContributions, validateContributionLedger } from './contributions.mjs';
 
 const dataDir = new URL('../data/', import.meta.url);
 const manifest = JSON.parse(await readFile(new URL('manifest.json', dataDir), 'utf8'));
@@ -9,6 +10,10 @@ const chunks = await Promise.all((manifest.files || []).map(async (file) => {
 }));
 const payload = { ...manifest, projects: chunks.flat() };
 const errors = [];
+const contributionLedger = JSON.parse(await readFile(new URL(manifest.contributions, dataDir), 'utf8'));
+errors.push(...validateContributionLedger(contributionLedger));
+const generatedSummary = summarizeContributions(contributionLedger.contributions || []);
+if (JSON.stringify(generatedSummary) !== JSON.stringify(contributionLedger.summary)) errors.push('contribution summary must be mechanically generated from contribution rows');
 
 if (!Array.isArray(manifest.files) || !manifest.files.length) errors.push('manifest.files must be a non-empty array');
 if (!Array.isArray(payload.projects)) {
