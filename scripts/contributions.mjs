@@ -1,5 +1,24 @@
 const ACCEPTED = new Set(['accepted', 'adopted']);
 const ADOPTION_PROOFS = new Set(['git_ancestry', 'patch_id', 'maintainer_acknowledgement', 'explicit_pr_linkage']);
+const DISPOSITIONS = new Set(['accepted', 'adopted', 'rejected', 'activity_only', 'unknown']);
+const LIFECYCLES = {
+  pull_request: new Set(['open_ready', 'merged', 'closed_unmerged']),
+  issue: new Set(['open', 'closed']),
+  commit_adoption: new Set(['adopted', 'not_adopted', 'unknown']),
+  reproduction: new Set(['open', 'closed']),
+  review: new Set(['open', 'closed']),
+  documentation: new Set(['open_ready', 'merged', 'closed_unmerged']),
+  test_or_fixture: new Set(['open_ready', 'merged', 'closed_unmerged']),
+};
+
+function isPublicHttps(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === 'https:' && Boolean(url.hostname) && !['localhost', '127.0.0.1', '::1'].includes(url.hostname);
+  } catch {
+    return false;
+  }
+}
 
 export function mergeGithubRefresh(existing, refreshed) {
   const updates = new Map(refreshed.map((row) => [row.identity, row]));
@@ -43,7 +62,7 @@ export function badgesFor(rows) {
 export function validateContributionLedger(ledger) {
   const errors = [];
   const ids = new Set();
-  const identities = new Map();
+  const headlineRows = [];
   const relationships = new Set(['canonical_upstream', 'contributor_fork', 'owned']);
   const kinds = new Set(['pull_request', 'issue', 'commit_adoption', 'reproduction', 'review', 'documentation', 'test_or_fixture']);
   for (const [index, row] of (ledger.contributions || []).entries()) {
@@ -51,17 +70,30 @@ export function validateContributionLedger(ledger) {
     if (!row.id || ids.has(row.id)) errors.push(`${at}.id must be unique`); ids.add(row.id);
     if (!relationships.has(row.relationship)) errors.push(`${at}.relationship is invalid`);
     if (!kinds.has(row.kind)) errors.push(`${at}.kind is invalid`);
-    if (!row.identity || !row.repository || !row.community) errors.push(`${at} requires identity, repository, and community`);
+    for (const field of ['id', 'identity', 'repository', 'community', 'relationship', 'kind', 'lifecycle', 'disposition', 'title', 'url']) {
+      if (typeof row[field] !== 'string' || !row[field].trim()) errors.push(`${at}.${field} is required`);
+    }
+    if (typeof row.headline !== 'boolean') errors.push(`${at}.headline is required`);
+    if (!DISPOSITIONS.has(row.disposition)) errors.push(`${at}.disposition is invalid`);
+    if (LIFECYCLES[row.kind] && !LIFECYCLES[row.kind].has(row.lifecycle)) errors.push(`${at}.lifecycle is invalid for ${row.kind}`);
+    if (!isPublicHttps(row.url)) errors.push(`${at}.url must be a public HTTPS URL`);
     if (!Array.isArray(row.evidence) || !row.evidence.length) errors.push(`${at} requires immutable public evidence`);
     for (const item of row.evidence || []) {
-      if (!item.url?.startsWith('https://') || !item.observedAt) errors.push(`${at} evidence requires HTTPS URL and observedAt`);
+      if (!isPublicHttps(item.url) || typeof item.observedAt !== 'string' || !item.observedAt || !item.proof || typeof item.proof.type !== 'string') errors.push(`${at} evidence requires HTTPS URL, observedAt, and proof shape`);
     }
     if (row.kind === 'commit_adoption' && ACCEPTED.has(row.disposition) && !(row.evidence || []).some((item) => ADOPTION_PROOFS.has(item.proof?.type))) errors.push(`${at} adopted commit requires attribution-grade proof`);
     if (['reproduction', 'review'].includes(row.kind) && ACCEPTED.has(row.disposition) && !(row.evidence || []).some((item) => item.proof?.type === 'maintainer_acknowledgement' && item.proof.url?.startsWith('https://'))) errors.push(`${at} accepted ${row.kind} requires public maintainer citation`);
-    if (row.headline) {
-      if (identities.has(row.identity)) errors.push(`${at} duplicates headline identity ${row.identity}`);
-      identities.set(row.identity, row.id);
-    }
+    if (row.headline) headlineRows.push({ index, row });
+  }
+  const parent = new Map();
+  const root = (identity) => { if (!parent.has(identity)) parent.set(identity, identity); const value = parent.get(identity); if (value !== identity) parent.set(identity, root(value)); return parent.get(identity); };
+  const union = (left, right) => { const a = root(left); const b = root(right); if (a !== b) parent.set(b, a); };
+  for (const row of ledger.contributions || []) { root(row.identity); if (row.linkedIdentity) union(row.identity, row.linkedIdentity); }
+  const groupedHeadlines = new Map();
+  for (const { index, row } of headlineRows) {
+    const group = root(row.identity);
+    if (groupedHeadlines.has(group)) errors.push(`contributions[${index}] duplicate headline in linked identity group with ${groupedHeadlines.get(group)}`);
+    else groupedHeadlines.set(group, row.identity);
   }
   const receipt = ledger.sourceReceipt || {};
   if (receipt.complete === false && (!Number.isInteger(receipt.searchCap) || !receipt.limitations?.length)) errors.push('incomplete source receipt requires searchCap and limitations');

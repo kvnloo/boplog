@@ -168,7 +168,7 @@
     <section class="contributions" id="contributions" aria-labelledby="contributions-title">
       <div class="section-line"><h2 id="contributions-title"><span aria-hidden="true">//</span> open source receipts</h2><a href="./data/contributions.json">public ledger ↗</a></div>
       <p class="contributions__intro">Accepted work only counts when a public receipt proves the outcome. Activity stays visible without becoming impact.</p>
-      <div class="scope-tabs" role="group" aria-label="Contribution scope"><button type="button" data-contribution-scope="upstream" aria-pressed="true">upstream</button><button type="button" data-contribution-scope="all">all public</button><button type="button" data-contribution-scope="selected">selected communities</button></div>
+      <div class="scope-tabs" role="group" aria-label="Contribution scope"><button type="button" data-contribution-scope="upstream" aria-pressed="true">upstream</button><button type="button" data-contribution-scope="all">all public</button><button type="button" data-contribution-scope="selected">selected communities</button><label>communities <input id="contribution-communities" type="text" placeholder="hermes,cribble" aria-label="Selected contribution communities"></label></div>
       <div class="contribution-counters" id="contribution-counters" aria-live="polite"></div>
       <div class="badge-shelf" id="badge-shelf" aria-label="Evidence-backed badges"></div>
       <div class="contribution-list" id="contribution-list" aria-live="polite"></div>
@@ -338,6 +338,6 @@
   </noscript>
 
   <script src="./app.js?v=20260722.6" defer></script>
-  <script src="./contributions-ui.js?v=20260827.1" defer></script>
+  <script type="module" src="./contributions-ui.mjs?v=20260827.2"></script>
 </body>
 </html>

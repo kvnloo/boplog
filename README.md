@@ -62,7 +62,9 @@ This can be performed directly through ChatGPT with the Airtable and GitHub conn
 
 [`data/contributions.json`](data/contributions.json) is the canonical public ledger. It separates canonical upstream, contributor-fork, and owned work; records activity independently from accepted impact; and never treats code similarity as attribution. A cherry-pick or adopted commit requires public ancestry, matching patch IDs, maintainer acknowledgement, or explicit PR linkage. Linked PR/adoption records nominate one headline receipt to prevent double counting.
 
-Run `npm run check` after a refresh. The validator recomputes every summary and rejects invalid evidence or hand-maintained totals. Explicit `verified_impact` records survive GitHub refreshes through `mergeGithubRefresh`; refresh receipts must disclose pagination, deduplication, caps, and limitations.
+The ledger subject is Kevin Rajan's public identity, [`https://github.com/kvnloo`](https://github.com/kvnloo). Browser scopes are shareable: `?contributions=upstream`, `?contributions=all`, or a comma-separated selection such as `?contributions=selected&communities=hermes,cribble`.
+
+Run `npm run check` after a refresh. The validator recomputes every summary and rejects unsafe URLs, incompatible lifecycle/kind combinations, invalid dispositions, incomplete immutable evidence, linked headline duplication, or hand-maintained totals. Explicit `verified_impact` records survive GitHub refreshes through `mergeGithubRefresh`; refresh receipts must disclose pagination, deduplication, caps, and limitations.
 
 ## Deployment
 

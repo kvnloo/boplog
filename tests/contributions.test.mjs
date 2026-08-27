@@ -7,6 +7,7 @@ import {
   summarizeContributions,
   validateContributionLedger,
 } from '../scripts/contributions.mjs';
+import { contributionViewModel, parseContributionState } from '../contributions-ui.mjs';
 
 const evidence = { url: 'https://github.com/acme/tool/pull/1', observedAt: '2026-08-27T00:00:00Z', proof: { type: 'merged_pr', url: 'https://github.com/acme/tool/pull/1' } };
 const contribution = (overrides = {}) => ({
@@ -74,4 +75,49 @@ test('GitHub refresh preserves explicit verified-impact records', () => {
   const refreshed = mergeGithubRefresh([explicit], [{ identity: explicit.identity, lifecycle: 'closed_unmerged', disposition: 'rejected' }]);
   assert.equal(refreshed[0].lifecycle, 'adopted');
   assert.equal(refreshed[0].disposition, 'adopted');
+});
+
+test('linked headline receipts are rejected across the identity group', () => {
+  const rows = [
+    contribution(),
+    contribution({ id: 'adopted', identity: 'patch:x', linkedIdentity: 'acme/tool#1', kind: 'commit_adoption', lifecycle: 'adopted', disposition: 'adopted', sourceCommit: 'b'.repeat(40), destinationCommit: 'c'.repeat(40), evidence: [{ ...evidence, proof: { type: 'explicit_pr_linkage', pullRequest: evidence.url } }] }),
+  ];
+  assert.match(validateContributionLedger({ contributions: rows, sourceReceipt: { complete: true } }).join('\n'), /duplicate headline.*linked identity group/i);
+});
+
+test('invalid status classes and unsafe row URLs are rejected', () => {
+  const row = contribution({ kind: 'issue', lifecycle: 'merged', disposition: 'banana', url: 'javascript:alert(1)' });
+  const errors = validateContributionLedger({ contributions: [row], sourceReceipt: { complete: true } }).join('\n');
+  assert.match(errors, /lifecycle.*invalid for issue/);
+  assert.match(errors, /disposition is invalid/);
+  assert.match(errors, /url must be a public HTTPS URL/);
+});
+
+test('immutable evidence and observation time are required', () => {
+  const missingEvidence = contribution();
+  delete missingEvidence.evidence;
+  const missingObservedAt = contribution({ id: 'second', identity: 'acme/tool#2', evidence: [{ url: evidence.url, proof: evidence.proof }] });
+  const errors = validateContributionLedger({ contributions: [missingEvidence, missingObservedAt], sourceReceipt: { complete: true } }).join('\n');
+  assert.match(errors, /immutable public evidence/);
+  assert.match(errors, /observedAt/);
+});
+
+test('selected communities restore from URL state including a zero-result choice', () => {
+  assert.deepEqual(parseContributionState('?contributions=selected&communities=hermes,none'), { scope: 'selected', communities: ['hermes', 'none'] });
+  const model = contributionViewModel([contribution({ community: 'cribble' })], { scope: 'selected', communities: ['none'] });
+  assert.deepEqual(model.rows, []);
+  assert.equal(model.empty, true);
+});
+
+test('browser badge model exactly matches shared badge rules across scopes and relationships', () => {
+  const rows = [
+    contribution(),
+    contribution({ id: 'fork', identity: 'fork/repo#1', repository: 'fork/repo', community: 'hermes', relationship: 'contributor_fork' }),
+    contribution({ id: 'repro', identity: 'acme/tool#2', kind: 'reproduction', lifecycle: 'closed', evidence: [{ ...evidence, proof: { type: 'maintainer_acknowledgement', url: evidence.url } }] }),
+    contribution({ id: 'review', identity: 'acme/tool#3', kind: 'review', lifecycle: 'closed', evidence: [{ ...evidence, proof: { type: 'maintainer_acknowledgement', url: evidence.url } }] }),
+  ];
+  for (const state of [{ scope: 'all', communities: [] }, { scope: 'upstream', communities: [] }, { scope: 'selected', communities: ['hermes'] }]) {
+    const model = contributionViewModel(rows, state);
+    assert.deepEqual(model.badges, badgesFor(model.rows));
+  }
 });

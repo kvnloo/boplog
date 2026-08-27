@@ -1,99 +1,1047 @@
 {
-  "schemaVersion": "1.0.0",
-  "generatedAt": "2026-08-27T17:00:00Z",
-  "subject": "https://github.com/yoheinakajima",
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-08-27T17:15:00Z",
+  "subject": "https://github.com/kvnloo",
+  "subjectName": "Kevin Rajan",
   "summary": {
-    "mergedUpstreamPrs": 4,
+    "mergedUpstreamPrs": 9,
     "adoptedChanges": 0,
     "acceptedCommunityWork": 0,
-    "openReady": 0,
-    "communities": 1,
-    "headlineImpact": 4
+    "openReady": 32,
+    "communities": 6,
+    "headlineImpact": 9
   },
   "sourceReceipt": {
-    "provider": "GitHub public REST API and public Git history",
-    "query": "author:yoheinakajima type:pr -user:yoheinakajima",
-    "observedAt": "2026-08-27T16:52:00Z",
-    "complete": true,
+    "provider": "GitHub public REST API",
+    "query": "author:kvnloo type:pr -user:kvnloo",
+    "observedAt": "2026-08-27T17:15:00Z",
+    "complete": false,
+    "searchCap": 1000,
     "pagesFetched": 1,
-    "itemsObserved": 4,
+    "itemsObserved": 65,
     "duplicatesRemoved": 0,
     "limitations": [
-      "The public GitHub search census covers authored pull requests outside repositories owned by yoheinakajima; non-PR contribution kinds require explicit verified-impact records.",
-      "No Hermes adoption receipt was published because the public NousResearch/hermes-agent history contained no commit attributable to Yohei Nakajima by author identity and no public PR or maintainer citation proved adoption.",
-      "Similar code and authored commits in owned repositories are not upstream attribution."
+      "The checked-in census contains the explicitly enumerated public pull requests requested for this release, not every result returned by GitHub search.",
+      "GitHub unauthenticated public REST search was observed in one 100-item page and is capped at 1,000 results; completeness outside the enumerated census is not claimed.",
+      "Open and draft pull requests are activity only, not accepted impact. Contributor-fork receipts are not canonical-upstream impact.",
+      "No adoption or attribution is inferred from code similarity. Non-PR contribution kinds require separate attribution-grade public evidence."
     ]
   },
   "contributions": [
     {
-      "id": "pippin-pr-10",
-      "identity": "pippinlovesyou/pippin#10",
-      "repository": "pippinlovesyou/pippin",
-      "community": "pippin",
+      "id": "andymik90-aperant-pr-332",
+      "identity": "AndyMik90/Aperant#332",
+      "repository": "AndyMik90/Aperant",
+      "community": "andymik90",
       "relationship": "canonical_upstream",
       "kind": "pull_request",
       "lifecycle": "merged",
       "disposition": "accepted",
       "headline": true,
-      "title": "Create CONTRIBUTING.md",
-      "number": 10,
-      "url": "https://github.com/pippinlovesyou/pippin/pull/10",
-      "authoredCommits": ["f165ff41edd33e135a750a2d2e468e2ec408a625"],
-      "destinationCommit": "9f784cfa939d89c300780dcb35a12bbf8800e831",
-      "evidence": [{"url":"https://github.com/pippinlovesyou/pippin/pull/10","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"merged_pr","mergedAt":"2025-01-15T17:32:24Z","mergeCommit":"9f784cfa939d89c300780dcb35a12bbf8800e831"}}]
-    },
-    {
-      "id": "pippin-pr-11",
-      "identity": "pippinlovesyou/pippin#11",
-      "repository": "pippinlovesyou/pippin",
-      "community": "pippin",
-      "relationship": "canonical_upstream",
-      "kind": "pull_request",
-      "lifecycle": "merged",
-      "disposition": "accepted",
-      "headline": true,
-      "title": "Create LICENSE",
-      "number": 11,
-      "url": "https://github.com/pippinlovesyou/pippin/pull/11",
-      "authoredCommits": ["8a64e78cb5f7bb452308242368f2f6b8c4637017"],
-      "destinationCommit": "6ea3b9a0de784b234fd458e6eee6a0462c8bfa8a",
-      "evidence": [{"url":"https://github.com/pippinlovesyou/pippin/pull/11","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"merged_pr","mergedAt":"2025-01-15T03:07:59Z","mergeCommit":"6ea3b9a0de784b234fd458e6eee6a0462c8bfa8a"}}]
-    },
-    {
-      "id": "pippin-pr-16",
-      "identity": "pippinlovesyou/pippin#16",
-      "repository": "pippinlovesyou/pippin",
-      "community": "pippin",
-      "relationship": "canonical_upstream",
-      "kind": "pull_request",
-      "lifecycle": "merged",
-      "disposition": "accepted",
-      "headline": true,
-      "title": "Update ci.yml",
-      "number": 16,
-      "url": "https://github.com/pippinlovesyou/pippin/pull/16",
-      "authoredCommits": ["9c6cfd013c0b7a1f6cc2d85d7c4032863e5ae9f8"],
-      "destinationCommit": "b37266a803d2c4848dfb113f761239346f634fd7",
-      "evidence": [{"url":"https://github.com/pippinlovesyou/pippin/pull/16","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"merged_pr","mergedAt":"2025-01-17T04:37:04Z","mergeCommit":"b37266a803d2c4848dfb113f761239346f634fd7"}}]
-    },
-    {
-      "id": "pippin-pr-27",
-      "identity": "pippinlovesyou/pippin#27",
-      "repository": "pippinlovesyou/pippin",
-      "community": "pippin",
-      "relationship": "canonical_upstream",
-      "kind": "pull_request",
-      "lifecycle": "merged",
-      "disposition": "accepted",
-      "headline": true,
-      "title": "Expanded CI pipeline",
-      "number": 27,
-      "url": "https://github.com/pippinlovesyou/pippin/pull/27",
-      "authoredCommits": ["1c4003cb8dc9f41d030f2c45c4feb752f9d3aa25"],
-      "destinationCommit": "ef3ccd6a49556a08471a8869730887b181be4d33",
+      "title": "Improving UX for Display/Scaling Changes",
+      "number": 332,
+      "url": "https://github.com/AndyMik90/Aperant/pull/332",
       "evidence": [
-        {"url":"https://github.com/pippinlovesyou/pippin/pull/27","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"merged_pr","mergedAt":"2025-01-28T15:16:53Z","mergeCommit":"ef3ccd6a49556a08471a8869730887b181be4d33"}},
-        {"url":"https://github.com/yoheinakajima/pippin-ci/commit/1c4003cb8dc9f41d030f2c45c4feb752f9d3aa25","observedAt":"2026-08-27T16:52:00Z","proof":{"type":"source_commit","sourceRepository":"yoheinakajima/pippin-ci"}}
+        {
+          "url": "https://github.com/AndyMik90/Aperant/pull/332",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "merged_pr",
+            "mergedAt": "2025-12-27T22:23:52Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "boinc-boinc-pr-7238",
+      "identity": "BOINC/boinc#7238",
+      "repository": "BOINC/boinc",
+      "community": "boinc",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "snap: migrate builds to core26",
+      "number": 7238,
+      "url": "https://github.com/BOINC/boinc/pull/7238",
+      "evidence": [
+        {
+          "url": "https://github.com/BOINC/boinc/pull/7238",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "boinc-boinc-pr-7239",
+      "identity": "BOINC/boinc#7239",
+      "repository": "BOINC/boinc",
+      "community": "boinc",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Android: target JVM 21",
+      "number": 7239,
+      "url": "https://github.com/BOINC/boinc/pull/7239",
+      "evidence": [
+        {
+          "url": "https://github.com/BOINC/boinc/pull/7239",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "merged_pr",
+            "mergedAt": "2026-08-24T22:19:17Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "centerforopenscience-osf.io-pr-11875",
+      "identity": "CenterForOpenScience/osf.io#11875",
+      "repository": "CenterForOpenScience/osf.io",
+      "community": "centerforopenscience",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Bound storage usage cache task runtime",
+      "number": 11875,
+      "url": "https://github.com/CenterForOpenScience/osf.io/pull/11875",
+      "evidence": [
+        {
+          "url": "https://github.com/CenterForOpenScience/osf.io/pull/11875",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "hackillinois-ios-pr-46",
+      "identity": "HackIllinois/iOS#46",
+      "repository": "HackIllinois/iOS",
+      "community": "hackillinois",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Fixed issue #42. Now the application doesn't crash if user logs in wi\u2026",
+      "number": 46,
+      "url": "https://github.com/HackIllinois/iOS/pull/46",
+      "evidence": [
+        {
+          "url": "https://github.com/HackIllinois/iOS/pull/46",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "merged_pr",
+            "mergedAt": "2018-01-25T19:27:33Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hackillinois-ios-pr-51",
+      "identity": "HackIllinois/iOS#51",
+      "repository": "HackIllinois/iOS",
+      "community": "hackillinois",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "menu now auto closes if inactive view is tapped",
+      "number": 51,
+      "url": "https://github.com/HackIllinois/iOS/pull/51",
+      "evidence": [
+        {
+          "url": "https://github.com/HackIllinois/iOS/pull/51",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "merged_pr",
+            "mergedAt": "2018-01-26T21:11:08Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hackillinois-ios-pr-53",
+      "identity": "HackIllinois/iOS#53",
+      "repository": "HackIllinois/iOS",
+      "community": "hackillinois",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Status bar is now hidden during the animation.",
+      "number": 53,
+      "url": "https://github.com/HackIllinois/iOS/pull/53",
+      "evidence": [
+        {
+          "url": "https://github.com/HackIllinois/iOS/pull/53",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "merged_pr",
+            "mergedAt": "2018-01-26T20:41:37Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hackillinois-ios-pr-55",
+      "identity": "HackIllinois/iOS#55",
+      "repository": "HackIllinois/iOS",
+      "community": "hackillinois",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Added UIView Extension that shakes any view. This is used to indicate\u2026",
+      "number": 55,
+      "url": "https://github.com/HackIllinois/iOS/pull/55",
+      "evidence": [
+        {
+          "url": "https://github.com/HackIllinois/iOS/pull/55",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "merged_pr",
+            "mergedAt": "2018-02-05T08:10:34Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "heygen-com-hyperframes-pr-3478",
+      "identity": "heygen-com/hyperframes#3478",
+      "repository": "heygen-com/hyperframes",
+      "community": "heygen-com",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "fix(cli): hide detached Windows spawns",
+      "number": 3478,
+      "url": "https://github.com/heygen-com/hyperframes/pull/3478",
+      "evidence": [
+        {
+          "url": "https://github.com/heygen-com/hyperframes/pull/3478",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "cortonkwok-ggd-hermes-agent-pr-1",
+      "identity": "CortonKwok-GGD/hermes-agent#1",
+      "repository": "CortonKwok-GGD/hermes-agent",
+      "community": "hermes",
+      "relationship": "contributor_fork",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "fix(privilege-harness): split requester and operator authority",
+      "number": 1,
+      "url": "https://github.com/CortonKwok-GGD/hermes-agent/pull/1",
+      "evidence": [
+        {
+          "url": "https://github.com/CortonKwok-GGD/hermes-agent/pull/1",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "chelsealong-hermes-agent-pr-2",
+      "identity": "chelsealong/hermes-agent#2",
+      "repository": "chelsealong/hermes-agent",
+      "community": "hermes",
+      "relationship": "contributor_fork",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "test(compaction): pin kanban wake prefix across locales",
+      "number": 2,
+      "url": "https://github.com/chelsealong/hermes-agent/pull/2",
+      "evidence": [
+        {
+          "url": "https://github.com/chelsealong/hermes-agent/pull/2",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "movehand-raisr-pr-17",
+      "identity": "movehand/raisr#17",
+      "repository": "movehand/raisr",
+      "community": "movehand",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Added a base for documentation.",
+      "number": 17,
+      "url": "https://github.com/movehand/raisr/pull/17",
+      "evidence": [
+        {
+          "url": "https://github.com/movehand/raisr/pull/17",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "merged_pr",
+            "mergedAt": "2018-04-03T16:54:39Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "nousresearch-hermes-agent-pr-87494",
+      "identity": "NousResearch/hermes-agent#87494",
+      "repository": "NousResearch/hermes-agent",
+      "community": "hermes",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "fix(desktop): make Kanban usable on mobile",
+      "number": 87494,
+      "url": "https://github.com/NousResearch/hermes-agent/pull/87494",
+      "evidence": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/pull/87494",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "nousresearch-hermes-agent-pr-88716",
+      "identity": "NousResearch/hermes-agent#88716",
+      "repository": "NousResearch/hermes-agent",
+      "community": "hermes",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "fix(webui): make Kanban usable on mobile",
+      "number": 88716,
+      "url": "https://github.com/NousResearch/hermes-agent/pull/88716",
+      "evidence": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/pull/88716",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "nousresearch-hermes-agent-pr-94300",
+      "identity": "NousResearch/hermes-agent#94300",
+      "repository": "NousResearch/hermes-agent",
+      "community": "hermes",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "fix(desktop): fail fast when preview action bridge is absent",
+      "number": 94300,
+      "url": "https://github.com/NousResearch/hermes-agent/pull/94300",
+      "evidence": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/pull/94300",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "nousresearch-hermes-agent-pr-94973",
+      "identity": "NousResearch/hermes-agent#94973",
+      "repository": "NousResearch/hermes-agent",
+      "community": "hermes",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "fix(desktop): keep fullscreen chat windows unthrottled (Wayland white screen)",
+      "number": 94973,
+      "url": "https://github.com/NousResearch/hermes-agent/pull/94973",
+      "evidence": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/pull/94973",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "nousresearch-hermes-agent-pr-95147",
+      "identity": "NousResearch/hermes-agent#95147",
+      "repository": "NousResearch/hermes-agent",
+      "community": "hermes",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "feat(voice): add realtime provider session contract",
+      "number": 95147,
+      "url": "https://github.com/NousResearch/hermes-agent/pull/95147",
+      "evidence": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/pull/95147",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "nousresearch-hermes-agent-pr-95180",
+      "identity": "NousResearch/hermes-agent#95180",
+      "repository": "NousResearch/hermes-agent",
+      "community": "hermes",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "fix(desktop): isolate voice turn lifetimes",
+      "number": 95180,
+      "url": "https://github.com/NousResearch/hermes-agent/pull/95180",
+      "evidence": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/pull/95180",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "nousresearch-hermes-agent-pr-95182",
+      "identity": "NousResearch/hermes-agent#95182",
+      "repository": "NousResearch/hermes-agent",
+      "community": "hermes",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "feat(kanban): add recursive scoped issue hierarchy",
+      "number": 95182,
+      "url": "https://github.com/NousResearch/hermes-agent/pull/95182",
+      "evidence": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/pull/95182",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "nousresearch-hermes-agent-pr-95191",
+      "identity": "NousResearch/hermes-agent#95191",
+      "repository": "NousResearch/hermes-agent",
+      "community": "hermes",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "feat(web): add verified Android STT bridge",
+      "number": 95191,
+      "url": "https://github.com/NousResearch/hermes-agent/pull/95191",
+      "evidence": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/pull/95191",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "nousresearch-hermes-agent-pr-95193",
+      "identity": "NousResearch/hermes-agent#95193",
+      "repository": "NousResearch/hermes-agent",
+      "community": "hermes",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "feat(web): add mobile browser voice conversation",
+      "number": 95193,
+      "url": "https://github.com/NousResearch/hermes-agent/pull/95193",
+      "evidence": [
+        {
+          "url": "https://github.com/NousResearch/hermes-agent/pull/95193",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "poteto-noodle-pr-6",
+      "identity": "poteto/noodle#6",
+      "repository": "poteto/noodle",
+      "community": "poteto",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "fix(ui): ignore Enter during IME composition",
+      "number": 6,
+      "url": "https://github.com/poteto/noodle/pull/6",
+      "evidence": [
+        {
+          "url": "https://github.com/poteto/noodle/pull/6",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "pypsa-pypsa-pr-1892",
+      "identity": "PyPSA/PyPSA#1892",
+      "repository": "PyPSA/PyPSA",
+      "community": "pypsa",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Fix line loss post-processing with scenarios",
+      "number": 1892,
+      "url": "https://github.com/PyPSA/PyPSA/pull/1892",
+      "evidence": [
+        {
+          "url": "https://github.com/PyPSA/PyPSA/pull/1892",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "ryanbr-noop-pr-1583",
+      "identity": "ryanbr/noop#1583",
+      "repository": "ryanbr/noop",
+      "community": "ryanbr",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Preserve PPG burst boundaries",
+      "number": 1583,
+      "url": "https://github.com/ryanbr/noop/pull/1583",
+      "evidence": [
+        {
+          "url": "https://github.com/ryanbr/noop/pull/1583",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "merged_pr",
+            "mergedAt": "2026-08-24T08:47:21Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stillwater-sc-kpu-sim-pr-1",
+      "identity": "stillwater-sc/kpu-sim#1",
+      "repository": "stillwater-sc/kpu-sim",
+      "community": "stillwater-sc",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "merged",
+      "disposition": "accepted",
+      "headline": true,
+      "title": "Add GitHub Pages workflow for animations",
+      "number": 1,
+      "url": "https://github.com/stillwater-sc/kpu-sim/pull/1",
+      "evidence": [
+        {
+          "url": "https://github.com/stillwater-sc/kpu-sim/pull/1",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "merged_pr",
+            "mergedAt": "2026-01-20T14:12:55Z"
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-48",
+      "identity": "Birdabo404/Cribble#48",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Fail closed when waitlist storage is unavailable",
+      "number": 48,
+      "url": "https://github.com/Birdabo404/Cribble/pull/48",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/48",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-49",
+      "identity": "Birdabo404/Cribble#49",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Remove unused UUID dependencies",
+      "number": 49,
+      "url": "https://github.com/Birdabo404/Cribble/pull/49",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/49",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-52",
+      "identity": "Birdabo404/Cribble#52",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Skip account queries for anonymous visitors",
+      "number": 52,
+      "url": "https://github.com/Birdabo404/Cribble/pull/52",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/52",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-55",
+      "identity": "Birdabo404/Cribble#55",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Dock Feedback inside the navigation rail",
+      "number": 55,
+      "url": "https://github.com/Birdabo404/Cribble/pull/55",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/55",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-57",
+      "identity": "Birdabo404/Cribble#57",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Keep glass-card content crisp during pointer tilt",
+      "number": 57,
+      "url": "https://github.com/Birdabo404/Cribble/pull/57",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/57",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-59",
+      "identity": "Birdabo404/Cribble#59",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Return truthful 404s for missing public profiles",
+      "number": 59,
+      "url": "https://github.com/Birdabo404/Cribble/pull/59",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/59",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-62",
+      "identity": "Birdabo404/Cribble#62",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Separate unknown-route 404s from site-lock 503s",
+      "number": 62,
+      "url": "https://github.com/Birdabo404/Cribble/pull/62",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/62",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-64",
+      "identity": "Birdabo404/Cribble#64",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "ci: validate workflow integrity",
+      "number": 64,
+      "url": "https://github.com/Birdabo404/Cribble/pull/64",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/64",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-66",
+      "identity": "Birdabo404/Cribble#66",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Validate invite links before affirmative framing",
+      "number": 66,
+      "url": "https://github.com/Birdabo404/Cribble/pull/66",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/66",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-68",
+      "identity": "Birdabo404/Cribble#68",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "docs: reflect public signup and current CI",
+      "number": 68,
+      "url": "https://github.com/Birdabo404/Cribble/pull/68",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/68",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-70",
+      "identity": "Birdabo404/Cribble#70",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "chore: remove orphaned welcome audio",
+      "number": 70,
+      "url": "https://github.com/Birdabo404/Cribble/pull/70",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/70",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-73",
+      "identity": "Birdabo404/Cribble#73",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Track local-runtime token usage without provider spend",
+      "number": 73,
+      "url": "https://github.com/Birdabo404/Cribble/pull/73",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/73",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-pr-76",
+      "identity": "Birdabo404/Cribble#76",
+      "repository": "Birdabo404/Cribble",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "feat: add Pi and OpenCode harness icons",
+      "number": 76,
+      "url": "https://github.com/Birdabo404/Cribble/pull/76",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/Cribble/pull/76",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-agent-pr-12",
+      "identity": "Birdabo404/cribble-agent#12",
+      "repository": "Birdabo404/cribble-agent",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Add all-available-history foreground sync",
+      "number": 12,
+      "url": "https://github.com/Birdabo404/cribble-agent/pull/12",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/cribble-agent/pull/12",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-agent-pr-15",
+      "identity": "Birdabo404/cribble-agent#15",
+      "repository": "Birdabo404/cribble-agent",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Support multiple Claude Code profiles",
+      "number": 15,
+      "url": "https://github.com/Birdabo404/cribble-agent/pull/15",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/cribble-agent/pull/15",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "birdabo404-cribble-agent-pr-18",
+      "identity": "Birdabo404/cribble-agent#18",
+      "repository": "Birdabo404/cribble-agent",
+      "community": "cribble",
+      "relationship": "canonical_upstream",
+      "kind": "pull_request",
+      "lifecycle": "open_ready",
+      "disposition": "activity_only",
+      "headline": false,
+      "title": "Track privacy-safe Ollama token usage",
+      "number": 18,
+      "url": "https://github.com/Birdabo404/cribble-agent/pull/18",
+      "evidence": [
+        {
+          "url": "https://github.com/Birdabo404/cribble-agent/pull/18",
+          "observedAt": "2026-08-27T17:15:00Z",
+          "proof": {
+            "type": "open_pull_request",
+            "state": "open",
+            "draft": false
+          }
+        }
       ]
     }
   ]
