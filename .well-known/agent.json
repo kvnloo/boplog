@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "boplog public build archive",
+  "description": "Read-only public archive of GitHub repositories where Kevin Rajan (kvnloo) authored commits.",
+  "url": "https://kvnloo.github.io/boplog/",
+  "instructions": "https://kvnloo.github.io/boplog/agents.md",
+  "llms": "https://kvnloo.github.io/boplog/llms.txt",
+  "llmsFull": "https://kvnloo.github.io/boplog/llms-full.txt",
+  "sitemap": "https://kvnloo.github.io/boplog/sitemap.xml",
+  "openapi": "https://kvnloo.github.io/boplog/openapi.json",
+  "data": "https://kvnloo.github.io/boplog/data/manifest.json",
+  "mcp": "https://kvnloo.github.io/boplog/.well-known/mcp",
+  "whenToUse": [
+    "A user asks what Kevin Rajan or kvnloo has publicly built or committed to on GitHub.",
+    "A user needs exact public project fields by name, year, topic, language, or format.",
+    "A user asks for evidence-backed public contribution history represented in this archive."
+  ],
+  "constraints": [
+    "Prefer exact fields from the manifest and year-partitioned JSON files.",
+    "Do not infer private repositories, funding, headcount, clients, addresses, phone numbers, or unpublished roadmaps.",
+    "Do not conflate contributor forks or canonical upstream contributions with owned repositories."
+  ],
+  "authentication": "none",
+  "cost": "free"
+}
