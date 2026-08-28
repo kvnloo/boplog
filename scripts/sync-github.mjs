@@ -850,8 +850,28 @@ async function writeSitemap(generatedAt) {
   const urls = [
     `${SITE_URL}/`,
     `${SITE_URL}/developers/`,
+    `${SITE_URL}/about/`,
+    `${SITE_URL}/contact/`,
+    `${SITE_URL}/privacy/`,
+    `${SITE_URL}/about.md`,
+    `${SITE_URL}/contact.md`,
+    `${SITE_URL}/privacy.md`,
+    `${SITE_URL}/topics/`,
+    `${SITE_URL}/topics/3d-web.html`,
+    `${SITE_URL}/topics/agent-orchestration.html`,
+    `${SITE_URL}/topics/ai-devtools.html`,
+    `${SITE_URL}/topics/ai-sdlc.html`,
+    `${SITE_URL}/topics/automation.html`,
+    `${SITE_URL}/topics/build-in-public.html`,
+    `${SITE_URL}/topics/digital-twin.html`,
+    `${SITE_URL}/topics/health-bci.html`,
+    `${SITE_URL}/topics/professional.html`,
     `${SITE_URL}/agents.md`,
     `${SITE_URL}/llms.txt`,
+    `${SITE_URL}/llms-full.txt`,
+    `${SITE_URL}/.well-known/agent.json`,
+    `${SITE_URL}/.well-known/agent-skills`,
+    `${SITE_URL}/.well-known/mcp`,
     `${SITE_URL}/openapi.json`,
     `${SITE_URL}/feed.xml`,
     `${SITE_URL}/data/manifest.json`,
@@ -889,10 +909,15 @@ Last data refresh: ${generatedAt.slice(0, 10)}
 - [Build log](${SITE_URL}/): Human-readable site with featured work and the chronological archive.
 - [Developer access](${SITE_URL}/developers/): Free static API, CLI, and local MCP instructions.
 - [Agent usage guide](${SITE_URL}/agents.md): When to use this archive and how to interpret its records.
+- [Expanded agent context](${SITE_URL}/llms-full.txt): Source priority, interfaces, recovery links, and accuracy constraints.
+- [Agent discovery JSON](${SITE_URL}/.well-known/agent.json): Machine-readable use cases and constraints.
 - [OpenAPI](${SITE_URL}/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
 - [Project data manifest](${SITE_URL}/data/manifest.json): Lists all year-partitioned public JSON files.
 - [Atom feed](${SITE_URL}/feed.xml): Latest public projects.
 - [Sitemap](${SITE_URL}/sitemap.xml): Canonical discovery URLs.
+- [About](${SITE_URL}/about/): Identity, scope, and archive methodology.
+- [Contact](${SITE_URL}/contact/): Verified public contact and correction routes.
+- [Privacy](${SITE_URL}/privacy/): Data scope and hosting limitations.
 
 ## Entity one-liners
 

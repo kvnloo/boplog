@@ -2,8 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://kvnloo.github.io/boplog/</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kvnloo.github.io/boplog/developers/</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/about/</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/contact/</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/privacy/</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/about.md</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/contact.md</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/privacy.md</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/3d-web.html</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/agent-orchestration.html</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/ai-devtools.html</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/ai-sdlc.html</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/automation.html</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/build-in-public.html</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/digital-twin.html</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/health-bci.html</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/topics/professional.html</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kvnloo.github.io/boplog/agents.md</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kvnloo.github.io/boplog/llms.txt</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/llms-full.txt</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/.well-known/agent.json</loc><lastmod>2026-08-28</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/.well-known/agent-skills</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kvnloo.github.io/boplog/.well-known/mcp</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kvnloo.github.io/boplog/openapi.json</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kvnloo.github.io/boplog/feed.xml</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
   <url><loc>https://kvnloo.github.io/boplog/data/manifest.json</loc><lastmod>2026-08-15</lastmod><changefreq>hourly</changefreq><priority>0.8</priority></url>
