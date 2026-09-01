@@ -60,6 +60,35 @@ function die(message, code = 1) {
   process.exit(code);
 }
 
+class RateLimitError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = 'RateLimitError';
+  }
+}
+
+let rateLimited = false;
+
+function isRateLimitError(error) {
+  return error instanceof RateLimitError || error?.name === 'RateLimitError';
+}
+
+function rateLimitedFrom(status, body, headers) {
+  if (status === 429) return true;
+  if (status === 403) {
+    const remaining = headers?.get?.('x-ratelimit-remaining');
+    if (remaining === '0') return true;
+    const text = String(body || '').toLowerCase();
+    return text.includes('rate limit') || text.includes('secondary rate') || text.includes('abuse detection');
+  }
+  return false;
+}
+
+function markRateLimited(error) {
+  rateLimited = true;
+  log(`rate-limited; skipping remaining work (${error.message})`);
+}
+
 function isoDay(value) {
   if (!value) return null;
   const d = new Date(value);
@@ -107,7 +136,9 @@ async function api(pathname, { allow404 = false } = {}) {
   if (response.status === 409) return []; // empty repo
   if (!response.ok) {
     const body = await response.text();
-    throw new Error(`${response.status} ${pathname}: ${body.slice(0, 240)}`);
+    const msg = `${response.status} ${pathname}: ${body.slice(0, 240)}`;
+    if (rateLimitedFrom(response.status, body, response.headers)) throw new RateLimitError(msg);
+    throw new Error(msg);
   }
   if (response.status === 204) return null;
   return response.json();
@@ -126,7 +157,12 @@ async function apiPaginate(pathname) {
     const response = await fetch(url, { headers });
     if (!response.ok) {
       const body = await response.text();
-      throw new Error(`${response.status} ${url}: ${body.slice(0, 240)}`);
+      const msg = `${response.status} ${url}: ${body.slice(0, 240)}`;
+      if (rateLimitedFrom(response.status, body, response.headers)) {
+        markRateLimited(new RateLimitError(msg));
+        break;
+      }
+      throw new Error(msg);
     }
     const page = await response.json();
     if (Array.isArray(page)) items.push(...page);
@@ -144,7 +180,7 @@ async function mapPool(items, limit, worker) {
   const results = new Array(items.length);
   let index = 0;
   async function run() {
-    while (index < items.length) {
+    while (index < items.length && !rateLimited) {
       const i = index;
       index += 1;
       results[i] = await worker(items[i], i);
@@ -1005,6 +1041,10 @@ async function main() {
       const ok = await userAuthoredCommit(repo);
       return ok ? repo : null;
     } catch (error) {
+      if (isRateLimitError(error)) {
+        markRateLimited(error);
+        return null;
+      }
       log(`skip ${repo.full_name}: ${error.message}`);
       return null;
     }
@@ -1018,6 +1058,10 @@ async function main() {
       const ok = await userAuthoredCommit(repo);
       return ok ? repo : null;
     } catch (error) {
+      if (isRateLimitError(error)) {
+        markRateLimited(error);
+        return null;
+      }
       log(`skip ${repo.full_name}: ${error.message}`);
       return null;
     }
@@ -1032,8 +1076,22 @@ async function main() {
   let projects = await mapPool(
     selected,
     Math.min(CONCURRENCY, 6),
-    (repo) => projectFromRepo(repo, overrides, dateOverrides),
+    async (repo) => {
+      try {
+        return await projectFromRepo(repo, overrides, dateOverrides);
+      } catch (error) {
+        if (isRateLimitError(error)) {
+          markRateLimited(error);
+          return null;
+        }
+        throw error;
+      }
+    },
   );
+  projects = projects.filter(Boolean);
+  if (rateLimited && !projects.length) die('rate-limited before any project snapshot landed');
+  if (rateLimited) log(`warning: partial snapshot after GitHub rate limit (${projects.length} projects)`);
+
   // De-dupe by id (unlikely)
   const seen = new Set();
   projects = projects.filter((p) => {
@@ -1074,6 +1132,7 @@ async function main() {
   log(`activity builds days=${Object.keys(activity.builds).length} commit days=${Object.keys(activity.commits).length}`);
   log(`featured: ${projects.filter((p) => p.featured).map((p) => p.name).join(', ')}`);
   log(`generatedAt=${manifest.generatedAt}`);
+  if (rateLimited) log('warning: finished with partial snapshot due to GitHub 403/429 rate limit');
 }
 
 main().catch((error) => {
