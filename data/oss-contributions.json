@@ -28,6 +28,46 @@
       "contributionCount": 33
     },
     {
+      "id": "noctalia",
+      "label": "Noctalia",
+      "repositories": [
+        "noctalia-dev/noctalia"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "oh-my-pi",
+      "label": "Oh My Pi",
+      "repositories": [
+        "can1357/oh-my-pi"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "agent-orchestrator",
+      "label": "Agent Orchestrator",
+      "repositories": [
+        "Untrivial-ai/agent-orchestrator"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "gitnexus",
+      "label": "GitNexus",
+      "repositories": [
+        "abhigyanpatwari/GitNexus"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "gameblocks",
+      "label": "GameBlocks",
+      "repositories": [
+        "xt4d/GameBlocks"
+      ],
+      "contributionCount": 0
+    },
+    {
       "id": "opencode",
       "label": "OpenCode",
       "repositories": [
