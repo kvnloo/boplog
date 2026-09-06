@@ -242,7 +242,7 @@
       "product": "evolve",
       "productName": "evolve",
       "featured": true,
-      "featuredRank": 4,
+      "featuredRank": 1,
       "eyebrow": "Shell"
     },
     {
@@ -306,7 +306,7 @@
       "product": "professional-showcase",
       "productName": "showcase",
       "featured": true,
-      "featuredRank": 5,
+      "featuredRank": 3,
       "eyebrow": "HTML"
     },
     {
@@ -454,7 +454,7 @@
       "product": "world-sim",
       "productName": "world sim",
       "featured": true,
-      "featuredRank": 3,
+      "featuredRank": 2,
       "eyebrow": "TypeScript"
     },
     {
