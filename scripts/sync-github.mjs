@@ -1070,7 +1070,13 @@ async function main() {
   log(`originals with my commits: ${authoredOriginals.length}`);
 
   const selected = [...authoredOriginals, ...authoredForks];
-  if (!selected.length) die('no repositories with authored commits found');
+  if (!selected.length) {
+    if (rateLimited) {
+      log('warning: rate-limited before any authored repos selected; leaving prior data/ unchanged');
+      return;
+    }
+    die('no repositories with authored commits found');
+  }
 
   log(`resolving descriptions + docs/pages links for ${selected.length} repos…`);
   let projects = await mapPool(
@@ -1089,7 +1095,11 @@ async function main() {
     },
   );
   projects = projects.filter(Boolean);
-  if (rateLimited && !projects.length) die('rate-limited before any project snapshot landed');
+  if (rateLimited && !projects.length) {
+    // Keep prior data/ on disk; exit 0 so Actions stays green until the next cron window.
+    log('warning: rate-limited before any project snapshot landed; leaving prior data/ unchanged');
+    return;
+  }
   if (rateLimited) log(`warning: partial snapshot after GitHub rate limit (${projects.length} projects)`);
 
   // De-dupe by id (unlikely)
