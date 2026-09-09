@@ -94,7 +94,10 @@
       "portfolio": "product",
       "portfolioName": "product",
       "product": "boplog",
-      "productName": "boplog"
+      "productName": "boplog",
+      "featured": true,
+      "featuredRank": 6,
+      "eyebrow": "JavaScript"
     },
     {
       "id": "aliens-made-this",
@@ -281,7 +284,7 @@
       "product": "dotfiles",
       "productName": "dotfiles",
       "featured": true,
-      "featuredRank": 2,
+      "featuredRank": 5,
       "eyebrow": "Shell"
     },
     {
@@ -429,7 +432,7 @@
       "product": "agent-tooling",
       "productName": "agent tooling",
       "featured": true,
-      "featuredRank": 6,
+      "featuredRank": 4,
       "eyebrow": "Shell"
     },
     {

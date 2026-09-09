@@ -73,12 +73,12 @@ The CLI and MCP server are read-only, dependency-free Python programs. They requ
 
 ## Featured work
 
-- [AudioEngine](https://kvnloo.github.io/AudioEngine/): Old iOS project (2017): real-time noise meter and 14-band dual-channel EQ (JubiAudio Phase I wireframe). Last real work ~2017-06-06; 2025 commits were docs cleanup only.
-- [.files](https://kvnloo.github.io/.files/): stay in flow while u code
-- [ace](https://kvnloo.github.io/ace/): Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.
 - [evolve](https://kvnloo.github.io/evolve/): Open-source multi-agent framework for autonomous software development (AI SDLC): agent-swarm orchestration toolkit with Claude Code agents, evidence-based shipping loops, docs, and examples.
+- [ace](https://kvnloo.github.io/ace/): Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.
 - [portfolio](https://kvnloo.github.io/portfolio/): Personal portfolio site at the intersection of AI, neuroscience, and mobile systems.
 - [tmux-agent-fleet](https://github.com/kvnloo/tmux-agent-fleet): Zero-daemon, harness-neutral command palette for coding agents across tmux panes.
+- [.files](https://kvnloo.github.io/.files/): stay in flow while u code
+- [boplog](https://kvnloo.github.io/boplog/): Static public build log with llms.txt and a JSON project manifest for agents.
 
 ## Year files
 
