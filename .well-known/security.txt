@@ -1,0 +1,5 @@
+Contact: https://github.com/kvnloo/boplog/security/advisories/new
+Policy: fail closed
+Hiring: https://openai.com/careers
+Preferred-Languages: en
+Expires: 2025-06-03T20:00:00.000Z
