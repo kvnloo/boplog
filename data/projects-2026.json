@@ -1,14 +1,13 @@
 {
   "projects": [
     {
-      "id": "baseline-tennis",
-      "name": "baseline-tennis",
-      "description": "Interactive open-data tennis map, charts, and statistical query engine",
-      "date": "2026-08-15",
-      "url": "https://kvnloo.github.io/baseline-tennis/",
+      "id": "aodl",
+      "name": "aodl",
+      "description": "AODL/HOTL: typed IR for agent orchestration graphs. Schema + fail-closed validator \u2014 not a scheduler.",
+      "date": "2026-09-12",
+      "url": "https://kvnloo.github.io/aodl/",
       "types": [
-        "public",
-        "ts"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -17,8 +16,1145 @@
       "links": [
         {
           "label": "docs",
-          "url": "https://kvnloo.github.io/baseline-tennis/"
+          "url": "https://kvnloo.github.io/aodl/"
         },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/aodl"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "evolve",
+      "productName": "evolve"
+    },
+    {
+      "id": "dash",
+      "name": "dash",
+      "description": "Phone UI (Expo) for laptop coding agents over Tailscale.",
+      "date": "2026-09-12",
+      "url": "https://github.com/kvnloo/dash",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/dash"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "evolution-lab",
+      "name": "evolution-lab",
+      "description": "Original experiment engine (genomes, Hermes recovery gym, Pareto/MAP-Elites) \u2014 not a FlyGym or OpenEvolve fork.",
+      "date": "2026-09-12",
+      "url": "https://github.com/kvnloo/evolution-lab",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/evolution-lab"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "evolve",
+      "productName": "evolve"
+    },
+    {
+      "id": "frontier-kb",
+      "name": "frontier-kb",
+      "description": "Cross-harness research KB (OMP/Hermes/Codex/Claude/Cursor/Pi) plus frontier LLM/tool-use notes.",
+      "date": "2026-09-12",
+      "url": "https://github.com/kvnloo/frontier-kb",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/frontier-kb"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "knowledge",
+      "productName": "knowledge"
+    },
+    {
+      "id": "gh-contrib-archive",
+      "name": "gh-contrib-archive",
+      "description": "Public-safe visualization of GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.",
+      "date": "2026-09-12",
+      "url": "https://github.com/kvnloo/gh-contrib-archive",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/gh-contrib-archive"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "knowledge",
+      "productName": "knowledge"
+    },
+    {
+      "id": "kerdoios",
+      "name": "kerdoios",
+      "description": "Standalone Hermes plugin that allots scarce compute. Hermes still orchestrates, verifies, and retries.",
+      "date": "2026-09-12",
+      "url": "https://github.com/kvnloo/kerdoios",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/kerdoios"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "openavatar",
+      "name": "openavatar",
+      "description": "Claimable public identity plus local likeness/voice studio. Open Identity Card for people and agents.",
+      "date": "2026-09-12",
+      "url": "https://kvnloo.github.io/openavatar/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/openavatar/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/openavatar"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
+      "portfolio": "professional",
+      "portfolioName": "professional",
+      "product": "identity-public",
+      "productName": "public identity"
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "description": "My commits on this OpenHands fork (experimentation / local patches on the agent platform).",
+      "date": "2026-09-12",
+      "url": "https://all-hands.dev/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://all-hands.dev/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/OpenHands"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "open-source-contrib",
+      "productName": "open-source contributions"
+    },
+    {
+      "id": "sol-pi-hermes",
+      "name": "sol-pi-hermes",
+      "description": "Standalone Hermes Python plugin port of NVlabs/SoL-Pi. Not a hermes-agent core PR.",
+      "date": "2026-09-12",
+      "url": "https://github.com/kvnloo/sol-pi-hermes",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/sol-pi-hermes"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "sol-pi-omp",
+      "name": "sol-pi-omp",
+      "description": "OMP-loadable SoL-Pi wrapper: Action Fusion + ObservationPack without patching oh-my-pi or SoL-Pi cores.",
+      "date": "2026-09-12",
+      "url": "https://github.com/kvnloo/sol-pi-omp",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/sol-pi-omp"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "verified-oss-loop",
+      "name": "verified-oss-loop",
+      "description": "Project-neutral protocol for roadmap-driven, evidence-backed human and agent OSS work. Workers never merge main.",
+      "date": "2026-09-12",
+      "url": "https://github.com/kvnloo/verified-oss-loop",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/verified-oss-loop"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "evolve",
+      "productName": "evolve"
+    },
+    {
+      "id": "boplog",
+      "name": "boplog",
+      "description": "Static public build log with llms.txt and a JSON project manifest for agents.",
+      "date": "2026-09-11",
+      "url": "https://github.com/kvnloo/boplog",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/boplog"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "boplog",
+      "productName": "boplog"
+    },
+    {
+      "id": "humanity-vault",
+      "name": "humanity-vault",
+      "description": "Mobile-first GraphQL learning OS for frontier-kb: encode, retrieve, rest, measure, prune.",
+      "date": "2026-09-11",
+      "url": "https://kvnloo.github.io/humanity-vault/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/humanity-vault/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/humanity-vault"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "knowledge",
+      "productName": "knowledge"
+    },
+    {
+      "id": "uiua",
+      "name": "uiua",
+      "description": "My work on this fork of uiua-lang/uiua: Remove invalid Cos primitive reference (qa-requested)",
+      "date": "2026-09-11",
+      "url": "https://www.uiua.org/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://www.uiua.org/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/uiua"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "open-source-contrib",
+      "productName": "open-source contributions"
+    },
+    {
+      "id": "files",
+      "name": ".files",
+      "description": "stay in flow while u code",
+      "date": "2026-09-10",
+      "url": "https://kvnloo.github.io/.files/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/.files/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/.files"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
+      "portfolio": "professional",
+      "portfolioName": "professional",
+      "product": "dotfiles",
+      "productName": "dotfiles",
+      "featured": true,
+      "featuredRank": 2,
+      "eyebrow": "Public repo"
+    },
+    {
+      "id": "hermes-keel",
+      "name": "hermes-keel",
+      "description": "Performance-based execution kernel for Hermes Agent. Keel is Hermes L0; Firstmate is not a harness id.",
+      "date": "2026-09-10",
+      "url": "https://github.com/kvnloo/hermes-keel",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/hermes-keel"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "keyconf-gen",
+      "name": "keyconf.gen",
+      "description": "Blender + Three.js keyboard configurator with product imports and evidence-backed compatibility.",
+      "date": "2026-09-10",
+      "url": "https://github.com/kvnloo/keyconf.gen",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/keyconf.gen"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
+      "portfolio": "professional",
+      "portfolioName": "professional",
+      "product": "professional-showcase",
+      "productName": "showcase"
+    },
+    {
+      "id": "oss-reach",
+      "name": "oss-reach",
+      "description": "Proxy OSS reach score (dependents + downloads) \u2014 not unique humans.",
+      "date": "2026-09-10",
+      "url": "https://github.com/kvnloo/oss-reach",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/oss-reach"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "hypr-agent-cursors",
+      "name": "hypr-agent-cursors",
+      "description": "WIP Hyprland plugin contract: agent cursors/KB off the human seat. Nest load not proven.",
+      "date": "2026-09-09",
+      "url": "https://github.com/kvnloo/hypr-agent-cursors",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/hypr-agent-cursors"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "synergy-tasks",
+      "name": "synergy-tasks",
+      "description": "Humanitarian task queue for Synergy, operated under the Verified OSS Loop.",
+      "date": "2026-09-09",
+      "url": "https://github.com/kvnloo/synergy-tasks",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/synergy-tasks"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
+      "portfolio": "professional",
+      "portfolioName": "professional",
+      "product": "identity-public",
+      "productName": "public identity"
+    },
+    {
+      "id": "synergy-ai",
+      "name": "synergy.ai",
+      "description": "Humanitarian briefings, primary sources, and public-interest technology projects.",
+      "date": "2026-09-09",
+      "url": "https://github.com/kvnloo/synergy.ai",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/synergy.ai"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
+      "portfolio": "professional",
+      "portfolioName": "professional",
+      "product": "identity-public",
+      "productName": "public identity"
+    },
+    {
+      "id": "ai-pokedex-educational-preview",
+      "name": "ai-pokedex-educational-preview",
+      "description": "Unofficial non-commercial educational study of AI-assisted interface and visual experimentation.",
+      "date": "2026-09-07",
+      "url": "https://github.com/kvnloo/ai-pokedex-educational-preview",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/ai-pokedex-educational-preview"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "north-star-railworks",
+      "name": "north-star-railworks",
+      "description": "Parametric Blender locomotives, editable assemblies, and a Three.js workshop.",
+      "date": "2026-09-07",
+      "url": "https://github.com/kvnloo/north-star-railworks",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/north-star-railworks"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "space",
+      "name": "space",
+      "description": "Zer0 space experiment: Dyson swarm notes and Kerr/blackhole resources.",
+      "date": "2026-09-07",
+      "url": "https://github.com/kvnloo/space",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/space"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "pokedex-field-os",
+      "name": "pokedex-field-os",
+      "description": "Unofficial educational Field Pok\u00e9dex OS and interactive device prototype.",
+      "date": "2026-09-05",
+      "url": "https://github.com/kvnloo/pokedex-field-os",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/pokedex-field-os"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "hermes-codex-live",
+      "name": "hermes-codex-live",
+      "description": "OMP-derived Codex Frameless Bidi voice transport for Hermes Agent.",
+      "date": "2026-09-03",
+      "url": "https://github.com/kvnloo/hermes-codex-live",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/hermes-codex-live"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "company-os",
+      "name": "company-os",
+      "description": "Thin Hermes HUD. Projection only \u2014 not a company operating system, not a second Kanban.",
+      "date": "2026-09-01",
+      "url": "https://github.com/kvnloo/company-os",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/company-os"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "loo-ai-site",
+      "name": "loo-ai-site",
+      "description": "Static one-pager for loo-ai.",
+      "date": "2026-09-01",
+      "url": "https://github.com/kvnloo/loo-ai-site",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/loo-ai-site"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
+      "portfolio": "professional",
+      "portfolioName": "professional",
+      "product": "identity-public",
+      "productName": "public identity"
+    },
+    {
+      "id": "hermes-model-passports",
+      "name": "hermes-model-passports",
+      "description": "Portable visual identity and metadata language for AI models.",
+      "date": "2026-08-29",
+      "url": "https://github.com/kvnloo/hermes-model-passports",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/hermes-model-passports"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "cli",
+      "name": "cli",
+      "description": "Command-line tool for agent access to apps and One-account workflows (public description as published).",
+      "date": "2026-08-28",
+      "url": "https://www.npmjs.com/package/@withone/cli",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://www.npmjs.com/package/@withone/cli"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/cli"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "zer0-voice",
+      "name": "zer0-voice",
+      "description": "Voice adapters that bridge the Zer0 harness to machine-wide speech services without vendoring models.",
+      "date": "2026-08-26",
+      "url": "https://github.com/kvnloo/zer0-voice",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/zer0-voice"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "zeros",
+      "productName": "zerOS"
+    },
+    {
+      "id": "hermes-privilege-broker",
+      "name": "hermes-privilege-broker",
+      "description": "One-time, human-approved privilege broker for Hermes Agent. Typed operations, no reusable sudo password.",
+      "date": "2026-08-25",
+      "url": "https://github.com/kvnloo/hermes-privilege-broker",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/hermes-privilege-broker"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "auto-claude",
+      "name": "Auto-Claude",
+      "description": "My work on this fork: OpenAPI remote API, Claude Flow MCP integration, mobile companion, SWE-bench tooling, usage dashboard, and UX/scaling fixes.",
+      "date": "2026-08-23",
+      "url": "https://github.com/kvnloo/Auto-Claude",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/Auto-Claude"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "claude-island",
+      "name": "claude-island",
+      "description": "My work on this fork: multi-profile Claude Code usage monitoring with real-time rate-limit bars, cost/burn-rate tracking, and lifetime savings.",
+      "date": "2026-08-23",
+      "url": "https://github.com/kvnloo/claude-island",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/claude-island"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "ios-2017",
+      "name": "iOS-2017",
+      "description": "My work on this HackIllinois iOS fork: indoor maps view and release cleanup.",
+      "date": "2026-08-23",
+      "url": "https://github.com/kvnloo/iOS-2017",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/iOS-2017"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
+      "portfolio": "professional",
+      "portfolioName": "professional",
+      "product": "mobile-legacy",
+      "productName": "mobile (legacy)"
+    },
+    {
+      "id": "kpu-sim",
+      "name": "kpu-sim",
+      "description": "My work on this fork: GitHub Pages workflow for KPU simulator animations.",
+      "date": "2026-08-23",
+      "url": "https://kvnloo.github.io/kpu-sim/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/kpu-sim/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/kpu-sim"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "open-source-contrib",
+      "productName": "open-source contributions"
+    },
+    {
+      "id": "raisr",
+      "name": "raisr",
+      "description": "My work on this fork of movehand/raisr: Added a base for documentation.",
+      "date": "2026-08-23",
+      "url": "https://github.com/kvnloo/raisr",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/raisr"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "open-source-contrib",
+      "productName": "open-source contributions"
+    },
+    {
+      "id": "hermes-liquid-glass",
+      "name": "hermes-liquid-glass",
+      "description": "Linux liquid glass for Hermes Desktop \u2014 pywal palette bridge, Hyprland frost opacity, runtime retheme on wallpaper change.",
+      "date": "2026-08-16",
+      "url": "https://github.com/kvnloo/hermes-liquid-glass",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/hermes-liquid-glass"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
+    },
+    {
+      "id": "portfolio",
+      "name": "portfolio",
+      "description": "Personal portfolio site at the intersection of AI, neuroscience, and mobile systems.",
+      "date": "2026-08-16",
+      "url": "https://kvnloo.github.io/portfolio/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/portfolio/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/portfolio"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
+      "portfolio": "professional",
+      "portfolioName": "professional",
+      "product": "professional-showcase",
+      "productName": "showcase",
+      "featured": true,
+      "featuredRank": 5,
+      "eyebrow": "Public repo"
+    },
+    {
+      "id": "baseline-tennis",
+      "name": "baseline-tennis",
+      "description": "Interactive open-data tennis map, charts, and statistical query engine",
+      "date": "2026-08-15",
+      "url": "https://github.com/kvnloo/baseline-tennis",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
         {
           "label": "github",
           "url": "https://github.com/kvnloo/baseline-tennis"
@@ -36,12 +1172,11 @@
     {
       "id": "4dps",
       "name": "4dps",
-      "description": "Stills, photospheres & 4D 360° packs for 3D web scenes",
+      "description": "Stills, photospheres & 4D 360\u00b0 packs for 3D web scenes",
       "date": "2026-08-01",
       "url": "https://github.com/kvnloo/4dps",
       "types": [
-        "public",
-        "js"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -63,48 +1198,13 @@
       "productName": ""
     },
     {
-      "id": "boplog",
-      "name": "boplog",
-      "description": "Static public build log with llms.txt and a JSON project manifest for agents.",
-      "date": "2026-08-01",
-      "url": "https://kvnloo.github.io/boplog/",
-      "types": [
-        "public",
-        "js",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/boplog/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/boplog"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "boplog",
-      "productName": "boplog"
-    },
-    {
       "id": "aliens-made-this",
       "name": "aliens-made-this",
       "description": "Playful generative-art / capability test: what can the aliens make?",
       "date": "2026-07-31",
       "url": "https://kvnloo.github.io/aliens-made-this/",
       "types": [
-        "public",
-        "html"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -136,8 +1236,7 @@
       "date": "2026-07-31",
       "url": "https://kvnloo.github.io/cod/",
       "types": [
-        "public",
-        "ts"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -169,8 +1268,7 @@
       "date": "2026-07-31",
       "url": "https://github.com/kvnloo/halo",
       "types": [
-        "public",
-        "js"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -198,8 +1296,7 @@
       "date": "2026-07-31",
       "url": "https://github.com/kvnloo/metallic-card",
       "types": [
-        "public",
-        "ts"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -249,50 +1346,13 @@
       "productName": ""
     },
     {
-      "id": "files",
-      "name": ".files",
-      "description": "stay in flow while u code",
-      "date": "2026-07-28",
-      "url": "https://kvnloo.github.io/.files/",
-      "types": [
-        "public",
-        "sh"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/.files/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/.files"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "professional",
-      "kindName": "professional",
-      "portfolio": "professional",
-      "portfolioName": "professional",
-      "product": "dotfiles",
-      "productName": "dotfiles",
-      "featured": true,
-      "featuredRank": 2,
-      "eyebrow": "Shell"
-    },
-    {
       "id": "pm",
       "name": "_pm",
-      "description": "Company issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the Zer0 company OS PM core for automation orchestration.",
+      "description": "Company issue graph, ledger, ticket scheduler, and benchmarks \u2014 published mirror of the Zer0 company OS PM core for automation orchestration.",
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/_pm",
       "types": [
-        "public",
-        "py"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -320,8 +1380,7 @@
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/zer0-cockpit",
       "types": [
-        "public",
-        "py"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -349,8 +1408,7 @@
       "date": "2026-07-26",
       "url": "https://github.com/kvnloo/zer0-harness-spine",
       "types": [
-        "public",
-        "py"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -372,43 +1430,13 @@
       "productName": "zerOS"
     },
     {
-      "id": "zer0-voice",
-      "name": "zer0-voice",
-      "description": "Voice adapters that bridge the Zer0 harness to machine-wide speech services without vendoring models.",
-      "date": "2026-07-26",
-      "url": "https://github.com/kvnloo/zer0-voice",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/zer0-voice"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "zeros",
-      "productName": "zerOS"
-    },
-    {
       "id": "tmux-agent-fleet",
       "name": "tmux-agent-fleet",
       "description": "Zero-daemon, harness-neutral command palette for coding agents across tmux panes.",
       "date": "2026-07-14",
       "url": "https://github.com/kvnloo/tmux-agent-fleet",
       "types": [
-        "public",
-        "sh"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -430,17 +1458,48 @@
       "productName": "agent tooling",
       "featured": true,
       "featuredRank": 6,
-      "eyebrow": "Shell"
+      "eyebrow": "Public repo"
     },
     {
-      "id": "claude-island",
-      "name": "claude-island",
-      "description": "My work on this fork: multi-profile Claude Code usage monitoring with real-time rate-limit bars, cost/burn-rate tracking, and lifetime savings.",
-      "date": "2026-04-11",
-      "url": "https://github.com/kvnloo/claude-island",
+      "id": "dimos",
+      "name": "dimos",
+      "description": "Dimensional: agentic OS for physical space (humanoids, quadrupeds, drones). Public experiment, not a second company OS.",
+      "date": "2026-03-16",
+      "url": "https://dimensionalos.com/",
       "types": [
-        "public",
-        "fork"
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://dimensionalos.com/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/dimos"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "pickleball-palace-builder",
+      "name": "pickleball-palace-builder",
+      "description": "3D pickleball / multi-sport facility builder concept (React, Three.js). Cousin sketch \u2014 not the live Homebase GPU loop.",
+      "date": "2026-02-06",
+      "url": "https://github.com/kvnloo/pickleball-palace-builder",
+      "types": [
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -449,7 +1508,7 @@
       "links": [
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/claude-island"
+          "url": "https://github.com/kvnloo/pickleball-palace-builder"
         }
       ],
       "company": "zer0",
@@ -458,8 +1517,43 @@
       "kindName": "product",
       "portfolio": "product",
       "portfolioName": "product",
-      "product": "agent-tooling",
-      "productName": "agent tooling"
+      "product": "world-sim",
+      "productName": "world sim"
+    },
+    {
+      "id": "ace",
+      "name": "ace",
+      "description": "Public 3D pretotype of LawnTech / ACE: Naperville indoor racquet facility with a third-floor grass lab. React + R3F \u2014 not a live twin.",
+      "date": "2026-01-28",
+      "url": "https://kvnloo.github.io/ace/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/ace/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/ace"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "world-sim",
+      "productName": "world sim",
+      "featured": true,
+      "featuredRank": 3,
+      "eyebrow": "Public repo"
     },
     {
       "id": "tesla-infotainment",
@@ -468,8 +1562,7 @@
       "date": "2026-01-28",
       "url": "https://github.com/kvnloo/tesla-infotainment",
       "types": [
-        "public",
-        "ts"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -497,8 +1590,7 @@
       "date": "2026-01-27",
       "url": "https://kvnloo.github.io/tesla/",
       "types": [
-        "public",
-        "ts"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -552,40 +1644,6 @@
       "productName": "world sim"
     },
     {
-      "id": "kpu-sim",
-      "name": "kpu-sim",
-      "description": "My work on this fork: GitHub Pages workflow for KPU simulator animations.",
-      "date": "2026-01-19",
-      "url": "https://kvnloo.github.io/kpu-sim/",
-      "types": [
-        "public",
-        "c++",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/kpu-sim/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/kpu-sim"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "open-source-contrib",
-      "productName": "open-source contributions"
-    },
-    {
       "id": "coding-interview-university",
       "name": "coding-interview-university",
       "description": "My work on this fork: optimized learning system with Obsidian canvas.",
@@ -621,8 +1679,7 @@
       "date": "2026-01-12",
       "url": "https://github.com/kvnloo/scrollytelling",
       "types": [
-        "public",
-        "ts"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -644,14 +1701,41 @@
       "productName": ""
     },
     {
+      "id": "jobapp",
+      "name": "jobapp",
+      "description": "Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.",
+      "date": "2026-01-10",
+      "url": "https://github.com/kvnloo/jobapp",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/jobapp"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "professional",
+      "kindName": "professional",
+      "portfolio": "professional",
+      "portfolioName": "professional",
+      "product": "professional-showcase",
+      "productName": "showcase"
+    },
+    {
       "id": "cv",
       "name": "cv",
       "description": "LaTeX CV and role-specific resumes (AI/ML, DevOps, PM) with generated PDFs.",
       "date": "2026-01-09",
       "url": "https://github.com/kvnloo/cv",
       "types": [
-        "public",
-        "tex"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -671,40 +1755,6 @@
       "portfolioName": "professional",
       "product": "professional-showcase",
       "productName": "showcase"
-    },
-    {
-      "id": "uiua",
-      "name": "uiua",
-      "description": "My work on this fork of uiua-lang/uiua: Remove invalid Cos primitive reference (qa-requested)",
-      "date": "2026-01-08",
-      "url": "https://www.uiua.org/",
-      "types": [
-        "public",
-        "rs",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://www.uiua.org/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/uiua"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "open-source-contrib",
-      "productName": "open-source contributions"
     }
   ]
 }

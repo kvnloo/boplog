@@ -5,231 +5,231 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-08-15T19:03:26Z</updated>
+  <updated>2026-09-12T09:48:35Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
-    <title>baseline-tennis</title>
-    <id>https://kvnloo.github.io/baseline-tennis/</id>
-    <link href="https://kvnloo.github.io/baseline-tennis/"/>
-    <published>2026-08-15T00:00:00Z</published>
-    <updated>2026-08-15T00:00:00Z</updated>
+    <title>aodl</title>
+    <id>https://kvnloo.github.io/aodl/</id>
+    <link href="https://kvnloo.github.io/aodl/"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Interactive open-data tennis map, charts, and statistical query engine</summary>
+    <summary>AODL/HOTL: typed IR for agent orchestration graphs. Schema + fail-closed validator — not a scheduler.</summary>
   </entry>
   <entry>
-    <title>4dps</title>
-    <id>https://github.com/kvnloo/4dps</id>
-    <link href="https://github.com/kvnloo/4dps"/>
-    <published>2026-08-01T00:00:00Z</published>
-    <updated>2026-08-01T00:00:00Z</updated>
+    <title>dash</title>
+    <id>https://github.com/kvnloo/dash</id>
+    <link href="https://github.com/kvnloo/dash"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Stills, photospheres &amp; 4D 360° packs for 3D web scenes</summary>
+    <summary>Phone UI (Expo) for laptop coding agents over Tailscale.</summary>
+  </entry>
+  <entry>
+    <title>evolution-lab</title>
+    <id>https://github.com/kvnloo/evolution-lab</id>
+    <link href="https://github.com/kvnloo/evolution-lab"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Original experiment engine (genomes, Hermes recovery gym, Pareto/MAP-Elites) — not a FlyGym or OpenEvolve fork.</summary>
+  </entry>
+  <entry>
+    <title>frontier-kb</title>
+    <id>https://github.com/kvnloo/frontier-kb</id>
+    <link href="https://github.com/kvnloo/frontier-kb"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Cross-harness research KB (OMP/Hermes/Codex/Claude/Cursor/Pi) plus frontier LLM/tool-use notes.</summary>
+  </entry>
+  <entry>
+    <title>gh-contrib-archive</title>
+    <id>https://github.com/kvnloo/gh-contrib-archive</id>
+    <link href="https://github.com/kvnloo/gh-contrib-archive"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public-safe visualization of GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
+  </entry>
+  <entry>
+    <title>kerdoios</title>
+    <id>https://github.com/kvnloo/kerdoios</id>
+    <link href="https://github.com/kvnloo/kerdoios"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Standalone Hermes plugin that allots scarce compute. Hermes still orchestrates, verifies, and retries.</summary>
+  </entry>
+  <entry>
+    <title>openavatar</title>
+    <id>https://kvnloo.github.io/openavatar/</id>
+    <link href="https://kvnloo.github.io/openavatar/"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Claimable public identity plus local likeness/voice studio. Open Identity Card for people and agents.</summary>
+  </entry>
+  <entry>
+    <title>OpenHands</title>
+    <id>https://all-hands.dev/</id>
+    <link href="https://all-hands.dev/"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My commits on this OpenHands fork (experimentation / local patches on the agent platform).</summary>
+  </entry>
+  <entry>
+    <title>sol-pi-hermes</title>
+    <id>https://github.com/kvnloo/sol-pi-hermes</id>
+    <link href="https://github.com/kvnloo/sol-pi-hermes"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Standalone Hermes Python plugin port of NVlabs/SoL-Pi. Not a hermes-agent core PR.</summary>
+  </entry>
+  <entry>
+    <title>sol-pi-omp</title>
+    <id>https://github.com/kvnloo/sol-pi-omp</id>
+    <link href="https://github.com/kvnloo/sol-pi-omp"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>OMP-loadable SoL-Pi wrapper: Action Fusion + ObservationPack without patching oh-my-pi or SoL-Pi cores.</summary>
+  </entry>
+  <entry>
+    <title>verified-oss-loop</title>
+    <id>https://github.com/kvnloo/verified-oss-loop</id>
+    <link href="https://github.com/kvnloo/verified-oss-loop"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Project-neutral protocol for roadmap-driven, evidence-backed human and agent OSS work. Workers never merge main.</summary>
   </entry>
   <entry>
     <title>boplog</title>
-    <id>https://kvnloo.github.io/boplog/</id>
-    <link href="https://kvnloo.github.io/boplog/"/>
-    <published>2026-08-01T00:00:00Z</published>
-    <updated>2026-08-01T00:00:00Z</updated>
+    <id>https://github.com/kvnloo/boplog</id>
+    <link href="https://github.com/kvnloo/boplog"/>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
   </entry>
   <entry>
-    <title>aliens-made-this</title>
-    <id>https://kvnloo.github.io/aliens-made-this/</id>
-    <link href="https://kvnloo.github.io/aliens-made-this/"/>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
+    <title>humanity-vault</title>
+    <id>https://kvnloo.github.io/humanity-vault/</id>
+    <link href="https://kvnloo.github.io/humanity-vault/"/>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Playful generative-art / capability test: what can the aliens make?</summary>
-  </entry>
-  <entry>
-    <title>cod</title>
-    <id>https://kvnloo.github.io/cod/</id>
-    <link href="https://kvnloo.github.io/cod/"/>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Early scaffold for a coding-related experiment (public placeholder).</summary>
-  </entry>
-  <entry>
-    <title>halo</title>
-    <id>https://github.com/kvnloo/halo</id>
-    <link href="https://github.com/kvnloo/halo"/>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>A first-person shooter in Three.js, built to match Halo: Campaign Evolved and measured against it frame by frame</summary>
-  </entry>
-  <entry>
-    <title>metallic-card</title>
-    <id>https://github.com/kvnloo/metallic-card</id>
-    <link href="https://github.com/kvnloo/metallic-card"/>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Metallic silver border card UI, synced from v0/Vercel design iterations.</summary>
-  </entry>
-  <entry>
-    <title>kvnloo</title>
-    <id>https://github.com/kvnloo/kvnloo</id>
-    <link href="https://github.com/kvnloo/kvnloo"/>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Profile README</summary>
-  </entry>
-  <entry>
-    <title>.files</title>
-    <id>https://kvnloo.github.io/.files/</id>
-    <link href="https://kvnloo.github.io/.files/"/>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>stay in flow while u code</summary>
-  </entry>
-  <entry>
-    <title>_pm</title>
-    <id>https://github.com/kvnloo/_pm</id>
-    <link href="https://github.com/kvnloo/_pm"/>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Company issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the Zer0 company OS PM core for automation orchestration.</summary>
-  </entry>
-  <entry>
-    <title>zer0-cockpit</title>
-    <id>https://github.com/kvnloo/zer0-cockpit</id>
-    <link href="https://github.com/kvnloo/zer0-cockpit"/>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Read-only, dependency-free terminal project cockpit dashboard for explicit Zer0 project progress.</summary>
-  </entry>
-  <entry>
-    <title>zer0-harness-spine</title>
-    <id>https://github.com/kvnloo/zer0-harness-spine</id>
-    <link href="https://github.com/kvnloo/zer0-harness-spine"/>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Ultra-thin agent harness contracts and provider adapters for the Zer0 agent stack (no orchestration state).</summary>
-  </entry>
-  <entry>
-    <title>zer0-voice</title>
-    <id>https://github.com/kvnloo/zer0-voice</id>
-    <link href="https://github.com/kvnloo/zer0-voice"/>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Voice adapters that bridge the Zer0 harness to machine-wide speech services without vendoring models.</summary>
-  </entry>
-  <entry>
-    <title>tmux-agent-fleet</title>
-    <id>https://github.com/kvnloo/tmux-agent-fleet</id>
-    <link href="https://github.com/kvnloo/tmux-agent-fleet"/>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Zero-daemon, harness-neutral command palette for coding agents across tmux panes.</summary>
-  </entry>
-  <entry>
-    <title>claude-island</title>
-    <id>https://github.com/kvnloo/claude-island</id>
-    <link href="https://github.com/kvnloo/claude-island"/>
-    <published>2026-04-11T00:00:00Z</published>
-    <updated>2026-04-11T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: multi-profile Claude Code usage monitoring with real-time rate-limit bars, cost/burn-rate tracking, and lifetime savings.</summary>
-  </entry>
-  <entry>
-    <title>tesla-infotainment</title>
-    <id>https://github.com/kvnloo/tesla-infotainment</id>
-    <link href="https://github.com/kvnloo/tesla-infotainment"/>
-    <published>2026-01-28T00:00:00Z</published>
-    <updated>2026-01-28T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Tesla-style web infotainment UI prototype built with Google AI Studio / Gemini.</summary>
-  </entry>
-  <entry>
-    <title>tesla</title>
-    <id>https://kvnloo.github.io/tesla/</id>
-    <link href="https://kvnloo.github.io/tesla/"/>
-    <published>2026-01-27T00:00:00Z</published>
-    <updated>2026-01-27T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Tesla infotainment system experiment in React, TypeScript, and Vite.</summary>
-  </entry>
-  <entry>
-    <title>farm</title>
-    <id>https://github.com/kvnloo/farm</id>
-    <link href="https://github.com/kvnloo/farm"/>
-    <published>2026-01-22T00:00:00Z</published>
-    <updated>2026-01-22T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Early public scaffold (placeholder repo).</summary>
-  </entry>
-  <entry>
-    <title>kpu-sim</title>
-    <id>https://kvnloo.github.io/kpu-sim/</id>
-    <link href="https://kvnloo.github.io/kpu-sim/"/>
-    <published>2026-01-19T00:00:00Z</published>
-    <updated>2026-01-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: GitHub Pages workflow for KPU simulator animations.</summary>
-  </entry>
-  <entry>
-    <title>coding-interview-university</title>
-    <id>https://github.com/kvnloo/coding-interview-university</id>
-    <link href="https://github.com/kvnloo/coding-interview-university"/>
-    <published>2026-01-18T00:00:00Z</published>
-    <updated>2026-01-18T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: optimized learning system with Obsidian canvas.</summary>
-  </entry>
-  <entry>
-    <title>scrollytelling</title>
-    <id>https://github.com/kvnloo/scrollytelling</id>
-    <link href="https://github.com/kvnloo/scrollytelling"/>
-    <published>2026-01-12T00:00:00Z</published>
-    <updated>2026-01-12T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Scroll-driven visual story experiment with frame sequences (headphones piece).</summary>
-  </entry>
-  <entry>
-    <title>cv</title>
-    <id>https://github.com/kvnloo/cv</id>
-    <link href="https://github.com/kvnloo/cv"/>
-    <published>2026-01-09T00:00:00Z</published>
-    <updated>2026-01-09T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>LaTeX CV and role-specific resumes (AI/ML, DevOps, PM) with generated PDFs.</summary>
+    <summary>Mobile-first GraphQL learning OS for frontier-kb: encode, retrieve, rest, measure, prune.</summary>
   </entry>
   <entry>
     <title>uiua</title>
     <id>https://www.uiua.org/</id>
     <link href="https://www.uiua.org/"/>
-    <published>2026-01-08T00:00:00Z</published>
-    <updated>2026-01-08T00:00:00Z</updated>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork of uiua-lang/uiua: Remove invalid Cos primitive reference (qa-requested)</summary>
+    <summary>Public fork of uiua with my commits</summary>
   </entry>
   <entry>
-    <title>Auto-Claude</title>
-    <id>https://github.com/kvnloo/Auto-Claude</id>
-    <link href="https://github.com/kvnloo/Auto-Claude"/>
-    <published>2025-12-27T00:00:00Z</published>
-    <updated>2025-12-27T00:00:00Z</updated>
+    <title>.files</title>
+    <id>https://kvnloo.github.io/.files/</id>
+    <link href="https://kvnloo.github.io/.files/"/>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: OpenAPI remote API, Claude Flow MCP integration, mobile companion, SWE-bench tooling, usage dashboard, and UX/scaling fixes.</summary>
+    <summary>stay in flow while u code</summary>
   </entry>
   <entry>
-    <title>jobapp</title>
-    <id>https://github.com/kvnloo/jobapp</id>
-    <link href="https://github.com/kvnloo/jobapp"/>
-    <published>2025-12-23T00:00:00Z</published>
-    <updated>2025-12-23T00:00:00Z</updated>
+    <title>hermes-keel</title>
+    <id>https://github.com/kvnloo/hermes-keel</id>
+    <link href="https://github.com/kvnloo/hermes-keel"/>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.</summary>
+    <summary>Performance-based execution kernel for Hermes Agent. Keel is Hermes L0; Firstmate is not a harness id.</summary>
+  </entry>
+  <entry>
+    <title>keyconf.gen</title>
+    <id>https://github.com/kvnloo/keyconf.gen</id>
+    <link href="https://github.com/kvnloo/keyconf.gen"/>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Blender + Three.js keyboard configurator with product imports and evidence-backed compatibility.</summary>
+  </entry>
+  <entry>
+    <title>oss-reach</title>
+    <id>https://github.com/kvnloo/oss-reach</id>
+    <link href="https://github.com/kvnloo/oss-reach"/>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Proxy OSS reach score (dependents + downloads) — not unique humans.</summary>
+  </entry>
+  <entry>
+    <title>hypr-agent-cursors</title>
+    <id>https://github.com/kvnloo/hypr-agent-cursors</id>
+    <link href="https://github.com/kvnloo/hypr-agent-cursors"/>
+    <published>2026-09-09T00:00:00Z</published>
+    <updated>2026-09-09T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>WIP Hyprland plugin contract: agent cursors/KB off the human seat. Nest load not proven.</summary>
+  </entry>
+  <entry>
+    <title>synergy-tasks</title>
+    <id>https://github.com/kvnloo/synergy-tasks</id>
+    <link href="https://github.com/kvnloo/synergy-tasks"/>
+    <published>2026-09-09T00:00:00Z</published>
+    <updated>2026-09-09T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Humanitarian task queue for Synergy, operated under the Verified OSS Loop.</summary>
+  </entry>
+  <entry>
+    <title>synergy.ai</title>
+    <id>https://github.com/kvnloo/synergy.ai</id>
+    <link href="https://github.com/kvnloo/synergy.ai"/>
+    <published>2026-09-09T00:00:00Z</published>
+    <updated>2026-09-09T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Humanitarian briefings, primary sources, and public-interest technology projects.</summary>
+  </entry>
+  <entry>
+    <title>ai-pokedex-educational-preview</title>
+    <id>https://github.com/kvnloo/ai-pokedex-educational-preview</id>
+    <link href="https://github.com/kvnloo/ai-pokedex-educational-preview"/>
+    <published>2026-09-07T00:00:00Z</published>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Unofficial non-commercial educational study of AI-assisted interface and visual experimentation.</summary>
+  </entry>
+  <entry>
+    <title>north-star-railworks</title>
+    <id>https://github.com/kvnloo/north-star-railworks</id>
+    <link href="https://github.com/kvnloo/north-star-railworks"/>
+    <published>2026-09-07T00:00:00Z</published>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Parametric Blender locomotives, editable assemblies, and a Three.js workshop.</summary>
+  </entry>
+  <entry>
+    <title>space</title>
+    <id>https://github.com/kvnloo/space</id>
+    <link href="https://github.com/kvnloo/space"/>
+    <published>2026-09-07T00:00:00Z</published>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Zer0 space experiment: Dyson swarm notes and Kerr/blackhole resources.</summary>
+  </entry>
+  <entry>
+    <title>pokedex-field-os</title>
+    <id>https://github.com/kvnloo/pokedex-field-os</id>
+    <link href="https://github.com/kvnloo/pokedex-field-os"/>
+    <published>2026-09-05T00:00:00Z</published>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Unofficial educational Field Pokédex OS and interactive device prototype.</summary>
   </entry>
 </feed>

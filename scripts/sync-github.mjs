@@ -3,9 +3,9 @@
  * Sync public build log data from GitHub.
  *
  * Includes repositories the configured user has authored commits in:
- * - all non-fork public repos they own
- * - forks only when they authored at least one commit
- * - minus data/catalog-omit.json (factory fork dumps, empty placeholders)
+ * - all non-fork public repos they own (minus catalog-omit)
+ * - forks already in the catalog / description overrides (SYNC_FORK_POLICY=catalog, default)
+ * - or forks with authored commits when SYNC_FORK_POLICY=authored
  *
  * Auth: GITHUB_TOKEN / GH_TOKEN (Actions provides this automatically).
  * No personal API key required for public reads + committing back from Actions.
@@ -25,6 +25,11 @@ const SITE_URL = (process.env.SITE_URL || 'https://kvnloo.github.io/boplog').rep
 const API = 'https://api.github.com';
 const CONCURRENCY = Number(process.env.SYNC_CONCURRENCY || 8);
 const FEATURED_LIMIT_DEFAULT = 6;
+// catalog = originals + forks already in year files / description overrides.
+// authored = scan touched forks for kvnloo commits (burns REST on archive forks).
+const FORK_POLICY = (process.env.SYNC_FORK_POLICY || 'catalog').toLowerCase();
+const SKIP_COMMIT_SCAN = /^(1|true|yes)$/i.test(process.env.SKIP_COMMIT_SCAN || '');
+const OWNED_REPOS_JSON = process.env.OWNED_REPOS_JSON || '';
 const OVERRIDES_PATH = path.join(DATA_DIR, 'description-overrides.json');
 const DATE_OVERRIDES_PATH = path.join(DATA_DIR, 'date-overrides.json');
 const FEATURED_PATH = path.join(DATA_DIR, 'featured.json');
@@ -304,8 +309,10 @@ async function resolveLinks(repo) {
     web.push({ label: labelForWebUrl(href, { fromPages }), url: href });
   }
 
-  const pages = await api(`/repos/${repo.full_name}/pages`, { allow404: true });
-  if (pages && pages.html_url) addWeb(pages.html_url, { fromPages: true });
+  if (!SKIP_COMMIT_SCAN) {
+    const pages = await api(`/repos/${repo.full_name}/pages`, { allow404: true });
+    if (pages && pages.html_url) addWeb(pages.html_url, { fromPages: true });
+  }
   if (repo.homepage) addWeb(repo.homepage);
 
   const links = [
@@ -470,13 +477,15 @@ async function resolveDescription(repo, overrides, authored) {
     const fromCommits = descriptionFromMyCommits(authored?.messages || [], repo);
     if (fromCommits) return { description: fromCommits, source: 'commits' };
 
-    const readme = await fetchReadmeText(repo.full_name);
-    const fromReadme = descriptionFromReadme(readme, repo.name);
-    if (fromReadme) {
-      return {
-        description: clampDescription(`My work on this fork: ${fromReadme}`),
-        source: 'readme',
-      };
+    if (!SKIP_COMMIT_SCAN) {
+      const readme = await fetchReadmeText(repo.full_name);
+      const fromReadme = descriptionFromReadme(readme, repo.name);
+      if (fromReadme) {
+        return {
+          description: clampDescription(`My work on this fork: ${fromReadme}`),
+          source: 'readme',
+        };
+      }
     }
 
     return {
@@ -495,9 +504,11 @@ async function resolveDescription(repo, overrides, authored) {
   const fromCommits = descriptionFromMyCommits(authored?.messages || [], repo);
   if (fromCommits) return { description: fromCommits, source: 'commits' };
 
-  const readme = await fetchReadmeText(repo.full_name);
-  const fromReadme = descriptionFromReadme(readme, repo.name);
-  if (fromReadme) return { description: fromReadme, source: 'readme' };
+  if (!SKIP_COMMIT_SCAN) {
+    const readme = await fetchReadmeText(repo.full_name);
+    const fromReadme = descriptionFromReadme(readme, repo.name);
+    if (fromReadme) return { description: fromReadme, source: 'readme' };
+  }
 
   if (gh && !isWeakDescription(gh)) {
     return { description: clampDescription(gh), source: 'github' };
@@ -525,7 +536,9 @@ async function projectFromRepo(repo, overrides, dateOverrides, { featured = fals
     }
   }
 
-  const authored = await collectAuthoredCommits(repo, { maxMessages: 15 });
+  const authored = SKIP_COMMIT_SCAN
+    ? { found: true, messages: [], latestDate: null, count: 0 }
+    : await collectAuthoredCommits(repo, { maxMessages: 15 });
   const { description, source } = await resolveDescription(repo, overrides, authored);
   const { links, primaryUrl } = await resolveLinks(repo);
 
@@ -588,6 +601,54 @@ async function loadHierarchy() {
   } catch {
     return null;
   }
+}
+
+async function loadExistingCatalogNames() {
+  const names = new Set();
+  const files = await readdir(DATA_DIR).catch(() => []);
+  for (const file of files) {
+    if (!/^projects-\d{4}\.json$/.test(file)) continue;
+    try {
+      const chunk = JSON.parse(await readFile(path.join(DATA_DIR, file), 'utf8'));
+      for (const project of chunk.projects || []) {
+        if (project?.name) names.add(project.name);
+      }
+    } catch {
+      // ignore unreadable year file
+    }
+  }
+  return names;
+}
+
+function normalizeOwnedRepo(repo) {
+  const name = repo.name;
+  const fullName = repo.full_name || (name ? `${USER}/${name}` : name);
+  return {
+    ...repo,
+    name,
+    full_name: fullName,
+    html_url: repo.html_url || `https://github.com/${fullName}`,
+    private: Boolean(repo.private),
+    fork: Boolean(repo.fork),
+    description: repo.description || null,
+    homepage: repo.homepage || null,
+    pushed_at: repo.pushed_at || repo.updated_at || repo.created_at || null,
+    updated_at: repo.updated_at || repo.pushed_at || null,
+    created_at: repo.created_at || repo.pushed_at || null,
+    language: repo.language || null,
+    stargazers_count: repo.stargazers_count || 0,
+    topics: Array.isArray(repo.topics) ? repo.topics : [],
+  };
+}
+
+async function loadOwnedRepos() {
+  if (OWNED_REPOS_JSON) {
+    const raw = JSON.parse(await readFile(OWNED_REPOS_JSON, 'utf8'));
+    const list = Array.isArray(raw) ? raw : (raw.repos || []);
+    log(`owned snapshot ${OWNED_REPOS_JSON}: ${list.length} repos`);
+    return list.map(normalizeOwnedRepo);
+  }
+  return (await apiPaginate(`/users/${encodeURIComponent(USER)}/repos?type=owner&sort=pushed&direction=desc`)).map(normalizeOwnedRepo);
 }
 
 async function loadCatalogOmit() {
@@ -855,7 +916,7 @@ async function writeYearFiles(projects, featuredLimit = FEATURED_LIMIT_DEFAULT) 
   };
   const manifest = {
     generatedAt,
-    source: `GitHub public repos for ${USER} (authored commits only; forks without commits excluded)`,
+    source: `GitHub public repos for ${USER} (public originals plus catalog forks; factory dumps omitted)`,
     featuredLimit,
     user: USER,
     files,
@@ -963,9 +1024,9 @@ Last data refresh: ${generatedAt.slice(0, 10)}
 - **boplog**: this public build log (static JSON + HTML archive of authored commits).
 - **zerOS** / **zeros**: stealth company OS product track (issues, harness, cockpit, voice).
 - **evolve**: multi-agent / autonomous development product track (blueprint track 3).
-- **health**: blueprint track 1 — health / peak-performance product direction.
-- **world sim**: blueprint track 2 — digital twin / simulation product direction.
-- **blueprint**: brand and system connecting the three blueprint tracks.
+- **health**: blueprint track 1 — measurement ethic (biomarkers over theater), not Bryan Johnson’s protocol.
+- **world sim**: blueprint track 2 — GrowTwin / CEA farm twin. Ace is a pretotype, not the live GPU loop.
+- **blueprint**: CEA marketing pretotype connecting the tracks — not Johnson’s protocol and not factory law.
 - **tmux-agent-fleet**: zero-daemon command palette for coding agents across tmux panes.
 
 ## Product tracks
@@ -1044,9 +1105,9 @@ async function main() {
   log(`catalog omit: ${catalogOmit.names.size} names, ${catalogOmit.prefixes.length} prefixes`);
   log(`featured pin list: ${featuredConfig.repos.join(', ') || '(none)'} (limit ${featuredConfig.limit})`);
 
+  log(`fork policy=${FORK_POLICY} skipCommitScan=${SKIP_COMMIT_SCAN}`);
   log('listing public repos…');
-  // type=owner = repos the user owns (includes forks they own)
-  const repos = await apiPaginate(`/users/${encodeURIComponent(USER)}/repos?type=owner&sort=pushed&direction=desc`);
+  const repos = await loadOwnedRepos();
   const publicRepos = repos.filter((r) => !r.private).filter((r) => {
     if (!matchesCatalogOmit(r.name, catalogOmit)) return true;
     log(`omit from project grid: ${r.name}`);
@@ -1057,49 +1118,59 @@ async function main() {
   const originals = publicRepos.filter((r) => !r.fork);
   const forks = publicRepos.filter((r) => r.fork);
 
-  // Don't deep-scan all 320 archive forks. Only forks that were pushed after
-  // creation (you actually pushed something) or already have a hand override.
-  const touchedForks = forks.filter((repo) => {
-    if (overrides.has(repo.name)) return true;
-    const pushed = Date.parse(repo.pushed_at || 0);
-    const created = Date.parse(repo.created_at || 0);
-    return Number.isFinite(pushed) && Number.isFinite(created) && pushed - created > 60_000;
-  });
-  log(`fork candidates (touched after fork / override): ${touchedForks.length} of ${forks.length}`);
-
-  log(`checking authorship on ${touchedForks.length} fork candidates (incl. non-default branches)…`);
-  const forkFlags = await mapPool(touchedForks, CONCURRENCY, async (repo) => {
-    try {
-      const ok = await userAuthoredCommit(repo);
-      return ok ? repo : null;
-    } catch (error) {
-      if (isRateLimitError(error)) {
-        markRateLimited(error);
+  let authoredForks;
+  if (FORK_POLICY === 'catalog') {
+    const existing = await loadExistingCatalogNames();
+    authoredForks = forks.filter((repo) => existing.has(repo.name) || overrides.has(repo.name));
+    log(`catalog forks kept: ${authoredForks.map((r) => r.name).join(', ') || '(none)'} (${authoredForks.length} of ${forks.length})`);
+  } else {
+    const touchedForks = forks.filter((repo) => {
+      if (overrides.has(repo.name)) return true;
+      const pushed = Date.parse(repo.pushed_at || 0);
+      const created = Date.parse(repo.created_at || 0);
+      return Number.isFinite(pushed) && Number.isFinite(created) && pushed - created > 60_000;
+    });
+    log(`fork candidates (touched after fork / override): ${touchedForks.length} of ${forks.length}`);
+    log(`checking authorship on ${touchedForks.length} fork candidates (incl. non-default branches)…`);
+    const forkFlags = await mapPool(touchedForks, CONCURRENCY, async (repo) => {
+      try {
+        const ok = await userAuthoredCommit(repo);
+        return ok ? repo : null;
+      } catch (error) {
+        if (isRateLimitError(error)) {
+          markRateLimited(error);
+          return null;
+        }
+        log(`skip ${repo.full_name}: ${error.message}`);
         return null;
       }
-      log(`skip ${repo.full_name}: ${error.message}`);
-      return null;
-    }
-  });
-  const authoredForks = forkFlags.filter(Boolean);
-  log(`forks with my commits: ${authoredForks.length}`);
+    });
+    authoredForks = forkFlags.filter(Boolean);
+    log(`forks with my commits: ${authoredForks.length}`);
+  }
 
-  log(`checking authorship on ${originals.length} original repos…`);
-  const originalFlags = await mapPool(originals, CONCURRENCY, async (repo) => {
-    try {
-      const ok = await userAuthoredCommit(repo);
-      return ok ? repo : null;
-    } catch (error) {
-      if (isRateLimitError(error)) {
-        markRateLimited(error);
+  let authoredOriginals;
+  if (SKIP_COMMIT_SCAN || FORK_POLICY === 'catalog') {
+    authoredOriginals = originals;
+    log(`originals included without commit scan: ${authoredOriginals.length}`);
+  } else {
+    log(`checking authorship on ${originals.length} original repos…`);
+    const originalFlags = await mapPool(originals, CONCURRENCY, async (repo) => {
+      try {
+        const ok = await userAuthoredCommit(repo);
+        return ok ? repo : null;
+      } catch (error) {
+        if (isRateLimitError(error)) {
+          markRateLimited(error);
+          return null;
+        }
+        log(`skip ${repo.full_name}: ${error.message}`);
         return null;
       }
-      log(`skip ${repo.full_name}: ${error.message}`);
-      return null;
-    }
-  });
-  const authoredOriginals = originalFlags.filter(Boolean);
-  log(`originals with my commits: ${authoredOriginals.length}`);
+    });
+    authoredOriginals = originalFlags.filter(Boolean);
+    log(`originals with my commits: ${authoredOriginals.length}`);
+  }
 
   const selected = [...authoredOriginals, ...authoredForks];
   if (!selected.length) die('no repositories with authored commits found');

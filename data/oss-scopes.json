@@ -3,6 +3,14 @@
   "label": "selected communities",
   "groups": [
     { "id": "hermes", "label": "Hermes", "repositories": ["NousResearch/hermes-agent"] },
+    { "id": "noctalia", "label": "Noctalia", "repositories": ["noctalia-dev/noctalia"] },
+    { "id": "omarchy", "label": "Omarchy", "repositories": ["omacom/omarchy"] },
+    { "id": "o8", "label": "o8", "repositories": ["hurttlocker/o8"] },
+    { "id": "noop", "label": "noop", "repositories": ["ryanbr/noop"] },
+    { "id": "crush", "label": "crush", "repositories": ["charmbracelet/crush"] },
+    { "id": "oh-my-pi", "label": "oh-my-pi", "repositories": ["can1357/oh-my-pi"] },
+    { "id": "gitnexus", "label": "GitNexus", "repositories": ["abhigyanpatwari/GitNexus"] },
+    { "id": "cribble", "label": "Cribble", "repositories": ["Birdabo404/Cribble"] },
     { "id": "opencode", "label": "OpenCode", "repositories": ["anomalyco/opencode"] },
     { "id": "rust", "label": "Rust", "repositories": ["rust-lang/rust"] },
     { "id": "python", "label": "Python", "repositories": ["python/cpython"] }

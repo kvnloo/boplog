@@ -1,18 +1,14 @@
 {
-  "generatedAt": "2026-08-15T19:03:26Z",
-  "source": "GitHub public repos for kvnloo (authored commits only; forks without commits excluded)",
+  "generatedAt": "2026-09-12T09:48:35Z",
+  "source": "GitHub public repos for kvnloo (public originals plus catalog forks; factory dumps omitted)",
   "featuredLimit": 6,
   "user": "kvnloo",
   "files": [
     "projects-2026.json",
     "projects-2025.json",
-    "projects-2024.json",
-    "projects-2018.json",
     "projects-2017.json"
   ],
   "hierarchy": "hierarchy.json",
-  "ossContributions": "oss-contributions.json",
-  "ossScopes": "oss-scopes.json",
   "surfaces": {
     "interactivePortfolio": {
       "id": "interactive-portfolio",

@@ -7,8 +7,7 @@
       "date": "2017-12-12",
       "url": "https://github.com/kvnloo/smartvest",
       "types": [
-        "public",
-        "swift"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -36,8 +35,7 @@
       "date": "2017-08-22",
       "url": "https://github.com/kvnloo/refind",
       "types": [
-        "public",
-        "sh"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -65,8 +63,7 @@
       "date": "2017-06-06",
       "url": "https://kvnloo.github.io/AudioEngine/",
       "types": [
-        "public",
-        "makefile"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -92,37 +89,7 @@
       "productName": "audioengine",
       "featured": true,
       "featuredRank": 1,
-      "eyebrow": "Makefile"
-    },
-    {
-      "id": "ios-2017",
-      "name": "iOS-2017",
-      "description": "My work on this HackIllinois iOS fork: indoor maps view and release cleanup.",
-      "date": "2017-02-22",
-      "url": "https://github.com/kvnloo/iOS-2017",
-      "types": [
-        "public",
-        "swift",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/iOS-2017"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "professional",
-      "kindName": "professional",
-      "portfolio": "professional",
-      "portfolioName": "professional",
-      "product": "mobile-legacy",
-      "productName": "mobile (legacy)"
+      "eyebrow": "Public repo"
     },
     {
       "id": "flicks",
@@ -131,8 +98,7 @@
       "date": "2017-02-10",
       "url": "https://github.com/kvnloo/Flicks",
       "types": [
-        "public",
-        "swift"
+        "public"
       ],
       "formats": [],
       "categories": [

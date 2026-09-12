@@ -1,65 +1,6 @@
 {
   "projects": [
     {
-      "id": "auto-claude",
-      "name": "Auto-Claude",
-      "description": "My work on this fork: OpenAPI remote API, Claude Flow MCP integration, mobile companion, SWE-bench tooling, usage dashboard, and UX/scaling fixes.",
-      "date": "2025-12-27",
-      "url": "https://github.com/kvnloo/Auto-Claude",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/Auto-Claude"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "agent-tooling",
-      "productName": "agent tooling"
-    },
-    {
-      "id": "jobapp",
-      "name": "jobapp",
-      "description": "Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.",
-      "date": "2025-12-23",
-      "url": "https://github.com/kvnloo/jobapp",
-      "types": [
-        "public",
-        "html"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/jobapp"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "professional",
-      "kindName": "professional",
-      "portfolio": "professional",
-      "portfolioName": "professional",
-      "product": "professional-showcase",
-      "productName": "showcase"
-    },
-    {
       "id": "expert",
       "name": "expert",
       "description": "Early public scaffold (placeholder repo).",
@@ -86,6 +27,73 @@
       "portfolioName": "experiment",
       "product": "",
       "productName": ""
+    },
+    {
+      "id": "evolve",
+      "name": "evolve",
+      "description": "Open-source multi-agent framework for autonomous software development (AI SDLC): agent-swarm orchestration toolkit with Claude Code agents, evidence-based shipping loops, docs, and examples.",
+      "date": "2025-12-15",
+      "url": "https://kvnloo.github.io/evolve/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/evolve/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/evolve"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "evolve",
+      "productName": "evolve",
+      "featured": true,
+      "featuredRank": 4,
+      "eyebrow": "Public repo"
+    },
+    {
+      "id": "blueprint",
+      "name": "blueprint",
+      "description": "CEA marketing pretotype: GrowTwin as PCPartPicker for farms. Soil-to-cell, under an hour a week. Not Bryan Johnson\u2019s protocol; photoreal UE5 is the twin claim.",
+      "date": "2025-12-10",
+      "url": "https://kvnloo.github.io/blueprint/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/blueprint/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/blueprint"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "blueprint",
+      "productName": "blueprint"
     },
     {
       "id": "docs-boilerplate",
@@ -177,75 +185,6 @@
       "productName": "agent tooling"
     },
     {
-      "id": "blueprint",
-      "name": "blueprint",
-      "description": "Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.",
-      "date": "2025-12-07",
-      "url": "https://kvnloo.github.io/blueprint/",
-      "types": [
-        "public",
-        "html"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/blueprint/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/blueprint"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "blueprint",
-      "productName": "blueprint"
-    },
-    {
-      "id": "evolve",
-      "name": "evolve",
-      "description": "Open-source multi-agent framework for autonomous software development (AI SDLC): agent-swarm orchestration toolkit with Claude Code agents, evidence-based shipping loops, docs, and examples.",
-      "date": "2025-12-02",
-      "url": "https://kvnloo.github.io/evolve/",
-      "types": [
-        "public",
-        "sh"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/evolve/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/evolve"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "evolve",
-      "productName": "evolve",
-      "featured": true,
-      "featuredRank": 4,
-      "eyebrow": "Shell"
-    },
-    {
       "id": "whisper",
       "name": "whisper",
       "description": "Early public scaffold for a Whisper-related experiment (placeholder repo).",
@@ -274,42 +213,6 @@
       "productName": ""
     },
     {
-      "id": "portfolio",
-      "name": "portfolio",
-      "description": "Personal portfolio site at the intersection of AI, neuroscience, and mobile systems.",
-      "date": "2025-11-28",
-      "url": "https://kvnloo.github.io/portfolio/",
-      "types": [
-        "public",
-        "html"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/portfolio/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/portfolio"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "professional",
-      "kindName": "professional",
-      "portfolio": "professional",
-      "portfolioName": "professional",
-      "product": "professional-showcase",
-      "productName": "showcase",
-      "featured": true,
-      "featuredRank": 5,
-      "eyebrow": "HTML"
-    },
-    {
       "id": "playground",
       "name": "playground",
       "description": "Public sandbox repo for throwaway experiments.",
@@ -326,6 +229,34 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/playground"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "migrate",
+      "name": "migrate",
+      "description": "Migration utilities scaffold (minimal public repo).",
+      "date": "2025-11-26",
+      "url": "https://github.com/kvnloo/migrate",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/migrate"
         }
       ],
       "company": "zer0",
@@ -366,34 +297,6 @@
       "productName": "agent tooling"
     },
     {
-      "id": "migrate",
-      "name": "migrate",
-      "description": "Migration utilities scaffold (minimal public repo).",
-      "date": "2025-11-25",
-      "url": "https://github.com/kvnloo/migrate",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/migrate"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "botw",
       "name": "botw",
       "description": "Early public scaffold (placeholder repo).",
@@ -422,50 +325,13 @@
       "productName": ""
     },
     {
-      "id": "ace",
-      "name": "ace",
-      "description": "Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.",
-      "date": "2025-11-21",
-      "url": "https://kvnloo.github.io/ace/",
-      "types": [
-        "public",
-        "ts"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/ace/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/ace"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "world-sim",
-      "productName": "world sim",
-      "featured": true,
-      "featuredRank": 3,
-      "eyebrow": "TypeScript"
-    },
-    {
       "id": "monument",
       "name": "monument",
       "description": "AI Studio web app experiment (monument concept UI).",
       "date": "2025-11-20",
       "url": "https://kvnloo.github.io/monument/",
       "types": [
-        "public",
-        "ts"
+        "public"
       ],
       "formats": [],
       "categories": [
@@ -489,6 +355,71 @@
       "portfolioName": "experiment",
       "product": "",
       "productName": ""
+    },
+    {
+      "id": "architecture-demo",
+      "name": "architecture_demo",
+      "description": "Architecture portfolio universe: AI-generated visualizations, research, and project docs.",
+      "date": "2025-11-14",
+      "url": "https://kvnloo.github.io/architecture_demo/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/architecture_demo/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/architecture_demo"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "flowstate",
+      "name": "FlowState",
+      "description": "My work on this BCI fork: major documentation rebuild plus attention-based video playback speed control.",
+      "date": "2025-11-08",
+      "url": "https://kvnloo.github.io/FlowState/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/FlowState/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/FlowState"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "health",
+      "productName": "health"
     },
     {
       "id": "spy",
@@ -521,6 +452,38 @@
       "portfolioName": "experiment",
       "product": "",
       "productName": ""
+    },
+    {
+      "id": "launch",
+      "name": "launch",
+      "description": "Launch toolkit: Claude Code / Superdesign commands for parallel UI design generation.",
+      "date": "2025-10-31",
+      "url": "https://launch-plum-beta.vercel.app/",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://launch-plum-beta.vercel.app/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/launch"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "agent-tooling",
+      "productName": "agent tooling"
     },
     {
       "id": "ux",
@@ -579,78 +542,13 @@
       "productName": ""
     },
     {
-      "id": "architecture-demo",
-      "name": "architecture_demo",
-      "description": "Architecture portfolio universe: AI-generated visualizations, research, and project docs.",
-      "date": "2025-10-18",
-      "url": "https://kvnloo.github.io/architecture_demo/",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/architecture_demo/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/architecture_demo"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "launch",
-      "name": "launch",
-      "description": "Launch toolkit: Claude Code / Superdesign commands for parallel UI design generation.",
-      "date": "2025-10-14",
-      "url": "https://launch-plum-beta.vercel.app/",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://launch-plum-beta.vercel.app/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/launch"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "agent-tooling",
-      "productName": "agent tooling"
-    },
-    {
       "id": "cofounder",
       "name": "cofounder",
-      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI…",
+      "description": "My work on this fork of nraiden/cofounder: Clean up project structure and add comprehensive documentation; Resolve Claude Code bridge timeout issues and complete integration testing; Complete Claude Code CLI\u2026",
       "date": "2025-08-28",
       "url": "https://cofounder.openinterface.ai/",
       "types": [
         "public",
-        "ts",
         "fork"
       ],
       "formats": [],
