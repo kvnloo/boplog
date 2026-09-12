@@ -36,7 +36,7 @@
       "name": "health",
       "kind": "product",
       "track": 1,
-      "description": "blueprint track 1 — aio health / blueprint protocol (labs, nutrition, fitness, sleep). public proxy: attention / bci work.",
+      "description": "blueprint track 1 — measurement ethic (biomarkers over theater), not Bryan Johnson’s protocol. public proxy: attention / bci work.",
       "projects": ["FlowState"]
     },
     {
@@ -44,16 +44,16 @@
       "name": "world sim",
       "kind": "product",
       "track": 2,
-      "description": "blueprint track 2 — digital twin → robotics / farm-to-table simulation pipeline.",
-      "projects": ["ace", "farm"]
+      "description": "GrowTwin / CEA farm twin (PCPartPicker for farms). Ace is a racket-facility pretotype, not the live GPU loop.",
+      "projects": ["ace", "farm", "pickleball-palace-builder"]
     },
     {
       "id": "evolve",
       "name": "evolve",
       "kind": "product",
       "track": 3,
-      "description": "blueprint track 3 — c(raid) orchestration; end-to-end autonomous development framework.",
-      "projects": ["evolve"]
+      "description": "blueprint track 3 — c(raid) orchestration; AODL is the IR; evolve is the public toolkit.",
+      "projects": ["evolve", "aodl", "evolution-lab", "verified-oss-loop"]
     },
     {
       "id": "blueprint",
@@ -67,7 +67,26 @@
       "name": "agent tooling",
       "kind": "product",
       "description": "public interfaces and fleets for coding agents (surfaces that feed evolve / zeros).",
-      "projects": ["tmux-agent-fleet", "claude-island", "Auto-Claude", "opcode", "flow", "launch", "hermes-liquid-glass"]
+      "projects": [
+        "tmux-agent-fleet",
+        "claude-island",
+        "Auto-Claude",
+        "opcode",
+        "flow",
+        "launch",
+        "hermes-liquid-glass",
+        "dash",
+        "kerdoios",
+        "hermes-keel",
+        "company-os",
+        "hermes-codex-live",
+        "hermes-model-passports",
+        "hermes-privilege-broker",
+        "sol-pi-hermes",
+        "sol-pi-omp",
+        "hypr-agent-cursors",
+        "oss-reach"
+      ]
     },
     {
       "id": "boplog",
@@ -84,6 +103,20 @@
       "projects": ["tesla", "tesla-infotainment"]
     },
     {
+      "id": "knowledge",
+      "name": "knowledge",
+      "kind": "product",
+      "description": "public knowledge bases and learning loops. no private notes, voice corpus, or photos.",
+      "projects": ["frontier-kb", "humanity-vault", "gh-contrib-archive"]
+    },
+    {
+      "id": "identity-public",
+      "name": "public identity",
+      "kind": "professional",
+      "description": "claimable public identity and humanitarian briefing surfaces.",
+      "projects": ["openavatar", "synergy.ai", "synergy-tasks", "loo-ai-site"]
+    },
+    {
       "id": "audioengine",
       "name": "audioengine",
       "kind": "professional",
@@ -95,7 +128,7 @@
       "name": "showcase",
       "kind": "professional",
       "description": "portfolio site and career packaging (repo name portfolio ≠ this taxonomy). interactive 3d surface: ramen shop props.",
-      "projects": ["portfolio", "cv", "jobapp"]
+      "projects": ["portfolio", "cv", "jobapp", "keyconf.gen"]
     },
     {
       "id": "dotfiles",
@@ -142,7 +175,13 @@
     "docs-boilerplate",
     "whisper",
     "migrate",
-    "kvnloo"
+    "kvnloo",
+    "north-star-railworks",
+    "pokedex-field-os",
+    "ai-pokedex-educational-preview",
+    "space",
+    "cli",
+    "dimos"
   ],
   "defaultKind": "experiment",
   "focus": [

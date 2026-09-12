@@ -5,6 +5,7 @@
  * Includes repositories the configured user has authored commits in:
  * - all non-fork public repos they own
  * - forks only when they authored at least one commit
+ * - minus data/catalog-omit.json (factory fork dumps, empty placeholders)
  *
  * Auth: GITHUB_TOKEN / GH_TOKEN (Actions provides this automatically).
  * No personal API key required for public reads + committing back from Actions.
@@ -28,6 +29,7 @@ const OVERRIDES_PATH = path.join(DATA_DIR, 'description-overrides.json');
 const DATE_OVERRIDES_PATH = path.join(DATA_DIR, 'date-overrides.json');
 const FEATURED_PATH = path.join(DATA_DIR, 'featured.json');
 const HIERARCHY_PATH = path.join(DATA_DIR, 'hierarchy.json');
+const OMIT_PATH = path.join(DATA_DIR, 'catalog-omit.json');
 const WEAK_DESC_RE = /^(public repository|fork with commits by me)(\s*·.*)?$/i;
 const GENERIC_README_RE = /run and deploy your ai studio app|this template provides a minimal setup|automatically synced with your \[?v0/i;
 
@@ -588,6 +590,30 @@ async function loadHierarchy() {
   }
 }
 
+async function loadCatalogOmit() {
+  try {
+    const raw = JSON.parse(await readFile(OMIT_PATH, 'utf8'));
+    const names = new Set(
+      (raw.names || []).filter((n) => typeof n === 'string' && n.trim()).map((n) => n.trim()),
+    );
+    const prefixes = (raw.prefixes || [])
+      .filter((n) => typeof n === 'string' && n.trim())
+      .map((n) => n.trim());
+    return { names, prefixes };
+  } catch {
+    return { names: new Set(), prefixes: [] };
+  }
+}
+
+function matchesCatalogOmit(name, omit) {
+  if (!name || !omit) return false;
+  if (omit.names.has(name)) return true;
+  for (const prefix of omit.prefixes || []) {
+    if (prefix && name.startsWith(prefix)) return true;
+  }
+  return false;
+}
+
 function applyHierarchy(projects, hierarchy) {
   if (!hierarchy) return projects;
   const lower = (v) => (typeof v === 'string' ? v.toLowerCase() : v);
@@ -1011,16 +1037,22 @@ async function main() {
   const dateOverrides = await loadDateOverrides();
   const featuredConfig = await loadFeaturedConfig();
   const hierarchy = await loadHierarchy();
+  const catalogOmit = await loadCatalogOmit();
   log(`description overrides: ${overrides.size}`);
   log(`date overrides: ${dateOverrides.size}`);
   log(`hierarchy products: ${hierarchy?.products?.length || 0}`);
+  log(`catalog omit: ${catalogOmit.names.size} names, ${catalogOmit.prefixes.length} prefixes`);
   log(`featured pin list: ${featuredConfig.repos.join(', ') || '(none)'} (limit ${featuredConfig.limit})`);
 
   log('listing public repos…');
   // type=owner = repos the user owns (includes forks they own)
   const repos = await apiPaginate(`/users/${encodeURIComponent(USER)}/repos?type=owner&sort=pushed&direction=desc`);
-  const publicRepos = repos.filter((r) => !r.private);
-  log(`public owned repos: ${publicRepos.length} (${publicRepos.filter((r) => r.fork).length} forks)`);
+  const publicRepos = repos.filter((r) => !r.private).filter((r) => {
+    if (!matchesCatalogOmit(r.name, catalogOmit)) return true;
+    log(`omit from project grid: ${r.name}`);
+    return false;
+  });
+  log(`public owned repos after omit: ${publicRepos.length} (${publicRepos.filter((r) => r.fork).length} forks)`);
 
   const originals = publicRepos.filter((r) => !r.fork);
   const forks = publicRepos.filter((r) => r.fork);

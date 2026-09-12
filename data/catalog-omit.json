@@ -1,0 +1,15 @@
+{
+  "_comment": "Excluded from the public project grid (year files). Does not affect the OSS contribution ledger. Factory fork dumps stay off the catalog; empty placeholders stay off. Do not list private repos — they are already unpublished. Do not put featured pins here.",
+  "names": [
+    "factory-ryanbr-noop",
+    "noctalia",
+    "hermes-agent",
+    "omarchy",
+    "Telegram-iOS-empty-placeholder",
+    "apex-legends",
+    "civ",
+    "valorant",
+    "gesture-lab-copy"
+  ],
+  "prefixes": ["factory-"]
+}

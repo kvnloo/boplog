@@ -60,7 +60,8 @@ const queued = results.flatMap((result) => result.records);
 const raw = [];
 for (const item of queued) {
   raw.push(await normalize(item));
-  await new Promise((resolve) => setTimeout(resolve, 120));
+  const delayMs = Number(process.env.OSS_DETAIL_DELAY_MS || (token ? 40 : 120));
+  if (delayMs > 0) await new Promise((resolve) => setTimeout(resolve, delayMs));
 }
 const scopes = JSON.parse(await readFile(new URL('../data/oss-scopes.json', import.meta.url), 'utf8'));
 const verifiedImpact = JSON.parse(await readFile(new URL('../data/oss-verified-impact.json', import.meta.url), 'utf8'));
