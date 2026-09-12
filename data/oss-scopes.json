@@ -3,6 +3,11 @@
   "label": "selected communities",
   "groups": [
     { "id": "hermes", "label": "Hermes", "repositories": ["NousResearch/hermes-agent"] },
+    { "id": "noctalia", "label": "Noctalia", "repositories": ["noctalia-dev/noctalia"] },
+    { "id": "oh-my-pi", "label": "Oh My Pi", "repositories": ["can1357/oh-my-pi"] },
+    { "id": "agent-orchestrator", "label": "Agent Orchestrator", "repositories": ["Untrivial-ai/agent-orchestrator"] },
+    { "id": "gitnexus", "label": "GitNexus", "repositories": ["abhigyanpatwari/GitNexus"] },
+    { "id": "gameblocks", "label": "GameBlocks", "repositories": ["xt4d/GameBlocks"] },
     { "id": "opencode", "label": "OpenCode", "repositories": ["anomalyco/opencode"] },
     { "id": "rust", "label": "Rust", "repositories": ["rust-lang/rust"] },
     { "id": "python", "label": "Python", "repositories": ["python/cpython"] }
