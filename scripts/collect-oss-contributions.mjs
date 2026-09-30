@@ -51,8 +51,18 @@ async function request(url, attempt = 0) {
   const target = url.startsWith('http') ? url : `${API}${url}`;
   const response = await fetch(target, { headers });
   captureRate(response, url);
-  if ((response.status === 403 || response.status === 429 || response.status >= 500) && attempt < 3) {
-    const waitSeconds = Number(response.headers.get('retry-after')) || (attempt + 1) * 4;
+  if ((response.status === 403 || response.status === 429 || response.status >= 500) && attempt < 5) {
+    const retryAfter = Number(response.headers.get('retry-after'));
+    const reset = Number(response.headers.get('x-ratelimit-reset'));
+    const resetWait = Number.isFinite(reset)
+      ? Math.max(1, Math.ceil(reset - Date.now() / 1000) + 1)
+      : 0;
+    const waitSeconds = Number.isFinite(retryAfter) && retryAfter > 0
+      ? retryAfter
+      : resetWait > 0 && resetWait <= 90
+        ? resetWait
+        : Math.min(30, (attempt + 1) * 4);
+    console.log(`[oss] retrying ${url} after ${waitSeconds}s (status=${response.status}, attempt=${attempt + 1})`);
     await new Promise((resolve) => setTimeout(resolve, waitSeconds * 1000));
     return request(url, attempt + 1);
   }
@@ -130,9 +140,14 @@ const querySpecs = [
   },
 ];
 
-const searchResults = await Promise.all(
-  querySpecs.map(async (spec) => ({ spec, result: await search(spec.query) })),
-);
+// GitHub Search has a much smaller, independent rate bucket than the core
+// REST API. Run state partitions sequentially so pagination cannot stampede
+// the ~30 requests/minute search budget. request() waits for the advertised
+// reset when the bucket reaches zero.
+const searchResults = [];
+for (const spec of querySpecs) {
+  searchResults.push({ spec, result: await search(spec.query) });
+}
 
 const raw = [];
 for (const { spec, result } of searchResults) {
