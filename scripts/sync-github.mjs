@@ -68,6 +68,25 @@ class RateLimitError extends Error {
 }
 
 let rateLimited = false;
+let lastRateState = null;
+
+function captureRateState(headers, label = 'api') {
+  const remaining = Number(headers?.get?.('x-ratelimit-remaining'));
+  const limit = Number(headers?.get?.('x-ratelimit-limit'));
+  const used = Number(headers?.get?.('x-ratelimit-used'));
+  const reset = Number(headers?.get?.('x-ratelimit-reset'));
+  if (!Number.isFinite(remaining)) return;
+  lastRateState = {
+    label,
+    remaining,
+    limit: Number.isFinite(limit) ? limit : null,
+    used: Number.isFinite(used) ? used : null,
+    reset: Number.isFinite(reset) ? new Date(reset * 1000).toISOString() : null,
+  };
+  if (remaining <= 150 || (Number.isFinite(used) && used > 0 && used % 100 === 0)) {
+    log(`rate ${label}: remaining=${remaining}/${Number.isFinite(limit) ? limit : '?'} used=${Number.isFinite(used) ? used : '?'} reset=${lastRateState.reset || '?'}`);
+  }
+}
 
 function isRateLimitError(error) {
   return error instanceof RateLimitError || error?.name === 'RateLimitError';
@@ -132,6 +151,7 @@ async function api(pathname, { allow404 = false } = {}) {
   if (TOKEN) headers.Authorization = `Bearer ${TOKEN}`;
 
   const response = await fetch(url, { headers });
+  captureRateState(response.headers, pathname);
   if (allow404 && response.status === 404) return null;
   if (response.status === 409) return []; // empty repo
   if (!response.ok) {
@@ -155,6 +175,7 @@ async function apiPaginate(pathname) {
     };
     if (TOKEN) headers.Authorization = `Bearer ${TOKEN}`;
     const response = await fetch(url, { headers });
+    captureRateState(response.headers, 'paginate');
     if (!response.ok) {
       const body = await response.text();
       const msg = `${response.status} ${url}: ${body.slice(0, 240)}`;
@@ -259,6 +280,60 @@ async function userAuthoredCommit(repo) {
   return found;
 }
 
+async function loadPreviousProjects() {
+  const projects = new Map();
+  try {
+    const manifest = JSON.parse(await readFile(path.join(DATA_DIR, 'manifest.json'), 'utf8'));
+    for (const file of manifest.files || []) {
+      const chunk = JSON.parse(await readFile(path.join(DATA_DIR, file), 'utf8'));
+      for (const project of chunk.projects || []) {
+        if (project?.name) projects.set(project.name, project);
+      }
+    }
+  } catch (error) {
+    log(`previous snapshot unavailable: ${error.message}`);
+  }
+  return projects;
+}
+
+async function recentPublicRepoActivity() {
+  const hints = new Map();
+  try {
+    // GitHub's public user event stream is intentionally bounded (up to 300
+    // recent events / roughly 30 days). That is enough for incremental fork
+    // discovery; older known forks come from the previous snapshot.
+    const events = await apiPaginate(`/users/${encodeURIComponent(USER)}/events/public`);
+    for (const event of events) {
+      const fullName = event?.repo?.name;
+      if (!fullName) continue;
+      const previous = hints.get(fullName);
+      if (!previous || String(event.created_at || '') > String(previous.createdAt || '')) {
+        hints.set(fullName, {
+          createdAt: event.created_at || null,
+          type: event.type || null,
+          headRepo: event?.payload?.pull_request?.head?.repo?.full_name || null,
+        });
+      }
+      const headRepo = event?.payload?.pull_request?.head?.repo?.full_name;
+      if (headRepo) {
+        const headPrevious = hints.get(headRepo);
+        if (!headPrevious || String(event.created_at || '') > String(headPrevious.createdAt || '')) {
+          hints.set(headRepo, {
+            createdAt: event.created_at || null,
+            type: event.type || null,
+            headRepo,
+          });
+        }
+      }
+    }
+    log(`recent public activity hints: ${hints.size} repos`);
+  } catch (error) {
+    if (isRateLimitError(error)) markRateLimited(error);
+    else log(`recent public activity unavailable: ${error.message}`);
+  }
+  return hints;
+}
+
 function normalizeHttps(url) {
   if (!url || typeof url !== 'string') return null;
   const trimmed = url.trim();
@@ -302,8 +377,10 @@ async function resolveLinks(repo) {
     web.push({ label: labelForWebUrl(href, { fromPages }), url: href });
   }
 
-  const pages = await api(`/repos/${repo.full_name}/pages`, { allow404: true });
-  if (pages && pages.html_url) addWeb(pages.html_url, { fromPages: true });
+  if (repo.has_pages === true) {
+    const pages = await api(`/repos/${repo.full_name}/pages`, { allow404: true });
+    if (pages && pages.html_url) addWeb(pages.html_url, { fromPages: true });
+  }
   if (repo.homepage) addWeb(repo.homepage);
 
   const links = [
@@ -457,7 +534,7 @@ async function fetchReadmeText(fullName) {
   }
 }
 
-async function resolveDescription(repo, overrides, authored) {
+async function resolveDescription(repo, overrides, authored, previousProject = null) {
   // Forks: prioritize my commit subjects / docs over upstream About text.
   // Hand overrides still win when present (contribution-focused blurbs).
   const override = overrides.get(repo.name);
@@ -467,6 +544,10 @@ async function resolveDescription(repo, overrides, authored) {
 
     const fromCommits = descriptionFromMyCommits(authored?.messages || [], repo);
     if (fromCommits) return { description: fromCommits, source: 'commits' };
+
+    if (previousProject?.description && !isWeakDescription(previousProject.description)) {
+      return { description: clampDescription(previousProject.description), source: 'previous' };
+    }
 
     const readme = await fetchReadmeText(repo.full_name);
     const fromReadme = descriptionFromReadme(readme, repo.name);
@@ -508,29 +589,54 @@ async function resolveDescription(repo, overrides, authored) {
   return { description: fallback, source: 'fallback' };
 }
 
-async function projectFromRepo(repo, overrides, dateOverrides, { featured = false, featuredRank } = {}) {
-  // Need parent full_name for fork blurbs
+async function projectFromRepo(
+  repo,
+  overrides,
+  dateOverrides,
+  {
+    featured = false,
+    featuredRank,
+    previousProject = null,
+    activityHint = null,
+  } = {},
+) {
+  // The repo list payload is the core source of truth. Do not spend one or
+  // more commit API calls per repository merely to prove an owned original is
+  // ours. Fork inclusion is decided once, before this function, using prior
+  // verified snapshot membership plus recent public activity.
   let parent = repo.parent;
   if (repo.fork && !parent?.full_name) {
+    // Only fetch detailed fork metadata when the description actually needs
+    // the parent name. This is bounded to the small selected-fork set.
     try {
       const detailed = await api(`/repos/${repo.full_name}`, { allow404: true });
       if (detailed?.parent) parent = detailed.parent;
-      if (detailed) {
-        repo = { ...repo, ...detailed, parent: detailed.parent || parent };
-      }
-    } catch {
-      // keep list payload
+      if (detailed) repo = { ...repo, ...detailed, parent: detailed.parent || parent };
+    } catch (error) {
+      if (isRateLimitError(error)) markRateLimited(error);
+      // keep list payload / previous snapshot
     }
   }
 
-  const authored = await collectAuthoredCommits(repo, { maxMessages: 15 });
-  const { description, source } = await resolveDescription(repo, overrides, authored);
+  const authored = {
+    found: true,
+    messages: [],
+    latestDate: activityHint?.createdAt || null,
+    count: 0,
+  };
+  const { description, source } = await resolveDescription(
+    repo,
+    overrides,
+    authored,
+    previousProject,
+  );
   const { links, primaryUrl } = await resolveLinks(repo);
 
-  // Prefer latest *my* commit date for forks (feature branch work).
-  // Date overrides win when Git history is misleading (cleanup-only pushes).
+  // For forks, a previous verified project date is safer than repo.pushed_at,
+  // which can move because of upstream syncs. Recent user activity wins.
   const date = dateOverrides.get(repo.name)
-    || isoDay(authored.latestDate)
+    || isoDay(activityHint?.createdAt)
+    || (repo.fork ? previousProject?.date : null)
     || isoDay(repo.pushed_at)
     || isoDay(repo.updated_at)
     || isoDay(repo.created_at);
@@ -829,7 +935,7 @@ async function writeYearFiles(projects, featuredLimit = FEATURED_LIMIT_DEFAULT) 
   };
   const manifest = {
     generatedAt,
-    source: `GitHub public repos for ${USER} (authored commits only; forks without commits excluded)`,
+    source: `GitHub public repos for ${USER} (owned originals + previously verified/recently active forks)`,
     featuredLimit,
     user: USER,
     files,
@@ -1024,53 +1130,32 @@ async function main() {
 
   const originals = publicRepos.filter((r) => !r.fork);
   const forks = publicRepos.filter((r) => r.fork);
+  const previousProjects = await loadPreviousProjects();
+  const activityHints = await recentPublicRepoActivity();
 
-  // Don't deep-scan all 320 archive forks. Only forks that were pushed after
-  // creation (you actually pushed something) or already have a hand override.
-  const touchedForks = forks.filter((repo) => {
-    if (overrides.has(repo.name)) return true;
-    const pushed = Date.parse(repo.pushed_at || 0);
-    const created = Date.parse(repo.created_at || 0);
-    return Number.isFinite(pushed) && Number.isFinite(created) && pushed - created > 60_000;
-  });
-  log(`fork candidates (touched after fork / override): ${touchedForks.length} of ${forks.length}`);
+  // Originals are owned projects; no N-per-repo authorship proof is needed.
+  // Forks are incremental: preserve previously verified fork projects and add
+  // forks that show up in the recent public activity window. This changes the
+  // cost from O(all forks × branches) to O(repo pages + recent activity).
+  const previousForkNames = new Set(
+    [...previousProjects.values()]
+      .filter((project) => (project.types || []).includes('fork'))
+      .map((project) => project.name),
+  );
+  const recentForkFullNames = new Set(
+    [...activityHints.keys()].map((name) => name.toLowerCase()),
+  );
+  const selectedForks = forks.filter((repo) => (
+    previousForkNames.has(repo.name)
+    || overrides.has(repo.name)
+    || recentForkFullNames.has(String(repo.full_name).toLowerCase())
+  ));
 
-  log(`checking authorship on ${touchedForks.length} fork candidates (incl. non-default branches)…`);
-  const forkFlags = await mapPool(touchedForks, CONCURRENCY, async (repo) => {
-    try {
-      const ok = await userAuthoredCommit(repo);
-      return ok ? repo : null;
-    } catch (error) {
-      if (isRateLimitError(error)) {
-        markRateLimited(error);
-        return null;
-      }
-      log(`skip ${repo.full_name}: ${error.message}`);
-      return null;
-    }
-  });
-  const authoredForks = forkFlags.filter(Boolean);
-  log(`forks with my commits: ${authoredForks.length}`);
+  log(`original projects: ${originals.length} (accepted from ownership metadata)`);
+  log(`fork projects: ${selectedForks.length} selected from ${forks.length} total (previous snapshot / recent activity / override)`);
 
-  log(`checking authorship on ${originals.length} original repos…`);
-  const originalFlags = await mapPool(originals, CONCURRENCY, async (repo) => {
-    try {
-      const ok = await userAuthoredCommit(repo);
-      return ok ? repo : null;
-    } catch (error) {
-      if (isRateLimitError(error)) {
-        markRateLimited(error);
-        return null;
-      }
-      log(`skip ${repo.full_name}: ${error.message}`);
-      return null;
-    }
-  });
-  const authoredOriginals = originalFlags.filter(Boolean);
-  log(`originals with my commits: ${authoredOriginals.length}`);
-
-  const selected = [...authoredOriginals, ...authoredForks];
-  if (!selected.length) die('no repositories with authored commits found');
+  const selected = [...originals, ...selectedForks];
+  if (!selected.length) die('no public repositories selected');
 
   log(`resolving descriptions + docs/pages links for ${selected.length} repos…`);
   let projects = await mapPool(
@@ -1078,7 +1163,10 @@ async function main() {
     Math.min(CONCURRENCY, 6),
     async (repo) => {
       try {
-        return await projectFromRepo(repo, overrides, dateOverrides);
+        return await projectFromRepo(repo, overrides, dateOverrides, {
+          previousProject: previousProjects.get(repo.name) || null,
+          activityHint: activityHints.get(repo.full_name) || null,
+        });
       } catch (error) {
         if (isRateLimitError(error)) {
           markRateLimited(error);
@@ -1133,6 +1221,7 @@ async function main() {
   log(`featured: ${projects.filter((p) => p.featured).map((p) => p.name).join(', ')}`);
   log(`generatedAt=${manifest.generatedAt}`);
   if (rateLimited) log('warning: finished with partial snapshot due to GitHub 403/429 rate limit');
+  if (lastRateState) log(`final rate: remaining=${lastRateState.remaining}/${lastRateState.limit ?? '?'} used=${lastRateState.used ?? '?'} reset=${lastRateState.reset || '?'}`);
 }
 
 main().catch((error) => {

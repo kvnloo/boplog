@@ -44,6 +44,9 @@ jobs:
       - name: Validate snapshot
         run: npm run check
 
+      - name: Enforce evidence freshness
+        run: npm run check:freshness
+
       - name: Commit and push if data changed
         run: |
           git config user.name "github-actions[bot]"
