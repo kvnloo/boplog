@@ -17,6 +17,18 @@ jobs:
         with:
           node-version: 22
       - run: npm run check
+
+      - name: Collector smoke (portfolio sync repair PR)
+        if: github.event_name == 'pull_request' && github.head_ref == 'fix/incremental-sync-and-portfolio-manifest'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_USER: kvnloo
+          SITE_URL: https://kvnloo.github.io/boplog
+        run: |
+          npm run sync
+          npm run sync:oss
+          npm run check
+          npm run check:freshness
       - name: Validate agent interfaces
         run: |
           python3 -m py_compile boplog mcp/boplog_mcp.py
