@@ -1,6 +1,6 @@
 # boplog
 
-A minimal, static build log for [Kevin Rajan](https://github.com/kvnloo) (`kvnloo`), backed by a checked-in snapshot of **public GitHub repositories he has committed to**.
+A minimal, static build log for [Kevin Rajan](https://github.com/kvnloo) (`kvnloo`), backed by a checked-in snapshot of **public owned projects plus verified/recent fork activity and OSS evidence**.
 
 Live (after Pages is enabled): <https://kvnloo.github.io/boplog/>
 
@@ -11,7 +11,7 @@ Live (after Pages is enabled): <https://kvnloo.github.io/boplog/>
 - Snapshot data under `data/`, regenerated from the GitHub API.
 - Evidence-backed OSS contribution ledger, shareable scopes, and deterministic collectible badges. Locked badges state their public next condition; unlocks come only from merged upstream work or checked `verifiedImpact` receipts.
 - **No personal API key** in the browser or in secrets — GitHub Actions uses the built-in `GITHUB_TOKEN`.
-- Filter rule: include a repo only if `kvnloo` authored at least one commit (archive-only forks are dropped).
+- Project rule: include public owned originals directly; preserve previously verified fork projects and discover newly active forks from the bounded public activity stream. Upstream PR/issue evidence is tracked separately by the OSS collector.
 - Free CLI (`boplog`), local MCP server, OpenAPI, and agent discovery docs.
 
 ## Local development
@@ -29,17 +29,25 @@ Open <http://localhost:4173>.
 
 [`.github/workflows/sync-github.yml`](.github/workflows/sync-github.yml) runs:
 
-- every **15 minutes** (`cron: '*/15 * * * *'`)
+- at **06:00, 14:00, and 22:00 UTC**
 - on manual `workflow_dispatch`
 
 Each run:
 
 1. Lists public repos owned by `kvnloo`
-2. Keeps originals + forks **only if** you authored commits
-3. Writes `data/projects-YYYY.json`, `data/manifest.json`, `feed.xml`, `llms.txt`, `sitemap.xml`
-4. Validates, then commits + pushes if anything changed
+2. Accepts owned originals without N-per-repo authorship calls
+3. Preserves verified forks and discovers recent fork activity incrementally
+4. Writes `data/projects-YYYY.json`, `data/manifest.json`, `feed.xml`, `llms.txt`, `sitemap.xml`
+5. Refreshes public OSS contribution evidence with search-rate-aware collection
+6. Validates data, canonical portfolio claims, and freshness before publishing
 
-Rate limit budget: Actions `GITHUB_TOKEN` allows **1,000 req/hour** for this repo. A full authorship pass over ~360 repos is a few hundred calls — fine at 15‑minute cadence, especially with concurrency and skips for empty/error forks.
+Rate-limit policy: normal sync is incremental and avoids scanning every fork/branch. Core REST and GitHub Search have separate budgets; the OSS collector serializes search partitions and honors the advertised reset time instead of stampeding the Search bucket.
+
+## Canonical portfolio manifest
+
+`data/portfolio-manifest.json` is the curated publication layer over Boplog activity. It records surface placement, promotion state, and claim verification. A claim marked `verified` must resolve to evidence; `reported` and `provisional` results stay visibly distinct.
+
+See [docs/portfolio-system.md](docs/portfolio-system.md) for the Work / Lab / OSS / Card / Resume architecture.
 
 ## Project data shape
 
