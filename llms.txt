@@ -16,10 +16,15 @@ Last data refresh: 2026-08-15
 - [Build log](https://kvnloo.github.io/boplog/): Human-readable site with featured work and the chronological archive.
 - [Developer access](https://kvnloo.github.io/boplog/developers/): Free static API, CLI, and local MCP instructions.
 - [Agent usage guide](https://kvnloo.github.io/boplog/agents.md): When to use this archive and how to interpret its records.
+- [Expanded agent context](https://kvnloo.github.io/boplog/llms-full.txt): Source priority, interfaces, recovery links, and accuracy constraints.
+- [Agent discovery JSON](https://kvnloo.github.io/boplog/.well-known/agent.json): Machine-readable use cases and constraints.
 - [OpenAPI](https://kvnloo.github.io/boplog/openapi.json): Read-only OpenAPI 3.1 description; no authentication required.
 - [Project data manifest](https://kvnloo.github.io/boplog/data/manifest.json): Lists all year-partitioned public JSON files.
 - [Atom feed](https://kvnloo.github.io/boplog/feed.xml): Latest public projects.
 - [Sitemap](https://kvnloo.github.io/boplog/sitemap.xml): Canonical discovery URLs.
+- [About](https://kvnloo.github.io/boplog/about/): Identity, scope, and archive methodology.
+- [Contact](https://kvnloo.github.io/boplog/contact/): Verified public contact and correction routes.
+- [Privacy](https://kvnloo.github.io/boplog/privacy/): Data scope and hosting limitations.
 
 ## Entity one-liners
 

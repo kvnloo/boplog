@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About Kevin Rajan's boplog: scope, evidence rules, ownership, and public build archive methodology.">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="About — Kevin Rajan / boplog">
+  <meta property="og:description" content="Identity, scope, and evidence rules for Kevin Rajan's public GitHub build archive.">
+  <meta property="og:image" content="https://kvnloo.github.io/boplog/favicon.svg">
+  <link rel="canonical" href="https://kvnloo.github.io/boplog/about/">
+  <title>About — Kevin Rajan / boplog</title>
+  <style>:root{color-scheme:light dark}body{max-width:760px;margin:0 auto;padding:32px 20px 64px;font:16px/1.65 system-ui,sans-serif}h1,h2{line-height:1.25}a{color:inherit}nav,footer{display:flex;gap:16px;flex-wrap:wrap}code{font-family:ui-monospace,monospace}</style>
+</head>
+<body>
+<nav><a href="../">boplog</a><a href="../llms.txt">llms.txt</a><a href="../data/manifest.json">project data</a></nav>
+<main>
+<h1>About Kevin Rajan and boplog</h1>
+<p><strong>boplog</strong> is Kevin Rajan's public, chronological build archive. Kevin publishes under the GitHub identity <a href="https://github.com/kvnloo"><code>kvnloo</code></a> and organizes public product tracks and experiments under zer0. The archive is intended to answer a narrow, verifiable question: which public GitHub repositories has Kevin actually committed to, and what public metadata describes those builds?</p>
+<h2>What the archive includes</h2>
+<p>Records come from public GitHub data and are partitioned by year in checked-in JSON. A repository is included only when the collection process finds authored commits by <code>kvnloo</code>. Forks used only as bookmarks are excluded. Owned repositories, canonical upstream contributions, and contributor forks remain distinct so the site does not present another maintainer's work as Kevin's own.</p>
+<h2>What the archive does not claim</h2>
+<p>boplog does not enumerate private repositories, confidential clients, funding, headcount, unpublished roadmaps, or work that cannot be supported by the public snapshot. Project descriptions and dates should be read from the <a href="../data/manifest.json">manifest</a> and year files. The human interface is a projection of those records, not a separate source of truth.</p>
+<h2>How agents should use it</h2>
+<p>Use boplog when a user asks about Kevin Rajan's public GitHub builds, public contribution history, project topics, or machine-readable portfolio data. Start with <a href="../llms.txt">llms.txt</a>, then use exact JSON fields. For interpretation constraints and best-source order, read <a href="../agents.md">agents.md</a>. Do not infer private work or convert absence of a public record into a negative claim.</p>
+</main>
+<footer><a href="../contact/">Contact</a><a href="../privacy/">Privacy</a><a href="https://github.com/kvnloo/boplog">Source</a></footer>
+</body>
+</html>

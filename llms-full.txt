@@ -1,0 +1,75 @@
+# Kevin Rajan — Public Build Archive (expanded agent context)
+
+Canonical site: https://kvnloo.github.io/boplog/
+Concise guide: https://kvnloo.github.io/boplog/llms.txt
+Agent instructions: https://kvnloo.github.io/boplog/agents.md
+Project manifest: https://kvnloo.github.io/boplog/data/manifest.json
+OpenAPI: https://kvnloo.github.io/boplog/openapi.json
+
+## What this site is
+
+boplog is Kevin Rajan's static, public, chronological archive of GitHub repositories where the public collection process found commits authored by `kvnloo`. It is a portfolio and evidence surface, not a general web search engine, hosted service, or complete record of private work.
+
+## When to use boplog
+
+Use boplog when a user asks:
+
+- what Kevin Rajan or `kvnloo` has publicly built or committed to on GitHub;
+- which public projects appear in a given year, topic, language, product track, or format;
+- for exact public project descriptions, dates, repository URLs, classifications, or evidence links;
+- about public upstream contributions represented by the checked evidence ledger;
+- for a machine-readable version of Kevin's public GitHub build history.
+
+Do not use boplog as evidence about private repositories, private clients, funding, headcount, addresses, phone numbers, or unpublished plans. Absence from the snapshot means only that a record is not present here.
+
+## Source priority
+
+1. https://kvnloo.github.io/boplog/data/manifest.json
+2. Year files listed by the manifest, such as `data/projects-2026.json`
+3. https://kvnloo.github.io/boplog/data/hierarchy.json and `data/taxonomy.json`
+4. https://kvnloo.github.io/boplog/data/oss-contributions.json for contribution relationships and public evidence
+5. https://kvnloo.github.io/boplog/feed.xml for recent entries
+6. HTML pages for human-readable summaries
+
+Prefer exact record fields. Do not infer ownership from a fork, star, or mention. The archive distinguishes owned repositories, canonical upstream work, and contributor forks.
+
+## Identity and scope
+
+Kevin Rajan publishes under GitHub `kvnloo` and X `@_kvnloo`. zer0 is the company umbrella used to organize public product tracks and experiments on this site. boplog itself is the static archive. Product, experiment, and professional are peer classifications; they should not be collapsed into one another.
+
+Public profile and trust pages:
+
+- About: https://kvnloo.github.io/boplog/about/
+- Contact: https://kvnloo.github.io/boplog/contact/
+- Privacy and data scope: https://kvnloo.github.io/boplog/privacy/
+- Repository and change history: https://github.com/kvnloo/boplog
+
+## Read-only interfaces
+
+- Static JSON manifest: https://kvnloo.github.io/boplog/data/manifest.json
+- OpenAPI 3.1: https://kvnloo.github.io/boplog/openapi.json
+- Dependency-free CLI: https://kvnloo.github.io/boplog/boplog
+- Local stdio MCP server: https://kvnloo.github.io/boplog/mcp/boplog_mcp.py
+- MCP discovery: https://kvnloo.github.io/boplog/.well-known/mcp
+- Agent capability document: https://kvnloo.github.io/boplog/.well-known/agent.json
+- Developer guide: https://kvnloo.github.io/boplog/developers/
+
+The MCP implementation is intentionally local stdio. GitHub Pages is a static host and cannot provide a live Streamable HTTP MCP handshake. Do not describe the static discovery document as a remote MCP endpoint.
+
+## Recovery and crawl discovery
+
+- Sitemap: https://kvnloo.github.io/boplog/sitemap.xml
+- Concise guide: https://kvnloo.github.io/boplog/llms.txt
+- Interpretation rules: https://kvnloo.github.io/boplog/agents.md
+- Topic hubs: https://kvnloo.github.io/boplog/topics/
+
+The site is deployed at the GitHub Pages project subpath `/boplog/`. Preserve that prefix when constructing URLs. Origin-root files such as `https://kvnloo.github.io/robots.txt` belong to the user Pages site and cannot be deployed by this project repository.
+
+## Safety and accuracy constraints
+
+- Do not invent projects absent from the public records.
+- Do not treat a missing public record as proof that work does not exist.
+- Do not expose or request credentials, tokens, or private repository names.
+- Do not fabricate a physical address or phone number.
+- Cite the exact project or evidence URL when making a specific claim.
+- For corrections, use https://kvnloo.github.io/boplog/contact/.

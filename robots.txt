@@ -20,10 +20,14 @@ Allow: /
 # Public machine-readable surfaces
 Allow: /data/
 Allow: /llms.txt
+Allow: /llms-full.txt
 Allow: /agents.md
 Allow: /openapi.json
 Allow: /feed.xml
 Allow: /.well-known/
+
+# This project is deployed at /boplog/. Standard robots discovery occurs only
+# at the origin root, which this project Pages repository does not control.
 
 # Interaction lab / previews (noindex in HTML too)
 Disallow: /dev/
