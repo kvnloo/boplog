@@ -118,10 +118,6 @@
     builds: { desktop: 12, mobile: 8 },
   };
 
-  function hasOssFilters() {
-    return state.ossScope !== 'all_public' || Boolean(state.ossStatus) || Boolean(state.ossRepo);
-  }
-
   function previewLimit(section) {
     return previewLimits[section][mobilePreview.matches ? 'mobile' : 'desktop'];
   }
