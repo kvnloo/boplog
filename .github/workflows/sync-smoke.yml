@@ -1,0 +1,67 @@
+name: Sync smoke
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/sync-github.mjs'
+      - 'scripts/collect-oss-contributions.mjs'
+      - 'scripts/merged-pr-timestamps.mjs'
+      - 'scripts/wait-for-budget.mjs'
+      - 'scripts/check-live-publish.mjs'
+      - 'scripts/search-pages.mjs'
+      - 'tests/search-pages.test.mjs'
+      - 'tests/merged-pr-timestamps.test.mjs'
+      - 'scripts/check-freshness.mjs'
+      - 'scripts/validate-portfolio-manifest.mjs'
+      - 'data/portfolio-manifest.json'
+      - 'package.json'
+      - '.github/workflows/sync-smoke.yml'
+      - '.github/workflows/sync-github.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-smoke-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # PR updates must not each consume thousands of installation API calls.
+      # Main sync owns end-to-end publication; manual dispatch still exercises
+      # the full collector path when an isolated smoke is desired.
+      - name: Validate code and checked-in evidence
+        run: npm run check
+
+      - name: Run project collector without publishing
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_USER: kvnloo
+          SITE_URL: https://kvnloo.github.io/boplog
+        run: npm run sync
+
+      - name: Run OSS collector without publishing
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_USER: kvnloo
+        run: npm run sync:oss
+
+      - name: Validate generated evidence
+        if: github.event_name == 'workflow_dispatch'
+        run: npm run check
+
+      - name: Verify generated evidence is fresh
+        if: github.event_name == 'workflow_dispatch'
+        run: npm run check:freshness

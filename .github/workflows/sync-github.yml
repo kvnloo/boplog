@@ -1,6 +1,17 @@
 name: Sync GitHub builds
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync-github.mjs'
+      - 'scripts/collect-oss-contributions.mjs'
+      - 'scripts/merged-pr-timestamps.mjs'
+      - 'scripts/search-pages.mjs'
+      - 'scripts/check-live-publish.mjs'
+      - 'scripts/wait-for-budget.mjs'
+      - '.github/workflows/sync-github.yml'
+      - 'data/featured.json'
   schedule:
     # A few times/day. */15 burned the Actions GITHUB_TOKEN 1000/hr budget.
     - cron: '0 6,14,22 * * *'
@@ -8,6 +19,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: sync-github
@@ -16,6 +29,10 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 105
+    environment:
+      name: github-pages
+      url: ${{ steps.pages-deploy.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -27,6 +44,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      # Avoid a wasted partial crawl when other repository work exhausted
+      # this GitHub installation token during the same hour.
+      - name: Wait for GitHub API budget
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/wait-for-budget.mjs
 
       - name: Sync repos I have committed to
         env:
@@ -44,6 +68,9 @@ jobs:
       - name: Validate snapshot
         run: npm run check
 
+      - name: Enforce evidence freshness
+        run: npm run check:freshness
+
       - name: Commit and push if data changed
         run: |
           git config user.name "github-actions[bot]"
@@ -55,3 +82,22 @@ jobs:
           fi
           git commit -m "chore: sync public builds from GitHub"
           git push
+
+      # A GITHUB_TOKEN-authored git push does not trigger a Pages build.
+      # Deploy the exact regenerated workspace as an artifact in this run.
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload fresh Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy refreshed site
+        id: pages-deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Verify live site matches generated artifacts
+        env:
+          PAGES_URL: ${{ steps.pages-deploy.outputs.page_url }}
+        run: node scripts/check-live-publish.mjs

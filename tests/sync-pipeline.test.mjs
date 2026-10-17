@@ -1,0 +1,37 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+
+const workflow = (name) => readFile(new URL('../.github/workflows/' + name, import.meta.url), 'utf8');
+const collector = () => readFile(new URL('../scripts/collect-oss-contributions.mjs', import.meta.url), 'utf8');
+
+test('production sync runs both collectors, publishes Pages, and checks live freshness', async () => {
+  const source = await workflow('sync-github.yml');
+  assert.match(source, /schedule:/);
+  assert.match(source, /workflow_dispatch:/);
+  assert.match(source, /branches: \[main\]/);
+  assert.match(source, /scripts\/wait-for-budget\.mjs/);
+  assert.match(source, /scripts\/sync-github\.mjs/);
+  assert.match(source, /scripts\/collect-oss-contributions\.mjs/);
+  assert.match(source, /actions\/deploy-pages@v4/);
+  assert.match(source, /scripts\/check-live-publish\.mjs/);
+  assert.match(source, /pages: write/);
+  assert.match(source, /id-token: write/);
+});
+
+test('PR validation is offline by default so pushes do not exhaust installation quota', async () => {
+  const source = await workflow('sync-smoke.yml');
+  assert.match(source, /Validate code and checked-in evidence/);
+  assert.match(source, /npm run check/);
+  assert.match(source, /workflow_dispatch:/);
+  for (const label of ['Run project collector without publishing', 'Run OSS collector without publishing']) {
+    assert.ok(source.includes('- name: ' + label + "\n        if: github.event_name == 'workflow_dispatch'"));
+  }
+});
+
+test('merged PRs are resolved in batched GraphQL rather than per-PR REST requests', async () => {
+  const source = await collector();
+  assert.match(source, /collectMergedAt\(mergedQuery, request\)/);
+  assert.match(source, /exactMergedAt\(item, mergedDates\)/);
+  assert.doesNotMatch(source, /\/pulls\/\$\{item\.number\}/);
+});

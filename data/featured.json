@@ -1,12 +1,18 @@
 {
-  "_comment": "Ordered featured projects (repo names). Sync pins these first; remaining slots are filled by stars/recency if under the limit.",
-  "limit": 6,
+  "_comment": "Ordered public GitHub repositories with evidence of current work. No private links; omitted/missing repos are skipped by the sync.",
+  "limit": 12,
   "repos": [
-    "AudioEngine",
-    ".files",
+    "hermes-agent",
+    "oh-my-pi",
+    "gods-eye-view",
+    "cua",
+    "factory-ryanbr-noop",
+    "noctalia",
+    "o8",
+    "z0intelligence",
+    "aodl",
     "ace",
-    "evolve",
-    "portfolio",
-    "tmux-agent-fleet"
+    "z0evals",
+    "boplog"
   ]
 }
