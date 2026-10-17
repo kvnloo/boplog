@@ -30,9 +30,6 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     timeout-minutes: 105
-    environment:
-      name: github-pages
-      url: ${{ steps.pages-deploy.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -83,15 +80,39 @@ jobs:
           git commit -m "chore: sync public builds from GitHub"
           git push
 
-      # A GITHUB_TOKEN-authored git push does not trigger a Pages build.
-      # Deploy the exact regenerated workspace as an artifact in this run.
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
+      # Upload the regenerated workspace before leaving this job.
+      # This succeeds independently of Pages deployment settings.
       - name: Upload fresh Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
+
+  deploy:
+    name: Deploy and verify published site
+    needs: sync
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.pages-deploy.outputs.page_url }}
+    steps:
+      # The sync job pushed the freshly generated data to main.
+      - name: Checkout published main data for parity checks
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - name: Deploy refreshed site
         id: pages-deploy
