@@ -37,3 +37,11 @@ test('merged PRs are resolved in batched GraphQL rather than per-PR REST request
   assert.match(source, /exactMergedAt\(item, mergedDates\)/);
   assert.doesNotMatch(source, /\/pulls\/\$\{item\.number\}/);
 });
+
+test('featured public forks are included independently of recent activity hints', async () => {
+  const source = await readFile(new URL('../scripts/sync-github.mjs', import.meta.url), 'utf8');
+  assert.match(source, /featuredForkNames = new Set/);
+  assert.match(source, /featuredConfig\.repos\.map/);
+  assert.match(source, /featuredForkNames\.has\(repo\.name\.toLowerCase\(\)\)/);
+  assert.match(source, /const selected = \[\.\.\.originals, \.\.\.selectedForks\]/);
+});
