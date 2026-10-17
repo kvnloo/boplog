@@ -17,7 +17,7 @@ test('production sync runs both collectors, publishes Pages, and checks live fre
   assert.match(source, /scripts\/check-live-publish\.mjs/);
   assert.match(source, /pages: write/);
   assert.match(source, /id-token: write/);
-  assert.match(source, /  deploy:\\n    name: Deploy and verify published site\\n    needs: sync/);
+  assert.match(source, /  deploy:\n    name: Deploy and verify published site\n    needs: sync/);
   assert.doesNotMatch(source.split('  deploy:')[0].split('  sync:')[1], /    environment:/);
 });
 
