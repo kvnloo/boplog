@@ -6,6 +6,8 @@ on:
       - 'scripts/sync-github.mjs'
       - 'scripts/collect-oss-contributions.mjs'
       - 'scripts/merged-pr-timestamps.mjs'
+      - 'scripts/wait-for-budget.mjs'
+      - 'scripts/check-live-publish.mjs'
       - 'scripts/search-pages.mjs'
       - 'tests/search-pages.test.mjs'
       - 'tests/merged-pr-timestamps.test.mjs'
