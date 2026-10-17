@@ -9,6 +9,7 @@ on:
       - 'scripts/merged-pr-timestamps.mjs'
       - 'scripts/search-pages.mjs'
       - 'scripts/check-live-publish.mjs'
+      - 'scripts/wait-for-budget.mjs'
       - '.github/workflows/sync-github.yml'
       - 'data/featured.json'
   schedule:
@@ -28,6 +29,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 105
     environment:
       name: github-pages
       url: ${{ steps.pages-deploy.outputs.page_url }}
@@ -42,6 +44,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      # Avoid a wasted partial crawl when other repository work exhausted
+      # this GitHub installation token during the same hour.
+      - name: Wait for GitHub API budget
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/wait-for-budget.mjs
 
       - name: Sync repos I have committed to
         env:
