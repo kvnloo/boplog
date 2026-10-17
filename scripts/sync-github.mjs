@@ -940,6 +940,7 @@ async function writeYearFiles(projects, featuredLimit = FEATURED_LIMIT_DEFAULT) 
     user: USER,
     files,
     hierarchy: 'hierarchy.json',
+    ossContributions: 'oss-contributions.json',
     surfaces,
     interactivePortfolio,
   };
@@ -1177,8 +1178,8 @@ async function main() {
     },
   );
   projects = projects.filter(Boolean);
-  if (rateLimited && !projects.length) die('rate-limited before any project snapshot landed');
-  if (rateLimited) log(`warning: partial snapshot after GitHub rate limit (${projects.length} projects)`);
+  // Never stamp an incomplete snapshot as fresh. Keep the previous published data.
+  if (rateLimited) die('GitHub API rate-limited; refusing to publish a partial project snapshot');
 
   // De-dupe by id (unlikely)
   const seen = new Set();
