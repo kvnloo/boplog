@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-17T16:42:08Z</updated>
+  <updated>2026-10-17T23:33:41Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>.files</title>
@@ -17,6 +17,15 @@
     <summary>stay in flow while u code</summary>
   </entry>
   <entry>
+    <title>A2UI</title>
+    <id>https://a2ui.org/</id>
+    <link href="https://a2ui.org/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Agent-to-User Interface A2UI is an open-source project, complete with a format optimized for representing updatable agent-generated UIs and an initial set of renderers, that allows agents to…</summary>
+  </entry>
+  <entry>
     <title>ace</title>
     <id>https://kvnloo.github.io/ace/</id>
     <link href="https://kvnloo.github.io/ace/"/>
@@ -24,6 +33,60 @@
     <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.</summary>
+  </entry>
+  <entry>
+    <title>ag-ui</title>
+    <id>https://ag-ui.com/</id>
+    <link href="https://ag-ui.com/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.</summary>
+  </entry>
+  <entry>
+    <title>agent-scripts</title>
+    <id>https://steipete.me/</id>
+    <link href="https://steipete.me/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Agent Scripts Shared agent instructions, skills, and small portable helpers for Peter&apos;s local workspaces.</summary>
+  </entry>
+  <entry>
+    <title>Archon</title>
+    <id>https://archon.diy/</id>
+    <link href="https://archon.diy/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The first open-source harness builder for AI coding.</summary>
+  </entry>
+  <entry>
+    <title>ATOM</title>
+    <id>https://github.com/kvnloo/ATOM</id>
+    <link href="https://github.com/kvnloo/ATOM"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: -------------------------------------------------------------------------------- ATOM (AiTer Optimized Model) is a lightweight vLLM-like implementation, focusing on integration and optimization…</summary>
+  </entry>
+  <entry>
+    <title>awesome-engines</title>
+    <id>https://github.com/kvnloo/awesome-engines</id>
+    <link href="https://github.com/kvnloo/awesome-engines"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Engine Atlas · awesome-engines A part-addressable 3D atlas of power and propulsion, from Hero of Alexandria&apos;s aeolipile (1st century CE) to the FIA 2026 Formula One hybrid power unit.</summary>
+  </entry>
+  <entry>
+    <title>bluemira</title>
+    <id>https://bluemira.readthedocs.io/</id>
+    <link href="https://bluemira.readthedocs.io/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Bluemira is an integrated inter-disciplinary design tool for future fusion reactors.</summary>
   </entry>
   <entry>
     <title>boplog</title>
@@ -35,6 +98,51 @@
     <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
   </entry>
   <entry>
+    <title>brave-browser</title>
+    <id>https://brave.com/</id>
+    <link href="https://brave.com/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Brave Browser This repository is not needed for building the browser and only holds issues, releases and the wiki.</summary>
+  </entry>
+  <entry>
+    <title>browser</title>
+    <id>https://lightpanda.io/</id>
+    <link href="https://lightpanda.io/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Lightpanda Browser The headless browser built from scratch for AI agents and automation.</summary>
+  </entry>
+  <entry>
+    <title>career-ops</title>
+    <id>https://github.com/kvnloo/career-ops</id>
+    <link href="https://github.com/kvnloo/career-ops"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The open-source AI job search agent.</summary>
+  </entry>
+  <entry>
+    <title>claude-code</title>
+    <id>https://docs.anthropic.com/s/claude-code</id>
+    <link href="https://docs.anthropic.com/s/claude-code"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Claude Code [![npm]](https://www.npmjs.com/package/@anthropic-ai/claude-code) [npm]: https://img.shields.io/npm/v/@anthropic-ai/claude-code.svg?style=flat-square Claude Code is an agentic coding…</summary>
+  </entry>
+  <entry>
+    <title>CodexBar</title>
+    <id>https://codex.bar/</id>
+    <link href="https://codex.bar/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🎚️ — May your tokens never run out.</summary>
+  </entry>
+  <entry>
     <title>CopilotKit</title>
     <id>https://docs.copilotkit.ai/</id>
     <link href="https://docs.copilotkit.ai/"/>
@@ -42,6 +150,15 @@
     <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: Docs · Examples · CopilotKit Intelligence · Discord Build agent-native applications — on any framework, on any surface.</summary>
+  </entry>
+  <entry>
+    <title>cua</title>
+    <id>https://kvnloo.github.io/cua/</id>
+    <link href="https://kvnloo.github.io/cua/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Give AI agents computers they can use.</summary>
   </entry>
   <entry>
     <title>datafusion-postgres</title>
@@ -80,6 +197,24 @@
     <summary>I built fframestudio on top of fframes because I love how powerful the library is.</summary>
   </entry>
   <entry>
+    <title>fx</title>
+    <id>https://fx.sh/</id>
+    <link href="https://fx.sh/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: is a coding agent CLI written in Zig: a small native binary that is open source (Apache-2.0), model-agnostic, and embeddable as a harness in larger systems.</summary>
+  </entry>
+  <entry>
+    <title>gh-contrib-archive</title>
+    <id>https://kvnloo.github.io/gh-contrib-archive/</id>
+    <link href="https://kvnloo.github.io/gh-contrib-archive/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
+  </entry>
+  <entry>
     <title>gods-eye-view</title>
     <id>https://maptheworld.ai/</id>
     <link href="https://maptheworld.ai/"/>
@@ -89,147 +224,12 @@
     <summary>My work on this fork: 🌐 God&apos;s Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.</summary>
   </entry>
   <entry>
-    <title>hermes-agent</title>
-    <id>https://hermes-agent.nousresearch.com/</id>
-    <link href="https://hermes-agent.nousresearch.com/"/>
+    <title>gz-sensors</title>
+    <id>https://gazebosim.org/</id>
+    <link href="https://gazebosim.org/"/>
     <published>2026-10-17T00:00:00Z</published>
     <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.</summary>
-  </entry>
-  <entry>
-    <title>kvnloo</title>
-    <id>https://github.com/kvnloo/kvnloo</id>
-    <link href="https://github.com/kvnloo/kvnloo"/>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Profile README</summary>
-  </entry>
-  <entry>
-    <title>muxin</title>
-    <id>https://muxin.dev/</id>
-    <link href="https://muxin.dev/"/>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: One app for all your machines, run by you or by your AI agents .</summary>
-  </entry>
-  <entry>
-    <title>noctalia</title>
-    <id>https://docs.noctalia.dev/</id>
-    <link href="https://docs.noctalia.dev/"/>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Noctalia is a native Wayland desktop shell for people who want a polished, configurable Linux desktop without stitching together a separate bar, launcher, notification daemon, lock screen,…</summary>
-  </entry>
-  <entry>
-    <title>objectKV</title>
-    <id>https://github.com/kvnloo/objectKV</id>
-    <link href="https://github.com/kvnloo/objectKV"/>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The object-native transactional kernel for building databases.</summary>
-  </entry>
-  <entry>
-    <title>OpenDots</title>
-    <id>https://www.copilotkit.ai/opendots</id>
-    <link href="https://www.copilotkit.ai/opendots"/>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Always-on AI coworkers that move between text, calls, and Slack.</summary>
-  </entry>
-  <entry>
-    <title>openontology</title>
-    <id>https://github.com/kvnloo/openontology</id>
-    <link href="https://github.com/kvnloo/openontology"/>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Quickstart · How it works · Documentation · Contributing OpenOntology builds a typed map of source material and uses it to return verified context to agents.</summary>
-  </entry>
-  <entry>
-    <title>openpaw</title>
-    <id>https://github.com/kvnloo/openpaw</id>
-    <link href="https://github.com/kvnloo/openpaw"/>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>An open protocol for understanding a dog&apos;s health, arousal, behavior, and recovery over time.</summary>
-  </entry>
-  <entry>
-    <title>restate</title>
-    <id>https://docs.restate.dev/</id>
-    <link href="https://docs.restate.dev/"/>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Building resilient applications made easy!</summary>
-  </entry>
-  <entry>
-    <title>99</title>
-    <id>https://github.com/kvnloo/99</id>
-    <link href="https://github.com/kvnloo/99"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The AI client that Neovim deserves, built by those that still enjoy to code.</summary>
-  </entry>
-  <entry>
-    <title>A2UI</title>
-    <id>https://a2ui.org/</id>
-    <link href="https://a2ui.org/"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Agent-to-User Interface A2UI is an open-source project, complete with a format optimized for representing updatable agent-generated UIs and an initial set of renderers, that allows agents to…</summary>
-  </entry>
-  <entry>
-    <title>ag-ui</title>
-    <id>https://ag-ui.com/</id>
-    <link href="https://ag-ui.com/"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.</summary>
-  </entry>
-  <entry>
-    <title>agent-scripts</title>
-    <id>https://steipete.me/</id>
-    <link href="https://steipete.me/"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Agent Scripts Shared agent instructions, skills, and small portable helpers for Peter&apos;s local workspaces.</summary>
-  </entry>
-  <entry>
-    <title>agent-skills</title>
-    <id>https://github.com/kvnloo/agent-skills</id>
-    <link href="https://github.com/kvnloo/agent-skills"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: OpenClaw Agent Skills Shared skills for coding agents that work on OpenClaw projects.</summary>
-  </entry>
-  <entry>
-    <title>agents</title>
-    <id>https://sethhobson.com/</id>
-    <link href="https://sethhobson.com/"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Plugins, agents, and skills for AI coding tools Use one collection of plugins, agents, skills, and commands across Claude Code, OpenAI Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot,…</summary>
-  </entry>
-  <entry>
-    <title>airtable_to_graph</title>
-    <id>https://github.com/kvnloo/airtable_to_graph</id>
-    <link href="https://github.com/kvnloo/airtable_to_graph"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: airtabletograph This Python script retrieves data from an Airtable base, identifies relational columns, and builds a knowledge graph using the retrieved data.</summary>
+    <summary>My work on this fork: Gazebo Sensors : Sensor models for simulation Maintainer: ichen AT openrobotics DOT org Build | Status -- | -- Test coverage | GitHub: Ubuntu Noble | Jenkins: Ubuntu Noble | Jenkins: Homebrew |…</summary>
   </entry>
 </feed>
