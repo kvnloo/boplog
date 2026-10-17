@@ -14,6 +14,7 @@ on:
       - 'scripts/check-freshness.mjs'
       - 'scripts/validate-portfolio-manifest.mjs'
       - 'data/portfolio-manifest.json'
+      - 'data/oss-scopes.json'
       - 'package.json'
       - '.github/workflows/sync-smoke.yml'
       - '.github/workflows/sync-github.yml'

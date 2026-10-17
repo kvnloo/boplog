@@ -28,6 +28,190 @@
       "contributionCount": 33
     },
     {
+      "id": "oh-my-pi",
+      "label": "Oh My Pi",
+      "repositories": [
+        "can1357/oh-my-pi"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "gods-eye-view",
+      "label": "God's Eye View",
+      "repositories": [
+        "bilawalsidhu/gods-eye-view"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "cua",
+      "label": "CUA",
+      "repositories": [
+        "trycua/cua"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "noop",
+      "label": "NOOP",
+      "repositories": [
+        "ryanbr/noop"
+      ],
+      "contributionCount": 1
+    },
+    {
+      "id": "noctalia",
+      "label": "Noctalia",
+      "repositories": [
+        "noctalia-dev/noctalia"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "o8",
+      "label": "o8",
+      "repositories": [
+        "hurttlocker/o8"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "t3code",
+      "label": "T3Code",
+      "repositories": [
+        "pingdotgg/t3code"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "copilotkit",
+      "label": "CopilotKit",
+      "repositories": [
+        "CopilotKit/CopilotKit"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "openmuse",
+      "label": "OpenMUSE",
+      "repositories": [
+        "CopilotKit/openmuse"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "omarchy",
+      "label": "Omarchy",
+      "repositories": [
+        "omacom/omarchy"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "openclaw",
+      "label": "OpenClaw",
+      "repositories": [
+        "openclaw/openclaw"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "newton",
+      "label": "Newton",
+      "repositories": [
+        "newton-physics/newton"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "openmc",
+      "label": "OpenMC",
+      "repositories": [
+        "openmc-dev/openmc"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "openusd",
+      "label": "OpenUSD",
+      "repositories": [
+        "PixarAnimationStudios/OpenUSD"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "openroad",
+      "label": "OpenROAD",
+      "repositories": [
+        "The-OpenROAD-Project/OpenROAD"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "atom",
+      "label": "ROCm ATOM",
+      "repositories": [
+        "ROCm/ATOM"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "openshell",
+      "label": "NVIDIA OpenShell",
+      "repositories": [
+        "NVIDIA/OpenShell"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "fx",
+      "label": "FX",
+      "repositories": [
+        "vercel-labs/fx"
+      ],
+      "contributionCount": 1
+    },
+    {
+      "id": "activitywatch",
+      "label": "ActivityWatch",
+      "repositories": [
+        "ActivityWatch/activitywatch"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "gz-sensors",
+      "label": "Gazebo Sensors",
+      "repositories": [
+        "gazebosim/gz-sensors"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "mcap",
+      "label": "MCAP",
+      "repositories": [
+        "foxglove/mcap"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "bluemira",
+      "label": "bluemira",
+      "repositories": [
+        "Fusion-Power-Plant-Framework/bluemira"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "pypsa",
+      "label": "PyPSA",
+      "repositories": [
+        "PyPSA/PyPSA"
+      ],
+      "contributionCount": 1
+    },
+    {
       "id": "opencode",
       "label": "OpenCode",
       "repositories": [
@@ -48,6 +232,14 @@
       "label": "Python",
       "repositories": [
         "python/cpython"
+      ],
+      "contributionCount": 0
+    },
+    {
+      "id": "objectkv",
+      "label": "objectKV",
+      "repositories": [
+        "Doss-com/objectKV"
       ],
       "contributionCount": 0
     }
