@@ -2,9 +2,201 @@
   "schemaVersion": 1,
   "label": "selected communities",
   "groups": [
-    { "id": "hermes", "label": "Hermes", "repositories": ["NousResearch/hermes-agent"] },
-    { "id": "opencode", "label": "OpenCode", "repositories": ["anomalyco/opencode"] },
-    { "id": "rust", "label": "Rust", "repositories": ["rust-lang/rust"] },
-    { "id": "python", "label": "Python", "repositories": ["python/cpython"] }
+    {
+      "id": "hermes",
+      "label": "Hermes",
+      "repositories": [
+        "NousResearch/hermes-agent"
+      ]
+    },
+    {
+      "id": "oh-my-pi",
+      "label": "Oh My Pi",
+      "repositories": [
+        "can1357/oh-my-pi"
+      ]
+    },
+    {
+      "id": "gods-eye-view",
+      "label": "God's Eye View",
+      "repositories": [
+        "bilawalsidhu/gods-eye-view"
+      ]
+    },
+    {
+      "id": "cua",
+      "label": "CUA",
+      "repositories": [
+        "trycua/cua"
+      ]
+    },
+    {
+      "id": "noop",
+      "label": "NOOP",
+      "repositories": [
+        "ryanbr/noop"
+      ]
+    },
+    {
+      "id": "noctalia",
+      "label": "Noctalia",
+      "repositories": [
+        "noctalia-dev/noctalia"
+      ]
+    },
+    {
+      "id": "o8",
+      "label": "o8",
+      "repositories": [
+        "hurttlocker/o8"
+      ]
+    },
+    {
+      "id": "t3code",
+      "label": "T3Code",
+      "repositories": [
+        "pingdotgg/t3code"
+      ]
+    },
+    {
+      "id": "copilotkit",
+      "label": "CopilotKit",
+      "repositories": [
+        "CopilotKit/CopilotKit"
+      ]
+    },
+    {
+      "id": "openmuse",
+      "label": "OpenMUSE",
+      "repositories": [
+        "CopilotKit/openmuse"
+      ]
+    },
+    {
+      "id": "omarchy",
+      "label": "Omarchy",
+      "repositories": [
+        "omacom/omarchy"
+      ]
+    },
+    {
+      "id": "openclaw",
+      "label": "OpenClaw",
+      "repositories": [
+        "openclaw/openclaw"
+      ]
+    },
+    {
+      "id": "newton",
+      "label": "Newton",
+      "repositories": [
+        "newton-physics/newton"
+      ]
+    },
+    {
+      "id": "openmc",
+      "label": "OpenMC",
+      "repositories": [
+        "openmc-dev/openmc"
+      ]
+    },
+    {
+      "id": "openusd",
+      "label": "OpenUSD",
+      "repositories": [
+        "PixarAnimationStudios/OpenUSD"
+      ]
+    },
+    {
+      "id": "openroad",
+      "label": "OpenROAD",
+      "repositories": [
+        "The-OpenROAD-Project/OpenROAD"
+      ]
+    },
+    {
+      "id": "atom",
+      "label": "ROCm ATOM",
+      "repositories": [
+        "ROCm/ATOM"
+      ]
+    },
+    {
+      "id": "openshell",
+      "label": "NVIDIA OpenShell",
+      "repositories": [
+        "NVIDIA/OpenShell"
+      ]
+    },
+    {
+      "id": "fx",
+      "label": "FX",
+      "repositories": [
+        "vercel-labs/fx"
+      ]
+    },
+    {
+      "id": "activitywatch",
+      "label": "ActivityWatch",
+      "repositories": [
+        "ActivityWatch/activitywatch"
+      ]
+    },
+    {
+      "id": "gz-sensors",
+      "label": "Gazebo Sensors",
+      "repositories": [
+        "gazebosim/gz-sensors"
+      ]
+    },
+    {
+      "id": "mcap",
+      "label": "MCAP",
+      "repositories": [
+        "foxglove/mcap"
+      ]
+    },
+    {
+      "id": "bluemira",
+      "label": "bluemira",
+      "repositories": [
+        "Fusion-Power-Plant-Framework/bluemira"
+      ]
+    },
+    {
+      "id": "pypsa",
+      "label": "PyPSA",
+      "repositories": [
+        "PyPSA/PyPSA"
+      ]
+    },
+    {
+      "id": "opencode",
+      "label": "OpenCode",
+      "repositories": [
+        "anomalyco/opencode"
+      ]
+    },
+    {
+      "id": "rust",
+      "label": "Rust",
+      "repositories": [
+        "rust-lang/rust"
+      ]
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "repositories": [
+        "python/cpython"
+      ]
+    },
+    {
+      "id": "objectkv",
+      "label": "objectKV",
+      "repositories": [
+        "Doss-com/objectKV"
+      ]
+    }
   ]
 }
