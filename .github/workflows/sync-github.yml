@@ -16,6 +16,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: sync-github
@@ -24,6 +26,9 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages-deploy.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -66,3 +71,22 @@ jobs:
           fi
           git commit -m "chore: sync public builds from GitHub"
           git push
+
+      # A GITHUB_TOKEN-authored git push does not trigger a Pages build.
+      # Deploy the exact regenerated workspace as an artifact in this run.
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload fresh Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy refreshed site
+        id: pages-deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Verify live site matches generated artifacts
+        env:
+          PAGES_URL: ${{ steps.pages-deploy.outputs.page_url }}
+        run: node scripts/check-live-publish.mjs
