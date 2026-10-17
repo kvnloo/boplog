@@ -84,9 +84,27 @@ The same public project information is also presented as a **3D shop** (Kevin’
 
 `data/manifest.json` includes `surfaces.interactivePortfolio` (and `data/surfaces.json`) so agents/UIs can discover the shop without hardcoding. The portfolio repo generates `demos/room` menu props from this data via `scripts/sync-shop-from-boplog.mjs` (scene map + boplog year files).
 
-## Deployment
+## Deployment and freshness
 
-Enable **GitHub Pages** for this repo (Settings → Pages → Deploy from branch `main` / root, or GitHub Actions). Paths are relative so project Pages at `/boplog/` work.
+Configure **GitHub Pages** in repository Settings → Pages → Source **GitHub Actions**.
+The production sync regenerates the public snapshots, validates them, commits
+the results, **deploys those exact files as a Pages artifact**, and verifies
+that the live project and OSS JSON timestamps match the generated files.
+A commit without a successful Pages deployment is not counted as success.
+
+PR checks validate code and fixtures without consuming the shared GitHub API
+hourly budget. Full collection runs on the scheduled job (06:00, 14:00, 22:00
+UTC), on changes to the production sync code merged to `main`, or via manual
+workflow dispatch. The production job waits for sufficient core/GraphQL API
+budget before collecting; an exhausted token or partial response fails the
+publication gate rather than falsely refreshing `generatedAt`.
+
+The OSS ledger resolves merged PR timestamps in GraphQL pages, partitions
+GitHub Search results beyond its 1,000-result cap, and records any remaining
+incomplete evidence instead of claiming all public contributions are captured.
+
+See [sync failure analysis and closure checks](docs/sync-postmortem.md).
+Paths are relative so project Pages at `/boplog/` work.
 
 ## License
 
