@@ -5,6 +5,8 @@ on:
     paths:
       - 'scripts/sync-github.mjs'
       - 'scripts/collect-oss-contributions.mjs'
+      - 'scripts/merged-pr-timestamps.mjs'
+      - 'tests/merged-pr-timestamps.test.mjs'
       - 'scripts/check-freshness.mjs'
       - 'scripts/validate-portfolio-manifest.mjs'
       - 'data/portfolio-manifest.json'
