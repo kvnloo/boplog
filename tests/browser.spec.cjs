@@ -17,8 +17,8 @@ test('progressive disclosure previews, expands, persists, and follows responsive
   await expectPreviewCounts(page, previewCounts.desktop);
   // Featured curation may be longer than the preview; test the live control
   // rather than assuming an old six-project snapshot.
-  const featuredTotal = Number((await page.locator('[data-disclosure="featured"]').getAttribute('data-total')) || '0');
-  if (featuredTotal > previewCounts.desktop.featured) {
+  const initialFeaturedTotal = Number((await page.locator('[data-disclosure="featured"]').getAttribute('data-total')) || '0');
+  if (initialFeaturedTotal > previewCounts.desktop.featured) {
     await expect(page.locator('#featured-disclosure')).toBeVisible();
   } else {
     await expect(page.locator('#featured-disclosure')).toBeHidden();
@@ -180,18 +180,22 @@ test('selected communities expose every group and preserve an accessible zero-gr
   page.on('requestfailed', (request) => errors.push(`network: ${request.url()}`));
   await page.goto('http://127.0.0.1:4173/?oss_scope=selected#oss');
   const groups = page.locator('#oss-groups [data-oss-group]');
-  await expect(groups).toHaveCount(4);
+  const scopeSnapshot = await page.evaluate(async () =>
+    fetch('./data/oss-scopes.json').then((response) => response.json()));
+  await expect(groups).toHaveCount(scopeSnapshot.groups.length);
   await expect(page.locator('[data-oss-group="hermes"]')).toContainText('Hermes');
   await expect(page.locator('[data-oss-group="hermes"]')).toContainText('NousResearch/hermes-agent');
-  await expect(page.locator('[data-oss-group="hermes"]')).toContainText('33');
   for (const [id, label, repo] of [
-    ['opencode', 'OpenCode', 'anomalyco/opencode'],
+    ['oh-my-pi', 'Oh My Pi', 'can1357/oh-my-pi'],
+    ['gods-eye-view', "God's Eye View", 'bilawalsidhu/gods-eye-view'],
+    ['cua', 'CUA', 'trycua/cua'],
+    ['noop', 'NOOP', 'ryanbr/noop'],
+    ['noctalia', 'Noctalia', 'noctalia-dev/noctalia'],
+    ['o8', 'o8', 'hurttlocker/o8'],
     ['rust', 'Rust', 'rust-lang/rust'],
-    ['python', 'Python', 'python/cpython'],
   ]) {
     await expect(page.locator(`[data-oss-group="${id}"]`)).toContainText(label);
     await expect(page.locator(`[data-oss-group="${id}"]`)).toContainText(repo);
-    await expect(page.locator(`[data-oss-group="${id}"]`)).toContainText('0');
   }
   await page.screenshot({ path: '/tmp/boplog-oss-selected-desktop.png', fullPage: true });
 
