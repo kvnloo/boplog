@@ -1,0 +1,55 @@
+name: Boplog UI browser smoke
+
+on:
+  pull_request:
+    paths:
+      - 'app.js'
+      - 'index.html'
+      - 'styles.css'
+      - 'tests/browser.spec.cjs'
+      - '.github/workflows/ui-browser-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ui-browser-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install browser test tools
+        run: |
+          npm ci
+          npx playwright install --with-deps chromium
+
+      - name: Start local site
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/boplog-ui-server.log 2>&1 &
+          for i in $(seq 1 20); do
+            curl --fail --silent http://127.0.0.1:4173/ > /dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/boplog-ui-server.log
+          exit 1
+
+      - name: Check desktop, mobile, sticky collapse and factory motion
+        run: npx playwright test tests/browser.spec.cjs --project=chromium --grep 'OSS ledger expands|factory pulse uses|filters compact'
+
+      - name: Upload test evidence on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: boplog-ui-smoke-evidence
+          path: test-results/
+          if-no-files-found: ignore
