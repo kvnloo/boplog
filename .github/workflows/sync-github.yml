@@ -7,6 +7,7 @@ on:
       - 'scripts/sync-github.mjs'
       - 'scripts/collect-oss-contributions.mjs'
       - 'scripts/merged-pr-timestamps.mjs'
+      - 'scripts/search-pages.mjs'
       - 'scripts/check-live-publish.mjs'
       - '.github/workflows/sync-github.yml'
       - 'data/featured.json'
