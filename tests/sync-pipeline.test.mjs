@@ -45,3 +45,19 @@ test('featured public forks are included independently of recent activity hints'
   assert.match(source, /featuredForkNames\.has\(repo\.name\.toLowerCase\(\)\)/);
   assert.match(source, /const selected = \[\.\.\.originals, \.\.\.selectedForks\]/);
 });
+
+test('public OSS scope registry leads with seven ongoing collaborations and no private forks', async () => {
+  const scopes = JSON.parse(await readFile(new URL('../data/oss-scopes.json', import.meta.url), 'utf8'));
+  const snapshot = JSON.parse(await readFile(new URL('../data/oss-contributions.json', import.meta.url), 'utf8'));
+  const expected = [
+    'NousResearch/hermes-agent', 'can1357/oh-my-pi',
+    'bilawalsidhu/gods-eye-view', 'trycua/cua',
+    'ryanbr/noop', 'noctalia-dev/noctalia', 'hurttlocker/o8',
+  ];
+  assert.deepEqual(scopes.groups.slice(0, 7).map((g) => g.repositories[0]), expected);
+  assert.equal(scopes.groups.length, 28);
+  assert.deepEqual(snapshot.selectedGroups.map((g) => g.id), scopes.groups.map((g) => g.id));
+  const forbidden = ['kvnloo/oss-factory', 'kvnloo/aural', 'AgentWebPro/agentweb'];
+  assert.ok(scopes.groups.every((g) => g.repositories.every((repo) => !forbidden.includes(repo))));
+  assert.match(await workflow('sync-github.yml'), /'data\/oss-scopes\.json'/);
+});
