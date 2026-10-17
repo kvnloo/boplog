@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-17T10:42:35Z</updated>
+  <updated>2026-10-17T16:42:08Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>.files</title>
@@ -44,6 +44,15 @@
     <summary>My work on this fork: Docs · Examples · CopilotKit Intelligence · Discord Build agent-native applications — on any framework, on any surface.</summary>
   </entry>
   <entry>
+    <title>datafusion-postgres</title>
+    <id>https://github.com/kvnloo/datafusion-postgres</id>
+    <link href="https://github.com/kvnloo/datafusion-postgres"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: [![Crates.io Version][crates-badge]][crates-url] [![Docs.rs Version][docs-badge]][docs-url] [crates-badge]: https://img.shields.io/crates/v/datafusion-postgres?label=datafusion-postgres…</summary>
+  </entry>
+  <entry>
     <title>e2e</title>
     <id>https://tester.army/e2e</id>
     <link href="https://tester.army/e2e"/>
@@ -69,15 +78,6 @@
     <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
     <summary>I built fframestudio on top of fframes because I love how powerful the library is.</summary>
-  </entry>
-  <entry>
-    <title>gh-contrib-archive</title>
-    <id>https://kvnloo.github.io/gh-contrib-archive/</id>
-    <link href="https://kvnloo.github.io/gh-contrib-archive/"/>
-    <published>2026-10-17T00:00:00Z</published>
-    <updated>2026-10-17T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
   </entry>
   <entry>
     <title>gods-eye-view</title>
@@ -116,6 +116,24 @@
     <summary>My work on this fork: One app for all your machines, run by you or by your AI agents .</summary>
   </entry>
   <entry>
+    <title>noctalia</title>
+    <id>https://docs.noctalia.dev/</id>
+    <link href="https://docs.noctalia.dev/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Noctalia is a native Wayland desktop shell for people who want a polished, configurable Linux desktop without stitching together a separate bar, launcher, notification daemon, lock screen,…</summary>
+  </entry>
+  <entry>
+    <title>objectKV</title>
+    <id>https://github.com/kvnloo/objectKV</id>
+    <link href="https://github.com/kvnloo/objectKV"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The object-native transactional kernel for building databases.</summary>
+  </entry>
+  <entry>
     <title>OpenDots</title>
     <id>https://www.copilotkit.ai/opendots</id>
     <link href="https://www.copilotkit.ai/opendots"/>
@@ -123,6 +141,15 @@
     <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: Always-on AI coworkers that move between text, calls, and Slack.</summary>
+  </entry>
+  <entry>
+    <title>openontology</title>
+    <id>https://github.com/kvnloo/openontology</id>
+    <link href="https://github.com/kvnloo/openontology"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Quickstart · How it works · Documentation · Contributing OpenOntology builds a typed map of source material and uses it to return verified context to agents.</summary>
   </entry>
   <entry>
     <title>openpaw</title>
@@ -134,13 +161,22 @@
     <summary>An open protocol for understanding a dog&apos;s health, arousal, behavior, and recovery over time.</summary>
   </entry>
   <entry>
-    <title>t3code</title>
-    <id>https://t3.codes/</id>
-    <link href="https://t3.codes/"/>
+    <title>restate</title>
+    <id>https://docs.restate.dev/</id>
+    <link href="https://docs.restate.dev/"/>
     <published>2026-10-17T00:00:00Z</published>
     <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: T3 Code T3 Code is an &quot;agent harness control surface&quot;.</summary>
+    <summary>My work on this fork: Building resilient applications made easy!</summary>
+  </entry>
+  <entry>
+    <title>99</title>
+    <id>https://github.com/kvnloo/99</id>
+    <link href="https://github.com/kvnloo/99"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The AI client that Neovim deserves, built by those that still enjoy to code.</summary>
   </entry>
   <entry>
     <title>A2UI</title>
@@ -179,6 +215,15 @@
     <summary>My work on this fork: OpenClaw Agent Skills Shared skills for coding agents that work on OpenClaw projects.</summary>
   </entry>
   <entry>
+    <title>agents</title>
+    <id>https://sethhobson.com/</id>
+    <link href="https://sethhobson.com/"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Plugins, agents, and skills for AI coding tools Use one collection of plugins, agents, skills, and commands across Claude Code, OpenAI Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot,…</summary>
+  </entry>
+  <entry>
     <title>airtable_to_graph</title>
     <id>https://github.com/kvnloo/airtable_to_graph</id>
     <link href="https://github.com/kvnloo/airtable_to_graph"/>
@@ -186,50 +231,5 @@
     <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: airtabletograph This Python script retrieves data from an Airtable base, identifies relational columns, and builds a knowledge graph using the retrieved data.</summary>
-  </entry>
-  <entry>
-    <title>alysis-code</title>
-    <id>https://alysiscode.com/</id>
-    <link href="https://alysiscode.com/"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Local CLI coding agent that turns plans into reviewed, PR-ready code.</summary>
-  </entry>
-  <entry>
-    <title>aodl</title>
-    <id>https://kvnloo.github.io/aodl/</id>
-    <link href="https://kvnloo.github.io/aodl/"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>AODL/HOTL: typed IR for agent orchestration graphs (schema + fail-closed validator, not a scheduler)</summary>
-  </entry>
-  <entry>
-    <title>astryx</title>
-    <id>https://github.com/kvnloo/astryx</id>
-    <link href="https://github.com/kvnloo/astryx"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: An open source design system that&apos;s fully customizable and built for how we build now: by people and the agents working alongside them.</summary>
-  </entry>
-  <entry>
-    <title>ATOM</title>
-    <id>https://github.com/kvnloo/ATOM</id>
-    <link href="https://github.com/kvnloo/ATOM"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: -------------------------------------------------------------------------------- ATOM (AiTer Optimized Model) is a lightweight vLLM-like implementation, focusing on integration and optimization…</summary>
-  </entry>
-  <entry>
-    <title>bluemira</title>
-    <id>https://bluemira.readthedocs.io/</id>
-    <link href="https://bluemira.readthedocs.io/"/>
-    <published>2026-10-16T00:00:00Z</published>
-    <updated>2026-10-16T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Bluemira is an integrated inter-disciplinary design tool for future fusion reactors.</summary>
   </entry>
 </feed>

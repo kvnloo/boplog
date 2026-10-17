@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-17T10:45:23Z",
+  "generatedAt": "2026-10-17T16:45:00Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -41,7 +41,7 @@
       "repositories": [
         "bilawalsidhu/gods-eye-view"
       ],
-      "contributionCount": 52
+      "contributionCount": 51
     },
     {
       "id": "cua",
@@ -264,13 +264,482 @@
   },
   "summary": {
     "mergedUpstreamPullRequests": 127,
-    "openReadyUpstreamPullRequests": 182,
+    "openReadyUpstreamPullRequests": 179,
     "draftUpstreamPullRequests": 50,
     "upstreamIssuesAndProposals": 371,
     "distinctUpstreamCommunities": 135,
     "verifiedImpact": 0
   },
   "contributions": [
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:882",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 882,
+      "title": "exp(disaster): add model-free access support kernel",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/882",
+      "createdAt": "2026-10-01T07:27:39Z",
+      "updatedAt": "2026-10-17T16:42:22Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:888",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 888,
+      "title": "feat(ui): add schema-validated command catalog",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/888",
+      "createdAt": "2026-10-01T21:57:01Z",
+      "updatedAt": "2026-10-17T16:42:20Z"
+    },
+    {
+      "key": "kvnloo/restate:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/restate",
+      "number": 1,
+      "title": "coord: canonical Restate promotion queue (Lane23 migration)",
+      "url": "https://github.com/kvnloo/restate/pull/1",
+      "createdAt": "2026-10-17T16:33:16Z",
+      "updatedAt": "2026-10-17T16:34:38Z"
+    },
+    {
+      "key": "kvnloo/datafusion-postgres:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/datafusion-postgres",
+      "number": 1,
+      "title": "docs: Lane23 PostgreSQL promotion queue (missing original TLS artifact)",
+      "url": "https://github.com/kvnloo/datafusion-postgres/pull/1",
+      "createdAt": "2026-10-17T16:32:26Z",
+      "updatedAt": "2026-10-17T16:33:09Z"
+    },
+    {
+      "key": "kvnloo/openontology:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/openontology",
+      "number": 1,
+      "title": "[Promotion queue] OpenOntology — preserved history and Lane23 audit",
+      "url": "https://github.com/kvnloo/openontology/pull/1",
+      "createdAt": "2026-10-17T16:31:07Z",
+      "updatedAt": "2026-10-17T16:31:08Z"
+    },
+    {
+      "key": "kvnloo/objectKV:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/objectKV",
+      "number": 1,
+      "title": "fix(eval): preserve object byte counts beyond u32 range [UPSTREAM CANDIDATE]",
+      "url": "https://github.com/kvnloo/objectKV/pull/1",
+      "createdAt": "2026-10-11T07:38:14Z",
+      "updatedAt": "2026-10-17T16:30:53Z"
+    },
+    {
+      "key": "kvnloo/objectKV:pull_request:2",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/objectKV",
+      "number": 2,
+      "title": "fix(range-read): accept concurrently advanced cached route [UPSTREAM CANDIDATE]",
+      "url": "https://github.com/kvnloo/objectKV/pull/2",
+      "createdAt": "2026-10-11T07:38:16Z",
+      "updatedAt": "2026-10-17T16:28:43Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:249",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 249,
+      "title": "Promotion queue — gods-eye-view (canonical #249)",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
+      "createdAt": "2026-10-16T08:13:10Z",
+      "updatedAt": "2026-10-17T16:27:17Z"
+    },
+    {
+      "key": "kvnloo/llama.bend:pull_request:4",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/llama.bend",
+      "number": 4,
+      "title": "bench: strict resumable trials and reviewed campaign checkpoint",
+      "url": "https://github.com/kvnloo/llama.bend/pull/4",
+      "createdAt": "2026-10-14T07:45:21Z",
+      "updatedAt": "2026-10-17T16:24:01Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:880",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 880,
+      "title": "feat(agent): extract model-free World Packet boundary",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/880",
+      "createdAt": "2026-10-01T07:27:34Z",
+      "updatedAt": "2026-10-17T16:23:35Z"
+    },
+    {
+      "key": "kvnloo/llama.bend:issue:12",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/llama.bend",
+      "number": 12,
+      "title": "Promotion queue — upstream-ready work (single canonical issue)",
+      "url": "https://github.com/kvnloo/llama.bend/issues/12",
+      "createdAt": "2026-10-16T08:07:49Z",
+      "updatedAt": "2026-10-17T16:22:43Z"
+    },
+    {
+      "key": "kvnloo/noctalia:pull_request:22",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/noctalia",
+      "number": 22,
+      "title": "fix(bar): inset grouped hover pills without stale staging changes",
+      "url": "https://github.com/kvnloo/noctalia/pull/22",
+      "createdAt": "2026-10-17T16:20:12Z",
+      "updatedAt": "2026-10-17T16:20:12Z"
+    },
+    {
+      "key": "kvnloo/fx:pull_request:21",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/fx",
+      "number": 21,
+      "title": "Keep multiline host-tool JSON within one native JSON-RPC frame",
+      "url": "https://github.com/kvnloo/fx/pull/21",
+      "createdAt": "2026-10-16T04:57:48Z",
+      "updatedAt": "2026-10-17T16:06:25Z"
+    },
+    {
+      "key": "openclaw/openclaw:pull_request:162501",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "openclaw/openclaw",
+      "number": 162501,
+      "title": "fix(memory-wiki): preserve OKF type on import",
+      "url": "https://github.com/openclaw/openclaw/pull/162501",
+      "createdAt": "2026-10-01T07:17:36Z",
+      "updatedAt": "2026-10-17T15:04:10Z"
+    },
+    {
+      "key": "KnottyDyes/gods-eye-view:pull_request:2",
+      "kind": "pull_request",
+      "relationship": "contributor_fork",
+      "status": "merged",
+      "repo": "KnottyDyes/gods-eye-view",
+      "number": 2,
+      "title": "#759: merge main, restore user layers from shares and storage, review fixes",
+      "url": "https://github.com/KnottyDyes/gods-eye-view/pull/2",
+      "createdAt": "2026-10-17T01:11:16Z",
+      "updatedAt": "2026-10-17T14:21:00Z",
+      "mergedAt": "2026-10-17T14:21:00Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:10232",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "omacom/omarchy",
+      "number": 10232,
+      "title": "fix(update): detect aarch64 kernels without vmlinuz",
+      "url": "https://github.com/omacom/omarchy/pull/10232",
+      "createdAt": "2026-09-04T20:01:08Z",
+      "updatedAt": "2026-10-17T13:39:47Z"
+    },
+    {
+      "key": "noctalia-dev/noctalia:pull_request:4274",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "noctalia-dev/noctalia",
+      "number": 4274,
+      "title": "fix(network): prompt for VPN secrets",
+      "url": "https://github.com/noctalia-dev/noctalia/pull/4274",
+      "createdAt": "2026-09-04T17:25:24Z",
+      "updatedAt": "2026-10-17T13:28:19Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:851",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 851,
+      "title": "feat(voice): add truthful presentation-state projection",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/851",
+      "createdAt": "2026-09-29T05:35:21Z",
+      "updatedAt": "2026-10-17T12:42:50Z"
+    },
+    {
+      "key": "kvnloo/ATOM:pull_request:29",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/ATOM",
+      "number": 29,
+      "title": "[Lane 17][LIMITED] Guard ATOMesh dashboard metrics against non-finite values",
+      "url": "https://github.com/kvnloo/ATOM/pull/29",
+      "createdAt": "2026-10-14T20:35:01Z",
+      "updatedAt": "2026-10-17T12:28:14Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:806",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 806,
+      "title": "feat(perimeters): publish selected wildfire incidents to shared context",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/806",
+      "createdAt": "2026-09-28T18:39:07Z",
+      "updatedAt": "2026-10-17T11:39:21Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:847",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 847,
+      "title": "feat(cyclones): publish explicit storm selection to shared context",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/847",
+      "createdAt": "2026-09-29T05:20:49Z",
+      "updatedAt": "2026-10-17T11:39:20Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:874",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 874,
+      "title": "feat(first-run): add wildfire perimeters to Environmental",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/874",
+      "createdAt": "2026-10-01T03:23:34Z",
+      "updatedAt": "2026-10-17T11:39:18Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:818",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 818,
+      "title": "feat: resolve API keys from Proton Pass and Bitwarden Secrets Manager",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/818",
+      "createdAt": "2026-09-28T23:41:23Z",
+      "updatedAt": "2026-10-17T11:39:17Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:889",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 889,
+      "title": "perf: coalesce identical terrain height requests",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/889",
+      "createdAt": "2026-10-01T21:57:08Z",
+      "updatedAt": "2026-10-17T11:39:11Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:834",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 834,
+      "title": "fix(share): surface invalid shared layer state",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/834",
+      "createdAt": "2026-09-29T01:50:04Z",
+      "updatedAt": "2026-10-17T11:39:06Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:836",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 836,
+      "title": "feat(actions): add verified action episode policy",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/836",
+      "createdAt": "2026-09-29T02:06:40Z",
+      "updatedAt": "2026-10-17T11:39:05Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:835",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 835,
+      "title": "feat(voice): reason-code viewport context escalation",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/835",
+      "createdAt": "2026-09-29T02:03:47Z",
+      "updatedAt": "2026-10-17T11:38:41Z"
+    },
+    {
+      "key": "kvnloo/llama.bend:pull_request:2",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/llama.bend",
+      "number": 2,
+      "title": "bench: decode latency distribution report (baseline diagnostics)",
+      "url": "https://github.com/kvnloo/llama.bend/pull/2",
+      "createdAt": "2026-10-14T05:29:53Z",
+      "updatedAt": "2026-10-17T11:27:48Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93303",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93303,
+      "title": "feat: add bounded RLM mode for prompt-as-environment long-context work",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93303",
+      "createdAt": "2026-08-23T23:12:46Z",
+      "updatedAt": "2026-10-17T11:13:58Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93304",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93304,
+      "title": "feat: define repository executable invariants with remediation diagnostics",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93304",
+      "createdAt": "2026-08-23T23:12:46Z",
+      "updatedAt": "2026-10-17T11:13:57Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93305",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93305,
+      "title": "feat: add an environment adapter SDK for games and custom task harnesses",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93305",
+      "createdAt": "2026-08-23T23:12:48Z",
+      "updatedAt": "2026-10-17T11:13:55Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93306",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93306,
+      "title": "feat: add reversible trajectory-driven harness refinement",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93306",
+      "createdAt": "2026-08-23T23:12:49Z",
+      "updatedAt": "2026-10-17T11:13:54Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93307",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93307,
+      "title": "feat: define hierarchical verifier contracts and repeated-run reliability",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93307",
+      "createdAt": "2026-08-23T23:12:50Z",
+      "updatedAt": "2026-10-17T11:13:53Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93316",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93316,
+      "title": "feat: add a calibrated Digital Twin Manager protocol",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93316",
+      "createdAt": "2026-08-23T23:32:54Z",
+      "updatedAt": "2026-10-17T11:13:51Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93317",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93317,
+      "title": "feat: define an auditable hypothesis evolution and experiment protocol",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93317",
+      "createdAt": "2026-08-23T23:32:55Z",
+      "updatedAt": "2026-10-17T11:13:50Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93318",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93318,
+      "title": "feat: add a budgeted experiment search manager with lineage",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93318",
+      "createdAt": "2026-08-23T23:32:55Z",
+      "updatedAt": "2026-10-17T11:13:49Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93331",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93331,
+      "title": "feat: add OS-native intelligence and capability-graph planning",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93331",
+      "createdAt": "2026-08-23T23:49:54Z",
+      "updatedAt": "2026-10-17T11:13:46Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:issue:93382",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "NousResearch/hermes-agent",
+      "number": 93382,
+      "title": "feat: adaptive explanation policy for interactive learning artifacts",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/93382",
+      "createdAt": "2026-08-24T00:41:42Z",
+      "updatedAt": "2026-10-17T11:13:43Z"
+    },
+    {
+      "key": "NousResearch/hermes-agent:pull_request:95147",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "NousResearch/hermes-agent",
+      "number": 95147,
+      "title": "feat(voice): add realtime provider session contract",
+      "url": "https://github.com/NousResearch/hermes-agent/pull/95147",
+      "createdAt": "2026-08-26T01:16:17Z",
+      "updatedAt": "2026-10-17T11:10:25Z"
+    },
     {
       "key": "NousResearch/hermes-agent:pull_request:112036",
       "kind": "pull_request",
@@ -306,30 +775,6 @@
       "url": "https://github.com/NousResearch/hermes-agent/pull/113593",
       "createdAt": "2026-09-16T23:25:18Z",
       "updatedAt": "2026-10-17T10:37:03Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:issue:249",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 249,
-      "title": "Promotion queue — gods-eye-view (canonical #249)",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
-      "createdAt": "2026-10-16T08:13:10Z",
-      "updatedAt": "2026-10-17T10:16:45Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:880",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 880,
-      "title": "feat(agent): extract model-free World Packet boundary",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/880",
-      "createdAt": "2026-10-01T07:27:34Z",
-      "updatedAt": "2026-10-17T10:14:45Z"
     },
     {
       "key": "kvnloo/boplog:pull_request:5",
@@ -379,18 +824,6 @@
       "url": "https://github.com/kvnloo/gods-eye-view/issues/72",
       "createdAt": "2026-09-29T00:18:50Z",
       "updatedAt": "2026-10-17T10:11:07Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:851",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 851,
-      "title": "feat(voice): add truthful presentation-state projection",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/851",
-      "createdAt": "2026-09-29T05:35:21Z",
-      "updatedAt": "2026-10-17T10:11:06Z"
     },
     {
       "key": "bilawalsidhu/gods-eye-view:pull_request:816",
@@ -512,18 +945,6 @@
       "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/811",
       "createdAt": "2026-09-28T22:44:34Z",
       "updatedAt": "2026-10-17T09:59:47Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:888",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 888,
-      "title": "feat(ui): add schema-validated command catalog",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/888",
-      "createdAt": "2026-10-01T21:57:01Z",
-      "updatedAt": "2026-10-17T09:59:45Z"
     },
     {
       "key": "kvnloo/boplog:pull_request:7",
@@ -957,30 +1378,6 @@
       "url": "https://github.com/NousResearch/hermes-agent/issues/95154",
       "createdAt": "2026-08-26T01:27:20Z",
       "updatedAt": "2026-10-17T08:46:46Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:806",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 806,
-      "title": "feat(perimeters): publish selected wildfire incidents to shared context",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/806",
-      "createdAt": "2026-09-28T18:39:07Z",
-      "updatedAt": "2026-10-17T08:46:12Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:847",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 847,
-      "title": "feat(cyclones): publish explicit storm selection to shared context",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/847",
-      "createdAt": "2026-09-29T05:20:49Z",
-      "updatedAt": "2026-10-17T08:42:04Z"
     },
     {
       "key": "NousResearch/hermes-agent:pull_request:130203",
@@ -1523,18 +1920,6 @@
       "updatedAt": "2026-10-17T04:57:49Z"
     },
     {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:818",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 818,
-      "title": "feat: resolve API keys from Proton Pass and Bitwarden Secrets Manager",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/818",
-      "createdAt": "2026-09-28T23:41:23Z",
-      "updatedAt": "2026-10-17T04:57:23Z"
-    },
-    {
       "key": "kvnloo/openpaw:pull_request:8",
       "kind": "pull_request",
       "relationship": "owned",
@@ -1595,18 +1980,6 @@
       "updatedAt": "2026-10-17T04:55:07Z"
     },
     {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:874",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 874,
-      "title": "feat(first-run): add wildfire perimeters to Environmental",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/874",
-      "createdAt": "2026-10-01T03:23:34Z",
-      "updatedAt": "2026-10-17T04:54:41Z"
-    },
-    {
       "key": "kvnloo/cad_to_dagmc:pull_request:1",
       "kind": "pull_request",
       "relationship": "owned",
@@ -1644,18 +2017,6 @@
       "mergedAt": "2026-10-17T04:51:27Z"
     },
     {
-      "key": "kvnloo/fx:pull_request:21",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/fx",
-      "number": 21,
-      "title": "Keep multiline host-tool JSON within one native JSON-RPC frame",
-      "url": "https://github.com/kvnloo/fx/pull/21",
-      "createdAt": "2026-10-16T04:57:48Z",
-      "updatedAt": "2026-10-17T04:51:01Z"
-    },
-    {
       "key": "kvnloo/fx:pull_request:24",
       "kind": "pull_request",
       "relationship": "owned",
@@ -1666,30 +2027,6 @@
       "url": "https://github.com/kvnloo/fx/pull/24",
       "createdAt": "2026-10-17T04:49:25Z",
       "updatedAt": "2026-10-17T04:49:25Z"
-    },
-    {
-      "key": "kvnloo/llama.bend:issue:12",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/llama.bend",
-      "number": 12,
-      "title": "Promotion queue — upstream-ready work (single canonical issue)",
-      "url": "https://github.com/kvnloo/llama.bend/issues/12",
-      "createdAt": "2026-10-16T08:07:49Z",
-      "updatedAt": "2026-10-17T04:48:34Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:835",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 835,
-      "title": "feat(voice): reason-code viewport context escalation",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/835",
-      "createdAt": "2026-09-29T02:03:47Z",
-      "updatedAt": "2026-10-17T04:48:20Z"
     },
     {
       "key": "kvnloo/fx:pull_request:16",
@@ -1728,42 +2065,6 @@
       "updatedAt": "2026-10-17T04:42:53Z"
     },
     {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:836",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 836,
-      "title": "feat(actions): add verified action episode policy",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/836",
-      "createdAt": "2026-09-29T02:06:40Z",
-      "updatedAt": "2026-10-17T04:36:45Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:834",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 834,
-      "title": "fix(share): surface invalid shared layer state",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/834",
-      "createdAt": "2026-09-29T01:50:04Z",
-      "updatedAt": "2026-10-17T04:31:46Z"
-    },
-    {
-      "key": "kvnloo/llama.bend:pull_request:4",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/llama.bend",
-      "number": 4,
-      "title": "bench: strict resumable trials and reviewed campaign checkpoint",
-      "url": "https://github.com/kvnloo/llama.bend/pull/4",
-      "createdAt": "2026-10-14T07:45:21Z",
-      "updatedAt": "2026-10-17T04:30:52Z"
-    },
-    {
       "key": "omacom/omarchy:pull_request:12964",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -1774,30 +2075,6 @@
       "url": "https://github.com/omacom/omarchy/pull/12964",
       "createdAt": "2026-09-22T23:17:57Z",
       "updatedAt": "2026-10-17T04:14:36Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:889",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 889,
-      "title": "perf: coalesce identical terrain height requests",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/889",
-      "createdAt": "2026-10-01T21:57:08Z",
-      "updatedAt": "2026-10-17T04:04:48Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:882",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 882,
-      "title": "exp(disaster): add model-free access support kernel",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/882",
-      "createdAt": "2026-10-01T07:27:39Z",
-      "updatedAt": "2026-10-17T04:01:33Z"
     },
     {
       "key": "kvnloo/ace:pull_request:29",
@@ -1823,18 +2100,6 @@
       "url": "https://github.com/kvnloo/hermes-maintainer/pull/8",
       "createdAt": "2026-09-13T14:23:56Z",
       "updatedAt": "2026-10-17T03:55:16Z"
-    },
-    {
-      "key": "kvnloo/llama.bend:pull_request:2",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/llama.bend",
-      "number": 2,
-      "title": "bench: decode latency distribution report (baseline diagnostics)",
-      "url": "https://github.com/kvnloo/llama.bend/pull/2",
-      "createdAt": "2026-10-14T05:29:53Z",
-      "updatedAt": "2026-10-17T03:51:18Z"
     },
     {
       "key": "kvnloo/evolution-lab:pull_request:15",
@@ -6806,30 +7071,6 @@
       "updatedAt": "2026-10-17T02:14:16Z"
     },
     {
-      "key": "kvnloo/objectKV:pull_request:2",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/objectKV",
-      "number": 2,
-      "title": "fix(range-read): accept concurrently advanced cached route [UPSTREAM CANDIDATE]",
-      "url": "https://github.com/kvnloo/objectKV/pull/2",
-      "createdAt": "2026-10-11T07:38:16Z",
-      "updatedAt": "2026-10-17T02:13:57Z"
-    },
-    {
-      "key": "kvnloo/objectKV:pull_request:1",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/objectKV",
-      "number": 1,
-      "title": "fix(eval): preserve object byte counts beyond u32 range [UPSTREAM CANDIDATE]",
-      "url": "https://github.com/kvnloo/objectKV/pull/1",
-      "createdAt": "2026-10-11T07:38:14Z",
-      "updatedAt": "2026-10-17T02:13:53Z"
-    },
-    {
       "key": "kvnloo/hermes-agent:pull_request:68",
       "kind": "pull_request",
       "relationship": "owned",
@@ -7812,18 +8053,6 @@
       "url": "https://github.com/kvnloo/Empryo/pull/1",
       "createdAt": "2026-10-15T19:41:39Z",
       "updatedAt": "2026-10-17T02:06:22Z"
-    },
-    {
-      "key": "kvnloo/ATOM:pull_request:29",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/ATOM",
-      "number": 29,
-      "title": "[Lane 17][LIMITED] Guard ATOMesh dashboard metrics against non-finite values",
-      "url": "https://github.com/kvnloo/ATOM/pull/29",
-      "createdAt": "2026-10-14T20:35:01Z",
-      "updatedAt": "2026-10-17T02:06:19Z"
     },
     {
       "key": "kvnloo/ATOM:pull_request:28",
@@ -9835,30 +10064,6 @@
       "updatedAt": "2026-10-17T01:56:27Z"
     },
     {
-      "key": "kvnloo/hermes-agent:pull_request:280",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/hermes-agent",
-      "number": 280,
-      "title": "tip: OpenRouter GPT Image 2.5 catalog (#126733)",
-      "url": "https://github.com/kvnloo/hermes-agent/pull/280",
-      "createdAt": "2026-09-28T18:30:51Z",
-      "updatedAt": "2026-10-17T01:56:25Z"
-    },
-    {
-      "key": "kvnloo/hermes-agent:pull_request:282",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/hermes-agent",
-      "number": 282,
-      "title": "tip: curator drop fixed archive quota (#126731)",
-      "url": "https://github.com/kvnloo/hermes-agent/pull/282",
-      "createdAt": "2026-09-28T18:33:57Z",
-      "updatedAt": "2026-10-17T01:56:22Z"
-    },
-    {
       "key": "kvnloo/hermes-agent:pull_request:325",
       "kind": "pull_request",
       "relationship": "owned",
@@ -10097,18 +10302,6 @@
       "url": "https://github.com/SimonSchubert/omalauncher/issues/157",
       "createdAt": "2026-10-17T01:38:48Z",
       "updatedAt": "2026-10-17T01:38:48Z"
-    },
-    {
-      "key": "KnottyDyes/gods-eye-view:pull_request:2",
-      "kind": "pull_request",
-      "relationship": "contributor_fork",
-      "status": "open_ready",
-      "repo": "KnottyDyes/gods-eye-view",
-      "number": 2,
-      "title": "#759: merge main, restore user layers from shares and storage, review fixes",
-      "url": "https://github.com/KnottyDyes/gods-eye-view/pull/2",
-      "createdAt": "2026-10-17T01:11:16Z",
-      "updatedAt": "2026-10-17T01:11:16Z"
     },
     {
       "key": "pingdotgg/t3code:pull_request:20255",
@@ -10669,18 +10862,6 @@
       "updatedAt": "2026-10-16T18:39:23Z"
     },
     {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:881",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 881,
-      "title": "perf: cancel superseded Recent Imagery thumbnail work",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/881",
-      "createdAt": "2026-10-01T07:27:36Z",
-      "updatedAt": "2026-10-16T18:08:36Z"
-    },
-    {
       "key": "PixarAnimationStudios/OpenUSD:pull_request:4292",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -10956,18 +11137,6 @@
       "url": "https://github.com/kvnloo/OpenUSD/issues/52",
       "createdAt": "2026-10-16T08:11:11Z",
       "updatedAt": "2026-10-16T15:21:27Z"
-    },
-    {
-      "key": "openclaw/openclaw:pull_request:162501",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "openclaw/openclaw",
-      "number": 162501,
-      "title": "fix(memory-wiki): preserve OKF type on import",
-      "url": "https://github.com/openclaw/openclaw/pull/162501",
-      "createdAt": "2026-10-01T07:17:36Z",
-      "updatedAt": "2026-10-16T14:37:28Z"
     },
     {
       "key": "kvnloo/OpenUSD:pull_request:45",
@@ -13819,18 +13988,6 @@
       "url": "https://github.com/kvnloo/cua/issues/141",
       "createdAt": "2026-10-12T22:01:29Z",
       "updatedAt": "2026-10-12T22:11:23Z"
-    },
-    {
-      "key": "noctalia-dev/noctalia:pull_request:4274",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "noctalia-dev/noctalia",
-      "number": 4274,
-      "title": "fix(network): prompt for VPN secrets",
-      "url": "https://github.com/noctalia-dev/noctalia/pull/4274",
-      "createdAt": "2026-09-04T17:25:24Z",
-      "updatedAt": "2026-10-12T21:50:16Z"
     },
     {
       "key": "kvnloo/cua:issue:139",
@@ -24148,18 +24305,6 @@
       "updatedAt": "2026-10-02T04:00:07Z"
     },
     {
-      "key": "omacom/omarchy:pull_request:10232",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 10232,
-      "title": "fix(update): detect aarch64 kernels without vmlinuz",
-      "url": "https://github.com/omacom/omarchy/pull/10232",
-      "createdAt": "2026-09-04T20:01:08Z",
-      "updatedAt": "2026-10-02T03:56:50Z"
-    },
-    {
       "key": "omacom/omarchy:pull_request:10235",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -29930,18 +30075,6 @@
       "url": "https://github.com/NousResearch/hermes-agent/pull/95180",
       "createdAt": "2026-08-26T02:18:04Z",
       "updatedAt": "2026-09-30T03:17:51Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:pull_request:95147",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "closed_unmerged",
-      "repo": "NousResearch/hermes-agent",
-      "number": 95147,
-      "title": "feat(voice): add realtime provider session contract",
-      "url": "https://github.com/NousResearch/hermes-agent/pull/95147",
-      "createdAt": "2026-08-26T01:16:17Z",
-      "updatedAt": "2026-09-30T03:17:48Z"
     },
     {
       "key": "NousResearch/hermes-agent:pull_request:106011",
@@ -49615,126 +49748,6 @@
       "url": "https://github.com/Birdabo404/cribble-agent/issues/6",
       "createdAt": "2026-08-26T03:27:53Z",
       "updatedAt": "2026-08-26T07:22:29Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93382",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93382,
-      "title": "feat: adaptive explanation policy for interactive learning artifacts",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93382",
-      "createdAt": "2026-08-24T00:41:42Z",
-      "updatedAt": "2026-08-26T07:00:05Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93331",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93331,
-      "title": "feat: add OS-native intelligence and capability-graph planning",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93331",
-      "createdAt": "2026-08-23T23:49:54Z",
-      "updatedAt": "2026-08-26T07:00:03Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93318",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93318,
-      "title": "feat: add a budgeted experiment search manager with lineage",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93318",
-      "createdAt": "2026-08-23T23:32:55Z",
-      "updatedAt": "2026-08-26T07:00:00Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93317",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93317,
-      "title": "feat: define an auditable hypothesis evolution and experiment protocol",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93317",
-      "createdAt": "2026-08-23T23:32:55Z",
-      "updatedAt": "2026-08-26T06:59:57Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93316",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93316,
-      "title": "feat: add a calibrated Digital Twin Manager protocol",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93316",
-      "createdAt": "2026-08-23T23:32:54Z",
-      "updatedAt": "2026-08-26T06:59:55Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93307",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93307,
-      "title": "feat: define hierarchical verifier contracts and repeated-run reliability",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93307",
-      "createdAt": "2026-08-23T23:12:50Z",
-      "updatedAt": "2026-08-26T06:59:53Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93306",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93306,
-      "title": "feat: add reversible trajectory-driven harness refinement",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93306",
-      "createdAt": "2026-08-23T23:12:49Z",
-      "updatedAt": "2026-08-26T06:59:50Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93305",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93305,
-      "title": "feat: add an environment adapter SDK for games and custom task harnesses",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93305",
-      "createdAt": "2026-08-23T23:12:48Z",
-      "updatedAt": "2026-08-26T06:59:48Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93304",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93304,
-      "title": "feat: define repository executable invariants with remediation diagnostics",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93304",
-      "createdAt": "2026-08-23T23:12:46Z",
-      "updatedAt": "2026-08-26T06:59:45Z"
-    },
-    {
-      "key": "NousResearch/hermes-agent:issue:93303",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "closed",
-      "repo": "NousResearch/hermes-agent",
-      "number": 93303,
-      "title": "feat: add bounded RLM mode for prompt-as-environment long-context work",
-      "url": "https://github.com/NousResearch/hermes-agent/issues/93303",
-      "createdAt": "2026-08-23T23:12:46Z",
-      "updatedAt": "2026-08-26T06:59:43Z"
     },
     {
       "key": "NousResearch/hermes-agent:pull_request:87493",
