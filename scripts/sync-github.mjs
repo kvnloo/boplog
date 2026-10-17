@@ -1146,10 +1146,17 @@ async function main() {
   const recentForkFullNames = new Set(
     [...activityHints.keys()].map((name) => name.toLowerCase()),
   );
+  // Explicit owner curation outranks the short public activity window.
+  // These are already verified public forks from the /users API response;
+  // pinning selects candidates, it does not claim accepted upstream impact.
+  const featuredForkNames = new Set(
+    featuredConfig.repos.map((name) => name.toLowerCase()),
+  );
   const selectedForks = forks.filter((repo) => (
     previousForkNames.has(repo.name)
     || overrides.has(repo.name)
     || recentForkFullNames.has(String(repo.full_name).toLowerCase())
+    || featuredForkNames.has(repo.name.toLowerCase())
   ));
 
   log(`original projects: ${originals.length} (accepted from ownership metadata)`);
