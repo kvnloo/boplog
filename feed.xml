@@ -5,231 +5,231 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-08-15T19:03:26Z</updated>
+  <updated>2026-10-17T10:42:35Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
-    <title>baseline-tennis</title>
-    <id>https://kvnloo.github.io/baseline-tennis/</id>
-    <link href="https://kvnloo.github.io/baseline-tennis/"/>
-    <published>2026-08-15T00:00:00Z</published>
-    <updated>2026-08-15T00:00:00Z</updated>
+    <title>.files</title>
+    <id>https://kvnloo.github.io/.files/</id>
+    <link href="https://kvnloo.github.io/.files/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Interactive open-data tennis map, charts, and statistical query engine</summary>
+    <summary>stay in flow while u code</summary>
   </entry>
   <entry>
-    <title>4dps</title>
-    <id>https://github.com/kvnloo/4dps</id>
-    <link href="https://github.com/kvnloo/4dps"/>
-    <published>2026-08-01T00:00:00Z</published>
-    <updated>2026-08-01T00:00:00Z</updated>
+    <title>ace</title>
+    <id>https://kvnloo.github.io/ace/</id>
+    <link href="https://kvnloo.github.io/ace/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Stills, photospheres &amp; 4D 360° packs for 3D web scenes</summary>
+    <summary>Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.</summary>
   </entry>
   <entry>
     <title>boplog</title>
     <id>https://kvnloo.github.io/boplog/</id>
     <link href="https://kvnloo.github.io/boplog/"/>
-    <published>2026-08-01T00:00:00Z</published>
-    <updated>2026-08-01T00:00:00Z</updated>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
   </entry>
   <entry>
-    <title>aliens-made-this</title>
-    <id>https://kvnloo.github.io/aliens-made-this/</id>
-    <link href="https://kvnloo.github.io/aliens-made-this/"/>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
+    <title>CopilotKit</title>
+    <id>https://docs.copilotkit.ai/</id>
+    <link href="https://docs.copilotkit.ai/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Playful generative-art / capability test: what can the aliens make?</summary>
+    <summary>My work on this fork: Docs · Examples · CopilotKit Intelligence · Discord Build agent-native applications — on any framework, on any surface.</summary>
   </entry>
   <entry>
-    <title>cod</title>
-    <id>https://kvnloo.github.io/cod/</id>
-    <link href="https://kvnloo.github.io/cod/"/>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
+    <title>e2e</title>
+    <id>https://tester.army/e2e</id>
+    <link href="https://tester.army/e2e"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Early scaffold for a coding-related experiment (public placeholder).</summary>
+    <summary>My work on this fork: e2e is an end-to-end testing framework for web and mobile apps.</summary>
   </entry>
   <entry>
-    <title>halo</title>
-    <id>https://github.com/kvnloo/halo</id>
-    <link href="https://github.com/kvnloo/halo"/>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
+    <title>factory-ryanbr-noop</title>
+    <id>https://github.com/kvnloo/factory-ryanbr-noop</id>
+    <link href="https://github.com/kvnloo/factory-ryanbr-noop"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>A first-person shooter in Three.js, built to match Halo: Campaign Evolved and measured against it frame by frame</summary>
+    <summary>My work on this fork: NOOP Your strap. Your data. Your machine. Offline, on-device, no cloud. Now in the all-new Liquid Metal design: one living look across iPhone, Android and Mac. ⬇&amp;nbsp;Download · ❓&amp;nbsp;FAQ ·…</summary>
   </entry>
   <entry>
-    <title>metallic-card</title>
-    <id>https://github.com/kvnloo/metallic-card</id>
-    <link href="https://github.com/kvnloo/metallic-card"/>
-    <published>2026-07-31T00:00:00Z</published>
-    <updated>2026-07-31T00:00:00Z</updated>
+    <title>fframestudio</title>
+    <id>https://github.com/kvnloo/fframestudio</id>
+    <link href="https://github.com/kvnloo/fframestudio"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Metallic silver border card UI, synced from v0/Vercel design iterations.</summary>
+    <summary>I built fframestudio on top of fframes because I love how powerful the library is.</summary>
+  </entry>
+  <entry>
+    <title>gh-contrib-archive</title>
+    <id>https://kvnloo.github.io/gh-contrib-archive/</id>
+    <link href="https://kvnloo.github.io/gh-contrib-archive/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
+  </entry>
+  <entry>
+    <title>gods-eye-view</title>
+    <id>https://maptheworld.ai/</id>
+    <link href="https://maptheworld.ai/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🌐 God&apos;s Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.</summary>
+  </entry>
+  <entry>
+    <title>hermes-agent</title>
+    <id>https://hermes-agent.nousresearch.com/</id>
+    <link href="https://hermes-agent.nousresearch.com/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.</summary>
   </entry>
   <entry>
     <title>kvnloo</title>
     <id>https://github.com/kvnloo/kvnloo</id>
     <link href="https://github.com/kvnloo/kvnloo"/>
-    <published>2026-07-30T00:00:00Z</published>
-    <updated>2026-07-30T00:00:00Z</updated>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Profile README</summary>
   </entry>
   <entry>
-    <title>.files</title>
-    <id>https://kvnloo.github.io/.files/</id>
-    <link href="https://kvnloo.github.io/.files/"/>
-    <published>2026-07-28T00:00:00Z</published>
-    <updated>2026-07-28T00:00:00Z</updated>
+    <title>muxin</title>
+    <id>https://muxin.dev/</id>
+    <link href="https://muxin.dev/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>stay in flow while u code</summary>
+    <summary>My work on this fork: One app for all your machines, run by you or by your AI agents .</summary>
   </entry>
   <entry>
-    <title>_pm</title>
-    <id>https://github.com/kvnloo/_pm</id>
-    <link href="https://github.com/kvnloo/_pm"/>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
+    <title>OpenDots</title>
+    <id>https://www.copilotkit.ai/opendots</id>
+    <link href="https://www.copilotkit.ai/opendots"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Company issue graph, ledger, ticket scheduler, and benchmarks — published mirror of the Zer0 company OS PM core for automation orchestration.</summary>
+    <summary>My work on this fork: Always-on AI coworkers that move between text, calls, and Slack.</summary>
   </entry>
   <entry>
-    <title>zer0-cockpit</title>
-    <id>https://github.com/kvnloo/zer0-cockpit</id>
-    <link href="https://github.com/kvnloo/zer0-cockpit"/>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
+    <title>openpaw</title>
+    <id>https://github.com/kvnloo/openpaw</id>
+    <link href="https://github.com/kvnloo/openpaw"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Read-only, dependency-free terminal project cockpit dashboard for explicit Zer0 project progress.</summary>
+    <summary>An open protocol for understanding a dog&apos;s health, arousal, behavior, and recovery over time.</summary>
   </entry>
   <entry>
-    <title>zer0-harness-spine</title>
-    <id>https://github.com/kvnloo/zer0-harness-spine</id>
-    <link href="https://github.com/kvnloo/zer0-harness-spine"/>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
+    <title>t3code</title>
+    <id>https://t3.codes/</id>
+    <link href="https://t3.codes/"/>
+    <published>2026-10-17T00:00:00Z</published>
+    <updated>2026-10-17T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Ultra-thin agent harness contracts and provider adapters for the Zer0 agent stack (no orchestration state).</summary>
+    <summary>My work on this fork: T3 Code T3 Code is an &quot;agent harness control surface&quot;.</summary>
   </entry>
   <entry>
-    <title>zer0-voice</title>
-    <id>https://github.com/kvnloo/zer0-voice</id>
-    <link href="https://github.com/kvnloo/zer0-voice"/>
-    <published>2026-07-26T00:00:00Z</published>
-    <updated>2026-07-26T00:00:00Z</updated>
+    <title>A2UI</title>
+    <id>https://a2ui.org/</id>
+    <link href="https://a2ui.org/"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Voice adapters that bridge the Zer0 harness to machine-wide speech services without vendoring models.</summary>
+    <summary>My work on this fork: Agent-to-User Interface A2UI is an open-source project, complete with a format optimized for representing updatable agent-generated UIs and an initial set of renderers, that allows agents to…</summary>
   </entry>
   <entry>
-    <title>tmux-agent-fleet</title>
-    <id>https://github.com/kvnloo/tmux-agent-fleet</id>
-    <link href="https://github.com/kvnloo/tmux-agent-fleet"/>
-    <published>2026-07-14T00:00:00Z</published>
-    <updated>2026-07-14T00:00:00Z</updated>
+    <title>ag-ui</title>
+    <id>https://ag-ui.com/</id>
+    <link href="https://ag-ui.com/"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Zero-daemon, harness-neutral command palette for coding agents across tmux panes.</summary>
+    <summary>My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.</summary>
   </entry>
   <entry>
-    <title>claude-island</title>
-    <id>https://github.com/kvnloo/claude-island</id>
-    <link href="https://github.com/kvnloo/claude-island"/>
-    <published>2026-04-11T00:00:00Z</published>
-    <updated>2026-04-11T00:00:00Z</updated>
+    <title>agent-scripts</title>
+    <id>https://steipete.me/</id>
+    <link href="https://steipete.me/"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: multi-profile Claude Code usage monitoring with real-time rate-limit bars, cost/burn-rate tracking, and lifetime savings.</summary>
+    <summary>My work on this fork: Agent Scripts Shared agent instructions, skills, and small portable helpers for Peter&apos;s local workspaces.</summary>
   </entry>
   <entry>
-    <title>tesla-infotainment</title>
-    <id>https://github.com/kvnloo/tesla-infotainment</id>
-    <link href="https://github.com/kvnloo/tesla-infotainment"/>
-    <published>2026-01-28T00:00:00Z</published>
-    <updated>2026-01-28T00:00:00Z</updated>
+    <title>agent-skills</title>
+    <id>https://github.com/kvnloo/agent-skills</id>
+    <link href="https://github.com/kvnloo/agent-skills"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Tesla-style web infotainment UI prototype built with Google AI Studio / Gemini.</summary>
+    <summary>My work on this fork: OpenClaw Agent Skills Shared skills for coding agents that work on OpenClaw projects.</summary>
   </entry>
   <entry>
-    <title>tesla</title>
-    <id>https://kvnloo.github.io/tesla/</id>
-    <link href="https://kvnloo.github.io/tesla/"/>
-    <published>2026-01-27T00:00:00Z</published>
-    <updated>2026-01-27T00:00:00Z</updated>
+    <title>airtable_to_graph</title>
+    <id>https://github.com/kvnloo/airtable_to_graph</id>
+    <link href="https://github.com/kvnloo/airtable_to_graph"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Tesla infotainment system experiment in React, TypeScript, and Vite.</summary>
+    <summary>My work on this fork: airtabletograph This Python script retrieves data from an Airtable base, identifies relational columns, and builds a knowledge graph using the retrieved data.</summary>
   </entry>
   <entry>
-    <title>farm</title>
-    <id>https://github.com/kvnloo/farm</id>
-    <link href="https://github.com/kvnloo/farm"/>
-    <published>2026-01-22T00:00:00Z</published>
-    <updated>2026-01-22T00:00:00Z</updated>
+    <title>alysis-code</title>
+    <id>https://alysiscode.com/</id>
+    <link href="https://alysiscode.com/"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Early public scaffold (placeholder repo).</summary>
+    <summary>My work on this fork: Local CLI coding agent that turns plans into reviewed, PR-ready code.</summary>
   </entry>
   <entry>
-    <title>kpu-sim</title>
-    <id>https://kvnloo.github.io/kpu-sim/</id>
-    <link href="https://kvnloo.github.io/kpu-sim/"/>
-    <published>2026-01-19T00:00:00Z</published>
-    <updated>2026-01-19T00:00:00Z</updated>
+    <title>aodl</title>
+    <id>https://kvnloo.github.io/aodl/</id>
+    <link href="https://kvnloo.github.io/aodl/"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: GitHub Pages workflow for KPU simulator animations.</summary>
+    <summary>AODL/HOTL: typed IR for agent orchestration graphs (schema + fail-closed validator, not a scheduler)</summary>
   </entry>
   <entry>
-    <title>coding-interview-university</title>
-    <id>https://github.com/kvnloo/coding-interview-university</id>
-    <link href="https://github.com/kvnloo/coding-interview-university"/>
-    <published>2026-01-18T00:00:00Z</published>
-    <updated>2026-01-18T00:00:00Z</updated>
+    <title>astryx</title>
+    <id>https://github.com/kvnloo/astryx</id>
+    <link href="https://github.com/kvnloo/astryx"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: optimized learning system with Obsidian canvas.</summary>
+    <summary>My work on this fork: An open source design system that&apos;s fully customizable and built for how we build now: by people and the agents working alongside them.</summary>
   </entry>
   <entry>
-    <title>scrollytelling</title>
-    <id>https://github.com/kvnloo/scrollytelling</id>
-    <link href="https://github.com/kvnloo/scrollytelling"/>
-    <published>2026-01-12T00:00:00Z</published>
-    <updated>2026-01-12T00:00:00Z</updated>
+    <title>ATOM</title>
+    <id>https://github.com/kvnloo/ATOM</id>
+    <link href="https://github.com/kvnloo/ATOM"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Scroll-driven visual story experiment with frame sequences (headphones piece).</summary>
+    <summary>My work on this fork: -------------------------------------------------------------------------------- ATOM (AiTer Optimized Model) is a lightweight vLLM-like implementation, focusing on integration and optimization…</summary>
   </entry>
   <entry>
-    <title>cv</title>
-    <id>https://github.com/kvnloo/cv</id>
-    <link href="https://github.com/kvnloo/cv"/>
-    <published>2026-01-09T00:00:00Z</published>
-    <updated>2026-01-09T00:00:00Z</updated>
+    <title>bluemira</title>
+    <id>https://bluemira.readthedocs.io/</id>
+    <link href="https://bluemira.readthedocs.io/"/>
+    <published>2026-10-16T00:00:00Z</published>
+    <updated>2026-10-16T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>LaTeX CV and role-specific resumes (AI/ML, DevOps, PM) with generated PDFs.</summary>
-  </entry>
-  <entry>
-    <title>uiua</title>
-    <id>https://www.uiua.org/</id>
-    <link href="https://www.uiua.org/"/>
-    <published>2026-01-08T00:00:00Z</published>
-    <updated>2026-01-08T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork of uiua-lang/uiua: Remove invalid Cos primitive reference (qa-requested)</summary>
-  </entry>
-  <entry>
-    <title>Auto-Claude</title>
-    <id>https://github.com/kvnloo/Auto-Claude</id>
-    <link href="https://github.com/kvnloo/Auto-Claude"/>
-    <published>2025-12-27T00:00:00Z</published>
-    <updated>2025-12-27T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: OpenAPI remote API, Claude Flow MCP integration, mobile companion, SWE-bench tooling, usage dashboard, and UX/scaling fixes.</summary>
-  </entry>
-  <entry>
-    <title>jobapp</title>
-    <id>https://github.com/kvnloo/jobapp</id>
-    <link href="https://github.com/kvnloo/jobapp"/>
-    <published>2025-12-23T00:00:00Z</published>
-    <updated>2025-12-23T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Job-application factory: cloned target sites, prompts, and portfolio packaging scripts.</summary>
+    <summary>My work on this fork: Bluemira is an integrated inter-disciplinary design tool for future fusion reactors.</summary>
   </entry>
 </feed>

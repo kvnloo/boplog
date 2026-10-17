@@ -33,40 +33,6 @@
       "portfolioName": "product",
       "product": "health",
       "productName": "health"
-    },
-    {
-      "id": "openhands",
-      "name": "OpenHands",
-      "description": "My commits on this OpenHands fork (experimentation / local patches on the agent platform).",
-      "date": "2024-11-12",
-      "url": "https://all-hands.dev/",
-      "types": [
-        "public",
-        "py",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://all-hands.dev/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/OpenHands"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "open-source-contrib",
-      "productName": "open-source contributions"
     }
   ]
 }
