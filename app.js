@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const BUILD_VERSION = '20260731.16';
+  const BUILD_VERSION = '20261017.1';
   const DATA_ROOT = new URL('./data/', document.baseURI);
   const THEME_KEY = 'boplog-theme';
   const ACTIVITY_MODE_KEY = 'boplog-activity-mode';
@@ -84,6 +84,9 @@
     ossCounters: document.querySelector('#oss-counters'),
     ossBadges: document.querySelector('#oss-badges'),
     ossLedger: document.querySelector('#oss-ledger'),
+    factoryPulse: document.querySelector('#factory-pulse'),
+    factorySnapshot: document.querySelector('#factory-snapshot'),
+    factoryMetrics: document.querySelector('#factory-metrics'),
     ossCount: document.querySelector('#oss-count'),
     ossCompleteness: document.querySelector('#oss-completeness'),
   };
@@ -111,7 +114,7 @@
   const mobilePreview = window.matchMedia('(max-width: 640px)');
   const previewLimits = {
     featured: { desktop: 6, mobile: 4 },
-    oss: { desktop: 8, mobile: 5 },
+    oss: { desktop: 6, mobile: 4 },
     builds: { desktop: 12, mobile: 8 },
   };
 
@@ -124,14 +127,13 @@
   }
 
   function isDisclosureExpanded(section) {
-    if (section === 'oss' && hasOssFilters()) return true;
+    // OSS filters narrow the results, but never force an enormous ledger open.
     if (section === 'builds' && activeFilterCount() > 0) return true;
     return state.disclosure[section];
   }
 
   function isDisclosureForcedExpanded(section) {
-    return (section === 'oss' && hasOssFilters())
-      || (section === 'builds' && activeFilterCount() > 0);
+    return section === 'builds' && activeFilterCount() > 0;
   }
 
   function updateDisclosure(section, total, visible) {
@@ -348,8 +350,47 @@
     });
   }
 
+  function renderFactory() {
+    if (!state.oss || !elements.factoryPulse) return;
+    const summary = state.oss.summary || {};
+    const merged = Number(summary.mergedUpstreamPullRequests) || 0;
+    const ready = Number(summary.openReadyUpstreamPullRequests) || 0;
+    const communities = Number(summary.distinctUpstreamCommunities) || 0;
+    const date = Date.parse(state.oss.generatedAt || '');
+    const snapshot = Number.isFinite(date) ? new Date(date).toISOString().slice(0, 10) : 'date unavailable';
+    elements.factorySnapshot.textContent = `public GitHub snapshot · ${snapshot}`;
+    elements.factoryMetrics.innerHTML = [
+      `<span><strong>${ready}</strong> open-ready</span>`,
+      `<span><strong>${merged}</strong> merged upstream</span>`,
+      `<span><strong>${communities}</strong> communities</span>`,
+    ].join('');
+    // Animation describes the development loop, not actual online agents.
+    elements.factoryPulse.dataset.ready = 'true';
+  }
+
+  function bindFactoryPulse() {
+    const pulse = elements.factoryPulse;
+    if (!pulse) return;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let inView = true;
+    const update = () => {
+      pulse.classList.toggle('is-motion-paused', document.hidden || !inView || reduced.matches);
+    };
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(([entry]) => {
+        inView = entry.isIntersecting;
+        update();
+      });
+      observer.observe(pulse);
+    }
+    document.addEventListener('visibilitychange', update);
+    reduced.addEventListener?.('change', update);
+    update();
+  }
+
   function renderOss() {
     if (!state.oss || !elements.ossLedger) return;
+    renderFactory();
     const summary = state.oss.summary;
     const counters = [['merged upstream', summary.mergedUpstreamPullRequests], ['open ready', summary.openReadyUpstreamPullRequests], ['draft upstream', summary.draftUpstreamPullRequests], ['issues / proposals', summary.upstreamIssuesAndProposals], ['communities', summary.distinctUpstreamCommunities], ['verified impact', summary.verifiedImpact]];
     elements.ossCounters.innerHTML = counters.map(([label, value]) => `<div><strong>${value}</strong><span>${escapeHtml(label)}</span></div>`).join('');
@@ -1085,6 +1126,12 @@
         button.focus({ preventScroll: true });
         if (wasExpanded) {
           requestAnimationFrame(() => {
+            if (section === 'oss') {
+              // When 100+ rows disappear, return to the ledger heading.
+              // The sticky control remains visible even if the user was deep in the list.
+              document.querySelector('#oss-ledger-head')?.scrollIntoView({ block: 'start', behavior: 'instant' });
+              return;
+            }
             const rect = button.getBoundingClientRect();
             if (rect.top < 0 || rect.bottom > window.innerHeight) button.scrollIntoView({ block: 'nearest' });
           });
@@ -1344,6 +1391,7 @@
       renderActivityMap();
       render();
       bindEvents();
+      bindFactoryPulse();
       mobilePreview.addEventListener('change', () => {
         renderFeatured();
         renderOss();
