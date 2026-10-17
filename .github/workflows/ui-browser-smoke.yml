@@ -44,7 +44,7 @@ jobs:
           exit 1
 
       - name: Check desktop, mobile, sticky collapse and factory motion
-        run: npx playwright test tests/browser.spec.cjs --project=chromium --grep 'OSS ledger expands|factory pulse uses|filters compact'
+        run: npx playwright test tests/browser.spec.cjs --grep 'OSS ledger expands|factory pulse uses|filters compact'
 
       - name: Upload test evidence on failure
         if: failure()
