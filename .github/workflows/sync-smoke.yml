@@ -15,12 +15,13 @@ on:
       - 'package.json'
       - '.github/workflows/sync-smoke.yml'
       - '.github/workflows/sync-github.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: sync-smoke-${{ github.event.pull_request.number }}
+  group: sync-smoke-${{ github.event.pull_request.number || github.run_id }}
   cancel-in-progress: true
 
 jobs:
@@ -34,7 +35,14 @@ jobs:
         with:
           node-version: 22
 
+      # PR updates must not each consume thousands of installation API calls.
+      # Main sync owns end-to-end publication; manual dispatch still exercises
+      # the full collector path when an isolated smoke is desired.
+      - name: Validate code and checked-in evidence
+        run: npm run check
+
       - name: Run project collector without publishing
+        if: github.event_name == 'workflow_dispatch'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_USER: kvnloo
@@ -42,13 +50,16 @@ jobs:
         run: npm run sync
 
       - name: Run OSS collector without publishing
+        if: github.event_name == 'workflow_dispatch'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_USER: kvnloo
         run: npm run sync:oss
 
       - name: Validate generated evidence
+        if: github.event_name == 'workflow_dispatch'
         run: npm run check
 
       - name: Verify generated evidence is fresh
+        if: github.event_name == 'workflow_dispatch'
         run: npm run check:freshness
