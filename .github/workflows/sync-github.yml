@@ -1,6 +1,14 @@
 name: Sync GitHub builds
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync-github.mjs'
+      - 'scripts/collect-oss-contributions.mjs'
+      - 'scripts/merged-pr-timestamps.mjs'
+      - '.github/workflows/sync-github.yml'
+      - 'data/featured.json'
   schedule:
     # A few times/day. */15 burned the Actions GITHUB_TOKEN 1000/hr budget.
     - cron: '0 6,14,22 * * *'
