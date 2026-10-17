@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process';
 import process from 'node:process';
 import { buildDataset } from './oss-contributions-lib.mjs';
 import { collectMergedAt, exactMergedAt } from './merged-pr-timestamps.mjs';
+import { collectSearchRecords } from './search-pages.mjs';
 
 const API = 'https://api.github.com';
 const account = process.env.GITHUB_USER || 'kvnloo';
@@ -74,17 +75,7 @@ async function request(url, attempt = 0, init = {}) {
 }
 
 async function search(query) {
-  const records = [];
-  let total = 0;
-  for (let page = 1; page <= 10; page += 1) {
-    const result = await request(
-      `/search/issues?q=${encodeURIComponent(query)}&sort=updated&order=desc&per_page=100&page=${page}`,
-    );
-    total = result.total_count;
-    records.push(...result.items);
-    if (records.length >= Math.min(total, 1000)) break;
-  }
-  return { records, capped: total > 1000 };
+  return collectSearchRecords(query, request);
 }
 
 const repoCache = new Map();
@@ -195,7 +186,9 @@ const verifiedImpact = JSON.parse(
 );
 const cappedQueries = searchResults
   .filter(({ result }) => result.capped)
-  .map(({ spec }) => spec.query);
+  .flatMap(({ spec, result }) => result.limitations?.length
+    ? result.limitations.map((reason) => spec.query + ': ' + reason)
+    : [spec.query]);
 if (graphqlMergedCapped) cappedQueries.push(mergedQuery + ' [GraphQL 1,000-result cap]');
 
 const dataset = buildDataset({
