@@ -1,0 +1,54 @@
+name: Deploy Boplog UI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'app.js'
+      - 'styles.css'
+      - 'scripts/check-ui-deploy.mjs'
+      - '.github/workflows/deploy-ui.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: boplog-ui-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.publish.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate source and public evidence
+        run: npm run check
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy UI
+        id: publish
+        uses: actions/deploy-pages@v4
+
+      - name: Verify live UI assets
+        env:
+          PAGES_URL: ${{ steps.publish.outputs.page_url }}
+        run: node scripts/check-ui-deploy.mjs

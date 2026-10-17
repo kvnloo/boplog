@@ -17,7 +17,7 @@
   <title>zer0 · Kevin Rajan — Build Log</title>
   <link rel="canonical" href="https://kvnloo.github.io/boplog/">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css?v=20260731.16">
+  <link rel="stylesheet" href="./styles.css?v=20261017.1">
   <script>
     (() => {
       try {
@@ -248,6 +248,22 @@
       <div class="list-disclosure" id="featured-disclosure"><span data-disclosure-count="featured"></span><button type="button" data-disclosure="featured" aria-controls="featured-list" aria-expanded="false"></button></div>
     </section>
 
+    <!-- Public evidence pulse, adapted from the interaction lab's quiet motion grammar.
+         This represents a workflow, never a claimed count of online workers. -->
+    <section class="factory-pulse" id="factory-pulse" aria-labelledby="factory-pulse-title" data-ready="false">
+      <div class="factory-pulse__head">
+        <h2 id="factory-pulse-title"><span aria-hidden="true">//</span> open-source factory</h2>
+        <span id="factory-snapshot">public evidence · loading</span>
+      </div>
+      <div class="factory-pulse__body">
+        <div class="factory-pulse__signal" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <p class="factory-pulse__flow">reproduce <span aria-hidden="true">→</span> verify <span aria-hidden="true">→</span> contribute</p>
+        <div class="factory-pulse__metrics" id="factory-metrics" aria-live="polite">awaiting public contribution snapshot</div>
+      </div>
+    </section>
+
     <section class="oss" id="oss" aria-labelledby="oss-title">
       <div class="section-line">
         <h2 id="oss-title"><span aria-hidden="true">//</span> open-source contributions</h2>
@@ -266,9 +282,17 @@
       <div class="oss__groups" id="oss-groups" role="group" aria-label="Selected community repositories" hidden></div>
       <div class="oss__counters" id="oss-counters" aria-label="Contribution summary"></div>
       <div class="oss__shelf" id="oss-badges" aria-label="Evidence-backed badge shelf"></div>
-      <div class="oss__ledger-head"><h3>recent ledger</h3><span id="oss-count" aria-live="polite"></span></div>
+      <div class="oss__ledger-head" id="oss-ledger-head">
+        <h3>recent ledger</h3>
+        <div class="oss__ledger-actions">
+          <span id="oss-count" aria-live="polite"></span>
+          <div class="list-disclosure" id="oss-disclosure">
+            <span data-disclosure-count="oss"></span>
+            <button type="button" data-disclosure="oss" aria-controls="oss-ledger" aria-expanded="false"></button>
+          </div>
+        </div>
+      </div>
       <div class="oss__ledger" id="oss-ledger"></div>
-      <div class="list-disclosure" id="oss-disclosure"><span data-disclosure-count="oss"></span><button type="button" data-disclosure="oss" aria-controls="oss-ledger" aria-expanded="false"></button></div>
     </section>
 
     <section class="archive" id="archive" aria-labelledby="archive-title">
@@ -496,6 +520,6 @@
     <div class="noscript">Enable JavaScript for filters and the live list, or use the JSON manifest and Atom feed.</div>
   </noscript>
 
-  <script src="./app.js?v=20260731.16" defer></script>
+  <script src="./app.js?v=20261017.1" defer></script>
 </body>
 </html>

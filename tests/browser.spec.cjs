@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 
 const previewCounts = {
-  desktop: { featured: 6, oss: 8, builds: 12 },
-  mobile: { featured: 4, oss: 5, builds: 8 },
+  desktop: { featured: 6, oss: 6, builds: 12 },
+  mobile: { featured: 4, oss: 4, builds: 8 },
 };
 
 async function expectPreviewCounts(page, expected) {
@@ -15,7 +15,14 @@ test('progressive disclosure previews, expands, persists, and follows responsive
   await page.setViewportSize({ width: 1280, height: 900 });
   await page.goto('http://127.0.0.1:4173/');
   await expectPreviewCounts(page, previewCounts.desktop);
-  await expect(page.locator('#featured-disclosure')).toBeHidden();
+  // Featured curation may be longer than the preview; test the live control
+  // rather than assuming an old six-project snapshot.
+  const initialFeaturedTotal = Number((await page.locator('[data-disclosure="featured"]').getAttribute('data-total')) || '0');
+  if (initialFeaturedTotal > previewCounts.desktop.featured) {
+    await expect(page.locator('#featured-disclosure')).toBeVisible();
+  } else {
+    await expect(page.locator('#featured-disclosure')).toBeHidden();
+  }
 
   for (const [section, param, list, row] of [
     ['oss', 'oss_rows=all', '#oss-ledger', 'article'],
@@ -50,21 +57,25 @@ test('progressive disclosure previews, expands, persists, and follows responsive
   await expect(page.locator('#project-archive .project-row')).toHaveCount(previewCounts.mobile.builds);
 });
 
-test('meaningful filters show every match while totals and empty states stay honest', async ({ page }) => {
+test('filters compact the OSS ledger by default without changing build-filter behavior', async ({ page }) => {
   await page.goto('http://127.0.0.1:4173/?oss_scope=upstream&year=2026');
   await expect(page.locator('#oss-count')).toHaveText(/^\d+ \/ \d+$/);
   await expect(page.locator('#result-count')).toHaveText(/^\d+ \/ \d+$/);
   const ossTotal = Number((await page.locator('#oss-count').textContent()).split('/')[0].trim());
   const buildTotal = Number((await page.locator('#result-count').textContent()).split('/')[0].trim());
-  await expect(page.locator('#oss-ledger article')).toHaveCount(ossTotal);
+  await expect(page.locator('#oss-ledger article')).toHaveCount(Math.min(ossTotal, previewCounts.desktop.oss));
   await expect(page.locator('#project-archive .project-row')).toHaveCount(buildTotal);
-  for (const section of ['oss', 'builds']) {
-    const disclosure = page.locator(`#${section}-disclosure`);
-    await expect(disclosure).toContainText(`showing all ${section === 'oss' ? ossTotal : buildTotal} filtered results`);
-    await expect(disclosure.locator('[data-disclosure]')).toBeHidden();
-    await expect(disclosure.getByText('show fewer')).toHaveCount(0);
+  if (ossTotal > previewCounts.desktop.oss) {
+    const disclosure = page.locator('#oss-disclosure');
+    await expect(disclosure).toBeVisible();
+    await expect(disclosure.locator('[data-disclosure]')).toHaveAttribute('aria-expanded', 'false');
+    await disclosure.locator('[data-disclosure]').click();
+    await expect(page.locator('#oss-ledger article')).toHaveCount(ossTotal);
+    await expect(page).toHaveURL(/oss_rows=all/);
   }
-  await expect(page).not.toHaveURL(/(?:oss_rows|builds)=all/);
+  // Build log retains its independent behavior for meaningful filters.
+  await expect(page.locator('#builds-disclosure')).toContainText(`showing all ${buildTotal} filtered results`);
+  await expect(page.locator('#builds-disclosure [data-disclosure]')).toBeHidden();
 
   await page.locator('#project-search').fill('no-project-can-match-this-value');
   await expect(page.locator('#result-count')).toContainText('0 /');
@@ -122,24 +133,69 @@ test('desktop, url state, keyboard, reduced motion, and mobile', async ({ page }
   expect(errors).toEqual([]);
 });
 
+test('OSS ledger expands then collapses from deep scroll without manually scrolling back', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 760 });
+  await page.goto('http://127.0.0.1:4173/');
+  const disclosure = page.locator('#oss-disclosure [data-disclosure="oss"]');
+  await expect(disclosure).toHaveAttribute('aria-expanded', 'false');
+  await expect(page.locator('#oss-ledger article')).toHaveCount(previewCounts.mobile.oss);
+  await disclosure.click();
+  await expect(disclosure).toHaveAttribute('aria-expanded', 'true');
+  const total = Number(await disclosure.getAttribute('data-total'));
+  expect(total).toBeGreaterThan(30);
+  await page.locator('#oss-ledger article').nth(28).scrollIntoViewIfNeeded();
+  await expect(disclosure).toBeInViewport();
+  const sticky = await disclosure.evaluate((element) => {
+    const rect = element.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= window.innerHeight;
+  });
+  expect(sticky).toBe(true);
+  // Clicking this sticky control should require no manual return to the start.
+  await disclosure.click();
+  await expect(disclosure).toHaveAttribute('aria-expanded', 'false');
+  await expect(page.locator('#oss-ledger article')).toHaveCount(previewCounts.mobile.oss);
+  await expect(page).not.toHaveURL(/oss_rows=all/);
+  await expect(disclosure).toBeFocused();
+  await expect(disclosure).toBeInViewport();
+});
+
+test('factory pulse uses public snapshot values and respects reduced motion', async ({ page }) => {
+  await page.goto('http://127.0.0.1:4173/');
+  const factory = page.locator('#factory-pulse');
+  await expect(factory).toHaveAttribute('data-ready', 'true');
+  await expect(page.locator('#factory-snapshot')).toContainText('public GitHub snapshot');
+  const metrics = page.locator('#factory-metrics');
+  await expect(metrics).toContainText(/\d+ open-ready/);
+  await expect(metrics).toContainText(/\d+ merged upstream/);
+  await expect(metrics).toContainText(/\d+ communities/);
+  const animation = factory.locator('.factory-pulse__signal i').first();
+  await expect(animation).toHaveCSS('animation-name', 'factory-relay');
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await expect(animation).toHaveCSS('animation-name', 'none');
+});
+
 test('selected communities expose every group and preserve an accessible zero-group URL state', async ({ page }) => {
   const errors = [];
   page.on('console', (message) => { if (message.type() === 'error') errors.push(message.text()); });
   page.on('requestfailed', (request) => errors.push(`network: ${request.url()}`));
   await page.goto('http://127.0.0.1:4173/?oss_scope=selected#oss');
   const groups = page.locator('#oss-groups [data-oss-group]');
-  await expect(groups).toHaveCount(4);
+  const scopeSnapshot = await page.evaluate(async () =>
+    fetch('./data/oss-scopes.json').then((response) => response.json()));
+  await expect(groups).toHaveCount(scopeSnapshot.groups.length);
   await expect(page.locator('[data-oss-group="hermes"]')).toContainText('Hermes');
   await expect(page.locator('[data-oss-group="hermes"]')).toContainText('NousResearch/hermes-agent');
-  await expect(page.locator('[data-oss-group="hermes"]')).toContainText('33');
   for (const [id, label, repo] of [
-    ['opencode', 'OpenCode', 'anomalyco/opencode'],
+    ['oh-my-pi', 'Oh My Pi', 'can1357/oh-my-pi'],
+    ['gods-eye-view', "God's Eye View", 'bilawalsidhu/gods-eye-view'],
+    ['cua', 'CUA', 'trycua/cua'],
+    ['noop', 'NOOP', 'ryanbr/noop'],
+    ['noctalia', 'Noctalia', 'noctalia-dev/noctalia'],
+    ['o8', 'o8', 'hurttlocker/o8'],
     ['rust', 'Rust', 'rust-lang/rust'],
-    ['python', 'Python', 'python/cpython'],
   ]) {
     await expect(page.locator(`[data-oss-group="${id}"]`)).toContainText(label);
     await expect(page.locator(`[data-oss-group="${id}"]`)).toContainText(repo);
-    await expect(page.locator(`[data-oss-group="${id}"]`)).toContainText('0');
   }
   await page.screenshot({ path: '/tmp/boplog-oss-selected-desktop.png', fullPage: true });
 
