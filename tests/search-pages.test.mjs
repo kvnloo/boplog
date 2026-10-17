@@ -27,7 +27,7 @@ test('recursively divides a query over the 1k GitHub Search cap', async () => {
   assert.equal(result.capped, false);
   assert.equal(result.records.length, 2);
   assert.ok(queries.some((query) => /created:2008-01-01/.test(query)));
-  assert.ok(queries.some((query) => /created:2026-12-31/.test(query)));
+  assert.ok(queries.some((query) => /\.\.2026-12-31/.test(query)));
 });
 
 test('reports incomplete Search results instead of claiming completeness', async () => {
