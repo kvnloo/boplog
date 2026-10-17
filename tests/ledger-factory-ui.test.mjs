@@ -53,3 +53,16 @@ test('existing intro copy remains unchanged by this UI update', async () => {
   assert.match(html, /builder\. engineer\. scientist\. solutions architect\. systems thinker\. automator\./);
   assert.match(html, /civilization advances by automating important actions/);
 });
+
+test('UI-only release has an independent GitHub Pages path and verifies the shipped assets', async () => {
+  const yaml = await source('.github/workflows/deploy-ui.yml');
+  const verifier = await source('scripts/check-ui-deploy.mjs');
+  assert.match(yaml, /branches: \[main\]/);
+  for (const name of ['index.html', 'app.js', 'styles.css']) {
+    assert.ok(yaml.includes("'" + name + "'"));
+  }
+  assert.match(yaml, /actions\/upload-pages-artifact@v3/);
+  assert.match(yaml, /actions\/deploy-pages@v4/);
+  assert.match(yaml, /scripts\/check-ui-deploy\.mjs/);
+  assert.match(verifier, /Live Boplog UI matches published index\.html/);
+});
