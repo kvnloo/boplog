@@ -3,6 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import process from 'node:process';
 import { buildDataset } from './oss-contributions-lib.mjs';
+import { collectMergedAt, exactMergedAt } from './merged-pr-timestamps.mjs';
 
 const API = 'https://api.github.com';
 const account = process.env.GITHUB_USER || 'kvnloo';
@@ -47,9 +48,9 @@ function captureRate(response, label) {
   }
 }
 
-async function request(url, attempt = 0) {
+async function request(url, attempt = 0, init = {}) {
   const target = url.startsWith('http') ? url : `${API}${url}`;
-  const response = await fetch(target, { headers });
+  const response = await fetch(target, { ...init, headers: { ...headers, ...init.headers } });
   captureRate(response, url);
   if ((response.status === 403 || response.status === 429 || response.status >= 500) && attempt < 5) {
     const retryAfter = Number(response.headers.get('retry-after'));
@@ -64,7 +65,7 @@ async function request(url, attempt = 0) {
         : Math.min(30, (attempt + 1) * 4);
     console.log(`[oss] retrying ${url} after ${waitSeconds}s (status=${response.status}, attempt=${attempt + 1})`);
     await new Promise((resolve) => setTimeout(resolve, waitSeconds * 1000));
-    return request(url, attempt + 1);
+    return request(url, attempt + 1, init);
   }
   if (!response.ok) {
     throw new Error(`GitHub API ${response.status}: ${(await response.text()).slice(0, 200)}`);
@@ -149,6 +150,12 @@ for (const spec of querySpecs) {
   searchResults.push({ spec, result: await search(spec.query) });
 }
 
+// One GraphQL search page replaces ~100 per-PR REST detail requests.
+// A missing exact timestamp fails closed; it must never become "closed_unmerged".
+const mergedQuery = querySpecs.find((spec) => spec.merged).query;
+const { dates: mergedDates, capped: graphqlMergedCapped } = await collectMergedAt(mergedQuery, request);
+console.log('[oss] resolved exact mergedAt for ' + mergedDates.size + ' PRs via GraphQL');
+
 const raw = [];
 for (const { spec, result } of searchResults) {
   for (const item of result.records) {
@@ -170,14 +177,7 @@ for (const { spec, result } of searchResults) {
       continue;
     }
 
-    let mergedAt = null;
-    if (spec.merged) {
-      // Exact merge timestamps are worth one detail request, but only for the
-      // comparatively small set of landed PRs. Open/closed/draft status comes
-      // directly from partitioned search queries and needs no N-per-PR fetch.
-      const detail = await request(`/repos/${repo}/pulls/${item.number}`);
-      mergedAt = detail.merged_at;
-    }
+    const mergedAt = spec.merged ? exactMergedAt(item, mergedDates) : null;
 
     raw.push({
       ...base,
@@ -196,6 +196,7 @@ const verifiedImpact = JSON.parse(
 const cappedQueries = searchResults
   .filter(({ result }) => result.capped)
   .map(({ spec }) => spec.query);
+if (graphqlMergedCapped) cappedQueries.push(mergedQuery + ' [GraphQL 1,000-result cap]');
 
 const dataset = buildDataset({
   account,
