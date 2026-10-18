@@ -5,17 +5,8 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-18T09:59:34Z</updated>
+  <updated>2026-10-18T16:58:59Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
-  <entry>
-    <title>activitywatch</title>
-    <id>https://activitywatch.net/</id>
-    <link href="https://activitywatch.net/"/>
-    <published>2026-10-18T00:00:00Z</published>
-    <updated>2026-10-18T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Records what you do so that you can know how you&apos;ve spent your time .</summary>
-  </entry>
   <entry>
     <title>alysis-code</title>
     <id>https://alysiscode.com/</id>
@@ -35,6 +26,15 @@
     <summary>My work on this fork: -------------------------------------------------------------------------------- ATOM (AiTer Optimized Model) is a lightweight vLLM-like implementation, focusing on integration and optimization…</summary>
   </entry>
   <entry>
+    <title>BMAD-METHOD</title>
+    <id>https://github.com/kvnloo/BMAD-METHOD</id>
+    <link href="https://github.com/kvnloo/BMAD-METHOD"/>
+    <published>2026-10-18T00:00:00Z</published>
+    <updated>2026-10-18T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Agile Ai Driven Development — turn an idea or change request into working software without giving up the thinking.</summary>
+  </entry>
+  <entry>
     <title>browser</title>
     <id>https://lightpanda.io/</id>
     <link href="https://lightpanda.io/"/>
@@ -44,13 +44,22 @@
     <summary>My work on this fork: Lightpanda Browser The headless browser built from scratch for AI agents and automation.</summary>
   </entry>
   <entry>
-    <title>CopilotKit</title>
-    <id>https://docs.copilotkit.ai/</id>
-    <link href="https://docs.copilotkit.ai/"/>
+    <title>chromium</title>
+    <id>https://chromium.googlesource.com/chromium/src/</id>
+    <link href="https://chromium.googlesource.com/chromium/src/"/>
     <published>2026-10-18T00:00:00Z</published>
     <updated>2026-10-18T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: Docs · Examples · CopilotKit Intelligence · Discord Build agent-native applications — on any framework, on any surface.</summary>
+    <summary>My work on this fork: Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.</summary>
+  </entry>
+  <entry>
+    <title>cocoindex</title>
+    <id>https://cocoindex.io/</id>
+    <link href="https://cocoindex.io/"/>
+    <published>2026-10-18T00:00:00Z</published>
+    <updated>2026-10-18T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Your agents deserve fresh context.</summary>
   </entry>
   <entry>
     <title>Corporate-Serf-Dashboard</title>
@@ -98,13 +107,22 @@
     <summary>Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
   </entry>
   <entry>
-    <title>gods-eye-view</title>
-    <id>https://maptheworld.ai/</id>
-    <link href="https://maptheworld.ai/"/>
+    <title>ground-station</title>
+    <id>https://github.com/kvnloo/ground-station</id>
+    <link href="https://github.com/kvnloo/ground-station"/>
     <published>2026-10-18T00:00:00Z</published>
     <updated>2026-10-18T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: 🌐 God&apos;s Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.</summary>
+    <summary>My work on this fork: Ground Station Ground Station is an open-source, browser-based application for tracking satellites and celestial targets, controlling station hardware, and receiving, decoding, and recording SDR…</summary>
+  </entry>
+  <entry>
+    <title>harpoon</title>
+    <id>https://github.com/kvnloo/harpoon</id>
+    <link href="https://github.com/kvnloo/harpoon"/>
+    <published>2026-10-18T00:00:00Z</published>
+    <updated>2026-10-18T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: ⇁ HARPOON 2 This is a deprecated and all future changes will be to the branch harpoon2.</summary>
   </entry>
   <entry>
     <title>hermes-agent</title>
@@ -161,6 +179,15 @@
     <summary>My work on this fork: Newton is a GPU-accelerated physics simulation engine built upon NVIDIA Warp, specifically targeting roboticists and simulation researchers.</summary>
   </entry>
   <entry>
+    <title>no-mistakes</title>
+    <id>https://kunchenguid.github.io/no-mistakes/</id>
+    <link href="https://kunchenguid.github.io/no-mistakes/"/>
+    <published>2026-10-18T00:00:00Z</published>
+    <updated>2026-10-18T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: git push no-mistakes Kill all the slop.</summary>
+  </entry>
+  <entry>
     <title>o8</title>
     <id>https://o8.run/</id>
     <link href="https://o8.run/"/>
@@ -197,39 +224,12 @@
     <summary>My work on this fork: Omarchy is a beautiful, fun &amp; agentic Linux distribution by DHH.</summary>
   </entry>
   <entry>
-    <title>OpenShell</title>
-    <id>https://docs.nvidia.com/openshell/latest/</id>
-    <link href="https://docs.nvidia.com/openshell/latest/"/>
+    <title>opencode</title>
+    <id>https://opencode.ai/</id>
+    <link href="https://opencode.ai/"/>
     <published>2026-10-18T00:00:00Z</published>
     <updated>2026-10-18T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: [!IMPORTANT] New in OpenShell 0.1.x: a stable release cadence, new isolation primitives, an expanded extension surface, and new APIs.</summary>
-  </entry>
-  <entry>
-    <title>Pake</title>
-    <id>https://github.com/kvnloo/Pake</id>
-    <link href="https://github.com/kvnloo/Pake"/>
-    <published>2026-10-18T00:00:00Z</published>
-    <updated>2026-10-18T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Turn any website into a lightweight desktop app with one command.</summary>
-  </entry>
-  <entry>
-    <title>rpi-image-gen</title>
-    <id>https://www.raspberrypi.com/</id>
-    <link href="https://www.raspberrypi.com/"/>
-    <published>2026-10-18T00:00:00Z</published>
-    <updated>2026-10-18T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: = rpi-image-gen rpi-image-gen is a tool for creating custom software images for Raspberry Pi devices.</summary>
-  </entry>
-  <entry>
-    <title>sie</title>
-    <id>https://superlinked.com/</id>
-    <link href="https://superlinked.com/"/>
-    <published>2026-10-18T00:00:00Z</published>
-    <updated>2026-10-18T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Superlinked Inference Engine Self-hosted inference for agents.</summary>
+    <summary>My work on this fork: The open source AI coding agent.</summary>
   </entry>
 </feed>

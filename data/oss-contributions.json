@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T10:02:23Z",
+  "generatedAt": "2026-10-18T17:01:51Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -278,10 +278,82 @@
       "status": "open_draft",
       "repo": "kvnloo/lawnchair",
       "number": 12,
-      "title": "experiment(hyprspaces): local Tern z0live voice handoff",
+      "title": "experiment(zer0): one-tap Gemini launcher + typed Jev fast lane",
       "url": "https://github.com/kvnloo/lawnchair/pull/12",
       "createdAt": "2026-10-18T08:39:23Z",
-      "updatedAt": "2026-10-18T09:36:47Z"
+      "updatedAt": "2026-10-18T16:14:44Z"
+    },
+    {
+      "key": "kvnloo/99:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/99",
+      "number": 1,
+      "title": "test/fix: preserve and dedupe mixed CursorAgent quickfix hits (downstream)",
+      "url": "https://github.com/kvnloo/99/pull/1",
+      "createdAt": "2026-10-14T03:53:20Z",
+      "updatedAt": "2026-10-18T15:34:24Z"
+    },
+    {
+      "key": "openclaw/openclaw:pull_request:162501",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "openclaw/openclaw",
+      "number": 162501,
+      "title": "fix(memory-wiki): preserve OKF type on import",
+      "url": "https://github.com/openclaw/openclaw/pull/162501",
+      "createdAt": "2026-10-01T07:17:36Z",
+      "updatedAt": "2026-10-18T15:29:25Z"
+    },
+    {
+      "key": "raspberrypi/rpi-image-gen:pull_request:338",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "raspberrypi/rpi-image-gen",
+      "number": 338,
+      "title": "Clarify cloud-init example scope and Imager boundary",
+      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/338",
+      "createdAt": "2026-09-28T18:35:32Z",
+      "updatedAt": "2026-10-18T12:10:05Z"
+    },
+    {
+      "key": "raspberrypi/usbboot:pull_request:400",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "raspberrypi/usbboot",
+      "number": 400,
+      "title": "docs: clarify installed vs checkout mass-storage payload",
+      "url": "https://github.com/raspberrypi/usbboot/pull/400",
+      "createdAt": "2026-09-29T02:02:46Z",
+      "updatedAt": "2026-10-18T11:16:31Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:160",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/z0intelligence",
+      "number": 160,
+      "title": "ci: run core-unit on every pull request so it can be a required check",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/160",
+      "createdAt": "2026-10-11T20:57:26Z",
+      "updatedAt": "2026-10-18T10:10:22Z"
+    },
+    {
+      "key": "trycua/cua:pull_request:5420",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "trycua/cua",
+      "number": 5420,
+      "title": "fix(cua-sdk): keep HTTP MCP reply waits cancellable (code-only)",
+      "url": "https://github.com/trycua/cua/pull/5420",
+      "createdAt": "2026-10-18T08:26:23Z",
+      "updatedAt": "2026-10-18T10:05:53Z"
     },
     {
       "key": "kvnloo/alysis-code:issue:1",
@@ -633,18 +705,6 @@
       "updatedAt": "2026-10-18T08:27:50Z"
     },
     {
-      "key": "trycua/cua:pull_request:5420",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "trycua/cua",
-      "number": 5420,
-      "title": "fix(cua-sdk): keep HTTP MCP reply waits cancellable (code-only)",
-      "url": "https://github.com/trycua/cua/pull/5420",
-      "createdAt": "2026-10-18T08:26:23Z",
-      "updatedAt": "2026-10-18T08:26:23Z"
-    },
-    {
       "key": "kvnloo/o8:issue:53",
       "kind": "issue",
       "relationship": "owned",
@@ -776,18 +836,6 @@
       "url": "https://github.com/kvnloo/rpi-image-gen/pull/1",
       "createdAt": "2026-10-18T08:04:08Z",
       "updatedAt": "2026-10-18T08:12:23Z"
-    },
-    {
-      "key": "raspberrypi/rpi-image-gen:pull_request:338",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "raspberrypi/rpi-image-gen",
-      "number": 338,
-      "title": "Clarify cloud-init example scope and Imager boundary",
-      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/338",
-      "createdAt": "2026-09-28T18:35:32Z",
-      "updatedAt": "2026-10-18T08:10:52Z"
     },
     {
       "key": "omacom/omarchy:pull_request:13721",
@@ -1033,18 +1081,6 @@
       "updatedAt": "2026-10-18T06:08:04Z"
     },
     {
-      "key": "raspberrypi/usbboot:pull_request:400",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "raspberrypi/usbboot",
-      "number": 400,
-      "title": "docs: clarify installed vs checkout mass-storage payload",
-      "url": "https://github.com/raspberrypi/usbboot/pull/400",
-      "createdAt": "2026-09-29T02:02:46Z",
-      "updatedAt": "2026-10-18T06:07:56Z"
-    },
-    {
       "key": "kvnloo/CopilotKit:issue:8",
       "kind": "issue",
       "relationship": "owned",
@@ -1079,18 +1115,6 @@
       "url": "https://github.com/omacom/omarchy/pull/13713",
       "createdAt": "2026-09-29T04:36:02Z",
       "updatedAt": "2026-10-18T05:31:59Z"
-    },
-    {
-      "key": "kvnloo/99:pull_request:1",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/99",
-      "number": 1,
-      "title": "test/fix: preserve and dedupe mixed CursorAgent quickfix hits (downstream)",
-      "url": "https://github.com/kvnloo/99/pull/1",
-      "createdAt": "2026-10-14T03:53:20Z",
-      "updatedAt": "2026-10-18T05:30:08Z"
     },
     {
       "key": "kvnloo/fframestudio:issue:9",
@@ -3567,18 +3591,6 @@
       "url": "https://github.com/kvnloo/fx/pull/21",
       "createdAt": "2026-10-16T04:57:48Z",
       "updatedAt": "2026-10-17T16:06:25Z"
-    },
-    {
-      "key": "openclaw/openclaw:pull_request:162501",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "openclaw/openclaw",
-      "number": 162501,
-      "title": "fix(memory-wiki): preserve OKF type on import",
-      "url": "https://github.com/openclaw/openclaw/pull/162501",
-      "createdAt": "2026-10-01T07:17:36Z",
-      "updatedAt": "2026-10-17T15:04:10Z"
     },
     {
       "key": "KnottyDyes/gods-eye-view:pull_request:2",
@@ -11016,18 +11028,6 @@
       "url": "https://github.com/kvnloo/z0intelligence/pull/161",
       "createdAt": "2026-10-11T22:25:59Z",
       "updatedAt": "2026-10-17T02:03:23Z"
-    },
-    {
-      "key": "kvnloo/z0intelligence:pull_request:160",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/z0intelligence",
-      "number": 160,
-      "title": "ci: run core-unit on every pull request so it can be a required check",
-      "url": "https://github.com/kvnloo/z0intelligence/pull/160",
-      "createdAt": "2026-10-11T20:57:26Z",
-      "updatedAt": "2026-10-17T02:03:21Z"
     },
     {
       "key": "kvnloo/z0intelligence:pull_request:158",
