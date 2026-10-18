@@ -1,6 +1,197 @@
 {
   "projects": [
     {
+      "id": "99",
+      "name": "99",
+      "description": "My work on this fork: The AI client that Neovim deserves, built by those that still enjoy to code.",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/99",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/99"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "a2ui",
+      "name": "A2UI",
+      "description": "My work on this fork: Agent-to-User Interface A2UI is an open-source project, complete with a format optimized for representing updatable agent-generated UIs and an initial set of renderers, that allows agents to…",
+      "date": "2026-10-18",
+      "url": "https://a2ui.org/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://a2ui.org/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/A2UI"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "ag-ui",
+      "name": "ag-ui",
+      "description": "My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.",
+      "date": "2026-10-18",
+      "url": "https://ag-ui.com/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://ag-ui.com/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/ag-ui"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "agent-orchestrator",
+      "name": "agent-orchestrator",
+      "description": "My work on this fork: Orchestrator.inc Plan, run, and supervise coding agents from one place.",
+      "date": "2026-10-18",
+      "url": "https://composio.dev/",
+      "types": [
+        "public",
+        "go",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://composio.dev/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/agent-orchestrator"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "agent-skills",
+      "name": "agent-skills",
+      "description": "My work on this fork: OpenClaw Agent Skills Shared skills for coding agents that work on OpenClaw projects.",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/agent-skills",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/agent-skills"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "ai-job-search",
+      "name": "ai-job-search",
+      "description": "My work on this fork: AI Job Search The job search that runs on your machine.",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/ai-job-search",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/ai-job-search"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "alysis-code",
       "name": "alysis-code",
       "description": "My work on this fork: Local CLI coding agent that turns plans into reviewed, PR-ready code.",
@@ -23,6 +214,40 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/alysis-code"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "archon",
+      "name": "Archon",
+      "description": "My work on this fork: The first open-source harness builder for AI coding.",
+      "date": "2026-10-18",
+      "url": "https://archon.diy/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://archon.diy/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/Archon"
         }
       ],
       "company": "zer0",
@@ -95,6 +320,72 @@
       "productName": ""
     },
     {
+      "id": "boplog",
+      "name": "boplog",
+      "description": "Static public build log with llms.txt and a JSON project manifest for agents.",
+      "date": "2026-10-18",
+      "url": "https://kvnloo.github.io/boplog/",
+      "types": [
+        "public",
+        "js"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/boplog/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/boplog"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "boplog",
+      "productName": "boplog",
+      "featured": true,
+      "featuredRank": 12,
+      "eyebrow": "JavaScript"
+    },
+    {
+      "id": "brave-core",
+      "name": "brave-core",
+      "description": "My work on this fork: Brave Core Brave Core is a set of changes, APIs, and scripts used for customizing Chromium to make the Brave browser.",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/brave-core",
+      "types": [
+        "public",
+        "c++",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/brave-core"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "browser",
       "name": "browser",
       "description": "My work on this fork: Lightpanda Browser The headless browser built from scratch for AI agents and automation.",
@@ -117,6 +408,66 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/browser"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "buzz",
+      "name": "buzz",
+      "description": "My work on this fork: 🐝 A workspace where humans and agents build together, on a relay you own.",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/buzz",
+      "types": [
+        "public",
+        "rs",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/buzz"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "career-ops",
+      "name": "career-ops",
+      "description": "My work on this fork: The open-source AI job search agent.",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/career-ops",
+      "types": [
+        "public",
+        "js",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/career-ops"
         }
       ],
       "company": "zer0",
@@ -162,6 +513,108 @@
       "productName": ""
     },
     {
+      "id": "claude-code",
+      "name": "claude-code",
+      "description": "My work on this fork: Claude Code [![npm]](https://www.npmjs.com/package/@anthropic-ai/claude-code) [npm]: https://img.shields.io/npm/v/@anthropic-ai/claude-code.svg?style=flat-square Claude Code is an agentic coding…",
+      "date": "2026-10-18",
+      "url": "https://docs.anthropic.com/s/claude-code",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://docs.anthropic.com/s/claude-code"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/claude-code"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "claude-flow",
+      "name": "claude-flow",
+      "description": "My work on this fork: An agent meta-harness for Claude Code and Codex.",
+      "date": "2026-10-18",
+      "url": "https://discord.com/invite/dfxmpwkG2D",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://discord.com/invite/dfxmpwkG2D"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/claude-flow"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "claude-mem",
+      "name": "claude-mem",
+      "description": "My work on this fork: &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 🇨🇳 中文 • 🇹🇼 繁體中文 • 🇯🇵 日本語 • 🇵🇹 Português • 🇧🇷 Português • 🇰🇷 한국어 • 🇪🇸 Español • 🇩🇪 Deutsch • 🇫🇷 Français • 🇮🇱 עברית • 🇸🇦 العربية • 🇷🇺…",
+      "date": "2026-10-18",
+      "url": "https://claude-mem.ai/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://claude-mem.ai/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/claude-mem"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "cocoindex",
       "name": "cocoindex",
       "description": "My work on this fork: Your agents deserve fresh context.",
@@ -184,6 +637,40 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/cocoindex"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "copilotkit",
+      "name": "CopilotKit",
+      "description": "My work on this fork: Docs · Examples · CopilotKit Intelligence · Discord Build agent-native applications — on any framework, on any surface.",
+      "date": "2026-10-18",
+      "url": "https://docs.copilotkit.ai/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://docs.copilotkit.ai/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/CopilotKit"
         }
       ],
       "company": "zer0",
@@ -267,6 +754,40 @@
       "eyebrow": "Fork contribution"
     },
     {
+      "id": "editor",
+      "name": "editor",
+      "description": "My work on this fork: Pascal Editor An open-source, local-first 3D building editor built with React Three Fiber and WebGPU.",
+      "date": "2026-10-18",
+      "url": "https://editor.pascal.app/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://editor.pascal.app/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/editor"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "factory-ryanbr-noop",
       "name": "factory-ryanbr-noop",
       "description": "My work on this fork: NOOP Your strap. Your data. Your machine. Offline, on-device, no cloud. Now in the all-new Liquid Metal design: one living look across iPhone, Android and Mac. ⬇&nbsp;Download · ❓&nbsp;FAQ ·…",
@@ -300,6 +821,36 @@
       "eyebrow": "Fork contribution"
     },
     {
+      "id": "ff-tracking",
+      "name": "ff-tracking",
+      "description": "My work on this fork: A virtual camera films an AI agent's screen while a tracker locks onto every glyph it types.",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/ff-tracking",
+      "types": [
+        "public",
+        "rs",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/ff-tracking"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "fframestudio",
       "name": "fframestudio",
       "description": "I built fframestudio on top of fframes because I love how powerful the library is.",
@@ -317,6 +868,69 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/fframestudio"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "fizzy",
+      "name": "fizzy",
+      "description": "My work on this fork: This is the source code of Fizzy, the Kanban tracking tool for issues and ideas by 37signals.",
+      "date": "2026-10-18",
+      "url": "https://fizzy.do/",
+      "types": [
+        "public",
+        "rb",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://fizzy.do/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/fizzy"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "garden-room",
+      "name": "garden-room",
+      "description": "Phone 3D room planner for houseplants: three.js, voice, AR, zen-garden care",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/garden-room",
+      "types": [
+        "public",
+        "js"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/garden-room"
         }
       ],
       "company": "zer0",
@@ -350,6 +964,40 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/gh-contrib-archive"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "gitnexus",
+      "name": "GitNexus",
+      "description": "My work on this fork: The context engine for Enterprise Codebases Indexes any codebase into a knowledge graph — every dependency, call chain, cluster, and execution flow — then exposes it through smart MCP tools so AI…",
+      "date": "2026-10-18",
+      "url": "https://gitnexus.vercel.app/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://gitnexus.vercel.app/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/GitNexus"
         }
       ],
       "company": "zer0",
@@ -421,6 +1069,40 @@
       "productName": ""
     },
     {
+      "id": "headroom",
+      "name": "headroom",
+      "description": "My work on this fork: Quickstart · Headroom for Teams · Install · Proof · Agents · Docs · Discord · llms.txt AI agents / LLMs: read /llms.txt here, or fetch the live index · full docs blob .",
+      "date": "2026-10-18",
+      "url": "https://docs.headroomlabs.ai/docs",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://docs.headroomlabs.ai/docs"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/headroom"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "hermes-agent",
       "name": "hermes-agent",
       "description": "My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.",
@@ -456,6 +1138,142 @@
       "featured": true,
       "featuredRank": 1,
       "eyebrow": "Fork contribution"
+    },
+    {
+      "id": "homepage",
+      "name": "homepage",
+      "description": "My work on this fork: A modern, fast , secure fully proxied , highly customizable application dashboard with integrations for over 100 services and translations into multiple languages.",
+      "date": "2026-10-18",
+      "url": "https://gethomepage.dev/",
+      "types": [
+        "public",
+        "js",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://gethomepage.dev/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/homepage"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "immich",
+      "name": "immich",
+      "description": "My work on this fork: High performance self-hosted photo and video management solution Català Español Français Italiano 日本語 한국어 Deutsch Nederlands Türkçe 简体中文 正體中文 Українська Русский Български Português Brasileiro…",
+      "date": "2026-10-18",
+      "url": "https://immich.app/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://immich.app/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/immich"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "interface",
+      "name": "interface",
+      "description": "My work on this fork: Aave protocol interface :ghost: An open source interface for the decentralized liquidity protocol Aave Enabling users to: - Manage and monitor their positions on the Aave Protocol, and the overall…",
+      "date": "2026-10-18",
+      "url": "https://app.aave.com/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://app.aave.com/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/interface"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "jcode",
+      "name": "jcode",
+      "description": "My work on this fork: High-performance coding agents.",
+      "date": "2026-10-18",
+      "url": "https://jcode.sh/",
+      "types": [
+        "public",
+        "rs",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://jcode.sh/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/jcode"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
     },
     {
       "id": "jj",
@@ -525,6 +1343,40 @@
       "productName": ""
     },
     {
+      "id": "likec4",
+      "name": "likec4",
+      "description": "My work on this fork: Architecture as a code Português (Brasil) | 简体中文 | 日本語 Visualize, collaborate on, and evolve your software architecture with always up-to-date, live diagrams generated from your code.",
+      "date": "2026-10-18",
+      "url": "https://likec4.dev/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://likec4.dev/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/likec4"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "linux",
       "name": "linux",
       "description": "My work on this fork: kernel ============ The Linux kernel is the core of any Linux operating system.",
@@ -572,6 +1424,108 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/llama.bend"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "loop-engineering",
+      "name": "loop-engineering",
+      "description": "My work on this fork: Loop Engineering Stop prompting.",
+      "date": "2026-10-18",
+      "url": "https://cobusgreyling.github.io/loop-engineering/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://cobusgreyling.github.io/loop-engineering/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/loop-engineering"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "monkeytype",
+      "name": "monkeytype",
+      "description": "My work on this fork: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; About Monkeytype is a minimalistic and customizable typing test.",
+      "date": "2026-10-18",
+      "url": "https://monkeytype.com/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://monkeytype.com/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/monkeytype"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "mujoco",
+      "name": "mujoco",
+      "description": "My work on this fork: stands for Multi-Joint dynamics with Contact.",
+      "date": "2026-10-18",
+      "url": "https://mujoco.org/",
+      "types": [
+        "public",
+        "c++",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://mujoco.org/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/mujoco"
         }
       ],
       "company": "zer0",
@@ -823,6 +1777,40 @@
       "productName": ""
     },
     {
+      "id": "openhands",
+      "name": "OpenHands",
+      "description": "My commits on this OpenHands fork (experimentation / local patches on the agent platform).",
+      "date": "2026-10-18",
+      "url": "https://all-hands.dev/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://all-hands.dev/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/OpenHands"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "open-source-contrib",
+      "productName": "open-source contributions"
+    },
+    {
       "id": "openpilot",
       "name": "openpilot",
       "description": "My work on this fork: openpilot is an operating system for robotics.",
@@ -891,6 +1879,74 @@
       "productName": ""
     },
     {
+      "id": "openship",
+      "name": "openship",
+      "description": "My work on this fork: Open-source, self-hostable deployment platform with built-in CI/CD.",
+      "date": "2026-10-18",
+      "url": "https://openship.io/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://openship.io/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/openship"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "opentoonz",
+      "name": "opentoonz",
+      "description": "My work on this fork: ⚠️ Important OFFICIAL SOURCE ONLY: The only official websites for OpenToonz are opentoonz.github.io and this GitHub repository.",
+      "date": "2026-10-18",
+      "url": "https://opentoonz.github.io/",
+      "types": [
+        "public",
+        "c++",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://opentoonz.github.io/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/opentoonz"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "pake",
       "name": "Pake",
       "description": "My work on this fork: Turn any website into a lightweight desktop app with one command.",
@@ -943,6 +1999,134 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/paseo"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "plane",
+      "name": "plane",
+      "description": "My work on this fork: Modern project management for all teams Website • Forum • X • Documentation Meet Plane, an open-source project management tool to track issues, run sprints cycles, and manage product roadmaps…",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/plane",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/plane"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "plugins",
+      "name": "plugins",
+      "description": "My work on this fork: Cursor plugins Official Cursor plugins for popular developer tools, frameworks, and SaaS products.",
+      "date": "2026-10-18",
+      "url": "https://github.com/kvnloo/plugins",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/plugins"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "qwen-code",
+      "name": "qwen-code",
+      "description": "My work on this fork: The open-source AI coding agent for your terminal, editor, desktop, browser, and chat.",
+      "date": "2026-10-18",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/qwen-code"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "ratatui",
+      "name": "ratatui",
+      "description": "My work on this fork: Table of Contents - Quickstart - Documentation - Templates - Built with Ratatui - Alternatives - Contributing - Acknowledgements - License [![Crate Badge]][Crate] [![Repo Badge]][Repo] [![Docs…",
+      "date": "2026-10-18",
+      "url": "https://ratatui.rs/",
+      "types": [
+        "public",
+        "rs",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://ratatui.rs/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/ratatui"
         }
       ],
       "company": "zer0",
@@ -1023,6 +2207,40 @@
       "productName": ""
     },
     {
+      "id": "swift",
+      "name": "swift",
+      "description": "My work on this fork: Programming Language Welcome to Swift Swift is a high-performance system programming language.",
+      "date": "2026-10-18",
+      "url": "https://swift.org/",
+      "types": [
+        "public",
+        "swift",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://swift.org/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/swift"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "t3code",
       "name": "t3code",
       "description": "My work on this fork: T3 Code T3 Code is an \"agent harness control surface\".",
@@ -1045,6 +2263,40 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/t3code"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "text-to-cad",
+      "name": "text-to-cad",
+      "description": "My work on this fork: Give your agent CAD superpowers.",
+      "date": "2026-10-18",
+      "url": "https://www.cadskills.xyz/",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://www.cadskills.xyz/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/text-to-cad"
         }
       ],
       "company": "zer0",
@@ -1185,6 +2437,40 @@
       "productName": ""
     },
     {
+      "id": "worldmonitor",
+      "name": "worldmonitor",
+      "description": "My work on this fork: World Monitor 简体中文 | 日本語 | Русский Real-time global intelligence dashboard — AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness…",
+      "date": "2026-10-18",
+      "url": "https://worldmonitor.app/",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://worldmonitor.app/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/worldmonitor"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "z0intelligence",
       "name": "z0intelligence",
       "description": "personalized intelligence",
@@ -1278,40 +2564,6 @@
       "productName": "dotfiles"
     },
     {
-      "id": "a2ui",
-      "name": "A2UI",
-      "description": "My work on this fork: Agent-to-User Interface A2UI is an open-source project, complete with a format optimized for representing updatable agent-generated UIs and an initial set of renderers, that allows agents to…",
-      "date": "2026-10-17",
-      "url": "https://a2ui.org/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://a2ui.org/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/A2UI"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "ace",
       "name": "ace",
       "description": "Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.",
@@ -1369,40 +2621,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/activitywatch"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "ag-ui",
-      "name": "ag-ui",
-      "description": "My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.",
-      "date": "2026-10-17",
-      "url": "https://ag-ui.com/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://ag-ui.com/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/ag-ui"
         }
       ],
       "company": "zer0",
@@ -1478,40 +2696,6 @@
       "productName": ""
     },
     {
-      "id": "archon",
-      "name": "Archon",
-      "description": "My work on this fork: The first open-source harness builder for AI coding.",
-      "date": "2026-10-17",
-      "url": "https://archon.diy/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://archon.diy/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/Archon"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "awesome-engines",
       "name": "awesome-engines",
       "description": "Engine Atlas · awesome-engines A part-addressable 3D atlas of power and propulsion, from Hero of Alexandria's aeolipile (1st century CE) to the FIA 2026 Formula One hybrid power unit.",
@@ -1575,42 +2759,6 @@
       "productName": ""
     },
     {
-      "id": "boplog",
-      "name": "boplog",
-      "description": "Static public build log with llms.txt and a JSON project manifest for agents.",
-      "date": "2026-10-17",
-      "url": "https://kvnloo.github.io/boplog/",
-      "types": [
-        "public",
-        "js"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/boplog/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/boplog"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "boplog",
-      "productName": "boplog",
-      "featured": true,
-      "featuredRank": 12,
-      "eyebrow": "JavaScript"
-    },
-    {
       "id": "brave-browser",
       "name": "brave-browser",
       "description": "My work on this fork: Brave Browser This repository is not needed for building the browser and only holds issues, releases and the wiki.",
@@ -1644,14 +2792,14 @@
       "productName": ""
     },
     {
-      "id": "career-ops",
-      "name": "career-ops",
-      "description": "My work on this fork: The open-source AI job search agent.",
+      "id": "bun",
+      "name": "bun",
+      "description": "My work on this fork: Documentation &nbsp;&nbsp;•&nbsp;&nbsp; Discord &nbsp;&nbsp;•&nbsp;&nbsp; Issues &nbsp;&nbsp;•&nbsp;&nbsp; Roadmap Read the docs → What is Bun?",
       "date": "2026-10-17",
-      "url": "https://github.com/kvnloo/career-ops",
+      "url": "https://bun.com/",
       "types": [
         "public",
-        "js",
+        "rs",
         "fork"
       ],
       "formats": [],
@@ -1660,8 +2808,12 @@
       ],
       "links": [
         {
+          "label": "site",
+          "url": "https://bun.com/"
+        },
+        {
           "label": "github",
-          "url": "https://github.com/kvnloo/career-ops"
+          "url": "https://github.com/kvnloo/bun"
         }
       ],
       "company": "zer0",
@@ -1674,14 +2826,13 @@
       "productName": ""
     },
     {
-      "id": "claude-code",
-      "name": "claude-code",
-      "description": "My work on this fork: Claude Code [![npm]](https://www.npmjs.com/package/@anthropic-ai/claude-code) [npm]: https://img.shields.io/npm/v/@anthropic-ai/claude-code.svg?style=flat-square Claude Code is an agentic coding…",
+      "id": "cad-to-dagmc",
+      "name": "cad_to_dagmc",
+      "description": "My work on this fork: Testing package and running examples with dependencies installed via pip Testing with Model Benchmark Zoo A minimal package that converts CAD geometry to DAGMC (h5m) files, unstructured mesh files…",
       "date": "2026-10-17",
-      "url": "https://docs.anthropic.com/s/claude-code",
+      "url": "https://fusion-energy.github.io/cad_to_dagmc/",
       "types": [
         "public",
-        "ts",
         "fork"
       ],
       "formats": [],
@@ -1690,12 +2841,12 @@
       ],
       "links": [
         {
-          "label": "site",
-          "url": "https://docs.anthropic.com/s/claude-code"
+          "label": "docs",
+          "url": "https://fusion-energy.github.io/cad_to_dagmc/"
         },
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/claude-code"
+          "url": "https://github.com/kvnloo/cad_to_dagmc"
         }
       ],
       "company": "zer0",
@@ -1730,40 +2881,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/CodexBar"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "copilotkit",
-      "name": "CopilotKit",
-      "description": "My work on this fork: Docs · Examples · CopilotKit Intelligence · Discord Build agent-native applications — on any framework, on any surface.",
-      "date": "2026-10-17",
-      "url": "https://docs.copilotkit.ai/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://docs.copilotkit.ai/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/CopilotKit"
         }
       ],
       "company": "zer0",
@@ -1826,6 +2943,40 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/datafusion-postgres"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "dimos-fork",
+      "name": "dimos-fork",
+      "description": "My work on this fork: The Agentive Operating System for Physical Space Docs • Hardware • Installation • Agent CLI & MCP • Blueprints • dimTELE: Remote Teleop • Development ⚠️ Pre-Release Beta ⚠️ About Dimensional is…",
+      "date": "2026-10-17",
+      "url": "https://dimensionalos.com/",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://dimensionalos.com/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/dimos-fork"
         }
       ],
       "company": "zer0",
@@ -2010,14 +3161,13 @@
       "productName": ""
     },
     {
-      "id": "headroom",
-      "name": "headroom",
-      "description": "My work on this fork: Quickstart · Headroom for Teams · Install · Proof · Agents · Docs · Discord · llms.txt AI agents / LLMs: read /llms.txt here, or fetch the live index · full docs blob .",
+      "id": "healthwallet-me",
+      "name": "HealthWallet.me",
+      "description": "My work on this fork: Your medical records. On your phone. Under your control. Open-source, offline-first health record manager with on-device AI. Connects to 52,000+ US healthcare providers via FHIR R4. Scans paper…",
       "date": "2026-10-17",
-      "url": "https://docs.headroomlabs.ai/docs",
+      "url": "https://healthwallet.me/",
       "types": [
         "public",
-        "py",
         "fork"
       ],
       "formats": [],
@@ -2027,45 +3177,11 @@
       "links": [
         {
           "label": "site",
-          "url": "https://docs.headroomlabs.ai/docs"
+          "url": "https://healthwallet.me/"
         },
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/headroom"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "interface",
-      "name": "interface",
-      "description": "My work on this fork: Aave protocol interface :ghost: An open source interface for the decentralized liquidity protocol Aave Enabling users to: - Manage and monitor their positions on the Aave Protocol, and the overall…",
-      "date": "2026-10-17",
-      "url": "https://app.aave.com/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://app.aave.com/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/interface"
+          "url": "https://github.com/kvnloo/HealthWallet.me"
         }
       ],
       "company": "zer0",
@@ -2112,14 +3228,14 @@
       "productName": ""
     },
     {
-      "id": "jcode",
-      "name": "jcode",
-      "description": "My work on this fork: High-performance coding agents.",
+      "id": "kaneo",
+      "name": "kaneo",
+      "description": "My work on this fork: Cloud | Installation | Website | Discord Fast, simple, open-source project management.",
       "date": "2026-10-17",
-      "url": "https://jcode.sh/",
+      "url": "https://kaneo.app/",
       "types": [
         "public",
-        "rs",
+        "ts",
         "fork"
       ],
       "formats": [],
@@ -2129,11 +3245,11 @@
       "links": [
         {
           "label": "site",
-          "url": "https://jcode.sh/"
+          "url": "https://kaneo.app/"
         },
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/jcode"
+          "url": "https://github.com/kvnloo/kaneo"
         }
       ],
       "company": "zer0",
@@ -2225,40 +3341,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/Monica"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "mujoco",
-      "name": "mujoco",
-      "description": "My work on this fork: stands for Multi-Joint dynamics with Contact.",
-      "date": "2026-10-17",
-      "url": "https://mujoco.org/",
-      "types": [
-        "public",
-        "c++",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://mujoco.org/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/mujoco"
         }
       ],
       "company": "zer0",
@@ -2392,6 +3474,73 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/open-design"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "open-meteo",
+      "name": "open-meteo",
+      "description": "My work on this fork: 🌤 Open-Meteo Weather API Open-Meteo is an open-source weather API that offers free access for non-commercial use.",
+      "date": "2026-10-17",
+      "url": "https://open-meteo.com/",
+      "types": [
+        "public",
+        "swift",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://open-meteo.com/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/open-meteo"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "open-wearables",
+      "name": "open-wearables",
+      "description": "My work on this fork: Open Wearables --- Documentation: https://openwearables.io/docs --- [!TIP] Curious what we're cooking right now?",
+      "date": "2026-10-17",
+      "url": "https://docs.openwearables.io/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://docs.openwearables.io/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/open-wearables"
         }
       ],
       "company": "zer0",
@@ -2597,44 +3746,14 @@
       "productName": ""
     },
     {
-      "id": "plane",
-      "name": "plane",
-      "description": "My work on this fork: Modern project management for all teams Website • Forum • X • Documentation Meet Plane, an open-source project management tool to track issues, run sprints cycles, and manage product roadmaps…",
+      "id": "protomotions",
+      "name": "ProtoMotions",
+      "description": "My work on this fork: 3 A GPU-Accelerated Framework for Simulated Humanoids (unverified AI generation) --- Overview ProtoMotions3 is a GPU-accelerated simulation and learning framework for training physically simulated…",
       "date": "2026-10-17",
-      "url": "https://github.com/kvnloo/plane",
+      "url": "https://nvlabs.github.io/ProtoMotions/",
       "types": [
         "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/plane"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "qwen-code",
-      "name": "qwen-code",
-      "description": "My work on this fork: The open-source AI coding agent for your terminal, editor, desktop, browser, and chat.",
-      "date": "2026-10-17",
-      "url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview/",
-      "types": [
-        "public",
-        "ts",
+        "py",
         "fork"
       ],
       "formats": [],
@@ -2644,11 +3763,11 @@
       "links": [
         {
           "label": "docs",
-          "url": "https://qwenlm.github.io/qwen-code-docs/en/users/overview/"
+          "url": "https://nvlabs.github.io/ProtoMotions/"
         },
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/qwen-code"
+          "url": "https://github.com/kvnloo/ProtoMotions"
         }
       ],
       "company": "zer0",
@@ -2757,74 +3876,11 @@
       "productName": ""
     },
     {
-      "id": "worldmonitor",
-      "name": "worldmonitor",
-      "description": "My work on this fork: World Monitor 简体中文 | 日本語 | Русский Real-time global intelligence dashboard — AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness…",
+      "id": "tradingview-mcp",
+      "name": "tradingview-mcp",
+      "description": "My work on this fork: TradingView MCP Market Data & Technical Analysis for AI Assistants 15 seconds, real output (market data as of 13 Oct 2026) · this server, hosted as TradingMCP · watch in full quality TradingView…",
       "date": "2026-10-17",
-      "url": "https://worldmonitor.app/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://worldmonitor.app/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/worldmonitor"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "99",
-      "name": "99",
-      "description": "My work on this fork: The AI client that Neovim deserves, built by those that still enjoy to code.",
-      "date": "2026-10-16",
-      "url": "https://github.com/kvnloo/99",
-      "types": [
-        "public",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/99"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "agent-skills",
-      "name": "agent-skills",
-      "description": "My work on this fork: OpenClaw Agent Skills Shared skills for coding agents that work on OpenClaw projects.",
-      "date": "2026-10-16",
-      "url": "https://github.com/kvnloo/agent-skills",
+      "url": "https://github.com/atilaahmettaner/tradingview-mcp",
       "types": [
         "public",
         "py",
@@ -2836,8 +3892,46 @@
       ],
       "links": [
         {
+          "label": "site",
+          "url": "https://github.com/atilaahmettaner/tradingview-mcp"
+        },
+        {
           "label": "github",
-          "url": "https://github.com/kvnloo/agent-skills"
+          "url": "https://github.com/kvnloo/tradingview-mcp"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "zero-native",
+      "name": "zero-native",
+      "description": "My work on this fork: Native SDK Native SDK is a toolkit for building native desktop applications with TypeScript and Native markup.",
+      "date": "2026-10-17",
+      "url": "https://zero-native.dev/",
+      "types": [
+        "public",
+        "zig",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://zero-native.dev/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/zero-native"
         }
       ],
       "company": "zer0",
@@ -3043,40 +4137,6 @@
       "productName": ""
     },
     {
-      "id": "bun",
-      "name": "bun",
-      "description": "My work on this fork: Documentation &nbsp;&nbsp;•&nbsp;&nbsp; Discord &nbsp;&nbsp;•&nbsp;&nbsp; Issues &nbsp;&nbsp;•&nbsp;&nbsp; Roadmap Read the docs → What is Bun?",
-      "date": "2026-10-16",
-      "url": "https://bun.com/",
-      "types": [
-        "public",
-        "rs",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://bun.com/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/bun"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "chatbot-template",
       "name": "chatbot-template",
       "description": "My work on this fork: A minimal chatbot template built with Next.js, the AI SDK, shadcn/ui, shadcn/react, shadcn/typeset and the Vercel AI Gateway.",
@@ -3159,40 +4219,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/deer-flow"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "dimos-fork",
-      "name": "dimos-fork",
-      "description": "My work on this fork: The Agentive Operating System for Physical Space Docs • Hardware • Installation • Agent CLI & MCP • Blueprints • dimTELE: Remote Teleop • Development ⚠️ Pre-Release Beta ⚠️ About Dimensional is…",
-      "date": "2026-10-16",
-      "url": "https://dimensionalos.com/",
-      "types": [
-        "public",
-        "py",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://dimensionalos.com/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/dimos-fork"
         }
       ],
       "company": "zer0",
@@ -3459,40 +4485,6 @@
       "productName": ""
     },
     {
-      "id": "kaneo",
-      "name": "kaneo",
-      "description": "My work on this fork: Cloud | Installation | Website | Discord Fast, simple, open-source project management.",
-      "date": "2026-10-16",
-      "url": "https://kaneo.app/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://kaneo.app/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/kaneo"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "kerdoios",
       "name": "kerdoios",
       "description": "Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)",
@@ -3510,40 +4502,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/kerdoios"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "loop-engineering",
-      "name": "loop-engineering",
-      "description": "My work on this fork: Loop Engineering Stop prompting.",
-      "date": "2026-10-16",
-      "url": "https://cobusgreyling.github.io/loop-engineering/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://cobusgreyling.github.io/loop-engineering/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/loop-engineering"
         }
       ],
       "company": "zer0",
@@ -3658,40 +4616,6 @@
       "productName": ""
     },
     {
-      "id": "openhands",
-      "name": "OpenHands",
-      "description": "My commits on this OpenHands fork (experimentation / local patches on the agent platform).",
-      "date": "2026-10-16",
-      "url": "https://all-hands.dev/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://all-hands.dev/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/OpenHands"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "open-source-contrib",
-      "productName": "open-source contributions"
-    },
-    {
       "id": "openroad",
       "name": "OpenROAD",
       "description": "My work on this fork: About OpenROAD OpenROAD is the leading open-source, foundational application for semiconductor digital design.",
@@ -3714,40 +4638,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/OpenROAD"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "opentoonz",
-      "name": "opentoonz",
-      "description": "My work on this fork: ⚠️ Important OFFICIAL SOURCE ONLY: The only official websites for OpenToonz are opentoonz.github.io and this GitHub repository.",
-      "date": "2026-10-16",
-      "url": "https://opentoonz.github.io/",
-      "types": [
-        "public",
-        "c++",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://opentoonz.github.io/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/opentoonz"
         }
       ],
       "company": "zer0",
@@ -4051,40 +4941,6 @@
       "productName": ""
     },
     {
-      "id": "swift",
-      "name": "swift",
-      "description": "My work on this fork: Programming Language Welcome to Swift Swift is a high-performance system programming language.",
-      "date": "2026-10-16",
-      "url": "https://swift.org/",
-      "types": [
-        "public",
-        "swift",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://swift.org/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/swift"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "threejs-awesome-graphics-agent-skills",
       "name": "Threejs-Awesome-Graphics-Agent-Skills",
       "description": "My work on this fork: Three.js Awesome Graphics Agent Skills Example gallery to visually inspect included examples This is a Three.js agent skills pack for producing awesome graphics.",
@@ -4137,40 +4993,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/tldraw"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "tradingview-mcp",
-      "name": "tradingview-mcp",
-      "description": "My work on this fork: TradingView MCP Market Data & Technical Analysis for AI Assistants 15 seconds, real output (market data as of 13 Oct 2026) · this server, hosted as TradingMCP · watch in full quality TradingView…",
-      "date": "2026-10-16",
-      "url": "https://github.com/atilaahmettaner/tradingview-mcp",
-      "types": [
-        "public",
-        "py",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://github.com/atilaahmettaner/tradingview-mcp"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/tradingview-mcp"
         }
       ],
       "company": "zer0",

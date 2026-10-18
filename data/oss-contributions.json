@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T17:01:51Z",
+  "generatedAt": "2026-10-18T23:48:41Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -263,14 +263,112 @@
     "limitations": []
   },
   "summary": {
-    "mergedUpstreamPullRequests": 127,
-    "openReadyUpstreamPullRequests": 166,
+    "mergedUpstreamPullRequests": 129,
+    "openReadyUpstreamPullRequests": 163,
     "draftUpstreamPullRequests": 64,
     "upstreamIssuesAndProposals": 372,
     "distinctUpstreamCommunities": 135,
     "verifiedImpact": 0
   },
   "contributions": [
+    {
+      "key": "ROCm/ATOM:pull_request:2619",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "ROCm/ATOM",
+      "number": 2619,
+      "title": "fix(atomesh): keep dashboard metrics finite without dropping zero",
+      "url": "https://github.com/ROCm/ATOM/pull/2619",
+      "createdAt": "2026-10-16T16:46:56Z",
+      "updatedAt": "2026-10-18T23:30:33Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:12956",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 12956,
+      "title": "fix: herdr swap_pane_up + aarch64 kernel restart (#10231 #10232)",
+      "url": "https://github.com/omacom/omarchy/pull/12956",
+      "createdAt": "2026-09-22T22:02:07Z",
+      "updatedAt": "2026-10-18T23:09:16Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:11025",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "omacom/omarchy",
+      "number": 11025,
+      "title": "Install menu: gate eight x86_64-only rows on omarchy-hw-x86-64",
+      "url": "https://github.com/omacom/omarchy/pull/11025",
+      "createdAt": "2026-09-09T18:50:11Z",
+      "updatedAt": "2026-10-18T23:02:13Z"
+    },
+    {
+      "key": "newton-physics/newton:issue:4487",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "newton-physics/newton",
+      "number": 4487,
+      "title": "[BUG] SolverFeatherstone tile GEMM construction fails in wp.load_module()",
+      "url": "https://github.com/newton-physics/newton/issues/4487",
+      "createdAt": "2026-10-03T19:15:45Z",
+      "updatedAt": "2026-10-18T20:38:00Z"
+    },
+    {
+      "key": "pingdotgg/t3code:pull_request:20736",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "merged",
+      "repo": "pingdotgg/t3code",
+      "number": 20736,
+      "title": "fix(mobile): remove orphaned temp files after atomic write failures",
+      "url": "https://github.com/pingdotgg/t3code/pull/20736",
+      "createdAt": "2026-10-17T04:52:48Z",
+      "updatedAt": "2026-10-18T19:33:52Z",
+      "mergedAt": "2026-10-18T19:33:52Z"
+    },
+    {
+      "key": "pingdotgg/t3code:pull_request:20299",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "merged",
+      "repo": "pingdotgg/t3code",
+      "number": 20299,
+      "title": "fix(shared): choose duration unit after rounding seconds",
+      "url": "https://github.com/pingdotgg/t3code/pull/20299",
+      "createdAt": "2026-10-16T16:26:47Z",
+      "updatedAt": "2026-10-18T19:33:37Z",
+      "mergedAt": "2026-10-18T19:33:36Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:165",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/z0intelligence",
+      "number": 165,
+      "title": "Claude Code harness: plugins, hooks, State Packet injection, resource posture",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/165",
+      "createdAt": "2026-10-15T03:04:14Z",
+      "updatedAt": "2026-10-18T18:21:08Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:pull_request:166",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 166,
+      "title": "assist(#972): isolate callback failures in director package",
+      "url": "https://github.com/kvnloo/gods-eye-view/pull/166",
+      "createdAt": "2026-10-08T23:09:45Z",
+      "updatedAt": "2026-10-18T17:27:09Z"
+    },
     {
       "key": "kvnloo/lawnchair:pull_request:12",
       "kind": "pull_request",
@@ -4459,18 +4557,6 @@
       "url": "https://github.com/pingdotgg/t3code/pull/20738",
       "createdAt": "2026-10-17T04:57:10Z",
       "updatedAt": "2026-10-17T06:18:35Z"
-    },
-    {
-      "key": "pingdotgg/t3code:pull_request:20736",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "pingdotgg/t3code",
-      "number": 20736,
-      "title": "fix(mobile): remove orphaned temp files after atomic write failures",
-      "url": "https://github.com/pingdotgg/t3code/pull/20736",
-      "createdAt": "2026-10-17T04:52:48Z",
-      "updatedAt": "2026-10-17T05:02:31Z"
     },
     {
       "key": "kvnloo/openpaw:issue:12",
@@ -9984,18 +10070,6 @@
       "updatedAt": "2026-10-17T02:09:23Z"
     },
     {
-      "key": "kvnloo/gods-eye-view:pull_request:166",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 166,
-      "title": "assist(#972): isolate callback failures in director package",
-      "url": "https://github.com/kvnloo/gods-eye-view/pull/166",
-      "createdAt": "2026-10-08T23:09:45Z",
-      "updatedAt": "2026-10-17T02:09:21Z"
-    },
-    {
       "key": "kvnloo/gods-eye-view:pull_request:165",
       "kind": "pull_request",
       "relationship": "owned",
@@ -10991,18 +11065,6 @@
       "url": "https://github.com/kvnloo/z0evals/pull/86",
       "createdAt": "2026-10-05T04:47:37Z",
       "updatedAt": "2026-10-17T02:03:32Z"
-    },
-    {
-      "key": "kvnloo/z0intelligence:pull_request:165",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/z0intelligence",
-      "number": 165,
-      "title": "Claude Code harness: plugins, hooks, State Packet injection, resource posture",
-      "url": "https://github.com/kvnloo/z0intelligence/pull/165",
-      "createdAt": "2026-10-15T03:04:14Z",
-      "updatedAt": "2026-10-17T02:03:29Z"
     },
     {
       "key": "kvnloo/z0intelligence:pull_request:164",
@@ -13137,30 +13199,6 @@
       "url": "https://github.com/kvnloo/omalauncher/pull/6",
       "createdAt": "2026-10-16T17:01:06Z",
       "updatedAt": "2026-10-16T17:11:55Z"
-    },
-    {
-      "key": "ROCm/ATOM:pull_request:2619",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "ROCm/ATOM",
-      "number": 2619,
-      "title": "fix(atomesh): keep dashboard metrics finite without dropping zero",
-      "url": "https://github.com/ROCm/ATOM/pull/2619",
-      "createdAt": "2026-10-16T16:46:56Z",
-      "updatedAt": "2026-10-16T16:47:35Z"
-    },
-    {
-      "key": "pingdotgg/t3code:pull_request:20299",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "pingdotgg/t3code",
-      "number": 20299,
-      "title": "fix(shared): choose duration unit after rounding seconds",
-      "url": "https://github.com/pingdotgg/t3code/pull/20299",
-      "createdAt": "2026-10-16T16:26:47Z",
-      "updatedAt": "2026-10-16T16:29:50Z"
     },
     {
       "key": "kvnloo/fx:pull_request:20",
@@ -15449,18 +15487,6 @@
       "updatedAt": "2026-10-13T22:50:23Z"
     },
     {
-      "key": "omacom/omarchy:pull_request:11025",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 11025,
-      "title": "Install menu: gate eight x86_64-only rows on omarchy-hw-x86-64",
-      "url": "https://github.com/omacom/omarchy/pull/11025",
-      "createdAt": "2026-09-09T18:50:11Z",
-      "updatedAt": "2026-10-13T22:19:56Z"
-    },
-    {
       "key": "omacom/omarchy:pull_request:11021",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -15868,18 +15894,6 @@
       "url": "https://github.com/kvnloo/oh-my-pi/issues/153",
       "createdAt": "2026-10-12T11:23:32Z",
       "updatedAt": "2026-10-13T14:38:19Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:12956",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 12956,
-      "title": "fix: herdr swap_pane_up + aarch64 kernel restart (#10231 #10232)",
-      "url": "https://github.com/omacom/omarchy/pull/12956",
-      "createdAt": "2026-09-22T22:02:07Z",
-      "updatedAt": "2026-10-13T13:51:30Z"
     },
     {
       "key": "omacom/omarchy:pull_request:13933",
@@ -24001,18 +24015,6 @@
       "createdAt": "2026-10-03T18:07:59Z",
       "updatedAt": "2026-10-03T19:35:12Z",
       "mergedAt": "2026-10-03T18:36:43Z"
-    },
-    {
-      "key": "newton-physics/newton:issue:4487",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "newton-physics/newton",
-      "number": 4487,
-      "title": "[BUG] SolverFeatherstone tile GEMM construction fails in wp.load_module()",
-      "url": "https://github.com/newton-physics/newton/issues/4487",
-      "createdAt": "2026-10-03T19:15:45Z",
-      "updatedAt": "2026-10-03T19:15:45Z"
     },
     {
       "key": "NousResearch/hermes-agent:pull_request:132363",
