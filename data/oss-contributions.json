@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T23:48:41Z",
+  "generatedAt": "2026-10-19T11:25:49Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -41,7 +41,7 @@
       "repositories": [
         "bilawalsidhu/gods-eye-view"
       ],
-      "contributionCount": 53
+      "contributionCount": 54
     },
     {
       "id": "cua",
@@ -263,14 +263,1146 @@
     "limitations": []
   },
   "summary": {
-    "mergedUpstreamPullRequests": 129,
-    "openReadyUpstreamPullRequests": 163,
-    "draftUpstreamPullRequests": 64,
-    "upstreamIssuesAndProposals": 372,
+    "mergedUpstreamPullRequests": 130,
+    "openReadyUpstreamPullRequests": 162,
+    "draftUpstreamPullRequests": 65,
+    "upstreamIssuesAndProposals": 376,
     "distinctUpstreamCommunities": 135,
     "verifiedImpact": 0
   },
   "contributions": [
+    {
+      "key": "img2threejs/img2threejs:issue:169",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 169,
+      "title": "[Contribution]: parent-local hinge pivots for folding components (#118)",
+      "url": "https://github.com/img2threejs/img2threejs/issues/169",
+      "createdAt": "2026-10-19T05:13:56Z",
+      "updatedAt": "2026-10-19T09:36:24Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:issue:170",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 170,
+      "title": "[Contribution]: probe lossless WebP and big-endian TIFF dimensions",
+      "url": "https://github.com/img2threejs/img2threejs/issues/170",
+      "createdAt": "2026-10-19T06:58:59Z",
+      "updatedAt": "2026-10-19T09:36:22Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:issue:171",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 171,
+      "title": "[Bug]: pHash invents black cells for images smaller than its 32px grid",
+      "url": "https://github.com/img2threejs/img2threejs/issues/171",
+      "createdAt": "2026-10-19T07:04:37Z",
+      "updatedAt": "2026-10-19T09:36:20Z"
+    },
+    {
+      "key": "raspberrypi/rpi-image-gen:pull_request:338",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "merged",
+      "repo": "raspberrypi/rpi-image-gen",
+      "number": 338,
+      "title": "Clarify cloud-init example scope and Imager boundary",
+      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/338",
+      "createdAt": "2026-09-28T18:35:32Z",
+      "updatedAt": "2026-10-19T08:28:19Z",
+      "mergedAt": "2026-10-19T08:28:19Z"
+    },
+    {
+      "key": "kvnloo/lawnchair:pull_request:14",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/lawnchair",
+      "number": 14,
+      "title": "feat(z0live): native realtime voice and Ripple intent panel",
+      "url": "https://github.com/kvnloo/lawnchair/pull/14",
+      "createdAt": "2026-10-19T07:23:05Z",
+      "updatedAt": "2026-10-19T08:07:45Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:issue:22",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/fframestudio",
+      "number": 22,
+      "title": "Promotion queue — kvnloo/fframestudio",
+      "url": "https://github.com/kvnloo/fframestudio/issues/22",
+      "createdAt": "2026-10-19T06:56:06Z",
+      "updatedAt": "2026-10-19T08:02:06Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:17",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/fframestudio",
+      "number": 17,
+      "title": "feat(taste): opt-in X/Pinterest/YouTube reference collections via AgentWeb",
+      "url": "https://github.com/kvnloo/fframestudio/pull/17",
+      "createdAt": "2026-10-18T04:46:34Z",
+      "updatedAt": "2026-10-19T07:49:08Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:16",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/fframestudio",
+      "number": 16,
+      "title": "feat(video): import cinetic technique picks as reviewed style-plan suggestions",
+      "url": "https://github.com/kvnloo/fframestudio/pull/16",
+      "createdAt": "2026-10-18T04:37:33Z",
+      "updatedAt": "2026-10-19T07:49:07Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:20",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/fframestudio",
+      "number": 20,
+      "title": "feat(taste): derive real color palettes from local screenshots with approval",
+      "url": "https://github.com/kvnloo/fframestudio/pull/20",
+      "createdAt": "2026-10-18T05:24:16Z",
+      "updatedAt": "2026-10-19T07:49:05Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:173",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0intelligence",
+      "number": 173,
+      "title": "feat(local cognition): stage PrismML Bonsai 2 2B–27B on 12 GiB CUDA",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/173",
+      "createdAt": "2026-10-19T07:38:21Z",
+      "updatedAt": "2026-10-19T07:41:31Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:issue:169",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0intelligence",
+      "number": 169,
+      "title": "Promotion queue — z0intelligence (single canonical owner)",
+      "url": "https://github.com/kvnloo/z0intelligence/issues/169",
+      "createdAt": "2026-10-16T08:13:59Z",
+      "updatedAt": "2026-10-19T07:41:02Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:35",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 35,
+      "title": "fix(runtime): ship evidence mesh exporter used by off-axis gates",
+      "url": "https://github.com/kvnloo/img2threejs/pull/35",
+      "createdAt": "2026-10-19T05:10:00Z",
+      "updatedAt": "2026-10-19T07:40:46Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:49",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 49,
+      "title": "fix(stage3): preserve authored tube paths on attached parts",
+      "url": "https://github.com/kvnloo/img2threejs/pull/49",
+      "createdAt": "2026-10-19T07:03:40Z",
+      "updatedAt": "2026-10-19T07:40:23Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:17",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 17,
+      "title": "fix(stage3): preserve explicit curve-sweep spines on attached parts",
+      "url": "https://github.com/kvnloo/img2threejs/pull/17",
+      "createdAt": "2026-10-19T04:43:01Z",
+      "updatedAt": "2026-10-19T07:40:19Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:52",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 52,
+      "title": "fix(stage3): preserve authored curved primitives with attachments",
+      "url": "https://github.com/kvnloo/img2threejs/pull/52",
+      "createdAt": "2026-10-19T07:37:13Z",
+      "updatedAt": "2026-10-19T07:39:52Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:37",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 37,
+      "title": "feat(stage3): parent-local edge hinges for folding objects",
+      "url": "https://github.com/kvnloo/img2threejs/pull/37",
+      "createdAt": "2026-10-19T05:11:42Z",
+      "updatedAt": "2026-10-19T07:39:36Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:51",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 51,
+      "title": "feat(review): compact and revalidate browser evidence for agent context",
+      "url": "https://github.com/kvnloo/img2threejs/pull/51",
+      "createdAt": "2026-10-19T07:36:55Z",
+      "updatedAt": "2026-10-19T07:39:32Z"
+    },
+    {
+      "key": "kvnloo/omarchy:issue:110",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/omarchy",
+      "number": 110,
+      "title": "Promotion queue — Omarchy (canonical #110)",
+      "url": "https://github.com/kvnloo/omarchy/issues/110",
+      "createdAt": "2026-10-16T08:11:13Z",
+      "updatedAt": "2026-10-19T07:39:29Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:40",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 40,
+      "title": "feat(metrics): measured provider token benchmark for reconstruction runs",
+      "url": "https://github.com/kvnloo/img2threejs/pull/40",
+      "createdAt": "2026-10-19T05:16:29Z",
+      "updatedAt": "2026-10-19T07:37:53Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:42",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 42,
+      "title": "feat(review): resume partial multi-view captures from verified receipts",
+      "url": "https://github.com/kvnloo/img2threejs/pull/42",
+      "createdAt": "2026-10-19T05:21:08Z",
+      "updatedAt": "2026-10-19T07:37:33Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:12955",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 12955,
+      "title": "fix: shell bar/tray/agents leftovers (#10989 #11021 #11022)",
+      "url": "https://github.com/omacom/omarchy/pull/12955",
+      "createdAt": "2026-09-22T21:51:52Z",
+      "updatedAt": "2026-10-19T07:19:13Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:48",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 48,
+      "title": "feat(capture): resume verified views after checkpointed failures",
+      "url": "https://github.com/kvnloo/img2threejs/pull/48",
+      "createdAt": "2026-10-19T07:02:05Z",
+      "updatedAt": "2026-10-19T07:17:03Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:43",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 43,
+      "title": "feat(export): printable STL/OBJ bake with a fail-closed manifold gate",
+      "url": "https://github.com/kvnloo/img2threejs/pull/43",
+      "createdAt": "2026-10-19T06:00:26Z",
+      "updatedAt": "2026-10-19T07:15:57Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:28",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 28,
+      "title": "superseded: off-center hinge pivot experiment (see #37)",
+      "url": "https://github.com/kvnloo/img2threejs/pull/28",
+      "createdAt": "2026-10-19T05:06:51Z",
+      "updatedAt": "2026-10-19T07:15:19Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:50",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 50,
+      "title": "experiment(vehicle): compare measured plan-view width profiles",
+      "url": "https://github.com/kvnloo/img2threejs/pull/50",
+      "createdAt": "2026-10-19T07:06:17Z",
+      "updatedAt": "2026-10-19T07:11:15Z"
+    },
+    {
+      "key": "kvnloo/omarchy:pull_request:66",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/omarchy",
+      "number": 66,
+      "title": "provision-first-run: stop swallowing user-provision failures [OWNER-COVERED #11125]",
+      "url": "https://github.com/kvnloo/omarchy/pull/66",
+      "createdAt": "2026-09-26T02:52:05Z",
+      "updatedAt": "2026-10-19T07:09:13Z"
+    },
+    {
+      "key": "kvnloo/omarchy:pull_request:94",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/omarchy",
+      "number": 94,
+      "title": "theme-set-herdr-machines: lock in the per-user runtime dir [UPSTREAM #13934 OPEN]",
+      "url": "https://github.com/kvnloo/omarchy/pull/94",
+      "createdAt": "2026-09-29T21:59:55Z",
+      "updatedAt": "2026-10-19T07:09:10Z"
+    },
+    {
+      "key": "kvnloo/omarchy:pull_request:84",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/omarchy",
+      "number": 84,
+      "title": "update-lock: refuse symlinked / non-regular lock entries [UPSTREAM #13936 OPEN]",
+      "url": "https://github.com/kvnloo/omarchy/pull/84",
+      "createdAt": "2026-09-26T03:59:27Z",
+      "updatedAt": "2026-10-19T07:09:08Z"
+    },
+    {
+      "key": "kvnloo/omarchy:pull_request:57",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/omarchy",
+      "number": 57,
+      "title": "Reject unknown targets in omarchy-install-dev-env [UPSTREAM #13939 OPEN]",
+      "url": "https://github.com/kvnloo/omarchy/pull/57",
+      "createdAt": "2026-09-26T02:26:41Z",
+      "updatedAt": "2026-10-19T07:09:05Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:pull_request:625",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-agent",
+      "number": 625,
+      "title": "test(tern): add deterministic native file-link invariants (#535)",
+      "url": "https://github.com/kvnloo/hermes-agent/pull/625",
+      "createdAt": "2026-10-19T07:07:12Z",
+      "updatedAt": "2026-10-19T07:07:12Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:39",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 39,
+      "title": "fix(review): ship missing browser mesh exporter for mandatory gate",
+      "url": "https://github.com/kvnloo/img2threejs/pull/39",
+      "createdAt": "2026-10-19T05:15:27Z",
+      "updatedAt": "2026-10-19T07:07:08Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:38",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 38,
+      "title": "fix(review): fail closed on empty geometry evidence",
+      "url": "https://github.com/kvnloo/img2threejs/pull/38",
+      "createdAt": "2026-10-19T05:14:32Z",
+      "updatedAt": "2026-10-19T07:07:07Z"
+    },
+    {
+      "key": "kvnloo/z0evals:issue:99",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0evals",
+      "number": 99,
+      "title": "Promotion queue — kvnloo/z0evals → kvnloo/z0evals",
+      "url": "https://github.com/kvnloo/z0evals/issues/99",
+      "createdAt": "2026-10-16T08:12:44Z",
+      "updatedAt": "2026-10-19T07:07:04Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:26",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 26,
+      "title": "fix(workflow): refuse uncredited pass transitions and hide pre-pass actions",
+      "url": "https://github.com/kvnloo/img2threejs/pull/26",
+      "createdAt": "2026-10-19T05:04:22Z",
+      "updatedAt": "2026-10-19T07:06:25Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:29",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 29,
+      "title": "fix(fit): preserve the final best score in budget-exhausted telemetry",
+      "url": "https://github.com/kvnloo/img2threejs/pull/29",
+      "createdAt": "2026-10-19T05:06:52Z",
+      "updatedAt": "2026-10-19T07:05:41Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:47",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 47,
+      "title": "fix(image-hash): retain perceptual hashes below 32px",
+      "url": "https://github.com/kvnloo/img2threejs/pull/47",
+      "createdAt": "2026-10-19T07:01:01Z",
+      "updatedAt": "2026-10-19T07:05:33Z"
+    },
+    {
+      "key": "kvnloo/z0evals:pull_request:95",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0evals",
+      "number": 95,
+      "title": "fix: require frozen baselines and exact promotion decisions",
+      "url": "https://github.com/kvnloo/z0evals/pull/95",
+      "createdAt": "2026-10-10T02:18:35Z",
+      "updatedAt": "2026-10-19T07:05:05Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:pull_request:624",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-agent",
+      "number": 624,
+      "title": "test(tern): qualify no-TSP fallback across real PTYs and non-TTY (#589)",
+      "url": "https://github.com/kvnloo/hermes-agent/pull/624",
+      "createdAt": "2026-10-19T07:04:24Z",
+      "updatedAt": "2026-10-19T07:04:24Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:issue:154",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 154,
+      "title": "[Contribution]: require domain review before continue for #122",
+      "url": "https://github.com/img2threejs/img2threejs/issues/154",
+      "createdAt": "2026-10-01T14:36:40Z",
+      "updatedAt": "2026-10-19T07:02:31Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:issue:157",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 157,
+      "title": "[Contribution]: contain region-derived artifact paths for #103",
+      "url": "https://github.com/img2threejs/img2threejs/issues/157",
+      "createdAt": "2026-10-01T14:53:34Z",
+      "updatedAt": "2026-10-19T07:01:32Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:10",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 10,
+      "title": "fix(materials): contain region-derived artifact paths",
+      "url": "https://github.com/kvnloo/img2threejs/pull/10",
+      "createdAt": "2026-10-01T14:51:11Z",
+      "updatedAt": "2026-10-19T07:01:27Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:32",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 32,
+      "title": "feat(review): exact-sheet feature crops with landmark alignment gate",
+      "url": "https://github.com/kvnloo/img2threejs/pull/32",
+      "createdAt": "2026-10-19T05:08:04Z",
+      "updatedAt": "2026-10-19T07:01:06Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:45",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 45,
+      "title": "fix(review): enforce domain verdict on non-generic continue",
+      "url": "https://github.com/kvnloo/img2threejs/pull/45",
+      "createdAt": "2026-10-19T06:55:30Z",
+      "updatedAt": "2026-10-19T07:01:02Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:44",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 44,
+      "title": "fix(intake): probe lossless WebP and big-endian TIFF dimensions",
+      "url": "https://github.com/kvnloo/img2threejs/pull/44",
+      "createdAt": "2026-10-19T06:55:02Z",
+      "updatedAt": "2026-10-19T06:59:16Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:46",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 46,
+      "title": "fix(capture): checkpoint each successful camera and diagnostic pass",
+      "url": "https://github.com/kvnloo/img2threejs/pull/46",
+      "createdAt": "2026-10-19T06:55:51Z",
+      "updatedAt": "2026-10-19T06:58:51Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:36",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 36,
+      "title": "fix(review): ship the missing world-space mesh exporter",
+      "url": "https://github.com/kvnloo/img2threejs/pull/36",
+      "createdAt": "2026-10-19T05:11:32Z",
+      "updatedAt": "2026-10-19T06:58:49Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:18",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 18,
+      "title": "experiment: Pocket World — image-to-playable voxel diorama",
+      "url": "https://github.com/kvnloo/img2threejs/pull/18",
+      "createdAt": "2026-10-19T04:54:51Z",
+      "updatedAt": "2026-10-19T06:58:06Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:27",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 27,
+      "title": "fix(workflow): hold checklist boundaries until pass evidence is recorded",
+      "url": "https://github.com/kvnloo/img2threejs/pull/27",
+      "createdAt": "2026-10-19T05:04:36Z",
+      "updatedAt": "2026-10-19T06:57:22Z"
+    },
+    {
+      "key": "kvnloo/crush:pull_request:16",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/crush",
+      "number": 16,
+      "title": "docs(factory): canonical Crush promotion queue",
+      "url": "https://github.com/kvnloo/crush/pull/16",
+      "createdAt": "2026-10-19T06:25:20Z",
+      "updatedAt": "2026-10-19T06:52:41Z"
+    },
+    {
+      "key": "kvnloo/cua:issue:74",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/cua",
+      "number": 74,
+      "title": "[META: WAIT FOR EVIDENCE] Final upstream promotion DAG + posting queue",
+      "url": "https://github.com/kvnloo/cua/issues/74",
+      "createdAt": "2026-09-25T22:10:37Z",
+      "updatedAt": "2026-10-19T06:31:12Z"
+    },
+    {
+      "key": "trycua/cua:pull_request:5420",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "trycua/cua",
+      "number": 5420,
+      "title": "fix(cua-sdk): keep HTTP MCP reply waits cancellable (code-only)",
+      "url": "https://github.com/trycua/cua/pull/5420",
+      "createdAt": "2026-10-18T08:26:23Z",
+      "updatedAt": "2026-10-19T06:29:17Z"
+    },
+    {
+      "key": "kvnloo/crush:pull_request:15",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/crush",
+      "number": 15,
+      "title": "fix(prompt): one context inclusion per file identity",
+      "url": "https://github.com/kvnloo/crush/pull/15",
+      "createdAt": "2026-10-03T22:21:20Z",
+      "updatedAt": "2026-10-19T06:21:05Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:10235",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 10235,
+      "title": "fix(fingerprint): retry verify after enroll settles reader",
+      "url": "https://github.com/omacom/omarchy/pull/10235",
+      "createdAt": "2026-09-04T20:01:18Z",
+      "updatedAt": "2026-10-19T06:16:28Z"
+    },
+    {
+      "key": "kvnloo/t3code:issue:42",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/t3code",
+      "number": 42,
+      "title": "T3Code — single canonical promotion queue (#42)",
+      "url": "https://github.com/kvnloo/t3code/issues/42",
+      "createdAt": "2026-10-16T08:09:06Z",
+      "updatedAt": "2026-10-19T05:59:51Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:15",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 15,
+      "title": "RFC: Dreamloop-RSI for replay-learned mesh fidelity",
+      "url": "https://github.com/kvnloo/img2threejs/pull/15",
+      "createdAt": "2026-10-01T17:48:04Z",
+      "updatedAt": "2026-10-19T05:28:11Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:34",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 34,
+      "title": "fix(review): fail closed on unready browser captures",
+      "url": "https://github.com/kvnloo/img2threejs/pull/34",
+      "createdAt": "2026-10-19T05:09:27Z",
+      "updatedAt": "2026-10-19T05:24:02Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:16",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 16,
+      "title": "docs: define reconstruction evidence v0 experiment",
+      "url": "https://github.com/kvnloo/img2threejs/pull/16",
+      "createdAt": "2026-10-03T17:30:03Z",
+      "updatedAt": "2026-10-19T05:21:39Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:22",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 22,
+      "title": "ci: validate upstream #149 post-rig gate sweep",
+      "url": "https://github.com/kvnloo/img2threejs/pull/22",
+      "createdAt": "2026-10-19T05:02:15Z",
+      "updatedAt": "2026-10-19T05:21:00Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:9",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 9,
+      "title": "fix(workflow): hard-stop local state on stop reviews",
+      "url": "https://github.com/kvnloo/img2threejs/pull/9",
+      "createdAt": "2026-10-01T14:50:24Z",
+      "updatedAt": "2026-10-19T05:20:54Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:19",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 19,
+      "title": "feat(stage4): make comparison-sheet-aligned feature crops reproducible",
+      "url": "https://github.com/kvnloo/img2threejs/pull/19",
+      "createdAt": "2026-10-19T04:58:45Z",
+      "updatedAt": "2026-10-19T05:19:51Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:41",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 41,
+      "title": "feat(review): pixel-exact anchored feature crops (issue #165)",
+      "url": "https://github.com/kvnloo/img2threejs/pull/41",
+      "createdAt": "2026-10-19T05:16:44Z",
+      "updatedAt": "2026-10-19T05:18:22Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:31",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 31,
+      "title": "fix(review): share pass completion policy across codegen and validators",
+      "url": "https://github.com/kvnloo/img2threejs/pull/31",
+      "createdAt": "2026-10-19T05:07:52Z",
+      "updatedAt": "2026-10-19T05:15:10Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:24",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 24,
+      "title": "fix(workflow): keep pass checklist inactive until first pass opens",
+      "url": "https://github.com/kvnloo/img2threejs/pull/24",
+      "createdAt": "2026-10-19T05:03:38Z",
+      "updatedAt": "2026-10-19T05:12:42Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:33",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 33,
+      "title": "feat(review): create reproducible paired feature crops",
+      "url": "https://github.com/kvnloo/img2threejs/pull/33",
+      "createdAt": "2026-10-19T05:09:25Z",
+      "updatedAt": "2026-10-19T05:12:38Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:25",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 25,
+      "title": "feat(fit): prioritize bounded coordinates at equal evaluation budgets",
+      "url": "https://github.com/kvnloo/img2threejs/pull/25",
+      "createdAt": "2026-10-19T05:03:44Z",
+      "updatedAt": "2026-10-19T05:10:26Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:30",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 30,
+      "title": "fix(next): reject non-object JSON specs without traceback",
+      "url": "https://github.com/kvnloo/img2threejs/pull/30",
+      "createdAt": "2026-10-19T05:07:25Z",
+      "updatedAt": "2026-10-19T05:09:50Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:pull_request:149",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "img2threejs/img2threejs",
+      "number": 149,
+      "title": "fix(workflow): re-run plugin gates after rig track",
+      "url": "https://github.com/img2threejs/img2threejs/pull/149",
+      "createdAt": "2026-09-27T17:36:51Z",
+      "updatedAt": "2026-10-19T05:08:40Z"
+    },
+    {
+      "key": "kvnloo/ComfyUI:pull_request:5",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/ComfyUI",
+      "number": 5,
+      "title": "exp: export bounded reconstruction evidence bundles",
+      "url": "https://github.com/kvnloo/ComfyUI/pull/5",
+      "createdAt": "2026-10-03T17:55:25Z",
+      "updatedAt": "2026-10-19T05:08:02Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:20",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/img2threejs",
+      "number": 20,
+      "title": "fix(workflow): wait for an opened pass before dispatching pass rows",
+      "url": "https://github.com/kvnloo/img2threejs/pull/20",
+      "createdAt": "2026-10-19T05:01:55Z",
+      "updatedAt": "2026-10-19T05:07:00Z"
+    },
+    {
+      "key": "kvnloo/ComfyUI:issue:6",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/ComfyUI",
+      "number": 6,
+      "title": "[Promotion queue] ComfyUI reconstruction evidence exporter",
+      "url": "https://github.com/kvnloo/ComfyUI/issues/6",
+      "createdAt": "2026-10-19T04:41:55Z",
+      "updatedAt": "2026-10-19T05:06:19Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:issue:156",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 156,
+      "title": "[Contribution]: propagate stop reviews into local workflow state for #92",
+      "url": "https://github.com/img2threejs/img2threejs/issues/156",
+      "createdAt": "2026-10-01T14:53:33Z",
+      "updatedAt": "2026-10-19T05:04:44Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:23",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 23,
+      "title": "fix(workflow): withhold pass checklist steps until a pass opens",
+      "url": "https://github.com/kvnloo/img2threejs/pull/23",
+      "createdAt": "2026-10-19T05:02:41Z",
+      "updatedAt": "2026-10-19T05:04:42Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:pull_request:168",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "img2threejs/img2threejs",
+      "number": 168,
+      "title": "fix(workflow): honor stop reviews on resumed local state",
+      "url": "https://github.com/img2threejs/img2threejs/pull/168",
+      "createdAt": "2026-10-19T05:02:56Z",
+      "updatedAt": "2026-10-19T05:04:36Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:21",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/img2threejs",
+      "number": 21,
+      "title": "fix(workflow): don't offer pass steps before a pass opens",
+      "url": "https://github.com/kvnloo/img2threejs/pull/21",
+      "createdAt": "2026-10-19T05:02:12Z",
+      "updatedAt": "2026-10-19T05:04:04Z"
+    },
+    {
+      "key": "kvnloo/gh-contrib-archive:pull_request:89",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/gh-contrib-archive",
+      "number": 89,
+      "title": "ci: activate daily upstream landing reconciliation on main",
+      "url": "https://github.com/kvnloo/gh-contrib-archive/pull/89",
+      "createdAt": "2026-10-18T08:32:31Z",
+      "updatedAt": "2026-10-19T05:02:42Z"
+    },
+    {
+      "key": "kvnloo/verified-oss-loop:pull_request:18",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/verified-oss-loop",
+      "number": 18,
+      "title": "docs: expose repository architecture to z0archy",
+      "url": "https://github.com/kvnloo/verified-oss-loop/pull/18",
+      "createdAt": "2026-10-01T06:15:10Z",
+      "updatedAt": "2026-10-19T05:02:01Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:issue:155",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 155,
+      "title": "[Contribution]: refuse incompatible finish coercion and preserve authored PBR values for #137",
+      "url": "https://github.com/img2threejs/img2threejs/issues/155",
+      "createdAt": "2026-10-01T14:41:20Z",
+      "updatedAt": "2026-10-19T05:01:58Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:issue:151",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 151,
+      "title": "[Contribution]: sanitize material region output filenames for #103",
+      "url": "https://github.com/img2threejs/img2threejs/issues/151",
+      "createdAt": "2026-10-01T14:36:28Z",
+      "updatedAt": "2026-10-19T05:01:56Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:issue:152",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 152,
+      "title": "[Contribution]: propagate review action stop into workflow state for #92",
+      "url": "https://github.com/img2threejs/img2threejs/issues/152",
+      "createdAt": "2026-10-01T14:36:30Z",
+      "updatedAt": "2026-10-19T05:01:54Z"
+    },
+    {
+      "key": "img2threejs/img2threejs:issue:153",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "img2threejs/img2threejs",
+      "number": 153,
+      "title": "[Contribution]: make completedPasses ledger disagreement strict for #119",
+      "url": "https://github.com/img2threejs/img2threejs/issues/153",
+      "createdAt": "2026-10-01T14:36:38Z",
+      "updatedAt": "2026-10-19T05:01:52Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:21",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/fframestudio",
+      "number": 21,
+      "title": "feat(cinetic): review imported techniques in the Video Style Components lab",
+      "url": "https://github.com/kvnloo/fframestudio/pull/21",
+      "createdAt": "2026-10-18T05:28:46Z",
+      "updatedAt": "2026-10-19T04:55:55Z",
+      "mergedAt": "2026-10-19T04:55:55Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:19",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/fframestudio",
+      "number": 19,
+      "title": "Preview: wave 1 + #16 cinetic plan import + #17 Taste social collections",
+      "url": "https://github.com/kvnloo/fframestudio/pull/19",
+      "createdAt": "2026-10-18T05:12:00Z",
+      "updatedAt": "2026-10-19T04:55:35Z",
+      "mergedAt": "2026-10-19T04:55:35Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:12",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 12,
+      "title": "fix(materials): preserve opaque interior crop evidence",
+      "url": "https://github.com/kvnloo/img2threejs/pull/12",
+      "createdAt": "2026-10-01T15:00:50Z",
+      "updatedAt": "2026-10-19T04:54:22Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:165",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/z0intelligence",
+      "number": 165,
+      "title": "Claude Code harness: plugins, hooks, State Packet injection, resource posture",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/165",
+      "createdAt": "2026-10-15T03:04:14Z",
+      "updatedAt": "2026-10-19T04:53:33Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:160",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/z0intelligence",
+      "number": 160,
+      "title": "ci: run core-unit on every pull request so it can be a required check",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/160",
+      "createdAt": "2026-10-11T20:57:26Z",
+      "updatedAt": "2026-10-19T04:52:56Z",
+      "mergedAt": "2026-10-19T04:52:56Z"
+    },
+    {
+      "key": "kvnloo/img2threejs:pull_request:11",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/img2threejs",
+      "number": 11,
+      "title": "fix(validation): reject stale completed-pass projections",
+      "url": "https://github.com/kvnloo/img2threejs/pull/11",
+      "createdAt": "2026-10-01T14:52:17Z",
+      "updatedAt": "2026-10-19T04:39:34Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:249",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 249,
+      "title": "Promotion queue — gods-eye-view (canonical #249)",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
+      "createdAt": "2026-10-16T08:13:10Z",
+      "updatedAt": "2026-10-19T04:06:53Z"
+    },
+    {
+      "key": "kvnloo/lawnchair:issue:13",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/lawnchair",
+      "number": 13,
+      "title": "Assistant provider: OpenAI Realtime voice → Hermes over Tailscale",
+      "url": "https://github.com/kvnloo/lawnchair/issues/13",
+      "createdAt": "2026-10-19T04:06:23Z",
+      "updatedAt": "2026-10-19T04:06:23Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:issue:1231",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 1231,
+      "title": "feat: include existing fire perimeters in Environmental first-run mission",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/issues/1231",
+      "createdAt": "2026-10-19T03:07:14Z",
+      "updatedAt": "2026-10-19T04:05:36Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:227",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 227,
+      "title": "DISASTER-04: DoR road-section evidence pilot, explicitly unknown freshness",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/227",
+      "createdAt": "2026-10-13T18:25:02Z",
+      "updatedAt": "2026-10-19T03:09:32Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:13",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 13,
+      "title": "Humanitarian focus: expand Environmental mission with wildfire perimeters",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/13",
+      "createdAt": "2026-09-28T04:36:04Z",
+      "updatedAt": "2026-10-19T03:09:30Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:issue:963",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 963,
+      "title": "RFC(disaster): evaluate candidate routes against explicit access evidence",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/issues/963",
+      "createdAt": "2026-10-07T19:35:48Z",
+      "updatedAt": "2026-10-19T03:08:23Z"
+    },
+    {
+      "key": "kvnloo/omarchy:pull_request:83",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/omarchy",
+      "number": 83,
+      "title": "update: use private logs to avoid update collisions [UPSTREAM #13937 OPEN]",
+      "url": "https://github.com/kvnloo/omarchy/pull/83",
+      "createdAt": "2026-09-26T03:52:22Z",
+      "updatedAt": "2026-10-19T01:32:27Z"
+    },
+    {
+      "key": "kvnloo/omarchy:pull_request:113",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/omarchy",
+      "number": 113,
+      "title": "test(browser): execute the #15610 recursion sentinel (downstream review)",
+      "url": "https://github.com/kvnloo/omarchy/pull/113",
+      "createdAt": "2026-10-19T01:29:51Z",
+      "updatedAt": "2026-10-19T01:29:51Z"
+    },
     {
       "key": "ROCm/ATOM:pull_request:2619",
       "kind": "pull_request",
@@ -346,18 +1478,6 @@
       "mergedAt": "2026-10-18T19:33:36Z"
     },
     {
-      "key": "kvnloo/z0intelligence:pull_request:165",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/z0intelligence",
-      "number": 165,
-      "title": "Claude Code harness: plugins, hooks, State Packet injection, resource posture",
-      "url": "https://github.com/kvnloo/z0intelligence/pull/165",
-      "createdAt": "2026-10-15T03:04:14Z",
-      "updatedAt": "2026-10-18T18:21:08Z"
-    },
-    {
       "key": "kvnloo/gods-eye-view:pull_request:166",
       "kind": "pull_request",
       "relationship": "owned",
@@ -406,18 +1526,6 @@
       "updatedAt": "2026-10-18T15:29:25Z"
     },
     {
-      "key": "raspberrypi/rpi-image-gen:pull_request:338",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "raspberrypi/rpi-image-gen",
-      "number": 338,
-      "title": "Clarify cloud-init example scope and Imager boundary",
-      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/338",
-      "createdAt": "2026-09-28T18:35:32Z",
-      "updatedAt": "2026-10-18T12:10:05Z"
-    },
-    {
       "key": "raspberrypi/usbboot:pull_request:400",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -428,30 +1536,6 @@
       "url": "https://github.com/raspberrypi/usbboot/pull/400",
       "createdAt": "2026-09-29T02:02:46Z",
       "updatedAt": "2026-10-18T11:16:31Z"
-    },
-    {
-      "key": "kvnloo/z0intelligence:pull_request:160",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/z0intelligence",
-      "number": 160,
-      "title": "ci: run core-unit on every pull request so it can be a required check",
-      "url": "https://github.com/kvnloo/z0intelligence/pull/160",
-      "createdAt": "2026-10-11T20:57:26Z",
-      "updatedAt": "2026-10-18T10:10:22Z"
-    },
-    {
-      "key": "trycua/cua:pull_request:5420",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "trycua/cua",
-      "number": 5420,
-      "title": "fix(cua-sdk): keep HTTP MCP reply waits cancellable (code-only)",
-      "url": "https://github.com/trycua/cua/pull/5420",
-      "createdAt": "2026-10-18T08:26:23Z",
-      "updatedAt": "2026-10-18T10:05:53Z"
     },
     {
       "key": "kvnloo/alysis-code:issue:1",
@@ -490,18 +1574,6 @@
       "updatedAt": "2026-10-18T09:20:25Z"
     },
     {
-      "key": "omacom/omarchy:pull_request:12955",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 12955,
-      "title": "fix: shell bar/tray/agents leftovers (#10989 #11021 #11022)",
-      "url": "https://github.com/omacom/omarchy/pull/12955",
-      "createdAt": "2026-09-22T21:51:52Z",
-      "updatedAt": "2026-10-18T09:06:20Z"
-    },
-    {
       "key": "omacom/omarchy:pull_request:13005",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -524,18 +1596,6 @@
       "url": "https://github.com/omacom/omarchy/pull/12932",
       "createdAt": "2026-09-22T18:38:23Z",
       "updatedAt": "2026-10-18T08:58:24Z"
-    },
-    {
-      "key": "kvnloo/z0intelligence:issue:169",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0intelligence",
-      "number": 169,
-      "title": "Promotion queue — z0intelligence (single canonical owner)",
-      "url": "https://github.com/kvnloo/z0intelligence/issues/169",
-      "createdAt": "2026-10-16T08:13:59Z",
-      "updatedAt": "2026-10-18T08:56:35Z"
     },
     {
       "key": "kvnloo/z0intelligence:pull_request:150",
@@ -598,18 +1658,6 @@
       "updatedAt": "2026-10-18T08:48:53Z"
     },
     {
-      "key": "kvnloo/omarchy:issue:110",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/omarchy",
-      "number": 110,
-      "title": "Promotion queue — Omarchy (canonical #110)",
-      "url": "https://github.com/kvnloo/omarchy/issues/110",
-      "createdAt": "2026-10-16T08:11:13Z",
-      "updatedAt": "2026-10-18T08:46:04Z"
-    },
-    {
       "key": "kvnloo/gh-contrib-archive:issue:7",
       "kind": "issue",
       "relationship": "owned",
@@ -632,18 +1680,6 @@
       "url": "https://github.com/kvnloo/z0live/pull/7",
       "createdAt": "2026-10-18T08:39:20Z",
       "updatedAt": "2026-10-18T08:43:17Z"
-    },
-    {
-      "key": "kvnloo/gh-contrib-archive:pull_request:89",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/gh-contrib-archive",
-      "number": 89,
-      "title": "ci: activate daily upstream landing reconciliation on main",
-      "url": "https://github.com/kvnloo/gh-contrib-archive/pull/89",
-      "createdAt": "2026-10-18T08:32:31Z",
-      "updatedAt": "2026-10-18T08:43:12Z"
     },
     {
       "key": "kvnloo/gh-contrib-archive:pull_request:90",
@@ -779,18 +1815,6 @@
       "updatedAt": "2026-10-18T08:36:56Z"
     },
     {
-      "key": "kvnloo/cua:issue:74",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/cua",
-      "number": 74,
-      "title": "[META: WAIT FOR EVIDENCE] Final upstream promotion DAG + posting queue",
-      "url": "https://github.com/kvnloo/cua/issues/74",
-      "createdAt": "2026-09-25T22:10:37Z",
-      "updatedAt": "2026-10-18T08:28:44Z"
-    },
-    {
       "key": "trycua/cua:pull_request:5362",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -912,18 +1936,6 @@
       "mergedAt": "2026-10-18T08:14:11Z"
     },
     {
-      "key": "kvnloo/omarchy:pull_request:83",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/omarchy",
-      "number": 83,
-      "title": "update: claim the update log atomically before root script(1) [READY TO POST]",
-      "url": "https://github.com/kvnloo/omarchy/pull/83",
-      "createdAt": "2026-09-26T03:52:22Z",
-      "updatedAt": "2026-10-18T08:13:08Z"
-    },
-    {
       "key": "kvnloo/rpi-image-gen:pull_request:1",
       "kind": "pull_request",
       "relationship": "owned",
@@ -995,18 +2007,6 @@
       "url": "https://github.com/kvnloo/newton/pull/9",
       "createdAt": "2026-09-28T01:46:28Z",
       "updatedAt": "2026-10-18T07:54:13Z"
-    },
-    {
-      "key": "kvnloo/t3code:issue:42",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/t3code",
-      "number": 42,
-      "title": "T3Code — single canonical promotion queue (#42)",
-      "url": "https://github.com/kvnloo/t3code/issues/42",
-      "createdAt": "2026-10-16T08:09:06Z",
-      "updatedAt": "2026-10-18T07:54:03Z"
     },
     {
       "key": "kvnloo/newton:pull_request:12",
@@ -1263,30 +2263,6 @@
       "updatedAt": "2026-10-18T05:29:25Z"
     },
     {
-      "key": "kvnloo/fframestudio:pull_request:21",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/fframestudio",
-      "number": 21,
-      "title": "feat(cinetic): review imported techniques in the Video Style Components lab",
-      "url": "https://github.com/kvnloo/fframestudio/pull/21",
-      "createdAt": "2026-10-18T05:28:46Z",
-      "updatedAt": "2026-10-18T05:28:46Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:issue:249",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 249,
-      "title": "Promotion queue — gods-eye-view (canonical #249)",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
-      "createdAt": "2026-10-16T08:13:10Z",
-      "updatedAt": "2026-10-18T05:25:59Z"
-    },
-    {
       "key": "kvnloo/uiua:pull_request:7",
       "kind": "pull_request",
       "relationship": "owned",
@@ -1297,30 +2273,6 @@
       "url": "https://github.com/kvnloo/uiua/pull/7",
       "createdAt": "2026-10-18T02:13:18Z",
       "updatedAt": "2026-10-18T05:25:46Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:pull_request:20",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/fframestudio",
-      "number": 20,
-      "title": "feat(taste): derive real color palettes from local screenshots with approval",
-      "url": "https://github.com/kvnloo/fframestudio/pull/20",
-      "createdAt": "2026-10-18T05:24:16Z",
-      "updatedAt": "2026-10-18T05:24:16Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:pull_request:19",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/fframestudio",
-      "number": 19,
-      "title": "Preview: wave 1 + #16 cinetic plan import + #17 Taste social collections",
-      "url": "https://github.com/kvnloo/fframestudio/pull/19",
-      "createdAt": "2026-10-18T05:12:00Z",
-      "updatedAt": "2026-10-18T05:12:00Z"
     },
     {
       "key": "kvnloo/uiua:pull_request:11",
@@ -1572,18 +2524,6 @@
       "updatedAt": "2026-10-18T04:50:06Z"
     },
     {
-      "key": "kvnloo/fframestudio:pull_request:17",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/fframestudio",
-      "number": 17,
-      "title": "feat(taste): opt-in X/Pinterest/YouTube reference collections via AgentWeb",
-      "url": "https://github.com/kvnloo/fframestudio/pull/17",
-      "createdAt": "2026-10-18T04:46:34Z",
-      "updatedAt": "2026-10-18T04:48:58Z"
-    },
-    {
       "key": "kvnloo/llama.bend:issue:12",
       "kind": "issue",
       "relationship": "owned",
@@ -1594,18 +2534,6 @@
       "url": "https://github.com/kvnloo/llama.bend/issues/12",
       "createdAt": "2026-10-16T08:07:49Z",
       "updatedAt": "2026-10-18T04:37:51Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:pull_request:16",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/fframestudio",
-      "number": 16,
-      "title": "feat(video): import cinetic technique picks as reviewed style-plan suggestions",
-      "url": "https://github.com/kvnloo/fframestudio/pull/16",
-      "createdAt": "2026-10-18T04:37:33Z",
-      "updatedAt": "2026-10-18T04:37:33Z"
     },
     {
       "key": "kvnloo/hermes-agent:issue:450",
@@ -8966,18 +9894,6 @@
       "updatedAt": "2026-10-17T02:17:25Z"
     },
     {
-      "key": "kvnloo/omarchy:pull_request:94",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/omarchy",
-      "number": 94,
-      "title": "theme-set-herdr-machines: lock in the per-user runtime dir [READY TO POST]",
-      "url": "https://github.com/kvnloo/omarchy/pull/94",
-      "createdAt": "2026-09-29T21:59:55Z",
-      "updatedAt": "2026-10-17T02:17:21Z"
-    },
-    {
       "key": "kvnloo/omarchy:pull_request:86",
       "kind": "pull_request",
       "relationship": "owned",
@@ -9000,18 +9916,6 @@
       "url": "https://github.com/kvnloo/omarchy/pull/85",
       "createdAt": "2026-09-26T04:07:51Z",
       "updatedAt": "2026-10-17T02:17:15Z"
-    },
-    {
-      "key": "kvnloo/omarchy:pull_request:84",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/omarchy",
-      "number": 84,
-      "title": "update-lock: refuse symlinked / non-regular lock entries [READY TO POST]",
-      "url": "https://github.com/kvnloo/omarchy/pull/84",
-      "createdAt": "2026-09-26T03:59:27Z",
-      "updatedAt": "2026-10-17T02:17:12Z"
     },
     {
       "key": "kvnloo/omarchy:pull_request:82",
@@ -9182,18 +10086,6 @@
       "updatedAt": "2026-10-17T02:16:27Z"
     },
     {
-      "key": "kvnloo/omarchy:pull_request:66",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/omarchy",
-      "number": 66,
-      "title": "provision-first-run: stop swallowing user-provision failures [READY TO POST]",
-      "url": "https://github.com/kvnloo/omarchy/pull/66",
-      "createdAt": "2026-09-26T02:52:05Z",
-      "updatedAt": "2026-10-17T02:16:24Z"
-    },
-    {
       "key": "kvnloo/omarchy:pull_request:65",
       "kind": "pull_request",
       "relationship": "owned",
@@ -9264,18 +10156,6 @@
       "url": "https://github.com/kvnloo/omarchy/pull/58",
       "createdAt": "2026-09-26T02:30:52Z",
       "updatedAt": "2026-10-17T02:16:01Z"
-    },
-    {
-      "key": "kvnloo/omarchy:pull_request:57",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/omarchy",
-      "number": 57,
-      "title": "Reject unknown targets in omarchy-install-dev-env [READY TO POST]",
-      "url": "https://github.com/kvnloo/omarchy/pull/57",
-      "createdAt": "2026-09-26T02:26:41Z",
-      "updatedAt": "2026-10-17T02:15:58Z"
     },
     {
       "key": "kvnloo/omarchy:pull_request:56",
@@ -11031,18 +11911,6 @@
       "updatedAt": "2026-10-17T02:03:54Z"
     },
     {
-      "key": "kvnloo/z0evals:pull_request:95",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/z0evals",
-      "number": 95,
-      "title": "fix: require frozen baselines and exact promotion decisions",
-      "url": "https://github.com/kvnloo/z0evals/pull/95",
-      "createdAt": "2026-10-10T02:18:35Z",
-      "updatedAt": "2026-10-17T02:03:37Z"
-    },
-    {
       "key": "kvnloo/z0evals:pull_request:94",
       "kind": "pull_request",
       "relationship": "owned",
@@ -11573,18 +12441,6 @@
       "url": "https://github.com/kvnloo/mcp-bench-router/pull/1",
       "createdAt": "2026-09-10T00:05:14Z",
       "updatedAt": "2026-10-17T02:00:35Z"
-    },
-    {
-      "key": "kvnloo/ComfyUI:pull_request:5",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/ComfyUI",
-      "number": 5,
-      "title": "exp: export bounded reconstruction evidence bundles",
-      "url": "https://github.com/kvnloo/ComfyUI/pull/5",
-      "createdAt": "2026-10-03T17:55:25Z",
-      "updatedAt": "2026-10-17T02:00:32Z"
     },
     {
       "key": "kvnloo/evolutionary-training:pull_request:1",
@@ -13934,18 +14790,6 @@
       "updatedAt": "2026-10-16T08:13:24Z"
     },
     {
-      "key": "kvnloo/z0evals:issue:99",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0evals",
-      "number": 99,
-      "title": "Promotion queue — kvnloo/z0evals → kvnloo/z0evals",
-      "url": "https://github.com/kvnloo/z0evals/issues/99",
-      "createdAt": "2026-10-16T08:12:44Z",
-      "updatedAt": "2026-10-16T08:12:44Z"
-    },
-    {
       "key": "kvnloo/OpenUSD:issue:51",
       "kind": "issue",
       "relationship": "owned",
@@ -15509,18 +16353,6 @@
       "url": "https://github.com/kvnloo/cua/pull/119",
       "createdAt": "2026-10-09T21:17:54Z",
       "updatedAt": "2026-10-13T22:13:50Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:issue:227",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 227,
-      "title": "DISASTER-04: DoR road-section evidence pilot, explicitly unknown freshness",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/227",
-      "createdAt": "2026-10-13T18:25:02Z",
-      "updatedAt": "2026-10-13T22:13:41Z"
     },
     {
       "key": "kvnloo/cua:issue:147",
@@ -17785,18 +18617,6 @@
       "url": "https://github.com/kvnloo/oh-my-pi/issues/149",
       "createdAt": "2026-10-11T07:04:00Z",
       "updatedAt": "2026-10-11T10:08:31Z"
-    },
-    {
-      "key": "kvnloo/crush:pull_request:15",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/crush",
-      "number": 15,
-      "title": "fix(prompt): one context inclusion per file identity",
-      "url": "https://github.com/kvnloo/crush/pull/15",
-      "createdAt": "2026-10-03T22:21:20Z",
-      "updatedAt": "2026-10-11T10:08:06Z"
     },
     {
       "key": "kvnloo/hermes-agent:issue:478",
@@ -20464,18 +21284,6 @@
       "url": "https://github.com/kvnloo/gods-eye-view/issues/116",
       "createdAt": "2026-09-29T07:46:46Z",
       "updatedAt": "2026-10-07T19:35:58Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:issue:963",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 963,
-      "title": "RFC(disaster): evaluate candidate routes against explicit access evidence",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/issues/963",
-      "createdAt": "2026-10-07T19:35:48Z",
-      "updatedAt": "2026-10-07T19:35:48Z"
     },
     {
       "key": "bilawalsidhu/gods-eye-view:issue:962",
@@ -23738,18 +24546,6 @@
       "updatedAt": "2026-10-03T21:45:47Z"
     },
     {
-      "key": "kvnloo/img2threejs:pull_request:16",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/img2threejs",
-      "number": 16,
-      "title": "docs: define reconstruction evidence v0 experiment",
-      "url": "https://github.com/kvnloo/img2threejs/pull/16",
-      "createdAt": "2026-10-03T17:30:03Z",
-      "updatedAt": "2026-10-03T21:45:43Z"
-    },
-    {
       "key": "NousResearch/hermes-agent:issue:132468",
       "kind": "issue",
       "relationship": "canonical_upstream",
@@ -24123,18 +24919,6 @@
       "url": "https://github.com/omacom/omarchy/pull/12967",
       "createdAt": "2026-09-22T23:27:39Z",
       "updatedAt": "2026-10-03T17:32:11Z"
-    },
-    {
-      "key": "kvnloo/img2threejs:pull_request:15",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/img2threejs",
-      "number": 15,
-      "title": "RFC: Dreamloop-RSI for replay-learned mesh fidelity",
-      "url": "https://github.com/kvnloo/img2threejs/pull/15",
-      "createdAt": "2026-10-01T17:48:04Z",
-      "updatedAt": "2026-10-03T17:30:27Z"
     },
     {
       "key": "kvnloo/ComfyUI:issue:3",
@@ -25392,78 +26176,6 @@
       "updatedAt": "2026-10-02T21:18:42Z"
     },
     {
-      "key": "img2threejs/img2threejs:issue:157",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "img2threejs/img2threejs",
-      "number": 157,
-      "title": "[Contribution]: contain region-derived artifact paths for #103",
-      "url": "https://github.com/img2threejs/img2threejs/issues/157",
-      "createdAt": "2026-10-01T14:53:34Z",
-      "updatedAt": "2026-10-02T21:18:40Z"
-    },
-    {
-      "key": "img2threejs/img2threejs:issue:156",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "img2threejs/img2threejs",
-      "number": 156,
-      "title": "[Contribution]: propagate stop reviews into local workflow state for #92",
-      "url": "https://github.com/img2threejs/img2threejs/issues/156",
-      "createdAt": "2026-10-01T14:53:33Z",
-      "updatedAt": "2026-10-02T21:18:38Z"
-    },
-    {
-      "key": "img2threejs/img2threejs:issue:155",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "img2threejs/img2threejs",
-      "number": 155,
-      "title": "[Contribution]: refuse incompatible finish coercion and preserve authored PBR values for #137",
-      "url": "https://github.com/img2threejs/img2threejs/issues/155",
-      "createdAt": "2026-10-01T14:41:20Z",
-      "updatedAt": "2026-10-02T21:18:36Z"
-    },
-    {
-      "key": "img2threejs/img2threejs:issue:154",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "img2threejs/img2threejs",
-      "number": 154,
-      "title": "[Contribution]: require domain review before continue for #122",
-      "url": "https://github.com/img2threejs/img2threejs/issues/154",
-      "createdAt": "2026-10-01T14:36:40Z",
-      "updatedAt": "2026-10-02T21:18:35Z"
-    },
-    {
-      "key": "img2threejs/img2threejs:issue:152",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "img2threejs/img2threejs",
-      "number": 152,
-      "title": "[Contribution]: propagate review action stop into workflow state for #92",
-      "url": "https://github.com/img2threejs/img2threejs/issues/152",
-      "createdAt": "2026-10-01T14:36:30Z",
-      "updatedAt": "2026-10-02T21:18:33Z"
-    },
-    {
-      "key": "img2threejs/img2threejs:issue:151",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "img2threejs/img2threejs",
-      "number": 151,
-      "title": "[Contribution]: sanitize material region output filenames for #103",
-      "url": "https://github.com/img2threejs/img2threejs/issues/151",
-      "createdAt": "2026-10-01T14:36:28Z",
-      "updatedAt": "2026-10-02T21:18:31Z"
-    },
-    {
       "key": "kvnloo/openmc:pull_request:8",
       "kind": "pull_request",
       "relationship": "owned",
@@ -26056,18 +26768,6 @@
       "updatedAt": "2026-10-02T09:36:18Z"
     },
     {
-      "key": "img2threejs/img2threejs:issue:153",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "img2threejs/img2threejs",
-      "number": 153,
-      "title": "[Contribution]: make completedPasses ledger disagreement strict for #119",
-      "url": "https://github.com/img2threejs/img2threejs/issues/153",
-      "createdAt": "2026-10-01T14:36:38Z",
-      "updatedAt": "2026-10-02T09:30:52Z"
-    },
-    {
       "key": "img2threejs/img2threejs:issue:158",
       "kind": "issue",
       "relationship": "canonical_upstream",
@@ -26150,18 +26850,6 @@
       "url": "https://github.com/omacom/omarchy/pull/10231",
       "createdAt": "2026-09-04T20:01:04Z",
       "updatedAt": "2026-10-02T04:00:07Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:10235",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 10235,
-      "title": "fix(fingerprint): retry verify after enroll settles reader",
-      "url": "https://github.com/omacom/omarchy/pull/10235",
-      "createdAt": "2026-09-04T20:01:18Z",
-      "updatedAt": "2026-10-02T03:54:10Z"
     },
     {
       "key": "omacom/omarchy:pull_request:11022",
@@ -27044,18 +27732,6 @@
       "updatedAt": "2026-10-01T15:06:55Z"
     },
     {
-      "key": "kvnloo/img2threejs:pull_request:12",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/img2threejs",
-      "number": 12,
-      "title": "fix(materials): preserve opaque interior crop evidence",
-      "url": "https://github.com/kvnloo/img2threejs/pull/12",
-      "createdAt": "2026-10-01T15:00:50Z",
-      "updatedAt": "2026-10-01T15:04:57Z"
-    },
-    {
       "key": "kvnloo/img2threejs:pull_request:14",
       "kind": "pull_request",
       "relationship": "owned",
@@ -27078,42 +27754,6 @@
       "url": "https://github.com/kvnloo/openclaw/pull/88",
       "createdAt": "2026-09-29T22:42:16Z",
       "updatedAt": "2026-10-01T14:55:46Z"
-    },
-    {
-      "key": "kvnloo/img2threejs:pull_request:11",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/img2threejs",
-      "number": 11,
-      "title": "fix(validation): reject stale completed-pass projections",
-      "url": "https://github.com/kvnloo/img2threejs/pull/11",
-      "createdAt": "2026-10-01T14:52:17Z",
-      "updatedAt": "2026-10-01T14:52:17Z"
-    },
-    {
-      "key": "kvnloo/img2threejs:pull_request:10",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/img2threejs",
-      "number": 10,
-      "title": "fix(materials): contain region-derived artifact paths",
-      "url": "https://github.com/kvnloo/img2threejs/pull/10",
-      "createdAt": "2026-10-01T14:51:11Z",
-      "updatedAt": "2026-10-01T14:51:11Z"
-    },
-    {
-      "key": "kvnloo/img2threejs:pull_request:9",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/img2threejs",
-      "number": 9,
-      "title": "fix(workflow): hard-stop local state on stop reviews",
-      "url": "https://github.com/kvnloo/img2threejs/pull/9",
-      "createdAt": "2026-10-01T14:50:24Z",
-      "updatedAt": "2026-10-01T14:50:24Z"
     },
     {
       "key": "kvnloo/z0intelligence:issue:92",
@@ -28874,18 +29514,6 @@
       "createdAt": "2026-10-01T06:15:03Z",
       "updatedAt": "2026-10-01T06:15:34Z",
       "mergedAt": "2026-10-01T06:15:34Z"
-    },
-    {
-      "key": "kvnloo/verified-oss-loop:pull_request:18",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/verified-oss-loop",
-      "number": 18,
-      "title": "docs: expose repository architecture to z0archy",
-      "url": "https://github.com/kvnloo/verified-oss-loop/pull/18",
-      "createdAt": "2026-10-01T06:15:10Z",
-      "updatedAt": "2026-10-01T06:15:10Z"
     },
     {
       "key": "kvnloo/hermes-talk:pull_request:5",
@@ -35256,18 +35884,6 @@
       "updatedAt": "2026-09-28T04:51:20Z"
     },
     {
-      "key": "kvnloo/gods-eye-view:issue:13",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 13,
-      "title": "Humanitarian focus: expand Environmental mission with wildfire perimeters",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/13",
-      "createdAt": "2026-09-28T04:36:04Z",
-      "updatedAt": "2026-09-28T04:36:04Z"
-    },
-    {
       "key": "kvnloo/gods-eye-view:issue:12",
       "kind": "issue",
       "relationship": "owned",
@@ -36935,18 +37551,6 @@
       "url": "https://github.com/kvnloo/omarchy/issues/87",
       "createdAt": "2026-09-27T17:12:54Z",
       "updatedAt": "2026-09-27T17:43:36Z"
-    },
-    {
-      "key": "img2threejs/img2threejs:pull_request:149",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "img2threejs/img2threejs",
-      "number": 149,
-      "title": "fix(workflow): re-run plugin gates after rig track",
-      "url": "https://github.com/img2threejs/img2threejs/pull/149",
-      "createdAt": "2026-09-27T17:36:51Z",
-      "updatedAt": "2026-09-27T17:39:56Z"
     },
     {
       "key": "kvnloo/hermes-agent:issue:255",
