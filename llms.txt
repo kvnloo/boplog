@@ -7,7 +7,7 @@ Author: Kevin Rajan
 GitHub: https://github.com/kvnloo
 X: https://x.com/_kvnloo
 Language: English
-Public project count: 266
+Public project count: 271
 Coverage: 2017–2026
 Last data refresh: 2026-10-19
 
@@ -77,7 +77,6 @@ The CLI and MCP server are read-only, dependency-free Python programs. They requ
 - [oh-my-pi](https://omp.sh/): My work on this fork: A coding agent with the IDE wired in.
 - [gods-eye-view](https://maptheworld.ai/): My work on this fork: 🌐 God's Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.
 - [cua](https://kvnloo.github.io/cua/): My work on this fork: Give AI agents computers they can use.
-- [factory-ryanbr-noop](https://github.com/kvnloo/factory-ryanbr-noop): My work on this fork: NOOP Your strap. Your data. Your machine. Offline, on-device, no cloud. Now in the all-new Liquid Metal design: one living look across iPhone, Android and Mac. ⬇&nbsp;Download · ❓&nbsp;FAQ ·…
 - [noctalia](https://docs.noctalia.dev/): My work on this fork: Noctalia is a native Wayland desktop shell for people who want a polished, configurable Linux desktop without stitching together a separate bar, launcher, notification daemon, lock screen,…
 - [o8](https://o8.run/): My work on this fork: Run a fleet of coding agents.
 - [z0intelligence](https://github.com/kvnloo/z0intelligence): personalized intelligence
@@ -85,6 +84,7 @@ The CLI and MCP server are read-only, dependency-free Python programs. They requ
 - [ace](https://kvnloo.github.io/ace/): Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.
 - [z0evals](https://kvnloo.github.io/z0evals/): Reproducible evaluations and public research reports for the Zer0 ecosystem.
 - [boplog](https://kvnloo.github.io/boplog/): Static public build log with llms.txt and a JSON project manifest for agents.
+- [.files](https://kvnloo.github.io/.files/): stay in flow while u code
 
 ## Year files
 
