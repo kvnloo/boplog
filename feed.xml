@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-20T10:30:30Z</updated>
+  <updated>2026-10-20T18:09:42Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>.files</title>
@@ -107,6 +107,15 @@
     <summary>My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.</summary>
   </entry>
   <entry>
+    <title>hermes-maintainer</title>
+    <id>https://kvnloo.github.io/hermes-maintainer/</id>
+    <link href="https://kvnloo.github.io/hermes-maintainer/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Ops board and playbook to drive NousResearch/hermes-agent to 0 open issues and PRs</summary>
+  </entry>
+  <entry>
     <title>img2threejs</title>
     <id>https://hoainho.github.io/img2threejs-showcase/</id>
     <link href="https://hoainho.github.io/img2threejs-showcase/"/>
@@ -143,13 +152,22 @@
     <summary>Living Manuals Instructions that come to life — as evidence-first, reversible 3D concept studies.</summary>
   </entry>
   <entry>
-    <title>noop</title>
-    <id>https://github.com/kvnloo/noop</id>
-    <link href="https://github.com/kvnloo/noop"/>
+    <title>llama.bend</title>
+    <id>https://github.com/kvnloo/llama.bend</id>
+    <link href="https://github.com/kvnloo/llama.bend"/>
     <published>2026-10-20T00:00:00Z</published>
     <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: Your strap. Your data. Your machine. Offline, on-device, no cloud. Now in the all-new Liquid Metal design: one living look across iPhone, Android and Mac. ⬇&amp;nbsp;Download · ❓&amp;nbsp;FAQ ·…</summary>
+    <summary>My work on this fork: runs Llama-architecture language models in Bend 2: SmolLM2-135M, SmolLM2-360M and SmolLM2-1.7B, on the CPU, with the same greedy tokens as PyTorch (transformers).</summary>
+  </entry>
+  <entry>
+    <title>noctalia</title>
+    <id>https://docs.noctalia.dev/</id>
+    <link href="https://docs.noctalia.dev/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Noctalia is a native Wayland desktop shell for people who want a polished, configurable Linux desktop without stitching together a separate bar, launcher, notification daemon, lock screen,…</summary>
   </entry>
   <entry>
     <title>oh-my-pi</title>
@@ -179,13 +197,22 @@
     <summary>My work on this fork: Prezograph is an open-source graph-based presentation tool for creating interactive presentations from versioned JSON—in the browser, with local CLI validation and portable single-file export.</summary>
   </entry>
   <entry>
-    <title>quackles</title>
-    <id>https://kvnloo.github.io/quackles/</id>
-    <link href="https://kvnloo.github.io/quackles/"/>
+    <title>ripple</title>
+    <id>https://github.com/kvnloo/ripple</id>
+    <link href="https://github.com/kvnloo/ripple"/>
     <published>2026-10-20T00:00:00Z</published>
     <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Microduck A mobile product study for Pollen Robotics’ Microduck, with five studio themes: Day, White, Blue, Dark and Night.</summary>
+    <summary>Ephemeral intent surface Dash mounts. Consumes AODL as data. Not HOTL, not a catalog.</summary>
+  </entry>
+  <entry>
+    <title>rpi-image-gen</title>
+    <id>https://www.raspberrypi.com/</id>
+    <link href="https://www.raspberrypi.com/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: = rpi-image-gen rpi-image-gen is a tool for creating custom software images for Raspberry Pi devices.</summary>
   </entry>
   <entry>
     <title>spark</title>
@@ -197,39 +224,12 @@
     <summary>My work on this fork: An advanced 3D Gaussian Splatting renderer for THREE.js Features - Getting Started - Documentation - FAQ Built by World Labs.</summary>
   </entry>
   <entry>
-    <title>z0</title>
-    <id>https://github.com/kvnloo/z0</id>
-    <link href="https://github.com/kvnloo/z0"/>
+    <title>taste-skill</title>
+    <id>https://tasteskill.dev/</id>
+    <link href="https://tasteskill.dev/"/>
     <published>2026-10-20T00:00:00Z</published>
     <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Early public scaffold for a Zer0-related experiment (placeholder repo).</summary>
-  </entry>
-  <entry>
-    <title>z0evals</title>
-    <id>https://kvnloo.github.io/z0evals/</id>
-    <link href="https://kvnloo.github.io/z0evals/"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Reproducible evaluations and public research reports for the Zer0 ecosystem.</summary>
-  </entry>
-  <entry>
-    <title>z0intelligence</title>
-    <id>https://github.com/kvnloo/z0intelligence</id>
-    <link href="https://github.com/kvnloo/z0intelligence"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>personalized intelligence</summary>
-  </entry>
-  <entry>
-    <title>z0live</title>
-    <id>https://github.com/kvnloo/z0live</id>
-    <link href="https://github.com/kvnloo/z0live"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Portable realtime conversational voice runtime and fixtures for Zer0.</summary>
+    <summary>My work on this fork: &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; The easiest way to get Taste Skill results: download TasteCode .</summary>
   </entry>
 </feed>
