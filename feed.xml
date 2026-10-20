@@ -5,8 +5,53 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-19T19:32:26Z</updated>
+  <updated>2026-10-20T00:46:14Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
+  <entry>
+    <title>ace</title>
+    <id>https://kvnloo.github.io/ace/</id>
+    <link href="https://kvnloo.github.io/ace/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.</summary>
+  </entry>
+  <entry>
+    <title>cad_to_dagmc</title>
+    <id>https://fusion-energy.github.io/cad_to_dagmc/</id>
+    <link href="https://fusion-energy.github.io/cad_to_dagmc/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Testing package and running examples with dependencies installed via pip Testing with Model Benchmark Zoo A minimal package that converts CAD geometry to DAGMC (h5m) files, unstructured mesh files…</summary>
+  </entry>
+  <entry>
+    <title>omarchy</title>
+    <id>https://omarchy.org/</id>
+    <link href="https://omarchy.org/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Omarchy is a beautiful, fun &amp; agentic Linux distribution by DHH.</summary>
+  </entry>
+  <entry>
+    <title>prezograph</title>
+    <id>https://yoheinakajima.github.io/prezograph/</id>
+    <link href="https://yoheinakajima.github.io/prezograph/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Prezograph is an open-source graph-based presentation tool for creating interactive presentations from versioned JSON—in the browser, with local CLI validation and portable single-file export.</summary>
+  </entry>
+  <entry>
+    <title>z0intelligence</title>
+    <id>https://github.com/kvnloo/z0intelligence</id>
+    <link href="https://github.com/kvnloo/z0intelligence"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>personalized intelligence</summary>
+  </entry>
   <entry>
     <title>.files</title>
     <id>https://kvnloo.github.io/.files/</id>
@@ -15,6 +60,15 @@
     <updated>2026-10-19T00:00:00Z</updated>
     <category term="dev"/>
     <summary>stay in flow while u code</summary>
+  </entry>
+  <entry>
+    <title>ag-ui</title>
+    <id>https://ag-ui.com/</id>
+    <link href="https://ag-ui.com/"/>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.</summary>
   </entry>
   <entry>
     <title>agent-orchestrator</title>
@@ -44,6 +98,15 @@
     <summary>My work on this fork: The first open-source harness builder for AI coding.</summary>
   </entry>
   <entry>
+    <title>beads</title>
+    <id>https://github.com/kvnloo/beads</id>
+    <link href="https://github.com/kvnloo/beads"/>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: bd - Beads Distributed graph issue tracker for AI agents, powered by Dolt.</summary>
+  </entry>
+  <entry>
     <title>boplog</title>
     <id>https://kvnloo.github.io/boplog/</id>
     <link href="https://kvnloo.github.io/boplog/"/>
@@ -53,6 +116,24 @@
     <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
   </entry>
   <entry>
+    <title>brave-core</title>
+    <id>https://github.com/kvnloo/brave-core</id>
+    <link href="https://github.com/kvnloo/brave-core"/>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Brave Core Brave Core is a set of changes, APIs, and scripts used for customizing Chromium to make the Brave browser.</summary>
+  </entry>
+  <entry>
+    <title>buzz</title>
+    <id>https://github.com/kvnloo/buzz</id>
+    <link href="https://github.com/kvnloo/buzz"/>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🐝 A workspace where humans and agents build together, on a relay you own.</summary>
+  </entry>
+  <entry>
     <title>career-ops</title>
     <id>https://github.com/kvnloo/career-ops</id>
     <link href="https://github.com/kvnloo/career-ops"/>
@@ -60,6 +141,15 @@
     <updated>2026-10-19T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: The open-source AI job search agent.</summary>
+  </entry>
+  <entry>
+    <title>chromium</title>
+    <id>https://chromium.googlesource.com/chromium/src/</id>
+    <link href="https://chromium.googlesource.com/chromium/src/"/>
+    <published>2026-10-19T00:00:00Z</published>
+    <updated>2026-10-19T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.</summary>
   </entry>
   <entry>
     <title>claude-mem</title>
@@ -134,102 +224,12 @@
     <summary>My work on this fork: 🦌 DeerFlow - 2.0 English | 中文 | 日本語 | Français | Русский | Português | 한국어 On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2.</summary>
   </entry>
   <entry>
-    <title>ds4</title>
-    <id>https://github.com/kvnloo/ds4</id>
-    <link href="https://github.com/kvnloo/ds4"/>
+    <title>dimos-fork</title>
+    <id>https://dimensionalos.com/</id>
+    <link href="https://dimensionalos.com/"/>
     <published>2026-10-19T00:00:00Z</published>
     <updated>2026-10-19T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: DwarfStar aims to be the best way to run a few excellent large language models on consumer hardware (that is, hardware that people can actually own).</summary>
-  </entry>
-  <entry>
-    <title>fframestudio</title>
-    <id>https://github.com/kvnloo/fframestudio</id>
-    <link href="https://github.com/kvnloo/fframestudio"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>I built fframestudio on top of fframes because I love how powerful the library is.</summary>
-  </entry>
-  <entry>
-    <title>garden-room</title>
-    <id>https://github.com/kvnloo/garden-room</id>
-    <link href="https://github.com/kvnloo/garden-room"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Phone 3D room planner for houseplants: three.js, voice, AR, zen-garden care</summary>
-  </entry>
-  <entry>
-    <title>Genesis</title>
-    <id>https://github.com/kvnloo/Genesis</id>
-    <link href="https://github.com/kvnloo/Genesis"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: World Genesis World is a simulation platform for physical AI developments.</summary>
-  </entry>
-  <entry>
-    <title>gh-contrib-archive</title>
-    <id>https://kvnloo.github.io/gh-contrib-archive/</id>
-    <link href="https://kvnloo.github.io/gh-contrib-archive/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
-  </entry>
-  <entry>
-    <title>gods-eye-view</title>
-    <id>https://maptheworld.ai/</id>
-    <link href="https://maptheworld.ai/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: 🌐 God&apos;s Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.</summary>
-  </entry>
-  <entry>
-    <title>hermes-agent</title>
-    <id>https://hermes-agent.nousresearch.com/</id>
-    <link href="https://hermes-agent.nousresearch.com/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.</summary>
-  </entry>
-  <entry>
-    <title>img2threejs</title>
-    <id>https://hoainho.github.io/img2threejs-showcase/</id>
-    <link href="https://hoainho.github.io/img2threejs-showcase/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Rebuild the object in a reference image as a code-only, procedural Three.js model.</summary>
-  </entry>
-  <entry>
-    <title>immich</title>
-    <id>https://immich.app/</id>
-    <link href="https://immich.app/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: High performance self-hosted photo and video management solution Català Español Français Italiano 日本語 한국어 Deutsch Nederlands Türkçe 简体中文 正體中文 Українська Русский Български Português Brasileiro…</summary>
-  </entry>
-  <entry>
-    <title>interface</title>
-    <id>https://app.aave.com/</id>
-    <link href="https://app.aave.com/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Aave protocol interface :ghost: An open source interface for the decentralized liquidity protocol Aave Enabling users to: - Manage and monitor their positions on the Aave Protocol, and the overall…</summary>
-  </entry>
-  <entry>
-    <title>kerdoios</title>
-    <id>https://github.com/kvnloo/kerdoios</id>
-    <link href="https://github.com/kvnloo/kerdoios"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)</summary>
+    <summary>My work on this fork: The Agentive Operating System for Physical Space Docs • Hardware • Installation • Agent CLI &amp; MCP • Blueprints • dimTELE: Remote Teleop • Development ⚠️ Pre-Release Beta ⚠️ About Dimensional is…</summary>
   </entry>
 </feed>
