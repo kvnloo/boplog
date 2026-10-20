@@ -5,8 +5,17 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-20T00:46:14Z</updated>
+  <updated>2026-10-20T10:30:30Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
+  <entry>
+    <title>.files</title>
+    <id>https://kvnloo.github.io/.files/</id>
+    <link href="https://kvnloo.github.io/.files/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>stay in flow while u code</summary>
+  </entry>
   <entry>
     <title>ace</title>
     <id>https://kvnloo.github.io/ace/</id>
@@ -15,6 +24,33 @@
     <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.</summary>
+  </entry>
+  <entry>
+    <title>aodl</title>
+    <id>https://kvnloo.github.io/aodl/</id>
+    <link href="https://kvnloo.github.io/aodl/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>AODL/HOTL: typed IR for agent orchestration graphs (schema + fail-closed validator, not a scheduler)</summary>
+  </entry>
+  <entry>
+    <title>Apollo-11</title>
+    <id>https://github.com/kvnloo/Apollo-11</id>
+    <link href="https://github.com/kvnloo/Apollo-11"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: [![NASA][1]][2] [![SWH]][SWHURL] [![Comanche]][ComancheMilestone] [![Luminary]][LuminaryMilestone] 🌐 [Azerbaijani][AZ], [bahasa Indonesia][ID], [Basa Jawa][JV], [Català][CA], [Čeština][CZ],…</summary>
+  </entry>
+  <entry>
+    <title>boplog</title>
+    <id>https://kvnloo.github.io/boplog/</id>
+    <link href="https://kvnloo.github.io/boplog/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
   </entry>
   <entry>
     <title>cad_to_dagmc</title>
@@ -26,13 +62,112 @@
     <summary>My work on this fork: Testing package and running examples with dependencies installed via pip Testing with Model Benchmark Zoo A minimal package that converts CAD geometry to DAGMC (h5m) files, unstructured mesh files…</summary>
   </entry>
   <entry>
-    <title>omarchy</title>
-    <id>https://omarchy.org/</id>
-    <link href="https://omarchy.org/"/>
+    <title>company-os</title>
+    <id>https://github.com/kvnloo/company-os</id>
+    <link href="https://github.com/kvnloo/company-os"/>
     <published>2026-10-20T00:00:00Z</published>
     <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: Omarchy is a beautiful, fun &amp; agentic Linux distribution by DHH.</summary>
+    <summary>Thin Company OS HUD for Hermes Agent. Projection only — not a control plane.</summary>
+  </entry>
+  <entry>
+    <title>dash</title>
+    <id>https://github.com/kvnloo/dash</id>
+    <link href="https://github.com/kvnloo/dash"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Phone UI for laptop coding agents over Tailscale</summary>
+  </entry>
+  <entry>
+    <title>fframestudio</title>
+    <id>https://github.com/kvnloo/fframestudio</id>
+    <link href="https://github.com/kvnloo/fframestudio"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>I built fframestudio on top of fframes because I love how powerful the library is.</summary>
+  </entry>
+  <entry>
+    <title>gods-eye-view</title>
+    <id>https://maptheworld.ai/</id>
+    <link href="https://maptheworld.ai/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🌐 God&apos;s Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.</summary>
+  </entry>
+  <entry>
+    <title>hermes-agent</title>
+    <id>https://hermes-agent.nousresearch.com/</id>
+    <link href="https://hermes-agent.nousresearch.com/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.</summary>
+  </entry>
+  <entry>
+    <title>img2threejs</title>
+    <id>https://hoainho.github.io/img2threejs-showcase/</id>
+    <link href="https://hoainho.github.io/img2threejs-showcase/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Rebuild the object in a reference image as a code-only, procedural Three.js model.</summary>
+  </entry>
+  <entry>
+    <title>kerdoios</title>
+    <id>https://github.com/kvnloo/kerdoios</id>
+    <link href="https://github.com/kvnloo/kerdoios"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)</summary>
+  </entry>
+  <entry>
+    <title>lawnchair</title>
+    <id>https://lawnchair.app/</id>
+    <link href="https://lawnchair.app/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 16 Lawnchair is a free, open-source home app for Android.</summary>
+  </entry>
+  <entry>
+    <title>living-manuals</title>
+    <id>https://github.com/kvnloo/living-manuals</id>
+    <link href="https://github.com/kvnloo/living-manuals"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Living Manuals Instructions that come to life — as evidence-first, reversible 3D concept studies.</summary>
+  </entry>
+  <entry>
+    <title>noop</title>
+    <id>https://github.com/kvnloo/noop</id>
+    <link href="https://github.com/kvnloo/noop"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Your strap. Your data. Your machine. Offline, on-device, no cloud. Now in the all-new Liquid Metal design: one living look across iPhone, Android and Mac. ⬇&amp;nbsp;Download · ❓&amp;nbsp;FAQ ·…</summary>
+  </entry>
+  <entry>
+    <title>oh-my-pi</title>
+    <id>https://omp.sh/</id>
+    <link href="https://omp.sh/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: A coding agent with the IDE wired in.</summary>
+  </entry>
+  <entry>
+    <title>omalauncher</title>
+    <id>https://github.com/kvnloo/omalauncher</id>
+    <link href="https://github.com/kvnloo/omalauncher"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: An Android home screen with the look of Omarchy, and an optional Arch Linux ARM system next to your phone apps.</summary>
   </entry>
   <entry>
     <title>prezograph</title>
@@ -44,6 +179,42 @@
     <summary>My work on this fork: Prezograph is an open-source graph-based presentation tool for creating interactive presentations from versioned JSON—in the browser, with local CLI validation and portable single-file export.</summary>
   </entry>
   <entry>
+    <title>quackles</title>
+    <id>https://kvnloo.github.io/quackles/</id>
+    <link href="https://kvnloo.github.io/quackles/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Microduck A mobile product study for Pollen Robotics’ Microduck, with five studio themes: Day, White, Blue, Dark and Night.</summary>
+  </entry>
+  <entry>
+    <title>spark</title>
+    <id>https://github.com/kvnloo/spark</id>
+    <link href="https://github.com/kvnloo/spark"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: An advanced 3D Gaussian Splatting renderer for THREE.js Features - Getting Started - Documentation - FAQ Built by World Labs.</summary>
+  </entry>
+  <entry>
+    <title>z0</title>
+    <id>https://github.com/kvnloo/z0</id>
+    <link href="https://github.com/kvnloo/z0"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Early public scaffold for a Zer0-related experiment (placeholder repo).</summary>
+  </entry>
+  <entry>
+    <title>z0evals</title>
+    <id>https://kvnloo.github.io/z0evals/</id>
+    <link href="https://kvnloo.github.io/z0evals/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Reproducible evaluations and public research reports for the Zer0 ecosystem.</summary>
+  </entry>
+  <entry>
     <title>z0intelligence</title>
     <id>https://github.com/kvnloo/z0intelligence</id>
     <link href="https://github.com/kvnloo/z0intelligence"/>
@@ -53,183 +224,12 @@
     <summary>personalized intelligence</summary>
   </entry>
   <entry>
-    <title>.files</title>
-    <id>https://kvnloo.github.io/.files/</id>
-    <link href="https://kvnloo.github.io/.files/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
+    <title>z0live</title>
+    <id>https://github.com/kvnloo/z0live</id>
+    <link href="https://github.com/kvnloo/z0live"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>stay in flow while u code</summary>
-  </entry>
-  <entry>
-    <title>ag-ui</title>
-    <id>https://ag-ui.com/</id>
-    <link href="https://ag-ui.com/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.</summary>
-  </entry>
-  <entry>
-    <title>agent-orchestrator</title>
-    <id>https://composio.dev/</id>
-    <link href="https://composio.dev/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Orchestrator.inc Plan, run, and supervise coding agents from one place.</summary>
-  </entry>
-  <entry>
-    <title>Apollo-11</title>
-    <id>https://github.com/kvnloo/Apollo-11</id>
-    <link href="https://github.com/kvnloo/Apollo-11"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: [![NASA][1]][2] [![SWH]][SWHURL] [![Comanche]][ComancheMilestone] [![Luminary]][LuminaryMilestone] 🌐 [Azerbaijani][AZ], [bahasa Indonesia][ID], [Basa Jawa][JV], [Català][CA], [Čeština][CZ],…</summary>
-  </entry>
-  <entry>
-    <title>Archon</title>
-    <id>https://archon.diy/</id>
-    <link href="https://archon.diy/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The first open-source harness builder for AI coding.</summary>
-  </entry>
-  <entry>
-    <title>beads</title>
-    <id>https://github.com/kvnloo/beads</id>
-    <link href="https://github.com/kvnloo/beads"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: bd - Beads Distributed graph issue tracker for AI agents, powered by Dolt.</summary>
-  </entry>
-  <entry>
-    <title>boplog</title>
-    <id>https://kvnloo.github.io/boplog/</id>
-    <link href="https://kvnloo.github.io/boplog/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
-  </entry>
-  <entry>
-    <title>brave-core</title>
-    <id>https://github.com/kvnloo/brave-core</id>
-    <link href="https://github.com/kvnloo/brave-core"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Brave Core Brave Core is a set of changes, APIs, and scripts used for customizing Chromium to make the Brave browser.</summary>
-  </entry>
-  <entry>
-    <title>buzz</title>
-    <id>https://github.com/kvnloo/buzz</id>
-    <link href="https://github.com/kvnloo/buzz"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: 🐝 A workspace where humans and agents build together, on a relay you own.</summary>
-  </entry>
-  <entry>
-    <title>career-ops</title>
-    <id>https://github.com/kvnloo/career-ops</id>
-    <link href="https://github.com/kvnloo/career-ops"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The open-source AI job search agent.</summary>
-  </entry>
-  <entry>
-    <title>chromium</title>
-    <id>https://chromium.googlesource.com/chromium/src/</id>
-    <link href="https://chromium.googlesource.com/chromium/src/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.</summary>
-  </entry>
-  <entry>
-    <title>claude-mem</title>
-    <id>https://claude-mem.ai/</id>
-    <link href="https://claude-mem.ai/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; 🇨🇳 中文 • 🇹🇼 繁體中文 • 🇯🇵 日本語 • 🇵🇹 Português • 🇧🇷 Português • 🇰🇷 한국어 • 🇪🇸 Español • 🇩🇪 Deutsch • 🇫🇷 Français • 🇮🇱 עברית • 🇸🇦 العربية • 🇷🇺…</summary>
-  </entry>
-  <entry>
-    <title>ComfyUI</title>
-    <id>https://www.comfy.org/</id>
-    <link href="https://www.comfy.org/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The most powerful and modular AI engine for content creation.</summary>
-  </entry>
-  <entry>
-    <title>CopilotKit</title>
-    <id>https://docs.copilotkit.ai/</id>
-    <link href="https://docs.copilotkit.ai/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Docs · Examples · CopilotKit Intelligence · Discord Build agent-native applications — on any framework, on any surface.</summary>
-  </entry>
-  <entry>
-    <title>Corporate-Serf-Dashboard</title>
-    <id>https://github.com/kvnloo/Corporate-Serf-Dashboard</id>
-    <link href="https://github.com/kvnloo/Corporate-Serf-Dashboard"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Corporate Serf Dashboard Charts your KovaaK&apos;s history and each new run as you play, so you can see whether you&apos;re improving, where you&apos;re weak, and what to train next.</summary>
-  </entry>
-  <entry>
-    <title>crush</title>
-    <id>https://github.com/kvnloo/crush</id>
-    <link href="https://github.com/kvnloo/crush"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Your new coding bestie, now available in your favourite terminal.</summary>
-  </entry>
-  <entry>
-    <title>cua</title>
-    <id>https://kvnloo.github.io/cua/</id>
-    <link href="https://kvnloo.github.io/cua/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Give AI agents computers they can use.</summary>
-  </entry>
-  <entry>
-    <title>dash</title>
-    <id>https://github.com/kvnloo/dash</id>
-    <link href="https://github.com/kvnloo/dash"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Phone UI for laptop coding agents over Tailscale</summary>
-  </entry>
-  <entry>
-    <title>deer-flow</title>
-    <id>https://deerflow.tech/</id>
-    <link href="https://deerflow.tech/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: 🦌 DeerFlow - 2.0 English | 中文 | 日本語 | Français | Русский | Português | 한국어 On February 28th, 2026, DeerFlow claimed the 🏆 #1 spot on GitHub Trending following the launch of version 2.</summary>
-  </entry>
-  <entry>
-    <title>dimos-fork</title>
-    <id>https://dimensionalos.com/</id>
-    <link href="https://dimensionalos.com/"/>
-    <published>2026-10-19T00:00:00Z</published>
-    <updated>2026-10-19T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The Agentive Operating System for Physical Space Docs • Hardware • Installation • Agent CLI &amp; MCP • Blueprints • dimTELE: Remote Teleop • Development ⚠️ Pre-Release Beta ⚠️ About Dimensional is…</summary>
+    <summary>Portable realtime conversational voice runtime and fixtures for Zer0.</summary>
   </entry>
 </feed>
