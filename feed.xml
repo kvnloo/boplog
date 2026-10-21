@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-20T18:09:42Z</updated>
+  <updated>2026-10-21T00:12:40Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>.files</title>
@@ -17,6 +17,15 @@
     <summary>stay in flow while u code</summary>
   </entry>
   <entry>
+    <title>A2UI</title>
+    <id>https://a2ui.org/</id>
+    <link href="https://a2ui.org/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Agent-to-User Interface A2UI is an open-source project, complete with a format optimized for representing updatable agent-generated UIs and an initial set of renderers, that allows agents to…</summary>
+  </entry>
+  <entry>
     <title>ace</title>
     <id>https://kvnloo.github.io/ace/</id>
     <link href="https://kvnloo.github.io/ace/"/>
@@ -24,6 +33,15 @@
     <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.</summary>
+  </entry>
+  <entry>
+    <title>agent-orchestrator</title>
+    <id>https://composio.dev/</id>
+    <link href="https://composio.dev/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Orchestrator.inc Plan, run, and supervise coding agents from one place.</summary>
   </entry>
   <entry>
     <title>aodl</title>
@@ -53,6 +71,24 @@
     <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
   </entry>
   <entry>
+    <title>bun</title>
+    <id>https://bun.com/</id>
+    <link href="https://bun.com/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Documentation &amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp; Discord &amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp; Issues &amp;nbsp;&amp;nbsp;•&amp;nbsp;&amp;nbsp; Roadmap Read the docs → What is Bun?</summary>
+  </entry>
+  <entry>
+    <title>buzz</title>
+    <id>https://github.com/kvnloo/buzz</id>
+    <link href="https://github.com/kvnloo/buzz"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🐝 A workspace where humans and agents build together, on a relay you own.</summary>
+  </entry>
+  <entry>
     <title>cad_to_dagmc</title>
     <id>https://fusion-energy.github.io/cad_to_dagmc/</id>
     <link href="https://fusion-energy.github.io/cad_to_dagmc/"/>
@@ -60,6 +96,33 @@
     <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: Testing package and running examples with dependencies installed via pip Testing with Model Benchmark Zoo A minimal package that converts CAD geometry to DAGMC (h5m) files, unstructured mesh files…</summary>
+  </entry>
+  <entry>
+    <title>claude-flow</title>
+    <id>https://discord.com/invite/dfxmpwkG2D</id>
+    <link href="https://discord.com/invite/dfxmpwkG2D"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: An agent meta-harness for Claude Code and Codex.</summary>
+  </entry>
+  <entry>
+    <title>cocoindex</title>
+    <id>https://cocoindex.io/</id>
+    <link href="https://cocoindex.io/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Your agents deserve fresh context.</summary>
+  </entry>
+  <entry>
+    <title>CodexBar</title>
+    <id>https://codex.bar/</id>
+    <link href="https://codex.bar/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🎚️ — May your tokens never run out.</summary>
   </entry>
   <entry>
     <title>company-os</title>
@@ -80,6 +143,24 @@
     <summary>Phone UI for laptop coding agents over Tailscale</summary>
   </entry>
   <entry>
+    <title>dimos-fork</title>
+    <id>https://dimensionalos.com/</id>
+    <link href="https://dimensionalos.com/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The Agentive Operating System for Physical Space Docs • Hardware • Installation • Agent CLI &amp; MCP • Blueprints • dimTELE: Remote Teleop • Development ⚠️ Pre-Release Beta ⚠️ About Dimensional is…</summary>
+  </entry>
+  <entry>
+    <title>E2B</title>
+    <id>https://e2b.dev/docs</id>
+    <link href="https://e2b.dev/docs"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: ---&gt; What is E2B? E2B is an open-source infrastructure that allows you to run AI-generated code in secure isolated sandboxes in the cloud. To start and control sandboxes, use our JavaScript SDK or…</summary>
+  </entry>
+  <entry>
     <title>fframestudio</title>
     <id>https://github.com/kvnloo/fframestudio</id>
     <link href="https://github.com/kvnloo/fframestudio"/>
@@ -87,6 +168,33 @@
     <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
     <summary>I built fframestudio on top of fframes because I love how powerful the library is.</summary>
+  </entry>
+  <entry>
+    <title>fizzy</title>
+    <id>https://fizzy.do/</id>
+    <link href="https://fizzy.do/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: This is the source code of Fizzy, the Kanban tracking tool for issues and ideas by 37signals.</summary>
+  </entry>
+  <entry>
+    <title>fx0</title>
+    <id>https://fx0.vercel.dev/</id>
+    <link href="https://fx0.vercel.dev/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: fx0 is an open-source, lightweight design agent built with libfx.</summary>
+  </entry>
+  <entry>
+    <title>GitNexus</title>
+    <id>https://gitnexus.vercel.app/</id>
+    <link href="https://gitnexus.vercel.app/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The context engine for Enterprise Codebases Indexes any codebase into a knowledge graph — every dependency, call chain, cluster, and execution flow — then exposes it through smart MCP tools so AI…</summary>
   </entry>
   <entry>
     <title>gods-eye-view</title>
@@ -116,120 +224,12 @@
     <summary>Ops board and playbook to drive NousResearch/hermes-agent to 0 open issues and PRs</summary>
   </entry>
   <entry>
-    <title>img2threejs</title>
-    <id>https://hoainho.github.io/img2threejs-showcase/</id>
-    <link href="https://hoainho.github.io/img2threejs-showcase/"/>
+    <title>hermes-tern</title>
+    <id>https://github.com/kvnloo/hermes-tern</id>
+    <link href="https://github.com/kvnloo/hermes-tern"/>
     <published>2026-10-20T00:00:00Z</published>
     <updated>2026-10-20T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: Rebuild the object in a reference image as a code-only, procedural Three.js model.</summary>
-  </entry>
-  <entry>
-    <title>kerdoios</title>
-    <id>https://github.com/kvnloo/kerdoios</id>
-    <link href="https://github.com/kvnloo/kerdoios"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)</summary>
-  </entry>
-  <entry>
-    <title>lawnchair</title>
-    <id>https://lawnchair.app/</id>
-    <link href="https://lawnchair.app/"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: 16 Lawnchair is a free, open-source home app for Android.</summary>
-  </entry>
-  <entry>
-    <title>living-manuals</title>
-    <id>https://github.com/kvnloo/living-manuals</id>
-    <link href="https://github.com/kvnloo/living-manuals"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Living Manuals Instructions that come to life — as evidence-first, reversible 3D concept studies.</summary>
-  </entry>
-  <entry>
-    <title>llama.bend</title>
-    <id>https://github.com/kvnloo/llama.bend</id>
-    <link href="https://github.com/kvnloo/llama.bend"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: runs Llama-architecture language models in Bend 2: SmolLM2-135M, SmolLM2-360M and SmolLM2-1.7B, on the CPU, with the same greedy tokens as PyTorch (transformers).</summary>
-  </entry>
-  <entry>
-    <title>noctalia</title>
-    <id>https://docs.noctalia.dev/</id>
-    <link href="https://docs.noctalia.dev/"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Noctalia is a native Wayland desktop shell for people who want a polished, configurable Linux desktop without stitching together a separate bar, launcher, notification daemon, lock screen,…</summary>
-  </entry>
-  <entry>
-    <title>oh-my-pi</title>
-    <id>https://omp.sh/</id>
-    <link href="https://omp.sh/"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: A coding agent with the IDE wired in.</summary>
-  </entry>
-  <entry>
-    <title>omalauncher</title>
-    <id>https://github.com/kvnloo/omalauncher</id>
-    <link href="https://github.com/kvnloo/omalauncher"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: An Android home screen with the look of Omarchy, and an optional Arch Linux ARM system next to your phone apps.</summary>
-  </entry>
-  <entry>
-    <title>prezograph</title>
-    <id>https://yoheinakajima.github.io/prezograph/</id>
-    <link href="https://yoheinakajima.github.io/prezograph/"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Prezograph is an open-source graph-based presentation tool for creating interactive presentations from versioned JSON—in the browser, with local CLI validation and portable single-file export.</summary>
-  </entry>
-  <entry>
-    <title>ripple</title>
-    <id>https://github.com/kvnloo/ripple</id>
-    <link href="https://github.com/kvnloo/ripple"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Ephemeral intent surface Dash mounts. Consumes AODL as data. Not HOTL, not a catalog.</summary>
-  </entry>
-  <entry>
-    <title>rpi-image-gen</title>
-    <id>https://www.raspberrypi.com/</id>
-    <link href="https://www.raspberrypi.com/"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: = rpi-image-gen rpi-image-gen is a tool for creating custom software images for Raspberry Pi devices.</summary>
-  </entry>
-  <entry>
-    <title>spark</title>
-    <id>https://github.com/kvnloo/spark</id>
-    <link href="https://github.com/kvnloo/spark"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: An advanced 3D Gaussian Splatting renderer for THREE.js Features - Getting Started - Documentation - FAQ Built by World Labs.</summary>
-  </entry>
-  <entry>
-    <title>taste-skill</title>
-    <id>https://tasteskill.dev/</id>
-    <link href="https://tasteskill.dev/"/>
-    <published>2026-10-20T00:00:00Z</published>
-    <updated>2026-10-20T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; The easiest way to get Taste Skill results: download TasteCode .</summary>
+    <summary>My work on this fork: Hermes Agent , drawn natively by Tern .</summary>
   </entry>
 </feed>
