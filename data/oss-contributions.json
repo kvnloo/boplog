@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T10:46:24Z",
+  "generatedAt": "2026-10-21T18:22:10Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -272,28 +272,608 @@
   },
   "contributions": [
     {
-      "key": "kvnloo/dash:pull_request:86",
+      "key": "kvnloo/dash:pull_request:76",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/dash",
+      "number": 76,
+      "title": "integrate: Dash 2026-10-20 — merge stage/live/z0bridge, fix chat history, send, keyboard and nav; add thinking orbs",
+      "url": "https://github.com/kvnloo/dash/pull/76",
+      "createdAt": "2026-10-21T01:42:16Z",
+      "updatedAt": "2026-10-21T18:18:08Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:103",
       "kind": "pull_request",
       "relationship": "owned",
       "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 103,
+      "title": "Add composer context view and header chat display settings",
+      "url": "https://github.com/kvnloo/dash/pull/103",
+      "createdAt": "2026-10-21T18:10:53Z",
+      "updatedAt": "2026-10-21T18:11:03Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:102",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 102,
+      "title": "Reflow stat grids for narrow screens and large type",
+      "url": "https://github.com/kvnloo/dash/pull/102",
+      "createdAt": "2026-10-21T18:08:36Z",
+      "updatedAt": "2026-10-21T18:08:48Z"
+    },
+    {
+      "key": "kvnloo/z0live:issue:8",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0live",
+      "number": 8,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/z0live/issues/8",
+      "createdAt": "2026-10-19T17:08:06Z",
+      "updatedAt": "2026-10-21T18:03:12Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:issue:177",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0intelligence",
+      "number": 177,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/z0intelligence/issues/177",
+      "createdAt": "2026-10-20T05:14:19Z",
+      "updatedAt": "2026-10-21T18:03:05Z"
+    },
+    {
+      "key": "kvnloo/z0evals:issue:100",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0evals",
+      "number": 100,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/z0evals/issues/100",
+      "createdAt": "2026-10-20T05:15:07Z",
+      "updatedAt": "2026-10-21T18:02:57Z"
+    },
+    {
+      "key": "kvnloo/oh-my-pi:issue:158",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/oh-my-pi",
+      "number": 158,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/oh-my-pi/issues/158",
+      "createdAt": "2026-10-20T05:16:24Z",
+      "updatedAt": "2026-10-21T18:02:25Z"
+    },
+    {
+      "key": "kvnloo/noop:issue:75",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/noop",
+      "number": 75,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/noop/issues/75",
+      "createdAt": "2026-10-20T05:17:09Z",
+      "updatedAt": "2026-10-21T18:02:15Z"
+    },
+    {
+      "key": "kvnloo/lawnchair:issue:15",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/lawnchair",
+      "number": 15,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/lawnchair/issues/15",
+      "createdAt": "2026-10-19T17:07:10Z",
+      "updatedAt": "2026-10-21T18:02:01Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:issue:509",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/hermes-agent",
+      "number": 509,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/hermes-agent/issues/509",
+      "createdAt": "2026-10-17T07:46:30Z",
+      "updatedAt": "2026-10-21T18:01:48Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:issue:23",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/fframestudio",
+      "number": 23,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/fframestudio/issues/23",
+      "createdAt": "2026-10-20T05:16:46Z",
+      "updatedAt": "2026-10-21T18:01:35Z"
+    },
+    {
+      "key": "kvnloo/dash:issue:50",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/dash",
+      "number": 50,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/dash/issues/50",
+      "createdAt": "2026-10-19T18:24:59Z",
+      "updatedAt": "2026-10-21T18:01:25Z"
+    },
+    {
+      "key": "kvnloo/.files:issue:29",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/.files",
+      "number": 29,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/.files/issues/29",
+      "createdAt": "2026-10-20T05:15:41Z",
+      "updatedAt": "2026-10-21T18:01:07Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:100",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 100,
+      "title": "Polish Lab performance, density sizing and directional tile interactions",
+      "url": "https://github.com/kvnloo/dash/pull/100",
+      "createdAt": "2026-10-21T17:45:50Z",
+      "updatedAt": "2026-10-21T17:56:12Z",
+      "mergedAt": "2026-10-21T17:56:11Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:101",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 101,
+      "title": "feat(composer): merge and manage queued messages",
+      "url": "https://github.com/kvnloo/dash/pull/101",
+      "createdAt": "2026-10-21T17:49:27Z",
+      "updatedAt": "2026-10-21T17:49:37Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:97",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 97,
+      "title": "perf: fast, interruptible graph and pager motion",
+      "url": "https://github.com/kvnloo/dash/pull/97",
+      "createdAt": "2026-10-21T17:22:12Z",
+      "updatedAt": "2026-10-21T17:31:11Z",
+      "mergedAt": "2026-10-21T17:28:38Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:99",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 99,
+      "title": "Resolve swipe action chips in place with persisted completion and Undo",
+      "url": "https://github.com/kvnloo/dash/pull/99",
+      "createdAt": "2026-10-21T17:27:30Z",
+      "updatedAt": "2026-10-21T17:30:43Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:98",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 98,
+      "title": "Make Orchestra answer Fleet, Lineage, Work and Triage questions",
+      "url": "https://github.com/kvnloo/dash/pull/98",
+      "createdAt": "2026-10-21T17:24:44Z",
+      "updatedAt": "2026-10-21T17:27:42Z"
+    },
+    {
+      "key": "kvnloo/99:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/99",
+      "number": 1,
+      "title": "test/fix: preserve and dedupe mixed CursorAgent quickfix hits (downstream)",
+      "url": "https://github.com/kvnloo/99/pull/1",
+      "createdAt": "2026-10-14T03:53:20Z",
+      "updatedAt": "2026-10-21T17:24:26Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:96",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 96,
+      "title": "Describe tool activity and inspect native Hermes calls",
+      "url": "https://github.com/kvnloo/dash/pull/96",
+      "createdAt": "2026-10-21T17:17:10Z",
+      "updatedAt": "2026-10-21T17:21:46Z",
+      "mergedAt": "2026-10-21T17:21:46Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:95",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 95,
+      "title": "feat(chat): steer running Hermes turns instead of only queueing",
+      "url": "https://github.com/kvnloo/dash/pull/95",
+      "createdAt": "2026-10-21T17:12:55Z",
+      "updatedAt": "2026-10-21T17:16:55Z",
+      "mergedAt": "2026-10-21T17:16:54Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:93",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 93,
+      "title": "Add left-handed thumb-side mode",
+      "url": "https://github.com/kvnloo/dash/pull/93",
+      "createdAt": "2026-10-21T16:15:53Z",
+      "updatedAt": "2026-10-21T16:39:48Z",
+      "mergedAt": "2026-10-21T16:38:50Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:92",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 92,
+      "title": "perf: decouple prompt-rail scrubbing from transcript seeks",
+      "url": "https://github.com/kvnloo/dash/pull/92",
+      "createdAt": "2026-10-21T16:14:35Z",
+      "updatedAt": "2026-10-21T16:39:47Z",
+      "mergedAt": "2026-10-21T16:38:50Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:90",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 90,
+      "title": "feat: shared inline file tree for Bots and reply details",
+      "url": "https://github.com/kvnloo/dash/pull/90",
+      "createdAt": "2026-10-21T16:03:28Z",
+      "updatedAt": "2026-10-21T16:39:45Z",
+      "mergedAt": "2026-10-21T16:38:50Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:94",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 94,
+      "title": "feat: OMP model roles and bounded thinking summaries",
+      "url": "https://github.com/kvnloo/dash/pull/94",
+      "createdAt": "2026-10-21T16:17:04Z",
+      "updatedAt": "2026-10-21T16:39:44Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:91",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 91,
+      "title": "feat(chat): wrapped thinking and inspectable tool stacks",
+      "url": "https://github.com/kvnloo/dash/pull/91",
+      "createdAt": "2026-10-21T16:04:16Z",
+      "updatedAt": "2026-10-21T16:39:43Z",
+      "mergedAt": "2026-10-21T16:38:50Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:87",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 87,
+      "title": "feat(chat): inline xyflow diagrams, images and declarative UI",
+      "url": "https://github.com/kvnloo/dash/pull/87",
+      "createdAt": "2026-10-21T15:49:39Z",
+      "updatedAt": "2026-10-21T16:11:45Z",
+      "mergedAt": "2026-10-21T16:05:40Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:88",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 88,
+      "title": "feat(trace): native agent trace screen with gestures, and a component lab",
+      "url": "https://github.com/kvnloo/dash/pull/88",
+      "createdAt": "2026-10-21T15:49:48Z",
+      "updatedAt": "2026-10-21T16:11:44Z",
+      "mergedAt": "2026-10-21T16:05:40Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:89",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 89,
+      "title": "Orchestra: thumb-zone controls, interactive legend and graph motion",
+      "url": "https://github.com/kvnloo/dash/pull/89",
+      "createdAt": "2026-10-21T15:57:22Z",
+      "updatedAt": "2026-10-21T16:11:43Z",
+      "mergedAt": "2026-10-21T16:05:41Z"
+    },
+    {
+      "key": "kvnloo/omarchy:issue:110",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/omarchy",
+      "number": 110,
+      "title": "Promotion queue — Omarchy (canonical #110)",
+      "url": "https://github.com/kvnloo/omarchy/issues/110",
+      "createdAt": "2026-10-16T08:11:13Z",
+      "updatedAt": "2026-10-21T15:47:20Z"
+    },
+    {
+      "key": "pingdotgg/t3code:pull_request:20738",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "pingdotgg/t3code",
+      "number": 20738,
+      "title": "fix(web): retry failed final file saves after editor close",
+      "url": "https://github.com/pingdotgg/t3code/pull/20738",
+      "createdAt": "2026-10-17T04:57:10Z",
+      "updatedAt": "2026-10-21T15:44:19Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:190",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0intelligence",
+      "number": 190,
+      "title": "fix(security): guard local HTTP listeners; opt-in z0bridge tokens (#187)",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/190",
+      "createdAt": "2026-10-21T15:16:44Z",
+      "updatedAt": "2026-10-21T15:28:59Z"
+    },
+    {
+      "key": "kvnloo/kerdoios:issue:63",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/kerdoios",
+      "number": 63,
+      "title": "Promotion queue — kvnloo/kerdoios (single canonical issue)",
+      "url": "https://github.com/kvnloo/kerdoios/issues/63",
+      "createdAt": "2026-10-16T08:18:20Z",
+      "updatedAt": "2026-10-21T15:26:05Z"
+    },
+    {
+      "key": "kvnloo/kerdoios:issue:55",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/kerdoios",
+      "number": 55,
+      "title": "contract: keep semantic cognition choice separate from provider/resource placement",
+      "url": "https://github.com/kvnloo/kerdoios/issues/55",
+      "createdAt": "2026-09-30T14:47:38Z",
+      "updatedAt": "2026-10-21T15:26:04Z"
+    },
+    {
+      "key": "kvnloo/kerdoios:pull_request:57",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/kerdoios",
+      "number": 57,
+      "title": "feat(capacity): export canonical provider capacity projection",
+      "url": "https://github.com/kvnloo/kerdoios/pull/57",
+      "createdAt": "2026-10-06T21:32:03Z",
+      "updatedAt": "2026-10-21T15:26:03Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:86",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
       "repo": "kvnloo/dash",
       "number": 86,
       "title": "feat(identity): opt-in z0bridge pairing, scoped tokens and revocation (#79)",
       "url": "https://github.com/kvnloo/dash/pull/86",
       "createdAt": "2026-10-21T09:30:23Z",
-      "updatedAt": "2026-10-21T09:31:40Z"
+      "updatedAt": "2026-10-21T15:21:17Z",
+      "mergedAt": "2026-10-21T15:06:46Z"
     },
     {
       "key": "kvnloo/dash:pull_request:85",
       "kind": "pull_request",
       "relationship": "owned",
-      "status": "open_draft",
+      "status": "merged",
       "repo": "kvnloo/dash",
       "number": 85,
       "title": "fix: real composer suggestions, Android blur and caller-preserving navigation",
       "url": "https://github.com/kvnloo/dash/pull/85",
       "createdAt": "2026-10-21T09:29:18Z",
-      "updatedAt": "2026-10-21T09:29:28Z"
+      "updatedAt": "2026-10-21T15:21:14Z",
+      "mergedAt": "2026-10-21T15:06:45Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:84",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 84,
+      "title": "fix(chat): wire Hermes phase orbs and observe host activity",
+      "url": "https://github.com/kvnloo/dash/pull/84",
+      "createdAt": "2026-10-21T09:14:51Z",
+      "updatedAt": "2026-10-21T15:21:12Z",
+      "mergedAt": "2026-10-21T15:06:45Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:83",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 83,
+      "title": "fix: phone attachments and live-session chat copy",
+      "url": "https://github.com/kvnloo/dash/pull/83",
+      "createdAt": "2026-10-21T08:35:10Z",
+      "updatedAt": "2026-10-21T15:21:09Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:82",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 82,
+      "title": "feat: read-only Needs Kevin supervision surface",
+      "url": "https://github.com/kvnloo/dash/pull/82",
+      "createdAt": "2026-10-21T07:59:26Z",
+      "updatedAt": "2026-10-21T15:21:07Z",
+      "mergedAt": "2026-10-21T15:06:45Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:80",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 80,
+      "title": "fix(bridge): send Dash replies into gateway-hosted live Hermes sessions",
+      "url": "https://github.com/kvnloo/dash/pull/80",
+      "createdAt": "2026-10-21T06:54:08Z",
+      "updatedAt": "2026-10-21T15:21:04Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:77",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 77,
+      "title": "Polish agent chat: prompt rail, readable code, and attention hierarchy",
+      "url": "https://github.com/kvnloo/dash/pull/77",
+      "createdAt": "2026-10-21T03:28:53Z",
+      "updatedAt": "2026-10-21T15:21:01Z",
+      "mergedAt": "2026-10-21T15:06:45Z"
+    },
+    {
+      "key": "kvnloo/llama.bend:pull_request:4",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/llama.bend",
+      "number": 4,
+      "title": "bench: strict resumable trials and reviewed campaign checkpoint",
+      "url": "https://github.com/kvnloo/llama.bend/pull/4",
+      "createdAt": "2026-10-14T07:45:21Z",
+      "updatedAt": "2026-10-21T14:34:08Z"
+    },
+    {
+      "key": "mrsarac/ff-tracking:pull_request:5",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "mrsarac/ff-tracking",
+      "number": 5,
+      "title": "Render on Linux with Vulkan, and fall back to the CPU",
+      "url": "https://github.com/mrsarac/ff-tracking/pull/5",
+      "createdAt": "2026-10-21T06:51:53Z",
+      "updatedAt": "2026-10-21T14:12:15Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:issue:819",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "closed",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 819,
+      "title": "feat: accept a ChatGPT OAuth session for Realtime voice",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/issues/819",
+      "createdAt": "2026-09-29T00:15:03Z",
+      "updatedAt": "2026-10-21T14:09:36Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:12955",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 12955,
+      "title": "fix: shell bar/tray/agents leftovers (#10989 #11021 #11022)",
+      "url": "https://github.com/omacom/omarchy/pull/12955",
+      "createdAt": "2026-09-22T21:51:52Z",
+      "updatedAt": "2026-10-21T14:06:19Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:12963",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 12963,
+      "title": "fix(media): stop marquee while playback is paused",
+      "url": "https://github.com/omacom/omarchy/pull/12963",
+      "createdAt": "2026-09-22T23:02:35Z",
+      "updatedAt": "2026-10-21T13:59:11Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:10235",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 10235,
+      "title": "fix(fingerprint): retry verify after enroll settles reader",
+      "url": "https://github.com/omacom/omarchy/pull/10235",
+      "createdAt": "2026-09-04T20:01:18Z",
+      "updatedAt": "2026-10-21T12:46:04Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:10236",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 10236,
+      "title": "fix(launcher): remove plugin when desktop belongs to a shell plugin",
+      "url": "https://github.com/omacom/omarchy/pull/10236",
+      "createdAt": "2026-09-04T20:01:22Z",
+      "updatedAt": "2026-10-21T12:25:43Z"
     },
     {
       "key": "kvnloo/dash:pull_request:78",
@@ -306,18 +886,6 @@
       "url": "https://github.com/kvnloo/dash/pull/78",
       "createdAt": "2026-10-21T05:56:20Z",
       "updatedAt": "2026-10-21T09:23:50Z"
-    },
-    {
-      "key": "kvnloo/dash:pull_request:84",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 84,
-      "title": "fix(chat): wire Hermes phase orbs and observe host activity",
-      "url": "https://github.com/kvnloo/dash/pull/84",
-      "createdAt": "2026-10-21T09:14:51Z",
-      "updatedAt": "2026-10-21T09:15:01Z"
     },
     {
       "key": "kvnloo/z0evals:pull_request:110",
@@ -344,18 +912,6 @@
       "updatedAt": "2026-10-21T08:44:29Z"
     },
     {
-      "key": "kvnloo/dash:pull_request:83",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 83,
-      "title": "fix: phone attachments and live-session chat copy",
-      "url": "https://github.com/kvnloo/dash/pull/83",
-      "createdAt": "2026-10-21T08:35:10Z",
-      "updatedAt": "2026-10-21T08:44:14Z"
-    },
-    {
       "key": "kvnloo/.files:pull_request:35",
       "kind": "pull_request",
       "relationship": "owned",
@@ -366,18 +922,6 @@
       "url": "https://github.com/kvnloo/.files/pull/35",
       "createdAt": "2026-10-21T08:36:25Z",
       "updatedAt": "2026-10-21T08:37:36Z"
-    },
-    {
-      "key": "kvnloo/llama.bend:pull_request:4",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/llama.bend",
-      "number": 4,
-      "title": "bench: strict resumable trials and reviewed campaign checkpoint",
-      "url": "https://github.com/kvnloo/llama.bend/pull/4",
-      "createdAt": "2026-10-14T07:45:21Z",
-      "updatedAt": "2026-10-21T08:27:04Z"
     },
     {
       "key": "kvnloo/noop:pull_request:65",
@@ -402,18 +946,6 @@
       "url": "https://github.com/kvnloo/z0intelligence/pull/189",
       "createdAt": "2026-10-21T07:59:24Z",
       "updatedAt": "2026-10-21T08:04:17Z"
-    },
-    {
-      "key": "kvnloo/dash:pull_request:82",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 82,
-      "title": "feat: read-only Needs Kevin supervision surface",
-      "url": "https://github.com/kvnloo/dash/pull/82",
-      "createdAt": "2026-10-21T07:59:26Z",
-      "updatedAt": "2026-10-21T07:59:37Z"
     },
     {
       "key": "kvnloo/z0evals:pull_request:113",
@@ -524,30 +1056,6 @@
       "updatedAt": "2026-10-21T07:01:48Z"
     },
     {
-      "key": "kvnloo/dash:pull_request:76",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/dash",
-      "number": 76,
-      "title": "integrate: Dash 2026-10-20 — merge stage/live/z0bridge, fix chat history, send, keyboard and nav; add thinking orbs",
-      "url": "https://github.com/kvnloo/dash/pull/76",
-      "createdAt": "2026-10-21T01:42:16Z",
-      "updatedAt": "2026-10-21T06:55:06Z"
-    },
-    {
-      "key": "kvnloo/dash:pull_request:80",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 80,
-      "title": "fix(bridge): send Dash replies into gateway-hosted live Hermes sessions",
-      "url": "https://github.com/kvnloo/dash/pull/80",
-      "createdAt": "2026-10-21T06:54:08Z",
-      "updatedAt": "2026-10-21T06:54:20Z"
-    },
-    {
       "key": "kvnloo/.files:pull_request:33",
       "kind": "pull_request",
       "relationship": "owned",
@@ -594,18 +1102,6 @@
       "url": "https://github.com/mrsarac/ff-unmute/pull/1",
       "createdAt": "2026-10-21T06:51:56Z",
       "updatedAt": "2026-10-21T06:51:56Z"
-    },
-    {
-      "key": "mrsarac/ff-tracking:pull_request:5",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "mrsarac/ff-tracking",
-      "number": 5,
-      "title": "Render on Linux with Vulkan, and fall back to the CPU",
-      "url": "https://github.com/mrsarac/ff-tracking/pull/5",
-      "createdAt": "2026-10-21T06:51:53Z",
-      "updatedAt": "2026-10-21T06:51:53Z"
     },
     {
       "key": "kvnloo/noop:pull_request:81",
@@ -1436,18 +1932,6 @@
       "updatedAt": "2026-10-21T03:47:58Z"
     },
     {
-      "key": "kvnloo/dash:pull_request:77",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 77,
-      "title": "Polish agent chat: prompt rail, readable code, and attention hierarchy",
-      "url": "https://github.com/kvnloo/dash/pull/77",
-      "createdAt": "2026-10-21T03:28:53Z",
-      "updatedAt": "2026-10-21T03:30:32Z"
-    },
-    {
       "key": "kvnloo/z0evals:pull_request:103",
       "kind": "pull_request",
       "relationship": "owned",
@@ -1482,18 +1966,6 @@
       "url": "https://github.com/alt-glitch/hermes-tern/pull/72",
       "createdAt": "2026-10-21T00:38:52Z",
       "updatedAt": "2026-10-21T00:46:31Z"
-    },
-    {
-      "key": "kvnloo/99:pull_request:1",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/99",
-      "number": 1,
-      "title": "test/fix: preserve and dedupe mixed CursorAgent quickfix hits (downstream)",
-      "url": "https://github.com/kvnloo/99/pull/1",
-      "createdAt": "2026-10-14T03:53:20Z",
-      "updatedAt": "2026-10-20T23:32:48Z"
     },
     {
       "key": "kvnloo/z0live:pull_request:36",
@@ -1748,66 +2220,6 @@
       "updatedAt": "2026-10-20T18:32:15Z"
     },
     {
-      "key": "kvnloo/z0live:issue:8",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0live",
-      "number": 8,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/z0live/issues/8",
-      "createdAt": "2026-10-19T17:08:06Z",
-      "updatedAt": "2026-10-20T18:05:15Z"
-    },
-    {
-      "key": "kvnloo/z0intelligence:issue:177",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0intelligence",
-      "number": 177,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/z0intelligence/issues/177",
-      "createdAt": "2026-10-20T05:14:19Z",
-      "updatedAt": "2026-10-20T18:05:10Z"
-    },
-    {
-      "key": "kvnloo/z0evals:issue:100",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0evals",
-      "number": 100,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/z0evals/issues/100",
-      "createdAt": "2026-10-20T05:15:07Z",
-      "updatedAt": "2026-10-20T18:05:01Z"
-    },
-    {
-      "key": "kvnloo/noop:issue:75",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/noop",
-      "number": 75,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/noop/issues/75",
-      "createdAt": "2026-10-20T05:17:09Z",
-      "updatedAt": "2026-10-20T18:04:28Z"
-    },
-    {
-      "key": "kvnloo/lawnchair:issue:15",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/lawnchair",
-      "number": 15,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/lawnchair/issues/15",
-      "createdAt": "2026-10-19T17:07:10Z",
-      "updatedAt": "2026-10-20T18:04:18Z"
-    },
-    {
       "key": "kvnloo/kerdoios:issue:65",
       "kind": "issue",
       "relationship": "owned",
@@ -1818,54 +2230,6 @@
       "url": "https://github.com/kvnloo/kerdoios/issues/65",
       "createdAt": "2026-10-20T05:14:56Z",
       "updatedAt": "2026-10-20T18:04:08Z"
-    },
-    {
-      "key": "kvnloo/hermes-agent:issue:509",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/hermes-agent",
-      "number": 509,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/hermes-agent/issues/509",
-      "createdAt": "2026-10-17T07:46:30Z",
-      "updatedAt": "2026-10-20T18:03:50Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:issue:23",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/fframestudio",
-      "number": 23,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/fframestudio/issues/23",
-      "createdAt": "2026-10-20T05:16:46Z",
-      "updatedAt": "2026-10-20T18:03:25Z"
-    },
-    {
-      "key": "kvnloo/dash:issue:50",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/dash",
-      "number": 50,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/dash/issues/50",
-      "createdAt": "2026-10-19T18:24:59Z",
-      "updatedAt": "2026-10-20T18:03:04Z"
-    },
-    {
-      "key": "kvnloo/.files:issue:29",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/.files",
-      "number": 29,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/.files/issues/29",
-      "createdAt": "2026-10-20T05:15:41Z",
-      "updatedAt": "2026-10-20T18:02:11Z"
     },
     {
       "key": "kvnloo/ripple:pull_request:3",
@@ -3153,18 +3517,6 @@
       "mergedAt": "2026-10-20T07:06:54Z"
     },
     {
-      "key": "omacom/omarchy:pull_request:12963",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 12963,
-      "title": "fix(media): stop marquee while playback is paused",
-      "url": "https://github.com/omacom/omarchy/pull/12963",
-      "createdAt": "2026-09-22T23:02:35Z",
-      "updatedAt": "2026-10-20T07:06:33Z"
-    },
-    {
       "key": "kvnloo/hermes-agent:pull_request:632",
       "kind": "pull_request",
       "relationship": "owned",
@@ -3405,18 +3757,6 @@
       "updatedAt": "2026-10-20T05:17:18Z"
     },
     {
-      "key": "kvnloo/oh-my-pi:issue:158",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/oh-my-pi",
-      "number": 158,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/oh-my-pi/issues/158",
-      "createdAt": "2026-10-20T05:16:24Z",
-      "updatedAt": "2026-10-20T05:16:24Z"
-    },
-    {
       "key": "kvnloo/noop:pull_request:57",
       "kind": "pull_request",
       "relationship": "owned",
@@ -3489,18 +3829,6 @@
       "updatedAt": "2026-10-20T04:56:50Z"
     },
     {
-      "key": "kvnloo/omarchy:issue:110",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/omarchy",
-      "number": 110,
-      "title": "Promotion queue — Omarchy (canonical #110)",
-      "url": "https://github.com/kvnloo/omarchy/issues/110",
-      "createdAt": "2026-10-16T08:11:13Z",
-      "updatedAt": "2026-10-20T04:56:09Z"
-    },
-    {
       "key": "kvnloo/hermes-agent:pull_request:631",
       "kind": "pull_request",
       "relationship": "owned",
@@ -3523,18 +3851,6 @@
       "url": "https://github.com/kvnloo/hermes-agent/pull/627",
       "createdAt": "2026-10-20T04:27:50Z",
       "updatedAt": "2026-10-20T04:27:50Z"
-    },
-    {
-      "key": "pingdotgg/t3code:pull_request:20738",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "pingdotgg/t3code",
-      "number": 20738,
-      "title": "fix(web): retry failed final file saves after editor close",
-      "url": "https://github.com/pingdotgg/t3code/pull/20738",
-      "createdAt": "2026-10-17T04:57:10Z",
-      "updatedAt": "2026-10-20T04:27:35Z"
     },
     {
       "key": "kvnloo/z0:issue:15",
@@ -3777,18 +4093,6 @@
       "updatedAt": "2026-10-20T00:19:20Z"
     },
     {
-      "key": "omacom/omarchy:pull_request:10236",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 10236,
-      "title": "fix(launcher): remove plugin when desktop belongs to a shell plugin",
-      "url": "https://github.com/omacom/omarchy/pull/10236",
-      "createdAt": "2026-09-04T20:01:22Z",
-      "updatedAt": "2026-10-20T00:19:10Z"
-    },
-    {
       "key": "kvnloo/z0intelligence:pull_request:158",
       "kind": "pull_request",
       "relationship": "owned",
@@ -3800,18 +4104,6 @@
       "createdAt": "2026-10-11T08:29:54Z",
       "updatedAt": "2026-10-20T00:18:21Z",
       "mergedAt": "2026-10-19T23:52:58Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:10235",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 10235,
-      "title": "fix(fingerprint): retry verify after enroll settles reader",
-      "url": "https://github.com/omacom/omarchy/pull/10235",
-      "createdAt": "2026-09-04T20:01:18Z",
-      "updatedAt": "2026-10-20T00:18:06Z"
     },
     {
       "key": "kvnloo/z0intelligence:pull_request:156",
@@ -5199,18 +5491,6 @@
       "url": "https://github.com/kvnloo/img2threejs/pull/52",
       "createdAt": "2026-10-19T07:37:13Z",
       "updatedAt": "2026-10-19T07:39:52Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:12955",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 12955,
-      "title": "fix: shell bar/tray/agents leftovers (#10989 #11021 #11022)",
-      "url": "https://github.com/omacom/omarchy/pull/12955",
-      "createdAt": "2026-09-22T21:51:52Z",
-      "updatedAt": "2026-10-19T07:19:13Z"
     },
     {
       "key": "kvnloo/img2threejs:pull_request:28",
@@ -15987,18 +16267,6 @@
       "updatedAt": "2026-10-17T02:03:57Z"
     },
     {
-      "key": "kvnloo/kerdoios:pull_request:57",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/kerdoios",
-      "number": 57,
-      "title": "feat(capacity): export canonical provider capacity projection",
-      "url": "https://github.com/kvnloo/kerdoios/pull/57",
-      "createdAt": "2026-10-06T21:32:03Z",
-      "updatedAt": "2026-10-17T02:03:54Z"
-    },
-    {
       "key": "kvnloo/z0evals:pull_request:94",
       "kind": "pull_request",
       "relationship": "owned",
@@ -18396,18 +18664,6 @@
       "url": "https://github.com/kvnloo/bend/issues/8",
       "createdAt": "2026-10-16T08:20:32Z",
       "updatedAt": "2026-10-16T08:20:32Z"
-    },
-    {
-      "key": "kvnloo/kerdoios:issue:63",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/kerdoios",
-      "number": 63,
-      "title": "Promotion queue — kvnloo/kerdoios (single canonical issue)",
-      "url": "https://github.com/kvnloo/kerdoios/issues/63",
-      "createdAt": "2026-10-16T08:18:20Z",
-      "updatedAt": "2026-10-16T08:18:20Z"
     },
     {
       "key": "kvnloo/OpenUSD:issue:53",
@@ -25609,18 +25865,6 @@
       "updatedAt": "2026-10-06T21:33:33Z"
     },
     {
-      "key": "kvnloo/kerdoios:issue:55",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/kerdoios",
-      "number": 55,
-      "title": "contract: keep semantic cognition choice separate from provider/resource placement",
-      "url": "https://github.com/kvnloo/kerdoios/issues/55",
-      "createdAt": "2026-09-30T14:47:38Z",
-      "updatedAt": "2026-10-06T21:33:31Z"
-    },
-    {
       "key": "kvnloo/z0intelligence:issue:133",
       "kind": "issue",
       "relationship": "owned",
@@ -28055,18 +28299,6 @@
       "createdAt": "2026-10-03T21:12:05Z",
       "updatedAt": "2026-10-04T00:24:14Z",
       "mergedAt": "2026-10-04T00:24:14Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:issue:819",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 819,
-      "title": "feat: accept a ChatGPT OAuth session for Realtime voice",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/issues/819",
-      "createdAt": "2026-09-29T00:15:03Z",
-      "updatedAt": "2026-10-04T00:23:31Z"
     },
     {
       "key": "CopilotKit/OpenDots:issue:41",

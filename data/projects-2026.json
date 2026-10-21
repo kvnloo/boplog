@@ -37,14 +37,14 @@
       "eyebrow": "Shell"
     },
     {
-      "id": "aodl",
-      "name": "aodl",
-      "description": "AODL/HOTL: typed IR for agent orchestration graphs (schema + fail-closed validator, not a scheduler)",
+      "id": "99",
+      "name": "99",
+      "description": "My work on this fork: The AI client that Neovim deserves, built by those that still enjoy to code.",
       "date": "2026-10-21",
-      "url": "https://kvnloo.github.io/aodl/",
+      "url": "https://github.com/kvnloo/99",
       "types": [
         "public",
-        "py"
+        "fork"
       ],
       "formats": [],
       "categories": [
@@ -52,12 +52,8 @@
       ],
       "links": [
         {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/aodl/"
-        },
-        {
           "label": "github",
-          "url": "https://github.com/kvnloo/aodl"
+          "url": "https://github.com/kvnloo/99"
         }
       ],
       "company": "zer0",
@@ -67,10 +63,7 @@
       "portfolio": "experiment",
       "portfolioName": "experiment",
       "product": "",
-      "productName": "",
-      "featured": true,
-      "featuredRank": 8,
-      "eyebrow": "Python"
+      "productName": ""
     },
     {
       "id": "awesome-engines",
@@ -104,39 +97,6 @@
       "portfolioName": "experiment",
       "product": "",
       "productName": ""
-    },
-    {
-      "id": "blueprint",
-      "name": "blueprint",
-      "description": "Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.",
-      "date": "2026-10-21",
-      "url": "https://kvnloo.github.io/blueprint/",
-      "types": [
-        "public",
-        "html"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/blueprint/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/blueprint"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "blueprint",
-      "productName": "blueprint"
     },
     {
       "id": "boplog",
@@ -233,39 +193,6 @@
       "productName": ""
     },
     {
-      "id": "evolution-lab",
-      "name": "evolution-lab",
-      "description": "Experiment engine: genomes, Hermes recovery gym, Pareto/MAP-Elites. Original repo — not a FlyGym, OpenEvolve, or fly-wirehead fork.",
-      "date": "2026-10-21",
-      "url": "https://kvnloo.github.io/evolution-lab/",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/evolution-lab/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/evolution-lab"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "ff-unmute",
       "name": "ff-unmute",
       "description": "My work on this fork: This one, you can unmute.",
@@ -324,72 +251,6 @@
       "productName": ""
     },
     {
-      "id": "frontier-kb",
-      "name": "frontier-kb",
-      "description": "Frontier intelligence KB: cross-harness research (OMP/Hermes/Codex/Claude/Cursor/Pi/…) + cutting-edge LLM/tool-use/tokenomics, multi-discipline autoresearch. Owned by frontier agent; CoS orchestrates HITLs.",
-      "date": "2026-10-21",
-      "url": "https://github.com/kvnloo/frontier-kb",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/frontier-kb"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "hermes-agent",
-      "name": "hermes-agent",
-      "description": "My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.",
-      "date": "2026-10-21",
-      "url": "https://hermes-agent.nousresearch.com/",
-      "types": [
-        "public",
-        "py",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://hermes-agent.nousresearch.com/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/hermes-agent"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": "",
-      "featured": true,
-      "featuredRank": 1,
-      "eyebrow": "Fork contribution"
-    },
-    {
       "id": "humanity-vault",
       "name": "humanity-vault",
       "description": "Mobile-first GraphQL learning OS for frontier-kb. Human synergy loop: encode, retrieve, rest, measure, prune.",
@@ -423,6 +284,35 @@
       "productName": ""
     },
     {
+      "id": "kerdoios",
+      "name": "kerdoios",
+      "description": "Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)",
+      "date": "2026-10-21",
+      "url": "https://github.com/kvnloo/kerdoios",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/kerdoios"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "kmind-palace",
       "name": "kmind-palace",
       "description": "My work on this fork: KMind Palace English | 简体中文 Put your notes into walk-in 3D houses and remember them with the method of loci.",
@@ -440,39 +330,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/kmind-palace"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "lawnchair",
-      "name": "lawnchair",
-      "description": "My work on this fork: 16 Lawnchair is a free, open-source home app for Android.",
-      "date": "2026-10-21",
-      "url": "https://lawnchair.app/",
-      "types": [
-        "public",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://lawnchair.app/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/lawnchair"
         }
       ],
       "company": "zer0",
@@ -719,63 +576,6 @@
       "productName": ""
     },
     {
-      "id": "ripple",
-      "name": "ripple",
-      "description": "Ephemeral intent surface Dash mounts. Consumes AODL as data. Not HOTL, not a catalog.",
-      "date": "2026-10-21",
-      "url": "https://github.com/kvnloo/ripple",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/ripple"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "tokenomics",
-      "name": "tokenomics",
-      "description": "Vendor-neutral measurement contracts for agents/LLMs: verified outcomes, context economics, experiments — on OpenTelemetry",
-      "date": "2026-10-21",
-      "url": "https://github.com/kvnloo/tokenomics",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/tokenomics"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "z0evals",
       "name": "z0evals",
       "description": "Reproducible evaluations and public research reports for the Zer0 ecosystem.",
@@ -943,6 +743,39 @@
       "eyebrow": "TypeScript"
     },
     {
+      "id": "activitywatch",
+      "name": "activitywatch",
+      "description": "My work on this fork: Records what you do so that you can know how you've spent your time .",
+      "date": "2026-10-20",
+      "url": "https://activitywatch.net/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://activitywatch.net/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/activitywatch"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "agent-orchestrator",
       "name": "agent-orchestrator",
       "description": "My work on this fork: Orchestrator.inc Plan, run, and supervise coding agents from one place.",
@@ -977,6 +810,72 @@
       "productName": ""
     },
     {
+      "id": "agent-skills",
+      "name": "agent-skills",
+      "description": "My work on this fork: OpenClaw Agent Skills Shared skills for coding agents that work on OpenClaw projects.",
+      "date": "2026-10-20",
+      "url": "https://github.com/kvnloo/agent-skills",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/agent-skills"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "aodl",
+      "name": "aodl",
+      "description": "AODL/HOTL: typed IR for agent orchestration graphs (schema + fail-closed validator, not a scheduler)",
+      "date": "2026-10-20",
+      "url": "https://kvnloo.github.io/aodl/",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/aodl/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/aodl"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "featured": true,
+      "featuredRank": 8,
+      "eyebrow": "Python"
+    },
+    {
       "id": "apollo-11",
       "name": "Apollo-11",
       "description": "My work on this fork: [![NASA][1]][2] [![SWH]][SWHURL] [![Comanche]][ComancheMilestone] [![Luminary]][LuminaryMilestone] 🌐 [Azerbaijani][AZ], [bahasa Indonesia][ID], [Basa Jawa][JV], [Català][CA], [Čeština][CZ],…",
@@ -994,6 +893,36 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/Apollo-11"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "browser-control",
+      "name": "browser-control",
+      "description": "My work on this fork: Browser Control Browser Control lets trusted coding agents run Playwright against your existing Chromium-family browser.",
+      "date": "2026-10-20",
+      "url": "https://github.com/kvnloo/browser-control",
+      "types": [
+        "public",
+        "ts",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/browser-control"
         }
       ],
       "company": "zer0",
@@ -1159,6 +1088,36 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/cocoindex"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "codex",
+      "name": "codex",
+      "description": "My work on this fork: CLI is a coding agent from OpenAI that runs locally on your computer.",
+      "date": "2026-10-20",
+      "url": "https://github.com/kvnloo/codex",
+      "types": [
+        "public",
+        "rs",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/codex"
         }
       ],
       "company": "zer0",
@@ -1411,6 +1370,72 @@
       "eyebrow": "Fork contribution"
     },
     {
+      "id": "harpoon",
+      "name": "harpoon",
+      "description": "My work on this fork: ⇁ HARPOON 2 This is a deprecated and all future changes will be to the branch harpoon2.",
+      "date": "2026-10-20",
+      "url": "https://github.com/kvnloo/harpoon",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/harpoon"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "hermes-agent",
+      "name": "hermes-agent",
+      "description": "My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.",
+      "date": "2026-10-20",
+      "url": "https://hermes-agent.nousresearch.com/",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://hermes-agent.nousresearch.com/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/hermes-agent"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "featured": true,
+      "featuredRank": 1,
+      "eyebrow": "Fork contribution"
+    },
+    {
       "id": "hermes-maintainer",
       "name": "hermes-maintainer",
       "description": "Ops board and playbook to drive NousResearch/hermes-agent to 0 open issues and PRs",
@@ -1541,14 +1566,15 @@
       "productName": ""
     },
     {
-      "id": "kerdoios",
-      "name": "kerdoios",
-      "description": "Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)",
+      "id": "jj",
+      "name": "jj",
+      "description": "My work on this fork: Jujutsu—a version control system [Homepage] &nbsp;&nbsp;&bull;&nbsp;&nbsp; [Installation] &nbsp;&nbsp;&bull;&nbsp;&nbsp; [Getting Started] &nbsp;&nbsp;&bull;&nbsp;&nbsp; [Development Roadmap]…",
       "date": "2026-10-20",
-      "url": "https://github.com/kvnloo/kerdoios",
+      "url": "https://jj-vcs.dev/",
       "types": [
         "public",
-        "py"
+        "rs",
+        "fork"
       ],
       "formats": [],
       "categories": [
@@ -1556,8 +1582,45 @@
       ],
       "links": [
         {
+          "label": "site",
+          "url": "https://jj-vcs.dev/"
+        },
+        {
           "label": "github",
-          "url": "https://github.com/kvnloo/kerdoios"
+          "url": "https://github.com/kvnloo/jj"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "lawnchair",
+      "name": "lawnchair",
+      "description": "My work on this fork: 16 Lawnchair is a free, open-source home app for Android.",
+      "date": "2026-10-20",
+      "url": "https://lawnchair.app/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://lawnchair.app/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/lawnchair"
         }
       ],
       "company": "zer0",
@@ -1792,6 +1855,40 @@
       "productName": ""
     },
     {
+      "id": "open-meteo",
+      "name": "open-meteo",
+      "description": "My work on this fork: 🌤 Open-Meteo Weather API Open-Meteo is an open-source weather API that offers free access for non-commercial use.",
+      "date": "2026-10-20",
+      "url": "https://open-meteo.com/",
+      "types": [
+        "public",
+        "swift",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://open-meteo.com/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/open-meteo"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "osworld",
       "name": "OSWorld",
       "description": "My work on this fork: Website • Paper • Doc • Data • Data Viewer • Discord • Cache 📢 Updates - 2025-07-28: Introducing OSWorld-Verified!",
@@ -1877,6 +1974,34 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/prezograph"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "ripple",
+      "name": "ripple",
+      "description": "Ephemeral intent surface Dash mounts. Consumes AODL as data. Not HOTL, not a catalog.",
+      "date": "2026-10-20",
+      "url": "https://github.com/kvnloo/ripple",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/ripple"
         }
       ],
       "company": "zer0",
@@ -2089,6 +2214,40 @@
       "productName": ""
     },
     {
+      "id": "tradingview-mcp",
+      "name": "tradingview-mcp",
+      "description": "My work on this fork: TradingView MCP Market Data & Technical Analysis for AI Assistants 15 seconds, real output (market data as of 13 Oct 2026) · this server, hosted as TradingMCP · watch in full quality TradingView…",
+      "date": "2026-10-20",
+      "url": "https://github.com/atilaahmettaner/tradingview-mcp",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://github.com/atilaahmettaner/tradingview-mcp"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/tradingview-mcp"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "uhabits",
       "name": "uhabits",
       "description": "My work on this fork: Loop Habit Tracker Loop is a mobile app that helps you create and maintain good habits, allowing you to achieve your long-term goals.",
@@ -2208,36 +2367,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/agent-scripts"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "agent-skills",
-      "name": "agent-skills",
-      "description": "My work on this fork: OpenClaw Agent Skills Shared skills for coding agents that work on OpenClaw projects.",
-      "date": "2026-10-19",
-      "url": "https://github.com/kvnloo/agent-skills",
-      "types": [
-        "public",
-        "py",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/agent-skills"
         }
       ],
       "company": "zer0",
@@ -2598,36 +2727,6 @@
       "productName": ""
     },
     {
-      "id": "codex",
-      "name": "codex",
-      "description": "My work on this fork: CLI is a coding agent from OpenAI that runs locally on your computer.",
-      "date": "2026-10-19",
-      "url": "https://github.com/kvnloo/codex",
-      "types": [
-        "public",
-        "rs",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/codex"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "comfyui",
       "name": "ComfyUI",
       "description": "My work on this fork: The most powerful and modular AI engine for content creation.",
@@ -2959,6 +3058,35 @@
       "productName": ""
     },
     {
+      "id": "frontier-kb",
+      "name": "frontier-kb",
+      "description": "Frontier intelligence KB: cross-harness research (OMP/Hermes/Codex/Claude/Cursor/Pi/…) + cutting-edge LLM/tool-use/tokenomics, multi-discipline autoresearch. Owned by frontier agent; CoS orchestrates HITLs.",
+      "date": "2026-10-19",
+      "url": "https://github.com/kvnloo/frontier-kb",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/frontier-kb"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "garden-room",
       "name": "garden-room",
       "description": "Phone 3D room planner for houseplants: three.js, voice, AR, zen-garden care",
@@ -3081,35 +3209,6 @@
       "productName": ""
     },
     {
-      "id": "harpoon",
-      "name": "harpoon",
-      "description": "My work on this fork: ⇁ HARPOON 2 This is a deprecated and all future changes will be to the branch harpoon2.",
-      "date": "2026-10-19",
-      "url": "https://github.com/kvnloo/harpoon",
-      "types": [
-        "public",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/harpoon"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "hyperframes",
       "name": "hyperframes",
       "description": "My work on this fork: Write HTML. Render video. Built for agents. Studio | Quickstart | Showcase | Playground | Catalog | Docs | Discord HyperFrames is an open-source framework for turning HTML, CSS, media, and…",
@@ -3128,74 +3227,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/hyperframes"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "immich",
-      "name": "immich",
-      "description": "My work on this fork: High performance self-hosted photo and video management solution Català Español Français Italiano 日本語 한국어 Deutsch Nederlands Türkçe 简体中文 正體中文 Українська Русский Български Português Brasileiro…",
-      "date": "2026-10-19",
-      "url": "https://immich.app/",
-      "types": [
-        "public",
-        "ts",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://immich.app/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/immich"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "jj",
-      "name": "jj",
-      "description": "My work on this fork: Jujutsu—a version control system [Homepage] &nbsp;&nbsp;&bull;&nbsp;&nbsp; [Installation] &nbsp;&nbsp;&bull;&nbsp;&nbsp; [Getting Started] &nbsp;&nbsp;&bull;&nbsp;&nbsp; [Development Roadmap]…",
-      "date": "2026-10-19",
-      "url": "https://jj-vcs.dev/",
-      "types": [
-        "public",
-        "rs",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://jj-vcs.dev/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/jj"
         }
       ],
       "company": "zer0",
@@ -3464,40 +3495,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/open-design"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "open-meteo",
-      "name": "open-meteo",
-      "description": "My work on this fork: 🌤 Open-Meteo Weather API Open-Meteo is an open-source weather API that offers free access for non-commercial use.",
-      "date": "2026-10-19",
-      "url": "https://open-meteo.com/",
-      "types": [
-        "public",
-        "swift",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://open-meteo.com/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/open-meteo"
         }
       ],
       "company": "zer0",
@@ -4362,35 +4359,6 @@
       "productName": ""
     },
     {
-      "id": "99",
-      "name": "99",
-      "description": "My work on this fork: The AI client that Neovim deserves, built by those that still enjoy to code.",
-      "date": "2026-10-18",
-      "url": "https://github.com/kvnloo/99",
-      "types": [
-        "public",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/99"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "agents",
       "name": "agents",
       "description": "My work on this fork: Plugins, agents, and skills for AI coding tools Use one collection of plugins, agents, skills, and commands across Claude Code, OpenAI Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot,…",
@@ -5077,39 +5045,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/usbboot"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "activitywatch",
-      "name": "activitywatch",
-      "description": "My work on this fork: Records what you do so that you can know how you've spent your time .",
-      "date": "2026-10-17",
-      "url": "https://activitywatch.net/",
-      "types": [
-        "public",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://activitywatch.net/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/activitywatch"
         }
       ],
       "company": "zer0",
@@ -5915,40 +5850,6 @@
       "productName": ""
     },
     {
-      "id": "tradingview-mcp",
-      "name": "tradingview-mcp",
-      "description": "My work on this fork: TradingView MCP Market Data & Technical Analysis for AI Assistants 15 seconds, real output (market data as of 13 Oct 2026) · this server, hosted as TradingMCP · watch in full quality TradingView…",
-      "date": "2026-10-17",
-      "url": "https://github.com/atilaahmettaner/tradingview-mcp",
-      "types": [
-        "public",
-        "py",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://github.com/atilaahmettaner/tradingview-mcp"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/tradingview-mcp"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "airtable-to-graph",
       "name": "airtable_to_graph",
       "description": "My work on this fork: airtabletograph This Python script retrieves data from an Airtable base, identifies relational columns, and builds a knowledge graph using the retrieved data.",
@@ -6154,6 +6055,39 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/everything-claude-code"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "evolution-lab",
+      "name": "evolution-lab",
+      "description": "Experiment engine: genomes, Hermes recovery gym, Pareto/MAP-Elites. Original repo — not a FlyGym, OpenEvolve, or fly-wirehead fork.",
+      "date": "2026-10-16",
+      "url": "https://kvnloo.github.io/evolution-lab/",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/evolution-lab/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/evolution-lab"
         }
       ],
       "company": "zer0",
@@ -6817,6 +6751,35 @@
       "productName": ""
     },
     {
+      "id": "tokenomics",
+      "name": "tokenomics",
+      "description": "Vendor-neutral measurement contracts for agents/LLMs: verified outcomes, context economics, experiments — on OpenTelemetry",
+      "date": "2026-10-02",
+      "url": "https://github.com/kvnloo/tokenomics",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/tokenomics"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "flyforge",
       "name": "flyforge",
       "description": "FlyForge research program. Engine is kvnloo/evolution-lab (Hermes recovery, Pareto/MAP-Elites). Not a FlyGym, OpenEvolve, or fly-wirehead fork.",
@@ -7121,6 +7084,39 @@
       "portfolioName": "professional",
       "product": "professional-showcase",
       "productName": "showcase"
+    },
+    {
+      "id": "blueprint",
+      "name": "blueprint",
+      "description": "Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.",
+      "date": "2026-09-29",
+      "url": "https://kvnloo.github.io/blueprint/",
+      "types": [
+        "public",
+        "html"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/blueprint/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/blueprint"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "blueprint",
+      "productName": "blueprint"
     },
     {
       "id": "what-i-learned-from-oss",

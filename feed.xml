@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-21T10:42:13Z</updated>
+  <updated>2026-10-21T18:17:50Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>.files</title>
@@ -17,13 +17,13 @@
     <summary>stay in flow while u code</summary>
   </entry>
   <entry>
-    <title>aodl</title>
-    <id>https://kvnloo.github.io/aodl/</id>
-    <link href="https://kvnloo.github.io/aodl/"/>
+    <title>99</title>
+    <id>https://github.com/kvnloo/99</id>
+    <link href="https://github.com/kvnloo/99"/>
     <published>2026-10-21T00:00:00Z</published>
     <updated>2026-10-21T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>AODL/HOTL: typed IR for agent orchestration graphs (schema + fail-closed validator, not a scheduler)</summary>
+    <summary>My work on this fork: The AI client that Neovim deserves, built by those that still enjoy to code.</summary>
   </entry>
   <entry>
     <title>awesome-engines</title>
@@ -33,15 +33,6 @@
     <updated>2026-10-21T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Engine Atlas · awesome-engines A part-addressable 3D atlas of power and propulsion, from Hero of Alexandria&apos;s aeolipile (1st century CE) to the FIA 2026 Formula One hybrid power unit.</summary>
-  </entry>
-  <entry>
-    <title>blueprint</title>
-    <id>https://kvnloo.github.io/blueprint/</id>
-    <link href="https://kvnloo.github.io/blueprint/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Product blueprint monorepo: architecture, brand, specs, and a docs website with CI deploy.</summary>
   </entry>
   <entry>
     <title>boplog</title>
@@ -71,15 +62,6 @@
     <summary>Phone UI for laptop coding agents over Tailscale</summary>
   </entry>
   <entry>
-    <title>evolution-lab</title>
-    <id>https://kvnloo.github.io/evolution-lab/</id>
-    <link href="https://kvnloo.github.io/evolution-lab/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Experiment engine: genomes, Hermes recovery gym, Pareto/MAP-Elites. Original repo — not a FlyGym, OpenEvolve, or fly-wirehead fork.</summary>
-  </entry>
-  <entry>
     <title>ff-unmute</title>
     <id>https://github.com/kvnloo/ff-unmute</id>
     <link href="https://github.com/kvnloo/ff-unmute"/>
@@ -98,24 +80,6 @@
     <summary>I built fframestudio on top of fframes because I love how powerful the library is.</summary>
   </entry>
   <entry>
-    <title>frontier-kb</title>
-    <id>https://github.com/kvnloo/frontier-kb</id>
-    <link href="https://github.com/kvnloo/frontier-kb"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Frontier intelligence KB: cross-harness research (OMP/Hermes/Codex/Claude/Cursor/Pi/…) + cutting-edge LLM/tool-use/tokenomics, multi-discipline autoresearch. Owned by frontier agent; CoS orchestrates HITLs.</summary>
-  </entry>
-  <entry>
-    <title>hermes-agent</title>
-    <id>https://hermes-agent.nousresearch.com/</id>
-    <link href="https://hermes-agent.nousresearch.com/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.</summary>
-  </entry>
-  <entry>
     <title>humanity-vault</title>
     <id>https://kvnloo.github.io/humanity-vault/</id>
     <link href="https://kvnloo.github.io/humanity-vault/"/>
@@ -125,6 +89,15 @@
     <summary>Mobile-first GraphQL learning OS for frontier-kb. Human synergy loop: encode, retrieve, rest, measure, prune.</summary>
   </entry>
   <entry>
+    <title>kerdoios</title>
+    <id>https://github.com/kvnloo/kerdoios</id>
+    <link href="https://github.com/kvnloo/kerdoios"/>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)</summary>
+  </entry>
+  <entry>
     <title>kmind-palace</title>
     <id>https://github.com/kvnloo/kmind-palace</id>
     <link href="https://github.com/kvnloo/kmind-palace"/>
@@ -132,15 +105,6 @@
     <updated>2026-10-21T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: KMind Palace English | 简体中文 Put your notes into walk-in 3D houses and remember them with the method of loci.</summary>
-  </entry>
-  <entry>
-    <title>lawnchair</title>
-    <id>https://lawnchair.app/</id>
-    <link href="https://lawnchair.app/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: 16 Lawnchair is a free, open-source home app for Android.</summary>
   </entry>
   <entry>
     <title>noop</title>
@@ -206,24 +170,6 @@
     <summary>My work on this fork: The Refactoring library based off the Refactoring book by Martin Fowler &apos;If I use an environment that has good automated refactorings, I can trust those refactorings&apos; - Martin Fowler Tree-sitter…</summary>
   </entry>
   <entry>
-    <title>ripple</title>
-    <id>https://github.com/kvnloo/ripple</id>
-    <link href="https://github.com/kvnloo/ripple"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Ephemeral intent surface Dash mounts. Consumes AODL as data. Not HOTL, not a catalog.</summary>
-  </entry>
-  <entry>
-    <title>tokenomics</title>
-    <id>https://github.com/kvnloo/tokenomics</id>
-    <link href="https://github.com/kvnloo/tokenomics"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Vendor-neutral measurement contracts for agents/LLMs: verified outcomes, context economics, experiments — on OpenTelemetry</summary>
-  </entry>
-  <entry>
     <title>z0evals</title>
     <id>https://kvnloo.github.io/z0evals/</id>
     <link href="https://kvnloo.github.io/z0evals/"/>
@@ -231,5 +177,59 @@
     <updated>2026-10-21T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Reproducible evaluations and public research reports for the Zer0 ecosystem.</summary>
+  </entry>
+  <entry>
+    <title>z0intelligence</title>
+    <id>https://github.com/kvnloo/z0intelligence</id>
+    <link href="https://github.com/kvnloo/z0intelligence"/>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>personalized intelligence</summary>
+  </entry>
+  <entry>
+    <title>z0live</title>
+    <id>https://github.com/kvnloo/z0live</id>
+    <link href="https://github.com/kvnloo/z0live"/>
+    <published>2026-10-21T00:00:00Z</published>
+    <updated>2026-10-21T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Portable realtime conversational voice runtime and fixtures for Zer0.</summary>
+  </entry>
+  <entry>
+    <title>A2UI</title>
+    <id>https://a2ui.org/</id>
+    <link href="https://a2ui.org/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Agent-to-User Interface A2UI is an open-source project, complete with a format optimized for representing updatable agent-generated UIs and an initial set of renderers, that allows agents to…</summary>
+  </entry>
+  <entry>
+    <title>ace</title>
+    <id>https://kvnloo.github.io/ace/</id>
+    <link href="https://kvnloo.github.io/ace/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.</summary>
+  </entry>
+  <entry>
+    <title>activitywatch</title>
+    <id>https://activitywatch.net/</id>
+    <link href="https://activitywatch.net/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Records what you do so that you can know how you&apos;ve spent your time .</summary>
+  </entry>
+  <entry>
+    <title>agent-orchestrator</title>
+    <id>https://composio.dev/</id>
+    <link href="https://composio.dev/"/>
+    <published>2026-10-20T00:00:00Z</published>
+    <updated>2026-10-20T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Orchestrator.inc Plan, run, and supervise coding agents from one place.</summary>
   </entry>
 </feed>
