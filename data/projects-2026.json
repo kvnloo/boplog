@@ -66,6 +66,131 @@
       "productName": ""
     },
     {
+      "id": "fframestudio",
+      "name": "fframestudio",
+      "description": "I built fframestudio on top of fframes because I love how powerful the library is.",
+      "date": "2026-10-22",
+      "url": "https://github.com/kvnloo/fframestudio",
+      "types": [
+        "public",
+        "js"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/fframestudio"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "gh-contrib-archive",
+      "name": "gh-contrib-archive",
+      "description": "Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.",
+      "date": "2026-10-22",
+      "url": "https://kvnloo.github.io/gh-contrib-archive/",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/gh-contrib-archive/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/gh-contrib-archive"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "omalauncher",
+      "name": "omalauncher",
+      "description": "My work on this fork: An Android home screen with the look of Omarchy, and an optional Arch Linux ARM system next to your phone apps.",
+      "date": "2026-10-22",
+      "url": "https://github.com/kvnloo/omalauncher",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/omalauncher"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "omarchy",
+      "name": "omarchy",
+      "description": "My work on this fork: Omarchy is a beautiful, fun & agentic Linux distribution by DHH.",
+      "date": "2026-10-22",
+      "url": "https://omarchy.org/",
+      "types": [
+        "public",
+        "sh",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://omarchy.org/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/omarchy"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "refactoring-nvim",
       "name": "refactoring.nvim",
       "description": "My work on this fork: The Refactoring library based off the Refactoring book by Martin Fowler 'If I use an environment that has good automated refactorings, I can trust those refactorings' - Martin Fowler Tree-sitter…",
@@ -575,68 +700,6 @@
       "productName": ""
     },
     {
-      "id": "fframestudio",
-      "name": "fframestudio",
-      "description": "I built fframestudio on top of fframes because I love how powerful the library is.",
-      "date": "2026-10-21",
-      "url": "https://github.com/kvnloo/fframestudio",
-      "types": [
-        "public",
-        "js"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/fframestudio"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "gh-contrib-archive",
-      "name": "gh-contrib-archive",
-      "description": "Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.",
-      "date": "2026-10-21",
-      "url": "https://kvnloo.github.io/gh-contrib-archive/",
-      "types": [
-        "public",
-        "ts"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/gh-contrib-archive/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/gh-contrib-archive"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "gods-eye-view",
       "name": "gods-eye-view",
       "description": "My work on this fork: 🌐 God's Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.",
@@ -892,35 +955,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/jcode"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "kerdoios",
-      "name": "kerdoios",
-      "description": "Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)",
-      "date": "2026-10-21",
-      "url": "https://github.com/kvnloo/kerdoios",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/kerdoios"
         }
       ],
       "company": "zer0",
@@ -1292,40 +1326,6 @@
       "featured": true,
       "featuredRank": 2,
       "eyebrow": "Fork contribution"
-    },
-    {
-      "id": "omarchy",
-      "name": "omarchy",
-      "description": "My work on this fork: Omarchy is a beautiful, fun & agentic Linux distribution by DHH.",
-      "date": "2026-10-21",
-      "url": "https://omarchy.org/",
-      "types": [
-        "public",
-        "sh",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://omarchy.org/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/omarchy"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
     },
     {
       "id": "omnara",
@@ -2849,6 +2849,35 @@
       "productName": ""
     },
     {
+      "id": "kerdoios",
+      "name": "kerdoios",
+      "description": "Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)",
+      "date": "2026-10-20",
+      "url": "https://github.com/kvnloo/kerdoios",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/kerdoios"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "lazycodex",
       "name": "lazycodex",
       "description": "My work on this fork: The one and only agent harness for complex codebases.",
@@ -3015,35 +3044,6 @@
       "featured": true,
       "featuredRank": 5,
       "eyebrow": "Fork contribution"
-    },
-    {
-      "id": "omalauncher",
-      "name": "omalauncher",
-      "description": "My work on this fork: An Android home screen with the look of Omarchy, and an optional Arch Linux ARM system next to your phone apps.",
-      "date": "2026-10-20",
-      "url": "https://github.com/kvnloo/omalauncher",
-      "types": [
-        "public",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/omalauncher"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
     },
     {
       "id": "osworld",

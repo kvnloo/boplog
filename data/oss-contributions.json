@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T10:49:43Z",
+  "generatedAt": "2026-10-22T18:16:32Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -263,14 +263,508 @@
     "limitations": []
   },
   "summary": {
-    "mergedUpstreamPullRequests": 132,
-    "openReadyUpstreamPullRequests": 167,
-    "draftUpstreamPullRequests": 66,
-    "upstreamIssuesAndProposals": 377,
+    "mergedUpstreamPullRequests": 133,
+    "openReadyUpstreamPullRequests": 166,
+    "draftUpstreamPullRequests": 64,
+    "upstreamIssuesAndProposals": 381,
     "distinctUpstreamCommunities": 139,
     "verifiedImpact": 0
   },
   "contributions": [
+    {
+      "key": "kvnloo/dash:pull_request:118",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 118,
+      "title": "fix(chat): tool/thinking information density (command identity, flat call rows, one summary)",
+      "url": "https://github.com/kvnloo/dash/pull/118",
+      "createdAt": "2026-10-22T18:05:04Z",
+      "updatedAt": "2026-10-22T18:05:22Z"
+    },
+    {
+      "key": "kvnloo/z0live:issue:8",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0live",
+      "number": 8,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/z0live/issues/8",
+      "createdAt": "2026-10-19T17:08:06Z",
+      "updatedAt": "2026-10-22T18:02:45Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:issue:177",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0intelligence",
+      "number": 177,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/z0intelligence/issues/177",
+      "createdAt": "2026-10-20T05:14:19Z",
+      "updatedAt": "2026-10-22T18:02:35Z"
+    },
+    {
+      "key": "kvnloo/z0evals:issue:100",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0evals",
+      "number": 100,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/z0evals/issues/100",
+      "createdAt": "2026-10-20T05:15:07Z",
+      "updatedAt": "2026-10-22T18:02:26Z"
+    },
+    {
+      "key": "kvnloo/oh-my-pi:issue:158",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/oh-my-pi",
+      "number": 158,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/oh-my-pi/issues/158",
+      "createdAt": "2026-10-20T05:16:24Z",
+      "updatedAt": "2026-10-22T18:01:44Z"
+    },
+    {
+      "key": "kvnloo/noop:issue:75",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/noop",
+      "number": 75,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/noop/issues/75",
+      "createdAt": "2026-10-20T05:17:09Z",
+      "updatedAt": "2026-10-22T18:01:36Z"
+    },
+    {
+      "key": "kvnloo/lawnchair:issue:15",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/lawnchair",
+      "number": 15,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/lawnchair/issues/15",
+      "createdAt": "2026-10-19T17:07:10Z",
+      "updatedAt": "2026-10-22T18:01:28Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:issue:23",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/fframestudio",
+      "number": 23,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/fframestudio/issues/23",
+      "createdAt": "2026-10-20T05:16:46Z",
+      "updatedAt": "2026-10-22T18:00:46Z"
+    },
+    {
+      "key": "kvnloo/dash:issue:50",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/dash",
+      "number": 50,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/dash/issues/50",
+      "createdAt": "2026-10-19T18:24:59Z",
+      "updatedAt": "2026-10-22T18:00:39Z"
+    },
+    {
+      "key": "kvnloo/.files:issue:29",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/.files",
+      "number": 29,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/.files/issues/29",
+      "createdAt": "2026-10-20T05:15:41Z",
+      "updatedAt": "2026-10-22T18:00:18Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:117",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 117,
+      "title": "feat(trace): live bridge events with explicit unavailable states (parent-gated)",
+      "url": "https://github.com/kvnloo/dash/pull/117",
+      "createdAt": "2026-10-22T17:28:29Z",
+      "updatedAt": "2026-10-22T17:43:25Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:116",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 116,
+      "title": "Composer controls: agent menu, attached dock, honest token speed (parent review)",
+      "url": "https://github.com/kvnloo/dash/pull/116",
+      "createdAt": "2026-10-22T17:24:53Z",
+      "updatedAt": "2026-10-22T17:31:20Z"
+    },
+    {
+      "key": "openclaw/openclaw:pull_request:149235",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "openclaw/openclaw",
+      "number": 149235,
+      "title": "fix(ui): thin Vietnamese Noto webfont fallback (#133930)",
+      "url": "https://github.com/openclaw/openclaw/pull/149235",
+      "createdAt": "2026-09-15T15:48:39Z",
+      "updatedAt": "2026-10-22T15:48:05Z"
+    },
+    {
+      "key": "openclaw/openclaw:pull_request:149234",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "openclaw/openclaw",
+      "number": 149234,
+      "title": "fix(ui): hard-disable ineligible session hosts with stacked reasons",
+      "url": "https://github.com/openclaw/openclaw/pull/149234",
+      "createdAt": "2026-09-15T15:48:36Z",
+      "updatedAt": "2026-10-22T15:47:49Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:12955",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 12955,
+      "title": "fix: shell bar/tray/agents leftovers (#10989 #11021 #11022)",
+      "url": "https://github.com/omacom/omarchy/pull/12955",
+      "createdAt": "2026-09-22T21:51:52Z",
+      "updatedAt": "2026-10-22T14:14:47Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:10236",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 10236,
+      "title": "fix(launcher): remove plugin when desktop belongs to a shell plugin",
+      "url": "https://github.com/omacom/omarchy/pull/10236",
+      "createdAt": "2026-09-04T20:01:22Z",
+      "updatedAt": "2026-10-22T13:35:31Z"
+    },
+    {
+      "key": "newton-physics/newton:issue:4774",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "newton-physics/newton",
+      "number": 4774,
+      "title": "[BUG] Box raycast can report zero normal for a valid small-direction hit",
+      "url": "https://github.com/newton-physics/newton/issues/4774",
+      "createdAt": "2026-10-16T22:46:56Z",
+      "updatedAt": "2026-10-22T13:30:05Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:12956",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 12956,
+      "title": "fix: herdr swap_pane_up + aarch64 kernel restart (#10231 #10232)",
+      "url": "https://github.com/omacom/omarchy/pull/12956",
+      "createdAt": "2026-09-22T22:02:07Z",
+      "updatedAt": "2026-10-22T12:54:58Z"
+    },
+    {
+      "key": "kvnloo/omalauncher:pull_request:7",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/omalauncher",
+      "number": 7,
+      "title": "coordination: canonical Omalauncher promotion queue (retain unmerged)",
+      "url": "https://github.com/kvnloo/omalauncher/pull/7",
+      "createdAt": "2026-10-18T08:19:54Z",
+      "updatedAt": "2026-10-22T12:53:52Z"
+    },
+    {
+      "key": "mrsarac/ff-tracking:pull_request:5",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "merged",
+      "repo": "mrsarac/ff-tracking",
+      "number": 5,
+      "title": "Render on Linux with Vulkan, and fall back to the CPU",
+      "url": "https://github.com/mrsarac/ff-tracking/pull/5",
+      "createdAt": "2026-10-21T06:51:53Z",
+      "updatedAt": "2026-10-22T12:51:39Z",
+      "mergedAt": "2026-10-22T12:51:38Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:issue:22",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/fframestudio",
+      "number": 22,
+      "title": "Promotion queue — kvnloo/fframestudio",
+      "url": "https://github.com/kvnloo/fframestudio/issues/22",
+      "createdAt": "2026-10-19T06:56:06Z",
+      "updatedAt": "2026-10-22T12:49:20Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:29",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/fframestudio",
+      "number": 29,
+      "title": "fix(hosted): keep only project files from read-only folder imports",
+      "url": "https://github.com/kvnloo/fframestudio/pull/29",
+      "createdAt": "2026-10-21T07:06:10Z",
+      "updatedAt": "2026-10-22T12:48:57Z"
+    },
+    {
+      "key": "kvnloo/t3code:issue:42",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/t3code",
+      "number": 42,
+      "title": "T3Code — single canonical promotion queue (#42)",
+      "url": "https://github.com/kvnloo/t3code/issues/42",
+      "createdAt": "2026-10-16T08:09:06Z",
+      "updatedAt": "2026-10-22T12:46:40Z"
+    },
+    {
+      "key": "kvnloo/cua:issue:74",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/cua",
+      "number": 74,
+      "title": "[META: WAIT FOR EVIDENCE] Final upstream promotion DAG + posting queue",
+      "url": "https://github.com/kvnloo/cua/issues/74",
+      "createdAt": "2026-09-25T22:10:37Z",
+      "updatedAt": "2026-10-22T12:43:45Z"
+    },
+    {
+      "key": "mrsarac/ff-unmute:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "mrsarac/ff-unmute",
+      "number": 1,
+      "title": "Render on Linux with Vulkan, and fall back to the CPU",
+      "url": "https://github.com/mrsarac/ff-unmute/pull/1",
+      "createdAt": "2026-10-21T06:51:56Z",
+      "updatedAt": "2026-10-22T12:43:39Z"
+    },
+    {
+      "key": "kvnloo/omarchy:issue:110",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/omarchy",
+      "number": 110,
+      "title": "Promotion queue — Omarchy (canonical #110)",
+      "url": "https://github.com/kvnloo/omarchy/issues/110",
+      "createdAt": "2026-10-16T08:11:13Z",
+      "updatedAt": "2026-10-22T12:39:01Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:249",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 249,
+      "title": "Promotion queue — gods-eye-view (canonical #249)",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
+      "createdAt": "2026-10-16T08:13:10Z",
+      "updatedAt": "2026-10-22T12:36:31Z"
+    },
+    {
+      "key": "kvnloo/omalauncher:pull_request:4",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/omalauncher",
+      "number": 4,
+      "title": "CI evidence: terminal tile lifecycle (origin PR 130)",
+      "url": "https://github.com/kvnloo/omalauncher/pull/4",
+      "createdAt": "2026-10-15T07:25:20Z",
+      "updatedAt": "2026-10-22T12:34:38Z"
+    },
+    {
+      "key": "SimonSchubert/omalauncher:pull_request:130",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "SimonSchubert/omalauncher",
+      "number": 130,
+      "title": "Keep exited terminal tiles stopped across page changes",
+      "url": "https://github.com/SimonSchubert/omalauncher/pull/130",
+      "createdAt": "2026-10-15T06:04:26Z",
+      "updatedAt": "2026-10-22T12:34:38Z"
+    },
+    {
+      "key": "kvnloo/noop:issue:74",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/noop",
+      "number": 74,
+      "title": "[Canonical promotion queue] NOOP — open fork PRs, evidence and upstream gates",
+      "url": "https://github.com/kvnloo/noop/issues/74",
+      "createdAt": "2026-10-19T18:52:02Z",
+      "updatedAt": "2026-10-22T12:34:32Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:889",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 889,
+      "title": "perf: coalesce identical terrain height requests",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/889",
+      "createdAt": "2026-10-01T21:57:08Z",
+      "updatedAt": "2026-10-22T12:30:24Z"
+    },
+    {
+      "key": "kvnloo/noctalia:issue:25",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/noctalia",
+      "number": 25,
+      "title": "Promotion queue: Noctalia (canonical)",
+      "url": "https://github.com/kvnloo/noctalia/issues/25",
+      "createdAt": "2026-10-20T14:28:02Z",
+      "updatedAt": "2026-10-22T12:25:59Z"
+    },
+    {
+      "key": "raspberrypi/rpi-image-gen:pull_request:339",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "raspberrypi/rpi-image-gen",
+      "number": 339,
+      "title": "Document merged-usr paths for dpkg filters",
+      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/339",
+      "createdAt": "2026-09-28T18:35:35Z",
+      "updatedAt": "2026-10-22T12:20:27Z"
+    },
+    {
+      "key": "kvnloo/noctalia:pull_request:31",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/noctalia",
+      "number": 31,
+      "title": "fix(cli): allow sourcing generated zsh completions",
+      "url": "https://github.com/kvnloo/noctalia/pull/31",
+      "createdAt": "2026-10-20T15:01:55Z",
+      "updatedAt": "2026-10-22T11:59:30Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:115",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/dash",
+      "number": 115,
+      "title": "fix(trace): mount authenticated live feed on the real Dash bridge",
+      "url": "https://github.com/kvnloo/dash/pull/115",
+      "createdAt": "2026-10-22T11:54:44Z",
+      "updatedAt": "2026-10-22T11:54:55Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:24",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/fframestudio",
+      "number": 24,
+      "title": "feat(cinetic): promote reviewed technique plans to main",
+      "url": "https://github.com/kvnloo/fframestudio/pull/24",
+      "createdAt": "2026-10-20T14:41:11Z",
+      "updatedAt": "2026-10-22T11:49:00Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:25",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/fframestudio",
+      "number": 25,
+      "title": "fix(cinetic): stale-read, edit-retention and open-JSON fixes for #24",
+      "url": "https://github.com/kvnloo/fframestudio/pull/25",
+      "createdAt": "2026-10-21T04:10:00Z",
+      "updatedAt": "2026-10-22T11:46:35Z",
+      "mergedAt": "2026-10-22T11:46:34Z"
+    },
+    {
+      "key": "alt-glitch/hermes-tern:issue:84",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "alt-glitch/hermes-tern",
+      "number": 84,
+      "title": "[P3 proposal] Opt-in speech dictation into the composer (never auto-submit)",
+      "url": "https://github.com/alt-glitch/hermes-tern/issues/84",
+      "createdAt": "2026-10-22T11:30:59Z",
+      "updatedAt": "2026-10-22T11:30:59Z"
+    },
+    {
+      "key": "alt-glitch/hermes-tern:issue:83",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "alt-glitch/hermes-tern",
+      "number": 83,
+      "title": "[P2 proposal] Navigate conversation history: rewind safely and find branch ancestry",
+      "url": "https://github.com/alt-glitch/hermes-tern/issues/83",
+      "createdAt": "2026-10-22T11:30:17Z",
+      "updatedAt": "2026-10-22T11:30:17Z"
+    },
+    {
+      "key": "alt-glitch/hermes-tern:issue:82",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "alt-glitch/hermes-tern",
+      "number": 82,
+      "title": "[P1 proposal] Make Tern action controls keyboard-accessible and named",
+      "url": "https://github.com/alt-glitch/hermes-tern/issues/82",
+      "createdAt": "2026-10-22T11:29:24Z",
+      "updatedAt": "2026-10-22T11:29:24Z"
+    },
+    {
+      "key": "alt-glitch/hermes-tern:issue:81",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "alt-glitch/hermes-tern",
+      "number": 81,
+      "title": "[P1 proposal] Image previews: enforce byte limits and session ownership",
+      "url": "https://github.com/alt-glitch/hermes-tern/issues/81",
+      "createdAt": "2026-10-22T11:28:44Z",
+      "updatedAt": "2026-10-22T11:28:44Z"
+    },
     {
       "key": "kvnloo/dash:issue:114",
       "kind": "issue",
@@ -596,18 +1090,6 @@
       "updatedAt": "2026-10-21T20:58:49Z"
     },
     {
-      "key": "kvnloo/gods-eye-view:issue:249",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 249,
-      "title": "Promotion queue — gods-eye-view (canonical #249)",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
-      "createdAt": "2026-10-16T08:13:10Z",
-      "updatedAt": "2026-10-21T20:44:11Z"
-    },
-    {
       "key": "bilawalsidhu/gods-eye-view:pull_request:847",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -696,78 +1178,6 @@
       "updatedAt": "2026-10-21T18:11:03Z"
     },
     {
-      "key": "kvnloo/z0live:issue:8",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0live",
-      "number": 8,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/z0live/issues/8",
-      "createdAt": "2026-10-19T17:08:06Z",
-      "updatedAt": "2026-10-21T18:03:12Z"
-    },
-    {
-      "key": "kvnloo/z0intelligence:issue:177",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0intelligence",
-      "number": 177,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/z0intelligence/issues/177",
-      "createdAt": "2026-10-20T05:14:19Z",
-      "updatedAt": "2026-10-21T18:03:05Z"
-    },
-    {
-      "key": "kvnloo/z0evals:issue:100",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0evals",
-      "number": 100,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/z0evals/issues/100",
-      "createdAt": "2026-10-20T05:15:07Z",
-      "updatedAt": "2026-10-21T18:02:57Z"
-    },
-    {
-      "key": "kvnloo/oh-my-pi:issue:158",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/oh-my-pi",
-      "number": 158,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/oh-my-pi/issues/158",
-      "createdAt": "2026-10-20T05:16:24Z",
-      "updatedAt": "2026-10-21T18:02:25Z"
-    },
-    {
-      "key": "kvnloo/noop:issue:75",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/noop",
-      "number": 75,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/noop/issues/75",
-      "createdAt": "2026-10-20T05:17:09Z",
-      "updatedAt": "2026-10-21T18:02:15Z"
-    },
-    {
-      "key": "kvnloo/lawnchair:issue:15",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/lawnchair",
-      "number": 15,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/lawnchair/issues/15",
-      "createdAt": "2026-10-19T17:07:10Z",
-      "updatedAt": "2026-10-21T18:02:01Z"
-    },
-    {
       "key": "kvnloo/hermes-agent:issue:509",
       "kind": "issue",
       "relationship": "owned",
@@ -778,42 +1188,6 @@
       "url": "https://github.com/kvnloo/hermes-agent/issues/509",
       "createdAt": "2026-10-17T07:46:30Z",
       "updatedAt": "2026-10-21T18:01:48Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:issue:23",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/fframestudio",
-      "number": 23,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/fframestudio/issues/23",
-      "createdAt": "2026-10-20T05:16:46Z",
-      "updatedAt": "2026-10-21T18:01:35Z"
-    },
-    {
-      "key": "kvnloo/dash:issue:50",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/dash",
-      "number": 50,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/dash/issues/50",
-      "createdAt": "2026-10-19T18:24:59Z",
-      "updatedAt": "2026-10-21T18:01:25Z"
-    },
-    {
-      "key": "kvnloo/.files:issue:29",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/.files",
-      "number": 29,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/.files/issues/29",
-      "createdAt": "2026-10-20T05:15:41Z",
-      "updatedAt": "2026-10-21T18:01:07Z"
     },
     {
       "key": "kvnloo/dash:pull_request:101",
@@ -1006,18 +1380,6 @@
       "mergedAt": "2026-10-21T16:05:41Z"
     },
     {
-      "key": "kvnloo/omarchy:issue:110",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/omarchy",
-      "number": 110,
-      "title": "Promotion queue — Omarchy (canonical #110)",
-      "url": "https://github.com/kvnloo/omarchy/issues/110",
-      "createdAt": "2026-10-16T08:11:13Z",
-      "updatedAt": "2026-10-21T15:47:20Z"
-    },
-    {
       "key": "pingdotgg/t3code:pull_request:20738",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -1179,18 +1541,6 @@
       "updatedAt": "2026-10-21T14:34:08Z"
     },
     {
-      "key": "mrsarac/ff-tracking:pull_request:5",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "mrsarac/ff-tracking",
-      "number": 5,
-      "title": "Render on Linux with Vulkan, and fall back to the CPU",
-      "url": "https://github.com/mrsarac/ff-tracking/pull/5",
-      "createdAt": "2026-10-21T06:51:53Z",
-      "updatedAt": "2026-10-21T14:12:15Z"
-    },
-    {
       "key": "bilawalsidhu/gods-eye-view:issue:819",
       "kind": "issue",
       "relationship": "canonical_upstream",
@@ -1201,18 +1551,6 @@
       "url": "https://github.com/bilawalsidhu/gods-eye-view/issues/819",
       "createdAt": "2026-09-29T00:15:03Z",
       "updatedAt": "2026-10-21T14:09:36Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:12955",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 12955,
-      "title": "fix: shell bar/tray/agents leftovers (#10989 #11021 #11022)",
-      "url": "https://github.com/omacom/omarchy/pull/12955",
-      "createdAt": "2026-09-22T21:51:52Z",
-      "updatedAt": "2026-10-21T14:06:19Z"
     },
     {
       "key": "omacom/omarchy:pull_request:12963",
@@ -1237,18 +1575,6 @@
       "url": "https://github.com/omacom/omarchy/pull/10235",
       "createdAt": "2026-09-04T20:01:18Z",
       "updatedAt": "2026-10-21T12:46:04Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:10236",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 10236,
-      "title": "fix(launcher): remove plugin when desktop belongs to a shell plugin",
-      "url": "https://github.com/omacom/omarchy/pull/10236",
-      "createdAt": "2026-09-04T20:01:22Z",
-      "updatedAt": "2026-10-21T12:25:43Z"
     },
     {
       "key": "kvnloo/dash:pull_request:78",
@@ -1359,30 +1685,6 @@
       "updatedAt": "2026-10-21T07:45:22Z"
     },
     {
-      "key": "raspberrypi/rpi-image-gen:pull_request:339",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "raspberrypi/rpi-image-gen",
-      "number": 339,
-      "title": "Document merged-usr paths for dpkg filters",
-      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/339",
-      "createdAt": "2026-09-28T18:35:35Z",
-      "updatedAt": "2026-10-21T07:41:45Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:pull_request:29",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/fframestudio",
-      "number": 29,
-      "title": "fix(hosted): keep only project files from read-only folder imports",
-      "url": "https://github.com/kvnloo/fframestudio/pull/29",
-      "createdAt": "2026-10-21T07:06:10Z",
-      "updatedAt": "2026-10-21T07:09:42Z"
-    },
-    {
       "key": "kvnloo/noop:pull_request:96",
       "kind": "pull_request",
       "relationship": "owned",
@@ -1465,18 +1767,6 @@
       "url": "https://github.com/kvnloo/z0live/pull/37",
       "createdAt": "2026-10-21T02:04:41Z",
       "updatedAt": "2026-10-21T06:53:00Z"
-    },
-    {
-      "key": "mrsarac/ff-unmute:pull_request:1",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "mrsarac/ff-unmute",
-      "number": 1,
-      "title": "Render on Linux with Vulkan, and fall back to the CPU",
-      "url": "https://github.com/mrsarac/ff-unmute/pull/1",
-      "createdAt": "2026-10-21T06:51:56Z",
-      "updatedAt": "2026-10-21T06:51:56Z"
     },
     {
       "key": "kvnloo/noop:pull_request:81",
@@ -2139,18 +2429,6 @@
       "updatedAt": "2026-10-21T04:26:06Z"
     },
     {
-      "key": "kvnloo/noop:issue:74",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/noop",
-      "number": 74,
-      "title": "[Canonical promotion queue] NOOP — open fork PRs, evidence and upstream gates",
-      "url": "https://github.com/kvnloo/noop/issues/74",
-      "createdAt": "2026-10-19T18:52:02Z",
-      "updatedAt": "2026-10-21T04:22:49Z"
-    },
-    {
       "key": "omacom/omarchy:pull_request:12964",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -2185,30 +2463,6 @@
       "url": "https://github.com/kvnloo/z0evals/pull/105",
       "createdAt": "2026-10-21T04:12:24Z",
       "updatedAt": "2026-10-21T04:12:24Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:pull_request:24",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/fframestudio",
-      "number": 24,
-      "title": "feat(cinetic): promote reviewed technique plans to main",
-      "url": "https://github.com/kvnloo/fframestudio/pull/24",
-      "createdAt": "2026-10-20T14:41:11Z",
-      "updatedAt": "2026-10-21T04:12:09Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:pull_request:25",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/fframestudio",
-      "number": 25,
-      "title": "fix(cinetic): stale-read, edit-retention and open-JSON fixes for #24",
-      "url": "https://github.com/kvnloo/fframestudio/pull/25",
-      "createdAt": "2026-10-21T04:10:00Z",
-      "updatedAt": "2026-10-21T04:10:00Z"
     },
     {
       "key": "kvnloo/tokenomics:issue:19",
@@ -2559,18 +2813,6 @@
       "updatedAt": "2026-10-20T18:40:49Z"
     },
     {
-      "key": "SimonSchubert/omalauncher:pull_request:130",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "SimonSchubert/omalauncher",
-      "number": 130,
-      "title": "Keep exited terminal tiles stopped across page changes",
-      "url": "https://github.com/SimonSchubert/omalauncher/pull/130",
-      "createdAt": "2026-10-15T06:04:26Z",
-      "updatedAt": "2026-10-20T18:40:49Z"
-    },
-    {
       "key": "SimonSchubert/omalauncher:pull_request:158",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -2705,18 +2947,6 @@
       "mergedAt": "2026-10-20T16:42:20Z"
     },
     {
-      "key": "kvnloo/fframestudio:issue:22",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/fframestudio",
-      "number": 22,
-      "title": "Promotion queue — kvnloo/fframestudio",
-      "url": "https://github.com/kvnloo/fframestudio/issues/22",
-      "createdAt": "2026-10-19T06:56:06Z",
-      "updatedAt": "2026-10-20T15:49:54Z"
-    },
-    {
       "key": "kvnloo/taste-skill:pull_request:1",
       "kind": "pull_request",
       "relationship": "owned",
@@ -2741,30 +2971,6 @@
       "createdAt": "2026-10-20T15:18:30Z",
       "updatedAt": "2026-10-20T15:22:32Z",
       "mergedAt": "2026-10-20T15:22:32Z"
-    },
-    {
-      "key": "kvnloo/noctalia:issue:25",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/noctalia",
-      "number": 25,
-      "title": "Promotion queue: Noctalia (canonical)",
-      "url": "https://github.com/kvnloo/noctalia/issues/25",
-      "createdAt": "2026-10-20T14:28:02Z",
-      "updatedAt": "2026-10-20T15:14:58Z"
-    },
-    {
-      "key": "kvnloo/omalauncher:pull_request:7",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/omalauncher",
-      "number": 7,
-      "title": "coordination: canonical Omalauncher promotion queue (retain unmerged)",
-      "url": "https://github.com/kvnloo/omalauncher/pull/7",
-      "createdAt": "2026-10-18T08:19:54Z",
-      "updatedAt": "2026-10-20T15:14:25Z"
     },
     {
       "key": "kvnloo/omalauncher:pull_request:9",
@@ -2873,18 +3079,6 @@
       "url": "https://github.com/kvnloo/noctalia/pull/26",
       "createdAt": "2026-10-20T14:28:43Z",
       "updatedAt": "2026-10-20T15:02:51Z"
-    },
-    {
-      "key": "kvnloo/noctalia:pull_request:31",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/noctalia",
-      "number": 31,
-      "title": "fix(cli): allow sourcing generated zsh completions",
-      "url": "https://github.com/kvnloo/noctalia/pull/31",
-      "createdAt": "2026-10-20T15:01:55Z",
-      "updatedAt": "2026-10-20T15:01:55Z"
     },
     {
       "key": "kvnloo/omalauncher:pull_request:3",
@@ -3029,18 +3223,6 @@
       "url": "https://github.com/kvnloo/noctalia/issues/23",
       "createdAt": "2026-10-20T14:27:15Z",
       "updatedAt": "2026-10-20T14:31:53Z"
-    },
-    {
-      "key": "kvnloo/omalauncher:pull_request:4",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/omalauncher",
-      "number": 4,
-      "title": "CI evidence: terminal tile lifecycle (origin PR 130)",
-      "url": "https://github.com/kvnloo/omalauncher/pull/4",
-      "createdAt": "2026-10-15T07:25:20Z",
-      "updatedAt": "2026-10-20T14:31:45Z"
     },
     {
       "key": "kvnloo/noctalia:pull_request:17",
@@ -3938,18 +4120,6 @@
       "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/834",
       "createdAt": "2026-09-29T01:50:04Z",
       "updatedAt": "2026-10-20T06:53:50Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:889",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 889,
-      "title": "perf: coalesce identical terrain height requests",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/889",
-      "createdAt": "2026-10-01T21:57:08Z",
-      "updatedAt": "2026-10-20T06:52:21Z"
     },
     {
       "key": "kvnloo/spark:pull_request:1",
@@ -6084,18 +6254,6 @@
       "updatedAt": "2026-10-19T06:52:41Z"
     },
     {
-      "key": "kvnloo/cua:issue:74",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/cua",
-      "number": 74,
-      "title": "[META: WAIT FOR EVIDENCE] Final upstream promotion DAG + posting queue",
-      "url": "https://github.com/kvnloo/cua/issues/74",
-      "createdAt": "2026-09-25T22:10:37Z",
-      "updatedAt": "2026-10-19T06:31:12Z"
-    },
-    {
       "key": "trycua/cua:pull_request:5420",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -6118,18 +6276,6 @@
       "url": "https://github.com/kvnloo/crush/pull/15",
       "createdAt": "2026-10-03T22:21:20Z",
       "updatedAt": "2026-10-19T06:21:05Z"
-    },
-    {
-      "key": "kvnloo/t3code:issue:42",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/t3code",
-      "number": 42,
-      "title": "T3Code — single canonical promotion queue (#42)",
-      "url": "https://github.com/kvnloo/t3code/issues/42",
-      "createdAt": "2026-10-16T08:09:06Z",
-      "updatedAt": "2026-10-19T05:59:51Z"
     },
     {
       "key": "kvnloo/img2threejs:pull_request:22",
@@ -6529,18 +6675,6 @@
       "url": "https://github.com/ROCm/ATOM/pull/2619",
       "createdAt": "2026-10-16T16:46:56Z",
       "updatedAt": "2026-10-18T23:30:33Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:12956",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 12956,
-      "title": "fix: herdr swap_pane_up + aarch64 kernel restart (#10231 #10232)",
-      "url": "https://github.com/omacom/omarchy/pull/12956",
-      "createdAt": "2026-09-22T22:02:07Z",
-      "updatedAt": "2026-10-18T23:09:16Z"
     },
     {
       "key": "omacom/omarchy:pull_request:11025",
@@ -18254,18 +18388,6 @@
       "updatedAt": "2026-10-16T22:50:31Z"
     },
     {
-      "key": "newton-physics/newton:issue:4774",
-      "kind": "issue",
-      "relationship": "canonical_upstream",
-      "status": "open",
-      "repo": "newton-physics/newton",
-      "number": 4774,
-      "title": "[BUG] Box raycast can report zero normal for a valid small-direction hit",
-      "url": "https://github.com/newton-physics/newton/issues/4774",
-      "createdAt": "2026-10-16T22:46:56Z",
-      "updatedAt": "2026-10-16T22:46:56Z"
-    },
-    {
       "key": "bilawalsidhu/gods-eye-view:pull_request:1181",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -19675,30 +19797,6 @@
       "url": "https://github.com/raspberrypi/rpi-image-gen/pull/335",
       "createdAt": "2026-09-28T17:25:16Z",
       "updatedAt": "2026-10-15T16:23:21Z"
-    },
-    {
-      "key": "openclaw/openclaw:pull_request:149234",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "openclaw/openclaw",
-      "number": 149234,
-      "title": "fix(ui): hard-disable ineligible session hosts with stacked reasons",
-      "url": "https://github.com/openclaw/openclaw/pull/149234",
-      "createdAt": "2026-09-15T15:48:36Z",
-      "updatedAt": "2026-10-15T11:45:10Z"
-    },
-    {
-      "key": "openclaw/openclaw:pull_request:149235",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "openclaw/openclaw",
-      "number": 149235,
-      "title": "fix(ui): thin Vietnamese Noto webfont fallback (#133930)",
-      "url": "https://github.com/openclaw/openclaw/pull/149235",
-      "createdAt": "2026-09-15T15:48:39Z",
-      "updatedAt": "2026-10-15T11:43:53Z"
     },
     {
       "key": "kvnloo/99:pull_request:2",
