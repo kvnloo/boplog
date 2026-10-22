@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T18:22:10Z",
+  "generatedAt": "2026-10-22T00:20:31Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -264,13 +264,109 @@
   },
   "summary": {
     "mergedUpstreamPullRequests": 132,
-    "openReadyUpstreamPullRequests": 166,
-    "draftUpstreamPullRequests": 67,
+    "openReadyUpstreamPullRequests": 167,
+    "draftUpstreamPullRequests": 66,
     "upstreamIssuesAndProposals": 377,
     "distinctUpstreamCommunities": 139,
     "verifiedImpact": 0
   },
   "contributions": [
+    {
+      "key": "kvnloo/z0evals:pull_request:114",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0evals",
+      "number": 114,
+      "title": "study: incomplete synthetic memory-provider retrieval comparison",
+      "url": "https://github.com/kvnloo/z0evals/pull/114",
+      "createdAt": "2026-10-21T23:51:02Z",
+      "updatedAt": "2026-10-21T23:51:02Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:193",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0intelligence",
+      "number": 193,
+      "title": "feat(turbo): opt-in ChatGPT app fanout (offline-qualified Lane B)",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/193",
+      "createdAt": "2026-10-21T23:12:51Z",
+      "updatedAt": "2026-10-21T23:13:02Z"
+    },
+    {
+      "key": "kvnloo/.files:pull_request:38",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/.files",
+      "number": 38,
+      "title": "feat(fleet): ops-plane gates — O1 placement, O8 notify-once, O4 privacy hooks",
+      "url": "https://github.com/kvnloo/.files/pull/38",
+      "createdAt": "2026-10-21T23:08:05Z",
+      "updatedAt": "2026-10-21T23:08:05Z"
+    },
+    {
+      "key": "kvnloo/.files:pull_request:37",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/.files",
+      "number": 37,
+      "title": "feat(fsm): ops plane O1-O9 as a Hapsland layer",
+      "url": "https://github.com/kvnloo/.files/pull/37",
+      "createdAt": "2026-10-21T23:07:38Z",
+      "updatedAt": "2026-10-21T23:07:38Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:110",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 110,
+      "title": "Annotation mode: draw, talk and send over any Dash screen (S Pen)",
+      "url": "https://github.com/kvnloo/dash/pull/110",
+      "createdAt": "2026-10-21T23:01:29Z",
+      "updatedAt": "2026-10-21T23:01:38Z"
+    },
+    {
+      "key": "kvnloo/lawnchair:pull_request:44",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/lawnchair",
+      "number": 44,
+      "title": "fix(z0live): install wrapper enforces O6 and checks O5 via z0-guard",
+      "url": "https://github.com/kvnloo/lawnchair/pull/44",
+      "createdAt": "2026-10-21T22:59:17Z",
+      "updatedAt": "2026-10-21T22:59:17Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:192",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0intelligence",
+      "number": 192,
+      "title": "feat(fsm): ops plane O1-O9 — Bend laws, parity-checked gates, incident replays",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/192",
+      "createdAt": "2026-10-21T22:59:03Z",
+      "updatedAt": "2026-10-21T22:59:13Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:109",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 109,
+      "title": "Composer mic: system dictation (no keyboard) + hold-slide Live voice/Dictate picker",
+      "url": "https://github.com/kvnloo/dash/pull/109",
+      "createdAt": "2026-10-21T22:56:10Z",
+      "updatedAt": "2026-10-21T22:56:10Z"
+    },
     {
       "key": "kvnloo/dash:pull_request:76",
       "kind": "pull_request",
@@ -281,7 +377,263 @@
       "title": "integrate: Dash 2026-10-20 — merge stage/live/z0bridge, fix chat history, send, keyboard and nav; add thinking orbs",
       "url": "https://github.com/kvnloo/dash/pull/76",
       "createdAt": "2026-10-21T01:42:16Z",
-      "updatedAt": "2026-10-21T18:18:08Z"
+      "updatedAt": "2026-10-21T22:44:52Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:108",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 108,
+      "title": "Voice: live conversation mode with the hero AgentOrb (z0live state)",
+      "url": "https://github.com/kvnloo/dash/pull/108",
+      "createdAt": "2026-10-21T22:38:17Z",
+      "updatedAt": "2026-10-21T22:38:27Z"
+    },
+    {
+      "key": "kvnloo/dash:issue:107",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/dash",
+      "number": 107,
+      "title": "Dogfood (self-test) mode: report → Turbo fix → live preview → confirm, in real time",
+      "url": "https://github.com/kvnloo/dash/issues/107",
+      "createdAt": "2026-10-21T22:21:41Z",
+      "updatedAt": "2026-10-21T22:37:37Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:issue:191",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0intelligence",
+      "number": 191,
+      "title": "Turbo fan-out: Codex Cloud workers → live preview → 'Now testing' card (and the ChatGPT-app lane question)",
+      "url": "https://github.com/kvnloo/z0intelligence/issues/191",
+      "createdAt": "2026-10-21T22:37:36Z",
+      "updatedAt": "2026-10-21T22:37:36Z"
+    },
+    {
+      "key": "kvnloo/lawnchair:pull_request:43",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/lawnchair",
+      "number": 43,
+      "title": "fix(z0live): recover opted-in accessibility registration",
+      "url": "https://github.com/kvnloo/lawnchair/pull/43",
+      "createdAt": "2026-10-21T21:32:17Z",
+      "updatedAt": "2026-10-21T22:34:12Z"
+    },
+    {
+      "key": "kvnloo/harpoon:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/harpoon",
+      "number": 1,
+      "title": "test/fix: don't sync file positions for generic duplicate lists (downstream)",
+      "url": "https://github.com/kvnloo/harpoon/pull/1",
+      "createdAt": "2026-10-14T04:05:24Z",
+      "updatedAt": "2026-10-21T22:32:27Z"
+    },
+    {
+      "key": "kvnloo/.files:pull_request:36",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/.files",
+      "number": 36,
+      "title": "fsm: phone-first Hapsland shell for Bend statechart layers (stacked on #34)",
+      "url": "https://github.com/kvnloo/.files/pull/36",
+      "createdAt": "2026-10-21T22:22:31Z",
+      "updatedAt": "2026-10-21T22:22:31Z"
+    },
+    {
+      "key": "kvnloo/z0live:pull_request:41",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0live",
+      "number": 41,
+      "title": "feat(ring): voice-labelled private ring recording during live calls",
+      "url": "https://github.com/kvnloo/z0live/pull/41",
+      "createdAt": "2026-10-21T21:43:57Z",
+      "updatedAt": "2026-10-21T22:09:38Z"
+    },
+    {
+      "key": "kvnloo/noop:pull_request:97",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/noop",
+      "number": 97,
+      "title": "feat(oura): voice-labelled walking recordings and honest Kotlin replay evaluation",
+      "url": "https://github.com/kvnloo/noop/pull/97",
+      "createdAt": "2026-10-21T21:44:24Z",
+      "updatedAt": "2026-10-21T22:09:36Z"
+    },
+    {
+      "key": "kvnloo/z0live:pull_request:42",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0live",
+      "number": 42,
+      "title": "fix(voice): backend relay status and explicit phone-operation guard",
+      "url": "https://github.com/kvnloo/z0live/pull/42",
+      "createdAt": "2026-10-21T21:46:17Z",
+      "updatedAt": "2026-10-21T22:08:49Z"
+    },
+    {
+      "key": "kvnloo/taste-skill:pull_request:2",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/taste-skill",
+      "number": 2,
+      "title": "Personal taste layer: private corpus hook, bookmark sync, skill reads owner taste first",
+      "url": "https://github.com/kvnloo/taste-skill/pull/2",
+      "createdAt": "2026-10-21T22:06:58Z",
+      "updatedAt": "2026-10-21T22:06:58Z"
+    },
+    {
+      "key": "kvnloo/z0live:pull_request:40",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0live",
+      "number": 40,
+      "title": "fix(voice): audited accessibility recovery from opted-in phone presence",
+      "url": "https://github.com/kvnloo/z0live/pull/40",
+      "createdAt": "2026-10-21T21:33:10Z",
+      "updatedAt": "2026-10-21T21:43:24Z"
+    },
+    {
+      "key": "kvnloo/lawnchair:pull_request:42",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/lawnchair",
+      "number": 42,
+      "title": "fix(z0live): install wrapper keeps accessibility services across updates",
+      "url": "https://github.com/kvnloo/lawnchair/pull/42",
+      "createdAt": "2026-10-21T21:18:55Z",
+      "updatedAt": "2026-10-21T21:18:55Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:issue:4",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/fframestudio",
+      "number": 4,
+      "title": "feat: ff-unmute integration — audio-reactive film, score and cinematic camera editing",
+      "url": "https://github.com/kvnloo/fframestudio/issues/4",
+      "createdAt": "2026-10-17T23:03:41Z",
+      "updatedAt": "2026-10-21T21:02:53Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:issue:5",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/fframestudio",
+      "number": 5,
+      "title": "research: cinematic-quality OSS engines, audiovisual shaders and procedural film adapters",
+      "url": "https://github.com/kvnloo/fframestudio/issues/5",
+      "createdAt": "2026-10-17T23:08:15Z",
+      "updatedAt": "2026-10-21T20:58:49Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:249",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 249,
+      "title": "Promotion queue — gods-eye-view (canonical #249)",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
+      "createdAt": "2026-10-16T08:13:10Z",
+      "updatedAt": "2026-10-21T20:44:11Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:847",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 847,
+      "title": "feat(cyclones): publish explicit storm selection to shared context",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/847",
+      "createdAt": "2026-09-29T05:20:49Z",
+      "updatedAt": "2026-10-21T20:43:23Z"
+    },
+    {
+      "key": "kvnloo/dash:issue:106",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/dash",
+      "number": 106,
+      "title": "Inspiration: Empryo phone agent app — parallel tabs, usage hub, routing, runs (BniWael video)",
+      "url": "https://github.com/kvnloo/dash/issues/106",
+      "createdAt": "2026-10-21T20:16:25Z",
+      "updatedAt": "2026-10-21T20:16:25Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:105",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 105,
+      "title": "perf: finish post-Lab motion deadline qualification",
+      "url": "https://github.com/kvnloo/dash/pull/105",
+      "createdAt": "2026-10-21T18:59:39Z",
+      "updatedAt": "2026-10-21T19:05:41Z",
+      "mergedAt": "2026-10-21T19:02:01Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:104",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 104,
+      "title": "Keep tile press transforms free of entrance-animation races",
+      "url": "https://github.com/kvnloo/dash/pull/104",
+      "createdAt": "2026-10-21T18:27:37Z",
+      "updatedAt": "2026-10-21T18:40:31Z",
+      "mergedAt": "2026-10-21T18:33:06Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:100",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 100,
+      "title": "Polish Lab performance, density sizing and directional tile interactions",
+      "url": "https://github.com/kvnloo/dash/pull/100",
+      "createdAt": "2026-10-21T17:45:50Z",
+      "updatedAt": "2026-10-21T18:40:30Z",
+      "mergedAt": "2026-10-21T17:56:11Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:102",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 102,
+      "title": "Reflow stat grids for narrow screens and large type",
+      "url": "https://github.com/kvnloo/dash/pull/102",
+      "createdAt": "2026-10-21T18:08:36Z",
+      "updatedAt": "2026-10-21T18:18:08Z",
+      "mergedAt": "2026-10-21T18:18:08Z"
     },
     {
       "key": "kvnloo/dash:pull_request:103",
@@ -294,18 +646,6 @@
       "url": "https://github.com/kvnloo/dash/pull/103",
       "createdAt": "2026-10-21T18:10:53Z",
       "updatedAt": "2026-10-21T18:11:03Z"
-    },
-    {
-      "key": "kvnloo/dash:pull_request:102",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 102,
-      "title": "Reflow stat grids for narrow screens and large type",
-      "url": "https://github.com/kvnloo/dash/pull/102",
-      "createdAt": "2026-10-21T18:08:36Z",
-      "updatedAt": "2026-10-21T18:08:48Z"
     },
     {
       "key": "kvnloo/z0live:issue:8",
@@ -426,19 +766,6 @@
       "url": "https://github.com/kvnloo/.files/issues/29",
       "createdAt": "2026-10-20T05:15:41Z",
       "updatedAt": "2026-10-21T18:01:07Z"
-    },
-    {
-      "key": "kvnloo/dash:pull_request:100",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "merged",
-      "repo": "kvnloo/dash",
-      "number": 100,
-      "title": "Polish Lab performance, density sizing and directional tile interactions",
-      "url": "https://github.com/kvnloo/dash/pull/100",
-      "createdAt": "2026-10-21T17:45:50Z",
-      "updatedAt": "2026-10-21T17:56:12Z",
-      "mergedAt": "2026-10-21T17:56:11Z"
     },
     {
       "key": "kvnloo/dash:pull_request:101",
@@ -2791,18 +3118,6 @@
       "mergedAt": "2026-10-20T14:10:13Z"
     },
     {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:847",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 847,
-      "title": "feat(cyclones): publish explicit storm selection to shared context",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/847",
-      "createdAt": "2026-09-29T05:20:49Z",
-      "updatedAt": "2026-10-20T13:44:03Z"
-    },
-    {
       "key": "bilawalsidhu/gods-eye-view:pull_request:811",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -3020,18 +3335,6 @@
       "url": "https://github.com/kvnloo/living-manuals/pull/5",
       "createdAt": "2026-10-20T08:54:04Z",
       "updatedAt": "2026-10-20T08:54:04Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:issue:249",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 249,
-      "title": "Promotion queue — gods-eye-view (canonical #249)",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
-      "createdAt": "2026-10-16T08:13:10Z",
-      "updatedAt": "2026-10-20T08:51:08Z"
     },
     {
       "key": "kvnloo/spark:pull_request:2",
@@ -6895,18 +7198,6 @@
       "updatedAt": "2026-10-18T05:29:43Z"
     },
     {
-      "key": "kvnloo/fframestudio:issue:5",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/fframestudio",
-      "number": 5,
-      "title": "research: cinematic-quality OSS engines, audiovisual shaders and procedural film adapters",
-      "url": "https://github.com/kvnloo/fframestudio/issues/5",
-      "createdAt": "2026-10-17T23:08:15Z",
-      "updatedAt": "2026-10-18T05:29:41Z"
-    },
-    {
       "key": "kvnloo/fframestudio:issue:11",
       "kind": "issue",
       "relationship": "owned",
@@ -7014,18 +7305,6 @@
       "url": "https://github.com/kvnloo/fframestudio/issues/8",
       "createdAt": "2026-10-18T01:46:35Z",
       "updatedAt": "2026-10-18T04:56:35Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:issue:4",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/fframestudio",
-      "number": 4,
-      "title": "feat: ff-unmute integration — audio-reactive film, score and cinematic camera editing",
-      "url": "https://github.com/kvnloo/fframestudio/issues/4",
-      "createdAt": "2026-10-17T23:03:41Z",
-      "updatedAt": "2026-10-18T04:56:33Z"
     },
     {
       "key": "kvnloo/fframestudio:issue:3",
@@ -18010,18 +18289,6 @@
       "createdAt": "2026-10-15T06:04:26Z",
       "updatedAt": "2026-10-16T21:35:32Z",
       "mergedAt": "2026-10-16T21:35:24Z"
-    },
-    {
-      "key": "kvnloo/harpoon:pull_request:1",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/harpoon",
-      "number": 1,
-      "title": "test/fix: don't sync file positions for generic duplicate lists (downstream)",
-      "url": "https://github.com/kvnloo/harpoon/pull/1",
-      "createdAt": "2026-10-14T04:05:24Z",
-      "updatedAt": "2026-10-16T21:21:49Z"
     },
     {
       "key": "omacom/omarchy:pull_request:13939",
