@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T00:20:31Z",
+  "generatedAt": "2026-10-22T10:49:43Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -272,6 +272,66 @@
   },
   "contributions": [
     {
+      "key": "kvnloo/dash:issue:114",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/dash",
+      "number": 114,
+      "title": "bug: OpenUI Lang roadmap renders as code on phone; verify actual runtime",
+      "url": "https://github.com/kvnloo/dash/issues/114",
+      "createdAt": "2026-10-22T05:35:05Z",
+      "updatedAt": "2026-10-22T05:35:05Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:113",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 113,
+      "title": "feat(trace): intent, receipt and artifact review (parent-gated)",
+      "url": "https://github.com/kvnloo/dash/pull/113",
+      "createdAt": "2026-10-22T04:11:59Z",
+      "updatedAt": "2026-10-22T04:11:59Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:109",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 109,
+      "title": "Composer mic: system dictation (no keyboard) + hold-slide Live voice/Dictate picker",
+      "url": "https://github.com/kvnloo/dash/pull/109",
+      "createdAt": "2026-10-21T22:56:10Z",
+      "updatedAt": "2026-10-22T04:05:31Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:112",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 112,
+      "title": "Input slice: agent controls and read-only recent-model evidence",
+      "url": "https://github.com/kvnloo/dash/pull/112",
+      "createdAt": "2026-10-22T04:03:23Z",
+      "updatedAt": "2026-10-22T04:05:27Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:111",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 111,
+      "title": "Input lane: persistent session dock and agent controls (parent review)",
+      "url": "https://github.com/kvnloo/dash/pull/111",
+      "createdAt": "2026-10-22T04:03:20Z",
+      "updatedAt": "2026-10-22T04:05:25Z"
+    },
+    {
       "key": "kvnloo/z0evals:pull_request:114",
       "kind": "pull_request",
       "relationship": "owned",
@@ -354,18 +414,6 @@
       "url": "https://github.com/kvnloo/z0intelligence/pull/192",
       "createdAt": "2026-10-21T22:59:03Z",
       "updatedAt": "2026-10-21T22:59:13Z"
-    },
-    {
-      "key": "kvnloo/dash:pull_request:109",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 109,
-      "title": "Composer mic: system dictation (no keyboard) + hold-slide Live voice/Dictate picker",
-      "url": "https://github.com/kvnloo/dash/pull/109",
-      "createdAt": "2026-10-21T22:56:10Z",
-      "updatedAt": "2026-10-21T22:56:10Z"
     },
     {
       "key": "kvnloo/dash:pull_request:76",
