@@ -5,8 +5,35 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-22T18:12:10Z</updated>
+  <updated>2026-10-23T00:13:56Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
+  <entry>
+    <title>.files</title>
+    <id>https://kvnloo.github.io/.files/</id>
+    <link href="https://kvnloo.github.io/.files/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>stay in flow while u code</summary>
+  </entry>
+  <entry>
+    <title>ag-ui</title>
+    <id>https://ag-ui.com/</id>
+    <link href="https://ag-ui.com/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.</summary>
+  </entry>
+  <entry>
+    <title>astryx</title>
+    <id>https://github.com/kvnloo/astryx</id>
+    <link href="https://github.com/kvnloo/astryx"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: An open source design system that&apos;s fully customizable and built for how we build now: by people and the agents working alongside them.</summary>
+  </entry>
   <entry>
     <title>boplog</title>
     <id>https://kvnloo.github.io/boplog/</id>
@@ -15,6 +42,51 @@
     <updated>2026-10-22T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
+  </entry>
+  <entry>
+    <title>buzz</title>
+    <id>https://github.com/kvnloo/buzz</id>
+    <link href="https://github.com/kvnloo/buzz"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🐝 A workspace where humans and agents build together, on a relay you own.</summary>
+  </entry>
+  <entry>
+    <title>codex</title>
+    <id>https://github.com/kvnloo/codex</id>
+    <link href="https://github.com/kvnloo/codex"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: CLI is a coding agent from OpenAI that runs locally on your computer.</summary>
+  </entry>
+  <entry>
+    <title>CodexBar</title>
+    <id>https://codex.bar/</id>
+    <link href="https://codex.bar/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🎚️ — May your tokens never run out.</summary>
+  </entry>
+  <entry>
+    <title>Corporate-Serf-Dashboard</title>
+    <id>https://github.com/kvnloo/Corporate-Serf-Dashboard</id>
+    <link href="https://github.com/kvnloo/Corporate-Serf-Dashboard"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Corporate Serf Dashboard Charts your KovaaK&apos;s history and each new run as you play, so you can see whether you&apos;re improving, where you&apos;re weak, and what to train next.</summary>
+  </entry>
+  <entry>
+    <title>cua</title>
+    <id>https://kvnloo.github.io/cua/</id>
+    <link href="https://kvnloo.github.io/cua/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Give AI agents computers they can use.</summary>
   </entry>
   <entry>
     <title>dash</title>
@@ -35,6 +107,15 @@
     <summary>I built fframestudio on top of fframes because I love how powerful the library is.</summary>
   </entry>
   <entry>
+    <title>Genesis</title>
+    <id>https://github.com/kvnloo/Genesis</id>
+    <link href="https://github.com/kvnloo/Genesis"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: World Genesis World is a simulation platform for physical AI developments.</summary>
+  </entry>
+  <entry>
     <title>gh-contrib-archive</title>
     <id>https://kvnloo.github.io/gh-contrib-archive/</id>
     <link href="https://kvnloo.github.io/gh-contrib-archive/"/>
@@ -44,6 +125,105 @@
     <summary>Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
   </entry>
   <entry>
+    <title>GitNexus</title>
+    <id>https://gitnexus.vercel.app/</id>
+    <link href="https://gitnexus.vercel.app/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: The context engine for Enterprise Codebases Indexes any codebase into a knowledge graph — every dependency, call chain, cluster, and execution flow — then exposes it through smart MCP tools so AI…</summary>
+  </entry>
+  <entry>
+    <title>gods-eye-view</title>
+    <id>https://maptheworld.ai/</id>
+    <link href="https://maptheworld.ai/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🌐 God&apos;s Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.</summary>
+  </entry>
+  <entry>
+    <title>herdr</title>
+    <id>https://herdr.dev/</id>
+    <link href="https://herdr.dev/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: herdr.dev · install · quick start · docs English · 简体中文 --- https://github.com/user-attachments/assets/043ec09f-4bdd-41d5-aee0-8fda6b83e267 the runtime your coding agents live on.</summary>
+  </entry>
+  <entry>
+    <title>homepage</title>
+    <id>https://gethomepage.dev/</id>
+    <link href="https://gethomepage.dev/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: A modern, fast , secure fully proxied , highly customizable application dashboard with integrations for over 100 services and translations into multiple languages.</summary>
+  </entry>
+  <entry>
+    <title>jj</title>
+    <id>https://jj-vcs.dev/</id>
+    <link href="https://jj-vcs.dev/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Jujutsu—a version control system [Homepage] &amp;nbsp;&amp;nbsp;&amp;bull;&amp;nbsp;&amp;nbsp; [Installation] &amp;nbsp;&amp;nbsp;&amp;bull;&amp;nbsp;&amp;nbsp; [Getting Started] &amp;nbsp;&amp;nbsp;&amp;bull;&amp;nbsp;&amp;nbsp; [Development Roadmap]…</summary>
+  </entry>
+  <entry>
+    <title>kaneo</title>
+    <id>https://kaneo.app/</id>
+    <link href="https://kaneo.app/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Cloud | Installation | Website | Discord Fast, simple, open-source project management.</summary>
+  </entry>
+  <entry>
+    <title>kvn</title>
+    <id>https://github.com/kvnloo/kvn</id>
+    <link href="https://github.com/kvnloo/kvn"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>yo this is me</summary>
+  </entry>
+  <entry>
+    <title>mujoco</title>
+    <id>https://mujoco.org/</id>
+    <link href="https://mujoco.org/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: stands for Multi-Joint dynamics with Contact.</summary>
+  </entry>
+  <entry>
+    <title>noctalia</title>
+    <id>https://docs.noctalia.dev/</id>
+    <link href="https://docs.noctalia.dev/"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Noctalia is a native Wayland desktop shell for people who want a polished, configurable Linux desktop without stitching together a separate bar, launcher, notification daemon, lock screen,…</summary>
+  </entry>
+  <entry>
+    <title>noop</title>
+    <id>https://github.com/kvnloo/noop</id>
+    <link href="https://github.com/kvnloo/noop"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Your strap. Your data. Your machine. Offline, on-device, no cloud. Now in the all-new Liquid Metal design: one living look across iPhone, Android and Mac. ⬇&amp;nbsp;Download · ❓&amp;nbsp;FAQ ·…</summary>
+  </entry>
+  <entry>
+    <title>nvidia-container-toolkit</title>
+    <id>https://github.com/kvnloo/nvidia-container-toolkit</id>
+    <link href="https://github.com/kvnloo/nvidia-container-toolkit"/>
+    <published>2026-10-22T00:00:00Z</published>
+    <updated>2026-10-22T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: NVIDIA Container Toolkit Introduction The NVIDIA Container Toolkit allows users to build and run GPU-accelerated containers.</summary>
+  </entry>
+  <entry>
     <title>omalauncher</title>
     <id>https://github.com/kvnloo/omalauncher</id>
     <link href="https://github.com/kvnloo/omalauncher"/>
@@ -51,185 +231,5 @@
     <updated>2026-10-22T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: An Android home screen with the look of Omarchy, and an optional Arch Linux ARM system next to your phone apps.</summary>
-  </entry>
-  <entry>
-    <title>omarchy</title>
-    <id>https://omarchy.org/</id>
-    <link href="https://omarchy.org/"/>
-    <published>2026-10-22T00:00:00Z</published>
-    <updated>2026-10-22T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Omarchy is a beautiful, fun &amp; agentic Linux distribution by DHH.</summary>
-  </entry>
-  <entry>
-    <title>refactoring.nvim</title>
-    <id>https://github.com/kvnloo/refactoring.nvim</id>
-    <link href="https://github.com/kvnloo/refactoring.nvim"/>
-    <published>2026-10-22T00:00:00Z</published>
-    <updated>2026-10-22T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The Refactoring library based off the Refactoring book by Martin Fowler &apos;If I use an environment that has good automated refactorings, I can trust those refactorings&apos; - Martin Fowler Tree-sitter…</summary>
-  </entry>
-  <entry>
-    <title>ripple</title>
-    <id>https://github.com/kvnloo/ripple</id>
-    <link href="https://github.com/kvnloo/ripple"/>
-    <published>2026-10-22T00:00:00Z</published>
-    <updated>2026-10-22T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Ephemeral intent surface Dash mounts. Consumes AODL as data. Not HOTL, not a catalog.</summary>
-  </entry>
-  <entry>
-    <title>.files</title>
-    <id>https://kvnloo.github.io/.files/</id>
-    <link href="https://kvnloo.github.io/.files/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>stay in flow while u code</summary>
-  </entry>
-  <entry>
-    <title>99</title>
-    <id>https://github.com/kvnloo/99</id>
-    <link href="https://github.com/kvnloo/99"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The AI client that Neovim deserves, built by those that still enjoy to code.</summary>
-  </entry>
-  <entry>
-    <title>ag-ui</title>
-    <id>https://ag-ui.com/</id>
-    <link href="https://ag-ui.com/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.</summary>
-  </entry>
-  <entry>
-    <title>agent-browser</title>
-    <id>https://agent-browser.dev/</id>
-    <link href="https://agent-browser.dev/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Browser automation CLI for AI agents.</summary>
-  </entry>
-  <entry>
-    <title>alphafold3</title>
-    <id>https://github.com/kvnloo/alphafold3</id>
-    <link href="https://github.com/kvnloo/alphafold3"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: AlphaFold 3 This package provides an implementation of the inference pipeline of AlphaFold 3.</summary>
-  </entry>
-  <entry>
-    <title>Apollo-11</title>
-    <id>https://github.com/kvnloo/Apollo-11</id>
-    <link href="https://github.com/kvnloo/Apollo-11"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: [![NASA][1]][2] [![SWH]][SWHURL] [![Comanche]][ComancheMilestone] [![Luminary]][LuminaryMilestone] 🌐 [Azerbaijani][AZ], [bahasa Indonesia][ID], [Basa Jawa][JV], [Català][CA], [Čeština][CZ],…</summary>
-  </entry>
-  <entry>
-    <title>awesome-engines</title>
-    <id>https://kvnloo.github.io/awesome-engines/</id>
-    <link href="https://kvnloo.github.io/awesome-engines/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Engine Atlas · awesome-engines A part-addressable 3D atlas of power and propulsion, from Hero of Alexandria&apos;s aeolipile (1st century CE) to the FIA 2026 Formula One hybrid power unit.</summary>
-  </entry>
-  <entry>
-    <title>brave-browser</title>
-    <id>https://brave.com/</id>
-    <link href="https://brave.com/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Brave Browser This repository is not needed for building the browser and only holds issues, releases and the wiki.</summary>
-  </entry>
-  <entry>
-    <title>chromium</title>
-    <id>https://chromium.googlesource.com/chromium/src/</id>
-    <link href="https://chromium.googlesource.com/chromium/src/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Chromium is an open-source browser project that aims to build a safer, faster, and more stable way for all users to experience the web.</summary>
-  </entry>
-  <entry>
-    <title>cocoindex</title>
-    <id>https://cocoindex.io/</id>
-    <link href="https://cocoindex.io/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Your agents deserve fresh context.</summary>
-  </entry>
-  <entry>
-    <title>Corporate-Serf-Dashboard</title>
-    <id>https://github.com/kvnloo/Corporate-Serf-Dashboard</id>
-    <link href="https://github.com/kvnloo/Corporate-Serf-Dashboard"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Corporate Serf Dashboard Charts your KovaaK&apos;s history and each new run as you play, so you can see whether you&apos;re improving, where you&apos;re weak, and what to train next.</summary>
-  </entry>
-  <entry>
-    <title>E2B</title>
-    <id>https://e2b.dev/docs</id>
-    <link href="https://e2b.dev/docs"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: ---&gt; What is E2B? E2B is an open-source infrastructure that allows you to run AI-generated code in secure isolated sandboxes in the cloud. To start and control sandboxes, use our JavaScript SDK or…</summary>
-  </entry>
-  <entry>
-    <title>EvoScientist</title>
-    <id>https://evoscientist.ai/</id>
-    <link href="https://evoscientist.ai/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: --- English | 简体中文 EvoScientist aims to harness vibe research by enabling self-evolving AI scientists that autonomously explore, generate insights, and iteratively improve.</summary>
-  </entry>
-  <entry>
-    <title>ff-unmute</title>
-    <id>https://github.com/kvnloo/ff-unmute</id>
-    <link href="https://github.com/kvnloo/ff-unmute"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: This one, you can unmute.</summary>
-  </entry>
-  <entry>
-    <title>gods-eye-view</title>
-    <id>https://maptheworld.ai/</id>
-    <link href="https://maptheworld.ai/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: 🌐 God&apos;s Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.</summary>
-  </entry>
-  <entry>
-    <title>harpoon</title>
-    <id>https://github.com/kvnloo/harpoon</id>
-    <link href="https://github.com/kvnloo/harpoon"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: ⇁ HARPOON 2 This is a deprecated and all future changes will be to the branch harpoon2.</summary>
-  </entry>
-  <entry>
-    <title>hermes-agent</title>
-    <id>https://hermes-agent.nousresearch.com/</id>
-    <link href="https://hermes-agent.nousresearch.com/"/>
-    <published>2026-10-21T00:00:00Z</published>
-    <updated>2026-10-21T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.</summary>
   </entry>
 </feed>

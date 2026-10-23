@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T18:16:32Z",
+  "generatedAt": "2026-10-23T00:16:52Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -263,14 +263,617 @@
     "limitations": []
   },
   "summary": {
-    "mergedUpstreamPullRequests": 133,
-    "openReadyUpstreamPullRequests": 166,
-    "draftUpstreamPullRequests": 64,
-    "upstreamIssuesAndProposals": 381,
+    "mergedUpstreamPullRequests": 134,
+    "openReadyUpstreamPullRequests": 165,
+    "draftUpstreamPullRequests": 65,
+    "upstreamIssuesAndProposals": 382,
     "distinctUpstreamCommunities": 139,
     "verifiedImpact": 0
   },
   "contributions": [
+    {
+      "key": "kvnloo/gods-eye-view:issue:249",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 249,
+      "title": "Promotion queue — gods-eye-view (canonical #249)",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
+      "createdAt": "2026-10-16T08:13:10Z",
+      "updatedAt": "2026-10-23T00:09:24Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:pull_request:259",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 259,
+      "title": "feat(looks): local credited Look Lab JSON remix and import (stacked)",
+      "url": "https://github.com/kvnloo/gods-eye-view/pull/259",
+      "createdAt": "2026-10-17T10:09:32Z",
+      "updatedAt": "2026-10-23T00:03:07Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:943",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 943,
+      "title": "feat(fire-history): continue Historic Fires from #609",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/943",
+      "createdAt": "2026-10-05T17:42:32Z",
+      "updatedAt": "2026-10-22T23:53:22Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:194",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0intelligence",
+      "number": 194,
+      "title": "feat(memory): scoped read-only stdio MCP server",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/194",
+      "createdAt": "2026-10-22T23:41:02Z",
+      "updatedAt": "2026-10-22T23:46:39Z"
+    },
+    {
+      "key": "kvnloo/.files:pull_request:39",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/.files",
+      "number": 39,
+      "title": "Stage private read-only memory MCP tunnel on groot",
+      "url": "https://github.com/kvnloo/.files/pull/39",
+      "createdAt": "2026-10-22T23:31:10Z",
+      "updatedAt": "2026-10-22T23:40:02Z"
+    },
+    {
+      "key": "kvnloo/z0:pull_request:31",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0",
+      "number": 31,
+      "title": "[OMPB1-06] docs: add-a-tool onboarding runbook",
+      "url": "https://github.com/kvnloo/z0/pull/31",
+      "createdAt": "2026-10-22T23:23:38Z",
+      "updatedAt": "2026-10-22T23:37:52Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:issue:636",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/hermes-agent",
+      "number": 636,
+      "title": "[Hermes × Tern] Reuse audit: carry tested ui-tsp improvements into hermes-tern plugin",
+      "url": "https://github.com/kvnloo/hermes-agent/issues/636",
+      "createdAt": "2026-10-20T13:08:40Z",
+      "updatedAt": "2026-10-22T23:29:57Z"
+    },
+    {
+      "key": "kvnloo/.files:issue:16",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/.files",
+      "number": 16,
+      "title": "[Tracking] Make .files the declarative machine IaC source of truth",
+      "url": "https://github.com/kvnloo/.files/issues/16",
+      "createdAt": "2026-09-20T19:04:08Z",
+      "updatedAt": "2026-10-22T23:28:14Z"
+    },
+    {
+      "key": "kvnloo/z0:pull_request:32",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0",
+      "number": 32,
+      "title": "feat: apply native component bindings and report drift",
+      "url": "https://github.com/kvnloo/z0/pull/32",
+      "createdAt": "2026-10-22T23:26:17Z",
+      "updatedAt": "2026-10-22T23:26:17Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:issue:22",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0intelligence",
+      "number": 22,
+      "title": "memory: canonical continuity plan, State Packet, and implementation status",
+      "url": "https://github.com/kvnloo/z0intelligence/issues/22",
+      "createdAt": "2026-09-22T18:15:49Z",
+      "updatedAt": "2026-10-22T23:25:03Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:issue:191",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0intelligence",
+      "number": 191,
+      "title": "Turbo fan-out: Codex Cloud workers → live preview → 'Now testing' card (and the ChatGPT-app lane question)",
+      "url": "https://github.com/kvnloo/z0intelligence/issues/191",
+      "createdAt": "2026-10-21T22:37:36Z",
+      "updatedAt": "2026-10-22T23:23:21Z"
+    },
+    {
+      "key": "kvnloo/z0:pull_request:30",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0",
+      "number": 30,
+      "title": "feat: component bindings and sourced capability status (slice 1)",
+      "url": "https://github.com/kvnloo/z0/pull/30",
+      "createdAt": "2026-10-22T23:15:19Z",
+      "updatedAt": "2026-10-22T23:15:19Z"
+    },
+    {
+      "key": "kvnloo/z0:issue:15",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0",
+      "number": 15,
+      "title": "RFC: Verified Learning Control Loop for personal cognition — cross-repo contract map",
+      "url": "https://github.com/kvnloo/z0/issues/15",
+      "createdAt": "2026-09-30T08:26:50Z",
+      "updatedAt": "2026-10-22T23:06:46Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:13717",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 13717,
+      "title": "menu-images: document --prepare-only in args header and usage",
+      "url": "https://github.com/omacom/omarchy/pull/13717",
+      "createdAt": "2026-09-29T04:36:09Z",
+      "updatedAt": "2026-10-22T22:57:15Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:12955",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 12955,
+      "title": "fix: shell bar/tray/agents leftovers (#10989 #11021 #11022)",
+      "url": "https://github.com/omacom/omarchy/pull/12955",
+      "createdAt": "2026-09-22T21:51:52Z",
+      "updatedAt": "2026-10-22T22:49:26Z"
+    },
+    {
+      "key": "kvnloo/OpenUSD:issue:52",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/OpenUSD",
+      "number": 52,
+      "title": "OpenUSD — single canonical promotion queue (#52)",
+      "url": "https://github.com/kvnloo/OpenUSD/issues/52",
+      "createdAt": "2026-10-16T08:11:11Z",
+      "updatedAt": "2026-10-22T22:49:09Z"
+    },
+    {
+      "key": "kvnloo/OpenUSD:pull_request:42",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/OpenUSD",
+      "number": 42,
+      "title": "usdGeom: guard null point-instancer output pointers [current-dev QA]",
+      "url": "https://github.com/kvnloo/OpenUSD/pull/42",
+      "createdAt": "2026-10-08T17:31:27Z",
+      "updatedAt": "2026-10-22T22:48:22Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:issue:22",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/fframestudio",
+      "number": 22,
+      "title": "Promotion queue — kvnloo/fframestudio",
+      "url": "https://github.com/kvnloo/fframestudio/issues/22",
+      "createdAt": "2026-10-19T06:56:06Z",
+      "updatedAt": "2026-10-22T22:41:18Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:847",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 847,
+      "title": "feat(cyclones): publish explicit storm selection to shared context",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/847",
+      "createdAt": "2026-09-29T05:20:49Z",
+      "updatedAt": "2026-10-22T22:40:16Z"
+    },
+    {
+      "key": "kvnloo/omalauncher:pull_request:7",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/omalauncher",
+      "number": 7,
+      "title": "coordination: canonical Omalauncher promotion queue (retain unmerged)",
+      "url": "https://github.com/kvnloo/omalauncher/pull/7",
+      "createdAt": "2026-10-18T08:19:54Z",
+      "updatedAt": "2026-10-22T22:37:23Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:12991",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 12991,
+      "title": "fix(clipboard): paste into the window that opened the manager (#12987)",
+      "url": "https://github.com/omacom/omarchy/pull/12991",
+      "createdAt": "2026-09-23T03:15:42Z",
+      "updatedAt": "2026-10-22T22:36:46Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:29",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/fframestudio",
+      "number": 29,
+      "title": "fix(hosted): keep only project files from read-only folder imports",
+      "url": "https://github.com/kvnloo/fframestudio/pull/29",
+      "createdAt": "2026-10-21T07:06:10Z",
+      "updatedAt": "2026-10-22T22:34:48Z",
+      "mergedAt": "2026-10-22T22:34:48Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:11026",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 11026,
+      "title": "Document that resize Super+Minus/Equal are physical AE11/AE12",
+      "url": "https://github.com/omacom/omarchy/pull/11026",
+      "createdAt": "2026-09-09T18:50:13Z",
+      "updatedAt": "2026-10-22T22:33:22Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:24",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/fframestudio",
+      "number": 24,
+      "title": "feat(cinetic): promote reviewed technique plans to main",
+      "url": "https://github.com/kvnloo/fframestudio/pull/24",
+      "createdAt": "2026-10-20T14:41:11Z",
+      "updatedAt": "2026-10-22T22:30:46Z",
+      "mergedAt": "2026-10-22T22:30:46Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:889",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 889,
+      "title": "perf: coalesce identical terrain height requests",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/889",
+      "createdAt": "2026-10-01T21:57:08Z",
+      "updatedAt": "2026-10-22T22:29:50Z"
+    },
+    {
+      "key": "kvnloo/omarchy:pull_request:63",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/omarchy",
+      "number": 63,
+      "title": "[muse] menu-images: document --prepare-only in args header and usage",
+      "url": "https://github.com/kvnloo/omarchy/pull/63",
+      "createdAt": "2026-09-26T02:44:13Z",
+      "updatedAt": "2026-10-22T22:23:40Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:834",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 834,
+      "title": "fix(share): surface invalid shared layer state",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/834",
+      "createdAt": "2026-09-29T01:50:04Z",
+      "updatedAt": "2026-10-22T22:22:46Z"
+    },
+    {
+      "key": "raspberrypi/pico-sdk:pull_request:3215",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "raspberrypi/pico-sdk",
+      "number": 3215,
+      "title": "cyw43: stop poll worker before timeout worker",
+      "url": "https://github.com/raspberrypi/pico-sdk/pull/3215",
+      "createdAt": "2026-09-29T02:02:42Z",
+      "updatedAt": "2026-10-22T22:22:09Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:13712",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 13712,
+      "title": "dev font add: require --codepoint in the private-use range",
+      "url": "https://github.com/omacom/omarchy/pull/13712",
+      "createdAt": "2026-09-29T04:36:00Z",
+      "updatedAt": "2026-10-22T22:21:10Z"
+    },
+    {
+      "key": "trycua/cua:pull_request:4902",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "trycua/cua",
+      "number": 4902,
+      "title": "fix(jev-use): preserve action refusal and canonical escalation metadata",
+      "url": "https://github.com/trycua/cua/pull/4902",
+      "createdAt": "2026-10-09T00:16:41Z",
+      "updatedAt": "2026-10-22T22:19:26Z"
+    },
+    {
+      "key": "The-OpenROAD-Project/OpenROAD:pull_request:11725",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "The-OpenROAD-Project/OpenROAD",
+      "number": 11725,
+      "title": "docs: add evidence-first Gemini review style guide",
+      "url": "https://github.com/The-OpenROAD-Project/OpenROAD/pull/11725",
+      "createdAt": "2026-10-13T15:34:29Z",
+      "updatedAt": "2026-10-22T22:16:48Z"
+    },
+    {
+      "key": "alt-glitch/hermes-tern:pull_request:86",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "alt-glitch/hermes-tern",
+      "number": 86,
+      "title": "feat(frontend): open context breakdown from composer meter",
+      "url": "https://github.com/alt-glitch/hermes-tern/pull/86",
+      "createdAt": "2026-10-22T21:56:59Z",
+      "updatedAt": "2026-10-22T22:12:29Z"
+    },
+    {
+      "key": "kvnloo/omalauncher:pull_request:13",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/omalauncher",
+      "number": 13,
+      "title": "fix(android): use API 29-safe region decoder for thumbnails",
+      "url": "https://github.com/kvnloo/omalauncher/pull/13",
+      "createdAt": "2026-10-22T21:58:17Z",
+      "updatedAt": "2026-10-22T22:07:58Z"
+    },
+    {
+      "key": "kvnloo/omarchy:pull_request:58",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/omarchy",
+      "number": 58,
+      "title": "[muse] dev font add: require --codepoint in the private-use range",
+      "url": "https://github.com/kvnloo/omarchy/pull/58",
+      "createdAt": "2026-09-26T02:30:52Z",
+      "updatedAt": "2026-10-22T21:51:06Z"
+    },
+    {
+      "key": "kvnloo/omarchy:issue:110",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/omarchy",
+      "number": 110,
+      "title": "Promotion queue — Omarchy (canonical #110)",
+      "url": "https://github.com/kvnloo/omarchy/issues/110",
+      "createdAt": "2026-10-16T08:11:13Z",
+      "updatedAt": "2026-10-22T21:49:41Z"
+    },
+    {
+      "key": "kvnloo/omalauncher:pull_request:4",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/omalauncher",
+      "number": 4,
+      "title": "CI evidence: terminal tile lifecycle (origin PR 130)",
+      "url": "https://github.com/kvnloo/omalauncher/pull/4",
+      "createdAt": "2026-10-15T07:25:20Z",
+      "updatedAt": "2026-10-22T21:48:59Z"
+    },
+    {
+      "key": "SimonSchubert/omalauncher:pull_request:130",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "SimonSchubert/omalauncher",
+      "number": 130,
+      "title": "Keep exited terminal tiles stopped across page changes",
+      "url": "https://github.com/SimonSchubert/omalauncher/pull/130",
+      "createdAt": "2026-10-15T06:04:26Z",
+      "updatedAt": "2026-10-22T21:48:58Z"
+    },
+    {
+      "key": "kvnloo/OpenUSD:pull_request:47",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/OpenUSD",
+      "number": 47,
+      "title": "docs: clarify GfColorSpace span conversion direction [READY FOR UPSTREAM]",
+      "url": "https://github.com/kvnloo/OpenUSD/pull/47",
+      "createdAt": "2026-10-08T20:22:25Z",
+      "updatedAt": "2026-10-22T21:48:09Z"
+    },
+    {
+      "key": "PixarAnimationStudios/OpenUSD:pull_request:4291",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "PixarAnimationStudios/OpenUSD",
+      "number": 4291,
+      "title": "docs: clarify GfColorSpace span conversion direction",
+      "url": "https://github.com/PixarAnimationStudios/OpenUSD/pull/4291",
+      "createdAt": "2026-10-16T14:18:24Z",
+      "updatedAt": "2026-10-22T21:48:09Z"
+    },
+    {
+      "key": "kvnloo/usbboot:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/usbboot",
+      "number": 1,
+      "title": "coord: canonical usbboot promotion queue and existing upstream400 carrier",
+      "url": "https://github.com/kvnloo/usbboot/pull/1",
+      "createdAt": "2026-10-18T05:44:45Z",
+      "updatedAt": "2026-10-22T21:46:28Z"
+    },
+    {
+      "key": "raspberrypi/usbboot:pull_request:400",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "raspberrypi/usbboot",
+      "number": 400,
+      "title": "docs: clarify installed vs checkout mass-storage payload",
+      "url": "https://github.com/raspberrypi/usbboot/pull/400",
+      "createdAt": "2026-09-29T02:02:46Z",
+      "updatedAt": "2026-10-22T21:46:28Z"
+    },
+    {
+      "key": "raspberrypi/rpi-image-gen:pull_request:339",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "raspberrypi/rpi-image-gen",
+      "number": 339,
+      "title": "Document merged-usr paths for dpkg filters",
+      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/339",
+      "createdAt": "2026-09-28T18:35:35Z",
+      "updatedAt": "2026-10-22T21:46:21Z"
+    },
+    {
+      "key": "alt-glitch/hermes-tern:issue:85",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "alt-glitch/hermes-tern",
+      "number": 85,
+      "title": "[P2 proposal] Context-window meter on the composer, opening a context breakdown",
+      "url": "https://github.com/alt-glitch/hermes-tern/issues/85",
+      "createdAt": "2026-10-22T21:18:16Z",
+      "updatedAt": "2026-10-22T21:18:16Z"
+    },
+    {
+      "key": "mrsarac/ff-unmute:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "merged",
+      "repo": "mrsarac/ff-unmute",
+      "number": 1,
+      "title": "Render on Linux with Vulkan, and fall back to the CPU",
+      "url": "https://github.com/mrsarac/ff-unmute/pull/1",
+      "createdAt": "2026-10-21T06:51:56Z",
+      "updatedAt": "2026-10-22T20:53:08Z",
+      "mergedAt": "2026-10-22T20:17:11Z"
+    },
+    {
+      "key": "kvnloo/kvn:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/kvn",
+      "number": 1,
+      "title": "feat: public /kvn chat, free+local inference, live public projects, Hermes deploy",
+      "url": "https://github.com/kvnloo/kvn/pull/1",
+      "createdAt": "2026-10-22T18:52:38Z",
+      "updatedAt": "2026-10-22T19:35:02Z"
+    },
+    {
+      "key": "kvnloo/cua:issue:74",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/cua",
+      "number": 74,
+      "title": "[META: WAIT FOR EVIDENCE] Final upstream promotion DAG + posting queue",
+      "url": "https://github.com/kvnloo/cua/issues/74",
+      "createdAt": "2026-09-25T22:10:37Z",
+      "updatedAt": "2026-10-22T19:22:24Z"
+    },
+    {
+      "key": "raspberrypi/rpi-image-gen:pull_request:337",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "raspberrypi/rpi-image-gen",
+      "number": 337,
+      "title": "Document custom layer version selection",
+      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/337",
+      "createdAt": "2026-09-28T18:35:30Z",
+      "updatedAt": "2026-10-22T19:17:34Z"
+    },
+    {
+      "key": "raspberrypi/rpi-image-gen:pull_request:340",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "raspberrypi/rpi-image-gen",
+      "number": 340,
+      "title": "Document Python virtual environment dependency behavior",
+      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/340",
+      "createdAt": "2026-09-28T18:35:38Z",
+      "updatedAt": "2026-10-22T19:17:02Z"
+    },
+    {
+      "key": "kvnloo/fframestudio:pull_request:35",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/fframestudio",
+      "number": 35,
+      "title": "feat(hosted): X Player Card launch page and 120 fps embed",
+      "url": "https://github.com/kvnloo/fframestudio/pull/35",
+      "createdAt": "2026-10-22T19:05:02Z",
+      "updatedAt": "2026-10-22T19:05:02Z"
+    },
+    {
+      "key": "SimonSchubert/omalauncher:pull_request:158",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "SimonSchubert/omalauncher",
+      "number": 158,
+      "title": "Recover live Linux windows from Home without ADB",
+      "url": "https://github.com/SimonSchubert/omalauncher/pull/158",
+      "createdAt": "2026-10-17T03:23:51Z",
+      "updatedAt": "2026-10-22T18:27:29Z"
+    },
     {
       "key": "kvnloo/dash:pull_request:118",
       "kind": "pull_request",
@@ -440,18 +1043,6 @@
       "updatedAt": "2026-10-22T15:47:49Z"
     },
     {
-      "key": "omacom/omarchy:pull_request:12955",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 12955,
-      "title": "fix: shell bar/tray/agents leftovers (#10989 #11021 #11022)",
-      "url": "https://github.com/omacom/omarchy/pull/12955",
-      "createdAt": "2026-09-22T21:51:52Z",
-      "updatedAt": "2026-10-22T14:14:47Z"
-    },
-    {
       "key": "omacom/omarchy:pull_request:10236",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -488,18 +1079,6 @@
       "updatedAt": "2026-10-22T12:54:58Z"
     },
     {
-      "key": "kvnloo/omalauncher:pull_request:7",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/omalauncher",
-      "number": 7,
-      "title": "coordination: canonical Omalauncher promotion queue (retain unmerged)",
-      "url": "https://github.com/kvnloo/omalauncher/pull/7",
-      "createdAt": "2026-10-18T08:19:54Z",
-      "updatedAt": "2026-10-22T12:53:52Z"
-    },
-    {
       "key": "mrsarac/ff-tracking:pull_request:5",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -511,30 +1090,6 @@
       "createdAt": "2026-10-21T06:51:53Z",
       "updatedAt": "2026-10-22T12:51:39Z",
       "mergedAt": "2026-10-22T12:51:38Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:issue:22",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/fframestudio",
-      "number": 22,
-      "title": "Promotion queue — kvnloo/fframestudio",
-      "url": "https://github.com/kvnloo/fframestudio/issues/22",
-      "createdAt": "2026-10-19T06:56:06Z",
-      "updatedAt": "2026-10-22T12:49:20Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:pull_request:29",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/fframestudio",
-      "number": 29,
-      "title": "fix(hosted): keep only project files from read-only folder imports",
-      "url": "https://github.com/kvnloo/fframestudio/pull/29",
-      "createdAt": "2026-10-21T07:06:10Z",
-      "updatedAt": "2026-10-22T12:48:57Z"
     },
     {
       "key": "kvnloo/t3code:issue:42",
@@ -549,78 +1104,6 @@
       "updatedAt": "2026-10-22T12:46:40Z"
     },
     {
-      "key": "kvnloo/cua:issue:74",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/cua",
-      "number": 74,
-      "title": "[META: WAIT FOR EVIDENCE] Final upstream promotion DAG + posting queue",
-      "url": "https://github.com/kvnloo/cua/issues/74",
-      "createdAt": "2026-09-25T22:10:37Z",
-      "updatedAt": "2026-10-22T12:43:45Z"
-    },
-    {
-      "key": "mrsarac/ff-unmute:pull_request:1",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "mrsarac/ff-unmute",
-      "number": 1,
-      "title": "Render on Linux with Vulkan, and fall back to the CPU",
-      "url": "https://github.com/mrsarac/ff-unmute/pull/1",
-      "createdAt": "2026-10-21T06:51:56Z",
-      "updatedAt": "2026-10-22T12:43:39Z"
-    },
-    {
-      "key": "kvnloo/omarchy:issue:110",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/omarchy",
-      "number": 110,
-      "title": "Promotion queue — Omarchy (canonical #110)",
-      "url": "https://github.com/kvnloo/omarchy/issues/110",
-      "createdAt": "2026-10-16T08:11:13Z",
-      "updatedAt": "2026-10-22T12:39:01Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:issue:249",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 249,
-      "title": "Promotion queue — gods-eye-view (canonical #249)",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
-      "createdAt": "2026-10-16T08:13:10Z",
-      "updatedAt": "2026-10-22T12:36:31Z"
-    },
-    {
-      "key": "kvnloo/omalauncher:pull_request:4",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/omalauncher",
-      "number": 4,
-      "title": "CI evidence: terminal tile lifecycle (origin PR 130)",
-      "url": "https://github.com/kvnloo/omalauncher/pull/4",
-      "createdAt": "2026-10-15T07:25:20Z",
-      "updatedAt": "2026-10-22T12:34:38Z"
-    },
-    {
-      "key": "SimonSchubert/omalauncher:pull_request:130",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "SimonSchubert/omalauncher",
-      "number": 130,
-      "title": "Keep exited terminal tiles stopped across page changes",
-      "url": "https://github.com/SimonSchubert/omalauncher/pull/130",
-      "createdAt": "2026-10-15T06:04:26Z",
-      "updatedAt": "2026-10-22T12:34:38Z"
-    },
-    {
       "key": "kvnloo/noop:issue:74",
       "kind": "issue",
       "relationship": "owned",
@@ -633,18 +1116,6 @@
       "updatedAt": "2026-10-22T12:34:32Z"
     },
     {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:889",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 889,
-      "title": "perf: coalesce identical terrain height requests",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/889",
-      "createdAt": "2026-10-01T21:57:08Z",
-      "updatedAt": "2026-10-22T12:30:24Z"
-    },
-    {
       "key": "kvnloo/noctalia:issue:25",
       "kind": "issue",
       "relationship": "owned",
@@ -655,18 +1126,6 @@
       "url": "https://github.com/kvnloo/noctalia/issues/25",
       "createdAt": "2026-10-20T14:28:02Z",
       "updatedAt": "2026-10-22T12:25:59Z"
-    },
-    {
-      "key": "raspberrypi/rpi-image-gen:pull_request:339",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "raspberrypi/rpi-image-gen",
-      "number": 339,
-      "title": "Document merged-usr paths for dpkg filters",
-      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/339",
-      "createdAt": "2026-09-28T18:35:35Z",
-      "updatedAt": "2026-10-22T12:20:27Z"
     },
     {
       "key": "kvnloo/noctalia:pull_request:31",
@@ -691,18 +1150,6 @@
       "url": "https://github.com/kvnloo/dash/pull/115",
       "createdAt": "2026-10-22T11:54:44Z",
       "updatedAt": "2026-10-22T11:54:55Z"
-    },
-    {
-      "key": "kvnloo/fframestudio:pull_request:24",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/fframestudio",
-      "number": 24,
-      "title": "feat(cinetic): promote reviewed technique plans to main",
-      "url": "https://github.com/kvnloo/fframestudio/pull/24",
-      "createdAt": "2026-10-20T14:41:11Z",
-      "updatedAt": "2026-10-22T11:49:00Z"
     },
     {
       "key": "kvnloo/fframestudio:pull_request:25",
@@ -946,18 +1393,6 @@
       "updatedAt": "2026-10-21T22:37:37Z"
     },
     {
-      "key": "kvnloo/z0intelligence:issue:191",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0intelligence",
-      "number": 191,
-      "title": "Turbo fan-out: Codex Cloud workers → live preview → 'Now testing' card (and the ChatGPT-app lane question)",
-      "url": "https://github.com/kvnloo/z0intelligence/issues/191",
-      "createdAt": "2026-10-21T22:37:36Z",
-      "updatedAt": "2026-10-21T22:37:36Z"
-    },
-    {
       "key": "kvnloo/lawnchair:pull_request:43",
       "kind": "pull_request",
       "relationship": "owned",
@@ -1088,18 +1523,6 @@
       "url": "https://github.com/kvnloo/fframestudio/issues/5",
       "createdAt": "2026-10-17T23:08:15Z",
       "updatedAt": "2026-10-21T20:58:49Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:847",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 847,
-      "title": "feat(cyclones): publish explicit storm selection to shared context",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/847",
-      "createdAt": "2026-09-29T05:20:49Z",
-      "updatedAt": "2026-10-21T20:43:23Z"
     },
     {
       "key": "kvnloo/dash:issue:106",
@@ -2813,18 +3236,6 @@
       "updatedAt": "2026-10-20T18:40:49Z"
     },
     {
-      "key": "SimonSchubert/omalauncher:pull_request:158",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "SimonSchubert/omalauncher",
-      "number": 158,
-      "title": "Recover live Linux windows from Home without ADB",
-      "url": "https://github.com/SimonSchubert/omalauncher/pull/158",
-      "createdAt": "2026-10-17T03:23:51Z",
-      "updatedAt": "2026-10-20T18:40:49Z"
-    },
-    {
       "key": "kvnloo/llama.bend:issue:12",
       "kind": "issue",
       "relationship": "owned",
@@ -2859,18 +3270,6 @@
       "url": "https://github.com/kvnloo/ripple/pull/3",
       "createdAt": "2026-10-20T16:58:24Z",
       "updatedAt": "2026-10-20T17:52:05Z"
-    },
-    {
-      "key": "kvnloo/.files:issue:16",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/.files",
-      "number": 16,
-      "title": "[Tracking] Make .files the declarative machine IaC source of truth",
-      "url": "https://github.com/kvnloo/.files/issues/16",
-      "createdAt": "2026-09-20T19:04:08Z",
-      "updatedAt": "2026-10-20T17:12:12Z"
     },
     {
       "key": "kvnloo/z0evals:issue:93",
@@ -3385,18 +3784,6 @@
       "mergedAt": "2026-10-20T13:40:19Z"
     },
     {
-      "key": "kvnloo/hermes-agent:issue:636",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/hermes-agent",
-      "number": 636,
-      "title": "[Hermes × Tern] Reuse audit: carry tested ui-tsp improvements into hermes-tern plugin",
-      "url": "https://github.com/kvnloo/hermes-agent/issues/636",
-      "createdAt": "2026-10-20T13:08:40Z",
-      "updatedAt": "2026-10-20T13:08:40Z"
-    },
-    {
       "key": "kvnloo/z0live:issue:32",
       "kind": "issue",
       "relationship": "owned",
@@ -3590,18 +3977,6 @@
       "createdAt": "2026-10-20T08:39:50Z",
       "updatedAt": "2026-10-20T08:45:27Z",
       "mergedAt": "2026-10-20T08:45:27Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:943",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 943,
-      "title": "feat(fire-history): continue Historic Fires from #609",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/943",
-      "createdAt": "2026-10-05T17:42:32Z",
-      "updatedAt": "2026-10-20T08:45:06Z"
     },
     {
       "key": "kvnloo/hermes-agent:issue:447",
@@ -4110,18 +4485,6 @@
       "updatedAt": "2026-10-20T06:56:47Z"
     },
     {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:834",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 834,
-      "title": "fix(share): surface invalid shared layer state",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/834",
-      "createdAt": "2026-09-29T01:50:04Z",
-      "updatedAt": "2026-10-20T06:53:50Z"
-    },
-    {
       "key": "kvnloo/spark:pull_request:1",
       "kind": "pull_request",
       "relationship": "owned",
@@ -4372,18 +4735,6 @@
       "url": "https://github.com/kvnloo/hermes-agent/pull/627",
       "createdAt": "2026-10-20T04:27:50Z",
       "updatedAt": "2026-10-20T04:27:50Z"
-    },
-    {
-      "key": "kvnloo/z0:issue:15",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0",
-      "number": 15,
-      "title": "RFC: Verified Learning Control Loop for personal cognition — cross-repo contract map",
-      "url": "https://github.com/kvnloo/z0/issues/15",
-      "createdAt": "2026-09-30T08:26:50Z",
-      "updatedAt": "2026-10-20T04:02:28Z"
     },
     {
       "key": "kvnloo/aodl:issue:32",
@@ -6763,18 +7114,6 @@
       "updatedAt": "2026-10-18T15:29:25Z"
     },
     {
-      "key": "raspberrypi/usbboot:pull_request:400",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "raspberrypi/usbboot",
-      "number": 400,
-      "title": "docs: clarify installed vs checkout mass-storage payload",
-      "url": "https://github.com/raspberrypi/usbboot/pull/400",
-      "createdAt": "2026-09-29T02:02:46Z",
-      "updatedAt": "2026-10-18T11:16:31Z"
-    },
-    {
       "key": "kvnloo/alysis-code:issue:1",
       "kind": "issue",
       "relationship": "owned",
@@ -6954,18 +7293,6 @@
       "url": "https://github.com/kvnloo/lawnchair/pull/9",
       "createdAt": "2026-10-17T22:16:10Z",
       "updatedAt": "2026-10-18T08:38:50Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:11026",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 11026,
-      "title": "Document that resize Super+Minus/Equal are physical AE11/AE12",
-      "url": "https://github.com/omacom/omarchy/pull/11026",
-      "createdAt": "2026-09-09T18:50:13Z",
-      "updatedAt": "2026-10-18T08:37:23Z"
     },
     {
       "key": "kvnloo/noop:pull_request:48",
@@ -7306,18 +7633,6 @@
       "url": "https://github.com/trycua/cua/pull/5374",
       "createdAt": "2026-10-16T18:39:23Z",
       "updatedAt": "2026-10-18T06:14:33Z"
-    },
-    {
-      "key": "kvnloo/usbboot:pull_request:1",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/usbboot",
-      "number": 1,
-      "title": "coord: canonical usbboot promotion queue and existing upstream400 carrier",
-      "url": "https://github.com/kvnloo/usbboot/pull/1",
-      "createdAt": "2026-10-18T05:44:45Z",
-      "updatedAt": "2026-10-18T06:08:10Z"
     },
     {
       "key": "kvnloo/omarchy:pull_request:60",
@@ -9856,18 +10171,6 @@
       "url": "https://github.com/kvnloo/gods-eye-view/issues/72",
       "createdAt": "2026-09-29T00:18:50Z",
       "updatedAt": "2026-10-17T10:11:07Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:pull_request:259",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 259,
-      "title": "feat(looks): local credited Look Lab JSON remix and import (stacked)",
-      "url": "https://github.com/kvnloo/gods-eye-view/pull/259",
-      "createdAt": "2026-10-17T10:09:32Z",
-      "updatedAt": "2026-10-17T10:09:32Z"
     },
     {
       "key": "kvnloo/gods-eye-view:issue:110",
@@ -14975,18 +15278,6 @@
       "updatedAt": "2026-10-17T02:16:19Z"
     },
     {
-      "key": "kvnloo/omarchy:pull_request:63",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/omarchy",
-      "number": 63,
-      "title": "[muse] menu-images: document --prepare-only in args header and usage",
-      "url": "https://github.com/kvnloo/omarchy/pull/63",
-      "createdAt": "2026-09-26T02:44:13Z",
-      "updatedAt": "2026-10-17T02:16:15Z"
-    },
-    {
       "key": "kvnloo/omarchy:pull_request:62",
       "kind": "pull_request",
       "relationship": "owned",
@@ -15009,18 +15300,6 @@
       "url": "https://github.com/kvnloo/omarchy/pull/61",
       "createdAt": "2026-09-26T02:44:07Z",
       "updatedAt": "2026-10-17T02:16:09Z"
-    },
-    {
-      "key": "kvnloo/omarchy:pull_request:58",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/omarchy",
-      "number": 58,
-      "title": "[muse] dev font add: require --codepoint in the private-use range",
-      "url": "https://github.com/kvnloo/omarchy/pull/58",
-      "createdAt": "2026-09-26T02:30:52Z",
-      "updatedAt": "2026-10-17T02:16:01Z"
     },
     {
       "key": "kvnloo/omarchy:pull_request:56",
@@ -18510,18 +18789,6 @@
       "updatedAt": "2026-10-16T21:16:16Z"
     },
     {
-      "key": "The-OpenROAD-Project/OpenROAD:pull_request:11725",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "The-OpenROAD-Project/OpenROAD",
-      "number": 11725,
-      "title": "docs: add evidence-first Gemini review style guide",
-      "url": "https://github.com/The-OpenROAD-Project/OpenROAD/pull/11725",
-      "createdAt": "2026-10-13T15:34:29Z",
-      "updatedAt": "2026-10-16T21:14:17Z"
-    },
-    {
       "key": "kvnloo/zeron:pull_request:2",
       "kind": "pull_request",
       "relationship": "owned",
@@ -18632,18 +18899,6 @@
       "url": "https://github.com/PixarAnimationStudios/OpenUSD/pull/4292",
       "createdAt": "2026-10-16T14:29:28Z",
       "updatedAt": "2026-10-16T17:51:44Z"
-    },
-    {
-      "key": "PixarAnimationStudios/OpenUSD:pull_request:4291",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "PixarAnimationStudios/OpenUSD",
-      "number": 4291,
-      "title": "docs: clarify GfColorSpace span conversion direction",
-      "url": "https://github.com/PixarAnimationStudios/OpenUSD/pull/4291",
-      "createdAt": "2026-10-16T14:18:24Z",
-      "updatedAt": "2026-10-16T17:51:43Z"
     },
     {
       "key": "kvnloo/omalauncher:pull_request:6",
@@ -18815,18 +19070,6 @@
       "updatedAt": "2026-10-16T15:24:05Z"
     },
     {
-      "key": "kvnloo/OpenUSD:issue:52",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/OpenUSD",
-      "number": 52,
-      "title": "OpenUSD — single canonical promotion queue (#52)",
-      "url": "https://github.com/kvnloo/OpenUSD/issues/52",
-      "createdAt": "2026-10-16T08:11:11Z",
-      "updatedAt": "2026-10-16T15:21:27Z"
-    },
-    {
       "key": "kvnloo/OpenUSD:pull_request:45",
       "kind": "pull_request",
       "relationship": "owned",
@@ -18885,18 +19128,6 @@
       "url": "https://github.com/PixarAnimationStudios/OpenUSD/pull/4258",
       "createdAt": "2026-10-01T07:25:35Z",
       "updatedAt": "2026-10-16T14:20:51Z"
-    },
-    {
-      "key": "kvnloo/OpenUSD:pull_request:47",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/OpenUSD",
-      "number": 47,
-      "title": "docs: clarify GfColorSpace span conversion direction [READY FOR UPSTREAM]",
-      "url": "https://github.com/kvnloo/OpenUSD/pull/47",
-      "createdAt": "2026-10-08T20:22:25Z",
-      "updatedAt": "2026-10-16T14:19:36Z"
     },
     {
       "key": "kvnloo/opencode:issue:208",
@@ -19941,18 +20172,6 @@
       "url": "https://github.com/trycua/cua/pull/4734",
       "createdAt": "2026-10-06T08:04:54Z",
       "updatedAt": "2026-10-15T00:26:01Z"
-    },
-    {
-      "key": "trycua/cua:pull_request:4902",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "trycua/cua",
-      "number": 4902,
-      "title": "fix(jev-use): honor effect=refused without MCP isError",
-      "url": "https://github.com/trycua/cua/pull/4902",
-      "createdAt": "2026-10-09T00:16:41Z",
-      "updatedAt": "2026-10-15T00:25:30Z"
     },
     {
       "key": "can1357/oh-my-pi:issue:12487",
@@ -24124,18 +24343,6 @@
       "updatedAt": "2026-10-10T02:46:44Z"
     },
     {
-      "key": "kvnloo/z0intelligence:issue:22",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0intelligence",
-      "number": 22,
-      "title": "memory: canonical continuity plan, State Packet, and implementation status",
-      "url": "https://github.com/kvnloo/z0intelligence/issues/22",
-      "createdAt": "2026-09-22T18:15:49Z",
-      "updatedAt": "2026-10-10T02:20:40Z"
-    },
-    {
       "key": "kvnloo/oh-my-pi:issue:148",
       "kind": "issue",
       "relationship": "owned",
@@ -24437,18 +24644,6 @@
       "url": "https://github.com/kvnloo/OpenUSD/pull/37",
       "createdAt": "2026-10-08T17:23:25Z",
       "updatedAt": "2026-10-09T02:55:13Z"
-    },
-    {
-      "key": "kvnloo/OpenUSD:pull_request:42",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/OpenUSD",
-      "number": 42,
-      "title": "usdGeom: guard null point-instancer transform outputs [READY FOR UPSTREAM]",
-      "url": "https://github.com/kvnloo/OpenUSD/pull/42",
-      "createdAt": "2026-10-08T17:31:27Z",
-      "updatedAt": "2026-10-09T02:50:42Z"
     },
     {
       "key": "kvnloo/OpenUSD:pull_request:41",
@@ -28786,18 +28981,6 @@
       "updatedAt": "2026-10-03T22:25:29Z"
     },
     {
-      "key": "raspberrypi/pico-sdk:pull_request:3215",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "raspberrypi/pico-sdk",
-      "number": 3215,
-      "title": "cyw43: stop poll worker before timeout worker",
-      "url": "https://github.com/raspberrypi/pico-sdk/pull/3215",
-      "createdAt": "2026-09-29T02:02:42Z",
-      "updatedAt": "2026-10-03T22:22:03Z"
-    },
-    {
       "key": "kvnloo/gh-contrib-archive:pull_request:49",
       "kind": "pull_request",
       "relationship": "owned",
@@ -29126,18 +29309,6 @@
       "updatedAt": "2026-10-03T17:59:13Z"
     },
     {
-      "key": "omacom/omarchy:pull_request:12991",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 12991,
-      "title": "fix(clipboard): paste into the window that opened the manager (#12987)",
-      "url": "https://github.com/omacom/omarchy/pull/12991",
-      "createdAt": "2026-09-23T03:15:42Z",
-      "updatedAt": "2026-10-03T17:33:13Z"
-    },
-    {
       "key": "omacom/omarchy:pull_request:12992",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -29450,30 +29621,6 @@
       "url": "https://github.com/omacom/omarchy/pull/13716",
       "createdAt": "2026-09-29T04:36:07Z",
       "updatedAt": "2026-10-03T10:14:17Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:13717",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 13717,
-      "title": "menu-images: document --prepare-only in args header and usage",
-      "url": "https://github.com/omacom/omarchy/pull/13717",
-      "createdAt": "2026-09-29T04:36:09Z",
-      "updatedAt": "2026-10-03T10:14:04Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:13712",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 13712,
-      "title": "dev font add: require --codepoint in the private-use range",
-      "url": "https://github.com/omacom/omarchy/pull/13712",
-      "createdAt": "2026-09-29T04:36:00Z",
-      "updatedAt": "2026-10-03T10:09:47Z"
     },
     {
       "key": "omacom/omarchy:pull_request:13711",
@@ -39623,30 +39770,6 @@
       "url": "https://github.com/tldraw/tldraw/issues/10967",
       "createdAt": "2026-09-28T18:37:55Z",
       "updatedAt": "2026-09-28T18:37:55Z"
-    },
-    {
-      "key": "raspberrypi/rpi-image-gen:pull_request:340",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "raspberrypi/rpi-image-gen",
-      "number": 340,
-      "title": "Document Python virtual environment dependency behavior",
-      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/340",
-      "createdAt": "2026-09-28T18:35:38Z",
-      "updatedAt": "2026-09-28T18:35:38Z"
-    },
-    {
-      "key": "raspberrypi/rpi-image-gen:pull_request:337",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "raspberrypi/rpi-image-gen",
-      "number": 337,
-      "title": "Document custom layer version selection",
-      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/337",
-      "createdAt": "2026-09-28T18:35:30Z",
-      "updatedAt": "2026-09-28T18:35:30Z"
     },
     {
       "key": "kvnloo/hermes-agent:issue:281",
