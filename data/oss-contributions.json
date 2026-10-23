@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T10:39:05Z",
+  "generatedAt": "2026-10-23T18:03:41Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -41,7 +41,7 @@
       "repositories": [
         "bilawalsidhu/gods-eye-view"
       ],
-      "contributionCount": 54
+      "contributionCount": 56
     },
     {
       "id": "cua",
@@ -263,14 +263,38 @@
     "limitations": []
   },
   "summary": {
-    "mergedUpstreamPullRequests": 135,
-    "openReadyUpstreamPullRequests": 162,
+    "mergedUpstreamPullRequests": 137,
+    "openReadyUpstreamPullRequests": 159,
     "draftUpstreamPullRequests": 65,
-    "upstreamIssuesAndProposals": 382,
+    "upstreamIssuesAndProposals": 384,
     "distinctUpstreamCommunities": 139,
     "verifiedImpact": 0
   },
   "contributions": [
+    {
+      "key": "kvnloo/.files:pull_request:49",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/.files",
+      "number": 49,
+      "title": "Local Netdata, verified atop rollups, and disabled cleanup option",
+      "url": "https://github.com/kvnloo/.files/pull/49",
+      "createdAt": "2026-10-23T17:41:47Z",
+      "updatedAt": "2026-10-23T17:59:29Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:issue:1",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/hermes-tern",
+      "number": 1,
+      "title": "Port tested Hermes×Tern ui-tsp work into the hermes-tern plugin (downstream port program)",
+      "url": "https://github.com/kvnloo/hermes-tern/issues/1",
+      "createdAt": "2026-10-23T01:53:16Z",
+      "updatedAt": "2026-10-23T17:56:41Z"
+    },
     {
       "key": "kvnloo/llama.bend:issue:12",
       "kind": "issue",
@@ -281,7 +305,259 @@
       "title": "Promotion queue — upstream-ready work (single canonical issue)",
       "url": "https://github.com/kvnloo/llama.bend/issues/12",
       "createdAt": "2026-10-16T08:07:49Z",
-      "updatedAt": "2026-10-23T10:38:03Z"
+      "updatedAt": "2026-10-23T17:34:42Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:13",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 13,
+      "title": "feat(frontend): native BTW threads and read-only MCP/SSH report sheets",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/13",
+      "createdAt": "2026-10-23T02:27:38Z",
+      "updatedAt": "2026-10-23T17:34:30Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:23",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 23,
+      "title": "Port native overlay open-instance ownership and stale-action fencing",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/23",
+      "createdAt": "2026-10-23T17:11:53Z",
+      "updatedAt": "2026-10-23T17:11:53Z"
+    },
+    {
+      "key": "kvnloo/omalauncher:pull_request:7",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/omalauncher",
+      "number": 7,
+      "title": "coordination: canonical Omalauncher promotion queue (retain unmerged)",
+      "url": "https://github.com/kvnloo/omalauncher/pull/7",
+      "createdAt": "2026-10-18T08:19:54Z",
+      "updatedAt": "2026-10-23T17:11:52Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:pull_request:650",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-agent",
+      "number": 650,
+      "title": "feat(plugins): profile-bound gateway JSON-RPC method seam",
+      "url": "https://github.com/kvnloo/hermes-agent/pull/650",
+      "createdAt": "2026-10-23T02:42:39Z",
+      "updatedAt": "2026-10-23T17:10:18Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:6",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 6,
+      "title": "feat: port verified written artifacts, session links and attachment paste to Tern",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/6",
+      "createdAt": "2026-10-23T02:20:34Z",
+      "updatedAt": "2026-10-23T17:04:38Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:22",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 22,
+      "title": "Browser: caller-bound Tern native backend and consent-gated gateway intents",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/22",
+      "createdAt": "2026-10-23T14:48:44Z",
+      "updatedAt": "2026-10-23T17:01:28Z"
+    },
+    {
+      "key": "kvnloo/deepseek-harness:issue:6",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/deepseek-harness",
+      "number": 6,
+      "title": "[RFC] Native TUI profile with Tern Surface Protocol support",
+      "url": "https://github.com/kvnloo/deepseek-harness/issues/6",
+      "createdAt": "2026-10-05T17:08:53Z",
+      "updatedAt": "2026-10-23T17:01:04Z"
+    },
+    {
+      "key": "kvnloo/deepseek-harness:pull_request:7",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/deepseek-harness",
+      "number": 7,
+      "title": "feat(tui): native Tern profile and ANSI session UI",
+      "url": "https://github.com/kvnloo/deepseek-harness/pull/7",
+      "createdAt": "2026-10-23T03:03:58Z",
+      "updatedAt": "2026-10-23T17:01:03Z"
+    },
+    {
+      "key": "kvnloo/llama.bend:pull_request:4",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/llama.bend",
+      "number": 4,
+      "title": "bench: strict resumable trials and reviewed campaign checkpoint",
+      "url": "https://github.com/kvnloo/llama.bend/pull/4",
+      "createdAt": "2026-10-14T07:45:21Z",
+      "updatedAt": "2026-10-23T16:42:21Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:3",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 3,
+      "title": "Port bounded native table charts into Tern transcript",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/3",
+      "createdAt": "2026-10-23T02:12:29Z",
+      "updatedAt": "2026-10-23T16:38:14Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:15",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 15,
+      "title": "feat(voice): opt-in live conversation and safe PTT capability gate",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/15",
+      "createdAt": "2026-10-23T02:31:48Z",
+      "updatedAt": "2026-10-23T16:32:07Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:7",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 7,
+      "title": "feat(tern): fork sessions into sibling panes with host lifecycle",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/7",
+      "createdAt": "2026-10-23T02:21:34Z",
+      "updatedAt": "2026-10-23T16:27:47Z"
+    },
+    {
+      "key": "kvnloo/oh-my-pi:pull_request:160",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/oh-my-pi",
+      "number": 160,
+      "title": "draft(coding-agent): agent-authored PII detector repair lab for #10829 [fork only]",
+      "url": "https://github.com/kvnloo/oh-my-pi/pull/160",
+      "createdAt": "2026-10-23T03:21:05Z",
+      "updatedAt": "2026-10-23T16:25:19Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:issue:636",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/hermes-agent",
+      "number": 636,
+      "title": "[Hermes × Tern] Reuse audit: carry tested ui-tsp improvements into hermes-tern plugin",
+      "url": "https://github.com/kvnloo/hermes-agent/issues/636",
+      "createdAt": "2026-10-20T13:08:40Z",
+      "updatedAt": "2026-10-23T16:19:52Z"
+    },
+    {
+      "key": "kvnloo/slop-newyork:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/slop-newyork",
+      "number": 1,
+      "title": "Add building, roadway and moving tramway collision physics",
+      "url": "https://github.com/kvnloo/slop-newyork/pull/1",
+      "createdAt": "2026-10-23T15:51:25Z",
+      "updatedAt": "2026-10-23T16:06:54Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:141",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 141,
+      "title": "HUM-04 — historical replay + training mode before live operations",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/141",
+      "createdAt": "2026-10-01T06:18:44Z",
+      "updatedAt": "2026-10-23T15:59:54Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:184",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 184,
+      "title": "INFRA-04 — co-op park and street redesign as versioned possible-world proposals",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/184",
+      "createdAt": "2026-10-12T08:54:22Z",
+      "updatedAt": "2026-10-23T15:50:08Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:issue:1333",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 1333,
+      "title": "feat: opt-in co-op city-builder mode for comparing park proposals",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/issues/1333",
+      "createdAt": "2026-10-23T15:48:47Z",
+      "updatedAt": "2026-10-23T15:48:47Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:21",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 21,
+      "title": "feat: bounded Tern surface recovery (stacked on retention)",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/21",
+      "createdAt": "2026-10-23T12:53:47Z",
+      "updatedAt": "2026-10-23T15:32:57Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:issue:1332",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 1332,
+      "title": "feat: self-hosted personalized intelligence watches → phone notifications",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/issues/1332",
+      "createdAt": "2026-10-23T15:15:41Z",
+      "updatedAt": "2026-10-23T15:15:41Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:19",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 19,
+      "title": "test(fallback): qualify compiled entry and Ink retry (stacked on fork panes)",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/19",
+      "createdAt": "2026-10-23T06:18:32Z",
+      "updatedAt": "2026-10-23T14:56:06Z"
     },
     {
       "key": "kvnloo/hermes-tern:pull_request:20",
@@ -293,7 +569,129 @@
       "title": "feat(tern): native profile Settings and safe provider Model Hub (stacked)",
       "url": "https://github.com/kvnloo/hermes-tern/pull/20",
       "createdAt": "2026-10-23T08:27:45Z",
-      "updatedAt": "2026-10-23T10:34:47Z"
+      "updatedAt": "2026-10-23T14:23:31Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:10",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 10,
+      "title": "Port Tern shortcut preferences, command palette and model cycling",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/10",
+      "createdAt": "2026-10-23T02:24:26Z",
+      "updatedAt": "2026-10-23T14:07:22Z"
+    },
+    {
+      "key": "kvnloo/evolution-lab:issue:23",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/evolution-lab",
+      "number": 23,
+      "title": "eval: tool-calling SLM tournament and Agent0-style self-evolution track",
+      "url": "https://github.com/kvnloo/evolution-lab/issues/23",
+      "createdAt": "2026-09-21T16:59:35Z",
+      "updatedAt": "2026-10-23T13:49:09Z"
+    },
+    {
+      "key": "kvnloo/activitywatch:pull_request:2",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/activitywatch",
+      "number": 2,
+      "title": "experiment(research): derive privacy-preserving flow proxies from ActivityWatch telemetry",
+      "url": "https://github.com/kvnloo/activitywatch/pull/2",
+      "createdAt": "2026-10-02T03:51:10Z",
+      "updatedAt": "2026-10-23T13:28:03Z"
+    },
+    {
+      "key": "kvnloo/omalauncher:pull_request:5",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/omalauncher",
+      "number": 5,
+      "title": "QA: exact-head CI for upstream Tern finger scrolling fix",
+      "url": "https://github.com/kvnloo/omalauncher/pull/5",
+      "createdAt": "2026-10-16T05:02:27Z",
+      "updatedAt": "2026-10-23T13:21:34Z"
+    },
+    {
+      "key": "SimonSchubert/omalauncher:pull_request:128",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "SimonSchubert/omalauncher",
+      "number": 128,
+      "title": "Add native Tern scroll, pinch, selection and tab gestures",
+      "url": "https://github.com/SimonSchubert/omalauncher/pull/128",
+      "createdAt": "2026-10-15T05:49:28Z",
+      "updatedAt": "2026-10-23T13:21:34Z"
+    },
+    {
+      "key": "AlysisAi/AlysisCode:pull_request:36",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "merged",
+      "repo": "AlysisAi/AlysisCode",
+      "number": 36,
+      "title": "fix: decode Git patch paths and disambiguate b/ directories",
+      "url": "https://github.com/AlysisAi/AlysisCode/pull/36",
+      "createdAt": "2026-10-15T18:23:40Z",
+      "updatedAt": "2026-10-23T12:40:01Z",
+      "mergedAt": "2026-10-23T12:40:01Z"
+    },
+    {
+      "key": "AlysisAi/AlysisCode:pull_request:35",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "merged",
+      "repo": "AlysisAi/AlysisCode",
+      "number": 35,
+      "title": "fix: classify Alibaba Model Studio by owned hostnames",
+      "url": "https://github.com/AlysisAi/AlysisCode/pull/35",
+      "createdAt": "2026-10-15T17:49:59Z",
+      "updatedAt": "2026-10-23T12:39:58Z",
+      "mergedAt": "2026-10-23T12:39:58Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:5",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 5,
+      "title": "feat(frontend): port Tern browser-block management from ui-tsp",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/5",
+      "createdAt": "2026-10-23T02:19:57Z",
+      "updatedAt": "2026-10-23T12:02:04Z"
+    },
+    {
+      "key": "can1357/oh-my-pi:pull_request:15429",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "can1357/oh-my-pi",
+      "number": 15429,
+      "title": "feat(live): opt-in Jev shortcuts via bounded delegation hook",
+      "url": "https://github.com/can1357/oh-my-pi/pull/15429",
+      "createdAt": "2026-10-12T01:31:47Z",
+      "updatedAt": "2026-10-23T11:25:10Z"
+    },
+    {
+      "key": "raspberrypi/rpi-image-gen:pull_request:340",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "raspberrypi/rpi-image-gen",
+      "number": 340,
+      "title": "Document Python virtual environment dependency behavior",
+      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/340",
+      "createdAt": "2026-09-28T18:35:38Z",
+      "updatedAt": "2026-10-23T10:40:22Z"
     },
     {
       "key": "raspberrypi/rpi-image-gen:pull_request:339",
@@ -319,18 +717,6 @@
       "url": "https://github.com/raspberrypi/rpi-image-gen/pull/337",
       "createdAt": "2026-09-28T18:35:30Z",
       "updatedAt": "2026-10-23T10:33:14Z"
-    },
-    {
-      "key": "kvnloo/llama.bend:pull_request:4",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/llama.bend",
-      "number": 4,
-      "title": "bench: strict resumable trials and reviewed campaign checkpoint",
-      "url": "https://github.com/kvnloo/llama.bend/pull/4",
-      "createdAt": "2026-10-14T07:45:21Z",
-      "updatedAt": "2026-10-23T10:32:07Z"
     },
     {
       "key": "kvnloo/OpenShell:issue:18",
@@ -369,30 +755,6 @@
       "updatedAt": "2026-10-23T10:14:42Z"
     },
     {
-      "key": "kvnloo/hermes-tern:issue:1",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/hermes-tern",
-      "number": 1,
-      "title": "Port tested Hermes×Tern ui-tsp work into the hermes-tern plugin (downstream port program)",
-      "url": "https://github.com/kvnloo/hermes-tern/issues/1",
-      "createdAt": "2026-10-23T01:53:16Z",
-      "updatedAt": "2026-10-23T10:09:34Z"
-    },
-    {
-      "key": "kvnloo/hermes-tern:pull_request:19",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/hermes-tern",
-      "number": 19,
-      "title": "test(fallback): qualify compiled entry and Ink retry (stacked on fork panes)",
-      "url": "https://github.com/kvnloo/hermes-tern/pull/19",
-      "createdAt": "2026-10-23T06:18:32Z",
-      "updatedAt": "2026-10-23T10:07:53Z"
-    },
-    {
       "key": "kvnloo/hermes-tern:pull_request:12",
       "kind": "pull_request",
       "relationship": "owned",
@@ -429,18 +791,6 @@
       "updatedAt": "2026-10-23T09:49:20Z"
     },
     {
-      "key": "kvnloo/hermes-tern:pull_request:5",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/hermes-tern",
-      "number": 5,
-      "title": "feat(frontend): port Tern browser-block management from ui-tsp",
-      "url": "https://github.com/kvnloo/hermes-tern/pull/5",
-      "createdAt": "2026-10-23T02:19:57Z",
-      "updatedAt": "2026-10-23T09:49:19Z"
-    },
-    {
       "key": "kvnloo/hermes-tern:pull_request:4",
       "kind": "pull_request",
       "relationship": "owned",
@@ -463,54 +813,6 @@
       "url": "https://github.com/kvnloo/hermes-tern/pull/2",
       "createdAt": "2026-10-23T02:12:13Z",
       "updatedAt": "2026-10-23T09:49:17Z"
-    },
-    {
-      "key": "kvnloo/deepseek-harness:pull_request:7",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/deepseek-harness",
-      "number": 7,
-      "title": "feat(tui): native Tern profile and ANSI session UI",
-      "url": "https://github.com/kvnloo/deepseek-harness/pull/7",
-      "createdAt": "2026-10-23T03:03:58Z",
-      "updatedAt": "2026-10-23T09:45:26Z"
-    },
-    {
-      "key": "kvnloo/hermes-agent:issue:636",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/hermes-agent",
-      "number": 636,
-      "title": "[Hermes × Tern] Reuse audit: carry tested ui-tsp improvements into hermes-tern plugin",
-      "url": "https://github.com/kvnloo/hermes-agent/issues/636",
-      "createdAt": "2026-10-20T13:08:40Z",
-      "updatedAt": "2026-10-23T09:45:22Z"
-    },
-    {
-      "key": "kvnloo/hermes-agent:pull_request:650",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/hermes-agent",
-      "number": 650,
-      "title": "feat(plugins): profile-bound gateway JSON-RPC method seam",
-      "url": "https://github.com/kvnloo/hermes-agent/pull/650",
-      "createdAt": "2026-10-23T02:42:39Z",
-      "updatedAt": "2026-10-23T09:44:05Z"
-    },
-    {
-      "key": "kvnloo/deepseek-harness:issue:6",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/deepseek-harness",
-      "number": 6,
-      "title": "[RFC] Native TUI profile with Tern Surface Protocol support",
-      "url": "https://github.com/kvnloo/deepseek-harness/issues/6",
-      "createdAt": "2026-10-05T17:08:53Z",
-      "updatedAt": "2026-10-23T09:42:07Z"
     },
     {
       "key": "raspberrypi/rpi-image-gen:pull_request:335",
@@ -571,42 +873,6 @@
       "url": "https://github.com/kvnloo/llama.bend/pull/2",
       "createdAt": "2026-10-14T05:29:53Z",
       "updatedAt": "2026-10-23T09:32:48Z"
-    },
-    {
-      "key": "kvnloo/hermes-tern:pull_request:13",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/hermes-tern",
-      "number": 13,
-      "title": "feat(frontend): native BTW threads and read-only MCP/SSH report sheets",
-      "url": "https://github.com/kvnloo/hermes-tern/pull/13",
-      "createdAt": "2026-10-23T02:27:38Z",
-      "updatedAt": "2026-10-23T09:31:26Z"
-    },
-    {
-      "key": "kvnloo/hermes-tern:pull_request:10",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/hermes-tern",
-      "number": 10,
-      "title": "Port Tern shortcut preferences, command palette and model cycling",
-      "url": "https://github.com/kvnloo/hermes-tern/pull/10",
-      "createdAt": "2026-10-23T02:24:26Z",
-      "updatedAt": "2026-10-23T09:28:27Z"
-    },
-    {
-      "key": "kvnloo/hermes-tern:pull_request:6",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/hermes-tern",
-      "number": 6,
-      "title": "feat: port verified written artifacts, session links and attachment paste to Tern",
-      "url": "https://github.com/kvnloo/hermes-tern/pull/6",
-      "createdAt": "2026-10-23T02:20:34Z",
-      "updatedAt": "2026-10-23T09:02:32Z"
     },
     {
       "key": "raspberrypi/usbboot:pull_request:400",
@@ -921,30 +1187,6 @@
       "updatedAt": "2026-10-23T07:28:27Z"
     },
     {
-      "key": "kvnloo/hermes-tern:pull_request:3",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/hermes-tern",
-      "number": 3,
-      "title": "Port bounded native table charts into Tern transcript",
-      "url": "https://github.com/kvnloo/hermes-tern/pull/3",
-      "createdAt": "2026-10-23T02:12:29Z",
-      "updatedAt": "2026-10-23T07:26:14Z"
-    },
-    {
-      "key": "kvnloo/activitywatch:pull_request:2",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/activitywatch",
-      "number": 2,
-      "title": "experiment(research): derive privacy-preserving flow proxies from ActivityWatch telemetry",
-      "url": "https://github.com/kvnloo/activitywatch/pull/2",
-      "createdAt": "2026-10-02T03:51:10Z",
-      "updatedAt": "2026-10-23T07:26:01Z"
-    },
-    {
       "key": "kvnloo/OpenUSD:pull_request:47",
       "kind": "pull_request",
       "relationship": "owned",
@@ -1027,30 +1269,6 @@
       "url": "https://github.com/kvnloo/hermes-tern/pull/8",
       "createdAt": "2026-10-23T02:23:42Z",
       "updatedAt": "2026-10-23T06:51:31Z"
-    },
-    {
-      "key": "kvnloo/hermes-tern:pull_request:15",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/hermes-tern",
-      "number": 15,
-      "title": "feat(voice): opt-in live conversation and safe PTT capability gate",
-      "url": "https://github.com/kvnloo/hermes-tern/pull/15",
-      "createdAt": "2026-10-23T02:31:48Z",
-      "updatedAt": "2026-10-23T06:47:50Z"
-    },
-    {
-      "key": "kvnloo/hermes-tern:pull_request:7",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/hermes-tern",
-      "number": 7,
-      "title": "feat(tern): fork sessions into sibling panes with host lifecycle",
-      "url": "https://github.com/kvnloo/hermes-tern/pull/7",
-      "createdAt": "2026-10-23T02:21:34Z",
-      "updatedAt": "2026-10-23T06:47:50Z"
     },
     {
       "key": "kvnloo/hermes-agent:issue:447",
@@ -1255,18 +1473,6 @@
       "url": "https://github.com/kvnloo/oh-my-pi/pull/164",
       "createdAt": "2026-10-23T03:33:29Z",
       "updatedAt": "2026-10-23T06:01:06Z"
-    },
-    {
-      "key": "kvnloo/oh-my-pi:pull_request:160",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/oh-my-pi",
-      "number": 160,
-      "title": "draft(coding-agent): agent-authored PII detector repair lab for #10829 [fork only]",
-      "url": "https://github.com/kvnloo/oh-my-pi/pull/160",
-      "createdAt": "2026-10-23T03:21:05Z",
-      "updatedAt": "2026-10-23T06:01:05Z"
     },
     {
       "key": "kvnloo/oh-my-pi:pull_request:161",
@@ -3047,18 +3253,6 @@
       "updatedAt": "2026-10-22T22:40:16Z"
     },
     {
-      "key": "kvnloo/omalauncher:pull_request:7",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/omalauncher",
-      "number": 7,
-      "title": "coordination: canonical Omalauncher promotion queue (retain unmerged)",
-      "url": "https://github.com/kvnloo/omalauncher/pull/7",
-      "createdAt": "2026-10-18T08:19:54Z",
-      "updatedAt": "2026-10-22T22:37:23Z"
-    },
-    {
       "key": "omacom/omarchy:pull_request:12991",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -3288,18 +3482,6 @@
       "url": "https://github.com/kvnloo/kvn/pull/1",
       "createdAt": "2026-10-22T18:52:38Z",
       "updatedAt": "2026-10-22T19:35:02Z"
-    },
-    {
-      "key": "raspberrypi/rpi-image-gen:pull_request:340",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "raspberrypi/rpi-image-gen",
-      "number": 340,
-      "title": "Document Python virtual environment dependency behavior",
-      "url": "https://github.com/raspberrypi/rpi-image-gen/pull/340",
-      "createdAt": "2026-09-28T18:35:38Z",
-      "updatedAt": "2026-10-22T19:17:02Z"
     },
     {
       "key": "kvnloo/fframestudio:pull_request:35",
@@ -5531,18 +5713,6 @@
       "updatedAt": "2026-10-20T18:40:50Z"
     },
     {
-      "key": "SimonSchubert/omalauncher:pull_request:128",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "SimonSchubert/omalauncher",
-      "number": 128,
-      "title": "Add native Tern scroll, pinch, selection and tab gestures",
-      "url": "https://github.com/SimonSchubert/omalauncher/pull/128",
-      "createdAt": "2026-10-15T05:49:28Z",
-      "updatedAt": "2026-10-20T18:40:49Z"
-    },
-    {
       "key": "kvnloo/kerdoios:issue:65",
       "kind": "issue",
       "relationship": "owned",
@@ -5821,18 +5991,6 @@
       "url": "https://github.com/kvnloo/omalauncher/pull/12",
       "createdAt": "2026-10-20T14:33:09Z",
       "updatedAt": "2026-10-20T14:57:24Z"
-    },
-    {
-      "key": "kvnloo/omalauncher:pull_request:5",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/omalauncher",
-      "number": 5,
-      "title": "QA: exact-head CI for upstream Tern finger scrolling fix",
-      "url": "https://github.com/kvnloo/omalauncher/pull/5",
-      "createdAt": "2026-10-16T05:02:27Z",
-      "updatedAt": "2026-10-20T14:56:43Z"
     },
     {
       "key": "kvnloo/noctalia:pull_request:28",
@@ -7018,18 +7176,6 @@
       "url": "https://github.com/kvnloo/z0archy/issues/27",
       "createdAt": "2026-09-30T08:30:31Z",
       "updatedAt": "2026-10-20T04:00:51Z"
-    },
-    {
-      "key": "kvnloo/evolution-lab:issue:23",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/evolution-lab",
-      "number": 23,
-      "title": "eval: tool-calling SLM tournament and Agent0-style self-evolution track",
-      "url": "https://github.com/kvnloo/evolution-lab/issues/23",
-      "createdAt": "2026-09-21T16:59:35Z",
-      "updatedAt": "2026-10-20T03:59:52Z"
     },
     {
       "key": "kvnloo/z0intelligence:issue:55",
@@ -9359,30 +9505,6 @@
       "url": "https://github.com/kvnloo/alysis-code/issues/1",
       "createdAt": "2026-10-16T08:09:02Z",
       "updatedAt": "2026-10-18T09:21:00Z"
-    },
-    {
-      "key": "AlysisAi/AlysisCode:pull_request:36",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "AlysisAi/AlysisCode",
-      "number": 36,
-      "title": "fix: decode Git patch paths and disambiguate b/ directories",
-      "url": "https://github.com/AlysisAi/AlysisCode/pull/36",
-      "createdAt": "2026-10-15T18:23:40Z",
-      "updatedAt": "2026-10-18T09:20:26Z"
-    },
-    {
-      "key": "AlysisAi/AlysisCode:pull_request:35",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "AlysisAi/AlysisCode",
-      "number": 35,
-      "title": "fix: classify Alibaba Model Studio by owned hostnames",
-      "url": "https://github.com/AlysisAi/AlysisCode/pull/35",
-      "createdAt": "2026-10-15T17:49:59Z",
-      "updatedAt": "2026-10-18T09:20:25Z"
     },
     {
       "key": "omacom/omarchy:pull_request:13005",
@@ -22738,18 +22860,6 @@
       "mergedAt": "2026-10-13T22:58:37Z"
     },
     {
-      "key": "kvnloo/gods-eye-view:issue:184",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 184,
-      "title": "INFRA-04 — co-op park and street redesign as versioned possible-world proposals",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/184",
-      "createdAt": "2026-10-12T08:54:22Z",
-      "updatedAt": "2026-10-13T22:53:00Z"
-    },
-    {
       "key": "kvnloo/gods-eye-view:issue:134",
       "kind": "issue",
       "relationship": "owned",
@@ -24700,18 +24810,6 @@
       "updatedAt": "2026-10-12T03:07:42Z"
     },
     {
-      "key": "can1357/oh-my-pi:pull_request:15429",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "can1357/oh-my-pi",
-      "number": 15429,
-      "title": "feat(live): opt-in Jev shortcuts via bounded delegation hook",
-      "url": "https://github.com/can1357/oh-my-pi/pull/15429",
-      "createdAt": "2026-10-12T01:31:47Z",
-      "updatedAt": "2026-10-12T01:35:03Z"
-    },
-    {
       "key": "NousResearch/hermes-agent:pull_request:126847",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -26654,18 +26752,6 @@
       "url": "https://github.com/kvnloo/gods-eye-view/issues/148",
       "createdAt": "2026-10-01T06:20:19Z",
       "updatedAt": "2026-10-08T20:29:39Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:issue:141",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 141,
-      "title": "HUM-04 — historical replay + training mode before live operations",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/141",
-      "createdAt": "2026-10-01T06:18:44Z",
-      "updatedAt": "2026-10-08T20:29:32Z"
     },
     {
       "key": "kvnloo/OpenUSD:pull_request:36",

@@ -37,14 +37,14 @@
       "eyebrow": "Shell"
     },
     {
-      "id": "ace",
-      "name": "ace",
-      "description": "Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.",
+      "id": "activitywatch",
+      "name": "activitywatch",
+      "description": "My work on this fork: Records what you do so that you can know how you've spent your time .",
       "date": "2026-10-23",
-      "url": "https://kvnloo.github.io/ace/",
+      "url": "https://activitywatch.net/",
       "types": [
         "public",
-        "ts"
+        "fork"
       ],
       "formats": [],
       "categories": [
@@ -52,25 +52,22 @@
       ],
       "links": [
         {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/ace/"
+          "label": "site",
+          "url": "https://activitywatch.net/"
         },
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/ace"
+          "url": "https://github.com/kvnloo/activitywatch"
         }
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "world-sim",
-      "productName": "world sim",
-      "featured": true,
-      "featuredRank": 9,
-      "eyebrow": "TypeScript"
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
     },
     {
       "id": "atom",
@@ -478,6 +475,64 @@
       "productName": ""
     },
     {
+      "id": "kerdoios",
+      "name": "kerdoios",
+      "description": "Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)",
+      "date": "2026-10-23",
+      "url": "https://github.com/kvnloo/kerdoios",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/kerdoios"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "llama-bend",
+      "name": "llama.bend",
+      "description": "My work on this fork: runs Llama-architecture language models in Bend 2: SmolLM2-135M, SmolLM2-360M and SmolLM2-1.7B, on the CPU, with the same greedy tokens as PyTorch (transformers).",
+      "date": "2026-10-23",
+      "url": "https://github.com/kvnloo/llama.bend",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/llama.bend"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "noop",
       "name": "noop",
       "description": "My work on this fork: Your strap. Your data. Your machine. Offline, on-device, no cloud. Now in the all-new Liquid Metal design: one living look across iPhone, Android and Mac. ⬇&nbsp;Download · ❓&nbsp;FAQ ·…",
@@ -543,6 +598,35 @@
       "featured": true,
       "featuredRank": 2,
       "eyebrow": "Fork contribution"
+    },
+    {
+      "id": "omalauncher",
+      "name": "omalauncher",
+      "description": "My work on this fork: An Android home screen with the look of Omarchy, and an optional Arch Linux ARM system next to your phone apps.",
+      "date": "2026-10-23",
+      "url": "https://github.com/kvnloo/omalauncher",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/omalauncher"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
     },
     {
       "id": "omarchy",
@@ -613,6 +697,34 @@
       "productName": ""
     },
     {
+      "id": "openpaw",
+      "name": "openpaw",
+      "description": "An open protocol for understanding a dog's health, arousal, behavior, and recovery over time.",
+      "date": "2026-10-23",
+      "url": "https://github.com/kvnloo/openpaw",
+      "types": [
+        "public"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/openpaw"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "openusd",
       "name": "OpenUSD",
       "description": "My work on this fork: Universal Scene Description =========================== Universal Scene Description (USD) is an efficient, scalable system for authoring, reading, and streaming time-sampled scene description for…",
@@ -631,6 +743,105 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/OpenUSD"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "quackles",
+      "name": "quackles",
+      "description": "Microduck A mobile product study for Pollen Robotics’ Microduck, with five studio themes: Day, White, Blue, Dark and Night.",
+      "date": "2026-10-23",
+      "url": "https://kvnloo.github.io/quackles/",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/quackles/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/quackles"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "slop-newyork",
+      "name": "slop-newyork",
+      "description": "My work on this fork: Slop New York A New York City simulation built with three.js, WebGPURenderer, and TSL.",
+      "date": "2026-10-23",
+      "url": "https://mrdoob.github.io/slop-newyork/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://mrdoob.github.io/slop-newyork/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/slop-newyork"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "strata",
+      "name": "strata",
+      "description": "My work on this fork: Navigate every layer. A fast, keyboard-first file manager for modern Linux desktops. The animation respects reduced-motion preferences. View the static preview. Strata combines spatial…",
+      "date": "2026-10-23",
+      "url": "https://stratafiles.io/",
+      "types": [
+        "public",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://stratafiles.io/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/strata"
         }
       ],
       "company": "zer0",
@@ -2548,35 +2759,6 @@
       "productName": ""
     },
     {
-      "id": "kerdoios",
-      "name": "kerdoios",
-      "description": "Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)",
-      "date": "2026-10-21",
-      "url": "https://github.com/kvnloo/kerdoios",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/kerdoios"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "kmind-palace",
       "name": "kmind-palace",
       "description": "My work on this fork: KMind Palace English | 简体中文 Put your notes into walk-in 3D houses and remember them with the method of loci.",
@@ -2691,35 +2873,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/linux"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "llama-bend",
-      "name": "llama.bend",
-      "description": "My work on this fork: runs Llama-architecture language models in Bend 2: SmolLM2-135M, SmolLM2-360M and SmolLM2-1.7B, on the CPU, with the same greedy tokens as PyTorch (transformers).",
-      "date": "2026-10-21",
-      "url": "https://github.com/kvnloo/llama.bend",
-      "types": [
-        "public",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/llama.bend"
         }
       ],
       "company": "zer0",
@@ -2865,35 +3018,6 @@
       "featured": true,
       "featuredRank": 6,
       "eyebrow": "Fork contribution"
-    },
-    {
-      "id": "omalauncher",
-      "name": "omalauncher",
-      "description": "My work on this fork: An Android home screen with the look of Omarchy, and an optional Arch Linux ARM system next to your phone apps.",
-      "date": "2026-10-21",
-      "url": "https://github.com/kvnloo/omalauncher",
-      "types": [
-        "public",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/omalauncher"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
     },
     {
       "id": "open-meteo",
@@ -3174,39 +3298,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/prime-agent"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "quackles",
-      "name": "quackles",
-      "description": "Microduck A mobile product study for Pollen Robotics’ Microduck, with five studio themes: Day, White, Blue, Dark and Night.",
-      "date": "2026-10-21",
-      "url": "https://kvnloo.github.io/quackles/",
-      "types": [
-        "public",
-        "ts"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/quackles/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/quackles"
         }
       ],
       "company": "zer0",
@@ -3585,14 +3676,14 @@
       "productName": ""
     },
     {
-      "id": "activitywatch",
-      "name": "activitywatch",
-      "description": "My work on this fork: Records what you do so that you can know how you've spent your time .",
+      "id": "ace",
+      "name": "ace",
+      "description": "Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.",
       "date": "2026-10-20",
-      "url": "https://activitywatch.net/",
+      "url": "https://kvnloo.github.io/ace/",
       "types": [
         "public",
-        "fork"
+        "ts"
       ],
       "formats": [],
       "categories": [
@@ -3600,22 +3691,25 @@
       ],
       "links": [
         {
-          "label": "site",
-          "url": "https://activitywatch.net/"
+          "label": "docs",
+          "url": "https://kvnloo.github.io/ace/"
         },
         {
           "label": "github",
-          "url": "https://github.com/kvnloo/activitywatch"
+          "url": "https://github.com/kvnloo/ace"
         }
       ],
       "company": "zer0",
       "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "world-sim",
+      "productName": "world sim",
+      "featured": true,
+      "featuredRank": 9,
+      "eyebrow": "TypeScript"
     },
     {
       "id": "agent-orchestrator",
@@ -6395,34 +6489,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/openontology"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "openpaw",
-      "name": "openpaw",
-      "description": "An open protocol for understanding a dog's health, arousal, behavior, and recovery over time.",
-      "date": "2026-10-17",
-      "url": "https://github.com/kvnloo/openpaw",
-      "types": [
-        "public"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/openpaw"
         }
       ],
       "company": "zer0",

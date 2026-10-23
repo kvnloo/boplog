@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-23T10:36:05Z</updated>
+  <updated>2026-10-23T17:59:30Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>.files</title>
@@ -17,13 +17,13 @@
     <summary>stay in flow while u code</summary>
   </entry>
   <entry>
-    <title>ace</title>
-    <id>https://kvnloo.github.io/ace/</id>
-    <link href="https://kvnloo.github.io/ace/"/>
+    <title>activitywatch</title>
+    <id>https://activitywatch.net/</id>
+    <link href="https://activitywatch.net/"/>
     <published>2026-10-23T00:00:00Z</published>
     <updated>2026-10-23T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.</summary>
+    <summary>My work on this fork: Records what you do so that you can know how you&apos;ve spent your time .</summary>
   </entry>
   <entry>
     <title>ATOM</title>
@@ -134,6 +134,24 @@
     <summary>My work on this fork: Hermes Agent , drawn natively by Tern .</summary>
   </entry>
   <entry>
+    <title>kerdoios</title>
+    <id>https://github.com/kvnloo/kerdoios</id>
+    <link href="https://github.com/kvnloo/kerdoios"/>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)</summary>
+  </entry>
+  <entry>
+    <title>llama.bend</title>
+    <id>https://github.com/kvnloo/llama.bend</id>
+    <link href="https://github.com/kvnloo/llama.bend"/>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: runs Llama-architecture language models in Bend 2: SmolLM2-135M, SmolLM2-360M and SmolLM2-1.7B, on the CPU, with the same greedy tokens as PyTorch (transformers).</summary>
+  </entry>
+  <entry>
     <title>noop</title>
     <id>https://github.com/kvnloo/noop</id>
     <link href="https://github.com/kvnloo/noop"/>
@@ -150,6 +168,15 @@
     <updated>2026-10-23T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: A coding agent with the IDE wired in.</summary>
+  </entry>
+  <entry>
+    <title>omalauncher</title>
+    <id>https://github.com/kvnloo/omalauncher</id>
+    <link href="https://github.com/kvnloo/omalauncher"/>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: An Android home screen with the look of Omarchy, and an optional Arch Linux ARM system next to your phone apps.</summary>
   </entry>
   <entry>
     <title>omarchy</title>
@@ -170,6 +197,15 @@
     <summary>My work on this fork: The open-source managed agent platform A self-hostable alternative to Claude Managed Agents and OpenAI&apos;s Agents API.</summary>
   </entry>
   <entry>
+    <title>openpaw</title>
+    <id>https://github.com/kvnloo/openpaw</id>
+    <link href="https://github.com/kvnloo/openpaw"/>
+    <published>2026-10-23T00:00:00Z</published>
+    <updated>2026-10-23T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>An open protocol for understanding a dog&apos;s health, arousal, behavior, and recovery over time.</summary>
+  </entry>
+  <entry>
     <title>OpenUSD</title>
     <id>https://github.com/kvnloo/OpenUSD</id>
     <link href="https://github.com/kvnloo/OpenUSD"/>
@@ -179,57 +215,21 @@
     <summary>My work on this fork: Universal Scene Description =========================== Universal Scene Description (USD) is an efficient, scalable system for authoring, reading, and streaming time-sampled scene description for…</summary>
   </entry>
   <entry>
-    <title>uniichat</title>
-    <id>https://github.com/kvnloo/uniichat</id>
-    <link href="https://github.com/kvnloo/uniichat"/>
+    <title>quackles</title>
+    <id>https://kvnloo.github.io/quackles/</id>
+    <link href="https://kvnloo.github.io/quackles/"/>
     <published>2026-10-23T00:00:00Z</published>
     <updated>2026-10-23T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>My work on this fork: ======== ▶ Watch the announcement video This repo is vibe-coded.</summary>
+    <summary>Microduck A mobile product study for Pollen Robotics’ Microduck, with five studio themes: Day, White, Blue, Dark and Night.</summary>
   </entry>
   <entry>
-    <title>z0</title>
-    <id>https://github.com/kvnloo/z0</id>
-    <link href="https://github.com/kvnloo/z0"/>
+    <title>slop-newyork</title>
+    <id>https://mrdoob.github.io/slop-newyork/</id>
+    <link href="https://mrdoob.github.io/slop-newyork/"/>
     <published>2026-10-23T00:00:00Z</published>
     <updated>2026-10-23T00:00:00Z</updated>
     <category term="dev"/>
-    <summary>Early public scaffold for a Zer0-related experiment (placeholder repo).</summary>
-  </entry>
-  <entry>
-    <title>z0evals</title>
-    <id>https://kvnloo.github.io/z0evals/</id>
-    <link href="https://kvnloo.github.io/z0evals/"/>
-    <published>2026-10-23T00:00:00Z</published>
-    <updated>2026-10-23T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Reproducible evaluations and public research reports for the Zer0 ecosystem.</summary>
-  </entry>
-  <entry>
-    <title>z0intelligence</title>
-    <id>https://github.com/kvnloo/z0intelligence</id>
-    <link href="https://github.com/kvnloo/z0intelligence"/>
-    <published>2026-10-23T00:00:00Z</published>
-    <updated>2026-10-23T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>personalized intelligence</summary>
-  </entry>
-  <entry>
-    <title>z0live</title>
-    <id>https://github.com/kvnloo/z0live</id>
-    <link href="https://github.com/kvnloo/z0live"/>
-    <published>2026-10-23T00:00:00Z</published>
-    <updated>2026-10-23T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Portable realtime conversational voice runtime and fixtures for Zer0.</summary>
-  </entry>
-  <entry>
-    <title>ag-ui</title>
-    <id>https://ag-ui.com/</id>
-    <link href="https://ag-ui.com/"/>
-    <published>2026-10-22T00:00:00Z</published>
-    <updated>2026-10-22T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The Agent-User Interaction Protocol AG-UI is an open, lightweight, event-based protocol that standardizes how AI agents connect to user-facing applications.</summary>
+    <summary>My work on this fork: Slop New York A New York City simulation built with three.js, WebGPURenderer, and TSL.</summary>
   </entry>
 </feed>
