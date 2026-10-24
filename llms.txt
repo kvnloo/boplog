@@ -7,9 +7,9 @@ Author: Kevin Rajan
 GitHub: https://github.com/kvnloo
 X: https://x.com/_kvnloo
 Language: English
-Public project count: 308
+Public project count: 312
 Coverage: 2017–2026
-Last data refresh: 2026-10-23
+Last data refresh: 2026-10-24
 
 ## Start here
 
@@ -79,7 +79,7 @@ The CLI and MCP server are read-only, dependency-free Python programs. They requ
 - [cua](https://kvnloo.github.io/cua/): My work on this fork: Give AI agents computers they can use.
 - [noctalia](https://docs.noctalia.dev/): My work on this fork: Noctalia is a native Wayland desktop shell for people who want a polished, configurable Linux desktop without stitching together a separate bar, launcher, notification daemon, lock screen,…
 - [o8](https://o8.run/): My work on this fork: Run a fleet of coding agents.
-- [z0intelligence](https://github.com/kvnloo/z0intelligence): personalized intelligence
+- [z0intelligence](https://kvnloo.github.io/z0intelligence/): personalized intelligence
 - [aodl](https://kvnloo.github.io/aodl/): AODL/HOTL: typed IR for agent orchestration graphs (schema + fail-closed validator, not a scheduler)
 - [ace](https://kvnloo.github.io/ace/): Public digital twin demo for Ace Sports: autonomous multi-floor racket sports facility twin with interactive 3D operational model.
 - [z0evals](https://kvnloo.github.io/z0evals/): Reproducible evaluations and public research reports for the Zer0 ecosystem.
