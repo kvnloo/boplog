@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-24T09:53:58Z</updated>
+  <updated>2026-10-24T17:03:23Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>.files</title>
@@ -60,6 +60,15 @@
     <updated>2026-10-24T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: is a coding agent CLI written in Zig: a small native binary that is open source (Apache-2.0), model-agnostic, and embeddable as a harness in larger systems.</summary>
+  </entry>
+  <entry>
+    <title>gh-contrib-archive</title>
+    <id>https://kvnloo.github.io/gh-contrib-archive/</id>
+    <link href="https://kvnloo.github.io/gh-contrib-archive/"/>
+    <published>2026-10-24T00:00:00Z</published>
+    <updated>2026-10-24T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
   </entry>
   <entry>
     <title>gods-eye-view</title>
@@ -222,14 +231,5 @@
     <updated>2026-10-23T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: Brave Core Brave Core is a set of changes, APIs, and scripts used for customizing Chromium to make the Brave browser.</summary>
-  </entry>
-  <entry>
-    <title>browser</title>
-    <id>https://lightpanda.io/</id>
-    <link href="https://lightpanda.io/"/>
-    <published>2026-10-23T00:00:00Z</published>
-    <updated>2026-10-23T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Lightpanda Browser The headless browser built from scratch for AI agents and automation.</summary>
   </entry>
 </feed>

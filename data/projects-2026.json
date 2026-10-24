@@ -206,6 +206,39 @@
       "productName": ""
     },
     {
+      "id": "gh-contrib-archive",
+      "name": "gh-contrib-archive",
+      "description": "Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.",
+      "date": "2026-10-24",
+      "url": "https://kvnloo.github.io/gh-contrib-archive/",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/gh-contrib-archive/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/gh-contrib-archive"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
       "id": "gods-eye-view",
       "name": "gods-eye-view",
       "description": "My work on this fork: 🌐 God's Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.",
@@ -1597,39 +1630,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/Genesis"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "gh-contrib-archive",
-      "name": "gh-contrib-archive",
-      "description": "Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.",
-      "date": "2026-10-23",
-      "url": "https://kvnloo.github.io/gh-contrib-archive/",
-      "types": [
-        "public",
-        "ts"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/gh-contrib-archive/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/gh-contrib-archive"
         }
       ],
       "company": "zer0",
