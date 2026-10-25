@@ -5,7 +5,7 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-25T10:15:07Z</updated>
+  <updated>2026-10-25T17:17:39Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>.files</title>
@@ -15,6 +15,15 @@
     <updated>2026-10-25T00:00:00Z</updated>
     <category term="dev"/>
     <summary>stay in flow while u code</summary>
+  </entry>
+  <entry>
+    <title>boplog</title>
+    <id>https://kvnloo.github.io/boplog/</id>
+    <link href="https://kvnloo.github.io/boplog/"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
   </entry>
   <entry>
     <title>company-os</title>
@@ -33,6 +42,15 @@
     <updated>2026-10-25T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Phone UI for laptop coding agents over Tailscale</summary>
+  </entry>
+  <entry>
+    <title>gh-contrib-archive</title>
+    <id>https://kvnloo.github.io/gh-contrib-archive/</id>
+    <link href="https://kvnloo.github.io/gh-contrib-archive/"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
   </entry>
   <entry>
     <title>gods-eye-view</title>
@@ -125,15 +143,6 @@
     <summary>My work on this fork: bd - Beads Distributed graph issue tracker for AI agents, powered by Dolt.</summary>
   </entry>
   <entry>
-    <title>boplog</title>
-    <id>https://kvnloo.github.io/boplog/</id>
-    <link href="https://kvnloo.github.io/boplog/"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Static public build log with llms.txt and a JSON project manifest for agents.</summary>
-  </entry>
-  <entry>
     <title>bun</title>
     <id>https://bun.com/</id>
     <link href="https://bun.com/"/>
@@ -222,14 +231,5 @@
     <updated>2026-10-24T00:00:00Z</updated>
     <category term="dev"/>
     <summary>Standalone Cordis bundle for DeepSeek Harness: ANSI terminal UI and native Tern Surface Protocol presentation</summary>
-  </entry>
-  <entry>
-    <title>EvoScientist</title>
-    <id>https://evoscientist.ai/</id>
-    <link href="https://evoscientist.ai/"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: --- English | 简体中文 EvoScientist aims to harness vibe research by enabling self-evolving AI scientists that autonomously explore, generate insights, and iteratively improve.</summary>
   </entry>
 </feed>

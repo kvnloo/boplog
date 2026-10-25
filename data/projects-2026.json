@@ -8,7 +8,7 @@
       "url": "https://kvnloo.github.io/.files/",
       "types": [
         "public",
-        "sh"
+        "py"
       ],
       "formats": [],
       "categories": [
@@ -34,7 +34,43 @@
       "productName": "dotfiles",
       "featured": true,
       "featuredRank": 12,
-      "eyebrow": "Shell"
+      "eyebrow": "Python"
+    },
+    {
+      "id": "boplog",
+      "name": "boplog",
+      "description": "Static public build log with llms.txt and a JSON project manifest for agents.",
+      "date": "2026-10-25",
+      "url": "https://kvnloo.github.io/boplog/",
+      "types": [
+        "public",
+        "js"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/boplog/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/boplog"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "product",
+      "kindName": "product",
+      "portfolio": "product",
+      "portfolioName": "product",
+      "product": "boplog",
+      "productName": "boplog",
+      "featured": true,
+      "featuredRank": 11,
+      "eyebrow": "JavaScript"
     },
     {
       "id": "company-os",
@@ -83,6 +119,39 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/dash"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "gh-contrib-archive",
+      "name": "gh-contrib-archive",
+      "description": "Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.",
+      "date": "2026-10-25",
+      "url": "https://kvnloo.github.io/gh-contrib-archive/",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/gh-contrib-archive/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/gh-contrib-archive"
         }
       ],
       "company": "zer0",
@@ -425,42 +494,6 @@
       "portfolioName": "experiment",
       "product": "",
       "productName": ""
-    },
-    {
-      "id": "boplog",
-      "name": "boplog",
-      "description": "Static public build log with llms.txt and a JSON project manifest for agents.",
-      "date": "2026-10-24",
-      "url": "https://kvnloo.github.io/boplog/",
-      "types": [
-        "public",
-        "js"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/boplog/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/boplog"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "product",
-      "kindName": "product",
-      "portfolio": "product",
-      "portfolioName": "product",
-      "product": "boplog",
-      "productName": "boplog",
-      "featured": true,
-      "featuredRank": 11,
-      "eyebrow": "JavaScript"
     },
     {
       "id": "bun",
@@ -945,39 +978,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/Genesis"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "gh-contrib-archive",
-      "name": "gh-contrib-archive",
-      "description": "Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.",
-      "date": "2026-10-24",
-      "url": "https://kvnloo.github.io/gh-contrib-archive/",
-      "types": [
-        "public",
-        "ts"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/gh-contrib-archive/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/gh-contrib-archive"
         }
       ],
       "company": "zer0",
