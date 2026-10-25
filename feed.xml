@@ -5,16 +5,97 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-10-24T23:49:57Z</updated>
+  <updated>2026-10-25T10:15:07Z</updated>
   <author><name>Kevin Rajan</name><uri>https://github.com/kvnloo</uri></author>
   <entry>
     <title>.files</title>
     <id>https://kvnloo.github.io/.files/</id>
     <link href="https://kvnloo.github.io/.files/"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
     <category term="dev"/>
     <summary>stay in flow while u code</summary>
+  </entry>
+  <entry>
+    <title>company-os</title>
+    <id>https://github.com/kvnloo/company-os</id>
+    <link href="https://github.com/kvnloo/company-os"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Thin Company OS HUD for Hermes Agent. Projection only — not a control plane.</summary>
+  </entry>
+  <entry>
+    <title>dash</title>
+    <id>https://github.com/kvnloo/dash</id>
+    <link href="https://github.com/kvnloo/dash"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Phone UI for laptop coding agents over Tailscale</summary>
+  </entry>
+  <entry>
+    <title>gods-eye-view</title>
+    <id>https://maptheworld.ai/</id>
+    <link href="https://maptheworld.ai/"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: 🌐 God&apos;s Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.</summary>
+  </entry>
+  <entry>
+    <title>hermes-agent</title>
+    <id>https://hermes-agent.nousresearch.com/</id>
+    <link href="https://hermes-agent.nousresearch.com/"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.</summary>
+  </entry>
+  <entry>
+    <title>kerdoios</title>
+    <id>https://github.com/kvnloo/kerdoios</id>
+    <link href="https://github.com/kvnloo/kerdoios"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)</summary>
+  </entry>
+  <entry>
+    <title>newton</title>
+    <id>https://newton-physics.github.io/newton/</id>
+    <link href="https://newton-physics.github.io/newton/"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>My work on this fork: Newton is a GPU-accelerated physics simulation engine built upon NVIDIA Warp, specifically targeting roboticists and simulation researchers.</summary>
+  </entry>
+  <entry>
+    <title>tiny-nn-probe</title>
+    <id>https://github.com/kvnloo/tiny-nn-probe</id>
+    <link href="https://github.com/kvnloo/tiny-nn-probe"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Synthetic portable neural-network and pinned GGUF edge benchmark</summary>
+  </entry>
+  <entry>
+    <title>z0evals</title>
+    <id>https://kvnloo.github.io/z0evals/</id>
+    <link href="https://kvnloo.github.io/z0evals/"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>Reproducible evaluations and public research reports for the Zer0 ecosystem.</summary>
+  </entry>
+  <entry>
+    <title>z0intelligence</title>
+    <id>https://kvnloo.github.io/z0intelligence/</id>
+    <link href="https://kvnloo.github.io/z0intelligence/"/>
+    <published>2026-10-25T00:00:00Z</published>
+    <updated>2026-10-25T00:00:00Z</updated>
+    <category term="dev"/>
+    <summary>personalized intelligence</summary>
   </entry>
   <entry>
     <title>A2UI</title>
@@ -150,86 +231,5 @@
     <updated>2026-10-24T00:00:00Z</updated>
     <category term="dev"/>
     <summary>My work on this fork: --- English | 简体中文 EvoScientist aims to harness vibe research by enabling self-evolving AI scientists that autonomously explore, generate insights, and iteratively improve.</summary>
-  </entry>
-  <entry>
-    <title>fizzy</title>
-    <id>https://fizzy.do/</id>
-    <link href="https://fizzy.do/"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: This is the source code of Fizzy, the Kanban tracking tool for issues and ideas by 37signals.</summary>
-  </entry>
-  <entry>
-    <title>fleet-runner</title>
-    <id>https://github.com/kvnloo/fleet-runner</id>
-    <link href="https://github.com/kvnloo/fleet-runner"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Public-source exact-head factory verification on Avrea; no secrets</summary>
-  </entry>
-  <entry>
-    <title>fx</title>
-    <id>https://fx.sh/</id>
-    <link href="https://fx.sh/"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: is a coding agent CLI written in Zig: a small native binary that is open source (Apache-2.0), model-agnostic, and embeddable as a harness in larger systems.</summary>
-  </entry>
-  <entry>
-    <title>Genesis</title>
-    <id>https://github.com/kvnloo/Genesis</id>
-    <link href="https://github.com/kvnloo/Genesis"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: World Genesis World is a simulation platform for physical AI developments.</summary>
-  </entry>
-  <entry>
-    <title>gh-contrib-archive</title>
-    <id>https://kvnloo.github.io/gh-contrib-archive/</id>
-    <link href="https://kvnloo.github.io/gh-contrib-archive/"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>Public-safe visualization of @kvnloo GitHub issues, PRs, comments, and commit counts. Private work is counted, never opened.</summary>
-  </entry>
-  <entry>
-    <title>GitNexus</title>
-    <id>https://gitnexus.vercel.app/</id>
-    <link href="https://gitnexus.vercel.app/"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: The context engine for Enterprise Codebases Indexes any codebase into a knowledge graph — every dependency, call chain, cluster, and execution flow — then exposes it through smart MCP tools so AI…</summary>
-  </entry>
-  <entry>
-    <title>gods-eye-view</title>
-    <id>https://maptheworld.ai/</id>
-    <link href="https://maptheworld.ai/"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: 🌐 God&apos;s Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.</summary>
-  </entry>
-  <entry>
-    <title>headroom</title>
-    <id>https://docs.headroomlabs.ai/docs</id>
-    <link href="https://docs.headroomlabs.ai/docs"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Quickstart · Headroom for Teams · Install · Proof · Agents · Docs · Discord · llms.txt AI agents / LLMs: read /llms.txt here, or fetch the live index · full docs blob .</summary>
-  </entry>
-  <entry>
-    <title>hermes-agent</title>
-    <id>https://hermes-agent.nousresearch.com/</id>
-    <link href="https://hermes-agent.nousresearch.com/"/>
-    <published>2026-10-24T00:00:00Z</published>
-    <updated>2026-10-24T00:00:00Z</updated>
-    <category term="dev"/>
-    <summary>My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.</summary>
   </entry>
 </feed>

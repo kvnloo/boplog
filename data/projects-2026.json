@@ -4,7 +4,7 @@
       "id": "files",
       "name": ".files",
       "description": "stay in flow while u code",
-      "date": "2026-10-24",
+      "date": "2026-10-25",
       "url": "https://kvnloo.github.io/.files/",
       "types": [
         "public",
@@ -35,6 +35,302 @@
       "featured": true,
       "featuredRank": 12,
       "eyebrow": "Shell"
+    },
+    {
+      "id": "company-os",
+      "name": "company-os",
+      "description": "Thin Company OS HUD for Hermes Agent. Projection only — not a control plane.",
+      "date": "2026-10-25",
+      "url": "https://github.com/kvnloo/company-os",
+      "types": [
+        "public",
+        "js"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/company-os"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "dash",
+      "name": "dash",
+      "description": "Phone UI for laptop coding agents over Tailscale",
+      "date": "2026-10-25",
+      "url": "https://github.com/kvnloo/dash",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/dash"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "gods-eye-view",
+      "name": "gods-eye-view",
+      "description": "My work on this fork: 🌐 God's Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.",
+      "date": "2026-10-25",
+      "url": "https://maptheworld.ai/",
+      "types": [
+        "public",
+        "js",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://maptheworld.ai/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/gods-eye-view"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "featured": true,
+      "featuredRank": 3,
+      "eyebrow": "Fork contribution"
+    },
+    {
+      "id": "hermes-agent",
+      "name": "hermes-agent",
+      "description": "My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.",
+      "date": "2026-10-25",
+      "url": "https://hermes-agent.nousresearch.com/",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "site",
+          "url": "https://hermes-agent.nousresearch.com/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/hermes-agent"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "featured": true,
+      "featuredRank": 1,
+      "eyebrow": "Fork contribution"
+    },
+    {
+      "id": "kerdoios",
+      "name": "kerdoios",
+      "description": "Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)",
+      "date": "2026-10-25",
+      "url": "https://github.com/kvnloo/kerdoios",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/kerdoios"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "newton",
+      "name": "newton",
+      "description": "My work on this fork: Newton is a GPU-accelerated physics simulation engine built upon NVIDIA Warp, specifically targeting roboticists and simulation researchers.",
+      "date": "2026-10-25",
+      "url": "https://newton-physics.github.io/newton/",
+      "types": [
+        "public",
+        "py",
+        "fork"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://newton-physics.github.io/newton/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/newton"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "tiny-nn-probe",
+      "name": "tiny-nn-probe",
+      "description": "Synthetic portable neural-network and pinned GGUF edge benchmark",
+      "date": "2026-10-25",
+      "url": "https://github.com/kvnloo/tiny-nn-probe",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/tiny-nn-probe"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "z0evals",
+      "name": "z0evals",
+      "description": "Reproducible evaluations and public research reports for the Zer0 ecosystem.",
+      "date": "2026-10-25",
+      "url": "https://kvnloo.github.io/z0evals/",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/z0evals/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/z0evals"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "featured": true,
+      "featuredRank": 10,
+      "eyebrow": "TypeScript"
+    },
+    {
+      "id": "z0intelligence",
+      "name": "z0intelligence",
+      "description": "personalized intelligence",
+      "date": "2026-10-25",
+      "url": "https://kvnloo.github.io/z0intelligence/",
+      "types": [
+        "public",
+        "py"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "docs",
+          "url": "https://kvnloo.github.io/z0intelligence/"
+        },
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/z0intelligence"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": "",
+      "featured": true,
+      "featuredRank": 7,
+      "eyebrow": "Python"
     },
     {
       "id": "a2ui",
@@ -728,43 +1024,6 @@
       "productName": ""
     },
     {
-      "id": "gods-eye-view",
-      "name": "gods-eye-view",
-      "description": "My work on this fork: 🌐 God's Eye View A spy-satellite simulator in your browser — then you realize the sources are public and the data is real.",
-      "date": "2026-10-24",
-      "url": "https://maptheworld.ai/",
-      "types": [
-        "public",
-        "js",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://maptheworld.ai/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/gods-eye-view"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": "",
-      "featured": true,
-      "featuredRank": 3,
-      "eyebrow": "Fork contribution"
-    },
-    {
       "id": "headroom",
       "name": "headroom",
       "description": "My work on this fork: Quickstart · Headroom for Teams · Install · Proof · Agents · Docs · Discord · llms.txt AI agents / LLMs: read /llms.txt here, or fetch the live index · full docs blob .",
@@ -797,43 +1056,6 @@
       "portfolioName": "experiment",
       "product": "",
       "productName": ""
-    },
-    {
-      "id": "hermes-agent",
-      "name": "hermes-agent",
-      "description": "My work on this fork: Hermes Agent ☤ Hermes Agent | Hermes Desktop The self-improving AI agent built by Nous Research.",
-      "date": "2026-10-24",
-      "url": "https://hermes-agent.nousresearch.com/",
-      "types": [
-        "public",
-        "py",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "site",
-          "url": "https://hermes-agent.nousresearch.com/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/hermes-agent"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": "",
-      "featured": true,
-      "featuredRank": 1,
-      "eyebrow": "Fork contribution"
     },
     {
       "id": "hermes-tern",
@@ -1054,35 +1276,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/kaneo"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "kerdoios",
-      "name": "kerdoios",
-      "description": "Hermes Kerdoios — allot scarce compute (standalone Hermes plugin, not hermes-agent core)",
-      "date": "2026-10-24",
-      "url": "https://github.com/kvnloo/kerdoios",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/kerdoios"
         }
       ],
       "company": "zer0",
@@ -1858,35 +2051,6 @@
       "productName": ""
     },
     {
-      "id": "tiny-nn-probe",
-      "name": "tiny-nn-probe",
-      "description": "Synthetic portable neural-network and pinned GGUF edge benchmark",
-      "date": "2026-10-24",
-      "url": "https://github.com/kvnloo/tiny-nn-probe",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/tiny-nn-probe"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
       "id": "tinygrad",
       "name": "tinygrad",
       "description": "My work on this fork: For something between PyTorch and karpathy/micrograd.",
@@ -1978,107 +2142,6 @@
       "portfolioName": "experiment",
       "product": "",
       "productName": ""
-    },
-    {
-      "id": "warp",
-      "name": "warp",
-      "description": "Fast Plex client for a Samsung QN85B (Tizen 6.5, Chromium M85).",
-      "date": "2026-10-24",
-      "url": "https://github.com/kvnloo/warp",
-      "types": [
-        "public",
-        "ts"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/warp"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "z0evals",
-      "name": "z0evals",
-      "description": "Reproducible evaluations and public research reports for the Zer0 ecosystem.",
-      "date": "2026-10-24",
-      "url": "https://kvnloo.github.io/z0evals/",
-      "types": [
-        "public",
-        "ts"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/z0evals/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/z0evals"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": "",
-      "featured": true,
-      "featuredRank": 10,
-      "eyebrow": "TypeScript"
-    },
-    {
-      "id": "z0intelligence",
-      "name": "z0intelligence",
-      "description": "personalized intelligence",
-      "date": "2026-10-24",
-      "url": "https://kvnloo.github.io/z0intelligence/",
-      "types": [
-        "public",
-        "py"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://kvnloo.github.io/z0intelligence/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/z0intelligence"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": "",
-      "featured": true,
-      "featuredRank": 7,
-      "eyebrow": "Python"
     },
     {
       "id": "activitywatch",
@@ -2580,35 +2643,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/CodexBar"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "dash",
-      "name": "dash",
-      "description": "Phone UI for laptop coding agents over Tailscale",
-      "date": "2026-10-23",
-      "url": "https://github.com/kvnloo/dash",
-      "types": [
-        "public",
-        "ts"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/dash"
         }
       ],
       "company": "zer0",
@@ -3263,40 +3297,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/Monica"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "newton",
-      "name": "newton",
-      "description": "My work on this fork: Newton is a GPU-accelerated physics simulation engine built upon NVIDIA Warp, specifically targeting roboticists and simulation researchers.",
-      "date": "2026-10-23",
-      "url": "https://newton-physics.github.io/newton/",
-      "types": [
-        "public",
-        "py",
-        "fork"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "docs",
-          "url": "https://newton-physics.github.io/newton/"
-        },
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/newton"
         }
       ],
       "company": "zer0",
@@ -4510,35 +4510,6 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/brave-browser"
-        }
-      ],
-      "company": "zer0",
-      "companyName": "zer0",
-      "kind": "experiment",
-      "kindName": "experiment",
-      "portfolio": "experiment",
-      "portfolioName": "experiment",
-      "product": "",
-      "productName": ""
-    },
-    {
-      "id": "company-os",
-      "name": "company-os",
-      "description": "Thin Company OS HUD for Hermes Agent. Projection only — not a control plane.",
-      "date": "2026-10-21",
-      "url": "https://github.com/kvnloo/company-os",
-      "types": [
-        "public",
-        "js"
-      ],
-      "formats": [],
-      "categories": [
-        "dev"
-      ],
-      "links": [
-        {
-          "label": "github",
-          "url": "https://github.com/kvnloo/company-os"
         }
       ],
       "company": "zer0",
@@ -7461,6 +7432,35 @@
         {
           "label": "github",
           "url": "https://github.com/kvnloo/z0archy"
+        }
+      ],
+      "company": "zer0",
+      "companyName": "zer0",
+      "kind": "experiment",
+      "kindName": "experiment",
+      "portfolio": "experiment",
+      "portfolioName": "experiment",
+      "product": "",
+      "productName": ""
+    },
+    {
+      "id": "warp",
+      "name": "warp",
+      "description": "Fast Plex client for a Samsung QN85B (Tizen 6.5, Chromium M85).",
+      "date": "2026-10-05",
+      "url": "https://github.com/kvnloo/warp",
+      "types": [
+        "public",
+        "ts"
+      ],
+      "formats": [],
+      "categories": [
+        "dev"
+      ],
+      "links": [
+        {
+          "label": "github",
+          "url": "https://github.com/kvnloo/warp"
         }
       ],
       "company": "zer0",
