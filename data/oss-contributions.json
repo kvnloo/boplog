@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T23:42:10Z",
+  "generatedAt": "2026-10-26T11:44:02Z",
   "account": "kvnloo",
   "definitions": {
     "relationships": {
@@ -49,7 +49,7 @@
       "repositories": [
         "trycua/cua"
       ],
-      "contributionCount": 24
+      "contributionCount": 25
     },
     {
       "id": "noop",
@@ -265,24 +265,12 @@
   "summary": {
     "mergedUpstreamPullRequests": 138,
     "openReadyUpstreamPullRequests": 158,
-    "draftUpstreamPullRequests": 64,
-    "upstreamIssuesAndProposals": 391,
+    "draftUpstreamPullRequests": 61,
+    "upstreamIssuesAndProposals": 393,
     "distinctUpstreamCommunities": 140,
     "verifiedImpact": 0
   },
   "contributions": [
-    {
-      "key": "kvnloo/dash:issue:344",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/dash",
-      "number": 344,
-      "title": "[ChatGPT lane] DASH3-BUG-S22-003: turbo transcript scroll jank",
-      "url": "https://github.com/kvnloo/dash/issues/344",
-      "createdAt": "2026-10-25T23:41:03Z",
-      "updatedAt": "2026-10-25T23:41:03Z"
-    },
     {
       "key": "kvnloo/gods-eye-view:issue:249",
       "kind": "issue",
@@ -293,19 +281,79 @@
       "title": "Promotion queue — gods-eye-view (canonical #249)",
       "url": "https://github.com/kvnloo/gods-eye-view/issues/249",
       "createdAt": "2026-10-16T08:13:10Z",
-      "updatedAt": "2026-10-25T23:32:43Z"
+      "updatedAt": "2026-10-26T11:24:03Z"
     },
     {
-      "key": "kvnloo/gods-eye-view:pull_request:229",
+      "key": "bilawalsidhu/gods-eye-view:pull_request:844",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 844,
+      "title": "feat(traffic): add provider-neutral observed traffic source contract",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/844",
+      "createdAt": "2026-09-29T04:10:48Z",
+      "updatedAt": "2026-10-26T11:22:36Z"
+    },
+    {
+      "key": "kvnloo/cua:pull_request:162",
       "kind": "pull_request",
       "relationship": "owned",
       "status": "open_draft",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 229,
-      "title": "exp(planning): compare two hypothetical park branches in GEV Scene preview",
-      "url": "https://github.com/kvnloo/gods-eye-view/pull/229",
-      "createdAt": "2026-10-13T22:51:34Z",
-      "updatedAt": "2026-10-25T23:32:05Z"
+      "repo": "kvnloo/cua",
+      "number": 162,
+      "title": "test(cua): preregister optional Pomerado website-tool experiment",
+      "url": "https://github.com/kvnloo/cua/pull/162",
+      "createdAt": "2026-10-26T01:22:35Z",
+      "updatedAt": "2026-10-26T10:56:04Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:833",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 833,
+      "title": "feat(location): persist saved places as typed navigation actions",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/833",
+      "createdAt": "2026-09-29T01:42:58Z",
+      "updatedAt": "2026-10-26T10:26:52Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:issue:447",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/hermes-agent",
+      "number": 447,
+      "title": "Promotion queue: hermes branches ready for upstream (capped at 3 open PRs)",
+      "url": "https://github.com/kvnloo/hermes-agent/issues/447",
+      "createdAt": "2026-10-06T09:30:43Z",
+      "updatedAt": "2026-10-26T09:34:00Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:issue:1",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/hermes-tern",
+      "number": 1,
+      "title": "Port tested Hermes×Tern ui-tsp work into the hermes-tern plugin (downstream port program)",
+      "url": "https://github.com/kvnloo/hermes-tern/issues/1",
+      "createdAt": "2026-10-23T01:53:16Z",
+      "updatedAt": "2026-10-26T09:31:47Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:pull_request:663",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-agent",
+      "number": 663,
+      "title": "fix(desktop): retain same-turn tool completion owner after interim",
+      "url": "https://github.com/kvnloo/hermes-agent/pull/663",
+      "createdAt": "2026-10-26T09:30:45Z",
+      "updatedAt": "2026-10-26T09:30:45Z"
     },
     {
       "key": "kvnloo/hermes-agent:pull_request:654",
@@ -317,7 +365,882 @@
       "title": "test(memory): RFC #143379 source-backed homework and exact-head reproduction lab",
       "url": "https://github.com/kvnloo/hermes-agent/pull/654",
       "createdAt": "2026-10-23T06:53:20Z",
-      "updatedAt": "2026-10-25T23:26:27Z"
+      "updatedAt": "2026-10-26T09:29:37Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:851",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_draft",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 851,
+      "title": "feat(voice): add truthful presentation-state projection",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/851",
+      "createdAt": "2026-09-29T05:35:21Z",
+      "updatedAt": "2026-10-26T09:28:14Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:issue:177",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0intelligence",
+      "number": 177,
+      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
+      "url": "https://github.com/kvnloo/z0intelligence/issues/177",
+      "createdAt": "2026-10-20T05:14:19Z",
+      "updatedAt": "2026-10-26T09:27:45Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:pull_request:662",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-agent",
+      "number": 662,
+      "title": "test(rfc143379): validate fixed-substrate receipts against exact testcase identities",
+      "url": "https://github.com/kvnloo/hermes-agent/pull/662",
+      "createdAt": "2026-10-26T09:27:39Z",
+      "updatedAt": "2026-10-26T09:27:39Z"
+    },
+    {
+      "key": "kvnloo/hermes-tern:pull_request:33",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-tern",
+      "number": 33,
+      "title": "ci: fail closed on pinned Hermes checkout and test provenance",
+      "url": "https://github.com/kvnloo/hermes-tern/pull/33",
+      "createdAt": "2026-10-26T09:26:02Z",
+      "updatedAt": "2026-10-26T09:27:10Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:205",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0intelligence",
+      "number": 205,
+      "title": "Memory: join scoped native output-use outcomes and replay",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/205",
+      "createdAt": "2026-10-23T23:18:07Z",
+      "updatedAt": "2026-10-26T09:24:25Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:pull_request:660",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-agent",
+      "number": 660,
+      "title": "study(memory): RFC 143379 combined substrate on main e82bf01eec9b",
+      "url": "https://github.com/kvnloo/hermes-agent/pull/660",
+      "createdAt": "2026-10-26T08:13:01Z",
+      "updatedAt": "2026-10-26T09:01:18Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:pull_request:661",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-agent",
+      "number": 661,
+      "title": "study: pinned demote-gap probe and paired K-gate boundary harness",
+      "url": "https://github.com/kvnloo/hermes-agent/pull/661",
+      "createdAt": "2026-10-26T08:19:50Z",
+      "updatedAt": "2026-10-26T08:56:15Z"
+    },
+    {
+      "key": "kvnloo/o8:pull_request:39",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/o8",
+      "number": 39,
+      "title": "WIP: Tern observer isolation through owned Pi runtime (#3365 S3a)",
+      "url": "https://github.com/kvnloo/o8/pull/39",
+      "createdAt": "2026-10-08T20:40:09Z",
+      "updatedAt": "2026-10-26T08:39:13Z"
+    },
+    {
+      "key": "kvnloo/gh-contrib-archive:issue:84",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gh-contrib-archive",
+      "number": 84,
+      "title": "Promotion queue — kvnloo/gh-contrib-archive (single canonical issue)",
+      "url": "https://github.com/kvnloo/gh-contrib-archive/issues/84",
+      "createdAt": "2026-10-16T08:18:22Z",
+      "updatedAt": "2026-10-26T08:27:13Z"
+    },
+    {
+      "key": "kvnloo/gh-contrib-archive:pull_request:94",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/gh-contrib-archive",
+      "number": 94,
+      "title": "feat: playful dev velocity + verified salvage stats page",
+      "url": "https://github.com/kvnloo/gh-contrib-archive/pull/94",
+      "createdAt": "2026-10-26T07:42:19Z",
+      "updatedAt": "2026-10-26T08:26:20Z"
+    },
+    {
+      "key": "kvnloo/cua:pull_request:164",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/cua",
+      "number": 164,
+      "title": "fix(cua-driver): preserve Linux checked and expanded states",
+      "url": "https://github.com/kvnloo/cua/pull/164",
+      "createdAt": "2026-10-26T08:13:03Z",
+      "updatedAt": "2026-10-26T08:22:09Z"
+    },
+    {
+      "key": "kvnloo/o8:pull_request:38",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/o8",
+      "number": 38,
+      "title": "fix(security): confine lane verification subprocesses through native Pi supervisor",
+      "url": "https://github.com/kvnloo/o8/pull/38",
+      "createdAt": "2026-10-08T19:51:22Z",
+      "updatedAt": "2026-10-26T08:20:49Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:76",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 76,
+      "title": "[W4] Continuity test: orchestrator -> worker control + changed-source (upstream 3186 case 1)",
+      "url": "https://github.com/kvnloo/o8/issues/76",
+      "createdAt": "2026-10-26T07:27:55Z",
+      "updatedAt": "2026-10-26T07:48:34Z"
+    },
+    {
+      "key": "kvnloo/o8:pull_request:84",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/o8",
+      "number": 84,
+      "title": "test(intent): verify orchestrator-to-worker authored continuity on changed source",
+      "url": "https://github.com/kvnloo/o8/pull/84",
+      "createdAt": "2026-10-26T07:47:13Z",
+      "updatedAt": "2026-10-26T07:47:13Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:pull_request:229",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 229,
+      "title": "exp(planning): compare two hypothetical park branches in GEV Scene preview",
+      "url": "https://github.com/kvnloo/gods-eye-view/pull/229",
+      "createdAt": "2026-10-13T22:51:34Z",
+      "updatedAt": "2026-10-26T07:45:11Z"
+    },
+    {
+      "key": "kvnloo/o8:pull_request:83",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/o8",
+      "number": 83,
+      "title": "feat(intent): opt-in immutable admission schema and store",
+      "url": "https://github.com/kvnloo/o8/pull/83",
+      "createdAt": "2026-10-26T07:38:13Z",
+      "updatedAt": "2026-10-26T07:39:00Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:53",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 53,
+      "title": "Promotion queue — o8 (historical accepted work)",
+      "url": "https://github.com/kvnloo/o8/issues/53",
+      "createdAt": "2026-10-18T08:21:40Z",
+      "updatedAt": "2026-10-26T07:38:48Z"
+    },
+    {
+      "key": "kvnloo/o8:pull_request:82",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/o8",
+      "number": 82,
+      "title": "test(intent): reproduce authorization race across mission supersession",
+      "url": "https://github.com/kvnloo/o8/pull/82",
+      "createdAt": "2026-10-26T07:37:17Z",
+      "updatedAt": "2026-10-26T07:37:17Z"
+    },
+    {
+      "key": "kvnloo/gh-contrib-archive:issue:93",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gh-contrib-archive",
+      "number": 93,
+      "title": "Add public-safe developer velocity and salvage stats page",
+      "url": "https://github.com/kvnloo/gh-contrib-archive/issues/93",
+      "createdAt": "2026-10-26T07:36:00Z",
+      "updatedAt": "2026-10-26T07:36:00Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:34",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 34,
+      "title": "Draft origin reply — hurttlocker/o8#3186",
+      "url": "https://github.com/kvnloo/o8/issues/34",
+      "createdAt": "2026-10-06T17:26:30Z",
+      "updatedAt": "2026-10-26T07:33:31Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:33",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 33,
+      "title": "Draft origin reply — hurttlocker/o8#3184",
+      "url": "https://github.com/kvnloo/o8/issues/33",
+      "createdAt": "2026-10-06T17:26:28Z",
+      "updatedAt": "2026-10-26T07:33:29Z"
+    },
+    {
+      "key": "kvnloo/o8:pull_request:41",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/o8",
+      "number": 41,
+      "title": "feat(intent): bind exact authored refs to mission creation receipts",
+      "url": "https://github.com/kvnloo/o8/pull/41",
+      "createdAt": "2026-10-09T04:43:02Z",
+      "updatedAt": "2026-10-26T07:28:38Z"
+    },
+    {
+      "key": "kvnloo/o8:pull_request:40",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/o8",
+      "number": 40,
+      "title": "feat(intent): resolve exact authored refs with canonical revalidation",
+      "url": "https://github.com/kvnloo/o8/pull/40",
+      "createdAt": "2026-10-09T04:08:59Z",
+      "updatedAt": "2026-10-26T07:28:35Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:81",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 81,
+      "title": "[W9] Diff-mode switches reset changed-file scroll position (upstream 3934)",
+      "url": "https://github.com/kvnloo/o8/issues/81",
+      "createdAt": "2026-10-26T07:28:07Z",
+      "updatedAt": "2026-10-26T07:28:07Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:80",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 80,
+      "title": "[W8] Diff acceptance loses selected-file readiness during scene-paint (upstream 4728)",
+      "url": "https://github.com/kvnloo/o8/issues/80",
+      "createdAt": "2026-10-26T07:28:04Z",
+      "updatedAt": "2026-10-26T07:28:04Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:79",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 79,
+      "title": "[W7] Native regression tests target removed workspace/session controls (upstream 4764)",
+      "url": "https://github.com/kvnloo/o8/issues/79",
+      "createdAt": "2026-10-26T07:28:02Z",
+      "updatedAt": "2026-10-26T07:28:02Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:78",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 78,
+      "title": "[W6] Dispatch PR review and CI feedback to the responsible worker (upstream 2371)",
+      "url": "https://github.com/kvnloo/o8/issues/78",
+      "createdAt": "2026-10-26T07:28:00Z",
+      "updatedAt": "2026-10-26T07:28:00Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:77",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 77,
+      "title": "[W5] Continuity test: worker A -> worker B across runtimes (upstream 3186 case 2)",
+      "url": "https://github.com/kvnloo/o8/issues/77",
+      "createdAt": "2026-10-26T07:27:58Z",
+      "updatedAt": "2026-10-26T07:27:58Z"
+    },
+    {
+      "key": "kvnloo/o8:issue:75",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/o8",
+      "number": 75,
+      "title": "[W1] Intent spine slice 1: opt-in immutable authored-contract admission (upstream 3185)",
+      "url": "https://github.com/kvnloo/o8/issues/75",
+      "createdAt": "2026-10-26T07:27:53Z",
+      "updatedAt": "2026-10-26T07:27:53Z"
+    },
+    {
+      "key": "kvnloo/hermes-agent:pull_request:659",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/hermes-agent",
+      "number": 659,
+      "title": "test(memory): pin shared RFC fixed-substrate falsifiers and handoffs",
+      "url": "https://github.com/kvnloo/hermes-agent/pull/659",
+      "createdAt": "2026-10-26T06:30:20Z",
+      "updatedAt": "2026-10-26T06:46:55Z"
+    },
+    {
+      "key": "kvnloo/z0live:issue:44",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/z0live",
+      "number": 44,
+      "title": "Pareto frontier for conversation mode: local SLM + STT + TTS (Kyutai Moshi / Unmute) vs gpt-realtime",
+      "url": "https://github.com/kvnloo/z0live/issues/44",
+      "createdAt": "2026-10-23T03:40:28Z",
+      "updatedAt": "2026-10-26T06:33:48Z"
+    },
+    {
+      "key": "kvnloo/z0live:pull_request:48",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/z0live",
+      "number": 48,
+      "title": "research(voice): execute REA protocols and qualify adaptive S25-only voice",
+      "url": "https://github.com/kvnloo/z0live/pull/48",
+      "createdAt": "2026-10-26T05:31:09Z",
+      "updatedAt": "2026-10-26T06:32:55Z"
+    },
+    {
+      "key": "kvnloo/cua:issue:161",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/cua",
+      "number": 161,
+      "title": "[EXPERIMENT] Head-to-head: CUA vs Pomerado vs opencli for repeat website tasks",
+      "url": "https://github.com/kvnloo/cua/issues/161",
+      "createdAt": "2026-10-26T01:15:04Z",
+      "updatedAt": "2026-10-26T05:51:44Z"
+    },
+    {
+      "key": "kvnloo/cua:issue:74",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/cua",
+      "number": 74,
+      "title": "[META: WAIT FOR EVIDENCE] Final upstream promotion DAG + posting queue",
+      "url": "https://github.com/kvnloo/cua/issues/74",
+      "createdAt": "2026-09-25T22:10:37Z",
+      "updatedAt": "2026-10-26T05:04:29Z"
+    },
+    {
+      "key": "kvnloo/z0evals:issue:120",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "closed",
+      "repo": "kvnloo/z0evals",
+      "number": 120,
+      "title": "blog: living record of trycua/cua contributions and experiments",
+      "url": "https://github.com/kvnloo/z0evals/issues/120",
+      "createdAt": "2026-10-26T05:00:42Z",
+      "updatedAt": "2026-10-26T05:04:02Z"
+    },
+    {
+      "key": "kvnloo/z0evals:pull_request:119",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/z0evals",
+      "number": 119,
+      "title": "blog(cua): living record of our trycua/cua contributions and experiments",
+      "url": "https://github.com/kvnloo/z0evals/pull/119",
+      "createdAt": "2026-10-26T04:54:47Z",
+      "updatedAt": "2026-10-26T05:03:55Z",
+      "mergedAt": "2026-10-26T05:03:55Z"
+    },
+    {
+      "key": "kvnloo/.files:pull_request:65",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/.files",
+      "number": 65,
+      "title": "Unify groot live IaC deployment and preserve host settings",
+      "url": "https://github.com/kvnloo/.files/pull/65",
+      "createdAt": "2026-10-24T22:53:40Z",
+      "updatedAt": "2026-10-26T05:02:48Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:241",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/z0intelligence",
+      "number": 241,
+      "title": "memory sources: gate on ctx import failures; mirror OMP transcripts for ctx",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/241",
+      "createdAt": "2026-10-26T04:36:49Z",
+      "updatedAt": "2026-10-26T04:52:41Z",
+      "mergedAt": "2026-10-26T04:52:40Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:222",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 222,
+      "title": "[chatgpt:delivery-storage] Persist versioned outbox without losing unresolved sends",
+      "url": "https://github.com/kvnloo/dash/pull/222",
+      "createdAt": "2026-10-25T10:07:10Z",
+      "updatedAt": "2026-10-26T04:49:44Z",
+      "mergedAt": "2026-10-26T04:49:44Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:13710",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 13710,
+      "title": "Refuse to launch when no default browser is configured",
+      "url": "https://github.com/omacom/omarchy/pull/13710",
+      "createdAt": "2026-09-29T04:35:55Z",
+      "updatedAt": "2026-10-26T04:47:26Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:13721",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 13721,
+      "title": "provision-owner: clear username pin when useradd fails",
+      "url": "https://github.com/omacom/omarchy/pull/13721",
+      "createdAt": "2026-09-29T04:36:17Z",
+      "updatedAt": "2026-10-26T04:47:24Z"
+    },
+    {
+      "key": "omacom/omarchy:pull_request:13937",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "open_ready",
+      "repo": "omacom/omarchy",
+      "number": 13937,
+      "title": "update: claim the update log atomically before root script(1)",
+      "url": "https://github.com/omacom/omarchy/pull/13937",
+      "createdAt": "2026-10-01T07:25:52Z",
+      "updatedAt": "2026-10-26T04:47:11Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:pull_request:185",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 185,
+      "title": "exp(planning): park proposal branches for co-op/game mode [DATA ONLY]",
+      "url": "https://github.com/kvnloo/gods-eye-view/pull/185",
+      "createdAt": "2026-10-12T08:55:27Z",
+      "updatedAt": "2026-10-26T04:42:52Z"
+    },
+    {
+      "key": "kvnloo/cua:issue:73",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/cua",
+      "number": 73,
+      "title": "[META: WAIT FOR EVIDENCE] Canonical #3963 current-state rewrite",
+      "url": "https://github.com/kvnloo/cua/issues/73",
+      "createdAt": "2026-09-25T22:10:35Z",
+      "updatedAt": "2026-10-26T04:39:14Z"
+    },
+    {
+      "key": "kvnloo/cua:pull_request:163",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/cua",
+      "number": 163,
+      "title": "test(cua): require current batch/script route evidence for Pomerado A/B",
+      "url": "https://github.com/kvnloo/cua/pull/163",
+      "createdAt": "2026-10-26T04:34:26Z",
+      "updatedAt": "2026-10-26T04:34:26Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:208",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/dash",
+      "number": 208,
+      "title": "[chatgpt:store-live-correlation] Test live response isolation and stale events",
+      "url": "https://github.com/kvnloo/dash/pull/208",
+      "createdAt": "2026-10-25T10:03:35Z",
+      "updatedAt": "2026-10-26T04:20:28Z",
+      "mergedAt": "2026-10-26T04:20:12Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:240",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/z0intelligence",
+      "number": 240,
+      "title": "hermes-state-packet: corrections prompt from any user_message shape",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/240",
+      "createdAt": "2026-10-26T04:04:23Z",
+      "updatedAt": "2026-10-26T04:09:39Z",
+      "mergedAt": "2026-10-26T04:09:39Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:239",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/z0intelligence",
+      "number": 239,
+      "title": "orientation: per-prompt owner corrections in Claude Code, Hermes and omp",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/239",
+      "createdAt": "2026-10-26T03:34:12Z",
+      "updatedAt": "2026-10-26T03:43:18Z",
+      "mergedAt": "2026-10-26T03:43:17Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:238",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/z0intelligence",
+      "number": 238,
+      "title": "memory MCP: search the archive read-only (scoped in SQL); HTTP fallback concurrent per grant",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/238",
+      "createdAt": "2026-10-26T03:20:08Z",
+      "updatedAt": "2026-10-26T03:25:37Z",
+      "mergedAt": "2026-10-26T03:25:37Z"
+    },
+    {
+      "key": "kvnloo/.files:pull_request:104",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/.files",
+      "number": 104,
+      "title": "fix(oom): never kill agent roots; one guard owns kill order",
+      "url": "https://github.com/kvnloo/.files/pull/104",
+      "createdAt": "2026-10-26T03:23:11Z",
+      "updatedAt": "2026-10-26T03:23:51Z",
+      "mergedAt": "2026-10-26T03:23:51Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:237",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/z0intelligence",
+      "number": 237,
+      "title": "memory sources: measure Hermes lag on sessions with messages",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/237",
+      "createdAt": "2026-10-26T02:54:50Z",
+      "updatedAt": "2026-10-26T03:00:04Z",
+      "mergedAt": "2026-10-26T03:00:04Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:236",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/z0intelligence",
+      "number": 236,
+      "title": "memory sources: provider homes listed as expanded children count as indexed",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/236",
+      "createdAt": "2026-10-26T02:48:00Z",
+      "updatedAt": "2026-10-26T02:53:37Z",
+      "mergedAt": "2026-10-26T02:53:37Z"
+    },
+    {
+      "key": "kvnloo/z0intelligence:pull_request:235",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "merged",
+      "repo": "kvnloo/z0intelligence",
+      "number": 235,
+      "title": "memory: discover harness history roots; reconcile ctx, AgentsView and MCP grants",
+      "url": "https://github.com/kvnloo/z0intelligence/pull/235",
+      "createdAt": "2026-10-26T02:34:36Z",
+      "updatedAt": "2026-10-26T02:41:38Z",
+      "mergedAt": "2026-10-26T02:41:38Z"
+    },
+    {
+      "key": "alt-glitch/hermes-tern:issue:89",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "alt-glitch/hermes-tern",
+      "number": 89,
+      "title": "Resuming a conversation shows ~20 old, already-answered messages as queued",
+      "url": "https://github.com/alt-glitch/hermes-tern/issues/89",
+      "createdAt": "2026-10-26T02:40:36Z",
+      "updatedAt": "2026-10-26T02:40:36Z"
+    },
+    {
+      "key": "kvnloo/goose-lang:pull_request:1",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/goose-lang",
+      "number": 1,
+      "title": "fix(std): correctly round 16–19 digit decimal floats",
+      "url": "https://github.com/kvnloo/goose-lang/pull/1",
+      "createdAt": "2026-10-26T02:11:26Z",
+      "updatedAt": "2026-10-26T02:21:27Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:37",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/dash",
+      "number": 37,
+      "title": "docs(design): inspectable attention tree for Dash phone UX",
+      "url": "https://github.com/kvnloo/dash/pull/37",
+      "createdAt": "2026-09-11T22:04:54Z",
+      "updatedAt": "2026-10-26T02:10:44Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:38",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "closed_unmerged",
+      "repo": "kvnloo/dash",
+      "number": 38,
+      "title": "docs: C(RAID) R-phase capture for AODL formalization",
+      "url": "https://github.com/kvnloo/dash/pull/38",
+      "createdAt": "2026-09-11T22:22:46Z",
+      "updatedAt": "2026-10-26T02:10:42Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:47",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_ready",
+      "repo": "kvnloo/dash",
+      "number": 47,
+      "title": "feat: grok-bot animation lib from synergy.ai → bot-chat",
+      "url": "https://github.com/kvnloo/dash/pull/47",
+      "createdAt": "2026-09-12T12:24:47Z",
+      "updatedAt": "2026-10-26T02:10:41Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:pull_request:266",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 266,
+      "title": "fix(location): strict saved coordinates and unique persisted ids (#833 review)",
+      "url": "https://github.com/kvnloo/gods-eye-view/pull/266",
+      "createdAt": "2026-10-23T04:19:09Z",
+      "updatedAt": "2026-10-26T01:51:46Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:140",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 140,
+      "title": "HUM-03 — disaster evidence workspace over route-support semantics",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/140",
+      "createdAt": "2026-10-01T06:18:42Z",
+      "updatedAt": "2026-10-26T01:51:21Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:44",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 44,
+      "title": "UX-09 — explicit realtime voice state pill independent of raw audio amplitude",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/44",
+      "createdAt": "2026-09-28T23:31:26Z",
+      "updatedAt": "2026-10-26T01:51:19Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:75",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 75,
+      "title": "UX-27 — Reflex Compiler for verified repeated interaction sequences",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/75",
+      "createdAt": "2026-09-29T00:19:06Z",
+      "updatedAt": "2026-10-26T01:51:17Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:76",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 76,
+      "title": "UX-28 — Minimum-Sufficient Perception Ladder",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/76",
+      "createdAt": "2026-09-29T00:19:08Z",
+      "updatedAt": "2026-10-26T01:50:11Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:74",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 74,
+      "title": "UX-26 — Attention Governor for interruption/surfacing policy",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/74",
+      "createdAt": "2026-09-29T00:19:04Z",
+      "updatedAt": "2026-10-26T01:50:09Z"
+    },
+    {
+      "key": "kvnloo/gods-eye-view:issue:41",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/gods-eye-view",
+      "number": 41,
+      "title": "UX-06 — keyboard command palette over the typed GEV action vocabulary",
+      "url": "https://github.com/kvnloo/gods-eye-view/issues/41",
+      "createdAt": "2026-09-28T23:31:15Z",
+      "updatedAt": "2026-10-26T01:49:18Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:888",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 888,
+      "title": "feat(ui): add schema-validated command catalog",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/888",
+      "createdAt": "2026-10-01T21:57:01Z",
+      "updatedAt": "2026-10-26T01:35:02Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:832",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 832,
+      "title": "feat(ui): add deterministic attention disposition policy",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/832",
+      "createdAt": "2026-09-29T01:42:48Z",
+      "updatedAt": "2026-10-26T01:34:58Z"
+    },
+    {
+      "key": "bilawalsidhu/gods-eye-view:pull_request:827",
+      "kind": "pull_request",
+      "relationship": "canonical_upstream",
+      "status": "closed_unmerged",
+      "repo": "bilawalsidhu/gods-eye-view",
+      "number": 827,
+      "title": "feat(voice): add minimum-sufficient perception tier policy",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/827",
+      "createdAt": "2026-09-29T00:58:20Z",
+      "updatedAt": "2026-10-26T01:34:53Z"
+    },
+    {
+      "key": "trycua/cua:issue:6006",
+      "kind": "issue",
+      "relationship": "canonical_upstream",
+      "status": "open",
+      "repo": "trycua/cua",
+      "number": 6006,
+      "title": "[Feature]: Opt-in reusable website task tools via Pomerado MCP (caller-side feasibility)",
+      "url": "https://github.com/trycua/cua/issues/6006",
+      "createdAt": "2026-10-26T01:23:20Z",
+      "updatedAt": "2026-10-26T01:23:20Z"
+    },
+    {
+      "key": "kvnloo/dash:issue:344",
+      "kind": "issue",
+      "relationship": "owned",
+      "status": "open",
+      "repo": "kvnloo/dash",
+      "number": 344,
+      "title": "[ChatGPT lane] DASH3-BUG-S22-003: turbo transcript scroll jank",
+      "url": "https://github.com/kvnloo/dash/issues/344",
+      "createdAt": "2026-10-25T23:41:03Z",
+      "updatedAt": "2026-10-25T23:50:42Z"
+    },
+    {
+      "key": "kvnloo/dash:pull_request:345",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/dash",
+      "number": 345,
+      "title": "[chatgpt:turbo-bug-s22-003] Freeze shimmer during transcript scrolling",
+      "url": "https://github.com/kvnloo/dash/pull/345",
+      "createdAt": "2026-10-25T23:50:10Z",
+      "updatedAt": "2026-10-25T23:50:20Z"
+    },
+    {
+      "key": "kvnloo/.files:pull_request:59",
+      "kind": "pull_request",
+      "relationship": "owned",
+      "status": "open_draft",
+      "repo": "kvnloo/.files",
+      "number": 59,
+      "title": "feat(agents): pinned local Fettl checks and sandboxed agent hooks",
+      "url": "https://github.com/kvnloo/.files/pull/59",
+      "createdAt": "2026-10-24T05:09:03Z",
+      "updatedAt": "2026-10-25T23:43:40Z"
     },
     {
       "key": "kvnloo/openui:pull_request:4",
@@ -906,18 +1829,6 @@
       "url": "https://github.com/kvnloo/dash/issues/152",
       "createdAt": "2026-10-25T08:42:59Z",
       "updatedAt": "2026-10-25T22:10:44Z"
-    },
-    {
-      "key": "kvnloo/.files:pull_request:65",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/.files",
-      "number": 65,
-      "title": "Unify groot live IaC deployment and preserve host settings",
-      "url": "https://github.com/kvnloo/.files/pull/65",
-      "createdAt": "2026-10-24T22:53:40Z",
-      "updatedAt": "2026-10-25T21:32:02Z"
     },
     {
       "key": "kvnloo/z0intelligence:pull_request:233",
@@ -3190,18 +4101,6 @@
       "updatedAt": "2026-10-25T10:07:32Z"
     },
     {
-      "key": "kvnloo/dash:pull_request:222",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 222,
-      "title": "[chatgpt:delivery-storage] Persist versioned outbox without losing unresolved sends",
-      "url": "https://github.com/kvnloo/dash/pull/222",
-      "createdAt": "2026-10-25T10:07:10Z",
-      "updatedAt": "2026-10-25T10:07:22Z"
-    },
-    {
       "key": "kvnloo/dash:issue:126",
       "kind": "issue",
       "relationship": "owned",
@@ -3320,18 +4219,6 @@
       "url": "https://github.com/kvnloo/dash/issues/128",
       "createdAt": "2026-10-25T08:37:31Z",
       "updatedAt": "2026-10-25T10:03:57Z"
-    },
-    {
-      "key": "kvnloo/dash:pull_request:208",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 208,
-      "title": "[chatgpt:store-live-correlation] Test live response isolation and stale events",
-      "url": "https://github.com/kvnloo/dash/pull/208",
-      "createdAt": "2026-10-25T10:03:35Z",
-      "updatedAt": "2026-10-25T10:03:43Z"
     },
     {
       "key": "kvnloo/dash:issue:132",
@@ -3726,30 +4613,6 @@
       "mergedAt": "2026-10-25T05:25:36Z"
     },
     {
-      "key": "omacom/omarchy:pull_request:13710",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 13710,
-      "title": "Refuse to launch when no default browser is configured",
-      "url": "https://github.com/omacom/omarchy/pull/13710",
-      "createdAt": "2026-09-29T04:35:55Z",
-      "updatedAt": "2026-10-25T05:00:42Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:13721",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 13721,
-      "title": "provision-owner: clear username pin when useradd fails",
-      "url": "https://github.com/omacom/omarchy/pull/13721",
-      "createdAt": "2026-09-29T04:36:17Z",
-      "updatedAt": "2026-10-25T05:00:41Z"
-    },
-    {
       "key": "kvnloo/.files:pull_request:96",
       "kind": "pull_request",
       "relationship": "owned",
@@ -3964,18 +4827,6 @@
       "url": "https://github.com/ctxrs/ctx/issues/1128",
       "createdAt": "2026-10-25T03:18:42Z",
       "updatedAt": "2026-10-25T03:18:42Z"
-    },
-    {
-      "key": "kvnloo/hermes-agent:issue:447",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/hermes-agent",
-      "number": 447,
-      "title": "Promotion queue: hermes branches ready for upstream (capped at 3 open PRs)",
-      "url": "https://github.com/kvnloo/hermes-agent/issues/447",
-      "createdAt": "2026-10-06T09:30:43Z",
-      "updatedAt": "2026-10-25T03:14:13Z"
     },
     {
       "key": "kvnloo/z0intelligence:pull_request:216",
@@ -4388,30 +5239,6 @@
       "updatedAt": "2026-10-24T23:37:22Z"
     },
     {
-      "key": "kvnloo/o8:issue:53",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/o8",
-      "number": 53,
-      "title": "Promotion queue — o8 (historical accepted work)",
-      "url": "https://github.com/kvnloo/o8/issues/53",
-      "createdAt": "2026-10-18T08:21:40Z",
-      "updatedAt": "2026-10-24T22:54:08Z"
-    },
-    {
-      "key": "kvnloo/o8:pull_request:41",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/o8",
-      "number": 41,
-      "title": "feat(intent): bind exact authored refs to mission creation receipts",
-      "url": "https://github.com/kvnloo/o8/pull/41",
-      "createdAt": "2026-10-09T04:43:02Z",
-      "updatedAt": "2026-10-24T22:53:12Z"
-    },
-    {
       "key": "kvnloo/hermes-tern:issue:31",
       "kind": "issue",
       "relationship": "owned",
@@ -4447,18 +5274,6 @@
       "url": "https://github.com/kvnloo/hermes-agent/issues/509",
       "createdAt": "2026-10-17T07:46:30Z",
       "updatedAt": "2026-10-24T22:49:37Z"
-    },
-    {
-      "key": "kvnloo/cua:issue:74",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/cua",
-      "number": 74,
-      "title": "[META: WAIT FOR EVIDENCE] Final upstream promotion DAG + posting queue",
-      "url": "https://github.com/kvnloo/cua/issues/74",
-      "createdAt": "2026-09-25T22:10:37Z",
-      "updatedAt": "2026-10-24T22:49:33Z"
     },
     {
       "key": "kvnloo/cua:pull_request:160",
@@ -5111,18 +5926,6 @@
       "updatedAt": "2026-10-24T20:58:12Z"
     },
     {
-      "key": "kvnloo/hermes-tern:issue:1",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/hermes-tern",
-      "number": 1,
-      "title": "Port tested Hermes×Tern ui-tsp work into the hermes-tern plugin (downstream port program)",
-      "url": "https://github.com/kvnloo/hermes-tern/issues/1",
-      "createdAt": "2026-10-23T01:53:16Z",
-      "updatedAt": "2026-10-24T20:26:12Z"
-    },
-    {
       "key": "kvnloo/z0intelligence:pull_request:209",
       "kind": "pull_request",
       "relationship": "owned",
@@ -5196,18 +5999,6 @@
       "updatedAt": "2026-10-24T18:26:14Z"
     },
     {
-      "key": "kvnloo/z0intelligence:issue:177",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0intelligence",
-      "number": 177,
-      "title": "[Mobile lane] Roadmap for ChatGPT / DeepSeek",
-      "url": "https://github.com/kvnloo/z0intelligence/issues/177",
-      "createdAt": "2026-10-20T05:14:19Z",
-      "updatedAt": "2026-10-24T18:01:55Z"
-    },
-    {
       "key": "kvnloo/z0evals:issue:100",
       "kind": "issue",
       "relationship": "owned",
@@ -5218,18 +6009,6 @@
       "url": "https://github.com/kvnloo/z0evals/issues/100",
       "createdAt": "2026-10-20T05:15:07Z",
       "updatedAt": "2026-10-24T18:01:47Z"
-    },
-    {
-      "key": "kvnloo/.files:pull_request:59",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/.files",
-      "number": 59,
-      "title": "feat(agents): pinned local Fettl checks and sandboxed agent hooks",
-      "url": "https://github.com/kvnloo/.files/pull/59",
-      "createdAt": "2026-10-24T05:09:03Z",
-      "updatedAt": "2026-10-24T17:56:40Z"
     },
     {
       "key": "ag-ui-protocol/ag-ui:pull_request:2826",
@@ -5628,18 +6407,6 @@
       "url": "https://github.com/kvnloo/z0evals/issues/99",
       "createdAt": "2026-10-16T08:12:44Z",
       "updatedAt": "2026-10-23T23:24:35Z"
-    },
-    {
-      "key": "kvnloo/z0intelligence:pull_request:205",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/z0intelligence",
-      "number": 205,
-      "title": "Memory: join scoped native output-use outcomes and replay",
-      "url": "https://github.com/kvnloo/z0intelligence/pull/205",
-      "createdAt": "2026-10-23T23:18:07Z",
-      "updatedAt": "2026-10-23T23:19:05Z"
     },
     {
       "key": "kvnloo/t3code:issue:42",
@@ -6392,18 +7159,6 @@
       "updatedAt": "2026-10-23T08:28:09Z"
     },
     {
-      "key": "kvnloo/z0live:issue:44",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/z0live",
-      "number": 44,
-      "title": "Pareto frontier for conversation mode: local SLM + STT + TTS (Kyutai Moshi / Unmute) vs gpt-realtime",
-      "url": "https://github.com/kvnloo/z0live/issues/44",
-      "createdAt": "2026-10-23T03:40:28Z",
-      "updatedAt": "2026-10-23T08:16:55Z"
-    },
-    {
       "key": "kvnloo/z0live:pull_request:47",
       "kind": "pull_request",
       "relationship": "owned",
@@ -6905,18 +7660,6 @@
       "title": "fix(voice): fail closed on invalid projection inputs",
       "url": "https://github.com/kvnloo/gods-eye-view/pull/265",
       "createdAt": "2026-10-23T03:19:36Z",
-      "updatedAt": "2026-10-23T05:28:04Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:pull_request:266",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 266,
-      "title": "fix(location): strict saved coordinates and unique persisted ids (#833 review)",
-      "url": "https://github.com/kvnloo/gods-eye-view/pull/266",
-      "createdAt": "2026-10-23T04:19:09Z",
       "updatedAt": "2026-10-23T05:28:04Z"
     },
     {
@@ -13359,18 +14102,6 @@
       "updatedAt": "2026-10-19T15:57:59Z"
     },
     {
-      "key": "kvnloo/gh-contrib-archive:issue:84",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gh-contrib-archive",
-      "number": 84,
-      "title": "Promotion queue — kvnloo/gh-contrib-archive (single canonical issue)",
-      "url": "https://github.com/kvnloo/gh-contrib-archive/issues/84",
-      "createdAt": "2026-10-16T08:18:22Z",
-      "updatedAt": "2026-10-19T15:55:01Z"
-    },
-    {
       "key": "kvnloo/gh-contrib-archive:pull_request:91",
       "kind": "pull_request",
       "relationship": "owned",
@@ -14555,18 +15286,6 @@
       "url": "https://github.com/kvnloo/omalauncher/pull/1",
       "createdAt": "2026-10-15T06:25:22Z",
       "updatedAt": "2026-10-18T08:20:31Z"
-    },
-    {
-      "key": "omacom/omarchy:pull_request:13937",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_ready",
-      "repo": "omacom/omarchy",
-      "number": 13937,
-      "title": "update: claim the update log atomically before root script(1)",
-      "url": "https://github.com/omacom/omarchy/pull/13937",
-      "createdAt": "2026-10-01T07:25:52Z",
-      "updatedAt": "2026-10-18T08:18:45Z"
     },
     {
       "key": "kvnloo/ATOM:pull_request:28",
@@ -16821,42 +17540,6 @@
       "updatedAt": "2026-10-17T16:42:50Z"
     },
     {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:827",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 827,
-      "title": "feat(voice): add minimum-sufficient perception tier policy",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/827",
-      "createdAt": "2026-09-29T00:58:20Z",
-      "updatedAt": "2026-10-17T16:42:48Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:832",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 832,
-      "title": "feat(ui): add deterministic attention disposition policy",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/832",
-      "createdAt": "2026-09-29T01:42:48Z",
-      "updatedAt": "2026-10-17T16:42:46Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:833",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 833,
-      "title": "feat(location): persist saved places as typed navigation actions",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/833",
-      "createdAt": "2026-09-29T01:42:58Z",
-      "updatedAt": "2026-10-17T16:42:44Z"
-    },
-    {
       "key": "bilawalsidhu/gods-eye-view:pull_request:836",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -16867,18 +17550,6 @@
       "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/836",
       "createdAt": "2026-09-29T02:06:40Z",
       "updatedAt": "2026-10-17T16:42:42Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:844",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 844,
-      "title": "feat(traffic): add provider-neutral observed traffic source contract",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/844",
-      "createdAt": "2026-09-29T04:10:48Z",
-      "updatedAt": "2026-10-17T16:42:37Z"
     },
     {
       "key": "bilawalsidhu/gods-eye-view:pull_request:845",
@@ -16903,30 +17574,6 @@
       "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/848",
       "createdAt": "2026-09-29T05:20:59Z",
       "updatedAt": "2026-10-17T16:42:31Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:851",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 851,
-      "title": "feat(voice): add truthful presentation-state projection",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/851",
-      "createdAt": "2026-09-29T05:35:21Z",
-      "updatedAt": "2026-10-17T16:42:28Z"
-    },
-    {
-      "key": "bilawalsidhu/gods-eye-view:pull_request:888",
-      "kind": "pull_request",
-      "relationship": "canonical_upstream",
-      "status": "open_draft",
-      "repo": "bilawalsidhu/gods-eye-view",
-      "number": 888,
-      "title": "feat(ui): add schema-validated command catalog",
-      "url": "https://github.com/bilawalsidhu/gods-eye-view/pull/888",
-      "createdAt": "2026-10-01T21:57:01Z",
-      "updatedAt": "2026-10-17T16:42:20Z"
     },
     {
       "key": "kvnloo/datafusion-postgres:pull_request:1",
@@ -22912,18 +23559,6 @@
       "updatedAt": "2026-10-17T02:09:50Z"
     },
     {
-      "key": "kvnloo/gods-eye-view:pull_request:185",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 185,
-      "title": "exp(planning): park proposal branches for co-op/game mode [DATA ONLY]",
-      "url": "https://github.com/kvnloo/gods-eye-view/pull/185",
-      "createdAt": "2026-10-12T08:55:27Z",
-      "updatedAt": "2026-10-17T02:09:47Z"
-    },
-    {
       "key": "kvnloo/gods-eye-view:pull_request:179",
       "kind": "pull_request",
       "relationship": "owned",
@@ -23690,18 +24325,6 @@
       "url": "https://github.com/kvnloo/oh-my-pi/pull/77",
       "createdAt": "2026-09-18T22:07:11Z",
       "updatedAt": "2026-10-17T02:04:48Z"
-    },
-    {
-      "key": "kvnloo/o8:pull_request:38",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/o8",
-      "number": 38,
-      "title": "fix(security): confine lane verification subprocesses through native Pi supervisor",
-      "url": "https://github.com/kvnloo/o8/pull/38",
-      "createdAt": "2026-10-08T19:51:22Z",
-      "updatedAt": "2026-10-17T02:04:45Z"
     },
     {
       "key": "kvnloo/o8:pull_request:31",
@@ -29487,30 +30110,6 @@
       "updatedAt": "2026-10-12T04:04:23Z"
     },
     {
-      "key": "kvnloo/dash:pull_request:37",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 37,
-      "title": "docs(design): inspectable attention tree for Dash phone UX",
-      "url": "https://github.com/kvnloo/dash/pull/37",
-      "createdAt": "2026-09-11T22:04:54Z",
-      "updatedAt": "2026-10-12T03:07:44Z"
-    },
-    {
-      "key": "kvnloo/dash:pull_request:38",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/dash",
-      "number": 38,
-      "title": "docs: C(RAID) R-phase capture for AODL formalization",
-      "url": "https://github.com/kvnloo/dash/pull/38",
-      "createdAt": "2026-09-11T22:22:46Z",
-      "updatedAt": "2026-10-12T03:07:42Z"
-    },
-    {
       "key": "NousResearch/hermes-agent:pull_request:126847",
       "kind": "pull_request",
       "relationship": "canonical_upstream",
@@ -30924,18 +31523,6 @@
       "updatedAt": "2026-10-09T04:09:43Z"
     },
     {
-      "key": "kvnloo/o8:pull_request:40",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/o8",
-      "number": 40,
-      "title": "feat(intent): resolve exact authored refs with canonical revalidation",
-      "url": "https://github.com/kvnloo/o8/pull/40",
-      "createdAt": "2026-10-09T04:08:59Z",
-      "updatedAt": "2026-10-09T04:08:59Z"
-    },
-    {
       "key": "kvnloo/agent-orchestrator:pull_request:59",
       "kind": "pull_request",
       "relationship": "owned",
@@ -31380,18 +31967,6 @@
       "url": "https://github.com/kvnloo/omnara/pull/14",
       "createdAt": "2026-10-08T02:33:28Z",
       "updatedAt": "2026-10-08T20:44:26Z"
-    },
-    {
-      "key": "kvnloo/o8:pull_request:39",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_draft",
-      "repo": "kvnloo/o8",
-      "number": 39,
-      "title": "WIP: Tern observer isolation through owned Pi runtime (#3365 S3a)",
-      "url": "https://github.com/kvnloo/o8/pull/39",
-      "createdAt": "2026-10-08T20:40:09Z",
-      "updatedAt": "2026-10-08T20:43:25Z"
     },
     {
       "key": "kvnloo/omnara:pull_request:15",
@@ -33099,30 +33674,6 @@
       "url": "https://github.com/kvnloo/o8/issues/35",
       "createdAt": "2026-10-06T17:26:32Z",
       "updatedAt": "2026-10-06T17:26:32Z"
-    },
-    {
-      "key": "kvnloo/o8:issue:34",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/o8",
-      "number": 34,
-      "title": "Draft origin reply — hurttlocker/o8#3186",
-      "url": "https://github.com/kvnloo/o8/issues/34",
-      "createdAt": "2026-10-06T17:26:30Z",
-      "updatedAt": "2026-10-06T17:26:30Z"
-    },
-    {
-      "key": "kvnloo/o8:issue:33",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/o8",
-      "number": 33,
-      "title": "Draft origin reply — hurttlocker/o8#3184",
-      "url": "https://github.com/kvnloo/o8/issues/33",
-      "createdAt": "2026-10-06T17:26:28Z",
-      "updatedAt": "2026-10-06T17:26:28Z"
     },
     {
       "key": "kvnloo/omarchy:issue:101",
@@ -35233,18 +35784,6 @@
       "url": "https://github.com/kvnloo/newton/pull/22",
       "createdAt": "2026-10-03T20:42:09Z",
       "updatedAt": "2026-10-03T20:42:09Z"
-    },
-    {
-      "key": "kvnloo/cua:issue:73",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/cua",
-      "number": 73,
-      "title": "[META: WAIT FOR EVIDENCE] Canonical #3963 current-state rewrite",
-      "url": "https://github.com/kvnloo/cua/issues/73",
-      "createdAt": "2026-09-25T22:10:35Z",
-      "updatedAt": "2026-10-03T20:38:12Z"
     },
     {
       "key": "kvnloo/cua:issue:36",
@@ -39866,18 +40405,6 @@
       "updatedAt": "2026-10-01T06:19:22Z"
     },
     {
-      "key": "kvnloo/gods-eye-view:issue:140",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 140,
-      "title": "HUM-03 — disaster evidence workspace over route-support semantics",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/140",
-      "createdAt": "2026-10-01T06:18:42Z",
-      "updatedAt": "2026-10-01T06:18:42Z"
-    },
-    {
       "key": "kvnloo/gods-eye-view:issue:139",
       "kind": "issue",
       "relationship": "owned",
@@ -44243,18 +44770,6 @@
       "updatedAt": "2026-09-29T07:50:13Z"
     },
     {
-      "key": "kvnloo/gods-eye-view:issue:75",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 75,
-      "title": "UX-27 — Reflex Compiler for verified repeated interaction sequences",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/75",
-      "createdAt": "2026-09-29T00:19:06Z",
-      "updatedAt": "2026-09-29T07:45:17Z"
-    },
-    {
       "key": "kvnloo/gods-eye-view:pull_request:64",
       "kind": "pull_request",
       "relationship": "owned",
@@ -45063,30 +45578,6 @@
       "updatedAt": "2026-09-29T00:19:09Z"
     },
     {
-      "key": "kvnloo/gods-eye-view:issue:76",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 76,
-      "title": "UX-28 — Minimum-Sufficient Perception Ladder",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/76",
-      "createdAt": "2026-09-29T00:19:08Z",
-      "updatedAt": "2026-09-29T00:19:08Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:issue:74",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 74,
-      "title": "UX-26 — Attention Governor for interruption/surfacing policy",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/74",
-      "createdAt": "2026-09-29T00:19:04Z",
-      "updatedAt": "2026-09-29T00:19:04Z"
-    },
-    {
       "key": "kvnloo/gods-eye-view:issue:73",
       "kind": "issue",
       "relationship": "owned",
@@ -45169,18 +45660,6 @@
       "url": "https://github.com/kvnloo/gods-eye-view/issues/66",
       "createdAt": "2026-09-29T00:18:41Z",
       "updatedAt": "2026-09-29T00:18:41Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:issue:44",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 44,
-      "title": "UX-09 — explicit realtime voice state pill independent of raw audio amplitude",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/44",
-      "createdAt": "2026-09-28T23:31:26Z",
-      "updatedAt": "2026-09-28T23:41:04Z"
     },
     {
       "key": "kvnloo/gods-eye-view:pull_request:52",
@@ -45458,18 +45937,6 @@
       "url": "https://github.com/kvnloo/gods-eye-view/issues/42",
       "createdAt": "2026-09-28T23:31:17Z",
       "updatedAt": "2026-09-28T23:31:17Z"
-    },
-    {
-      "key": "kvnloo/gods-eye-view:issue:41",
-      "kind": "issue",
-      "relationship": "owned",
-      "status": "open",
-      "repo": "kvnloo/gods-eye-view",
-      "number": 41,
-      "title": "UX-06 — keyboard command palette over the typed GEV action vocabulary",
-      "url": "https://github.com/kvnloo/gods-eye-view/issues/41",
-      "createdAt": "2026-09-28T23:31:15Z",
-      "updatedAt": "2026-09-28T23:31:15Z"
     },
     {
       "key": "kvnloo/gods-eye-view:issue:40",
@@ -57411,18 +57878,6 @@
       "url": "https://github.com/ccusage/ccusage/issues/1708",
       "createdAt": "2026-09-12T03:25:24Z",
       "updatedAt": "2026-09-12T21:53:39Z"
-    },
-    {
-      "key": "kvnloo/dash:pull_request:47",
-      "kind": "pull_request",
-      "relationship": "owned",
-      "status": "open_ready",
-      "repo": "kvnloo/dash",
-      "number": 47,
-      "title": "feat: grok-bot animation lib from synergy.ai → bot-chat",
-      "url": "https://github.com/kvnloo/dash/pull/47",
-      "createdAt": "2026-09-12T12:24:47Z",
-      "updatedAt": "2026-09-12T12:24:58Z"
     },
     {
       "key": "ryanbr/noop:issue:1760",
