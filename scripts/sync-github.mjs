@@ -28,6 +28,7 @@ const OVERRIDES_PATH = path.join(DATA_DIR, 'description-overrides.json');
 const DATE_OVERRIDES_PATH = path.join(DATA_DIR, 'date-overrides.json');
 const FEATURED_PATH = path.join(DATA_DIR, 'featured.json');
 const HIERARCHY_PATH = path.join(DATA_DIR, 'hierarchy.json');
+const UPSTREAM_PATH = path.join(DATA_DIR, 'upstream-contributions.json');
 const WEAK_DESC_RE = /^(public repository|fork with commits by me)(\s*·.*)?$/i;
 const GENERIC_README_RE = /run and deploy your ai studio app|this template provides a minimal setup|automatically synced with your \[?v0/i;
 
@@ -340,6 +341,28 @@ async function loadDescriptionOverrides() {
   } catch {
     return new Map();
   }
+}
+
+async function loadUpstreamContributions() {
+  try {
+    const raw = JSON.parse(await readFile(UPSTREAM_PATH, 'utf8'));
+    const list = Array.isArray(raw.projects) ? raw.projects : [];
+    return list.filter((p) => p && typeof p.id === 'string' && typeof p.url === 'string');
+  } catch {
+    return [];
+  }
+}
+
+function mergeUpstreamProjects(projects, extra) {
+  if (!extra.length) return projects;
+  const seen = new Set(projects.map((p) => p.id));
+  const out = [...projects];
+  for (const item of extra) {
+    if (seen.has(item.id)) continue;
+    seen.add(item.id);
+    out.push(item);
+  }
+  return out;
 }
 
 async function loadDateOverrides() {
@@ -1041,6 +1064,10 @@ async function main() {
     seen.add(p.id);
     return true;
   });
+  projects = applyHierarchy(projects, hierarchy);
+  const upstream = await loadUpstreamContributions();
+  log(`upstream contributions: ${upstream.length}`);
+  projects = mergeUpstreamProjects(projects, upstream);
   projects = applyHierarchy(projects, hierarchy);
 
   const featuredOrder = pickFeatured(projects, featuredConfig);

@@ -1,0 +1,35 @@
+{
+  "_comment": "Hand-curated merged upstream PRs. Sync merges these by id so they survive GitHub-owned-repo refresh. Only include merged, authored, public work.",
+  "projects": [
+    {
+      "id": "noop-1583",
+      "name": "noop #1583",
+      "description": "Merged upstream PR on ryanbr/noop: preserve PPG burst boundaries across Swift and Android stores, with protocol and migration tests.",
+      "date": "2026-08-24",
+      "url": "https://github.com/ryanbr/noop/pull/1583",
+      "types": ["public", "swift", "kotlin"],
+      "formats": [],
+      "categories": ["dev", "health"],
+      "links": [
+        {"label": "pull request", "url": "https://github.com/ryanbr/noop/pull/1583"},
+        {"label": "repo", "url": "https://github.com/ryanbr/noop"}
+      ],
+      "descriptionSource": "upstream-contributions"
+    },
+    {
+      "id": "boinc-7239",
+      "name": "BOINC #7239",
+      "description": "Merged upstream PR on BOINC/boinc: target JVM 21 for the Android app, with Assisted-by trailers and package-build evidence.",
+      "date": "2026-08-24",
+      "url": "https://github.com/BOINC/boinc/pull/7239",
+      "types": ["public", "java"],
+      "formats": [],
+      "categories": ["dev"],
+      "links": [
+        {"label": "pull request", "url": "https://github.com/BOINC/boinc/pull/7239"},
+        {"label": "repo", "url": "https://github.com/BOINC/boinc"}
+      ],
+      "descriptionSource": "upstream-contributions"
+    }
+  ]
+}

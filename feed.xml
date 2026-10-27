@@ -5,8 +5,22 @@
   <id>https://kvnloo.github.io/boplog/</id>
   <link href="https://kvnloo.github.io/boplog/" rel="alternate"/>
   <link href="https://kvnloo.github.io/boplog/feed.xml" rel="self" type="application/atom+xml"/>
-  <updated>2026-08-04T02:03:37Z</updated>
+  <updated>2026-08-24T22:00:00Z</updated>
   
+  <entry>
+    <title>noop #1583</title>
+    <link href="https://github.com/ryanbr/noop/pull/1583"/>
+    <id>https://github.com/ryanbr/noop/pull/1583</id>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <summary>Merged upstream PR on ryanbr/noop: preserve PPG burst boundaries across Swift and Android stores, with protocol and migration tests.</summary>
+  </entry>
+  <entry>
+    <title>BOINC #7239</title>
+    <link href="https://github.com/BOINC/boinc/pull/7239"/>
+    <id>https://github.com/BOINC/boinc/pull/7239</id>
+    <updated>2026-08-24T00:00:00Z</updated>
+    <summary>Merged upstream PR on BOINC/boinc: target JVM 21 for the Android app, with Assisted-by trailers and package-build evidence.</summary>
+  </entry>
   <entry>
     <title>hermes-liquid-glass</title>
     <link href="https://github.com/kvnloo/hermes-liquid-glass"/>

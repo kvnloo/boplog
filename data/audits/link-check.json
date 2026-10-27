@@ -1,0 +1,590 @@
+{
+  "checked": 94,
+  "ok": 91,
+  "bad": [
+    {
+      "url": "https://ek.vin/",
+      "status": null,
+      "final": null,
+      "err": "URLError:<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "url": "https://ek.vin/ai-eng.pdf",
+      "status": null,
+      "final": null,
+      "err": "URLError:<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "url": "https://launch-plum-beta.vercel.app/",
+      "status": null,
+      "final": null,
+      "err": "HTTPError:HTTP Error 404: Not Found"
+    }
+  ],
+  "all": [
+    {
+      "url": "https://all-hands.dev/",
+      "status": 200,
+      "final": "https://www.openhands.dev/",
+      "err": null
+    },
+    {
+      "url": "https://behance.net/kevinsrajan",
+      "status": 200,
+      "final": "https://www.behance.net/kevinsrajan",
+      "err": null
+    },
+    {
+      "url": "https://cofounder.openinterface.ai/",
+      "status": 200,
+      "final": "https://cofounder.openinterface.ai/",
+      "err": null
+    },
+    {
+      "url": "https://ek.vin/",
+      "status": null,
+      "final": null,
+      "err": "URLError:<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "url": "https://ek.vin/ai-eng.pdf",
+      "status": null,
+      "final": null,
+      "err": "URLError:<urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "url": "https://github.com/kvnloo/.files",
+      "status": 200,
+      "final": "https://github.com/kvnloo/.files",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/4dps",
+      "status": 200,
+      "final": "https://github.com/kvnloo/4dps",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/AudioEngine",
+      "status": 200,
+      "final": "https://github.com/kvnloo/AudioEngine",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/Auto-Claude",
+      "status": 200,
+      "final": "https://github.com/kvnloo/Auto-Claude",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/Flicks",
+      "status": 200,
+      "final": "https://github.com/kvnloo/Flicks",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/FlowState",
+      "status": 200,
+      "final": "https://github.com/kvnloo/FlowState",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/OpenHands",
+      "status": 200,
+      "final": "https://github.com/kvnloo/OpenHands",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/UX",
+      "status": 200,
+      "final": "https://github.com/kvnloo/UX",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/_pm",
+      "status": 200,
+      "final": "https://github.com/kvnloo/_pm",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/ace",
+      "status": 200,
+      "final": "https://github.com/kvnloo/ace",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/aliens-made-this",
+      "status": 200,
+      "final": "https://github.com/kvnloo/aliens-made-this",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/architecture_demo",
+      "status": 200,
+      "final": "https://github.com/kvnloo/architecture_demo",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/blueprint",
+      "status": 200,
+      "final": "https://github.com/kvnloo/blueprint",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/boplog",
+      "status": 200,
+      "final": "https://github.com/kvnloo/boplog",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/botw",
+      "status": 200,
+      "final": "https://github.com/kvnloo/botw",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/claude-island",
+      "status": 200,
+      "final": "https://github.com/kvnloo/claude-island",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/cod",
+      "status": 200,
+      "final": "https://github.com/kvnloo/cod",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/coding-interview-university",
+      "status": 200,
+      "final": "https://github.com/kvnloo/coding-interview-university",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/cofounder",
+      "status": 200,
+      "final": "https://github.com/kvnloo/cofounder",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/cv",
+      "status": 200,
+      "final": "https://github.com/kvnloo/cv",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/docs-boilerplate",
+      "status": 200,
+      "final": "https://github.com/kvnloo/docs-boilerplate",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/evolve",
+      "status": 200,
+      "final": "https://github.com/kvnloo/evolve",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/expert",
+      "status": 200,
+      "final": "https://github.com/kvnloo/expert",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/farm",
+      "status": 200,
+      "final": "https://github.com/kvnloo/farm",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/flo",
+      "status": 200,
+      "final": "https://github.com/kvnloo/flo",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/flow",
+      "status": 200,
+      "final": "https://github.com/kvnloo/flow",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/halo",
+      "status": 200,
+      "final": "https://github.com/kvnloo/halo",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/iOS-2017",
+      "status": 200,
+      "final": "https://github.com/kvnloo/iOS-2017",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/jobapp",
+      "status": 200,
+      "final": "https://github.com/kvnloo/jobapp",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/kpu-sim",
+      "status": 200,
+      "final": "https://github.com/kvnloo/kpu-sim",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/kvnloo",
+      "status": 200,
+      "final": "https://github.com/kvnloo/kvnloo",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/launch",
+      "status": 200,
+      "final": "https://github.com/kvnloo/launch",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/metallic-card",
+      "status": 200,
+      "final": "https://github.com/kvnloo/metallic-card",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/migrate",
+      "status": 200,
+      "final": "https://github.com/kvnloo/migrate",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/monument",
+      "status": 200,
+      "final": "https://github.com/kvnloo/monument",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/opcode",
+      "status": 200,
+      "final": "https://github.com/kvnloo/opcode",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/playground",
+      "status": 200,
+      "final": "https://github.com/kvnloo/playground",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/portfolio",
+      "status": 200,
+      "final": "https://github.com/kvnloo/portfolio",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/raisr",
+      "status": 200,
+      "final": "https://github.com/kvnloo/raisr",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/refind",
+      "status": 200,
+      "final": "https://github.com/kvnloo/refind",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/scrollytelling",
+      "status": 200,
+      "final": "https://github.com/kvnloo/scrollytelling",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/smartvest",
+      "status": 200,
+      "final": "https://github.com/kvnloo/smartvest",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/spy",
+      "status": 200,
+      "final": "https://github.com/kvnloo/spy",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/tesla",
+      "status": 200,
+      "final": "https://github.com/kvnloo/tesla",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/tesla-infotainment",
+      "status": 200,
+      "final": "https://github.com/kvnloo/tesla-infotainment",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/tmux-agent-fleet",
+      "status": 200,
+      "final": "https://github.com/kvnloo/tmux-agent-fleet",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/uiua",
+      "status": 200,
+      "final": "https://github.com/kvnloo/uiua",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/whisper",
+      "status": 200,
+      "final": "https://github.com/kvnloo/whisper",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/z0",
+      "status": 200,
+      "final": "https://github.com/kvnloo/z0",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/zer0-cockpit",
+      "status": 200,
+      "final": "https://github.com/kvnloo/zer0-cockpit",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/zer0-harness-spine",
+      "status": 200,
+      "final": "https://github.com/kvnloo/zer0-harness-spine",
+      "err": null
+    },
+    {
+      "url": "https://github.com/kvnloo/zer0-voice",
+      "status": 200,
+      "final": "https://github.com/kvnloo/zer0-voice",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/.files/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/.files/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/AudioEngine/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/AudioEngine/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/FlowState/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/FlowState/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/ace/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/ace/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/aliens-made-this/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/aliens-made-this/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/architecture_demo/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/architecture_demo/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/blueprint/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/blueprint/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/.well-known/agent-skills",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/.well-known/agent-skills",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/.well-known/mcp",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/.well-known/mcp",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/agents.md",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/agents.md",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/boplog",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/boplog",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/data/activity.json",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/data/activity.json",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/data/hierarchy.json",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/data/hierarchy.json",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/data/manifest.json",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/data/manifest.json",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/data/taxonomy.json",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/data/taxonomy.json",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/dev/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/dev/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/developers/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/developers/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/feed.xml",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/feed.xml",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/llms.txt",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/llms.txt",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/mcp/boplog_mcp.py",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/mcp/boplog_mcp.py",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/openapi.json",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/openapi.json",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/sitemap.xml",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/sitemap.xml",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/boplog/topics/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/boplog/topics/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/cod/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/cod/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/evolve/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/evolve/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/kpu-sim/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/kpu-sim/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/monument/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/monument/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/portfolio/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/portfolio/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/portfolio/demos/room/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/portfolio/demos/room/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/spy/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/spy/",
+      "err": null
+    },
+    {
+      "url": "https://kvnloo.github.io/tesla/",
+      "status": 200,
+      "final": "https://kvnloo.github.io/tesla/",
+      "err": null
+    },
+    {
+      "url": "https://launch-plum-beta.vercel.app/",
+      "status": null,
+      "final": null,
+      "err": "HTTPError:HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://linkedin.com/in/kevinsrajan",
+      "status": 200,
+      "final": "https://linkedin.com/in/kevinsrajan",
+      "err": "HEAD-fail:HTTPError"
+    },
+    {
+      "url": "https://opcode.sh/",
+      "status": 200,
+      "final": "https://opcode.sh/",
+      "err": null
+    },
+    {
+      "url": "https://www.uiua.org/",
+      "status": 200,
+      "final": "https://www.uiua.org/",
+      "err": null
+    },
+    {
+      "url": "https://x.com/_kvnloo",
+      "status": 200,
+      "final": "https://x.com/_kvnloo",
+      "err": null
+    }
+  ]
+}
