@@ -2,7 +2,7 @@
 // GitHub's issue search objects don't guarantee merged_at. Fetching
 // GET /repos/{owner}/{repo}/pulls/{number} for every merged PR exhausts
 // the scheduled workflow's repository installation rate bucket.
-const MERGED_PR_QUERY = [
+export const MERGED_PR_QUERY = [
   'query($query: String!, $after: String) {',
   '  search(query: $query, type: ISSUE, first: 100, after: $after) {',
   '    issueCount',
