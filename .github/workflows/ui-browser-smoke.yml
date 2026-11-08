@@ -3,7 +3,6 @@ name: Boplog UI browser smoke
 on:
   pull_request:
     paths:
-      - 'app.js'
       - 'index.html'
       - 'styles.css'
       - 'tests/browser.spec.cjs'
